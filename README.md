@@ -6,7 +6,10 @@
 > terrain. Axes: north = tradfi & regulation, south = cypherpunk & the
 > trenches, west = ship fast, east = sound money. The ocean is fiat.
 > Data seeded from https://www.coingecko.com/ (top 100 by market cap).
-> The nightly research pipeline is not wired for this fork yet.
+> The main view is a free-roam 3D world (drag to pan, wheel to zoom,
+> right-drag or shift-drag to orbit; "flat map" in the top right returns to the
+> 2D parchment). The nightly research pipeline lives in
+> `scripts/research_crypto.py` + `.github/workflows/nightly-crypto.yml`.
 
 # Atlas of Frontier Ontologies
 

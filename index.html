@@ -202,6 +202,11 @@ text{user-select:none;-webkit-user-select:none}
 #flybtn:hover{background:#f9f1de}
 #flybtn:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 @media (max-width:620px){#flybtn{top:92px;right:10px}}
+#dimtoggle{position:fixed;top:150px;right:16px;z-index:44;background:#f3e9d2;border:1px solid #b7a173;
+  border-radius:999px;color:var(--ink);font-family:var(--serif);font-size:13px;font-weight:600;
+  letter-spacing:.05em;padding:6px 14px 7px;text-decoration:none;box-shadow:0 2px 6px -2px #2c241766}
+#dimtoggle:hover{background:#f9f1de}
+@media (max-width:620px){#dimtoggle{top:134px;right:10px}}
 
 /* ---- flyover: cinematic mode ---- */
 body.cine #cart,body.cine #ctrl,body.cine #paper,body.cine #tt,body.cine .axis,body.cine #isearch{display:none!important}
@@ -1254,6 +1259,13 @@ function showSug(q){
 }
 function gotoIsland(e){
   isug.classList.remove('on');isq.blur();isq.value=e.label;
+  if(window.__free3d){
+    window.__free3d.flyTo(e.pos[0],e.pos[1]);
+    const c=e.c;
+    setTimeout(()=>{renderCard(e.tribe,c?(c.contName||'INDEPENDENT'):(e.kick||'BESPOKE'));
+      tt.classList.add('on');placeCard(vw*0.3,vh*0.3);},2100);
+    return;
+  }
   flyTo(e.pos[0],e.pos[1],e.zf,2600,()=>{
     const c=e.c;
     for(const o of countries){o.hl.classList.toggle('on',o===c);o.hlS.classList.toggle('on',o===c)}
@@ -1398,18 +1410,32 @@ window.__renderScore=async function(seconds,bars){
 /* ---------- the flyover: a cinematic tour (?flyover) ---------- */
 const CINE=/[?&]flyover/.test(location.search);
 const CINE3D=CINE&&!/[?&]flyover2d/.test(location.search);
-if(CINE3D){
-  document.body.classList.add('cine');
+const FLAT2D=/[?&]map2d/.test(location.search);
+const FREE3D=!CINE&&!FLAT2D;
+if(CINE3D||FREE3D){
+  if(CINE3D)document.body.classList.add('cine');
   const boot3=setInterval(()=>{
     if(!countries.length)return;
     clearInterval(boot3);
     window.__atlas={world:{X0,Y0,X1,Y1},PMETA,PAPER,
       get countries(){return countries},
-      mcap:mcapOfTribe,startScore,esc};
+      get villages(){return villages},
+      mcap:mcapOfTribe,startScore,esc,
+      pick:(wx,wy)=>findCountry(wx,wy),
+      card:(tb,kick,px,py)=>{renderCard(tb,kick);tt.classList.add('on');placeCard(px,py)},
+      hideCard:()=>{tt.classList.remove('on');curId=null}};
     const s1=document.createElement('script');s1.src='vendor/three.min.js';
     s1.onload=()=>{const s2=document.createElement('script');s2.src='flyover3d.js';document.body.appendChild(s2)};
     document.body.appendChild(s1);
   },200);
+}
+/* view toggle: 3D world by default, flat parchment on request */
+{
+  const tog=document.createElement('a');
+  tog.id='dimtoggle';
+  if(FLAT2D){tog.href=location.pathname;tog.innerHTML='&#9968; 3d world';}
+  else{tog.href='?map2d';tog.innerHTML='&#128506; flat map';}
+  document.body.appendChild(tog);
 }
 if(CINE&&!CINE3D){
   document.body.classList.add('cine');
