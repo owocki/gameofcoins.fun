@@ -127,6 +127,26 @@
      "x": "$JUP",
      "src": "https://www.coingecko.com/en/coins/jupiter-exchange-solana"
     }
+   ],
+   "topics": [
+    {
+     "t": "Morgan Stanley SOL ETF",
+     "d": "Morgan Stanley launched the market's cheapest Solana ETF with staking rewards on July 28, after its bitcoin fund topped $381 million.",
+     "x": "Morgan Stanley Solana ETF",
+     "src": "https://www.theblock.co/post/409898/morgan-stanley-debuts-ethereum-solana-etfs-markets-lowest-fee-staking-rewards"
+    },
+    {
+     "t": "No. 2 in hacks",
+     "d": "Blockaid's July 28 report says Solana passed Arbitrum for second-highest hack losses in H1 2026, driven mostly by key compromises.",
+     "x": "Solana hack losses Blockaid",
+     "src": "https://cointelegraph.com/news/ethereum-solana-led-crypto-hack-losses-h1-2026-blockaid"
+    },
+    {
+     "t": "SOL loses $75",
+     "d": "SOL slipped below $75 on July 28 as traders rotated into ETH, with chartists still calling for a breakout back toward $90.",
+     "x": "SOL $75 breakout",
+     "src": "https://news.google.com/rss/search?q=Solana+SOL+when:7d"
+    }
    ]
   },
   "stablecoins": {
@@ -563,6 +583,26 @@
      "x": "$FLR",
      "src": "https://www.coingecko.com/en/coins/flare-networks"
     }
+   ],
+   "topics": [
+    {
+     "t": "Clarity Act shelved",
+     "d": "XRP slid on July 28 after the US Senate shelved the CLARITY market-structure bill, the regulation the army was counting on, right before the Fed decision.",
+     "x": "XRP Clarity Act",
+     "src": "https://decrypt.co/374579/xrp-price-slides-senate-clarity-act-fed-rate-looms"
+    },
+    {
+     "t": "RLUSD boosts, volume drop",
+     "d": "Ripple launched Ripple Mint and added Notabene compliance support for RLUSD on July 24, even as the stablecoin's transfer volume fell 25%.",
+     "x": "RLUSD Ripple Mint",
+     "src": "https://www.coindesk.com/business/2026/07/24/ripple-s-rlusd-gets-two-boosts-as-transfer-volume-drops-25"
+    },
+    {
+     "t": "S&P snubs XRP",
+     "d": "S&P Dow Jones and Pantera launched an 18-coin crypto index on July 22 led by Ethereum, BNB, Solana and Tron, and XRP holders fumed that XRP was left out.",
+     "x": "S&P crypto index XRP",
+     "src": "https://www.msn.com/en-us/money/savingandinvesting/s-p-s-new-crypto-index-excludes-xrp-and-bitcoin-here-s-the-real-reason/ar-AA28rRVL"
+    }
    ]
   },
   "oldguard": {
@@ -630,6 +670,26 @@
      "x": "$FIL",
      "src": "https://www.coingecko.com/en/coins/filecoin"
     }
+   ],
+   "topics": [
+    {
+     "t": "Tron makes S&P index",
+     "d": "Tron landed in S&P Dow Jones and Pantera's first crypto index on July 21-22, picked as a top revenue-generating protocol while Bitcoin and XRP were excluded.",
+     "x": "Tron S&P crypto index",
+     "src": "https://www.msn.com/en-us/money/savingandinvesting/s-p-s-new-crypto-index-excludes-xrp-and-bitcoin-here-s-the-real-reason/ar-AA28rRVL"
+    },
+    {
+     "t": "Midnight bridge hack",
+     "d": "Cardano sidechain token NIGHT rebounded 19% on July 22 after the Wanchain bridge hack, with Charles Hoskinson urging the industry to dump legacy bridges.",
+     "x": "Midnight Wanchain hack",
+     "src": "https://www.coindesk.com/business/2026/07/22/midnight-token-rebounds-after-wanchain-bridge-hack-hoskinson-calls-for-industry-overhaul"
+    },
+    {
+     "t": "SecondFi shuts down",
+     "d": "Cardano platform SecondFi announced on July 22 it is shutting down after a $2.4 million ADA wallet theft blamed on transaction-signing software.",
+     "x": "SecondFi ADA theft",
+     "src": "https://www.coindesk.com/web3/2026/07/22/secondfi-to-shut-down-after-usd2-4-million-ada-wallet-theft"
+    }
    ]
   },
   "privacy": {
@@ -660,6 +720,26 @@
      "d": "Beldex — rank #87, $643M market cap, $0.0817.",
      "x": "$BDX",
      "src": "https://www.coingecko.com/en/coins/beldex"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Zcash Ironwood live",
+     "d": "Zcash activated its Ironwood upgrade on July 28, retiring the Orchard shielded pool after a counterfeiting-risk bug and sealing a $1.7 billion shielded pool.",
+     "x": "Zcash Ironwood upgrade",
+     "src": "https://www.theblock.co/post/409934/zcash-ironwood-upgrade-launching-new-shielded-pool-after-orchard-vulnerability"
+    },
+    {
+     "t": "Monero eyes $400",
+     "d": "Monero jumped 10% on July 25 and pushed at $400 resistance as traders bet the privacy-coin trade that lifted ZEC into the top 15 is rotating to XMR.",
+     "x": "Monero XMR rally",
+     "src": "https://coinpedia.org/price-analysis/monero-xmr-price-eyes-400-resistance-is-the-privacy-narrative-making-a-comeback/"
+    },
+    {
+     "t": "ZEC miner goes big",
+     "d": "DCG's Zcash mining arm Fortitude powered up a Nebraska facility on July 28 and is eyeing a public listing, a sign of institutional money behind ZEC.",
+     "x": "Fortitude Zcash miner",
+     "src": "https://decrypt.co/374491/zcash-miner-fortitude-nebraska-mining-facility"
     }
    ]
   },
@@ -754,6 +834,26 @@
      "x": "$APT",
      "src": "https://www.coingecko.com/en/coins/aptos"
     }
+   ],
+   "topics": [
+    {
+     "t": "Telegram takes TON",
+     "d": "Toncoin jumped 36% around July 25 on news Telegram is taking over the TON chain, folding the network tighter into the app.",
+     "x": "Telegram TON takeover",
+     "src": "https://news.google.com/rss/search?q=TON+OR+Sui+OR+Aptos+OR+Kaspa+OR+%22Pi+Network%22+crypto+when:7d"
+    },
+    {
+     "t": "Gram wallet rollout",
+     "d": "Pavel Durov announced Telegram's 'largest rollout' of non-custodial crypto wallets to over 1 billion users on July 21, lifting the renamed Gram token 7%.",
+     "x": "Durov Gram wallet",
+     "src": "https://www.msn.com/en-us/technology/cryptocurrencies/pavel-durov-announces-largest-rollout-of-non-custodial-crypto-wallets-for-over-1-billion-telegram-users-gram-token-lifts-7%2far-AA28qKXP"
+    },
+    {
+     "t": "Pi unlock dump",
+     "d": "Pi Network fell 10% to about $0.083 on July 24 as token unlocks and whale selling loomed, just after the protocol v25 upgrade went live.",
+     "x": "Pi Network unlock",
+     "src": "https://coingape.com/markets/pi-network-price-slips-10-ahead-of-token-unlock-is-more-selling-ahead/"
+    }
    ]
   },
   "aicoins": {
@@ -802,6 +902,26 @@
      "d": "Venice Token — rank #90, $621M market cap, $13.14.",
      "x": "$VVV",
      "src": "https://www.coingecko.com/en/coins/venice-token"
+    }
+   ],
+   "topics": [
+    {
+     "t": "World's $52.5M sale",
+     "d": "Sam Altman's World Foundation raised $52.5 million on July 24 in a Pantera-led deal, selling locked WLD to fund World ID human-verification tech.",
+     "x": "Worldcoin 52.5 million",
+     "src": "https://cointelegraph.com/news/world-foundation-funding-led-by-pantera-world-id-infrastructure"
+    },
+    {
+     "t": "Grayscale WLD ETF",
+     "d": "Grayscale filed an S-1 on July 21 for the first US Worldcoin ETF, extending its ETF lineup beyond Bitcoin and Ether.",
+     "x": "Grayscale Worldcoin ETF",
+     "src": "https://cointelegraph.com/news/grayscale-files-s-1-for-worldcoin-etf"
+    },
+    {
+     "t": "TAO staking push",
+     "d": "MEXC and Yuma launched Bittensor TAO staking on July 23 while traders watched TAO test $220 resistance after network upgrades.",
+     "x": "Bittensor TAO staking",
+     "src": "https://news.google.com/rss/search?q=Bittensor+OR+Worldcoin+OR+Render+AI+crypto+when:7d"
     }
    ]
   },
