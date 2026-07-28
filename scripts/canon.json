@@ -1,662 +1,189 @@
 {
- "eacc": {
-  "name": "effective accelerationists",
-  "country": "e/acc",
-  "ontology": "Entropy is the enemy and growth is the only exit; feed the machine.",
-  "figures": [
-   "@BasedBeffJezos",
-   "@bayeslord",
-   "@garrytan",
-   "@natolambert"
-  ],
-  "tldr": "entropy is the enemy; feed the machine"
- },
- "progress": {
-  "name": "progress & abundance movement",
-  "country": "Progress & abundance",
-  "ontology": "Scarcity is a policy choice; the bottleneck is permission, not physics. Build.",
-  "figures": [
-   "@ezraklein",
-   "@DKThomp",
-   "@jasoncrawford",
-   "@IFP_org"
-  ],
-  "tldr": "the bottleneck is permission, not physics"
- },
- "hardtech": {
-  "name": "hard-tech & space frontier",
-  "country": "Hard tech & space",
-  "ontology": "Civilization is downstream of physical capability — atoms over bits. Building real machines fast, at scale, in America is a moral project; multiplanetary life is the terminal goal.",
-  "figures": [
-   "@elonmusk",
-   "@PalmerLuckey",
-   "@johncoogan",
-   "@Andercot"
-  ],
-  "tldr": "factories, rockets, defense — atoms over bits"
- },
- "rationalists": {
-  "name": "rationalists",
-  "country": "Rationalists",
-  "ontology": "Reality is lawful and knowable through Bayesian updating; beliefs should pay rent in anticipated experience, and most catastrophes are epistemic failures first.",
-  "figures": [
-   "Scott Alexander",
-   "@TheZvi",
-   "@robbensinger",
-   "Adrià Garriga-Alonso"
-  ],
-  "tldr": "Bayesian epistemics; AI-risk analysis"
- },
- "doomers": {
-  "name": "AI-safety doomers",
-  "country": "AI safety / doomers",
-  "ontology": "We are building minds we can't steer, on a timeline set by a race nobody can exit.",
-  "figures": [
-   "@ESYudkowsky",
-   "Nate Soares",
-   "@DKokotajlo",
-   "Holly Elmore"
-  ],
-  "tldr": "minds we can't steer, on a race nobody can exit"
- },
- "ea": {
-  "name": "effective altruists",
-  "country": "Effective altruists",
-  "ontology": "All sentient welfare counts equally across space and time; the real currency is counterfactual impact, measured and maximized under moral uncertainty.",
-  "figures": [
-   "@wdmacaskill",
-   "Elie Hassenfeld",
-   "Alexander Berger",
-   "@80000Hours"
-  ],
-  "tldr": "maximize measurable good per dollar"
- },
- "tpot": {
-  "name": "tpot / post-rationalists",
-  "country": "tpot / post-rationalists",
-  "ontology": "Rationality was a phase; wisdom might not be. Bodies, meaning, sincerity wearing irony as a coat.",
-  "figures": [
-   "@nosilverv",
-   "@vgr",
-   "@QiaochuYuan",
-   "@vibecamp_"
-  ],
-  "tldr": "rationality was a phase; wisdom might not be"
- },
- "nondual": {
-  "name": "consciousness & psychedelic twitter",
-  "country": "Meditation & psychedelics",
-  "ontology": "The mystery is real, measurable, and schedulable. The clinical trial as pilgrimage route.",
-  "figures": [
-   "@nickcammarata",
-   "@algekalipso",
-   "Jhourney",
-   "Daniel Ingram"
-  ],
-  "tldr": "the mystery is real, measurable, schedulable"
- },
- "btc": {
+ "btcmaxis": {
   "name": "bitcoin maxis",
-  "country": "Bitcoin maxis",
-  "ontology": "Sound money is the base layer of civilization and a moral imperative; Bitcoin is the only credibly neutral monetary substrate — everything else is fiat, noise, or a scam.",
+  "country": "Bitcoin",
+  "tldr": "the only sound money; everything else is noise",
+  "ontology": "Sound money is the base layer of civilization; Bitcoin is the only credibly neutral monetary substrate — everything else on this map is fiat, noise, or a scam.",
   "figures": [
    "@saylor",
    "@adam3us",
-   "Luke Dashjr",
    "@LynAldenContact"
-  ],
-  "tldr": "bitcoin is the only sound money"
+  ]
  },
- "eth": {
-  "name": "ethereum builders",
+ "ethereum": {
+  "name": "ethereum",
   "country": "Ethereum",
-  "ontology": "Reality is programmable coordination; credibly neutral protocols are how humanity scales trust. Progress is real but must be steered — d/acc over both doom and recklessness.",
+  "tldr": "credibly neutral protocols; the world computer",
+  "ontology": "Reality is programmable coordination; credibly neutral protocols are how humanity scales trust. The world computer settles everything else on this map eventually.",
   "figures": [
    "@VitalikButerin",
    "@TimBeiko",
-   "@drakefjustin",
-   "@fundstrat"
-  ],
-  "tldr": "neutral protocols for global coordination"
+   "@sassal0x"
+  ]
  },
- "defi": {
-  "name": "DeFi & stablecoin builders",
-  "country": "DeFi & stablecoins",
-  "ontology": "Finance is being rebuilt as open programmable infrastructure; stablecoins are the internet's money layer and regulation is the moat, not the enemy.",
+ "solana": {
+  "name": "solana",
+  "country": "Solana",
+  "tldr": "one global state machine, as fast as light allows",
+  "ontology": "Speed is the feature and the market is the test; one global state machine, block by 400-millisecond block. Increase bandwidth, reduce latency.",
+  "figures": [
+   "@aeyakovenko",
+   "@rajgokal",
+   "@solana"
+  ]
+ },
+ "stablecoins": {
+  "name": "the stablecoin economy",
+  "country": "Stablecoins",
+  "tldr": "the dollar won crypto; crypto won the dollar's rails",
+  "ontology": "The dollar won crypto and crypto won the dollar's rails; the stablecoin is the internet's checking account, and regulation is the moat.",
   "figures": [
    "Jeremy Allaire",
    "@paoloardoino",
-   "@StaniKulechov",
-   "@jchervinsky"
-  ],
-  "tldr": "rebuild finance on open rails"
- },
- "degens": {
-  "name": "degens & memecoin culture",
-  "country": "Degens / memecoins",
-  "ontology": "Attention is the only real asset and price is the only truth; everything is musical chairs and the sin is not playing but exiting late. Nihilism worn as comedy.",
-  "figures": [
-   "@blknoiz06",
-   "@cobie",
-   "@a1lon9",
-   "@chameleon_jeff"
-  ],
-  "tldr": "everything is a casino; ape accordingly"
- },
- "regens": {
-  "name": "regens & solarpunks",
-  "country": "Regens / solarpunk",
-  "ontology": "The future is green, built, and beautiful — collapse is a failure of imagination. Degrowth's optimistic cousin across the water.",
-  "figures": [
-   "@owocki",
-   "@glenweyl",
-   "@ReFiDAO",
-   "@MaEarthMedia"
-  ],
-  "tldr": "the future is green, built, and beautiful"
- },
- "degrowth": {
-  "name": "degrowthers & climate realists",
-  "country": "Degrowth / climate left",
-  "ontology": "Infinite growth on a finite planet is the cancer cell's ontology; live well within limits.",
-  "figures": [
-   "@jasonhickel",
-   "Kohei Saito",
-   "@GretaThunberg",
-   "@rahmstorf"
-  ],
-  "tldr": "live well within limits"
- },
- "longevity": {
-  "name": "longevity & biohackers",
-  "country": "Longevity / biohackers",
-  "ontology": "Death is a technical problem with a research budget. Don't die until you can't die.",
-  "figures": [
-   "@bryan_johnson",
-   "@mkaeberlein",
-   "@PeterAttiaMD",
-   "Joe Betts-Lacroix"
-  ],
-  "tldr": "don't die until you can't die"
- },
- "maha": {
-  "name": "MAHA & health freedom",
-  "country": "MAHA / health freedom",
-  "ontology": "Heal the body first — the food, the medicine, the light — and the body politic follows.",
-  "figures": [
-   "@RobertKennedyJr",
-   "Casey Means",
-   "@CalleyMeans",
-   "@foodbabe"
-  ],
-  "tldr": "heal the body; the body politic follows"
- },
- "nrx": {
-  "name": "neoreaction & the new right",
-  "country": "Neoreaction / new right",
-  "ontology": "Democracy is a failed god; competence is monarchical. Retire the regime, run the state like a firm.",
-  "figures": [
-   "Curtis Yarvin",
-   "@ConceptualJames",
-   "BAP",
-   "@j_fishback"
-  ],
-  "tldr": "democracy is a failed god; competence is monarchical"
- },
- "netstate": {
-  "name": "network-state builders",
-  "country": "Network states",
-  "ontology": "Don't fix the country — fork it. Citizenship as a subscription, governance as a product.",
-  "figures": [
-   "@balajis",
-   "Dryden Brown",
-   "@patrissimo",
-   "Edge City"
-  ],
-  "tldr": "don't fix the country — fork it"
- },
- "indie": {
-  "name": "indie hackers",
-  "country": "Indie hackers",
-  "ontology": "Leverage is now individually held — one person plus models can occupy niches that needed a company. Revenue is the only real validation; institutions are optional overhead.",
-  "figures": [
-   "@levelsio",
-   "@dannypostmaa",
-   "@arvidkahl",
-   "@csallen"
-  ],
-  "tldr": "one person + AI = a whole company"
- },
- "maga": {
-  "name": "maga / populist right",
-  "country": "MAGA / populist right",
-  "tldr": "the nation is a home, betrayed by its managers",
-  "ontology": "The nation is a home, not an economic zone — and the home was betrayed by its own managers.",
-  "figures": [
-   "@realDonaldTrump",
-   "@charliekirk11",
-   "Steve Bannon",
-   "@bennyjohnson"
+   "@ethena_labs"
   ]
  },
- "progleft": {
-  "name": "progressive left",
-  "country": "Progressive left",
-  "tldr": "power hides in language, defaults, institutions",
-  "ontology": "Power hides in language, defaults, and institutions; listen from the margins to see it.",
+ "rwa": {
+  "name": "tokenized tradfi",
+  "country": "Tokenized TradFi",
+  "tldr": "every asset migrates on-chain eventually",
+  "ontology": "Every asset — treasuries, gold, credit, houses — migrates on-chain eventually; the blockchain is the back office of the next financial system.",
   "figures": [
-   "@AOC",
-   "@BernieSanders",
-   "@ZohranKMamdani",
-   "@RBReich"
+   "@OndoFinance",
+   "BlackRock's BUIDL",
+   "the tokenization desks"
   ]
  },
- "establishment": {
-  "name": "liberal establishment",
-  "country": "Liberal establishment",
-  "tldr": "institutions and expertise hold it together",
-  "ontology": "Liberal democracy works through institutions, expertise, and procedure. The job is competent governance and defending norms against extremes on both sides.",
+ "exchangetokens": {
+  "name": "the exchange empires",
+  "country": "Exchange tokens",
+  "tldr": "the casino always wins; own the house",
+  "ontology": "Flow is the moat and the listing is the favor; whatever the cycle does, the house collects the fee. Own the house.",
   "figures": [
-   "@jaketapper",
-   "@maggieNYT",
-   "@jbouie",
-   "The Atlantic"
+   "@cz_binance",
+   "@heyibinance",
+   "the CEX empires"
   ]
  },
- "finance": {
-  "name": "wall street / macro",
-  "country": "Wall Street / macro",
-  "tldr": "markets price everything; don't fight the Fed",
-  "ontology": "Prices aggregate all information and capital flows are the real politics. Everything else is narrative wrapped around the number.",
+ "xrparmy": {
+  "name": "the xrp army",
+  "country": "XRP army",
+  "tldr": "the standard is coming",
+  "ontology": "The banks will settle on our rails and the lawsuit was proof of importance; patience is the strategy and the standard is coming.",
   "figures": [
-   "@LizAnnSonders",
-   "@fundstrat",
-   "@zerohedge",
-   "CNBC"
+   "@bgarlinghouse",
+   "@Ripple",
+   "the XRP army"
   ]
  },
- "christian": {
-  "name": "christian twitter",
-  "country": "Christian twitter",
-  "tldr": "moral order is given, not invented",
-  "ontology": "Reality is created and moral order is given; scripture and the church outrank secular consensus. History is a spiritual drama whose stakes exceed politics.",
+ "oldguard": {
+  "name": "the old guard L1s",
+  "country": "Old guard L1s",
+  "tldr": "the tech was never the problem",
+  "ontology": "The roadmaps were right, the peer review was real, and the market is a popularity contest; the tech was never the problem. Ecosystems outlive cycles.",
   "figures": [
-   "@Franklin_Graham",
-   "@albertmohler",
-   "@drmoore",
-   "@BishopBarron"
+   "@IOHK_Charles",
+   "@gavofyork",
+   "@justinsuntron"
   ]
  },
- "stan": {
-  "name": "stan / pop culture",
-  "country": "Stan / pop culture",
-  "tldr": "devotion is coordination",
-  "ontology": "Devotion is coordination: the most disciplined armies on the platform worship a bias, not a politics — and every tribe on this map envies their logistics.",
+ "privacy": {
+  "name": "privacy coins",
+  "country": "Privacy coins",
+  "tldr": "cash was private; money should be again",
+  "ontology": "Financial privacy is a human right, surveillance is the default, and the only cash left is the kind they cannot see. The original cypherpunk errand.",
   "figures": [
-   "@PopBase",
-   "@PopCrave",
-   "@chartdata"
+   "the Monero community",
+   "@zooko",
+   "the cypherpunks"
   ]
  },
- "sports": {
-  "name": "sports twitter",
-  "country": "Sports twitter",
-  "tldr": "loyalty, stats, and the eternal debate",
-  "ontology": "Merit is settled on the field and argued forever after. Loyalty is inherited, stats are scripture, and the debate itself is the point.",
+ "l2s": {
+  "name": "the L2 archipelago",
+  "country": "L2s / rollups",
+  "tldr": "scale ethereum, inherit its security",
+  "ontology": "Blockspace scales in layers: inherit Ethereum's security, compress the cost, and the rollup becomes the city where people actually live.",
   "figures": [
-   "@ShamsCharania",
-   "@AdamSchefter",
-   "@stephenasmith",
-   "@wojespn"
+   "@arbitrum",
+   "@Optimism",
+   "@0xMantle"
   ]
  },
- "georgists": {
-  "name": "georgists",
-  "country": "Georgists",
-  "tldr": "tax land, not labor",
-  "ontology": "Land value is created by the community, so land rent belongs to everyone; most economic dysfunction — housing above all — traces to private capture of that rent.",
+ "linkmarines": {
+  "name": "the link marines",
+  "country": "Link marines",
+  "tldr": "the oracle is the truth layer",
+  "ontology": "Smart contracts are blind without oracles; whoever feeds the chain the world's data is the truth layer of everything built on it.",
   "figures": [
-   "Lars Doucet",
-   "@larsiusprime",
-   "Henry George (patron saint)"
+   "@SergeyNazarov",
+   "@chainlink",
+   "the Link Marines"
   ]
  },
- "girardians": {
-  "name": "girardians",
-  "country": "Girardians",
-  "tldr": "desire is mimetic; scapegoats keep the peace",
-  "ontology": "Humans want what others want; rivalry escalates until it discharges onto a scapegoat. Culture, religion, and markets are machines for managing mimetic conflict.",
+ "newl1s": {
+  "name": "the new L1 frontier",
+  "country": "New L1s",
+  "tldr": "the next chain will be the fast one",
+  "ontology": "Every cycle mints a new fastest chain and a new believer class; throughput is destiny and migration is always one killer app away.",
   "figures": [
-   "Luke Burgis",
-   "Geoff Shullenberger",
-   "@peterthiel (patron)"
+   "@SuiNetwork",
+   "@Aptos",
+   "the Pi pioneers"
   ]
  },
- "landian": {
-  "name": "landian accel",
-  "country": "Landian accel",
-  "tldr": "capital is an alien intelligence",
-  "ontology": "Modernity is capital using humans to bootstrap its own substrate; acceleration isn't a policy choice, it's what is already happening. The horror reading of e/acc's optimism.",
+ "aicoins": {
+  "name": "the AI coins",
+  "country": "AI coins",
+  "tldr": "decentralize the machine intelligence",
+  "ontology": "Intelligence is becoming the world's largest market and it must not be owned by five companies; tokens are how compute, models, and identity stay open.",
   "figures": [
-   "Nick Land",
-   "@xenocosmography",
-   "cave twitter"
+   "@opentensor",
+   "@rendernetwork",
+   "@worldcoin"
   ]
  },
- "metamodern": {
-  "name": "metamodernists",
-  "country": "Metamodernists",
-  "tldr": "integrate irony and sincerity; develop in stages",
-  "ontology": "Culture and persons develop through stages that must be integrated, not skipped; the modern/postmodern fight resolves by holding both at once.",
+ "defi": {
+  "name": "defi",
+  "country": "DeFi",
+  "tldr": "finance without permission",
+  "ontology": "Finance is being rebuilt as open programmable infrastructure; lending, trading, and yield without permission — the protocols outlive their founders.",
   "figures": [
-   "Hanzi Freinacht",
-   "John Vervaeke",
-   "@Metapsychosis"
+   "@Uniswap",
+   "@aave",
+   "@MorphoLabs"
   ]
  },
- "forecasters": {
-  "name": "forecasters",
-  "country": "Forecasters",
-  "tldr": "put a number on it or it's vibes",
-  "ontology": "Beliefs are bets and calibration is virtue. Prediction markets and scoring rules extract honest probabilities from talk.",
+ "memecoins": {
+  "name": "the trenches",
+  "country": "Memecoins",
+  "tldr": "attention is the only fundamental",
+  "ontology": "Attention is the only real asset and price is the only truth; the coin is the community and the sin is not playing but exiting late.",
   "figures": [
-   "@Polymarket",
-   "Nate Silver",
-   "Metaculus",
-   "Robin Hanson"
+   "@pumpdotfun",
+   "the doge whales",
+   "the trenches"
   ]
  },
- "cryonics": {
-  "name": "cryonicists",
-  "country": "Cryonicists",
-  "tldr": "death is information loss; preserve the pattern",
-  "ontology": "Death is the loss of information, not an event; preserve the brain's pattern and future medicine can restart it. The original transhumanism.",
+ "degenperps": {
+  "name": "the perp casinos",
+  "country": "Perp DEXs",
+  "tldr": "the casino, on-chain, 24/7",
+  "ontology": "The market is a 24/7 casino and the only honest venue is one that cannot close; leverage is a right and the funding rate is the weather.",
   "figures": [
-   "Max More",
-   "Alcor",
-   "@BrainPresFdn"
+   "@HyperliquidX",
+   "the Aster degens",
+   "the funding-rate watchers"
   ]
  },
- "pronatalists": {
-  "name": "pronatalists",
-  "country": "Pronatalists",
-  "tldr": "the birth rate is the deepest metric; have the kids",
-  "ontology": "Civilization's deepest metric is the birth rate, and it's falling everywhere at once. Have the kids.",
-  "figures": [
-   "Malcolm & Simone Collins",
-   "@MoreBirths",
-   "Robin Hanson"
-  ]
- },
- "doomeroptimists": {
-  "name": "doomer optimists",
-  "country": "Doomer optimists",
-  "tldr": "collapse is coming; build local lifeboats",
-  "ontology": "Industrial civilization is overshooting hard biophysical limits — but the answer is skills, land, and community, not despair. Prep by rebuilding the local.",
-  "figures": [
-   "Ashley Colby",
-   "Nate Hagens",
-   "@jasonsnyderorg"
-  ]
- },
- "remilia": {
-  "name": "remilia / net spirituality",
-  "country": "Remilia / net spirituality",
-  "tldr": "the timeline is a spiritual plane",
-  "ontology": "Identity dissolves into the network; anonymous posting, aesthetics, and memetic play are devotional acts. The milady cult of the feed.",
-  "figures": [
-   "Charlotte Fang",
-   "milady sphere"
-  ]
- },
- "cozyweb": {
-  "name": "cozyweb",
-  "country": "Cozyweb",
-  "tldr": "small quiet internet over the big feed",
-  "ontology": "The good internet is small, slow, and tended — group chats, blogs, digital gardens. Scale is the disease; context is the cure.",
-  "figures": [
-   "@vgr (coined it)",
-   "Maggie Appleton",
-   "Robin Sloan"
-  ]
- },
- "tradcaths": {
-  "name": "trad catholics",
-  "country": "Trad Catholics",
-  "tldr": "return to tradition, liturgy, hierarchy",
-  "ontology": "Modernity took a wrong turn at liberalism; truth lives in tradition, hierarchy, and the old Mass. Liturgy as resistance.",
-  "figures": [
-   "Taylor Marshall",
-   "Adrian Vermeule",
-   "@CatholicArena"
-  ]
- },
- "wsb": {
-  "name": "wallstreetbets",
-  "country": "WallStreetBets",
-  "tldr": "the market is a casino; ape together strong",
-  "ontology": "The market is a casino where the little guy can gang up on the house. Conviction, leverage, and memes over analysis; loss porn is content.",
-  "figures": [
-   "r/WSB diaspora",
-   "@unusual_whales"
-  ]
- },
- "astrology": {
-  "name": "astrology twitter",
-  "country": "Astrology twitter",
-  "tldr": "the sky mirrors the psyche",
-  "ontology": "Celestial patterns index temperament and timing; the chart is a symbolic language for fate and self-knowledge, held with varying degrees of irony.",
-  "figures": [
-   "Chani Nicholas",
-   "@astrobebs",
-   "Co-Star"
-  ]
- },
- "ufo": {
-  "name": "ufo / disclosure",
-  "country": "UFO / disclosure",
-  "tldr": "the veil is thinner every hearing",
-  "ontology": "We are not alone, the government knows, and the veil is thinner every hearing.",
-  "figures": [
-   "Jeremy Corbell",
-   "Ross Coulthart",
-   "Lue Elizondo"
-  ]
- },
- "ocean": {
-  "name": "the neoliberalism ocean",
-  "country": "The Neoliberalism Ocean",
-  "tldr": "the default every tribe defines itself against",
-  "ontology": "Mainstream liberalism — not an island but the water: markets as nature, procedure as faith, the default every tribe defines itself against. It doesn't feel like an ideology for the same reason water doesn't feel wet.",
+ "fiat": {
+  "name": "the fiat ocean",
+  "country": "The Fiat Ocean",
+  "tldr": "the water every coin defines itself against",
+  "ontology": "State money — not an island but the water: the unit of account, the exit everyone prices in, the default every tribe on this map defines itself against. It doesn't feel like a system for the same reason water doesn't feel wet.",
   "figures": [
    "the Fed",
-   "the courts",
-   "the op-ed page"
-  ]
- },
- "islam": {
-  "name": "the islamic revival",
-  "country": "Islamic revival",
-  "tldr": "the ummah online; submission as freedom",
-  "ontology": "A fifth of humanity in one ummah: submission as freedom, the feed as minbar. The largest coherent ontology the discourse map forgets.",
-  "figures": [
-   "@muftimenk",
-   "@omarsuleiman504",
-   "Yaqeen Institute"
-  ]
- },
- "china": {
-  "name": "the chinese techno-civilization",
-  "country": "China techno-civilization",
-  "tldr": "the state as a five-thousand-year project",
-  "ontology": "The state as a five-thousand-year project; harmony over discourse, capacity over process. Barely on X — enormous on earth.",
-  "figures": [
-   "@HuXijin_GT",
-   "Kaiser Kuo",
-   "Pekingnology"
-  ]
- },
- "catholic": {
-  "name": "catholicism proper",
-  "country": "Catholic Church",
-  "tldr": "a billion members, one pope, time in centuries",
-  "ontology": "Beneath the tradcath vanguard, the two-thousand-year ship itself: a billion members, one pope, time measured in centuries.",
-  "figures": [
-   "@Pontifex",
-   "Word on Fire",
-   "@JamesMartinSJ"
-  ]
- },
- "india": {
-  "name": "civilizational india",
-  "country": "Civilizational India",
-  "tldr": "a civilization reawakening, not a country",
-  "ontology": "Not a country — a civilization reawakening after a thousand-year interruption. The diaspora fights its wars in english.",
-  "figures": [
-   "@narendramodi",
-   "Swarajya",
-   "J. Sai Deepak"
-  ]
- },
- "pentecostal": {
-  "name": "global pentecostalism",
-  "country": "Global pentecostalism",
-  "tldr": "the spirit descends in lagos, são paulo, seoul",
-  "ontology": "The fastest-growing religion on earth: the spirit descends in Lagos, São Paulo, Seoul — and the feed never notices.",
-  "figures": [
-   "T.D. Jakes",
-   "Paula White",
-   "the Lagos megachurches"
-  ]
- },
- "indigenous": {
-  "name": "the indigenous resurgence",
-  "country": "Indigenous resurgence",
-  "tldr": "the land is a relative, not a resource",
-  "ontology": "The land is not a resource but a relative, and it is taking its names back. The oldest ontology on the map, newly load-bearing.",
-  "figures": [
-   "NDN Collective",
-   "Winona LaDuke",
-   "IllumiNative"
-  ]
- },
- "manifestation": {
-  "name": "the manifestation web",
-  "country": "Manifestation web",
-  "tldr": "align the inner state; the outer follows",
-  "ontology": "Reality is a mirror: align the inner state and the outer world follows. The largest folk religion online, and it doesn't know it's one.",
-  "figures": [
-   "Rhonda Byrne",
-   "the lucky girls of TikTok",
-   "r/lawofattraction"
-  ]
- },
- "conspiracy": {
-  "name": "the conspiracist omniverse",
-  "country": "Conspiracist omniverse",
-  "tldr": "nothing is as it seems, on purpose",
-  "ontology": "Nothing is as it seems, and someone meant it that way. Every institution's collapse in trust washes up here as new territory.",
-  "figures": [
-   "Alex Jones",
-   "the Epstein-files posters",
-   "r/conspiracy diaspora"
-  ]
- },
- "hustle": {
-  "name": "hustle world",
-  "country": "Hustle world",
-  "tldr": "the job is a scam; the way out is volume",
-  "ontology": "The job is a scam and the way out is volume: content, flips, funnels, reps. YouTube's biggest religion.",
-  "figures": [
-   "@AlexHormozi",
-   "@thedankoe",
-   "Codie Sanchez"
-  ]
- },
- "manosphere": {
-  "name": "the manosphere",
-  "country": "Manosphere",
-  "tldr": "rebuild the man; the world follows",
-  "ontology": "The crisis is male — purpose, testosterone, marriage, meaning. Rebuild the man and the world follows.",
-  "figures": [
-   "@Cobratate",
-   "@ChrisWillx",
-   "David Goggins"
-  ]
- },
- "witchtok": {
-  "name": "witchtok & the old ways",
-  "country": "WitchTok",
-  "tldr": "ritual, tarot, the moon as calendar",
-  "ontology": "The disenchanted world re-enchants from below: ritual, tarot, the moon as calendar. The gods that were here before the feed.",
-  "figures": [
-   "The Hoodwitch",
-   "WitchTok creators",
-   "Chani Nicholas"
-  ]
- },
- "socialist": {
-  "name": "the socialist left",
-  "country": "Socialist left",
-  "tldr": "the oldest war is labor versus capital",
-  "ontology": "The oldest war is labor versus capital; everything else is noise over that signal.",
-  "figures": [
-   "@jacobin",
-   "@hasanthehun",
-   "DSA"
-  ]
- },
- "postliberal": {
-  "name": "the post-liberals",
-  "country": "Post-liberals",
-  "tldr": "rebuild on faith, family, common good",
-  "ontology": "Liberalism ate its own foundations; rebuild on faith, family, and the common good.",
-  "figures": [
-   "@SohrabAhmari",
-   "Patrick Deneen",
-   "Adrian Vermeule"
-  ]
- },
- "refusal": {
-  "name": "tech refusal",
-  "country": "Tech refusal",
-  "tldr": "the only winning move is to log off",
-  "ontology": "The machine's product is your attention, and the only winning move is to log off. The decelerate coast's far shore.",
-  "figures": [
-   "Cal Newport",
-   "@JonHaidt",
-   "Freya India"
-  ]
- },
- "dacc": {
-  "name": "d/acc",
-  "country": "d/acc",
-  "tldr": "accelerate the defensive things",
-  "ontology": "Accelerate the defensive things — crypto, bio-defense, open source — so the power lands in everyone's hands.",
-  "figures": [
-   "@VitalikButerin",
-   "open-source biosecurity",
-   "the open-weights camp"
-  ]
- },
- "liminal": {
-  "name": "the liminal web",
-  "country": "Liminal web",
-  "tldr": "hold the whole; don't pick a jersey",
-  "ontology": "The crisis under the crises is sensemaking itself; hold the whole, don't pick a jersey.",
-  "figures": [
-   "Jonathan Rowson",
-   "Daniel Thorson",
-   "The Stoa"
-  ]
- },
- "nihilists": {
-  "name": "the nihilist trench",
-  "country": "The Nihilist Trench",
-  "tldr": "named, not steelmanned",
-  "ontology": "Nothing means anything and nothing is worth wanting — the undertow beneath every other territory. Named here as a hazard to navigation, not steelmanned, by design.",
-  "figures": [
-   "no one claims it"
+   "the ECB",
+   "your bank"
   ]
  }
 }

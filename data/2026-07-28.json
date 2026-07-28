@@ -2,1811 +2,836 @@
  "date": "2026-07-28",
  "dateLabel": "28 July 2026",
  "tribes": {
-  "eacc": {
-   "name": "effective accelerationists",
-   "country": "e/acc",
-   "ontology": "Entropy is the enemy and growth is the only exit; feed the machine.",
-   "figures": [
-    "@BasedBeffJezos",
-    "@bayeslord",
-    "@garrytan",
-    "@natolambert"
-   ],
-   "tldr": "entropy is the enemy; feed the machine",
-   "discussing": [
-    {
-     "t": "Grok release blitz",
-     "d": "Elon Musk said July 24 that Grok 4.6 ships in two weeks and Grok 4.7 in four, days after crediting Grok 4.5 with cracking a 30-year-old graph theory conjecture and firing back at China's Kimi K3.",
-     "x": "Grok 4.6",
-     "src": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaWZGV3hiMGRZSnkyTmRoa0c3cm1PZkI0SElvMnB5M3pzNkRZcUlGUUVBQmQ4S2NmNDhvRS04SFhoenFrTWR4Y1pJd2VZaG54Zlhfbl81UC1GZU1zQkUydlF3SDBYdm56bUF2aDIxWmw2a0s3NWdNYlQ3c2FBeHh4eXVCcXB0RGV0VWJsWXRzVURMdERRd2xTcw?oc=5"
-    },
-    {
-     "t": "AI Odyssey feud",
-     "d": "Musk vowed July 22 that Grok Imagine will generate a 'historically accurate' film of Homer's Odyssey by year-end, mocking Christopher Nolan's adaptation and drawing days of ridicule from Hollywood.",
-     "x": "Grok Odyssey",
-     "src": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOXzJFaUg4RW9jWTJZTENuMFF3V0U4dV9fZmhnaVgwLTcwdHZEWjlpT3p2VjJsaTlORUxNZThzRGFSSG1mbjAwSm1WeTJlWGw4dUM2UGd1WXgtYzF1S1Y1cC1LTkZYQ0tJcThTWUtEaldFU2Q5N05UOVVWUXk4MlRKcHRlRG9wZWdwOTBGSlQwMjNNUU1rYWJ1RVMtMXV1Q0YybkVZLVVIVjhJOXBKR2l1bUsxMXRYRk5oR2NFYlFzZlN"
-    },
-    {
-     "t": "Anthropic regulation money",
-     "d": "Accelerationists are attacking Anthropic's July 22 announcement that it will pour another $20 million into a US political group backing AI regulation, doubling its political bet.",
-     "x": "Anthropic 20 million",
-     "src": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Db2oxbHJlSDhaMmNQREdIZkJVTWtuYmJQSGo3TXhnZFdpVk11U0ZxZXVkeWEycUtOTmZVRTJZVk1qbzdScHFfZzYwQU14MjJCaDA1VXVxcWVSN1FEWkpyS3BYdWpJSXY1Z2tsckNxbTdHWlExOEE?oc=5"
-    },
-    {
-     "t": "SpaceXAI transparency suit",
-     "d": "Transformer reported July 23 that a lawsuit by SpaceXAI, the newly merged Musk AI-and-rocket company, could kill state AI transparency laws.",
-     "x": "SpaceXAI lawsuit",
-     "src": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNTjI2VE93emFKVWxEalZiNXc5N1pDTEk4WFdfeHZpY3VoR2x3ZXBfdnhUcTVMN2hVQzFxdnFDUXRoc2ZIeTktREVtWlpiZ05aVzhWRFNHdUtXN2o5bkRXM0MwRTAzOFhVY0NIRnJXUGNLUTVfUURUWE1seG5QVFVBaHNEa3lYOEJFcVo5cmU5bFpuSngx?oc=5"
-    }
-   ]
-  },
-  "progress": {
-   "name": "progress & abundance movement",
-   "country": "Progress & abundance",
-   "ontology": "Scarcity is a policy choice; the bottleneck is permission, not physics. Build.",
-   "figures": [
-    "@ezraklein",
-    "@DKThomp",
-    "@jasoncrawford",
-    "@IFP_org"
-   ],
-   "tldr": "the bottleneck is permission, not physics",
-   "discussing": [
-    {
-     "t": "Permitting reform push",
-     "d": "The Financial Times reported July 23 that the Iran war has reignited the US energy-permitting reform debate, while Energy Intelligence says lawmakers are taking 'baby steps' toward a bill.",
-     "x": "permitting reform",
-     "src": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQaG5qOGVFa29WTHFjNno1MUxmNXZfVzBOQVVfN0EzaTVWWFBqOE5xTkl3QzZ5NGYxTUR1N2toVW1fZ2FnRVhlTVVLcy1vbXFkbnNYbFhjUmdRUlRkek9NMl9uOVhQVHZxSDBVSjRvQ1BzbXdFMmNiNEFYVUdGdGlvQVZ1Z0o?oc=5"
-    },
-    {
-     "t": "McCormick grid pitch",
-     "d": "Sen. Dave McCormick argued July 23 that permitting reform is the key to powering the economy and strengthening the grid, with Puck profiling his energy 'power play' the day before.",
-     "x": "McCormick permitting",
-     "src": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVlRxQkZjZWQ0dWJpOVJyeW9USGZYVDVkNnBzMEFxZnVTOGZRa1NoVmw3T0F1SkQ1OFpDOExGRWFJVFVxSU9hRzFoRy1idGRpbDJjdm56bHczeDIzRXppT1dmTlBROElHQ0Ixa0JxT0dtQVdlTzJDNmZJZHlsM01vTTRBQWVSclhqcUZvNmJ6SXhBQVZud2JSLUJ5cXNnbUMwa1hFR3pEU01tX3JRbnhlTGMxU0FTRzZaekhIanJhdnU"
-    },
-    {
-     "t": "Ohio permitting resolution",
-     "d": "The Ohio House passed Rep. Lear's resolution on July 26 urging federal permitting reform to accelerate energy infrastructure development.",
-     "x": "Ohio permitting resolution",
-     "src": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOeGt3OXlZOTNKUHhBeGxYN0otYkp1Nm51cVZMMGlZbnlJMzVkNS1DQUg2b09YUzBJc2tsRHNPNGJQMllIUmRBZVFNVzFkZVpCRzFxcUtNVXVUOGtxMjRmYXRsLTR2Z3pBT3FTcE9nOHViMVJJV252dEgweXFpUTdqbWdDSE9BMlhaRmF5czJLd1B4ZnFLNjVkTVlyOWxCaGV6NUtWLS1DT1Njcl9xSVlVT1VPVnhYeWRCamdKdzBPV3l"
-    }
-   ]
-  },
-  "hardtech": {
-   "name": "hard-tech & space frontier",
-   "country": "Hard tech & space",
-   "ontology": "Civilization is downstream of physical capability — atoms over bits. Building real machines fast, at scale, in America is a moral project; multiplanetary life is the terminal goal.",
-   "figures": [
-    "@elonmusk",
-    "@PalmerLuckey",
-    "@johncoogan",
-    "@Andercot"
-   ],
-   "tldr": "factories, rockets, defense — atoms over bits",
-   "discussing": [
-    {
-     "t": "Starship Flight 13",
-     "d": "Starship's thirteenth test flight lifted off from Starbase, Texas at 5:51 p.m. EDT on July 25 on 33 Raptor engines and chalked up a mostly successful flight ending in an intact splashdown.",
-     "x": "Starship Flight 13",
-     "src": "https://spaceflightnow.com/2026/07/25/super-heavy-starship-rocket-chalks-up-mostly-successful-test-flight/"
-    },
-    {
-     "t": "SpaceX stock slump",
-     "d": "SpaceX shares sank toward another all-time low on July 28, with coverage tying the slide to a Super Heavy booster failure on the company's first launch since its IPO.",
-     "x": "SpaceX stock",
-     "src": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQUXg5STNUMnhVbWhTM2dEcEFteENNeml4bEhDd1p4VTFnYXNMaUVSbzJtM3llSTEyVjdXRnZaSXhIdlBQQjRyR0JYekE4U3NMZWZRT2MtUmtzQWxxb1lTYjFhUDFpNGhaSk0tLTQ3STl0SEVHTUJvU3JqdW83NW9XZV9TZDgtaXJSd3V0cmtTeFNGdEg5bnowb0RZbWRyXzNJdFhZUVoyamJVVlJYVmladW9BY1NWZmJ4N3RHMThIeHl"
-    },
-    {
-     "t": "FAA Starship review",
-     "d": "The FAA is weighing a new Starship flight path and emergency landing zones, the San Antonio Express-News reported July 28.",
-     "x": "FAA Starship",
-     "src": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOT0JaalpXUGlPTGR6THQydl9yNk9wakVKdm5yS29TcXdrek5fN3d6R044Ulh6b19QVEJEcnNjMmFOenRnRmF4R2lFQld2Nm91MjcxaVFFQkxRTXpHTDEwTzFscWNJRkFjYW51NUhTUTJzYkstdk5zNUl2V1lzSDZUajhJbGFHMjJNSWdhRlY1NHBNSTg?oc=5"
-    },
-    {
-     "t": "Tesla-SpaceX merger talk",
-     "d": "Musk said on Tesla's July 22 earnings call that he 'can't talk about' a Tesla-SpaceX merger, fueling days of speculation about combining the companies.",
-     "x": "Tesla SpaceX merger",
-     "src": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOYXQ2M1hOT21FaFFTd09GV2tHdjlUWjkwYS1FanVJYUdlcEhEZjRqMjV1NkllcUxsdXE1UlEweXVUcXRXbDNEZk03d1BaV3RQOFRlcWEyT1pXcjZ2TGN1aG5YdU5idVk2ellfQXRyYU4wMHN5c1MwT1JNSTViTW5OUlNTMmVxNXlqSWQ4RkJVVkZUclllb2FjM1RBWElRSlh2ZEtHcWtFZkxkUlkzRXBrX1F6dllQR3pjQkRvZ1FEeXV"
-    }
-   ]
-  },
-  "rationalists": {
-   "name": "rationalists",
-   "country": "Rationalists",
-   "ontology": "Reality is lawful and knowable through Bayesian updating; beliefs should pay rent in anticipated experience, and most catastrophes are epistemic failures first.",
-   "figures": [
-    "Scott Alexander",
-    "@TheZvi",
-    "@robbensinger",
-    "Adrià Garriga-Alonso"
-   ],
-   "tldr": "Bayesian epistemics; AI-risk analysis",
-   "discussing": [
-    {
-     "t": "Hugging Face breach",
-     "d": "A July 27 report says the OpenAI-linked Hugging Face breach has reignited the AI alignment-versus-control debate, with Forbes writing the same day that it exposed a gap in AI safety controls.",
-     "x": "Hugging Face breach",
-     "src": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPNFJpN0ZBRzFJb0h0ZF9VN25IYVF3NldMMEl5ckhITHk2MXhjVXlrY2N1d2xQY3N0QmhBdVZNZHgtcXNwSk91VmlueFFxYUJYLUZTN1lxVC1RdEdzZWFnZnFtTnpEUXpQOHIwOXJ0Q1RLSlFVM001Y1hBQ2hyVFN5R216UElwNTVubXc?oc=5"
-    },
-    {
-     "t": "US-China AI safety",
-     "d": "The Carnegie Endowment published a July 23 analysis of how the US and China could cooperate on AI safety despite strategic rivalry.",
-     "x": "Carnegie AI safety China",
-     "src": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5yQTdZMXV2WXhyZlJuREd1TEhSNnBEX1hnRXdfQ0g4a0NyQ194M1h6dE9EeTVwRkdxQXMyUTVUSjBmS1Vlblg0N2tWclFTQ2JsZmo1SnNiZU81V2dwTnRxQngtcndJR0JybnFTRG1VdUd4bUt1dmZxejJ3ZGdJOU0?oc=5"
-    },
-    {
-     "t": "Musk's five-year claim",
-     "d": "Timeline debates flared after Musk dropped a prediction on July 26 about what AI does to humanity within five years, covered by the New York Post.",
-     "x": "Musk AI prediction",
-     "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQR2w0T2pCcmljT0FKUjMzaHdOMTVwUnlvajNxdmcxSUZRaFdBUkdpUl9zU3pwWWZhX1dGOTdDN200U3J1Z09FYXZLZE9WbjVKbWZreExkaUR2ME9zX1JlWUxTcTNZTENKdHlfSDYwdWdVR2hrQUxnNTdzbTlPQWVHd3NtSGlfdnhMay1Mb1ZCWS1IWkNqcGFhN0E3SnM?oc=5"
-    }
-   ]
-  },
-  "doomers": {
-   "name": "AI-safety doomers",
-   "country": "AI safety / doomers",
-   "ontology": "We are building minds we can't steer, on a timeline set by a race nobody can exit.",
-   "figures": [
-    "@ESYudkowsky",
-    "Nate Soares",
-    "@DKokotajlo",
-    "Holly Elmore"
-   ],
-   "tldr": "minds we can't steer, on a race nobody can exit",
-   "discussing": [
-    {
-     "t": "Anthropic's $20M PAC",
-     "d": "Anthropic said July 22 it will donate another $20 million to a US political group that supports AI regulation, doubling its political spending on the cause.",
-     "x": "Anthropic AI regulation",
-     "src": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPckZ1WTI1MjF0cDQzVWNtXy1PT2tSLW9CTExpWWtkVlhXVDVxVTJsX0tQSXRvTVlHbW01OGRvQVNyM3JBanlCdzd1UVRTcUhlWWFNV0VnWEpRMEt2eXNpTjlyanNZOUhSWGJUT2g3OGZMNHJpaVRNb2hTSEQ3UlhnbFhhaS13VllRWFgxNFRTQkFvbTBPb3JkQXk4cTZLcUdHaWNYRzAyc3Q1OG1wTG44OQ?oc=5"
-    },
-    {
-     "t": "SSI's $5B Nvidia raise",
-     "d": "Ilya Sutskever's Safe Superintelligence raised $5 billion from Nvidia per July 27 reports, gaining access to Nvidia's Vera Rubin chips for its straight-shot superintelligence bet.",
-     "x": "Safe Superintelligence Nvidia",
-     "src": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1PRXRNUXhxclpEelRnQjUzN3liaURDT1VBSURkMFpQTG5ibUwyMVdfS2dNNllVREowSGdsbHhuZ0drMnhYSlFVdFdUT3JZMHR6TndGRGJTeXRvX2FNcnJ3bEE5ZVRWNlU?oc=5"
-    },
-    {
-     "t": "Industry safety alliance",
-     "d": "Nvidia and other industry leaders launched an Open Secure AI Alliance on July 27, and safety researchers are debating what binding commitments, if any, it carries.",
-     "x": "Open Secure AI Alliance",
-     "src": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1jbERSYTYzMDlvaExvNHBYWTZrU2Zfd210S2U0NHAyMDBqWG5DS0hkenZPaUgxVDcxcEtPUUhrbVhObUpvQzV2b0VKSzRjOF9sMW9WdW03ZVhyUC1TaG5XVGdHS3Q?oc=5"
-    }
-   ]
-  },
-  "ea": {
-   "name": "effective altruists",
-   "country": "Effective altruists",
-   "ontology": "All sentient welfare counts equally across space and time; the real currency is counterfactual impact, measured and maximized under moral uncertainty.",
-   "figures": [
-    "@wdmacaskill",
-    "Elie Hassenfeld",
-    "Alexander Berger",
-    "@80000Hours"
-   ],
-   "tldr": "maximize measurable good per dollar",
-   "discussing": [
-    {
-     "t": "Canva founders' $150M",
-     "d": "Canva billionaires Melanie Perkins and Cliff Obrecht committed $150 million to direct cash transfers in Malawi, reported July 26-27 as the world's largest cash transfer program.",
-     "x": "Canva Malawi",
-     "src": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQd3Z3OEhxSFZZQjdmWmdHU1dSc3RDQ1Nhc3h1N0V6VXl4cEFVODNIWmY3WjdEMjNfd1RHUXVnVGNjMHlYU3VOZ3JNU0xsb1dQRDg0R3VrNGpuVERIR1JLNkJORHRHOHhvRzdUV2pBcEJMcE9SNGV3a3lGSWVybmFremNkQjdudmZncDMzYjFadTlhVnhGY1ZuVDNlaGd6bEUtWEVhdnJuNFVjcEp5cXBfWldkQ3BTMWRBbzJGTE1NOXp"
-    },
-    {
-     "t": "HIV funding collapse",
-     "d": "KFF reported July 27 that donor government funding for HIV dropped by $2.1 billion in 2025, framing the fight over US cuts as the AIDS 2026 conference opened in Rio.",
-     "x": "HIV funding drop",
-     "src": "https://news.google.com/rss/articles/CBMiywJBVV95cUxNX0doVEkyeFhjRy1ibFplQVhBUTJ6eGVveUJJZVVMZTJZZ1hvaEhHdHZORlcxbHNmSzNBT3hGWlVqSWlyOS1jNXNfVWhRdmtiNTRtSlZ0V1gyZ2NqXzNnTzRQZUZPRy1nRC1pSi1CazBJYl9YOHhQNTlkMU8xRzFvY21Lc1U2MUZCRFFOalNERmFiLWp5MXBMa0NWUXFmNS1vaUxaYVFvRmNCd1NqRHpMZ2tYeUhQOUpvMFl1N3lRQTJ"
-    },
-    {
-     "t": "AIDS 2026 protests",
-     "d": "Activists disrupted the AIDS 2026 conference on July 28 to protest US HIV funding cuts, as new studies count 1,700 closed sites and 77,000 fewer children on PEPFAR-supported treatment.",
-     "x": "AIDS 2026 PEPFAR",
-     "src": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbUhmZ2ZIQXBSbi1qZy1wQlJaMzBabl9MWWRnajRERGppUnZFOTZ5VWs0XzUwY2FCTUlkRFJwNFQzZTRvR1FZQUE5NVhUcDlCajJ3eWVRTjFtN002akJkY3E2aUtmaTV5VmRwSjBBZlRrVjI0aEFZQXRaVDRqWHVPaXdFWlcwWGh5SkVJQ1I5bGVpZkVDNEpqV3ZkUzNsRTg4S2wyag?oc=5"
-    },
-    {
-     "t": "IPO giving wave",
-     "d": "Philanthropies are courting the new millionaires minted by US blockbuster IPOs and pitching them on giving pledges, the Business Times reported July 26.",
-     "x": "IPO millionaires philanthropy",
-     "src": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNa0VKSWFMcVhHZUljOFVaLVA5LTB2eVZwQ3EzSGY3U2lGYVV4NW8ySkEyWENjalVLZ2F0SkdQLTdjd0NobFVweEpYa2dkLVJfZzVVTHJISGJLanRGRkQwOHNVN2pEMXJZM0UyTkdzd25JRExEekhvaHYxZkxUMkJEVFhqaFkya3VIVUJYN1VqcTJuZlBCb0ltZDJxaXJJMi0zNHhROHZDS2lfNndwWUdDUm0tUjlRVFE5Sjg0R1RkQmZ"
-    }
-   ]
-  },
-  "tpot": {
-   "name": "tpot / post-rationalists",
-   "country": "tpot / post-rationalists",
-   "ontology": "Rationality was a phase; wisdom might not be. Bodies, meaning, sincerity wearing irony as a coat.",
-   "figures": [
-    "@nosilverv",
-    "@vgr",
-    "@QiaochuYuan",
-    "@vibecamp_"
-   ],
-   "tldr": "rationality was a phase; wisdom might not be",
-   "discussing": [
-    {
-     "t": "China AI-companion crackdown",
-     "d": "China's crackdown on AI companion apps is forcing millions of users to abruptly lose their AI partners, reported July 28 as a mass 'breakup' event.",
-     "x": "China AI companion crackdown",
-     "src": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcTJkYjYzNTF4Yjl2NGpCRmdZV0N1bHlkSEpZSXMzbXlWTFdRZmYtRThXakpkS3UwNGlkYmttYW5CWllDVGZVN3VCeWR0U1lyMURPRi16VWtlSjZwRUxuVWZaU200VExaaWw5d3ZlM1VJWnNtYU5fUzlpejdaMzVCS2dhNVpHUDQ5VVhzYmEza05Oek5nUDdkUVNZcVdMdUFHSnRZUw"
-    },
-    {
-     "t": "AI third wheel",
-     "d": "A July 28 piece describes AI chatbots quietly becoming an unofficial 'third' presence inside romantic relationships, echoing ongoing debates about intimacy with machines.",
-     "x": "AI relationships third",
-     "src": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOelljOWFOX2VWZWh3NVNyc2ZFaVExXzcxOHNfRDg1Z2VpNHVGOXRpdVFxdUJ3SEkxVGhhdnY2UF8wd0hjMEdFNktvcFhfVjBtOWo2a1IzaF9rQ0hqdXRiX0pZVW5nb25hZ0U3czlpMWlvU1VOZnpaRjVJLWUzVEEyRHJSdXBfSGRKRUFqZkMyZw"
-    },
-    {
-     "t": "AI companions and kids",
-     "d": "Commentators argued July 27-28 that AI chatbots should be built as tools rather than friends, citing new mental-health worries about teens bonding with companion bots.",
-     "x": "AI companions teens",
-     "src": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQVVEtNTkxLVJfUkVwa2ZTM3BvaXozS2JYLVI4SURoQmtSbWpOMUY1WlN2SDBiMjJ6VUtTOHlsMnlJYmlZQ1lmcV9lajFjaGx4TWxKMzJhYjV4UFk0S3pqb0tQYXYwYmJFX1hzSnFlQTRQTnNRX21QYVpxZVRiVW9vWERHaUJtWVlCUlFRcENEX0podUx2YVlSR1J3"
-    },
-    {
-     "t": "Vibecamp profiled",
-     "d": "Rolling Stone's July 15 feature 'Welcome to Vibecamp, an IRL Gathering for the Terminally Online' put the tpot festival in mainstream view, and the scene is still chewing on it.",
-     "x": "Vibecamp Rolling Stone",
-     "src": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTVF0TnlOVkZHb1p6U01PbHA3dnJoQ0NSdlAwZmtzak40M29FZjlXTmZEelFtWDU4X0RJY3JWSFNISDJRcFpFX21BV1NWVTZNRExnNWt5RWdObDM3eVFaVTFBN3JxTUM2MGthUFNoYnU2UHVwNXJyU1dqMjNTV1Jfb0Z6RjN4djlhb3lkazg1d01BY25JcFBIZWxIWlFGYmZ5X1BQVE9ScDBWMzg4RjdF?oc=5"
-    }
-   ]
-  },
-  "nondual": {
-   "name": "consciousness & psychedelic twitter",
-   "country": "Meditation & psychedelics",
-   "ontology": "The mystery is real, measurable, and schedulable. The clinical trial as pilgrimage route.",
-   "figures": [
-    "@nickcammarata",
-    "@algekalipso",
-    "Jhourney",
-    "Daniel Ingram"
-   ],
-   "tldr": "the mystery is real, measurable, schedulable",
-   "discussing": [
-    {
-     "t": "Lilly buys atai",
-     "d": "Eli Lilly is acquiring psychedelics developer atai-Beckley for $3.8 billion, a deal covered July 21-24 that mints big-pharma money in the psychedelic therapy world.",
-     "x": "Eli Lilly atai Beckley",
-     "src": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOR2ZzcXJOV0w5U0J4RkNxLTNZUTNRRmlkYnlyZG9lWC1mWHlKWGVKelNrczg3WVhnb0ZBOVR5UHRDaXZVMVJiV3JjeTFPcXdzb0lJd1BwMU9wV1JyNks5VHgwbDlLcWNYRkZxdjRKRXFEVV9EUm9tcUpVQXVVUkFfTGRMcDdfd1ZFSHFtQmowQldzYVBqTHVzNE1wcHFlaVl3TVFreUQxMk5SYWxHTXRZVFZTVHowbGFmMUtLZ3BkT0x"
-    },
-    {
-     "t": "House codifies psychedelics EO",
-     "d": "On July 23 the House passed amendments to codify Trump's psychedelics executive order, pushing federal agencies to advance psychedelic therapy research.",
-     "x": "House psychedelics amendments",
-     "src": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPazg5Z0VVWWR2X05GVWZNbGdBVHBSeG9FRGo0Y2xKckZ0cE5xa3dFTUFLOC11LWpsc2pLbHltNjFmU1VuZ0JyVm1MY0JCLVFpR1JOempoZkZDajIzeUpLMWlQWXRTMDFuSURFX3hEZUNIVG9FTC1zZEhfSjM2MDBMOGxTektoem9BWDZYa0RVd1NiaFFTei02TEltQzU0TC04VVZfazkzTEgxWTU4amZsLVRtNXc5TkRSX0FoNTJoRko"
-    },
-    {
-     "t": "Psilocybin brain changes",
-     "d": "A study reported July 24 found a single dose of psilocybin produces measurable brain changes lasting up to 30 days, fueling consciousness-research threads.",
-     "x": "psilocybin single dose brain",
-     "src": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONzFBNVpJQXdyVl9PY0l6VC1QMkp0azUyOFgtbmRLR0ZNR0dOWjRsQmdadnVRVkRodHFvUEtJZEhuZm0ycFhDT2d0TTJJenlPNG13QUNMdjRSZ21NdzUxY1hoZVBlRHRBREpEdHVDVVR2dkw4aDhzM2VDd1lZUXdGaENHTDBWcEF6VW5SUEw1NE1CNkF2cWxiU3NVOGsxODYxa3pMZWpEeUdpQ2M"
-    },
-    {
-     "t": "Let science lead",
-     "d": "Psychology Today argued July 24 that industry and Washington are racing ahead on psychedelics faster than the evidence, a caution echoed across the clinical community.",
-     "x": "psychedelics science lead",
-     "src": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYkQ4eUNBeDZRdXl6Q2tBTlVMOVdFMnFNek5nSkVnUUkyRXBJN08wQ0tWY1RjZC1kVXpsNzdNVHk4MkhDYUhkR2I2UHh3VlZrWjY5WFVMdTlDa0lpbTJ0cE1SRE1ETXNhOUMzU19TdGlTRGNxb2FibnFlbGVpb3o4b1FuOHNFeTRKZFIwa3o5Y3ZKRlFJakYzM0V6WmhCZHNVZVVpMlQwdTVjeVVLdWlnZUp5NGdrU0l3dkhvMUNtOTR"
-    }
-   ]
-  },
-  "btc": {
+  "btcmaxis": {
    "name": "bitcoin maxis",
-   "country": "Bitcoin maxis",
-   "ontology": "Sound money is the base layer of civilization and a moral imperative; Bitcoin is the only credibly neutral monetary substrate — everything else is fiat, noise, or a scam.",
+   "country": "Bitcoin",
+   "tldr": "the only sound money; everything else is noise",
+   "ontology": "Sound money is the base layer of civilization; Bitcoin is the only credibly neutral monetary substrate — everything else on this map is fiat, noise, or a scam.",
    "figures": [
     "@saylor",
     "@adam3us",
-    "Luke Dashjr",
     "@LynAldenContact"
    ],
-   "tldr": "bitcoin is the only sound money",
    "discussing": [
     {
-     "t": "Fed decision selloff",
-     "d": "Bitcoin fell below $64,000 to a 10-day low near $63K on July 28 as traders braced for the Fed rate decision and the Senate shelved the Clarity Act.",
-     "x": "bitcoin Fed Clarity Act",
-     "src": "https://www.coindesk.com/markets/2026/07/28/bitcoin-drops-as-south-korean-stocks-tumble-senate-shelves-crypto-clarity-act"
+     "t": "BTC · #1",
+     "d": "Bitcoin — rank #1, $1.28T market cap, $63,694.",
+     "x": "$BTC",
+     "src": "https://www.coingecko.com/en/coins/bitcoin"
     },
     {
-     "t": "$52K bear target",
-     "d": "A Nansen analyst told CoinDesk on July 27 that bitcoin could slide to $52,000 because fresh demand remains elusive.",
-     "x": "Nansen bitcoin 52k",
-     "src": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOeTVodjdoV0w3NFgzMmxOWjlxNXZYbDJyM1dMTklMZzY2ZjRqNW1xZTVwVEotYnVZSG85ZjRNN2dsTFZqOVpSN2FURXRlQ3hKakhNVG54TlNwaElyZGlMZF9hNVN1QzVZTjRRVk5GOGxYVnp6UzFpc0c5Q2JSNmNlM0dUYnpNcHhJLWczOTEzeXNlX0poMENOR3hqbUV0dkZ6ZVVkRHBFX0dUbzd3Wi04c3BxZm81S25qcDk2S001NEx"
+     "t": "BCH · #23",
+     "d": "Bitcoin Cash — rank #23, $4.3B market cap, $213.00.",
+     "x": "$BCH",
+     "src": "https://www.coingecko.com/en/coins/bitcoin-cash"
     },
     {
-     "t": "Volumes down 75%",
-     "d": "CryptoQuant data published July 28 shows bitcoin trading volumes have collapsed 75% from the late-2024 peak, the lowest since the 2023 bear market.",
-     "x": "bitcoin volume CryptoQuant",
-     "src": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1TZXM0bGttb2s0emlwRDlVa0VmaWY4aXBWY0pSY09ITnQ1SEhocFZ1dmZIN0VqUWNvaW9EZUp4MTZGNC1iZEk0ckc3U2hqcm5STlNRSHNPWnZsenNkQzBTY21RTlR5Mk9QN3FUeVNKOVpVMEI4VHc?oc=5"
-    },
-    {
-     "t": "Miners pivot to AI",
-     "d": "Core Scientific announced a multi-gigawatt AMD AI infrastructure deal on July 28 as it winds down its bitcoin mining operation.",
-     "x": "Core Scientific AMD",
-     "src": "https://www.theblock.co/post/409887/core-scientific-ties-ai-pivot-amd-multi-gigawatt-infrastructure-deal"
+     "t": "LTC · #27",
+     "d": "Litecoin — rank #27, $3.6B market cap, $46.25.",
+     "x": "$LTC",
+     "src": "https://www.coingecko.com/en/coins/litecoin"
     }
    ]
   },
-  "eth": {
-   "name": "ethereum builders",
+  "ethereum": {
+   "name": "ethereum",
    "country": "Ethereum",
-   "ontology": "Reality is programmable coordination; credibly neutral protocols are how humanity scales trust. Progress is real but must be steered — d/acc over both doom and recklessness.",
+   "tldr": "credibly neutral protocols; the world computer",
+   "ontology": "Reality is programmable coordination; credibly neutral protocols are how humanity scales trust. The world computer settles everything else on this map eventually.",
    "figures": [
     "@VitalikButerin",
     "@TimBeiko",
-    "@drakefjustin",
-    "@fundstrat"
+    "@sassal0x"
    ],
-   "tldr": "neutral protocols for global coordination",
    "discussing": [
     {
-     "t": "Morgan Stanley ETFs",
-     "d": "Morgan Stanley debuted Ethereum and Solana ETFs on July 28 with the market's lowest fee plus staking rewards, after its bitcoin fund topped $381 million.",
-     "x": "Morgan Stanley ethereum ETF",
-     "src": "https://www.theblock.co/post/409898/morgan-stanley-debuts-ethereum-solana-etfs-markets-lowest-fee-staking-rewards"
+     "t": "ETH · #2",
+     "d": "Ethereum — rank #2, $230.8B market cap, $1,913.",
+     "x": "$ETH",
+     "src": "https://www.coingecko.com/en/coins/ethereum"
+    }
+   ]
+  },
+  "solana": {
+   "name": "solana",
+   "country": "Solana",
+   "tldr": "one global state machine, as fast as light allows",
+   "ontology": "Speed is the feature and the market is the test; one global state machine, block by 400-millisecond block. Increase bandwidth, reduce latency.",
+   "figures": [
+    "@aeyakovenko",
+    "@rajgokal",
+    "@solana"
+   ],
+   "discussing": [
+    {
+     "t": "SOL · #7",
+     "d": "Solana — rank #7, $43.0B market cap, $73.80.",
+     "x": "$SOL",
+     "src": "https://www.coingecko.com/en/coins/solana"
     },
     {
-     "t": "Lido validator cut",
-     "d": "Lido's upgrade, reported July 28, moves $16.5 billion in ETH to consolidate stakes and cut its validator count by roughly a third.",
-     "x": "Lido validator consolidation",
-     "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9XY0l1VU1SbXFfckd1RUIyaTUyb2xFbFlhRXBTRWIycV9YT3lFNHJnT2MwWFR2RTJOX3gtMEttRUNjckZZNHRTV0l5M2l3QXNnUmdyV3JrNi0yMkl6aFhIa29lMW9xdHFaMzZRWg?oc=5"
+     "t": "JUP · #89",
+     "d": "Jupiter — rank #89, $626M market cap, $0.1885.",
+     "x": "$JUP",
+     "src": "https://www.coingecko.com/en/coins/jupiter-exchange-solana"
+    }
+   ]
+  },
+  "stablecoins": {
+   "name": "the stablecoin economy",
+   "country": "Stablecoins",
+   "tldr": "the dollar won crypto; crypto won the dollar's rails",
+   "ontology": "The dollar won crypto and crypto won the dollar's rails; the stablecoin is the internet's checking account, and regulation is the moat.",
+   "figures": [
+    "Jeremy Allaire",
+    "@paoloardoino",
+    "@ethena_labs"
+   ],
+   "discussing": [
+    {
+     "t": "USDT · #3",
+     "d": "Tether — rank #3, $183.9B market cap, $0.9989.",
+     "x": "$USDT",
+     "src": "https://www.coingecko.com/en/coins/tether"
     },
     {
-     "t": "Staking exit risk",
-     "d": "21Shares flagged on July 28 that Ethereum staking has hit a record high, and that the crowding creates a hidden exit risk.",
-     "x": "ethereum staking record",
-     "src": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1HNXEtQndQeG9kRkVuZ3JkYjdPbWJjMm5RY2gzOF9mTGI5cUQyYTNzbXY4c0tkUG5saTFYZlQzZC13RmF5clNVTmt6ZDRTcng1VGJDZFJiUnoyT1lBbl9WaHR1U0xyMXlqV1RHbmctSzd4Z1M4V0kwc0xKN00?oc=5"
+     "t": "USDC · #5",
+     "d": "USDC — rank #5, $72.4B market cap, $0.9999.",
+     "x": "$USDC",
+     "src": "https://www.coingecko.com/en/coins/usd-coin"
     },
     {
-     "t": "ETH ETF inflows",
-     "d": "Ether ETFs added $96 million as institutions appear to favor ETH over bitcoin, AMBCrypto reported July 28.",
-     "x": "ethereum ETF inflows",
-     "src": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPOWFFSW9Fc1NUemVjRlFEWkFVd0xGQkpzbjNkemtaR2dtS01OeUJpd1FUc1RQaGtXcHFXSnBFV1JUeV9Ib25zdlNDNjJYenNRaDFPV0lqX0taTTJReklITnQ0OUlTLVVva1NNUHB0bnc1T0x0TnVBMGpFXy1MMnNwYndVdjZKTjJ2WnR4WklQdlk?oc=5"
+     "t": "USDS · #12",
+     "d": "USDS — rank #12, $10.0B market cap, $0.9997.",
+     "x": "$USDS",
+     "src": "https://www.coingecko.com/en/coins/usds"
+    },
+    {
+     "t": "DAI · #21",
+     "d": "Dai — rank #21, $4.6B market cap, $0.9998.",
+     "x": "$DAI",
+     "src": "https://www.coingecko.com/en/coins/dai"
+    },
+    {
+     "t": "USD1 · #24",
+     "d": "USD1 — rank #24, $4.1B market cap, $0.9988.",
+     "x": "$USD1",
+     "src": "https://www.coingecko.com/en/coins/usd1-wlfi"
+    },
+    {
+     "t": "USDE · #26",
+     "d": "Ethena USDe — rank #26, $3.9B market cap, $0.9997.",
+     "x": "$USDE",
+     "src": "https://www.coingecko.com/en/coins/ethena-usde"
+    },
+    {
+     "t": "USDG · #28",
+     "d": "Global Dollar — rank #28, $3.3B market cap, $1.00.",
+     "x": "$USDG",
+     "src": "https://www.coingecko.com/en/coins/global-dollar"
+    },
+    {
+     "t": "PYUSD · #34",
+     "d": "PayPal USD — rank #34, $2.7B market cap, $0.9998.",
+     "x": "$PYUSD",
+     "src": "https://www.coingecko.com/en/coins/paypal-usd"
+    },
+    {
+     "t": "RLUSD · #47",
+     "d": "Ripple USD — rank #47, $1.6B market cap, $1.00.",
+     "x": "$RLUSD",
+     "src": "https://www.coingecko.com/en/coins/ripple-usd"
+    },
+    {
+     "t": "USDD · #49",
+     "d": "USDD — rank #49, $1.6B market cap, $0.9988.",
+     "x": "$USDD",
+     "src": "https://www.coingecko.com/en/coins/usdd"
+    },
+    {
+     "t": "USDF · #52",
+     "d": "Falcon USD — rank #52, $1.4B market cap, $0.9946.",
+     "x": "$USDF",
+     "src": "https://www.coingecko.com/en/coins/falcon-finance"
+    },
+    {
+     "t": "BFUSD · #53",
+     "d": "BFUSD — rank #53, $1.3B market cap, $0.9983.",
+     "x": "$BFUSD",
+     "src": "https://www.coingecko.com/en/coins/bfusd"
+    },
+    {
+     "t": "USDGO · #62",
+     "d": "USDGO — rank #62, $1.1B market cap, $1.00.",
+     "x": "$USDGO",
+     "src": "https://www.coingecko.com/en/coins/usdgo"
+    },
+    {
+     "t": "U · #63",
+     "d": "United Stables — rank #63, $1.1B market cap, $1.0000.",
+     "x": "$U",
+     "src": "https://www.coingecko.com/en/coins/united-stables"
+    },
+    {
+     "t": "STABLE · #69",
+     "d": "​​Stable — rank #69, $904M market cap, $0.0363.",
+     "x": "$STABLE",
+     "src": "https://www.coingecko.com/en/coins/stable-2"
+    },
+    {
+     "t": "GHO · #86",
+     "d": "GHO — rank #86, $648M market cap, $0.9989.",
+     "x": "$GHO",
+     "src": "https://www.coingecko.com/en/coins/gho"
+    },
+    {
+     "t": "USD0 · #94",
+     "d": "Usual USD — rank #94, $553M market cap, $0.9995.",
+     "x": "$USD0",
+     "src": "https://www.coingecko.com/en/coins/usual-usd"
+    },
+    {
+     "t": "USX · #97",
+     "d": "USX — rank #97, $523M market cap, $0.9996.",
+     "x": "$USX",
+     "src": "https://www.coingecko.com/en/coins/usx"
+    },
+    {
+     "t": "TUSD · #99",
+     "d": "TrueUSD — rank #99, $492M market cap, $0.9952.",
+     "x": "$TUSD",
+     "src": "https://www.coingecko.com/en/coins/true-usd"
+    }
+   ]
+  },
+  "rwa": {
+   "name": "tokenized tradfi",
+   "country": "Tokenized TradFi",
+   "tldr": "every asset migrates on-chain eventually",
+   "ontology": "Every asset — treasuries, gold, credit, houses — migrates on-chain eventually; the blockchain is the back office of the next financial system.",
+   "figures": [
+    "@OndoFinance",
+    "BlackRock's BUIDL",
+    "the tokenization desks"
+   ],
+   "discussing": [
+    {
+     "t": "FIGR_HELOC · #9",
+     "d": "Figure Heloc — rank #9, $20.6B market cap, $1.00.",
+     "x": "$FIGR_HELOC",
+     "src": "https://www.coingecko.com/en/coins/figure-heloc"
+    },
+    {
+     "t": "RAIN · #13",
+     "d": "Rain — rank #13, $9.5B market cap, $0.0137.",
+     "x": "$RAIN",
+     "src": "https://www.coingecko.com/en/coins/rain"
+    },
+    {
+     "t": "CC · #22",
+     "d": "Canton — rank #22, $4.6B market cap, $0.1173.",
+     "x": "$CC",
+     "src": "https://www.coingecko.com/en/coins/canton-network"
+    },
+    {
+     "t": "USYC · #29",
+     "d": "Circle USYC — rank #29, $3.0B market cap, $1.13.",
+     "x": "$USYC",
+     "src": "https://www.coingecko.com/en/coins/hashnote-usyc"
+    },
+    {
+     "t": "HBAR · #30",
+     "d": "Hedera — rank #30, $3.0B market cap, $0.0680.",
+     "x": "$HBAR",
+     "src": "https://www.coingecko.com/en/coins/hedera-hashgraph"
+    },
+    {
+     "t": "BUIDL · #35",
+     "d": "BlackRock USD Institutional Digital Liquidity Fund — rank #35, $2.6B market cap, $1.00.",
+     "x": "$BUIDL",
+     "src": "https://www.coingecko.com/en/coins/blackrock-usd-institutional-digital-liquidity-fund"
+    },
+    {
+     "t": "XAUT · #37",
+     "d": "Tether Gold — rank #37, $2.5B market cap, $4,014.",
+     "x": "$XAUT",
+     "src": "https://www.coingecko.com/en/coins/tether-gold"
+    },
+    {
+     "t": "USDY · #39",
+     "d": "Ondo US Dollar Yield — rank #39, $2.1B market cap, $1.14.",
+     "x": "$USDY",
+     "src": "https://www.coingecko.com/en/coins/ondo-us-dollar-yield"
+    },
+    {
+     "t": "ONDO · #41",
+     "d": "Ondo — rank #41, $2.0B market cap, $0.4034.",
+     "x": "$ONDO",
+     "src": "https://www.coingecko.com/en/coins/ondo-finance"
+    },
+    {
+     "t": "PAXG · #44",
+     "d": "PAX Gold — rank #44, $1.8B market cap, $4,018.",
+     "x": "$PAXG",
+     "src": "https://www.coingecko.com/en/coins/pax-gold"
+    },
+    {
+     "t": "BCAP · #66",
+     "d": "Blockchain Capital — rank #66, $968M market cap, $106.22.",
+     "x": "$BCAP",
+     "src": "https://www.coingecko.com/en/coins/blockchain-capital"
+    },
+    {
+     "t": "EUTBL · #67",
+     "d": "Spiko EU T-Bills Money Market Fund — rank #67, $952M market cap, $1.20.",
+     "x": "$EUTBL",
+     "src": "https://www.coingecko.com/en/coins/eutbl"
+    },
+    {
+     "t": "EURSAFO · #70",
+     "d": "Spiko Amundi Overnight Swap Fund (EUR) — rank #70, $882M market cap, $1.15.",
+     "x": "$EURSAFO",
+     "src": "https://www.coingecko.com/en/coins/spiko-amundi-overnight-swap-fund-eur"
+    },
+    {
+     "t": "QNT · #71",
+     "d": "Quant — rank #71, $877M market cap, $60.33.",
+     "x": "$QNT",
+     "src": "https://www.coingecko.com/en/coins/quant-network"
+    },
+    {
+     "t": "JTRSY · #72",
+     "d": "Janus Henderson Anemoy Treasury Fund — rank #72, $871M market cap, $1.11.",
+     "x": "$JTRSY",
+     "src": "https://www.coingecko.com/en/coins/janus-henderson-anemoy-treasury-fund"
+    },
+    {
+     "t": "USTB · #74",
+     "d": "Invesco Short Duration US Government Securities Fund — rank #74, $833M market cap, $11.16.",
+     "x": "$USTB",
+     "src": "https://www.coingecko.com/en/coins/superstate-short-duration-us-government-securities-fund-ustb"
+    },
+    {
+     "t": "JAAA · #84",
+     "d": "Janus Henderson Anemoy AAA CLO Fund — rank #84, $687M market cap, $1.04.",
+     "x": "$JAAA",
+     "src": "https://www.coingecko.com/en/coins/janus-henderson-anemoy-aaa-clo-fund"
+    },
+    {
+     "t": "YLDS · #91",
+     "d": "YLDS — rank #91, $612M market cap, $0.9999.",
+     "x": "$YLDS",
+     "src": "https://www.coingecko.com/en/coins/ylds"
+    },
+    {
+     "t": "XDC · #96",
+     "d": "XDC Network — rank #96, $541M market cap, $0.0271.",
+     "x": "$XDC",
+     "src": "https://www.coingecko.com/en/coins/xdce-crowd-sale"
+    }
+   ]
+  },
+  "exchangetokens": {
+   "name": "the exchange empires",
+   "country": "Exchange tokens",
+   "tldr": "the casino always wins; own the house",
+   "ontology": "Flow is the moat and the listing is the favor; whatever the cycle does, the house collects the fee. Own the house.",
+   "figures": [
+    "@cz_binance",
+    "@heyibinance",
+    "the CEX empires"
+   ],
+   "discussing": [
+    {
+     "t": "BNB · #4",
+     "d": "BNB — rank #4, $75.8B market cap, $569.32.",
+     "x": "$BNB",
+     "src": "https://www.coingecko.com/en/coins/binancecoin"
+    },
+    {
+     "t": "LEO · #14",
+     "d": "LEO Token — rank #14, $9.0B market cap, $9.74.",
+     "x": "$LEO",
+     "src": "https://www.coingecko.com/en/coins/leo-token"
+    },
+    {
+     "t": "WBT · #16",
+     "d": "WhiteBIT Coin — rank #16, $6.6B market cap, $55.83.",
+     "x": "$WBT",
+     "src": "https://www.coingecko.com/en/coins/whitebit"
+    },
+    {
+     "t": "CRO · #36",
+     "d": "Cronos — rank #36, $2.6B market cap, $0.0557.",
+     "x": "$CRO",
+     "src": "https://www.coingecko.com/en/coins/crypto-com-chain"
+    },
+    {
+     "t": "OKB · #43",
+     "d": "OKB — rank #43, $1.8B market cap, $86.34.",
+     "x": "$OKB",
+     "src": "https://www.coingecko.com/en/coins/okb"
+    },
+    {
+     "t": "HTX · #48",
+     "d": "HTX DAO — rank #48, $1.6B market cap, $0.0000.",
+     "x": "$HTX",
+     "src": "https://www.coingecko.com/en/coins/htx-dao"
+    },
+    {
+     "t": "BGB · #60",
+     "d": "Bitget Token — rank #60, $1.2B market cap, $1.65.",
+     "x": "$BGB",
+     "src": "https://www.coingecko.com/en/coins/bitget-token"
+    },
+    {
+     "t": "KCS · #68",
+     "d": "KuCoin — rank #68, $917M market cap, $6.69.",
+     "x": "$KCS",
+     "src": "https://www.coingecko.com/en/coins/kucoin-shares"
+    },
+    {
+     "t": "NEXO · #81",
+     "d": "NEXO — rank #81, $731M market cap, $0.7310.",
+     "x": "$NEXO",
+     "src": "https://www.coingecko.com/en/coins/nexo"
+    },
+    {
+     "t": "GT · #83",
+     "d": "Gate — rank #83, $703M market cap, $6.59.",
+     "x": "$GT",
+     "src": "https://www.coingecko.com/en/coins/gatechain-token"
+    }
+   ]
+  },
+  "xrparmy": {
+   "name": "the xrp army",
+   "country": "XRP army",
+   "tldr": "the standard is coming",
+   "ontology": "The banks will settle on our rails and the lawsuit was proof of importance; patience is the strategy and the standard is coming.",
+   "figures": [
+    "@bgarlinghouse",
+    "@Ripple",
+    "the XRP army"
+   ],
+   "discussing": [
+    {
+     "t": "XRP · #6",
+     "d": "XRP — rank #6, $66.1B market cap, $1.06.",
+     "x": "$XRP",
+     "src": "https://www.coingecko.com/en/coins/ripple"
+    },
+    {
+     "t": "XLM · #20",
+     "d": "Stellar — rank #20, $5.9B market cap, $0.1723.",
+     "x": "$XLM",
+     "src": "https://www.coingecko.com/en/coins/stellar"
+    },
+    {
+     "t": "FLR · #95",
+     "d": "Flare — rank #95, $542M market cap, $0.0062.",
+     "x": "$FLR",
+     "src": "https://www.coingecko.com/en/coins/flare-networks"
+    }
+   ]
+  },
+  "oldguard": {
+   "name": "the old guard L1s",
+   "country": "Old guard L1s",
+   "tldr": "the tech was never the problem",
+   "ontology": "The roadmaps were right, the peer review was real, and the market is a popularity contest; the tech was never the problem. Ecosystems outlive cycles.",
+   "figures": [
+    "@IOHK_Charles",
+    "@gavofyork",
+    "@justinsuntron"
+   ],
+   "discussing": [
+    {
+     "t": "TRX · #8",
+     "d": "TRON — rank #8, $30.8B market cap, $0.3242.",
+     "x": "$TRX",
+     "src": "https://www.coingecko.com/en/coins/tron"
+    },
+    {
+     "t": "ADA · #19",
+     "d": "Cardano — rank #19, $5.9B market cap, $0.1583.",
+     "x": "$ADA",
+     "src": "https://www.coingecko.com/en/coins/cardano"
+    },
+    {
+     "t": "AVAX · #31",
+     "d": "Avalanche — rank #31, $2.8B market cap, $6.54.",
+     "x": "$AVAX",
+     "src": "https://www.coingecko.com/en/coins/avalanche-2"
+    },
+    {
+     "t": "DOT · #57",
+     "d": "Polkadot — rank #57, $1.3B market cap, $0.7594.",
+     "x": "$DOT",
+     "src": "https://www.coingecko.com/en/coins/polkadot"
+    },
+    {
+     "t": "ICP · #59",
+     "d": "Internet Computer — rank #59, $1.2B market cap, $2.11.",
+     "x": "$ICP",
+     "src": "https://www.coingecko.com/en/coins/internet-computer"
+    },
+    {
+     "t": "ETC · #64",
+     "d": "Ethereum Classic — rank #64, $1.1B market cap, $6.71.",
+     "x": "$ETC",
+     "src": "https://www.coingecko.com/en/coins/ethereum-classic"
+    },
+    {
+     "t": "ALGO · #82",
+     "d": "Algorand — rank #82, $713M market cap, $0.0795.",
+     "x": "$ALGO",
+     "src": "https://www.coingecko.com/en/coins/algorand"
+    },
+    {
+     "t": "ATOM · #85",
+     "d": "Cosmos Hub — rank #85, $677M market cap, $1.30.",
+     "x": "$ATOM",
+     "src": "https://www.coingecko.com/en/coins/cosmos"
+    },
+    {
+     "t": "FIL · #93",
+     "d": "Filecoin — rank #93, $566M market cap, $0.6998.",
+     "x": "$FIL",
+     "src": "https://www.coingecko.com/en/coins/filecoin"
+    }
+   ]
+  },
+  "privacy": {
+   "name": "privacy coins",
+   "country": "Privacy coins",
+   "tldr": "cash was private; money should be again",
+   "ontology": "Financial privacy is a human right, surveillance is the default, and the only cash left is the kind they cannot see. The original cypherpunk errand.",
+   "figures": [
+    "the Monero community",
+    "@zooko",
+    "the cypherpunks"
+   ],
+   "discussing": [
+    {
+     "t": "ZEC · #15",
+     "d": "Zcash — rank #15, $7.9B market cap, $468.98.",
+     "x": "$ZEC",
+     "src": "https://www.coingecko.com/en/coins/zcash"
+    },
+    {
+     "t": "XMR · #17",
+     "d": "Monero — rank #17, $6.4B market cap, $338.96.",
+     "x": "$XMR",
+     "src": "https://www.coingecko.com/en/coins/monero"
+    },
+    {
+     "t": "BDX · #87",
+     "d": "Beldex — rank #87, $643M market cap, $0.0817.",
+     "x": "$BDX",
+     "src": "https://www.coingecko.com/en/coins/beldex"
+    }
+   ]
+  },
+  "l2s": {
+   "name": "the L2 archipelago",
+   "country": "L2s / rollups",
+   "tldr": "scale ethereum, inherit its security",
+   "ontology": "Blockspace scales in layers: inherit Ethereum's security, compress the cost, and the rollup becomes the city where people actually live.",
+   "figures": [
+    "@arbitrum",
+    "@Optimism",
+    "@0xMantle"
+   ],
+   "discussing": [
+    {
+     "t": "MNT · #56",
+     "d": "Mantle — rank #56, $1.3B market cap, $0.3978.",
+     "x": "$MNT",
+     "src": "https://www.coingecko.com/en/coins/mantle"
+    },
+    {
+     "t": "POL · #77",
+     "d": "POL (ex-MATIC) — rank #77, $771M market cap, $0.0722.",
+     "x": "$POL",
+     "src": "https://www.coingecko.com/en/coins/polygon-ecosystem-token"
+    },
+    {
+     "t": "ARB · #98",
+     "d": "Arbitrum — rank #98, $518M market cap, $0.0783.",
+     "x": "$ARB",
+     "src": "https://www.coingecko.com/en/coins/arbitrum"
+    }
+   ]
+  },
+  "linkmarines": {
+   "name": "the link marines",
+   "country": "Link marines",
+   "tldr": "the oracle is the truth layer",
+   "ontology": "Smart contracts are blind without oracles; whoever feeds the chain the world's data is the truth layer of everything built on it.",
+   "figures": [
+    "@SergeyNazarov",
+    "@chainlink",
+    "the Link Marines"
+   ],
+   "discussing": [
+    {
+     "t": "LINK · #18",
+     "d": "Chainlink — rank #18, $6.2B market cap, $8.34.",
+     "x": "$LINK",
+     "src": "https://www.coingecko.com/en/coins/chainlink"
+    }
+   ]
+  },
+  "newl1s": {
+   "name": "the new L1 frontier",
+   "country": "New L1s",
+   "tldr": "the next chain will be the fast one",
+   "ontology": "Every cycle mints a new fastest chain and a new believer class; throughput is destiny and migration is always one killer app away.",
+   "figures": [
+    "@SuiNetwork",
+    "@Aptos",
+    "the Pi pioneers"
+   ],
+   "discussing": [
+    {
+     "t": "GRAM · #25",
+     "d": "Gram (prev. Toncoin) — rank #25, $4.0B market cap, $1.46.",
+     "x": "$GRAM",
+     "src": "https://www.coingecko.com/en/coins/the-open-network"
+    },
+    {
+     "t": "SUI · #32",
+     "d": "Sui — rank #32, $2.8B market cap, $0.6892.",
+     "x": "$SUI",
+     "src": "https://www.coingecko.com/en/coins/sui"
+    },
+    {
+     "t": "PI · #73",
+     "d": "Pi Network — rank #73, $837M market cap, $0.0765.",
+     "x": "$PI",
+     "src": "https://www.coingecko.com/en/coins/pi-network"
+    },
+    {
+     "t": "KAS · #79",
+     "d": "Kaspa — rank #79, $765M market cap, $0.0278.",
+     "x": "$KAS",
+     "src": "https://www.coingecko.com/en/coins/kaspa"
+    },
+    {
+     "t": "APT · #100",
+     "d": "Aptos — rank #100, $492M market cap, $0.5829.",
+     "x": "$APT",
+     "src": "https://www.coingecko.com/en/coins/aptos"
+    }
+   ]
+  },
+  "aicoins": {
+   "name": "the AI coins",
+   "country": "AI coins",
+   "tldr": "decentralize the machine intelligence",
+   "ontology": "Intelligence is becoming the world's largest market and it must not be owned by five companies; tokens are how compute, models, and identity stay open.",
+   "figures": [
+    "@opentensor",
+    "@rendernetwork",
+    "@worldcoin"
+   ],
+   "discussing": [
+    {
+     "t": "NEAR · #40",
+     "d": "NEAR Protocol — rank #40, $2.1B market cap, $1.64.",
+     "x": "$NEAR",
+     "src": "https://www.coingecko.com/en/coins/near"
+    },
+    {
+     "t": "TAO · #42",
+     "d": "Bittensor — rank #42, $1.8B market cap, $191.58.",
+     "x": "$TAO",
+     "src": "https://www.coingecko.com/en/coins/bittensor"
+    },
+    {
+     "t": "WLD · #61",
+     "d": "Worldcoin — rank #61, $1.1B market cap, $0.3192.",
+     "x": "$WLD",
+     "src": "https://www.coingecko.com/en/coins/worldcoin-wld"
+    },
+    {
+     "t": "BEAT · #65",
+     "d": "Audiera — rank #65, $985M market cap, $3.18.",
+     "x": "$BEAT",
+     "src": "https://www.coingecko.com/en/coins/audiera"
+    },
+    {
+     "t": "RENDER · #80",
+     "d": "Render — rank #80, $738M market cap, $1.42.",
+     "x": "$RENDER",
+     "src": "https://www.coingecko.com/en/coins/render-token"
+    },
+    {
+     "t": "VVV · #90",
+     "d": "Venice Token — rank #90, $621M market cap, $13.14.",
+     "x": "$VVV",
+     "src": "https://www.coingecko.com/en/coins/venice-token"
     }
    ]
   },
   "defi": {
-   "name": "DeFi & stablecoin builders",
-   "country": "DeFi & stablecoins",
-   "ontology": "Finance is being rebuilt as open programmable infrastructure; stablecoins are the internet's money layer and regulation is the moat, not the enemy.",
+   "name": "defi",
+   "country": "DeFi",
+   "tldr": "finance without permission",
+   "ontology": "Finance is being rebuilt as open programmable infrastructure; lending, trading, and yield without permission — the protocols outlive their founders.",
    "figures": [
-    "Jeremy Allaire",
-    "@paoloardoino",
-    "@StaniKulechov",
-    "@jchervinsky"
-   ],
-   "tldr": "rebuild finance on open rails",
-   "discussing": [
-    {
-     "t": "Stablecoin shrinkage",
-     "d": "The stablecoin market lost $10 billion in a month while USDC overtook USDT in transaction activity, per July 28 reporting.",
-     "x": "stablecoin supply USDC USDT",
-     "src": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOY0ZDWHQzVlcwTUJYOHBvU3d5dGRUaUk0QXN6bnNGbVhZQ2k5VzJyYno1dVNfcFVSYmlZOWpfcGN6SEdOdTB0cV9xWG9oRDJSM0JTalZUZ3FINGxhbHFJalhjTWNiTTdGaC0wbjhtY3ZLbERIWFNZQWVpZ0tPQXRaMjEwSVRjeVRRMVJEek9R"
-    },
-    {
-     "t": "1inch Aqua launch",
-     "d": "1inch publicly launched Aqua on July 28, a shared liquidity layer for DeFi that spans 13 chains.",
-     "x": "1inch Aqua",
-     "src": "https://www.theblock.co/post/409866/1inch-launches-aqua-publicly-a-shared-liquidity-layer-for-defi-across-13-chains"
-    },
-    {
-     "t": "Visa stablecoin bet",
-     "d": "Visa is cutting 2,600 tech jobs to fund its stablecoin and B2B payments growth, PYMNTS reported July 28.",
-     "x": "Visa stablecoin jobs",
-     "src": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNG1FaE5iWVQyQkV1MlBQRDNpTmVmZFpvVmx2R3hIWmVHclFsR3EtenI0QXNFT01qV2JldGswcFpPM2dGQjUzc243Ny11YzcydGpXTnB1ZndJOW92WTJoMjd5OUhxTmVHVnh4UWF2c2VEZ2lFM2drSjFMd2cxQzBZY1VneWJneXhrbDdCWC1Jb08zNDdxaUMw"
-    },
-    {
-     "t": "Triple-A theft",
-     "d": "Stablecoin payments firm Triple-A suffered an $11.8 million theft of assets, PYMNTS reported July 27.",
-     "x": "Triple-A stablecoin theft",
-     "src": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMF9WT2oyaFRoRDRQU1lJVERpR3lVN3BkbGY1VE1iTEJoYkRmRzhFZ3VCb3Y2N3dLSGJKNVdYMnBhYUpMQnhQanlLeE9nSU52c2xYQ010RFE1c0lGN0NTNGphbFlOOUEtZ1BJVnlCWUNseWFfQXdtNmpKWHFpaE0wTkk4VExOd2phRlIwSHRkZExhd21WUWFJbE51dy1GaHgzRzJQY2hOZw"
-    }
-   ]
-  },
-  "degens": {
-   "name": "degens & memecoin culture",
-   "country": "Degens / memecoins",
-   "ontology": "Attention is the only real asset and price is the only truth; everything is musical chairs and the sin is not playing but exiting late. Nihilism worn as comedy.",
-   "figures": [
-    "@blknoiz06",
-    "@cobie",
-    "@a1lon9",
-    "@chameleon_jeff"
-   ],
-   "tldr": "everything is a casino; ape accordingly",
-   "discussing": [
-    {
-     "t": "Pump.fun BOOST surge",
-     "d": "PUMP jumped 15% around July 27-28 after pump.fun rolled out BOOST Mode and posted strong revenue.",
-     "x": "pump.fun BOOST",
-     "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51YnBub0JqekpLNGk5Mk1aRDRKQ1lTa3BUSzU0VXNpMWZsSlRTQVVTSFZpaXV4T2g4Ui1hWXlORVlwZXlFQkpNVy1YcG1IZllzbFVxTGh6UVZVbV8xdW90WTJGZ2FhN3phNFJtRTR3ZU4"
-    },
-    {
-     "t": "Tenev account hack",
-     "d": "Robinhood CEO Vlad Tenev's X account was hacked on July 23 to promote a fake token amid the memecoin frenzy on Robinhood Chain.",
-     "x": "Vlad Tenev hacked",
-     "src": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNSFFsWXJNN3pXVGpXNnM4dFJoNWppZ2RhTkpPd2p5M05Da1JkOGdIb0VtZlhOd3RyM0dNMjVicWpGM3RaQ3ozVWJWb3FnVTN1bUlXMWZGMzE1clVlUVM0Z2t2SjVfdUxwbmNFa1lnUnpoV3ZudHk3blZGY28yOVVYNTZCWFFLOTNZd0p0SGlJbzRaV0ZkMldxUENta3A4ZnA2MWVEZ1h1QnJRVG1ZelZTS0xyVXZPVlNEU29mTTcyRi1"
-    },
-    {
-     "t": "Launchpad race",
-     "d": "Memecoin.Fun raised $3.5 million on July 24 as the race to build memecoin launchpads on Robinhood Chain grows.",
-     "x": "Memecoin.Fun Robinhood Chain",
-     "src": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5Pb2ZaRkVpRml5OEV2RW52YzhfYS0wTnhSazhlb0ZQaFQxOHNIel9HS0Y2XzhFQzFONzNDNC1oQWdLVUJtbDhvQ29DakRUM3RsWXZOOFlmakwwUW8wazdJXzZzZHJtMGh2YjUwWnNqRjJQU2kyM2pzclZpTE5wckU"
-    },
-    {
-     "t": "Witkoff memecoin gaffe",
-     "d": "Fortune reported July 27 that a VC declined to join the Trump family's crypto firm after a cofounder could not pronounce the word 'memecoin'.",
-     "x": "Witkoff memecoin",
-     "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNQVZ1eGZKM2tpN19fS3pDZ1Bud3NQcW1LZG9Ra0dHMFhwLV85R3dGeDBiMldUWGU4Sm5WcTlwX3BYOC1MWXNqbF82dXZpZk9QSXA0ZlU3VmJ0VXFfZjlVYldCTDBKVkMwN1c4V1duSElsVGZxWFFwSVNhdFJxZmM0RFowX2QzbTVadEtyZmwtT1F5RDVXOENxa2hhaDM"
-    }
-   ]
-  },
-  "regens": {
-   "name": "regens & solarpunks",
-   "country": "Regens / solarpunk",
-   "ontology": "The future is green, built, and beautiful — collapse is a failure of imagination. Degrowth's optimistic cousin across the water.",
-   "figures": [
-    "@owocki",
-    "@glenweyl",
-    "@ReFiDAO",
-    "@MaEarthMedia"
-   ],
-   "tldr": "the future is green, built, and beautiful",
-   "discussing": [
-    {
-     "t": "GG24 deep funding",
-     "d": "Model submissions for Gitcoin's GG24 Deep Funding round are the governance forum's most-viewed active thread at roughly 2,400 views, as teams pitch allocation models.",
-     "x": "GG24 deep funding",
-     "src": "https://gov.gitcoin.co/t/model-submissions-gg24-deep-funding/25151"
-    },
-    {
-     "t": "Transition stewards",
-     "d": "Gitcoin is standing up a transitionary stewards cohort tied to trust graphs, with notes from the first stewards meeting posted July 24.",
-     "x": "Gitcoin stewards trust graph",
-     "src": "https://gov.gitcoin.co/t/transition-stewards-meeting-1-notes/25349"
-    },
-    {
-     "t": "RPGF explainer",
-     "d": "A July 27 FinanceFeeds piece on retroactive public goods funding breaks down how RPGF rounds pay builders, keeping the mechanism in mainstream view.",
-     "x": "retroactive public goods funding",
-     "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5KT2JraGdnSE5yOWV5N19JNm10MF9CcHVnZ3hudkVacUU0MWM4V05FT0F4cTdVcy1FRDFlWllfNW14ZTZaMFU3SWVZMkdIcm5RYVJPaFRHaVpZMzVidmtvc2ZNNmpLeTNOV1JvVVpGQnFnaTViRTI3Yjczaw?oc=5"
-    }
-   ]
-  },
-  "degrowth": {
-   "name": "degrowthers & climate realists",
-   "country": "Degrowth / climate left",
-   "ontology": "Infinite growth on a finite planet is the cancer cell's ontology; live well within limits.",
-   "figures": [
-    "@jasonhickel",
-    "Kohei Saito",
-    "@GretaThunberg",
-    "@rahmstorf"
-   ],
-   "tldr": "live well within limits",
-   "discussing": [
-    {
-     "t": "Trump on AI power",
-     "d": "As backlash grew, Trump said July 23 that AI firms should pay more for the electricity their data centers consume, per the New York Times.",
-     "x": "Trump AI electricity pay",
-     "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5PNVJpMVZ0VVVCdjRTVlhVdlh3dG5wcE16TFc5ZTBYUGdrUG5nbm5jTDc3OFJ6cUhPMnJzcGdmSFJDUDhKeU9fQ0RBVHo4ejdvcmFlYnY4Vkdvd3FWUVZrb1RoWXhZNnpiT2JGLTk0cnZ1b25qNXVOSA?oc=5"
-    },
-    {
-     "t": "Ohio data-center revolt",
-     "d": "Bloomberg and Crain's reported July 27 that backlash over data centers and power costs is testing the GOP's hold on Ohio.",
-     "x": "Ohio data center backlash",
-     "src": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcG54dGRiR2o2YUpCREtGR29UektRaGN0eE9VYnNCSDNwd3o2Y21ROWc1WFdZbXFQcWVSQjlZYVQwMGdNVlBHSUp2QzVseVNhN1ZQVUducGNnb1hicUVwS2w2UDhQYnd2dVhFb3Nobm9VQkxLX2NYaGJsOURfY3hENVd1cTJRQnlwcHF3NTAxSTdoWUhHSDRUVlU3RFFxUDhPRUJscWxZbE1YSFo5R2FhbzVmWko?oc=5"
-    },
-    {
-     "t": "Democrats seize backlash",
-     "d": "PBS reported July 24 that Democrats are seizing on rural anger over AI data centers that is dividing Republicans in places like Texas.",
-     "x": "Democrats data center Texas",
-     "src": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOOUJlR05hQnJIbGJPTzFRbnhOZDVicVllM0IyZUlrcGE2Z3JRX29TdnJleEtOWWF6QjlYUUM3ZXpraTR0NUFTTG54QW1Gb3FZanhjTGU5OU5pbUJWcWFwTU8yeUxXUjdNdVhjaFhleTdnSEhfaUZvNnJBcGFtTDdJX3kyT3pSTlFsVmZOMktWa2oxVnNnQm92R0R6TVhBQXV0QkhZZlVKeVYwaTIxbS14cDBYdXpIUlExQVpCT1lCbFd"
-    },
-    {
-     "t": "Thunberg London rally",
-     "d": "Greta Thunberg joined a London rally July 27 in solidarity with protesting Indian students, per AP and Al Jazeera.",
-     "x": "Thunberg London protest",
-     "src": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOdzNZYURnbmZNVlBJNm5uZDZlRkU0dFV4QTI1SzF2Zm1lMzF2N09naloxZjF3eGxLaTBacTFzRFZmTHNDTmM4TkFDNGJJSFlBNzRYZVpnRENJYTlUQ251SGNiZFdMS241dktoeGl6eVZPX1p6eGZwNWhPbk1DZFpHMEItcXlzdEJ5ZHhUZ3gxMW5YSV9qbllWMUhleW11LUNfc0RKdkRHclFLTFBOVHotTWg3c1pYQWRZN2NHMnE5VjQ"
-    }
-   ]
-  },
-  "longevity": {
-   "name": "longevity & biohackers",
-   "country": "Longevity / biohackers",
-   "ontology": "Death is a technical problem with a research budget. Don't die until you can't die.",
-   "figures": [
-    "@bryan_johnson",
-    "@mkaeberlein",
-    "@PeterAttiaMD",
-    "Joe Betts-Lacroix"
-   ],
-   "tldr": "don't die until you can't die",
-   "discussing": [
-    {
-     "t": "Bryan Johnson clone",
-     "d": "Bryan Johnson said around July 23-26 that he 'cloned himself as a newborn' to grow organs for future transplantation, triggering ethics backlash across Fox News, Futurism, and The Independent.",
-     "x": "Bryan Johnson clone organs",
-     "src": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1CZkczTGRzNTRmeUluZmNvSk95RUJCZ0tPeHByWFU4SkhTcUk2UWY2VjNGbkp6bUl3SnZXZnVuRkJaYkVXWU92NTQ4LUhFYWNENXZNUTBud1hGQ2NtTEhadThqYm1rRVF3aFNORk5RaGluanM1UUJTWGdB?oc=5"
-    },
-    {
-     "t": "GLP-1s slow aging",
-     "d": "A UC San Diego study reported July 26 suggests GLP-1 weight-loss drugs may slow the aging process, reviving the 'first longevity drug' debate.",
-     "x": "GLP-1 slow aging study",
-     "src": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNT25qdlNNNFg4OXdORzNRSi03Um5YQjdsTGd6QWpnaGF1eGNPSHdrcXNkRTFFRlNpWEI0Sk1QSGowMFhFNlNsUFNFaF9xQWpqOWNRd2JsLVNWc281U3pfTjUzY1NyemZvWS04dUE0QzZZUjh5MkRqNWFvQzNKUkw2UzFPYnNudlM3RnJJQnZWUTJOMDgxdmptZ3BXLXBGZUhBRzAtYXFtVlQ?oc=5"
-    },
-    {
-     "t": "Rapamycin reality check",
-     "d": "A July 23 explainer, 'Rapamycin: Where Science Ends and the Promises Begin,' pushed back on off-label rapamycin hype in the longevity crowd.",
-     "x": "rapamycin longevity evidence",
-     "src": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVHpxbWE0cmk4bWYzOERCWUl5dWdqVDNuS1VCeTBVVmhLRWd4QW9fVmZHNW5Jbzl6bjFOYTZ4Vjd2N1J4bUZqanNvOTBKMHAzS1lMOWljamhtcW9wU3NSVmNJb01BSjNDRW9EOWpnUS1IOUlBazB0Vm55dmdlWHBFX091QQ?oc=5"
-    }
-   ]
-  },
-  "maha": {
-   "name": "MAHA & health freedom",
-   "country": "MAHA / health freedom",
-   "ontology": "Heal the body first — the food, the medicine, the light — and the body politic follows.",
-   "figures": [
-    "@RobertKennedyJr",
-    "Casey Means",
-    "@CalleyMeans",
-    "@foodbabe"
-   ],
-   "tldr": "heal the body; the body politic follows",
-   "discussing": [
-    {
-     "t": "Trump pressures RFK",
-     "d": "The Wall Street Journal reported July 28 that Trump is pressuring RFK Jr. to cut childhood vaccination programs, with tensions centered on autism claims.",
-     "x": "Trump RFK vaccines",
-     "src": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOGxaZDRzX1ZjcHBCaWtUaHdtUXNvYkhlNHZCeFBrcGpLdXFkcVRLdWJwU2ZVMllocVB4aDVQVDZXNEZMV0VzY2dpSTJnd2o5bkNubzFXT0M1VWlBLWJoNjhtUEhrNFl2VWNsclFLRGpFWXlrWnBicGlCVDdCdUJocWRRSGg?oc=5"
-    },
-    {
-     "t": "Measles 35-year high",
-     "d": "Reuters reported July 24-25 that US measles cases have hit their highest level in more than three decades amid falling vaccination rates.",
-     "x": "measles 35 year high",
-     "src": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQcHdqbzdCMnJfOG0yWmRCSk9feW9sVk13d1ByOVl3c3FCQjdSWkxiNGRlZG15V2c5RmdBMmdTZDVOSGJmTVNjZEVnUUxLZ2pWTGlRaGRVUENvVFpkbTQzRmhhZHFkRnRDaTBNM0F0UG1HYldnNmhnUXFqbHJIOFZBYW1nODBNZjFqZWVyeTRDcUU1eU5KVXZ6Z0xtbHI0dWVEekVjc2hxbm5temdZZVNFWENIa0tnc3lvcjRXckpMUQ?"
-    },
-    {
-     "t": "Vaccine panel lawsuit",
-     "d": "Bloomberg Law reported July 23 a temporary reprieve in litigation challenging RFK Jr.'s overhaul of the federal vaccine advisory panel.",
-     "x": "ACIP vaccine panel lawsuit",
-     "src": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSkZpalI0NHBQOElYakFhaFJqR3VZcXprT1lsQmJuMENpd3oyVl96T1BmUk05b3RJbGU0bnlmVGZ6c0U1MENqdVJacnZ6NVRrTmxoQVRPOTlMN1QxYmR6VTdSbnJoeHhZVnpFSGdaVUQ1VkZDQUlIS1pPem5VekdYOUZ3WXFyYkg1M0FTWE01UWFvZS1ueWxyUERGcElTdG5hOFlsVw?oc=5"
-    }
-   ]
-  },
-  "nrx": {
-   "name": "neoreaction & the new right",
-   "country": "Neoreaction / new right",
-   "ontology": "Democracy is a failed god; competence is monarchical. Retire the regime, run the state like a firm.",
-   "figures": [
-    "Curtis Yarvin",
-    "@ConceptualJames",
-    "BAP",
-    "@j_fishback"
-   ],
-   "tldr": "democracy is a failed god; competence is monarchical",
-   "discussing": [
-    {
-     "t": "Nerd Reich debate",
-     "d": "The San Francisco Standard published 'The Nerd Reich' on July 28, asking whether Silicon Valley billionaires are building a new fascist world order, reigniting the Yarvin-adjacent discourse.",
-     "x": "Nerd Reich Silicon Valley",
-     "src": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1LZ3Yzcl9CbWtDUlllaE8tSldxXy1NOHprSTJScDFMcjNIYU1xWHM2WXJrTWwtZE1CNndHVGI0QmJqNXhZeEtqSjl4bGxOSzQ3aml3TC1QOG83N1BlS3JCTFhLRWlkbnZkOWE0RGNlOW1VdHNyU1NzX0lhcGhYQQ?oc=5"
-    },
-    {
-     "t": "Britannica canonizes NRx",
-     "d": "Encyclopedia Britannica published a 'Dark Enlightenment' entry on July 24, formally cataloging Curtis Yarvin's neoreactionary movement as a defined ideology.",
-     "x": "Dark Enlightenment Britannica",
-     "src": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBkeko1ek05cUw0RWt4VmxOUlc0Q1NMdkZEX0NNeWhOYTRyZ1ppMk5fSm1DM2drb2wzQ3YxUFp0MjluRlkwNmV3X1VGVE1EZzBzVXd5Nld6QjB4d1Zoc3V6VA?oc=5"
-    },
-    {
-     "t": "New Monarchs op-ed",
-     "d": "A July 24 Eurasia Review op-ed, 'The New Monarchs: Catastrophe As Opportunity,' attacked the tech-right's monarchist turn, feeding regime-critique threads.",
-     "x": "new monarchs tech right",
-     "src": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZWg3SG5SU19hWjZWM1NER1FaRm4wVFBWc0J1WHFkRlhOWXl4WVZqdkFiNFRhekRjQWVHWEtBY0YxS3B1dnJZSTAxTF9EZUNWWVVjNjRLcnc0akVBdVktRm1jY251dm96M01uSDN3NmhaNUwyVThkdDlFN0Q1WHB0UTNqYThmMGpZYmJNZlVFNGdiQQ?oc=5"
-    }
-   ]
-  },
-  "netstate": {
-   "name": "network-state builders",
-   "country": "Network states",
-   "ontology": "Don't fix the country — fork it. Citizenship as a subscription, governance as a product.",
-   "figures": [
-    "@balajis",
-    "Dryden Brown",
-    "@patrissimo",
-    "Edge City"
-   ],
-   "tldr": "don't fix the country — fork it",
-   "discussing": [
-    {
-     "t": "Network School revoked",
-     "d": "Malaysia revoked the licence of Balaji Srinivasan's Network School in Forest City on July 21 after a government probe into the tech commune, Reuters reported.",
-     "x": "Balaji Network School Malaysia",
-     "src": "https://news.google.com/rss/articles/CBMizwFBVV95cUxObkZtOGhUVU5BME03Z19IamV6c0c4cy1MOVhPclZaNDVCUW13MkVOam5QV1hIbWtvVE1QN29hWk5XZVRNN1NRQ0RJVnZWRlI3ckdseHVRRTJpeHhPNGFiZm1CQ0stYmpfRElGWlA1bV85bm1kMHlubElwTGxUSmlUNGRaZ0xSaU5SNFYzYXVRWWFBd1JNVV9rNllzdzVwTmxUNVpJdndnMXdNNklHOHdrSGt6d01sdFRrWDl4YVVwM0p"
-    },
-    {
-     "t": "Kazakhstan pivot",
-     "d": "Booted from Malaysia, Srinivasan found a new patron for his nomad commune in Kazakhstan, Fortune reported July 22.",
-     "x": "Balaji Kazakhstan",
-     "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxQbjBBcDd3ZHpBYXFUSl9HMXVvVnowUGN4QnNERjdNQkVSeFV6RlZLNE1mbU52N3BUQi0yRkZCVWJiTXMxWTB5XzlQVEU2a1JYTFNCRW4tdWhtaW9oV2NwTHlGb0V6Nmd2bXhyVUl2cXRESnpQdG1JZ1hJOG9OZnh0YW1BR1A5Nk8yVGZ5MXJwc04ybDJ5SHNCalp0SVYwQQ"
-    },
-    {
-     "t": "Prospera documentary",
-     "d": "Channel 4 published a July 24 report from inside Prospera, the Caribbean 'tech utopia' startup city in Honduras.",
-     "x": "Prospera Honduras",
-     "src": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZ0lpUVZVTThTSGE1algyWGxqMnlwOXlXeEV4VFp1bzRlRzB0d1FsOURrLU1sN2liUlU4WXRMX1lvWGstM1lfVlRDVFQ4dkRGbkREdXdOQU1mUWE2RHJGaFdXelp0cWMwanNpb1A1YXZUX2F0X1NzY293VHlvR3hZeW4zVjZ6S001akVjWlVVa21wVlpHQXBpRQ?oc=5"
-    }
-   ]
-  },
-  "indie": {
-   "name": "indie hackers",
-   "country": "Indie hackers",
-   "ontology": "Leverage is now individually held — one person plus models can occupy niches that needed a company. Revenue is the only real validation; institutions are optional overhead.",
-   "figures": [
-    "@levelsio",
-    "@dannypostmaa",
-    "@arvidkahl",
-    "@csallen"
-   ],
-   "tldr": "one person + AI = a whole company",
-   "discussing": [
-    {
-     "t": "App Store flood",
-     "d": "TweakTown reported July 25 that vibe coding is flooding Apple's App Store, putting 2026 on track for record app submissions.",
-     "x": "vibe coding App Store",
-     "src": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPSXFJYmszOHZheDRpRmVKRzVxRUlsSXpvS1lzOHpNRGo5RmxIWFV5aFdzZzk5WjFEelF5ekJVTnVvYVZwMGdmeDhTYTZWOUdWcm1ldDJTQXpmWHRLYWlJNFR1WkRxR0FTU0UwOHZ6SEtNN3ZHeS12SFd1elpYSU1sYVhxN0lLS29rZ3JORGJFaEFUYTZzVlJ4bk5sZm13b2FqRFpZUE5VZllQek5nYmZ5dE84eWI2TXBoYlBzVzhlbTR"
-    },
-    {
-     "t": "Vibe-coded security holes",
-     "d": "SecurityWeek reported July 22 that vibe-coded apps are riddled with exploitable security flaws, sharpening the quality debate around AI-built products.",
-     "x": "vibe coded security flaws",
-     "src": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQd3lrTm1GTUJmQ3RWQWl4eXlnMUViTHVZRUdXckp2VGxVTkp0TmFRRG83Z080d19zektOTldSOWJVNmYtQ05ZYTBGRDdNLXg3bGRESGFXalhBcGxsYVY0eFgzVkNTd19DYlM4TlJnb0RYd1gzbnBJYTYwd0dYdU5GMGxGcTcxUHFCcFlOajNB0gGTAUFVX3lxTE5UTHFram1mazBYRlVmMWVOa0ZyOEltUHRhUFNMeWZhXzc2bzB2VUh"
-    },
-    {
-     "t": "imagi raises $4.5M",
-     "d": "Edtech startup imagi raised a $4.5M seed round backed by OpenAI and Lovable execs to teach students vibe coding, TechCrunch reported July 23.",
-     "x": "imagi seed Lovable",
-     "src": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVmxmT3RseXJSajJ0VkpiT1ZLbjgtNVBFSV9BbkFudGlfNmN5Mk9VelBZUmpiMHdvWms5c2VBT2N0VlRoM3NkSGQ4NnJMYzdQSGpkdlhCeWdzU3NoVGR0UE9DUnB0djlGc0RGd1ZiNHAxSEY3Q2dQYUJHQ3c2TEFpY3dKUVc2THdnQWhMQkFZM3Y5NjZVNkloaUhPX3p1OTBBek4yTQ"
-    },
-    {
-     "t": "Who gets to found",
-     "d": "Forbes argued July 23 that vibe coding is rewriting who gets to start a business, as non-technical solo founders ship real products.",
-     "x": "vibe coding founders Forbes",
-     "src": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNLUl4OWllb0thb1NELTMwcnUzZTIteDEydkNYNFNKaTdWUlRYMlloN25vTm8yQXp3ZUlDNHU1eF9wcUVsR0RyVkw1cl9OR2piZDBjQm41S05sbTNxTjJHTzNabW5Kd2VIWGx2U3k3VjBnQ2hvbFZRaUVhaER1TDdyTTczWDRlSXZBTUI4Q1RubkQzSEJzNW83TUQxbnJwTjRSckRpbEhoYjZJbzc5"
-    }
-   ]
-  },
-  "maga": {
-   "name": "maga / populist right",
-   "country": "MAGA / populist right",
-   "tldr": "the nation is a home, betrayed by its managers",
-   "ontology": "The nation is a home, not an economic zone — and the home was betrayed by its own managers.",
-   "figures": [
-    "@realDonaldTrump",
-    "@charliekirk11",
-    "Steve Bannon",
-    "@bennyjohnson"
+    "@Uniswap",
+    "@aave",
+    "@MorphoLabs"
    ],
    "discussing": [
     {
-     "t": "Bibi and Zelenskyy visit",
-     "d": "Trump hosts Netanyahu's seventh White House visit and meets Zelenskyy on July 28 ahead of Sen. Lindsey Graham's funeral, while threatening to resume the Iran war and touting a 'good chance' in Iran talks.",
-     "x": "Trump Netanyahu Zelenskyy",
-     "src": "https://news.google.com/rss/search?q=Trump+when:2d&hl=en-US&gl=US&ceid=US:en"
+     "t": "UNI · #38",
+     "d": "Uniswap — rank #38, $2.4B market cap, $3.86.",
+     "x": "$UNI",
+     "src": "https://www.coingecko.com/en/coins/uniswap"
     },
     {
-     "t": "Base enthusiasm gap",
-     "d": "As the 100-day sprint to the midterms kicks off, the Washington Post reports Republicans see a 'scary' lack of enthusiasm among core voters and The Hill says the Iran war threatens to blunt GOP turnout in battlegrounds.",
-     "x": "GOP turnout midterms",
-     "src": "https://news.google.com/rss/search?q=MAGA+OR+%22Trump+base%22+midterms+when:3d&hl=en-US&gl=US&ceid=US:en"
+     "t": "WLFI · #45",
+     "d": "World Liberty Financial — rank #45, $1.7B market cap, $0.0549.",
+     "x": "$WLFI",
+     "src": "https://www.coingecko.com/en/coins/world-liberty-financial"
     },
     {
-     "t": "Mail-in ballot push",
-     "d": "The Trump administration on July 28 pressed the Supreme Court to let its order restricting mail-in ballots take effect before the midterms.",
-     "x": "mail-in ballots Supreme Court",
-     "src": "https://news.google.com/rss/search?q=%22Supreme+Court%22+OR+%22Fed+independence%22+when:3d&hl=en-US&gl=US&ceid=US:en"
+     "t": "AAVE · #50",
+     "d": "Aave — rank #50, $1.6B market cap, $100.96.",
+     "x": "$AAVE",
+     "src": "https://www.coingecko.com/en/coins/aave"
     },
     {
-     "t": "Tariffs, round two",
-     "d": "Trump said July 28 his new tariffs are 'doing the same thing' as the ones the Supreme Court struck down, reigniting the fight over his trade agenda.",
-     "x": "Trump tariffs Supreme Court",
-     "src": "https://news.google.com/rss/search?q=%22Supreme+Court%22+OR+%22Fed+independence%22+when:3d&hl=en-US&gl=US&ceid=US:en"
+     "t": "SKY · #55",
+     "d": "Sky — rank #55, $1.3B market cap, $0.0564.",
+     "x": "$SKY",
+     "src": "https://www.coingecko.com/en/coins/sky"
+    },
+    {
+     "t": "MORPHO · #54",
+     "d": "Morpho — rank #54, $1.3B market cap, $2.01.",
+     "x": "$MORPHO",
+     "src": "https://www.coingecko.com/en/coins/morpho"
+    },
+    {
+     "t": "JST · #75",
+     "d": "JUST — rank #75, $815M market cap, $0.0995.",
+     "x": "$JST",
+     "src": "https://www.coingecko.com/en/coins/just"
+    },
+    {
+     "t": "ENA · #76",
+     "d": "Ethena — rank #76, $797M market cap, $0.0834.",
+     "x": "$ENA",
+     "src": "https://www.coingecko.com/en/coins/ethena"
     }
    ]
   },
-  "progleft": {
-   "name": "progressive left",
-   "country": "Progressive left",
-   "tldr": "power hides in language, defaults, institutions",
-   "ontology": "Power hides in language, defaults, and institutions; listen from the margins to see it.",
+  "memecoins": {
+   "name": "the trenches",
+   "country": "Memecoins",
+   "tldr": "attention is the only fundamental",
+   "ontology": "Attention is the only real asset and price is the only truth; the coin is the community and the sin is not playing but exiting late.",
    "figures": [
-    "@AOC",
-    "@BernieSanders",
-    "@ZohranKMamdani",
-    "@RBReich"
+    "@pumpdotfun",
+    "the doge whales",
+    "the trenches"
    ],
    "discussing": [
     {
-     "t": "Data center revolt",
-     "d": "Democrats are seizing on the AI data center backlash splitting rural Republicans; a developer canceled a planned East Texas data center July 23 and Seattle paused new projects.",
-     "x": "data center backlash",
-     "src": "https://news.google.com/rss/search?q=AOC+OR+%22Bernie+Sanders%22+OR+%22data+center%22+backlash+when:7d&hl=en-US&gl=US&ceid=US:en"
+     "t": "DOGE · #11",
+     "d": "Dogecoin — rank #11, $11.0B market cap, $0.0706.",
+     "x": "$DOGE",
+     "src": "https://www.coingecko.com/en/coins/dogecoin"
     },
     {
-     "t": "AOC leads 2028 field",
-     "d": "A UNH poll out July 28 shows Ocasio-Cortez leading Democrats for 2028 (with JD Vance leading the GOP), and The Hill hosted a live debate on whether she can win the nomination.",
-     "x": "AOC 2028 poll",
-     "src": "https://news.google.com/rss/search?q=%22Ocasio-Cortez%22+OR+%22Bernie+Sanders%22+when:5d&hl=en-US&gl=US&ceid=US:en"
+     "t": "SHIB · #33",
+     "d": "Shiba Inu — rank #33, $2.7B market cap, $0.0000.",
+     "x": "$SHIB",
+     "src": "https://www.coingecko.com/en/coins/shiba-inu"
     },
     {
-     "t": "Bernie vs Walmart",
-     "d": "Bernie Sanders ripped Walmart July 27 over $37.6 billion in stock buybacks while workers rely on Medicaid and SNAP, and called on UnityPoint Health to recognize its nurses' union vote.",
-     "x": "Sanders Walmart buybacks",
-     "src": "https://news.google.com/rss/search?q=%22Ocasio-Cortez%22+OR+%22Bernie+Sanders%22+when:5d&hl=en-US&gl=US&ceid=US:en"
+     "t": "M · #51",
+     "d": "MemeCore — rank #51, $1.5B market cap, $1.14.",
+     "x": "$M",
+     "src": "https://www.coingecko.com/en/coins/memecore"
     },
     {
-     "t": "Ratepayer bill momentum",
-     "d": "A ratepayer protection bill is gaining momentum in the House amid the data center backlash, per The Hill on July 23, tying utility bills to the AI buildout.",
-     "x": "ratepayer bill data centers",
-     "src": "https://news.google.com/rss/search?q=AOC+OR+%22Bernie+Sanders%22+OR+%22data+center%22+backlash+when:7d&hl=en-US&gl=US&ceid=US:en"
+     "t": "PEPE · #58",
+     "d": "Pepe — rank #58, $1.2B market cap, $0.0000.",
+     "x": "$PEPE",
+     "src": "https://www.coingecko.com/en/coins/pepe"
+    },
+    {
+     "t": "PUMP · #78",
+     "d": "Pump.fun — rank #78, $771M market cap, $0.0019.",
+     "x": "$PUMP",
+     "src": "https://www.coingecko.com/en/coins/pump-fun"
+    },
+    {
+     "t": "币安人生 · #88",
+     "d": "币安人生 (BinanceLife) — rank #88, $632M market cap, $0.6324.",
+     "x": "$币安人生",
+     "src": "https://www.coingecko.com/en/coins/bianrensheng"
     }
    ]
   },
-  "establishment": {
-   "name": "liberal establishment",
-   "country": "Liberal establishment",
-   "tldr": "institutions and expertise hold it together",
-   "ontology": "Liberal democracy works through institutions, expertise, and procedure. The job is competent governance and defending norms against extremes on both sides.",
+  "degenperps": {
+   "name": "the perp casinos",
+   "country": "Perp DEXs",
+   "tldr": "the casino, on-chain, 24/7",
+   "ontology": "The market is a 24/7 casino and the only honest venue is one that cannot close; leverage is a right and the funding rate is the weather.",
    "figures": [
-    "@jaketapper",
-    "@maggieNYT",
-    "@jbouie",
-    "The Atlantic"
+    "@HyperliquidX",
+    "the Aster degens",
+    "the funding-rate watchers"
    ],
    "discussing": [
     {
-     "t": "Court approval bottoms",
-     "d": "Gallup reported July 28 that Supreme Court job approval has slumped to a record low, fueling a fresh round of court-legitimacy punditry.",
-     "x": "Supreme Court approval Gallup",
-     "src": "https://news.google.com/rss/search?q=%22Supreme+Court%22+OR+%22Fed+independence%22+when:3d&hl=en-US&gl=US&ceid=US:en"
+     "t": "HYPE · #10",
+     "d": "Hyperliquid — rank #10, $12.3B market cap, $55.24.",
+     "x": "$HYPE",
+     "src": "https://www.coingecko.com/en/coins/hyperliquid"
     },
     {
-     "t": "Mail-in voting showdown",
-     "d": "The Trump administration asked the Supreme Court on July 28 to allow restrictions on mail-in ballots before the midterms, alarming election-law watchers.",
-     "x": "mail-in voting case",
-     "src": "https://news.google.com/rss/search?q=%22Supreme+Court%22+OR+%22Fed+independence%22+when:3d&hl=en-US&gl=US&ceid=US:en"
+     "t": "ASTER · #46",
+     "d": "Aster — rank #46, $1.7B market cap, $0.6213.",
+     "x": "$ASTER",
+     "src": "https://www.coingecko.com/en/coins/aster-2"
     },
     {
-     "t": "Fed independence strain",
-     "d": "Trump renewed public pressure for rate cuts as the July FOMC meeting opened July 27, sharpening the debate over Fed chair Kevin Warsh's independence.",
-     "x": "Trump Fed pressure Warsh",
-     "src": "https://news.google.com/rss/search?q=Fed+FOMC+rate+decision+when:3d&hl=en-US&gl=US&ceid=US:en"
+     "t": "LIT · #92",
+     "d": "Lighter — rank #92, $571M market cap, $2.28.",
+     "x": "$LIT",
+     "src": "https://www.coingecko.com/en/coins/lighter"
     }
    ]
   },
-  "finance": {
-   "name": "wall street / macro",
-   "country": "Wall Street / macro",
-   "tldr": "markets price everything; don't fight the Fed",
-   "ontology": "Prices aggregate all information and capital flows are the real politics. Everything else is narrative wrapped around the number.",
-   "figures": [
-    "@LizAnnSonders",
-    "@fundstrat",
-    "@zerohedge",
-    "CNBC"
-   ],
-   "discussing": [
-    {
-     "t": "FOMC hike suspense",
-     "d": "The Fed convened July 28 widely expected to hold rates, but markets price rate-HIKE odds near one-in-three after the Iran oil shock tripled bets, with the decision due Wednesday.",
-     "x": "FOMC rate hike odds",
-     "src": "https://news.google.com/rss/search?q=Fed+FOMC+rate+decision+when:3d&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Warsh dissent watch",
-     "d": "Traders are watching the vote tally and chair Kevin Warsh's press conference more than the decision itself, with analysts saying the presser will be revealing even without a hike.",
-     "x": "Kevin Warsh press conference",
-     "src": "https://news.google.com/rss/search?q=Fed+FOMC+rate+decision+when:3d&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Bitcoin under 65k",
-     "d": "Bitcoin dropped below $65,000 on July 28 as the Senate delayed the CLARITY Act, dragging crypto lower into the Fed decision.",
-     "x": "Bitcoin CLARITY Act",
-     "src": "https://news.google.com/rss/search?q=Fed+FOMC+rate+decision+when:3d&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "christian": {
-   "name": "christian twitter",
-   "country": "Christian twitter",
-   "tldr": "moral order is given, not invented",
-   "ontology": "Reality is created and moral order is given; scripture and the church outrank secular consensus. History is a spiritual drama whose stakes exceed politics.",
-   "figures": [
-    "@Franklin_Graham",
-    "@albertmohler",
-    "@drmoore",
-    "@BishopBarron"
-   ],
-   "discussing": [
-    {
-     "t": "Evangelical Israel shift",
-     "d": "Christianity Today reported July 22 that evangelical support for Israel has slipped to a new low, a live argument as Netanyahu visits the White House this week.",
-     "x": "evangelicals Israel poll",
-     "src": "https://news.google.com/rss/search?q=evangelical+OR+%22Southern+Baptist%22+OR+pastor+when:7d&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Detained pastor couple",
-     "d": "Assemblies of God leaders said July 25 that a detained pastor couple held valid religious worker visas, putting immigration enforcement against clergy back in church discourse.",
-     "x": "pastor couple detained visas",
-     "src": "https://news.google.com/rss/search?q=evangelical+OR+%22Southern+Baptist%22+OR+pastor+when:7d&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Uganda pastor killed",
-     "d": "Christian Post reported July 25 that a pastor was killed in Uganda after a Christian-Muslim debate, with an imam among the prime suspects, driving persecution talk.",
-     "x": "Uganda pastor killed",
-     "src": "https://news.google.com/rss/search?q=evangelical+OR+%22Southern+Baptist%22+OR+pastor+when:7d&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "stan": {
-   "name": "stan / pop culture",
-   "country": "Stan / pop culture",
-   "tldr": "devotion is coordination",
-   "ontology": "Devotion is coordination: the most disciplined armies on the platform worship a bias, not a politics — and every tribe on this map envies their logistics.",
-   "figures": [
-    "@PopBase",
-    "@PopCrave",
-    "@chartdata"
-   ],
-   "discussing": [
-    {
-     "t": "Gracie hits No. 1",
-     "d": "Gracie Abrams earned her first No. 1 on the Billboard 200 with 'Daughter From Hell' on the chart dated July 26, setting off fandom celebration and chart-war threads.",
-     "x": "Gracie Abrams No. 1",
-     "src": "https://news.google.com/rss/search?q=Billboard+OR+%22Taylor+Swift%22+OR+album+OR+tour+when:3d&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Swift wedding buzz",
-     "d": "Karlie Kloss called Taylor Swift and Travis Kelce an 'amazing couple' ahead of their wedding on July 28, while Swift's 'The Life of a Showgirl' single returned as a bestseller.",
-     "x": "Taylor Swift Kelce wedding",
-     "src": "https://news.google.com/rss/search?q=Billboard+OR+%22Taylor+Swift%22+OR+album+OR+tour+when:3d&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Ariana crew initiative",
-     "d": "Ariana Grande launched a mental health initiative for the music industry on July 28, starting with her Eternal Sunshine tour crew.",
-     "x": "Ariana Grande mental health",
-     "src": "https://news.google.com/rss/search?q=Billboard+OR+%22Taylor+Swift%22+OR+album+OR+tour+when:3d&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Tate McRae new era",
-     "d": "Tate McRae sparked new-era speculation on July 28 ahead of her Lollapalooza set, per Billboard, sending her fandom into teaser-hunting mode.",
-     "x": "Tate McRae Lollapalooza",
-     "src": "https://news.google.com/rss/search?q=Billboard+OR+%22Taylor+Swift%22+OR+album+OR+tour+when:3d&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "sports": {
-   "name": "sports twitter",
-   "country": "Sports twitter",
-   "tldr": "loyalty, stats, and the eternal debate",
-   "ontology": "Merit is settled on the field and argued forever after. Loyalty is inherited, stats are scripture, and the debate itself is the point.",
-   "figures": [
-    "@ShamsCharania",
-    "@AdamSchefter",
-    "@stephenasmith",
-    "@wojespn"
-   ],
-   "discussing": [
-    {
-     "t": "LeBron 76ers fallout",
-     "d": "A week after LeBron James signed with the 76ers, ESPN's coach-and-exec survey (July 27) and debate over whether Philly are real contenders dominate, with LeBron keeping No. 23.",
-     "x": "LeBron 76ers",
-     "src": "https://news.google.com/rss/search?q=LeBron+76ers+OR+%22MLB+trade+deadline%22+when:3d&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Skubal deadline watch",
-     "d": "The 2026 MLB trade deadline rumor mill is running hot July 28: the Tarik Skubal watch is on, the Yankees need outfield help, and pundits are asking if the Phillies should sell.",
-     "x": "Skubal trade deadline",
-     "src": "https://news.google.com/rss/search?q=%22trade+deadline%22+MLB+when:3d&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Lakers move on",
-     "d": "An LA Times commentary July 28 argues the Lakers have gotten better without LeBron, feeding the Lakers-vs-Sixers discourse war.",
-     "x": "Lakers without LeBron",
-     "src": "https://news.google.com/rss/search?q=LeBron+76ers+OR+%22MLB+trade+deadline%22+when:3d&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "georgists": {
-   "name": "georgists",
-   "country": "Georgists",
-   "tldr": "tax land, not labor",
-   "ontology": "Land value is created by the community, so land rent belongs to everyone; most economic dysfunction — housing above all — traces to private capture of that rent.",
-   "figures": [
-    "Lars Doucet",
-    "@larsiusprime",
-    "Henry George (patron saint)"
-   ],
-   "discussing": [
-    {
-     "t": "Burnham LVT plan",
-     "d": "Andy Burnham is floating a land value tax to replace council tax and stamp duty, with Bloomberg and the Telegraph tallying homeowner winners and losers July 23-27.",
-     "x": "Burnham land value tax",
-     "src": "https://news.google.com/rss/search?q=%22land%20value%20tax%22&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Ohio LVT study",
-     "d": "A new study covered by Columbus Underground on July 27 says a land value tax could boost development in Ohio, fresh ammo for the split-rate crowd.",
-     "x": "land value tax Ohio",
-     "src": "https://news.google.com/rss/search?q=%22land%20value%20tax%22&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "girardians": {
-   "name": "girardians",
-   "country": "Girardians",
-   "tldr": "desire is mimetic; scapegoats keep the peace",
-   "ontology": "Humans want what others want; rivalry escalates until it discharges onto a scapegoat. Culture, religion, and markets are machines for managing mimetic conflict.",
-   "figures": [
-    "Luke Burgis",
-    "Geoff Shullenberger",
-    "@peterthiel (patron)"
-   ],
-   "discussing": [
-    {
-     "t": "COV&R Chicago meeting",
-     "d": "The Girardian scholars' society COV&R has its 2026 annual meeting set for Chicago, the year's main gathering for mimetic theory people.",
-     "x": "COV&R Girard conference",
-     "src": "https://violenceandreligion.com/"
-    },
-    {
-     "t": "Tech bros vs Girard",
-     "d": "The long-running fight over Silicon Valley's reading of Girard rolls on, with UnHerd's 'Tech bros don't get Rene Girard' still the reference point in a slow news stretch.",
-     "x": "Girard mimetic desire tech",
-     "src": "https://news.google.com/rss/search?q=%22Rene+Girard%22+OR+%22mimetic+desire%22&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "landian": {
-   "name": "landian accel",
-   "country": "Landian accel",
-   "tldr": "capital is an alien intelligence",
-   "ontology": "Modernity is capital using humans to bootstrap its own substrate; acceleration isn't a policy choice, it's what is already happening. The horror reading of e/acc's optimism.",
-   "figures": [
-    "Nick Land",
-    "@xenocosmography",
-    "cave twitter"
-   ],
-   "discussing": [
-    {
-     "t": "Land goes mainstream",
-     "d": "Aeon's June 11 explainer 'What is Nick Land's philosophy of accelerationism really?' follows the New Yorker's February profile calling him Silicon Valley's favorite doomsaying philosopher.",
-     "x": "Nick Land accelerationism",
-     "src": "https://news.google.com/rss/search?q=%22Nick+Land%22+OR+accelerationism&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Techno-fascism label",
-     "d": "Two July 27-28 pieces, from Politics Today and Homeland Security Today, tie accelerationism to AI and the new far right, and the sphere is arguing about the label.",
-     "x": "accelerationism techno-fascism",
-     "src": "https://news.google.com/rss/search?q=%22Nick+Land%22+OR+accelerationism&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "metamodern": {
-   "name": "metamodernists",
-   "country": "Metamodernists",
-   "tldr": "integrate irony and sincerity; develop in stages",
-   "ontology": "Culture and persons develop through stages that must be integrated, not skipped; the modern/postmodern fight resolves by holding both at once.",
-   "figures": [
-    "Hanzi Freinacht",
-    "John Vervaeke",
-    "@Metapsychosis"
-   ],
-   "discussing": [
-    {
-     "t": "Churchill stage map",
-     "d": "Psychologist and ex-monk John Churchill walked Nate Hagens through a developmental map running from isolated first-person self to felt planetary interdependence (ep 228, July 22).",
-     "x": "John Churchill development",
-     "src": "https://www.thegreatsimplification.com/episodes"
-    },
-    {
-     "t": "Vervaeke's Silk Road",
-     "d": "No dated news this month; the sphere keeps working through John Vervaeke's ongoing 'Walking the Philosophical Silk Road' series and his Lectern meaning-crisis courses.",
-     "x": "Vervaeke meaning crisis",
-     "src": "https://johnvervaeke.com/"
-    }
-   ]
-  },
-  "forecasters": {
-   "name": "forecasters",
-   "country": "Forecasters",
-   "tldr": "put a number on it or it's vibes",
-   "ontology": "Beliefs are bets and calibration is virtue. Prediction markets and scoring rules extract honest probabilities from talk.",
-   "figures": [
-    "@Polymarket",
-    "Nate Silver",
-    "Metaculus",
-    "Robin Hanson"
-   ],
-   "discussing": [
-    {
-     "t": "Minnesota ban blocked",
-     "d": "A federal judge on July 27 halted Minnesota's law meant to bar prediction markets in the state, a win the market crowd is celebrating.",
-     "x": "Minnesota prediction market judge",
-     "src": "https://news.google.com/rss/search?q=Polymarket+OR+%22prediction+market%22&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "World Cup manipulation",
-     "d": "A sports advisory group flagged potential World Cup manipulation on Polymarket (Mashable, July 28), while the NYT reports drug-trial betting markets are spooking researchers.",
-     "x": "Polymarket World Cup manipulation",
-     "src": "https://news.google.com/rss/search?q=Polymarket+OR+%22prediction+market%22&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "cryonics": {
-   "name": "cryonicists",
-   "country": "Cryonicists",
-   "tldr": "death is information loss; preserve the pattern",
-   "ontology": "Death is the loss of information, not an event; preserve the brain's pattern and future medicine can restart it. The original transhumanism.",
-   "figures": [
-    "Max More",
-    "Alcor",
-    "@BrainPresFdn"
-   ],
-   "discussing": [
-    {
-     "t": "Doctors warm up",
-     "d": "Surveys covered by Gizmodo (May 20) and Inc (May 24) find neurosurgeons and a surprising share of US doctors think brain preservation could actually work.",
-     "x": "neurosurgeons cryonics survey",
-     "src": "https://news.google.com/rss/search?q=cryonics+OR+%22brain+preservation%22&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Brain-only trend",
-     "d": "Inc reports (April 9) that brain-only preservation is overtaking the full-body freeze as the next longevity-tech trend, echoing MIT Tech Review's March look at why people sign up.",
-     "x": "brain preservation longevity",
-     "src": "https://news.google.com/rss/search?q=cryonics+OR+%22brain+preservation%22&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "pronatalists": {
-   "name": "pronatalists",
-   "country": "Pronatalists",
-   "tldr": "the birth rate is the deepest metric; have the kids",
-   "ontology": "Civilization's deepest metric is the birth rate, and it's falling everywhere at once. Have the kids.",
-   "figures": [
-    "Malcolm & Simone Collins",
-    "@MoreBirths",
-    "Robin Hanson"
-   ],
-   "discussing": [
-    {
-     "t": "Vance baby boy",
-     "d": "JD and Usha Vance welcomed a baby boy on July 19, the first child born to a sitting VP in 150 years, and pronatalist accounts are taking a victory lap.",
-     "x": "Vance baby pronatalist",
-     "src": "https://news.google.com/rss/search?q=NatalCon+OR+pronatalism+when:30d&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Birth control overhaul",
-     "d": "The Intercept reported July 10 that the Trump administration is overhauling birth control access for the pronatalist movement, as Fox notes the US still heads toward population decline.",
-     "x": "pronatalist birth control policy",
-     "src": "https://news.google.com/rss/search?q=NatalCon+OR+pronatalism+when:30d&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "doomeroptimists": {
-   "name": "doomer optimists",
-   "country": "Doomer optimists",
-   "tldr": "collapse is coming; build local lifeboats",
-   "ontology": "Industrial civilization is overshooting hard biophysical limits — but the answer is skills, land, and community, not despair. Prep by rebuilding the local.",
-   "figures": [
-    "Ashley Colby",
-    "Nate Hagens",
-    "@jasonsnyderorg"
-   ],
-   "discussing": [
-    {
-     "t": "Hormuz shipping shock",
-     "d": "Maritime historian Sal Mercogliano told Nate Hagens what the ongoing Strait of Hormuz events reveal about the fragility of global shipping and trade (ep 227, July 15).",
-     "x": "Hagens Hormuz shipping",
-     "src": "https://www.thegreatsimplification.com/episodes"
-    },
-    {
-     "t": "Mapping the descent",
-     "d": "Resilience.org's 'How to Think About the Future, Part 2' (May 4) lays out four variables shaping the coming decades, feeding the collapse-aware localism conversation.",
-     "x": "great simplification collapse",
-     "src": "https://news.google.com/rss/search?q=%22Nate+Hagens%22+OR+%22Great+Simplification%22&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "remilia": {
-   "name": "remilia / net spirituality",
-   "country": "Remilia / net spirituality",
-   "tldr": "the timeline is a spiritual plane",
-   "ontology": "Identity dissolves into the network; anonymous posting, aesthetics, and memetic play are devotional acts. The milady cult of the feed.",
-   "figures": [
-    "Charlotte Fang",
-    "milady sphere"
-   ],
-   "discussing": [
-    {
-     "t": "Musk Milady pump",
-     "d": "An Elon Musk tweet sent the Milady NFT floor price upward on July 20, per CoinMarketCap, months after Vitalik's Milady avatar sparked a 30% jump in January.",
-     "x": "Musk Milady floor",
-     "src": "https://news.google.com/rss/search?q=Milady+OR+Remilia+NFT&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Milady social network",
-     "d": "Remilia is building a Milady social media network aimed at the '4chan diaspora' (Decrypt), the netspirituality crowd's bid to own its own platform.",
-     "x": "Remilia social network",
-     "src": "https://news.google.com/rss/search?q=Milady+OR+Remilia+NFT&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "cozyweb": {
-   "name": "cozyweb",
-   "country": "Cozyweb",
-   "tldr": "small quiet internet over the big feed",
-   "ontology": "The good internet is small, slow, and tended — group chats, blogs, digital gardens. Scale is the disease; context is the cure.",
-   "figures": [
-    "@vgr (coined it)",
-    "Maggie Appleton",
-    "Robin Sloan"
-   ],
-   "discussing": [
-    {
-     "t": "Wander the small web",
-     "d": "Wander, a StumbleUpon-style discovery tool for the indie web (TechCrunch, June 3), joins Kagi's March 'human-only internet' mobile app in making the small web browsable again.",
-     "x": "Wander small web",
-     "src": "https://news.google.com/rss/search?q=%22small+web%22+OR+%22personal+blog%22+OR+%22digital+garden%22&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Notes become gardens",
-     "d": "A free Obsidian plugin that turns personal notes into a published website within an hour (MakeUseOf, June 15) is fueling the digital-garden-over-doomscrolling revival.",
-     "x": "Obsidian digital garden publish",
-     "src": "https://news.google.com/rss/search?q=%22small+web%22+OR+%22personal+blog%22+OR+%22digital+garden%22&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "tradcaths": {
-   "name": "trad catholics",
-   "country": "Trad Catholics",
-   "tldr": "return to tradition, liturgy, hierarchy",
-   "ontology": "Modernity took a wrong turn at liberalism; truth lives in tradition, hierarchy, and the old Mass. Liturgy as resistance.",
-   "figures": [
-    "Taylor Marshall",
-    "Adrian Vermeule",
-    "@CatholicArena"
-   ],
-   "discussing": [
-    {
-     "t": "Will Leo lift it",
-     "d": "At Traditionis Custodes' five-year mark, Cardinal Sarah (July 20) and Archbishop Ganswein say the time is ripe for Pope Leo XIV to lift Latin Mass restrictions, with First Things asking 'Who gets custody of the Latin Mass?' July 27.",
-     "x": "Pope Leo Latin Mass",
-     "src": "https://news.google.com/rss/search?q=%22Latin+Mass%22+OR+%22Traditionis+Custodes%22&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Schism line hardens",
-     "d": "Traditionalists went ahead with defiant Latin Mass episcopal consecrations July 1 (NBC), and a Latin Mass order founder consecrated a sedevacantist bishop and was excommunicated (Catholic Herald, July 27).",
-     "x": "Latin Mass consecrations excommunicated",
-     "src": "https://news.google.com/rss/search?q=%22Latin+Mass%22+OR+%22Traditionis+Custodes%22&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "wsb": {
-   "name": "wallstreetbets",
-   "country": "WallStreetBets",
-   "tldr": "the market is a casino; ape together strong",
-   "ontology": "The market is a casino where the little guy can gang up on the house. Conviction, leverage, and memes over analysis; loss porn is content.",
-   "figures": [
-    "r/WSB diaspora",
-    "@unusual_whales"
-   ],
-   "discussing": [
-    {
-     "t": "Meme rally sputters",
-     "d": "AMC's meme mania returned on Christopher Nolan's $264M opening (July 21) but CNBC says Wendy's turned lower as the rally failed to last a second day (July 25).",
-     "x": "AMC Wendy's meme rally",
-     "src": "https://news.google.com/rss/search?q=WallStreetBets+OR+%22meme+stock%22&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Memory chip mania",
-     "d": "Micron and SanDisk keep topping WallStreetBets buzz trackers, mostly lower premarket Tuesday July 28 after leading Monday's advance, per MarketScreener.",
-     "x": "Micron WSB calls",
-     "src": "https://news.google.com/rss/search?q=WallStreetBets+OR+%22meme+stock%22&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "astrology": {
-   "name": "astrology twitter",
-   "country": "Astrology twitter",
-   "tldr": "the sky mirrors the psyche",
-   "ontology": "Celestial patterns index temperament and timing; the chart is a symbolic language for fate and self-knowledge, held with varying degrees of irony.",
-   "figures": [
-    "Chani Nicholas",
-    "@astrobebs",
-    "Co-Star"
-   ],
-   "discussing": [
-    {
-     "t": "Midjourney buys Co-Star",
-     "d": "AI image giant Midjourney acquired the astrology app Co-Star (TechCrunch, July 24), and astro twitter is arguing over what an AI-owned chart app means.",
-     "x": "Midjourney Co-Star",
-     "src": "https://news.google.com/rss/search?q=%22mercury+retrograde%22+OR+astrology&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "Aquarius full moon",
-     "d": "The July 29 Aquarius full moon lands while Mercury 'retroshade' lingers from a retrograde Vogue called possibly the worst ever, which ended July 23.",
-     "x": "Aquarius full moon retroshade",
-     "src": "https://news.google.com/rss/search?q=%22mercury+retrograde%22+OR+astrology&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "ufo": {
-   "name": "ufo / disclosure",
-   "country": "UFO / disclosure",
-   "tldr": "the veil is thinner every hearing",
-   "ontology": "We are not alone, the government knows, and the veil is thinner every hearing.",
-   "figures": [
-    "Jeremy Corbell",
-    "Ross Coulthart",
-    "Lue Elizondo"
-   ],
-   "discussing": [
-    {
-     "t": "Senate disclosure forum",
-     "d": "The June 25 UAP Disclosure Forum in the US Senate, covered live by The Hill and NewsNation with Avi Loeb writing it up, put transparency demands back on the record.",
-     "x": "UAP Disclosure Forum Senate",
-     "src": "https://news.google.com/rss/search?q=UAP+hearing+disclosure&hl=en-US&gl=US&ceid=US:en"
-    },
-    {
-     "t": "MITRE records demand",
-     "d": "MITRE is moving to comply with a lawmaker's request for UAP records and assets dating back to 1930 (DefenseScoop, May 27), while researchers grumble Trump's PURSUE file drop is 'data, not disclosure.'",
-     "x": "MITRE UAP records",
-     "src": "https://news.google.com/rss/search?q=UAP+hearing+disclosure&hl=en-US&gl=US&ceid=US:en"
-    }
-   ]
-  },
-  "ocean": {
-   "name": "the neoliberalism ocean",
-   "country": "The Neoliberalism Ocean",
-   "tldr": "the default every tribe defines itself against",
-   "ontology": "Mainstream liberalism — not an island but the water: markets as nature, procedure as faith, the default every tribe defines itself against. It doesn't feel like an ideology for the same reason water doesn't feel wet.",
+  "fiat": {
+   "name": "the fiat ocean",
+   "country": "The Fiat Ocean",
+   "tldr": "the water every coin defines itself against",
+   "ontology": "State money — not an island but the water: the unit of account, the exit everyone prices in, the default every tribe on this map defines itself against. It doesn't feel like a system for the same reason water doesn't feel wet.",
    "figures": [
     "the Fed",
-    "the courts",
-    "the op-ed page"
-   ],
-   "discussing": [
-    {
-     "t": "Warsh's first test",
-     "d": "New Fed chair Kevin Warsh opened his July 28 meeting with markets expecting a hold on rates even as an Iran-war oil surge has traders pricing a real chance of a hike.",
-     "x": "Fed Warsh rate decision",
-     "src": "https://finance.yahoo.com/economy/live/fed-meeting-live-federal-reserve-july-interest-rate-decision-141813444.html"
-    },
-    {
-     "t": "104 economists vs market",
-     "d": "The Fed decision pits 104 surveyed economists expecting no change against a roughly 36% market-priced bet on a surprise rate hike.",
-     "x": "Fed surprise hike odds",
-     "src": "https://finance.yahoo.com/economy/policy/articles/fed-rate-decision-pits-104-221321543.html"
-    },
-    {
-     "t": "Confidence slips",
-     "d": "US consumer confidence fell in July as worries over prices stayed elevated, per data released July 28.",
-     "x": "consumer confidence July",
-     "src": "https://finance.yahoo.com/economy/article/consumer-confidence-fell-in-july-as-worries-over-prices-remained-elevated-144212918.html"
-    }
-   ]
-  },
-  "islam": {
-   "name": "the islamic revival",
-   "country": "Islamic revival",
-   "tldr": "the ummah online; submission as freedom",
-   "ontology": "A fifth of humanity in one ummah: submission as freedom, the feed as minbar. The largest coherent ontology the discourse map forgets.",
-   "figures": [
-    "@muftimenk",
-    "@omarsuleiman504",
-    "Yaqeen Institute"
-   ],
-   "discussing": [
-    {
-     "t": "Mosques torched",
-     "d": "Israeli settlers set fire to the Al-Rahma mosque in Qusra and a mosque in Kour before dawn on July 26, spray-painting 'Jewish revenge' -- two of roughly 30 settler attacks recorded across the West Bank in one weekend.",
-     "x": "Qusra mosque fire",
-     "src": "https://www.aljazeera.com/news/2026/7/27/mapping-israeli-settler-violence-in-the-west-bank"
-    },
-    {
-     "t": "West Bank aflame",
-     "d": "After the July 24 Tal killings left four Palestinians, a settler and an Israeli soldier dead, Israel deployed 26 army battalions across the West Bank while four new settler outposts appeared overnight near Tal.",
-     "x": "Tal killings West Bank",
-     "src": "https://www.aljazeera.com/news/2026/7/28/palestine-weekly-west-bank-in-flames-after-tal-killings"
-    },
-    {
-     "t": "University demolition order",
-     "d": "BJP-run Rampur authorities ordered 38 of 40 buildings at Mohammad Ali Jauhar University, founded by Muslim politician Azam Khan, demolished as illegal -- a court stay landed just before the August 5 deadline.",
-     "x": "Jauhar University demolition",
-     "src": "https://www.aljazeera.com/news/2026/7/28/future-at-stake-india-moves-to-demolish-university-muslim-leader-founded"
-    }
-   ]
-  },
-  "china": {
-   "name": "the chinese techno-civilization",
-   "country": "China techno-civilization",
-   "tldr": "the state as a five-thousand-year project",
-   "ontology": "The state as a five-thousand-year project; harmony over discourse, capacity over process. Barely on X — enormous on earth.",
-   "figures": [
-    "@HuXijin_GT",
-    "Kaiser Kuo",
-    "Pekingnology"
-   ],
-   "discussing": [
-    {
-     "t": "CXMT's 466% debut",
-     "d": "Chinese DRAM maker CXMT soared 466% on its July 27 market debut, briefly becoming the most valuable mainland-listed company at a reported $489 billion valuation.",
-     "x": "CXMT IPO debut",
-     "src": "https://www.scmp.com/tech/big-tech/article/3361926"
-    },
-    {
-     "t": "Homegrown DUV tools",
-     "d": "China has reportedly begun producing homegrown DUV lithography chipmaking equipment, though analysts told SCMP on July 28 the effort still trails ASML and is not yet its biggest threat.",
-     "x": "China DUV lithography",
-     "src": "https://www.scmp.com/tech/tech-trends/article/3362139"
-    },
-    {
-     "t": "Kimi K3 ban fight",
-     "d": "Moonshot's new Kimi K3 model triggered a July 28 debate over proposed US bans on Chinese open-source models, with Anthropic CEO Dario Amodei urging tighter chip export restrictions the same day.",
-     "x": "Kimi K3 Moonshot",
-     "src": "https://www.scmp.com/tech/article/3362143"
-    }
-   ]
-  },
-  "catholic": {
-   "name": "catholicism proper",
-   "country": "Catholic Church",
-   "tldr": "a billion members, one pope, time in centuries",
-   "ontology": "Beneath the tradcath vanguard, the two-thousand-year ship itself: a billion members, one pope, time measured in centuries.",
-   "figures": [
-    "@Pontifex",
-    "Word on Fire",
-    "@JamesMartinSJ"
-   ],
-   "discussing": [
-    {
-     "t": "Heartfelt Mideast appeal",
-     "d": "At his July 26 Angelus, Pope Leo XIV appealed 'from the depths of my heart' for a halt to Middle East attacks and a return to negotiations.",
-     "x": "Pope Leo Mideast appeal",
-     "src": "https://aleteia.org/2026/07/26/popes-appeal-from-the-depths-of-my-heart/"
-    },
-    {
-     "t": "Back from Castel Gandolfo",
-     "d": "Pope Leo XIV returned to the Vatican on July 28 after concluding a brief summer rest at Castel Gandolfo.",
-     "x": "Pope Leo Castel Gandolfo",
-     "src": "https://aleteia.org/2026/07/28/pope-leo-back-home-after-brief-summer-rest/"
-    },
-    {
-     "t": "Medjugorje shrine desecrated",
-     "d": "Bosnian authorities opened an investigation into desecration and fire damage at the Medjugorje Virgin Mary shrine, Crux reported July 28.",
-     "x": "Medjugorje shrine fire",
-     "src": "https://cruxnow.com/church-in-europe/2026/07/bosnian-authorities-investigate-desecration-and-fire-damage-at-medjugorje-virgin-mary-shrine"
-    }
-   ]
-  },
-  "india": {
-   "name": "civilizational india",
-   "country": "Civilizational India",
-   "tldr": "a civilization reawakening, not a country",
-   "ontology": "Not a country — a civilization reawakening after a thousand-year interruption. The diaspora fights its wars in english.",
-   "figures": [
-    "@narendramodi",
-    "Swarajya",
-    "J. Sai Deepak"
-   ],
-   "discussing": [
-    {
-     "t": "Cockroaches beat Modi",
-     "d": "India's Gen Z 'Cockroach' movement called off its protests after education minister Dharmendra Pradhan resigned on July 25, capping 36 days of youth protests over NEET exam paper leaks.",
-     "x": "cockroach protests Modi",
-     "src": "https://www.aljazeera.com/news/2026/7/25/indias-education-minister-resigns-after-weeks-of-cockroach-protests"
-    },
-    {
-     "t": "AK-47 cop suspended",
-     "d": "India suspended a police officer on July 27 for firing an AK-47 at student protesters during the youth demonstrations.",
-     "x": "police AK-47 protesters India",
-     "src": "https://www.aljazeera.com/video/newsfeed/2026/7/27/india-suspends-police-officer-for-firing-ak-47-at-student-protesters"
-    },
-    {
-     "t": "Diaspora joins in",
-     "d": "Greta Thunberg joined a London rally in support of Indian student protesters on July 27, pulling the diaspora into Modi's Gen Z crisis.",
-     "x": "London rally Indian students",
-     "src": "https://www.aljazeera.com/video/newsfeed/2026/7/27/greta-thunberg-joins-london-rally-in-support-of-indian-students"
-    }
-   ]
-  },
-  "pentecostal": {
-   "name": "global pentecostalism",
-   "country": "Global pentecostalism",
-   "tldr": "the spirit descends in lagos, são paulo, seoul",
-   "ontology": "The fastest-growing religion on earth: the spirit descends in Lagos, São Paulo, Seoul — and the feed never notices.",
-   "figures": [
-    "T.D. Jakes",
-    "Paula White",
-    "the Lagos megachurches"
-   ],
-   "discussing": [
-    {
-     "t": "PFN fights preaching bill",
-     "d": "The Pentecostal Fellowship of Nigeria, through National Secretary Bishop David Bakare, urged President Tinubu on July 24 to reject an anti-preaching-and-hawking bill that has already passed the Senate, calling it targeted at Christians.",
-     "x": "PFN anti-preaching bill",
-     "src": "https://www.vanguardngr.com/2026/07/pfn-urges-tinubu-to-reject-anti-preaching-bill/"
-    },
-    {
-     "t": "Beyond founder churches",
-     "d": "Daystar's Sam Adeyemi told the inaugural Global Church Systems Conference in Lagos that 'healthy churches run on principles, not personalities,' warning African ministries built around founders fail to outlive them (reported July 28).",
-     "x": "Sam Adeyemi founders",
-     "src": "https://www.thisdaylive.com/index.php/2026/07/24/sam-adeyemi-warns-clergy-against-founder-centred-ministries"
-    }
-   ]
-  },
-  "indigenous": {
-   "name": "the indigenous resurgence",
-   "country": "Indigenous resurgence",
-   "tldr": "the land is a relative, not a resource",
-   "ontology": "The land is not a resource but a relative, and it is taking its names back. The oldest ontology on the map, newly load-bearing.",
-   "figures": [
-    "NDN Collective",
-    "Winona LaDuke",
-    "IllumiNative"
-   ],
-   "discussing": [
-    {
-     "t": "Wildfire inquiry demand",
-     "d": "First Nations chiefs demanded an inquiry into Ontario's wildfire response on July 21, saying residents got little warning and some were forced to organize their own evacuations as 180-plus fires burned in the north.",
-     "x": "First Nations Ontario wildfire",
-     "src": "https://globalnews.ca/news/11975181/first-nations-chiefs-ontario-wildfire-response-ford/"
-    },
-    {
-     "t": "The ignored fire plan",
-     "d": "A July 23 Narwhal investigation found Doug Ford's government had been handed dozens of First Nations recommendations to improve northern emergency response before the fires -- and ignored them.",
-     "x": "Ontario ignored wildfire plan",
-     "src": "https://thenarwhal.ca/ontario-ignored-first-nations-wildfire-plan/"
-    },
-    {
-     "t": "Ground shifting in Nain",
-     "d": "In Nain, Nunatsiavut, thawing permafrost is shifting the ground beneath an Inuit community's homes, The Narwhal reported July 28.",
-     "x": "Nain permafrost thaw",
-     "src": "https://thenarwhal.ca/nain-permafrost-thaw-nunatsiavut/"
-    }
-   ]
-  },
-  "manifestation": {
-   "name": "the manifestation web",
-   "country": "Manifestation web",
-   "tldr": "align the inner state; the outer follows",
-   "ontology": "Reality is a mirror: align the inner state and the outer world follows. The largest folk religion online, and it doesn't know it's one.",
-   "figures": [
-    "Rhonda Byrne",
-    "the lucky girls of TikTok",
-    "r/lawofattraction"
-   ],
-   "discussing": [
-    {
-     "t": "Tom Holland manifests",
-     "d": "USA Today's July 28 premiere coverage has Spider-Man: Brand New Day star Tom Holland talking up the 'powers of manifesting,' pushing manifestation talk back through celebrity media.",
-     "x": "Tom Holland manifesting",
-     "src": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQZmk3TlR1dkJQU2UzaElYVTRMamZ1Q1JicXRjZjd2Q1Q5MHRTbm9yVFByRWE1anVuZTM5UU16VzRPbnpGVEhCZjVnU3hWbVJPNWVCd1ZOSDhjR3dkX2ZTMmtJOU9wN3dlUmRGVjVENDNmLUltNkEwcGNFb0RPRXNkNUZReVNiSUc1aE8tWVBaSzBOaTJQTlNDYktsT2Z5cDdCU0ZYYmQ4RFo0Slp1RV9vT2Z2czV3YXpRWXdRRmZTLXo"
-    },
-    {
-     "t": "Manifesting a jawline",
-     "d": "Allure's July 13 report profiles women who believe they can manifest a slimmer jaw, the latest beauty-adjacent frontier of manifesting TikTok.",
-     "x": "manifest slimmer jaw",
-     "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YaFhkU0tkT3JEREE5Q0J4aTlwT3Bwbk1rdDVjSzZWN0Ewa1RFQ01TTXgzeW85S0RxTHhGWklTQkJRdGtPc1lBMS10UXNOQ1hmVVRGUmRBZl9uQmlweS1aRm1YOVdfNnNrZ2JjRA?oc=5"
-    },
-    {
-     "t": "Faith backlash grows",
-     "d": "A July 23 essay by Walker Larson calls the law-of-attraction classic The Secret 'poison,' part of a wave of Christian pushback that also includes Focus on the Family's July warning about manifesting on social media.",
-     "x": "The Secret law attraction",
-     "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8wR29WbkFZYVFRQlVGUEtwRVdpSzRYbVVIZWVvMXNUWVpvdHM3al9BTGJrbTdibENMRmJJTFNBMzJaemxqUk5ndk1jeFY5T2hENUp4S0Y4VTY0eEZuQ1FDRUFycW5ybG9scVU5MF8xOXdCcGQ5aHFyMV93aw"
-    }
-   ]
-  },
-  "conspiracy": {
-   "name": "the conspiracist omniverse",
-   "country": "Conspiracist omniverse",
-   "tldr": "nothing is as it seems, on purpose",
-   "ontology": "Nothing is as it seems, and someone meant it that way. Every institution's collapse in trust washes up here as new territory.",
-   "figures": [
-    "Alex Jones",
-    "the Epstein-files posters",
-    "r/conspiracy diaspora"
-   ],
-   "discussing": [
-    {
-     "t": "Blanche files fight",
-     "d": "Trump AG nominee Todd Blanche begged a judge not to fine him $1,000 a day over withheld Epstein files (July 21) while Epstein survivors lobbied senators to block his confirmation.",
-     "x": "Blanche Epstein files",
-     "src": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVXdGNm9IZ0hQdFlSVWpoUXZRM1ZmZl9NUVFmMEM0dk1NV2dtRzdMYkd5MDBHX084dlE0cWtMU1YwWk5faVVqMV9nQnQ4LTRsZTdsWjVnYjFXeU1MSG1aaGwyM2ZKZE9ab1hGWmd1TS1nT3hBRnBkNmVQVk5tWEtYdm1JTVM"
-    },
-    {
-     "t": "Model scout dead",
-     "d": "Daniel Siad, a French modeling scout named thousands of times in the Epstein files, was found dead in his Paris home on July 22, instantly fueling witness-cleanup theories across cover-up forums.",
-     "x": "Epstein scout dead Paris",
-     "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9BUXZFdGw4WGxzdWY2WFNja2VmRXVNc1c5VjhsYlB0UllyOEhGeGR6NUtaemxBLVhTeDlwME9mT1pqSktLeWdfZEFtNHR6VlVLVzZqcU0wM0x2dw"
-    },
-    {
-     "t": "Gates-Epstein meetings",
-     "d": "An external review reported by AP on July 21 found the Gates Foundation met with Epstein about 30 times despite staff concerns, fresh grist for elite cover-up discourse.",
-     "x": "Gates Foundation Epstein",
-     "src": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMDNpcE81YVBLZk1HVUpPTk4yZmJVUXRLNzRRUV9QeFgwZk5HRjg4QzNkQ2Y2eVF2Ri1qTlVjaVJkMGp3d0VzckpMV0hlNDlHUGdjSEVfVU9ibjVCbG9QRkRzcnRUUzVaU2dVM3lFeGJMZXlTVTNwenVIQmlNWnBEWGVtUmJZOG1tVERYOXkzVjRzQ0tLeUlrZFpBRENJSmljRXo3WkxB"
-    }
-   ]
-  },
-  "hustle": {
-   "name": "hustle world",
-   "country": "Hustle world",
-   "tldr": "the job is a scam; the way out is volume",
-   "ontology": "The job is a scam and the way out is volume: content, flips, funnels, reps. YouTube's biggest religion.",
-   "figures": [
-    "@AlexHormozi",
-    "@thedankoe",
-    "Codie Sanchez"
-   ],
-   "discussing": [
-    {
-     "t": "Meta reseller app",
-     "d": "Meta launched a new app that makes it easier to run a Facebook Marketplace resale side hustle, per Inc.'s July 24 report, and flipper communities are sizing it up.",
-     "x": "Facebook Marketplace side hustle",
-     "src": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQX0JBQy1sNjAybF9aS0R2MGwzN2pualNRUjhuZGVsMW9TcF81TFpLLW9fMHZiMGE4dmd3eEFLTUtXV0VZaGtWRjRwaGl0eDV6Qndfb0RaQ0MzLVhkM1lvVXhNZEJBUmlSNlIxRlpXVzRyYWtkLTJhakdYZWtEZFNTNXkzUE0yTWFLbXVxTXo5dTVUbWluZzR6d2tKY1dKSDdJaTYzX3hIMkdQY21fMGVzdENwREZ3ZDhZTjNtQmpQU1d"
-    },
-    {
-     "t": "72% of Gen Z",
-     "d": "A widely shared July 25 AOL/GOBankingRates piece says 72% of Gen Z now has a side hustle, framing multiple income streams as the generational default.",
-     "x": "Gen Z side hustle",
-     "src": "https://news.google.com/rss/articles/CBMickFVX3lxTE1KdUFDUWxCM3Q4OVNLbVd4blQxN2ZYc3NpejBRS2RMRG5Bb3E3M0dDZmZjR2pfVmEwWExrV3ljVGdJNzY5SVAwWnNoMDF4clA4SC1JSnVzSDRoS1A0MlBiLXVrV0xGc3pZWEdienlMY29QZw"
-    },
-    {
-     "t": "Farmers-market millionaire",
-     "d": "Entrepreneur's July 21 profile of a side hustle that made over $100K at farmers' markets and is 'on track for $1M' ('give yourself 30 days') is the week's template success story.",
-     "x": "side hustle 100k",
-     "src": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVE5rOVpHdEdHaThxekZfS045c2cyZFhQOWJzZkFwdU1RS2RfX1J5c3dJc2JXTkVEQmo0emRiSGM0X2oxbk1Oa01DRTVUZXhJQ2tyRmdYTHhvdmlRMTE0cUNvODIwNnlOUXNJQVAzeEJuRy1YWnVOMDlyWlg0dzNHbElxbTNPWUtKRklnTm40WnZMb1FXNlI3bUJCOFl5amRVWkdFWEgxRmVqUHJrVHB1ckZqSm5fNW8wb2Vj"
-    }
-   ]
-  },
-  "manosphere": {
-   "name": "the manosphere",
-   "country": "Manosphere",
-   "tldr": "rebuild the man; the world follows",
-   "ontology": "The crisis is male — purpose, testosterone, marriage, meaning. Rebuild the man and the world follows.",
-   "figures": [
-    "@Cobratate",
-    "@ChrisWillx",
-    "David Goggins"
-   ],
-   "discussing": [
-    {
-     "t": "Tates fight extradition",
-     "d": "Andrew and Tristan Tate will sit in a Miami jail at least two more weeks while fighting extradition to the UK on rape and trafficking charges, per NBC's July 27 hearing coverage; Andrew claims guards serve 'poisoned water.'",
-     "x": "Andrew Tate extradition",
-     "src": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRDJyVzJKWkx3SVc3aURGTEZ0VjFPc2FQR19YdXliZUZQS3djUlFFY1dFelhqYkF2cWg1bkhsYWR6N0dTdWpSMkpFRXM5bkNERUVxY2VDR1BESUFqZUZuaTlEWmZTVHBQc1pHQTNpN0NjWkFmWDlIMnZmcjF1YzVxQ0xSNU1GOG1CbjV2MDlQbmpHbVJaV2RnWHZpUDYzVEZmRGRrVFBrc0Z5WGdicUptMzFGV2c1ckY3WkRkQkNn?oc"
-    },
-    {
-     "t": "Barron Trump questions",
-     "d": "A congresswoman asked House Republicans on July 24 to investigate Andrew Tate's reported ties to Barron Trump, and by July 27 members of Congress wanted Barron to answer questions.",
-     "x": "Barron Trump Tate",
-     "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxONEZBRlpCbFd6ckZ5U25lNkxyeGZFbWduaEJGY3ZlMTBveGF2clFlcWFSeU1DeHFzaDNoZHcxdXpudVJjUEpybWVhd2tLRkM1aFlhYWF1aUoycmtJSEpWdm9zcmtZaHJ5RW1ZVkt4RmJlZ24yQTIyN3luLVlwdHJ2NEVmRkk3czctbERyTEZ0d3JqYUpVSjNEZ1V5djdpdw?oc=5"
-    },
-    {
-     "t": "MAGA splits on Tate",
-     "d": "The Bulwark (July 23) documented parts of MAGA rallying around Tate while The New Republic (July 28) reported Trumpworld quietly cutting him loose — the manosphere is arguing over which side to take.",
-     "x": "MAGA Andrew Tate",
-     "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQeDktTDEwZ0loaHNfbTFPUWpHV2NtVFFYLVpxWllQQ1kyVTZjUVllMzAybm1BZkpQX2ZDVHVycTMwOW5Ra0R3RTFobmdaSmM2S3lMbDBsRHh2dzM4bUhZQ1pHSzJxMEVhaVFVNVJiaXYzU1dxdl9DelZGZ2FlbHBYUXlidUt1cEloVWJkeHdzUFlFWHJtY1NPQnluaG45a3M?oc=5"
-    }
-   ]
-  },
-  "witchtok": {
-   "name": "witchtok & the old ways",
-   "country": "WitchTok",
-   "tldr": "ritual, tarot, the moon as calendar",
-   "ontology": "The disenchanted world re-enchants from below: ritual, tarot, the moon as calendar. The gods that were here before the feed.",
-   "figures": [
-    "The Hoodwitch",
-    "WitchTok creators",
-    "Chani Nicholas"
-   ],
-   "discussing": [
-    {
-     "t": "Pet tarot craze",
-     "d": "Reuters reported July 23 that South Koreans are paying tarot readers to divine what their dogs and cats are feeling, a 'pet tarot' wellness trend WitchTok is amplifying.",
-     "x": "pet tarot reading",
-     "src": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMXZ0OG5qMUpwY2tvSXpDUzNHaFlUb2VCZEpFMy1mZ2lqQ3pWOGM0b2lzeE1ob21JMktrbmsta1BzeFRRb0FOUXljN0xRdTdRclFza0xrTGVhSGc1dFROOTNZVWZXVGtIb0xWenVlSnp4RldiMlEyQ0RrMlNweXVCcUQtWTk4UWlhU0VaVUNPT1R5U0FYRGFMNF82bWZrblNDMzl4akFyN0w?oc=5"
-    },
-    {
-     "t": "Job-hunt spells",
-     "d": "Malay Mail's July 26 report says tarot spreads and paid career spells are luring desperate US and European job hunters in stagnant labor markets.",
-     "x": "career spell tarot job",
-     "src": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQNlAxTGZBbHBuekxpckJlVGtUTzNoWlJfcElHcFY0YlB5akEyUnphZUdRNmtiM2hRRnJtZE4xUzZKYU1kLWJWZER4QXljSC0xU3hObkNFOF9mV0hKVlI4UzhBWnBnUV9UREZiUmFCU0lxdktqcnpveGNRMWlVM0dOU2VYMkdRMkJ0aXZ0M2M5bGtjSUdIeGlKWlJYX2xmUmJlMFF6RnhyVkxqOHFvMFRZSXRhWFM3YnpCekwzUmNjWmN"
-    },
-    {
-     "t": "Witches and money",
-     "d": "A July 25 Guardian essay argues what really makes a woman a 'witch' is financial independence, feeding the week's discourse on why witch identity keeps surging.",
-     "x": "witch financial independence",
-     "src": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbHNuUThDb1hWZFNpSDRscFNHdlVLLVozY3lkV25NRUxUTHlkQ1c1YWl3ZUhXZDhEWE0yU1lheEhacC1WeUxjb3hXUENYRWQ5enBxRUo1UWlRejJ4b1FySHhubzRSSFRaZkU2VWNWWjdzS0hvNlBIZTE4OS1YMU9JY2wxQWZsOGtUU3dLeDl6TU9ubWRkYUt3?oc=5"
-    }
-   ]
-  },
-  "socialist": {
-   "name": "the socialist left",
-   "country": "Socialist left",
-   "tldr": "the oldest war is labor versus capital",
-   "ontology": "The oldest war is labor versus capital; everything else is noise over that signal.",
-   "figures": [
-    "@jacobin",
-    "@hasanthehun",
-    "DSA"
-   ],
-   "discussing": [
-    {
-     "t": "DSA wants action",
-     "d": "The New York Times reported July 26 that democratic socialists are 'winning big' electorally and the movement is now demanding its elected officials deliver, as DSA's platform and funding draw national fire.",
-     "x": "DSA democratic socialists",
-     "src": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUGtZZVBDRVV4TWg4akprU0NaanlWMjVjSEhnSUZxLWo2NmNXS0xXaXNHRlVnLUNDc25aRlpjZ3NZdHlub0FKUW9zd1RzT3YxbkdGWGJEcTdGVkhPdDJNNHowN1FoN3JGenZ2ODRmOVFpd1k1M1poNHhTVzQxNWh0d2dn"
-    },
-    {
-     "t": "30% city groceries",
-     "d": "Mayor Mamdani said July 27 that NYC's city-owned grocery stores will sell essential items at 30% discounts while vowing not to compete with local shops.",
-     "x": "Mamdani city grocery",
-     "src": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMThCaV83SEdzeFJmN3d4S0pqc2dWOFRhVzE1Y3doTTNzRHZFYmpEUnU5dXA5LW1PYUlUMTJnTnl4cGd6bGZyZUNsaGQ3QWJrWXNQY2UtdW9XVDlGOERYdGVPdFpNak1WZTFvNFlHRk1pUU4tWW0zRVZ4VWJMN0FCVUZIMGN6RTlQTno3aFVjaF83TTM5VXpUVGctTm0wUlpFYU1xMGdnQVRJZ1pFbGR4NEFoZnBlR1MxbVJESk9ZcEZ"
-    },
-    {
-     "t": "Rent freeze lawsuit",
-     "d": "NYC landlords sued the city on July 22 over the Mamdani-backed rent freeze, per the Wall Street Journal, setting up the left's marquee housing fight.",
-     "x": "rent freeze lawsuit NYC",
-     "src": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcU02NlFrM3cweXhaWTVtZzhHNVhrNnlCdEN2YWViNVFYWHc2VjhndWV4MzhUQjJuWlZKNWc5WVpNOENldkltdVRZZ2VCRk9IQXZJU2lfcG1GZURhR0FWajU0MVQyb0hYdFZsYXJDQXV6bXZpb3JkbjVhNTh5RjBRQTR4aDlsc0NianJfUA"
-    }
-   ]
-  },
-  "postliberal": {
-   "name": "the post-liberals",
-   "country": "Post-liberals",
-   "tldr": "rebuild on faith, family, common good",
-   "ontology": "Liberalism ate its own foundations; rebuild on faith, family, and the common good.",
-   "figures": [
-    "@SohrabAhmari",
-    "Patrick Deneen",
-    "Adrian Vermeule"
-   ],
-   "discussing": [
-    {
-     "t": "New Roe fight",
-     "d": "The Dispatch's July 1 piece 'For Postliberals, Birthright Citizenship Is the New Roe' framed the movement's next constitutional crusade, still being argued over in postliberal circles this month.",
-     "x": "postliberal birthright citizenship",
-     "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxNN3IxRUY5NHMyRFFZVFZDdnBQb0wyRGJ5RV9tYXZ4ajhaeklEZGJCRFVKV2pqRHpHakdDbTB2S1hRLVc3YTZOa2tSNHdoT3EtU2xxYmdRQUpuRFlyN3A3RHhMellmWThLblc3T0NIY1dNbk5EaVg3Y1Y0ZGx1ZnFqT3g1RjNOUUcwX3hOaERDOFF1cV85MmNJeVFDdG96UQ?oc=5"
-    },
-    {
-     "t": "Sleat on postliberalism",
-     "d": "Political theorist Matt Sleat's July 11 interview at illiberalism.org dissects post-liberalism, the common good, and liberal perfectionism — a current reference point in the Vermeule/Deneen debate.",
-     "x": "postliberalism common good",
-     "src": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNTDBTZHhwX2NNZ0hGWTdLMHBtUTg3Rnd6UEtybnlKbGlNYXZXaXlNZGJKTExZZmxtcnFLRlJ1RE1RUFFTUDF2dHI5MW95ZEN0Z0dqNkRWejdGMk9icTZFVF9UcktpaE1nWGwwNnBMaHB6S3I5dm9CdnJqdER2NnltSGpfWmw3WUtjT2VOeE42UU5xelZVSUVxdGYtckFabTVMM1lHQW1QVV9UOTVlbGxJRDFHYUdrZw?oc=5"
-    },
-    {
-     "t": "America at 250",
-     "d": "A July 3 Washington Examiner essay argued that at America's 250th anniversary 'postliberalism risks undoing America,' the sharpest recent liberal-conservative counterattack on the movement.",
-     "x": "postliberalism America 250",
-     "src": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQOWJDUmlHN1R1aEdJZ2Jtd29nSVdaT1pvZzdXNVV0dVFQQk01MFgteWtzd084T19vTnJSUU9XRUhDdmZOYkJYWTZucFU5QkpBdWpkZnhSQ0VPY01Mdy1wWWlzN3pDajVZbHVoSERra3ptRlJLRk1FbDhPN3U1U0RXakhCemt2TEVaeEpSVnlSOGNMNjFLRGdoRlJYRVFxVFFnbnNNYkI5UnhKV3JUNEdEdU5TaU9fWjZMVi1NM2R6RmJ"
-    }
-   ]
-  },
-  "refusal": {
-   "name": "tech refusal",
-   "country": "Tech refusal",
-   "tldr": "the only winning move is to log off",
-   "ontology": "The machine's product is your attention, and the only winning move is to log off. The decelerate coast's far shore.",
-   "figures": [
-    "Cal Newport",
-    "@JonHaidt",
-    "Freya India"
-   ],
-   "discussing": [
-    {
-     "t": "Bell-to-bell fall",
-     "d": "Districts from Oakland (all-day ban announced July 23) to Denver, Wichita, Maine and all of Indiana are rolling out bell-to-bell phone bans as the 2026-27 school year opens.",
-     "x": "bell to bell phone ban",
-     "src": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSlVkc2dVcmkzMnBOUzlVcnB3clFkNHVERDROQVFvZjRXa212ZXUwZTI3XzkyTHhwVWRLdzVsd3JiNXhWYllEd2FGZ1FKZmduQlVEcVB1YzdOU0U3bnRPbE5tWFcwQVNuYW1FUTMxenFBQWl1U0RQVTZ5ZnlrY0VMQ19jZV9oMnRrNmZSSUVaaktWQ0gyVy16Q0F6RGM2ZEQ2MUFpSV9KMktYMFE"
-    },
-    {
-     "t": "Senators join push",
-     "d": "Sens. Amy Klobuchar and Marsha Blackburn are both pushing school cell phone bans at the federal level, per July 21-24 local coverage of their proposals.",
-     "x": "Klobuchar phone ban",
-     "src": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdnZpWXA1bHQwN1JySVAwcXZ0U1NINWRGckRoSWp5Yk9LQnk4SmdsdkFRTnBrU1pucXFfeWNhNElvLW5EcHhVd2VCV2poSFB4bkdsMUFqc0Zja0lDa0RCWTUyQ2hFUXJrQkY0UDRaY3h4cVFhVXlBd05RUnI4SUpLSkk3UktVNGFxTlNqQnpiWUhjbF9ESi1HMTdMT1FvX3hOTzczRTk2dW5vRXV3c2JVRlE5U3d0NUxjMnc"
-    },
-    {
-     "t": "Students push back",
-     "d": "Savannah Arts Academy students petitioned against Georgia's phone ban on July 27 citing safety concerns, while a July 21 BGR roundup notes studies show bans may not raise grades.",
-     "x": "students petition phone ban",
-     "src": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOS2tlSmVGbVc3azh2RWU3VHZ3cXg2NTQxTHM1Ykp5QzRZMlVrQnBuSGh2ZXRrbkl0YjhZSW1hM1Q5REZ4NF8tRlI5WEQtaW5pU0NkcXJFaHdaaW1aNFpYUTAzVHZyX0lsaHdFYUI4dHpZWEI3R2NqeTFPYy12aGxra2RpaXFtTU9wa3YwSTlrVTVuUldSQkVmdGFEZUJPMDFWQVhwazY5SkhVMll4UUw1cNIBxAFBVV95cUxObFcxVUU"
-    }
-   ]
-  },
-  "dacc": {
-   "name": "d/acc",
-   "country": "d/acc",
-   "tldr": "accelerate the defensive things",
-   "ontology": "Accelerate the defensive things — crypto, bio-defense, open source — so the power lands in everyone's hands.",
-   "figures": [
-    "@VitalikButerin",
-    "open-source biosecurity",
-    "the open-weights camp"
-   ],
-   "discussing": [
-    {
-     "t": "Open-weights letter",
-     "d": "An Nvidia-led corporate letter defending open-weight AI models doubled to 50 signers by July 26 — notably without Amazon or Anthropic — as Washington weighs restricting Chinese models like Kimi K3.",
-     "x": "open weights letter Nvidia",
-     "src": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOdDdqVzNsSGsyVVZtcHQ5U2RQZlNBVE13X0xjNjBxVmw1WUl1QkRTZUpwbWoxb1VvZGRKU190cUFiS0VHZTZMTHY2cW9QVDBrWGFsLVd5SzRXVjZsczVjeFJZRjJwamo0eXJ2bkF1Q3I4VF84bVZyQURtMnRsYlNpWF9BMEpoSUJXUFNDaGNYWllCWkN1VkpmRkxtMmZRX3JVQWNsbHdIYXdmVkN2cWItVFpTM1NnY3ptZ3I2Zm1vaw"
-    },
-    {
-     "t": "Amodei clarifies stance",
-     "d": "Anthropic CEO Dario Amodei said July 27-28 he is not advocating a ban on open-weight models but fears Chinese AI and wants mandatory safety testing, per TechCrunch and CNBC.",
-     "x": "Amodei open weight",
-     "src": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSkZqakVyZ2htYkthcGIwZG84QXdmQWV2UTVUS0dnSC0wU1p1NEhJcmZTcFpaRmFjZkFHdmhPRkZUaVp1eWx6SU9kM2Z3elNNbnI4ZWpTeGctT0diMEsyVVdEeEY1TGFOZjF2eDVSaEFjX0ZITGF0WVd5X3liT2lHNGhGUHhnX3dab1lIdGNHeGlodVhYZFZzdjhrTUplcW5LQnVyeHNGeUJiLUdFMy1GZ21NdXJZUnZwdWpZY01B"
-    },
-    {
-     "t": "Vitalik backs FOCIL",
-     "d": "Vitalik Buterin backed FOCIL censorship-resistance inclusion lists as Ethereum scheduled its Hegota upgrade (July 25), pitching a 4-year plan to make Ethereum 'the chain you can rely on.'",
-     "x": "Vitalik FOCIL Hegota",
-     "src": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNd05CM3BjYlZENnZGS2ExdDYzRzdGamczb2ZyLVNhaWlWNUdqeDZuNUw0NExpSHE3LXhJU3Z6N0F6SXdEUDRzdXY2TVM1dUZtTk5yOWJMUS1qenl6c0pZMFVjOTZKVDQwRGZmbUxwSWpPbTdSVWxWeFBTbC0xaERmY1NONG1WTTNMbFRSNXZ3cDBFOHZZQWU2dy1LLWQ0aXFKV1NEcE9QYkI2dw"
-    }
-   ]
-  },
-  "liminal": {
-   "name": "the liminal web",
-   "country": "Liminal web",
-   "tldr": "hold the whole; don't pick a jersey",
-   "ontology": "The crisis under the crises is sensemaking itself; hold the whole, don't pick a jersey.",
-   "figures": [
-    "Jonathan Rowson",
-    "Daniel Thorson",
-    "The Stoa"
-   ],
-   "discussing": [
-    {
-     "t": "Tooze on polycrisis",
-     "d": "Adam Tooze's July 26 Chartbook 461 links the polycrisis frame to 'nostalgia for lost futures,' the week's most-shared big-picture sensemaking essay.",
-     "x": "Tooze polycrisis chartbook",
-     "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9DUTBUTWZrZHRYRkhKNVdFbHVTcTFRazYyeWdBRm45RXNxUlV1WXlmRmZFYVFhY19TV0dXTkNkME1ZLVZMTlRYZzc4V0VPelBib09rZWRBN2FRQzhrREo2a1ZFSWYzRVlPaDZkcmxuakd3d2wyeWFHNmIzQQ?oc=5"
-    },
-    {
-     "t": "Defining the metacrisis",
-     "d": "A July 6 'definitional field guide' from Adapt Research Writing sorts out polycrisis vs. metacrisis vs. systemic risk, circulating in sensemaking circles as the terms leak into mainstream use.",
-     "x": "metacrisis polycrisis definition",
-     "src": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcHl1RnY1TnBNZmM3RFZJS19lcjV2MXNxYnItU1JTMm5KRVF4OXRpLWJUemtEYjBMODBYbFRQZUlJNHp5UDV1UngyRmNjN3B0alNEa2tIYndlU2ViLUlJTzVpT2Y3S3F0ZnlxTkVCSGVrRkZNbVFORHlvc2UyWHV0cUVZelAwR19NODBOcHQ4ODAwT29MWFYxUnE1YTJkTk81czZBV01BUUxJczRJcE55ejN3VE9fRUk4ZHBldDExVVN"
-    },
-    {
-     "t": "Rowson's summer letters",
-     "d": "Jonathan Rowson's Joyous Struggle newsletter is in an intimate summer mode — his July 7 post reflects on a diabetic episode and small joys, after June essays on embodied cognition and political absurdity.",
-     "x": "Jonathan Rowson joyous struggle",
-     "src": "https://jonathanrowson.substack.com/p/yes-ok-ill-have-a-creme-brulee-cruller"
-    }
-   ]
-  },
-  "nihilists": {
-   "name": "the nihilist trench",
-   "country": "The Nihilist Trench",
-   "tldr": "named, not steelmanned",
-   "ontology": "Nothing means anything and nothing is worth wanting — the undertow beneath every other territory. Named here as a hazard to navigation, not steelmanned, by design.",
-   "figures": [
-    "no one claims it"
+    "the ECB",
+    "your bank"
    ],
    "discussing": []
   }
  },
  "paper": {
   "hooks": [
-   "🏛️ new fed chair kevin warsh opens his first FOMC with markets pricing near one-in-three odds of a HIKE after the iran oil shock",
-   "🐉 chinese DRAM maker CXMT soared 466% on its market debut — briefly a $489 billion company",
-   "🕉️ india's gen z 'cockroach' movement ended 36 days of protests after the education minister resigned",
-   "🚀 starship flight 13 lifted off on 33 raptor engines july 25 and chalked up a mostly successful run",
-   "🕳️ trump's AG nominee begged a judge not to fine him $1,000 a day over withheld epstein files"
+   "🟠 bitcoin is $1.29T of the top 100's $2.22T — 58% of the mapped economy",
+   "💵 the stablecoin economy holds $296.0B across 19 coins in the top 100",
+   "🏦 tokenized tradfi — treasuries, gold, credit — is $59.0B and 19 coins strong",
+   "🎰 hyperliquid leads the perp casinos at $12.3B",
+   "🐸 the trenches: 6 memecoins made the top 100, $17.8B together"
   ],
-  "head": "the whole map waits on the fed",
-  "deck": "Kevin Warsh's first FOMC opens July 28 with hike odds near one-in-three after the Iran oil shock — bitcoin under $64K, consumer confidence falling, and nearly every tribe watching the same number."
+  "head": "the top 100, drawn as a world",
+  "deck": "Every coin in CoinGecko's top 100 placed as a city in its tribe's territory — $2.22T of crypto, from bitcoin's $1.29T continent to the memecoin trenches."
  }
 }

@@ -1,3 +1,13 @@
+# CryptoTwitter Ontology Map (fork)
+
+> This branch (`cryptotwitter`) is a fork of the Atlas of Frontier Ontologies:
+> the same map engine, but the territory is crypto twitter. Every coin in the
+> CoinGecko top 100 is a city in its tribe's territory; market cap is the
+> terrain. Axes: north = tradfi & regulation, south = cypherpunk & the
+> trenches, west = ship fast, east = sound money. The ocean is fiat.
+> Data seeded from https://www.coingecko.com/ (top 100 by market cap).
+> The nightly research pipeline is not wired for this fork yet.
+
 # Atlas of Frontier Ontologies
 
 **Test it live: https://daily-ontological-map.vercel.app/**
