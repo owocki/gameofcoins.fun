@@ -1146,6 +1146,26 @@
      "x": "$GIV",
      "src": "https://www.coingecko.com/en/coins/giveth"
     }
+   ],
+   "topics": [
+    {
+     "t": "Gitcoin stewards reboot",
+     "d": "Kevin Owocki's July 14 temp check proposes a small paid 'transitionary stewards' cohort (Aug 2026-Aug 2027) to oversee Gitcoin's pivot from Ethereum-native grants toward real-world local funding, drawing pushback on scope and pay through July 26.",
+     "x": "gitcoin transitionary stewards",
+     "src": "https://gov.gitcoin.co/t/temp-check-transitionary-stewards-cohort/25342"
+    },
+    {
+     "t": "OP grants autopsy",
+     "d": "A July 21 RFC on the Optimism forum asks for $15,000 to build a 'Capital Efficiency Oracle' that audits Season 9 OP grant recipients for Sybil-farmed TVL before Season 10 allocation votes.",
+     "x": "optimism season 9 grants",
+     "src": "https://gov.optimism.io/t/rfc-operational-mandate-s9-impact-autopsy-s10-capital-efficiency-oracle/10772"
+    },
+    {
+     "t": "Celo runs op-reth",
+     "d": "Celo mainnet swapped its execution client from op-geth to op-reth on July 22, deepening its OP Stack alignment, and the core team warned node operators that op-geth nodes will no longer follow the chain.",
+     "x": "celo op-reth upgrade",
+     "src": "https://forum.celo.org/t/celo-mainnet-is-now-running-op-reth/13594"
+    }
    ]
   },
   "nft": {
@@ -1195,6 +1215,26 @@
      "x": "$BLUR",
      "src": "https://www.coingecko.com/en/coins/blur"
     }
+   ],
+   "topics": [
+    {
+     "t": "Pengu hits Target",
+     "d": "Pudgy Penguins landed Pengu plushies in over 1,800 US Target stores on July 19 — its biggest retail push yet — with 5% of net merch revenue flowing to NFT holders and PENGU popping 4.6% on the news.",
+     "x": "pudgy penguins target",
+     "src": "https://egamers.io/pengu-plushies-land-in-over-1800-target-stores-as-pudgy-penguins-goes-mainstream/"
+    },
+    {
+     "t": "BAYC Discord hacked",
+     "d": "Bored Ape Yacht Club's Discord was hacked on July 24, capping a week in which CoinMarketCap reported dozens of NFTs stolen and holders traded 'STAY SAFE' warnings.",
+     "x": "bored ape discord hack",
+     "src": "https://news.google.com/rss/search?q=%22Bored%20Ape%22%20Discord%20hacked%20when:14d"
+    },
+    {
+     "t": "ApeCoin 3-month high",
+     "d": "APE surged to a 3-month high over the July 24-27 weekend, with Stocktwits reporting one whale netting a $700,000 profit on the move before pullback chatter set in.",
+     "x": "apecoin rally 3-month high",
+     "src": "https://news.google.com/rss/search?q=ApeCoin%20APE%20rally%20when:7d"
+    }
    ]
   },
   "depin": {
@@ -1225,6 +1265,26 @@
      "d": "IoTeX — rank #786, $20M market cap, $0.0022.",
      "x": "$IOTX",
      "src": "https://www.coingecko.com/en/coins/iotex"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Storj goes bankrupt",
+     "d": "Decentralized-storage pioneer Storj Labs filed for Chapter 11 around July 25-27, with The Block headlining a roughly 20% STORJ drop and BeInCrypto asking what's left for token holders.",
+     "x": "storj chapter 11",
+     "src": "https://news.google.com/rss/search?q=Storj%20%22Chapter%2011%22%20when:14d"
+    },
+    {
+     "t": "MOBILE token sunset",
+     "d": "Crypto.com delists Helium Mobile's MOBILE token on July 28 and is supporting a swap into HNT, the latest step in Helium folding its subtokens into a single-token economy.",
+     "x": "helium mobile hnt swap",
+     "src": "https://coinfomania.com/crypto-com-supports-helium-mobile-token-swap-to-hnt-ahead-of-delisting/"
+    },
+    {
+     "t": "SEC DePIN pass",
+     "d": "SEC Commissioner Hester Peirce confirmed on July 21 that the agency issued a no-action letter for a decentralized-energy DePIN project, read across the sector as a friendlier regulatory stance.",
+     "x": "peirce depin no-action letter",
+     "src": "https://coinfomania.com/commissioner-hester-peirce-confirms-no-action-letter-for-depin-project/"
     }
    ]
   }
