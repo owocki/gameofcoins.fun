@@ -563,7 +563,7 @@
     }
   }
   const TRIBE_PROPS = {
-    btcmaxis: [coinProp], ethereum: [diamondProp], regens: [plantsProp],
+    btcmaxis: [coinProp], ethereum: [diamondProp, ritualProp], regens: [plantsProp],
     linkmarines: [marinesProp], stablecoins: [pillarsProp, porticoProp],
     rwa: [porticoProp, coinProp], exchangetokens: [orbitCoinsProp],
     xrparmy: [flagsProp], solana: [sunProp], memedaos: [pizzaProp, flagsProp],
@@ -608,34 +608,108 @@
   function makeLabel(text) {
     const cv = document.createElement('canvas'); cv.width = 512; cv.height = 128;
     const ctx = cv.getContext('2d');
-    ctx.font = '600 52px "EB Garamond", Georgia, serif';
+    ctx.font = '600 56px "EB Garamond", Georgia, serif';
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-    ctx.strokeStyle = '#f3e9d2'; ctx.lineWidth = 10; ctx.strokeText(text, 256, 64);
+    ctx.strokeStyle = '#f3e9d2'; ctx.lineWidth = 12; ctx.strokeText(text, 256, 64);
     ctx.fillStyle = '#2c2417'; ctx.fillText(text, 256, 64);
     const sp = new T.Sprite(new T.SpriteMaterial({ map: new T.CanvasTexture(cv), transparent: true, depthWrite: false }));
-    sp.scale.set(30, 7.5, 1);
+    sp.scale.set(34, 8.5, 1);
     return sp;
   }
   const walkerMats = [0x8a4a2e, 0x4e7dae, 0x5c7d46, 0x7d5aa0, 0xb08d2a].map(c => new T.MeshLambertMaterial({ color: c }));
+  const hatGold = new T.MeshLambertMaterial({ color: 0xd8a828 });
+  const hatDark = new T.MeshLambertMaterial({ color: 0x2e2a26 });
   function buildWalkers(tw, rnd) {
     const figs = (tw.tribe.figures || []).slice(0, 5);
     figs.forEach((handle, i) => {
       const g = new T.Group();
       const mat = walkerMats[i % walkerMats.length];
-      const body = new T.Mesh(new T.CylinderGeometry(1.3, 1.5, 4.6, 6), mat);
-      body.position.y = 2.3; g.add(body);
-      const head = new T.Mesh(new T.SphereGeometry(1.6, 6, 5), mat);
-      head.position.y = 5.7; g.add(head);
+      const body = new T.Mesh(new T.CylinderGeometry(1.4, 1.7, 5.2, 6), mat);
+      body.position.y = 2.6; g.add(body);
+      const head = new T.Mesh(new T.SphereGeometry(1.7, 6, 5), mat);
+      head.position.y = 6.4; g.add(head);
+      // a recognizable silhouette per figure: crown · wizard hat · hood · halo · cap
+      if (i === 0) { const c = new T.Mesh(new T.CylinderGeometry(1.3, 1.3, 1.2, 8), hatGold); c.position.y = 7.8; g.add(c); }
+      else if (i === 1) { const c = new T.Mesh(new T.ConeGeometry(1.7, 3.6, 7), hatDark); c.position.y = 8.4; g.add(c); }
+      else if (i === 2) { const c = new T.Mesh(new T.ConeGeometry(2.0, 2.4, 7), mat); c.position.y = 7.6; g.add(c); }
+      else if (i === 3) { const h = new T.Mesh(new T.TorusGeometry(1.6, 0.3, 6, 14), hatGold); h.position.y = 8.6; h.rotation.x = Math.PI / 2; g.add(h); }
+      else { const c = new T.Mesh(new T.CylinderGeometry(2.0, 2.0, 0.6, 8), hatDark); c.position.y = 7.5; g.add(c); }
       const label = makeLabel(handle);
-      label.position.y = 10.5; g.add(label);
+      label.position.y = 12.5; g.add(label);
+      g.scale.setScalar(1.3);
       scene.add(g);
-      walkers.push({ g, tw, ph: i * 1.7 + rnd() * 2, rr: 0.35 + rnd() * 0.4, spd: 0.16 + rnd() * 0.1 });
+      walkers.push({ g, tw, ph: i * 1.7 + rnd() * 2, rr: 0.35 + rnd() * 0.4, spd: 0.16 + rnd() * 0.1,
+                     bounce: tw.id === 'memedaos' ? 2.6 : 0.5 });
     });
+    // the sandwich chase: two searchers forever hunting the same lap
+    if (tw.id === 'mevsearchers') {
+      for (let k = 0; k < 2; k++) {
+        const g = new T.Group();
+        const mat = k ? hatDark : new T.MeshLambertMaterial({ color: 0xffe25c });
+        const body = new T.Mesh(new T.CylinderGeometry(1.2, 1.4, 4.6, 6), mat); body.position.y = 2.3; g.add(body);
+        const head = new T.Mesh(new T.SphereGeometry(1.5, 6, 5), mat); head.position.y = 5.6; g.add(head);
+        scene.add(g);
+        walkers.push({ g, tw, ph: 0.5 - k * 0.5, rr: 0.55, spd: 0.5 + k * 0.07, bounce: 1.2 });
+      }
+    }
+  }
+  // ---------- street life: market stalls + a campfire in every town ----------
+  const flameMat = new T.MeshLambertMaterial({ color: 0xff8c2a, emissive: 0xff6a14 });
+  function buildStalls(tw, rnd) {
+    const n = 2 + Math.floor(rnd() * 2);
+    for (let i = 0; i < n; i++) {
+      const side = i % 2 ? 1 : -1;
+      const wx = tw.cap[0] + (rnd() - 0.5) * tw.Rt * 0.9, wy = tw.cap[1] + side * (15 + rnd() * 6);
+      const h = getH(wx, wy);
+      const counter = new T.Mesh(new T.BoxGeometry(7, 3, 4), townMats[2]);
+      counter.position.copy(W2S(wx, wy, h + 1.5)); scene.add(counter);
+      const canopy = new T.Mesh(new T.BoxGeometry(8, 0.6, 5.5), canvasMats[Math.floor(rnd() * canvasMats.length)]);
+      canopy.position.copy(W2S(wx, wy, h + 6.4)); canopy.rotation.z = 0.06; scene.add(canopy);
+      for (const dx of [-3.4, 3.4]) for (const dz of [-2.2, 2.2]) {
+        const leg = new T.Mesh(new T.CylinderGeometry(0.25, 0.25, 6, 5), darkRoof);
+        leg.position.copy(W2S(wx + dx, wy + dz, h + 3)); scene.add(leg);
+      }
+    }
+  }
+  function buildFire(tw, rnd) {
+    const a = rnd() * 6.28, r = tw.Rt * 0.3;
+    const wx = tw.cap[0] + Math.cos(a) * r;
+    let wy = tw.cap[1] + Math.sin(a) * r * 0.8;
+    if (Math.abs(wy - tw.cap[1]) < 14) wy += 18;
+    const h = getH(wx, wy);
+    for (let k = 0; k < 6; k++) {
+      const st = new T.Mesh(new T.BoxGeometry(1.1, 0.9, 1.1), stoneMat);
+      st.position.copy(W2S(wx + Math.cos(k) * 2.4, wy + Math.sin(k) * 2, h + 0.5)); scene.add(st);
+    }
+    const fl = new T.Mesh(new T.ConeGeometry(1.5, 4.2, 6), flameMat);
+    fl.position.copy(W2S(wx, wy, h + 2.4)); scene.add(fl);
+    propsAnim.push({ type: 'flick', m: fl, ph: rnd() * 6 });
+    for (let k = 0; k < 3; k++) {
+      const aa = k * 2.1 + 0.6;
+      const px = wx + Math.cos(aa) * 4.6, py = wy + Math.sin(aa) * 3.8;
+      const ph2 = getH(px, py);
+      const fig = new T.Group();
+      const bd = new T.Mesh(new T.CylinderGeometry(1.1, 1.3, 2.6, 6), walkerMats[k % 5]); bd.position.y = 1.3; fig.add(bd);
+      const hd = new T.Mesh(new T.SphereGeometry(1.2, 6, 5), walkerMats[(k + 2) % 5]); hd.position.y = 3.4; fig.add(hd);
+      fig.position.copy(W2S(px, py, ph2));
+      fig.lookAt(W2S(wx, wy, ph2)); scene.add(fig);
+    }
+  }
+  // ethereum: a ring of robed validators around the beacon keep
+  function ritualProp(tw) {
+    for (let k = 0; k < 6; k++) {
+      const aa = k / 6 * Math.PI * 2;
+      const px = tw.cap[0] + Math.cos(aa) * 17, py = tw.cap[1] + Math.sin(aa) * 13.5;
+      const h = getH(px, py);
+      const robe = new T.Mesh(new T.ConeGeometry(1.7, 5.4, 6), new T.MeshLambertMaterial({ color: 0x3d4d8f }));
+      robe.position.copy(W2S(px, py, h + 2.7)); scene.add(robe);
+    }
   }
   function animateProps(t) {
     for (const p of propsAnim) {
       if (p.type === 'spinbob') { p.m.rotation.y = t * 0.8 + p.ph; p.m.position.y = p.y0 + Math.sin(t * 1.4 + p.ph) * 2.4; }
       else if (p.type === 'coinlogo') { p.m.rotation.y = t * 0.55 + p.ph; p.m.position.y = p.y0 + Math.sin(t * 1.1 + p.ph) * 3; }
+      else if (p.type === 'flick') { p.m.scale.setScalar(0.85 + 0.3 * Math.abs(Math.sin(t * 7 + p.ph)) + 0.1 * Math.sin(t * 23 + p.ph)); }
       else if (p.type === 'spin') { p.m.rotation.z = t * 0.9 + p.ph; }
       else if (p.type === 'wave') { p.m.rotation.y = Math.sin(t * 2.2 + p.ph) * 0.35; }
       else if (p.type === 'orbit') {
@@ -654,7 +728,7 @@
       const wx = w.tw.cap[0] + Math.cos(a) * r + Math.cos(t * 0.31 + w.ph) * 6;
       const wy = w.tw.cap[1] + Math.sin(a) * r * 0.8 + Math.sin(t * 0.27 + w.ph) * 5;
       const h = getH(wx, wy);
-      w.g.position.copy(W2S(wx, wy, h + Math.abs(Math.sin(t * 4 + w.ph)) * 0.5));
+      w.g.position.copy(W2S(wx, wy, h + Math.abs(Math.sin(t * 4 + w.ph)) * (w.bounce || 0.5)));
       const nx = w.tw.cap[0] + Math.cos(a + 0.1) * r, ny = w.tw.cap[1] + Math.sin(a + 0.1) * r * 0.8;
       w.g.lookAt(W2S(nx, ny, h));
     }
@@ -720,8 +794,8 @@
     // kicker: market cap, then the coins that live here
     const coins = (tb.discussing || []).map(tickOf).filter(s => /^[A-Z0-9]{2,6}$/.test(s)).slice(0, 4);
     const kick = fmtCap(A.mcap(tb)) + (coins.length ? ' · ' + coins.join(' · ') : '');
-    // trending block: dated header + the day's narratives
-    const tops = (tb.topics || []).slice(0, 2).map(tp => tp.t.slice(0, 52));
+    // trending block: dated header + up to five of the day's narratives
+    const tops = (tb.topics || []).slice(0, 5).map(tp => tp.t.slice(0, 48));
     const day = fmtDay(A.day);
     const html = tops.length
       ? '<span class="tk">Trending' + (day ? ' · ' + A.esc(day) : '') + '</span>' + tops.map(s => A.esc(s)).join('<br>')
@@ -981,6 +1055,8 @@
       if (mc > 3e10) buildDragon(tw, i * 1.3, 0.9 + 0.55 * Math.log10(1 + mc / 1e9),
                                  (TRIBE_LOOK[tw.id] || DEFAULT_LOOK).keep);
       buildBirds(tw, rnd);
+      buildStalls(tw, rnd);
+      buildFire(tw, rnd);
       (TRIBE_PROPS[tw.id] || []).forEach(fn => fn(tw, rnd));
       buildWalkers(tw, rnd);
     });
