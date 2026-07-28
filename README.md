@@ -27,7 +27,8 @@ There is also a second view of the same data: **The Attention Times** (the "📰
 
 ## Architecture
 
-- `index.html` — the whole site, static (fonts baked in). Fetches `data/index.json` for the list of days, then `data/<date>.json` per day. Built from `site.template.html` by `scripts/build_site.py` — only rebuild when the template changes.
+- `index.html` — the whole site, static (fonts baked in). Fetches `data/index.json` for the list of days, then `data/<date>.json` per day. Built from `site.template.html` by `scripts/build_site.py` — only rebuild when the template changes. The template head carries the full social unfurl (Open Graph + Twitter cards pointing at `og.png`), so every page generated from it unfurls; if you ever add a second template, copy that meta block.
+- `og.png` — the 1200×630 unfurl card (a clean screenshot of the map). Regenerate after big geography changes: serve the site locally and screenshot at 1200×630 with the controls hidden.
 - `data/YYYY-MM-DD.json` — one snapshot per day. Static per tribe: `country` (map label), `tldr`, `ontology`, `figures`. Daily: `discussing` — topics `{t: label, d: sentence, x: X search query}`; the first topic is the capital (star).
 - `scripts/canon.json` — the fixed tribe canon (names, TLDRs, ontologies). Tribe ids are geometry keys — never change them.
 - `scripts/research.py` — the nightly job. Five Claude calls (one per tribe cluster) with server-side web search, merged with the canon, validated, written to `data/`. Fails safe: a bad run writes nothing and the site keeps serving yesterday.
