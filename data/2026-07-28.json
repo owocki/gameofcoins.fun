@@ -1551,6 +1551,32 @@
      "x": "$GNO",
      "src": "https://www.coingecko.com/en/coins/gnosis"
     }
+   ],
+   "topics": [
+    {
+     "t": "Minnesota ban blocked",
+     "d": "Federal judge Katherine Menendez blocked Minnesota's first-in-the-nation prediction-market ban (SF 3432) on July 27, days before it would have made Kalshi and Polymarket felonies in the state.",
+     "x": "Kalshi Minnesota injunction",
+     "src": "https://decrypt.co/374498/kalshi-polymarket-score-win-as-judge-blocks-minnesota-prediction-market-ban-for-now"
+    },
+    {
+     "t": "World Cup betting billions",
+     "d": "The World Cup final drove prediction-market volume into the billions, with Kalshi alone seeing about $27 billion in World Cup-related trading versus roughly $1 billion for the Super Bowl.",
+     "x": "Kalshi World Cup volume",
+     "src": "https://www.pymnts.com/cryptocurrency/2026/robinhood-eyes-crypto-com-to-expand-role-on-prediction-market-stage/"
+    },
+    {
+     "t": "Wisconsin voter suppression fight",
+     "d": "After the Wisconsin Elections Commission warned July 21-22 that election bets on Kalshi or Polymarket could bring felony charges and disqualify voters, Kalshi blasted the warning as 'voter suppression' and 'incredibly dangerous to democracy.'",
+     "x": "Kalshi Wisconsin voter suppression",
+     "src": "https://www.wpr.org/news/polymarket-kalshi-wisconsin-elections-commission-warns-betting"
+    },
+    {
+     "t": "Seattle judge rules against Kalshi",
+     "d": "A King County Superior Court judge granted Washington state a preliminary injunction against Kalshi on July 21, ruling the platform is likely running illegal online gambling and rejecting its federal-preemption defense.",
+     "x": "Kalshi Washington ruling",
+     "src": "https://www.geekwire.com/?s=kalshi"
+    }
    ]
   },
   "base": {
@@ -1581,6 +1607,32 @@
      "d": "Degen — rank #459, $43M market cap, $0.0012.",
      "x": "$DEGEN",
      "src": "https://www.coingecko.com/en/coins/degen-base"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Pollak admits social failed",
+     "d": "Base co-founder Jesse Pollak said 'I was definitely wrong' about the social and creator-coin bet on July 15-16, refocusing Base on trading, payments, and AI agents while Cobie takes over the Base App.",
+     "x": "Base Pollak pivot",
+     "src": "https://www.cryptotimes.io/2026/07/16/bases-jesse-pollak-admits-creator-coin-strategy-failed-signals-ai-pivot/"
+    },
+    {
+     "t": "Robinhood Chain passes Base",
+     "d": "Robinhood Chain overtook Base on daily active users on July 21 (323,969 vs 274,520), just three weeks after mainnet launch, with memecoin trading via Pump.fun driving much of the activity.",
+     "x": "Robinhood Chain Base users",
+     "src": "https://thedefiant.io/news/defi/robinhood-chain-overtakes-base-on-daily-active-users-three-weeks-after-launch"
+    },
+    {
+     "t": "100M agent payments",
+     "d": "Base crossed 100 million x402 payments per Chainalysis, and Coinbase CEO Brian Armstrong said on July 27 that AI agents transacting onchain will eventually outnumber human transactions.",
+     "x": "Base x402 payments",
+     "src": "https://crypto.news/coinbase-bets-on-agentic-finance-as-base-payments-cross-100m/"
+    },
+    {
+     "t": "1:1 tokenized stocks coming",
+     "d": "Jesse Pollak said July 21 that Coinbase is 'close' to launching tokenized stocks on Base backed one-for-one by real shares, admitting 'we've been behind on this' versus Robinhood's derivative-based tokens.",
+     "x": "Base tokenized stocks",
+     "src": "https://crypto.news/base-coinbase-near-11-tokenized-stocks-as-robinhood-leads/"
     }
    ]
   },
@@ -1748,6 +1800,44 @@
      "d": "Dog (Bitcoin) — rank #368, $60M market cap, $0.0006.",
      "x": "$DOG",
      "src": "https://www.coingecko.com/en/coins/dog-go-to-the-moon-rune"
+    }
+   ]
+  },
+  "brokerchains": {
+   "name": "the broker chains",
+   "country": "Broker chains",
+   "tldr": "the brokerage becomes the chain",
+   "ontology": "The customers were always there: the broker turns its app into a chain, tokenizes the stocks, and onboards millions without them noticing. TradFi ships crypto faster than crypto ships tradfi.",
+   "figures": [
+    "@RobinhoodApp",
+    "@vladtenev",
+    "the tokenized-stock desks"
+   ],
+   "discussing": [],
+   "topics": [
+    {
+     "t": "Robinhood Chain tops Base",
+     "d": "Three weeks after launch, Robinhood Chain beat Base on daily active users on July 21 (323,969 vs 274,520) and hit a record $588.9 million TVL, though memecoins, not stock tokens, dominate the volume.",
+     "x": "Robinhood Chain TVL",
+     "src": "https://thedefiant.io/news/defi/robinhood-chain-overtakes-base-on-daily-active-users-three-weeks-after-launch"
+    },
+    {
+     "t": "Q2 earnings July 29",
+     "d": "Robinhood reports Q2 results after close on July 29 with analysts expecting $1.24-1.28 billion revenue (about 25% growth), while Bernstein estimates prediction markets could bring Robinhood $586 million in 2026 revenue.",
+     "x": "HOOD Q2 earnings",
+     "src": "https://crypto.news/robinhood-stock-tests-89-support-before-q2-earnings/"
+    },
+    {
+     "t": "Crypto.com prediction talks",
+     "d": "WSJ reported July 24 that Robinhood is in talks to add Crypto.com's prediction-market contracts to its prediction hub, adding a second venue alongside current partner Kalshi.",
+     "x": "Robinhood Crypto.com talks",
+     "src": "https://www.pymnts.com/cryptocurrency/2026/robinhood-eyes-crypto-com-to-expand-role-on-prediction-market-stage/"
+    },
+    {
+     "t": "328K tokenized stock holders",
+     "d": "Robinhood leads tokenized stocks with 328,000 of 752,000 total holders (44%) since its July 1 launch, but holds only $44 million in assets at an average of $134 per user, far behind Ondo's $857 million.",
+     "x": "Robinhood tokenized stocks holders",
+     "src": "https://crypto.news/tokenized-stocks-reach-752k-holders-as-robinhood-leads/"
     }
    ]
   }

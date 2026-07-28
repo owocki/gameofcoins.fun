@@ -361,5 +361,16 @@
    "the inscribers",
    "the runes traders"
   ]
+ },
+ "brokerchains": {
+  "name": "the broker chains",
+  "country": "Broker chains",
+  "tldr": "the brokerage becomes the chain",
+  "ontology": "The customers were always there: the broker turns its app into a chain, tokenizes the stocks, and onboards millions without them noticing. TradFi ships crypto faster than crypto ships tradfi.",
+  "figures": [
+   "@RobinhoodApp",
+   "@vladtenev",
+   "the tokenized-stock desks"
+  ]
  }
 }

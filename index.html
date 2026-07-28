@@ -366,6 +366,9 @@ const CONTINENTS=[
  {id:'c-base',name:'',kicker:'SHIP FAST',cx:350,cy:-100,rx:180,ry:130,rot:.09,seed:197,rug:.26,
   junction:null,mountains:false,palette:{low:'#a9c2b9',up:'#cbc8a4',high:'#a99270'},
   countries:[{id:'base',a0:0,a1:6.283}]},
+ {id:'c-broker',name:'',kicker:'THE DOLLAR ZONE',cx:700,cy:150,rx:150,ry:105,rot:-.08,seed:241,rug:.25,
+  junction:null,mountains:false,palette:{low:'#b0bfa8',up:'#d0c8a8',high:'#af9c78'},
+  countries:[{id:'brokerchains',a0:0,a1:6.283}]},
  {id:'c-memedaos',name:'',kicker:'THE COMMONS',cx:-1250,cy:2450,rx:150,ry:105,rot:-.12,seed:199,rug:.32,
   junction:null,mountains:false,trees:true,palette:{low:'#b6c88e',up:'#d5c795',high:'#ab8f63'},
   islets:[{dx:190,dy:-25,r:15}],
@@ -850,6 +853,7 @@ const PMETA={
  daos:{e:'🗳️',s:'the community'},
  predictionmarkets:{e:'🎲',s:'calibration'},
  base:{e:'🔵',s:'the onramp'},
+ brokerchains:{e:'🏹',s:'the onboarding funnel'},
  memedaos:{e:'🍕',s:'the bit, taken seriously'},
  restakers:{e:'♻️',s:'stacked yield'},
  zkpurists:{e:'🔐',s:'the proof'},
@@ -899,7 +903,8 @@ const PAPER=[
  ['artists','$55M across 3 coins'],
  ['memedaos','no token, on purpose'],
  ['mevsearchers','no token — they take it in-flight'],
- ['airdropfarmers','no token of their own; they want yours']
+ ['airdropfarmers','no token of their own; they want yours'],
+ ['brokerchains','no coin — the token is the stock']
 ];
 const HOOK_FALLBACK=['btcmaxis','ethereum','stablecoins','solana','memecoins','degenperps'];
 function lcFirst(s){s=String(s);return s.charAt(0).toLowerCase()+s.slice(1)}
