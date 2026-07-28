@@ -1,5 +1,7 @@
 # Atlas of Frontier Ontologies
 
+**Test it live: https://daily-ontological-map.vercel.app/**
+
 > # ⚠️ TODO — finish deployment (≈2 minutes)
 >
 > Everything is built, tested, and committed locally. These three steps are the only things left, and they need your logins:
