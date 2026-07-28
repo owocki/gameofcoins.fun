@@ -40,13 +40,14 @@ Cluster: {cluster_name}. Tribes (id -> what it is):
 
 Rules:
 - Every topic must be REAL and verifiable. Never invent. Prefer the last 48 hours, accept the last 7 days.{bespoke_note}
+- Every topic MUST come from a source you actually opened via web search in this session. Include "src": the URL of the best source. If you cannot point to a real source, DROP the topic — one real topic beats three invented ones. Never state votes, launches, products, or numbers a source does not state.
 - Plain language. No cute coinages.
 - Per topic: "t" = punchy 2-4 word label; "d" = one plain vivid sentence with names/numbers/dates; "x" = a 2-5 word X search query that would surface this discourse (proper nouns beat generic words).
 - {n_topics} topics per tribe. The FIRST topic must be the tribe's biggest story today.
 
 After researching, end your reply with ONLY a fenced json block of this exact shape (all tribe ids present):
 ```json
-{{"<tribe_id>": [{{"t": "...", "d": "...", "x": "..."}}, ...], ...}}
+{{"<tribe_id>": [{{"t": "...", "d": "...", "x": "...", "src": "https://..."}}, ...], ...}}
 ```"""
 
 
@@ -101,6 +102,11 @@ def research_cluster(client: anthropic.Anthropic, name: str, ids: list, canon: d
     missing = set(ids) - set(topics)
     if missing:
         raise ValueError(f"cluster {name!r} missing tribes: {sorted(missing)}")
+    for tid in ids:  # fresh research must cite sources (carried-forward topics are exempt)
+        for topic in topics[tid]:
+            src = str(topic.get("src") or "")
+            if not src.startswith("http"):
+                raise ValueError(f"{tid}: topic {topic.get('t')!r} has no source URL")
     return {tid: topics[tid] for tid in ids}
 
 
@@ -109,9 +115,12 @@ def validate_topics(tid: str, topics: list) -> list:
     clean = []
     for topic in topics[:3]:
         assert topic.get("t") and topic.get("d"), f"{tid}: topic missing t/d"
-        clean.append({"t": str(topic["t"])[:40],
-                      "d": str(topic["d"])[:400],
-                      "x": str(topic.get("x") or topic["t"])[:80]})
+        entry = {"t": str(topic["t"])[:40],
+                 "d": str(topic["d"])[:400],
+                 "x": str(topic.get("x") or topic["t"])[:80]}
+        if str(topic.get("src") or "").startswith("http"):
+            entry["src"] = str(topic["src"])[:300]
+        clean.append(entry)
     return clean
 
 
