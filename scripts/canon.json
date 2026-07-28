@@ -211,8 +211,8 @@
  "nft": {
   "name": "nft land",
   "country": "NFTs & gaming",
-  "tldr": "the jpeg was never the point",
-  "ontology": "Ownership is the primitive: art, identity, and game economies belong to their holders. The jpeg was never the point; the community deed was.",
+  "tldr": "online-first communities; the token is the membership",
+  "ontology": "PFPs, online communities, RWAs, and DeFi liquidity: the token is the membership card and the culture lives online. Monoculture is the risk, and the floor price is the mood.",
   "figures": [
    "@pudgypenguins",
    "@BoredApeYC",
@@ -233,12 +233,23 @@
  "artists": {
   "name": "the onchain artists",
   "country": "Onchain artists",
-  "tldr": "the culture organizes in person; the chain keeps the receipts",
-  "ontology": "The art was always the point: provenance, patronage, and scenes that organize in person — galleries, residencies, city by city. The market is downstream of the culture, not the other way around.",
+  "tldr": "1/1 intentional work; crypto is just the payment rails",
+  "ontology": "One-of-one, intentional work: IRL-first culture and communities with room for audiences outside crypto and a seat inside the traditional art world. The passion is the creative output — the crypto is just the payment rails.",
   "figures": [
    "@beeple",
    "Snowfro",
    "@zora"
+  ]
+ },
+ "daos": {
+  "name": "the DAOs",
+  "country": "DAOs",
+  "tldr": "people show up for the community, not the ticker",
+  "ontology": "The org chart is a smart contract and membership is participation: people spend their time here for the community and the mission, not because price dictates their enjoyment. Coordination is the product — and the hardest thing to explain on the street.",
+  "figures": [
+   "@ensdomains",
+   "@LidoFinance",
+   "the governance forums"
   ]
  }
 }
