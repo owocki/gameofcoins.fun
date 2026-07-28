@@ -276,7 +276,7 @@
     const { curve, count } = buildPath(towns);
     const cloudBase = clouds.map(c => c.m.position.x);
 
-    const REVEAL = 9, PER = 11.5, OUTRO = 12;
+    const REVEAL = 3, PER = 8, OUTRO = 7;
     const TOUR = REVEAL + order.length * PER + OUTRO;
     const TOTAL = TOUR;
     const segU = 1 / (count - 1);
@@ -294,7 +294,7 @@
     function renderAt(t) {
       const lt = t;
       // title floats over the already-moving world, gone by ~4.5s
-      const la = lt < 2.6 ? 1 : Math.max(0, 1 - (lt - 2.6) / 1.9);
+      const la = lt < 0.8 ? 1 : Math.max(0, 1 - (lt - 0.8) / 0.8);
       logo.style.opacity = String(la);
       logo.style.display = la <= 0 ? 'none' : 'flex';
       // final fade to black under the closing card
@@ -319,9 +319,9 @@
           cardAlpha = Math.min(fin, fout);
         }
       }
-      if (tt >= TOUR - OUTRO + 3.5) {
+      if (tt >= TOUR - OUTRO + 2) {
         cardKey = '__outro';
-        cardAlpha = Math.min(1, (tt - (TOUR - OUTRO + 3.5)) / 1.2);
+        cardAlpha = Math.min(1, (tt - (TOUR - OUTRO + 2)) / 1.0);
       }
       if (cardKey !== cardFor) {
         cardFor = cardKey;
@@ -346,7 +346,7 @@
 
     const RECORD = RECORDQ;
     function begin(withSound) {
-      if (withSound) { try { A.startScore(168); } catch (e) {} }
+      if (withSound) { try { A.startScore(Math.ceil(TOTAL / 1.0843) + 6); } catch (e) {} }
       const t0 = performance.now();
       let frames = 0, fpsT0 = performance.now();
       (function loop(now) {
