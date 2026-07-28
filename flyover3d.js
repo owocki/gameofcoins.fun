@@ -278,26 +278,44 @@
     return { id, cap, Rt, base, tribe: c.tribe };
   }
 
-  // ---------- life: dragons over the great towns, machines in every town ----------
+  // ---------- life: dragons sized by market cap, birds over every town ----------
   const dragons = [], windmills = [], smokes = [];
-  const DRAGON_TOWNS = ['btcmaxis', 'ethereum', 'solana', 'memecoins', 'stablecoins'];
-  const dragonMat = new T.MeshLambertMaterial({ color: 0x2b2118 });
-  function buildDragon(tw, phase) {
+  function buildDragon(tw, phase, scale, color) {
+    const mat = new T.MeshLambertMaterial({ color: color || 0x2b2118 });
     const g = new T.Group();
-    const body = new T.Mesh(new T.ConeGeometry(2.6, 16, 6), dragonMat);
+    const body = new T.Mesh(new T.ConeGeometry(2.6, 16, 6), mat);
     body.rotation.x = Math.PI / 2; g.add(body);
-    const head = new T.Mesh(new T.ConeGeometry(1.6, 6, 6), dragonMat);
+    const head = new T.Mesh(new T.ConeGeometry(1.6, 6, 6), mat);
     head.position.set(0, 1, 10); head.rotation.x = Math.PI / 2; g.add(head);
-    const tail = new T.Mesh(new T.ConeGeometry(0.9, 9, 5), dragonMat);
+    const tail = new T.Mesh(new T.ConeGeometry(0.9, 9, 5), mat);
     tail.position.set(0, 0.3, -11); tail.rotation.x = -Math.PI / 2; g.add(tail);
     const wingGeo = new T.BoxGeometry(13, 0.4, 6);
     const wl = new T.Group(), wr = new T.Group();
-    const wlm = new T.Mesh(wingGeo, dragonMat); wlm.position.x = -6.5; wl.add(wlm);
-    const wrm = new T.Mesh(wingGeo, dragonMat); wrm.position.x = 6.5; wr.add(wrm);
+    const wlm = new T.Mesh(wingGeo, mat); wlm.position.x = -6.5; wl.add(wlm);
+    const wrm = new T.Mesh(wingGeo, mat); wrm.position.x = 6.5; wr.add(wrm);
     g.add(wl); g.add(wr);
-    g.scale.setScalar(2.1);
+    g.scale.setScalar(scale || 2.1);
     scene.add(g);
-    dragons.push({ g, wl, wr, tw, phase, r: tw.Rt * 1.5 + 30, alt: 95 + 30 * Math.random(), spd: 0.32 + Math.random() * 0.1 });
+    dragons.push({ g, wl, wr, tw, phase, r: tw.Rt * 1.5 + 30 * (scale || 2) / 2,
+                   alt: 90 + 22 * (scale || 2), spd: 0.30 + Math.random() * 0.08 });
+  }
+  // smaller skies: birds (and the odd stork) circling every town
+  function buildBirds(tw, rnd) {
+    const n = 3 + Math.floor(rnd() * 2);
+    for (let k = 0; k < n; k++) {
+      const mat = new T.MeshLambertMaterial({ color: k % 2 ? 0xf3ecd8 : 0x4a4038 });
+      const g = new T.Group();
+      const body = new T.Mesh(new T.ConeGeometry(0.7, 4.2, 5), mat);
+      body.rotation.x = Math.PI / 2; g.add(body);
+      const wingGeo = new T.BoxGeometry(4.6, 0.18, 1.7);
+      const wl = new T.Group(), wr = new T.Group();
+      const wlm = new T.Mesh(wingGeo, mat); wlm.position.x = -2.3; wl.add(wlm);
+      const wrm = new T.Mesh(wingGeo, mat); wrm.position.x = 2.3; wr.add(wrm);
+      g.add(wl); g.add(wr);
+      scene.add(g);
+      dragons.push({ g, wl, wr, tw, phase: k * 2.1 + rnd() * 3, r: tw.Rt * (0.9 + k * 0.3) + 14,
+                     alt: 55 + rnd() * 40, spd: 0.5 + rnd() * 0.3 });
+    }
   }
   const bladeMat = new T.MeshLambertMaterial({ color: 0x8a6a4a });
   function buildWindmill(tw, rnd) {
@@ -683,16 +701,32 @@
   // ---------- cards / logo ----------
   const cardEl = document.getElementById('cinecard'), ckEl = cardEl.querySelector('.ck'),
         h1El = cardEl.querySelector('h1'), clEl = cardEl.querySelector('.cl');
-  function card(k, t, l) { ckEl.textContent = k; h1El.textContent = t; clEl.textContent = l; cardEl.classList.add('on'); }
+  function card(k, t, html) { ckEl.textContent = k; h1El.textContent = t; clEl.innerHTML = html; cardEl.classList.add('on'); }
   function hideCard() { cardEl.classList.remove('on'); }
-  function reachOf(id) { const r = A.PAPER.find(p => p[0] === id); return r ? r[1] : ''; }
+  const MON = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+  function fmtDay(s) {
+    const p = (s || '').split('-');
+    return p.length === 3 ? MON[+p[1] - 1] + ' ' + (+p[2]) + ' ' + p[0] : '';
+  }
+  function fmtCap(mc) {
+    return mc >= 1e12 ? '$' + (mc / 1e12).toFixed(2) + 'T'
+         : mc >= 1e9 ? '$' + Math.round(mc / 1e9) + 'B'
+         : '$' + Math.round(mc / 1e6) + 'M';
+  }
+  function tickOf(d) { return ((d.x || d.t || '').replace(/^\$/, '').split(/[\s·]/)[0] || '').toUpperCase(); }
   function stopCard(id) {
     const c = A.countries.find(x => x.id === id);
-    const m = A.PMETA[id] || {}; const tb = c.tribe;
-    const top = (tb.topics && tb.topics[0]) || (tb.discussing && tb.discussing[0]);
-    // mobile captions: one glance, three short lines
-    return { kick: ((m.e || '') + '  ' + (reachOf(id) || '')).trim(), title: tb.country,
-             line: top ? top.t.slice(0, 64) : '' };
+    const tb = c.tribe;
+    // kicker: market cap, then the coins that live here
+    const coins = (tb.discussing || []).map(tickOf).filter(s => /^[A-Z0-9]{2,6}$/.test(s)).slice(0, 4);
+    const kick = fmtCap(A.mcap(tb)) + (coins.length ? ' · ' + coins.join(' · ') : '');
+    // trending block: dated header + the day's narratives
+    const tops = (tb.topics || []).slice(0, 2).map(tp => tp.t.slice(0, 52));
+    const day = fmtDay(A.day);
+    const html = tops.length
+      ? '<span class="tk">Trending' + (day ? ' · ' + A.esc(day) : '') + '</span>' + tops.map(s => A.esc(s)).join('<br>')
+      : '';
+    return { kick, title: tb.country, line: html };
   }
   const logo = document.createElement('div');
   logo.id = 'goclogo';
@@ -712,7 +746,7 @@
   function freeMode() {
     const el = renderer.domElement;
     const tgt = new T.Vector3(SLc[0] - CXW, 0, SLc[1] - CYW);
-    const MIND = 150, MAXD = 5400;
+    const MIND = 150, MAXD = 6200;
     let dist = MAXD, yaw = 0, pitch = 1.5;   // start: fully zoomed-out top-down atlas view
     // re-wire the map's zoom buttons to the 3D camera (clone strips 2D handlers)
     const ctrl = document.getElementById('ctrl');
@@ -807,11 +841,41 @@
       }
       return null;
     }
+    // coin tooltip: hovering a city shows what that coin is up to today
+    const tt3 = document.createElement('div');
+    tt3.style.cssText = 'position:fixed;z-index:46;background:#f6edd8;border:1px solid #b7a173;border-radius:8px;' +
+      'padding:8px 12px;font-family:var(--serif);font-size:13.5px;color:#2c2417;pointer-events:none;display:none;' +
+      'max-width:270px;line-height:1.4;box-shadow:0 4px 14px -4px #2c241788';
+    document.body.appendChild(tt3);
+    function coinAt(wx, wy) {
+      let best = null, bd = 1e9;
+      for (const c of A.countries) {
+        const ds = c.tribe.discussing || [];
+        (c.cityPts || []).forEach((p, i) => {
+          if (!ds[i]) return;
+          const d = Math.hypot(p[0] - wx, p[1] - wy);
+          if (d < bd) { bd = d; best = ds[i]; }
+        });
+      }
+      return bd < 26 ? best : null;
+    }
     function hoverPick(ev) {
       const now = performance.now();
       if (now - hoverT < 90) return;
       hoverT = now;
       const hit = groundPoint(ev.clientX, ev.clientY);
+      const coin = hit && dist < 3200 ? coinAt(hit[0], hit[1]) : null;
+      if (coin) {
+        A.hideCard(); hovered = null;
+        tt3.innerHTML = '<b>' + A.esc(coin.t) + '</b>' +
+          (coin.x ? ' <span style="color:#8a7a58">' + A.esc(coin.x) + '</span>' : '') +
+          (coin.d ? '<br>' + A.esc(coin.d) : '');
+        tt3.style.display = 'block';
+        tt3.style.left = Math.min(innerWidth - 290, ev.clientX + 14) + 'px';
+        tt3.style.top = Math.min(innerHeight - 100, ev.clientY + 12) + 'px';
+        return;
+      }
+      tt3.style.display = 'none';
       const c = hit ? A.pick(hit[0], hit[1]) : null;
       const id = c ? c.id : null;
       if (id !== hovered) {
@@ -912,7 +976,11 @@
       buildWindmill(tw, rnd);
       if (tw.Rt > 75) buildWindmill(tw, rnd);
       buildSmoke(tw, rnd);
-      if (DRAGON_TOWNS.includes(tw.id)) buildDragon(tw, i * 1.3);
+      // the bigger the market cap, the bigger the dragon; small tribes get birds
+      const mc = A.mcap(tw.tribe);
+      if (mc > 3e10) buildDragon(tw, i * 1.3, 0.9 + 0.55 * Math.log10(1 + mc / 1e9),
+                                 (TRIBE_LOOK[tw.id] || DEFAULT_LOOK).keep);
+      buildBirds(tw, rnd);
       (TRIBE_PROPS[tw.id] || []).forEach(fn => fn(tw, rnd));
       buildWalkers(tw, rnd);
     });
@@ -1001,7 +1069,7 @@
       }
       if (cardKey !== cardFor) {
         cardFor = cardKey;
-        if (cardKey === '__outro') card('GAME OF COINS', 'gameofcoins.xyz', 'the cryptotwitter map · resurveyed nightly');
+        if (cardKey === '__outro') card('GAME OF COINS', 'gameofcoins.xyz', A.esc('the cryptotwitter map · resurveyed nightly'));
         else if (cardKey) { const sc = stopCard(cardKey); card(sc.kick, sc.title, sc.line); }
       }
       setCardAlpha(cardKey ? cardAlpha : 0);

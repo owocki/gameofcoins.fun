@@ -221,9 +221,11 @@ body.cine.cinedone #cine .bar{opacity:0}
 body.v916 #cine .bar{display:none}
 body.v916 #cinecard{bottom:15%;width:calc(var(--cw,100vw)*0.92);
   text-shadow:0 2px 18px #000c,0 0 6px #0009}
-body.v916 #cinecard .ck{font-size:max(13px,calc(var(--cw,100vw)*0.034));letter-spacing:.3em}
+body.v916 #cinecard .ck{font-size:max(13px,calc(var(--cw,100vw)*0.036));letter-spacing:.14em}
 body.v916 #cinecard h1{font-size:calc(var(--cw,100vw)*0.1);letter-spacing:.04em}
-body.v916 #cinecard .cl{font-size:max(15px,calc(var(--cw,100vw)*0.046));font-style:normal;color:#f3e9d2}
+body.v916 #cinecard .cl{font-size:max(15px,calc(var(--cw,100vw)*0.044));font-style:normal;color:#f3e9d2;line-height:1.45}
+body.v916 #cinecard .cl .tk{display:block;margin-bottom:2px;font-size:max(11px,calc(var(--cw,100vw)*0.028));
+  letter-spacing:.3em;color:#c9a86a;text-transform:uppercase}
 #cinebegin{position:fixed;inset:0;z-index:65;display:flex;align-items:center;justify-content:center;
   background:#120e08f2;pointer-events:auto;cursor:pointer;flex-direction:column;gap:16px;color:#f3e9d2;
   font-family:var(--serif)}
@@ -1428,12 +1430,13 @@ if(CINE3D||FREE3D){
     window.__atlas={world:{X0,Y0,X1,Y1},PMETA,PAPER,
       get countries(){return countries},
       get villages(){return villages},
+      get day(){return DATES[dateIdx]||''},
       mcap:mcapOfTribe,startScore,esc,
       pick:(wx,wy)=>findCountry(wx,wy),
       card:(tb,kick,px,py)=>{renderCard(tb,kick);tt.classList.add('on');placeCard(px,py)},
       hideCard:()=>{tt.classList.remove('on');curId=null}};
-    const s1=document.createElement('script');s1.src='vendor/three.min.js';
-    s1.onload=()=>{const s2=document.createElement('script');s2.src='flyover3d.js';document.body.appendChild(s2)};
+    const s1=document.createElement('script');s1.src='vendor/three.min.js?v=916a';
+    s1.onload=()=>{const s2=document.createElement('script');s2.src='flyover3d.js?v=916a';document.body.appendChild(s2)};
     document.body.appendChild(s1);
   },200);
 }
