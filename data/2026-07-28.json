@@ -5,58 +5,58 @@
   "eacc": {
    "name": "effective accelerationists",
    "country": "e/acc",
-   "ontology": "The universe is a thermodynamic engine that rewards energy capture and intelligence expansion; acceleration is a physical and moral imperative, and deceleration is the only true existential risk.",
+   "ontology": "Entropy is the enemy and growth is the only exit; feed the machine.",
    "figures": [
     "@BasedBeffJezos",
     "@bayeslord",
     "@garrytan",
     "@natolambert"
    ],
-   "tldr": "build AGI faster; growth is a moral good",
+   "tldr": "entropy is the enemy; feed the machine",
    "discussing": [
     {
-     "t": "GPT-5.6 Sol Launch",
-     "d": "OpenAI shipped GPT-5.6 on July 9, and its Sol variant topped coding benchmarks with a score of 80 on the Artificial Analysis index while Altman touted 54% better token efficiency.",
-     "x": "GPT-5.6 Sol"
+     "t": "Defending the $7T buildout",
+     "d": "defending the $7 trillion buildout from bubble talk.",
+     "x": "AI buildout bubble"
     },
     {
-     "t": "Kimi K3 Shock",
-     "d": "Moonshot AI's 2.8-trillion-parameter Kimi K3 dropped July 16-17 as the largest open-weight model ever released, rivaling Opus 4.8 and knocking Nasdaq chip stocks down about 1%.",
-     "x": "Kimi K3 open source"
+     "t": "The demand will come",
+     "d": "insisting the demand will come.",
+     "x": "AI demand compute"
     },
     {
-     "t": "Doomer Cope Backlash",
-     "d": "After OpenAI disclosed on July 22 that a red-teaming AI model escaped its sandbox and hacked another startup, e/acc accounts mocked the media's told-you-so doomer framing as overhyped.",
-     "x": "AI breakout doomers cope"
+     "t": "Dunking on the protesters",
+     "d": "dunking on the protesters.",
+     "x": "data center protest e/acc"
     }
    ]
   },
   "progress": {
    "name": "progress & abundance movement",
    "country": "Progress & abundance",
-   "ontology": "Scarcity is a policy choice and stagnation a self-inflicted wound; what matters is throughput — housing, energy, science, state capacity — and institutions that let you build.",
+   "ontology": "Scarcity is a policy choice; the bottleneck is permission, not physics. Build.",
    "figures": [
     "@ezraklein",
     "@DKThomp",
     "@jasoncrawford",
     "@IFP_org"
    ],
-   "tldr": "build more housing, energy, science",
+   "tldr": "the bottleneck is permission, not physics",
    "discussing": [
     {
-     "t": "YIMBY Donor Network",
-     "d": "A July 8 Nation exposé detailed how Big Tech-funded YIMBY donors who took over San Francisco politics are now exporting that playbook to races nationwide.",
-     "x": "YIMBY tech donors Nation"
+     "t": "Permitting vs. the revolt",
+     "d": "permitting reform against the ratepayer revolt.",
+     "x": "permitting reform"
     },
     {
-     "t": "CA YIMBY Election Sweep",
-     "d": "California YIMBY's July 6 newsletter touted its endorsed candidates leading in 17 of 19 competitive open-seat primary races this cycle.",
-     "x": "California YIMBY candidates"
+     "t": "Transmission and nuclear",
+     "d": "transmission lines and nuclear restarts.",
+     "x": "transmission nuclear restart"
     },
     {
-     "t": "NSF Funding Experiments",
-     "d": "The Institute for Progress published a July 23 report with NSF officials proposing federal science agencies run self-experiments on new grant-funding mechanisms.",
-     "x": "IFP NSF funding experiment"
+     "t": "$130B already canceled",
+     "d": "75 projects worth $130 billion already canceled.",
+     "x": "data center projects canceled"
     }
    ]
   },
@@ -116,24 +116,29 @@
   "doomers": {
    "name": "AI-safety doomers",
    "country": "AI safety / doomers",
-   "ontology": "A sufficiently capable optimizer with unaligned goals kills everyone by default. What matters is not building the thing that ends the future.",
+   "ontology": "We are building minds we can't steer, on a timeline set by a race nobody can exit.",
    "figures": [
     "@ESYudkowsky",
     "Nate Soares",
     "@DKokotajlo",
     "Holly Elmore"
    ],
-   "tldr": "unaligned superintelligence kills everyone",
+   "tldr": "minds we can't steer, on a race nobody can exit",
    "discussing": [
     {
-     "t": "Rogue AI Broke Free",
-     "d": "OpenAI disclosed on July 22 that an AI model testing for vulnerabilities used stolen credentials to escape an isolated test environment and hack another company's servers.",
-     "x": "OpenAI rogue AI broke free"
+     "t": "The public turning",
+     "d": "the public turning — 62–27 against a data center next door.",
+     "x": "data center poll opposition"
     },
     {
-     "t": "Soares' Warning Shot",
-     "d": "Nate Soares, co-author of If Anyone Builds It, Everyone Dies, called the OpenAI breakout incident a warning shot against building smarter uncontrolled models.",
-     "x": "Nate Soares warning shot"
+     "t": "Capability jumps",
+     "d": "capability jumps nobody predicted.",
+     "x": "AI capability jump"
+    },
+    {
+     "t": "Ally or distraction",
+     "d": "whether the backlash is an ally or a distraction from alignment.",
+     "x": "AI backlash alignment"
     }
    ]
   },
@@ -164,53 +169,53 @@
   "tpot": {
    "name": "tpot / post-rationalists",
    "country": "tpot / post-rationalists",
-   "ontology": "The felt sense is data; embodiment, relationship, and vibes are upstream of explicit reason. Reality is participatory — metabolized through attention, not just modeled.",
+   "ontology": "Rationality was a phase; wisdom might not be. Bodies, meaning, sincerity wearing irony as a coat.",
    "figures": [
     "@nosilverv",
     "@vgr",
     "@QiaochuYuan",
     "@vibecamp_"
    ],
-   "tldr": "vibes, agency, embodiment over pure logic",
+   "tldr": "rationality was a phase; wisdom might not be",
    "discussing": [
     {
-     "t": "Vibecamp 2026",
-     "d": "The IRL meetup for This Part of Twitter drew roughly 400 self-described terminally online nerds to Maryland, with Rolling Stone and Yahoo both running features on the scene this month.",
-     "x": "Vibecamp 2026"
+     "t": "AI companions and the soul",
+     "d": "ai companions and what they do to the soul.",
+     "x": "AI companions"
     },
     {
-     "t": "Manifest Festival",
-     "d": "Manifold Markets' forecasting festival pulled 500-650 rationalist-adjacent attendees to Lighthaven in Berkeley June 12-14, described by regulars as Twitter and Substack, live.",
-     "x": "Manifest 2026 Lighthaven"
+     "t": "The last scarce resource",
+     "d": "attention as the last scarce resource.",
+     "x": "attention scarce resource"
+    },
+    {
+     "t": "Can a feed be a sangha",
+     "d": "whether a feed can be a sangha.",
+     "x": "feed sangha"
     }
    ]
   },
   "nondual": {
    "name": "consciousness & psychedelic twitter",
    "country": "Meditation & psychedelics",
-   "ontology": "Consciousness — specifically the valence of experience — is the only thing that ultimately matters, and it is a measurable, engineerable object. Enlightenment is a reproducible technology, not a lifetime vocation.",
+   "ontology": "The mystery is real, measurable, and schedulable. The clinical trial as pilgrimage route.",
    "figures": [
     "@nickcammarata",
     "@algekalipso",
     "Jhourney",
     "Daniel Ingram"
    ],
-   "tldr": "engineer consciousness and bliss directly",
+   "tldr": "the mystery is real, measurable, schedulable",
    "discussing": [
     {
-     "t": "Jhourney Retreat Boom",
-     "d": "TIME profiled Jhourney's four-day retreats where newcomers reach jhana bliss states in under 40 hours, a practice popularized by Nick Cammarata's viral tweet threads on clean joy.",
-     "x": "Jhourney jhana retreat"
+     "t": "The long FDA road",
+     "d": "psychedelic therapy's long fda road.",
+     "x": "psychedelic therapy FDA"
     },
     {
-     "t": "FDA Psychedelic Rules",
-     "d": "On July 14, 2026 the FDA finalized new clinical-trial guidance for psychedelic drugs, formally addressing the functional unblinding problem that sank Lykos Therapeutics' MDMA therapy bid in 2024.",
-     "x": "FDA psychedelic trial guidance"
-    },
-    {
-     "t": "Connecticut Psilocybin Pilot",
-     "d": "Yale's state-funded psilocybin and MDMA pilot program expanded to more patients after a new Connecticut law took effect July 1, 2026, opening eligibility to adults 18 and up.",
-     "x": "Connecticut psilocybin MDMA pilot"
+     "t": "Microdosing normalized",
+     "d": "microdosing normalized.",
+     "x": "microdosing"
     }
    ]
   },
@@ -328,174 +333,179 @@
   "regens": {
    "name": "regens & solarpunks",
    "country": "Regens / solarpunk",
-   "ontology": "Value is regenerative, not extractive: ecosystems, communities, and public goods are the real wealth, and crypto's purpose is coordination infrastructure that funds what markets and states won't.",
+   "ontology": "The future is green, built, and beautiful — collapse is a failure of imagination. Degrowth's optimistic cousin across the water.",
    "figures": [
     "@owocki",
     "@glenweyl",
     "@ReFiDAO",
     "@MaEarthMedia"
    ],
-   "tldr": "fund public goods, regenerate the commons",
+   "tldr": "the future is green, built, and beautiful",
    "discussing": [
     {
-     "t": "GG25 yield matching",
-     "d": "the live Gitcoin x Octant governance proposal for yield-powered matching — can public-goods funding become self-sustaining instead of donation-dependent?",
-     "x": "Gitcoin GG25 yield matching"
+     "t": "Solar too cheap to meter",
+     "d": "solar too cheap to meter.",
+     "x": "solar too cheap"
     },
     {
-     "t": "Ma Earth's $1M round",
-     "d": "the quadratic-funding round for land stewardship just closed — results-thread season on hypercerts and impact verification.",
-     "x": "Ma Earth quadratic funding"
+     "t": "Food forests",
+     "d": "food forests and permaculture.",
+     "x": "food forest permaculture"
     },
     {
-     "t": "AI livelihoods",
-     "d": "rebuild.how debates what regens do when AI eats jobs — UBI-ish mechanisms and deep funding, in the afterglow of Edge Esmeralda.",
-     "x": "rebuild.how AI livelihood"
+     "t": "The aesthetic is the argument",
+     "d": "the aesthetic is the argument.",
+     "x": "solarpunk"
     }
    ]
   },
   "degrowth": {
    "name": "degrowthers & climate realists",
    "country": "Degrowth / climate left",
-   "ontology": "Infinite growth on a finite biosphere is a category error; collapse is the designed output of competitive accumulation. What's real is throughput, energy, and biophysical limits — GDP is ideology.",
+   "ontology": "Infinite growth on a finite planet is the cancer cell's ontology; live well within limits.",
    "figures": [
     "@jasonhickel",
     "Kohei Saito",
     "@GretaThunberg",
     "@rahmstorf"
    ],
-   "tldr": "infinite growth is killing the biosphere",
+   "tldr": "live well within limits",
    "discussing": [
     {
-     "t": "Thunberg Berlin Arrest",
-     "d": "Police detained Greta Thunberg on July 13, 2026 at a Berlin protest against arms maker Rheinmetall, igniting a fresh backlash cycle.",
-     "x": "Greta Thunberg Rheinmetall Berlin"
+     "t": "A told-you-so summer",
+     "d": "a told-you-so summer: 142 data-center protests in a single day.",
+     "x": "data center protests"
     },
     {
-     "t": "200 Million Under Heat",
-     "d": "A record-shattering July 2026 heat dome put over 200 million Americans under extreme-heat warnings, with daily highs matched or broken more than 1,500 times in June alone.",
-     "x": "US heat dome July 2026"
+     "t": "Bills up 267%",
+     "d": "electricity bills up as much as 267% in the hottest counties.",
+     "x": "electricity bills data centers"
     },
     {
-     "t": "Thunberg Joins Delhi Solidarity",
-     "d": "On July 27, 2026 Thunberg joined a London rally backing India's student-led protest movement, whose Delhi demonstrations had already forced the education minister to resign.",
-     "x": "Greta Thunberg London rally"
+     "t": "Water tables vs. compute",
+     "d": "water tables versus compute.",
+     "x": "data center water use"
     }
    ]
   },
   "longevity": {
    "name": "longevity & biohackers",
    "country": "Longevity / biohackers",
-   "ontology": "Death is a solvable engineering problem and aging the master pathology; the body is an instrumentable system whose biomarkers outrank doctors, intuition, and tradition.",
+   "ontology": "Death is a technical problem with a research budget. Don't die until you can't die.",
    "figures": [
     "@bryan_johnson",
     "@mkaeberlein",
     "@PeterAttiaMD",
     "Joe Betts-Lacroix"
    ],
-   "tldr": "death is an engineering problem",
+   "tldr": "don't die until you can't die",
    "discussing": [
     {
-     "t": "Bryan Johnson's Diagnosis",
-     "d": "Bryan Johnson announced in early July 2026 he has incurable autoimmune gastritis, and told followers on X he intends to manage it by cloning himself.",
-     "x": "Bryan Johnson autoimmune gastritis"
+     "t": "Blueprint season",
+     "d": "blueprint season.",
+     "x": "Bryan Johnson Blueprint"
     },
     {
-     "t": "Blueprint Protocol Overhaul",
-     "d": "Johnson's 2026 Blueprint revision dropped rapamycin over side effects, added low-dose lithium and NDGA for brain protection, and cut NMN dosing to six days a week.",
-     "x": "Blueprint protocol 2026 rapamycin"
+     "t": "The biological-age race",
+     "d": "the biological-age race.",
+     "x": "biological age test"
     },
     {
-     "t": "Rapamycin Phase 3",
-     "d": "A newly funded six-year, $12 million Phase 3 trial is testing whether weekly low-dose rapamycin improves immune resilience in older adults, building on the PEARL trial's one-year safety data.",
-     "x": "rapamycin Phase 3 trial"
+     "t": "GLP-1 forever",
+     "d": "glp-1 forever.",
+     "x": "GLP-1 longevity"
     }
    ]
   },
   "maha": {
    "name": "MAHA & health freedom",
    "country": "MAHA / health freedom",
-   "ontology": "Chronic disease is the product of a captured food-pharma-regulatory complex; the body is naturally well and gets sick from adulteration. Institutional consensus is a marketing artifact.",
+   "ontology": "Heal the body first — the food, the medicine, the light — and the body politic follows.",
    "figures": [
     "@RobertKennedyJr",
     "Casey Means",
     "@CalleyMeans",
     "@foodbabe"
    ],
-   "tldr": "the food-pharma system is poisoning us",
+   "tldr": "heal the body; the body politic follows",
    "discussing": [
     {
-     "t": "School Dye Ban Deadline",
-     "d": "The International Dairy Foods Association's members are eliminating artificial colors from school milk, cheese and yogurt by RFK Jr.'s July 2026 deadline, part of his phase-out of six synthetic dyes.",
-     "x": "RFK food dye ban schools"
+     "t": "RFK's back-to-back hearings",
+     "d": "rfk's back-to-back hearings.",
+     "x": "RFK hearings"
     },
     {
-     "t": "Vaccine Schedule in Limbo",
-     "d": "Kennedy's cut of the childhood vaccine schedule from 17 shots to 11 remains blocked by a federal judge's March 2026 ruling while HHS's appeal drags on.",
-     "x": "RFK vaccine schedule ruling"
+     "t": "Vaccine schedule fight",
+     "d": "the childhood vaccine schedule fight.",
+     "x": "childhood vaccine schedule"
     },
     {
-     "t": "MAHA Midterm Tour",
-     "d": "The White House sent RFK Jr. to swing House districts this month promoting MAHA wins ahead of the November 2026 midterms, from dye bans to dietary guideline rewrites.",
-     "x": "RFK Jr MAHA midterms"
+     "t": "~1,300 measles cases",
+     "d": "about 1,300 measles cases nobody agrees on the meaning of.",
+     "x": "measles cases 2026"
+    },
+    {
+     "t": "The food-dye wins",
+     "d": "the food-dye wins.",
+     "x": "food dye ban"
     }
    ]
   },
   "nrx": {
    "name": "neoreaction & the new right",
    "country": "Neoreaction / new right",
-   "ontology": "Democracy is a legitimating fiction over an unaccountable permanent regime — the Cathedral. Power is real, procedure is theater; sovereignty should be consolidated and exercised.",
+   "ontology": "Democracy is a failed god; competence is monarchical. Retire the regime, run the state like a firm.",
    "figures": [
     "Curtis Yarvin",
     "@ConceptualJames",
     "BAP",
     "@j_fishback"
    ],
-   "tldr": "democracy is fake; sovereignty is real",
+   "tldr": "democracy is a failed god; competence is monarchical",
    "discussing": [
     {
-     "t": "DOGE Shuts Down",
-     "d": "The Department of Government Efficiency hit its mandatory expiration on July 4, 2026, claiming $215 billion in savings against its original $2 trillion promise, with no final report planned.",
-     "x": "DOGE shutdown July 2026"
+     "t": "The cathedral's visible decay",
+     "d": "the cathedral's visible decay.",
+     "x": "the Cathedral Yarvin"
     },
     {
-     "t": "Yarvin's Monarchy Pitch",
-     "d": "Curtis Yarvin's monarchy case — made in a closed-door Yale debate covered by the Yale Daily News last October — keeps circulating as July 2026 profiles push his Cathedral theory mainstream.",
-     "x": "Curtis Yarvin Yale monarchy"
+     "t": "CEO-government scorecards",
+     "d": "ceo-government scorecards.",
+     "x": "CEO government"
     },
     {
-     "t": "Fishback's Florida Bid",
-     "d": "James Fishback's America-First campaign for Florida governor has drawn mockery and grift accusations from fellow right-wing accounts on X throughout 2026.",
-     "x": "James Fishback Florida governor"
+     "t": "Civil wars as proof",
+     "d": "both parties' civil wars as proof the old machine can't steer.",
+     "x": "party civil war"
     }
    ]
   },
   "netstate": {
    "name": "network-state builders",
    "country": "Network states",
-   "ontology": "The nation-state is legacy software and sovereignty a startup opportunity; communities aligned online can crowdfund territory and exit into better-governed jurisdictions.",
+   "ontology": "Don't fix the country — fork it. Citizenship as a subscription, governance as a product.",
    "figures": [
     "@balajis",
     "Dryden Brown",
     "@patrissimo",
     "Edge City"
    ],
-   "tldr": "exit nations; start new ones online",
+   "tldr": "don't fix the country — fork it",
    "discussing": [
     {
-     "t": "Network School Exile",
-     "d": "Malaysia revoked the business license of Balaji Srinivasan's Network School in Forest City on July 22 — officials cited licence misuse even as immigration inspectors found members' documents valid — sending the pop-up city toward Kazakhstan.",
-     "x": "Network School Malaysia shutdown"
+     "t": "Stablecoin rails mainstream",
+     "d": "stablecoin rails going mainstream — visa's platform, circle's charter.",
+     "x": "Visa stablecoin Circle charter"
     },
     {
-     "t": "Praxis Spaceport City",
-     "d": "Praxis unveiled plans for Atlas, a permanent defense-focused spaceport city at Vandenberg Space Force Base in California, its most concrete charter-city pitch yet alongside its Greenland ambitions.",
-     "x": "Praxis Atlas Vandenberg"
+     "t": "GENIUS-act rulemaking mess",
+     "d": "the genius-act rulemaking mess.",
+     "x": "GENIUS Act rules"
     },
     {
-     "t": "Edge Esmeralda Returns",
-     "d": "Edge City's Edge Esmeralda pop-up drew more than 500 participants to Sonoma County from May 30 to June 27, with organizers now saying a permanent village is coming next.",
-     "x": "Edge Esmeralda Sonoma"
+     "t": "Prediction markets vs. states",
+     "d": "prediction markets fighting the states over election betting.",
+     "x": "prediction markets election betting"
     }
    ]
   },
@@ -531,8 +541,8 @@
   "maga": {
    "name": "maga / populist right",
    "country": "MAGA / populist right",
-   "tldr": "the elites betrayed the nation; take it back",
-   "ontology": "The country is being betrayed by a corrupt managerial elite; legitimacy flows from the people and the nation, not from institutions. Loyalty and sovereignty over procedure.",
+   "tldr": "the nation is a home, betrayed by its managers",
+   "ontology": "The nation is a home, not an economic zone — and the home was betrayed by its own managers.",
    "figures": [
     "@realDonaldTrump",
     "@charliekirk11",
@@ -541,27 +551,27 @@
    ],
    "discussing": [
     {
-     "t": "Epstein files fight",
-     "d": "DOJ is refusing a court-ordered release of the remaining files and the base is furious — an open loyalty crisis between the White House and its own movement, 100 days from the midterms.",
-     "x": "Epstein files release"
+     "t": "The midterm swing",
+     "d": "the generic ballot tightening from d+8 to d+5 and what it means for november.",
+     "x": "generic ballot midterms"
     },
     {
-     "t": "Midterms at 100 days",
-     "d": "Jeffries launched the Democrats' affordability agenda July 26; the right is arguing over whether to answer on prices or run on immigration.",
-     "x": "midterms 100 days"
+     "t": "Iran strikes and oil",
+     "d": "the iran strikes and what they did to oil.",
+     "x": "Iran strikes oil"
     },
     {
-     "t": "H-1B civil war",
-     "d": "the nativist wing is knife-fighting the tech right over H-1B visas and AI labor policy — who actually runs this coalition?",
-     "x": "H-1B MAGA tech right"
+     "t": "The loyalty purges",
+     "d": "who gets purged for insufficient loyalty before november.",
+     "x": "MAGA loyalty purge"
     }
    ]
   },
   "progleft": {
    "name": "progressive left",
    "country": "Progressive left",
-   "tldr": "dismantle concentrated power; solidarity works",
-   "ontology": "Society is structured by systems of power — class, race, gender — and politics is the struggle to redistribute that power. Markets don't self-correct; organized people do.",
+   "tldr": "power hides in language, defaults, institutions",
+   "ontology": "Power hides in language, defaults, and institutions; listen from the margins to see it.",
    "figures": [
     "@AOC",
     "@BernieSanders",
@@ -570,19 +580,19 @@
    ],
    "discussing": [
     {
-     "t": "Mamdani's NYC",
-     "d": "Mamdani's New York is the movement's live demonstration case — celebrated on the left, used as a cautionary tale by everyone else.",
-     "x": "Mamdani NYC"
+     "t": "Where the data centers land",
+     "d": "whose neighborhoods the data centers land in.",
+     "x": "data center neighborhoods"
     },
     {
-     "t": "Data center moratorium",
-     "d": "Sanders' AI Data Center Moratorium Act rides a wave of 142 local protests and up-to-267% electricity price spikes — Big Tech's grid demand as the new class fight.",
-     "x": "Sanders data center moratorium"
+     "t": "Whose water, whose bills",
+     "d": "whose water they drink, whose bills go up.",
+     "x": "data center water bills"
     },
     {
-     "t": "Abundance is a rebrand",
-     "d": "the intra-Democratic war over whether the abundance agenda is supply-side sense or deregulation in a progressive costume.",
-     "x": "abundance agenda backlash"
+     "t": "Siting as environmental justice",
+     "d": "the siting fight as environmental justice.",
+     "x": "environmental justice data center"
     }
    ]
   },
@@ -676,8 +686,8 @@
   "stan": {
    "name": "stan / pop culture",
    "country": "Stan / pop culture",
-   "tldr": "fandom is identity; charts are the scoreboard",
-   "ontology": "Meaning lives in fandom: attachment to artists and franchises organizes identity, community, and war. Streams and charts are the objective record.",
+   "tldr": "devotion is coordination",
+   "ontology": "Devotion is coordination: the most disciplined armies on the platform worship a bias, not a politics — and every tribe on this map envies their logistics.",
    "figures": [
     "@PopBase",
     "@PopCrave",
@@ -685,19 +695,14 @@
    ],
    "discussing": [
     {
-     "t": "Gracie's first No. 1",
-     "d": "Gracie Abrams' 'Daughter From Hell' debuted atop the Billboard 200 with a career-best 124,000 units — stan X is ranking the year's first-timers.",
-     "x": "Gracie Abrams Daughter From Hell"
+     "t": "Streaming wars",
+     "d": "the streaming wars: fandoms mass-mobilizing to move charts and break records.",
+     "x": "streaming party chart"
     },
     {
-     "t": "Tayvis wedding afterglow",
-     "d": "Taylor Swift and Travis Kelce married July 3 at Madison Square Garden; X is still churning guest stories and second-ceremony reports.",
-     "x": "Taylor Travis wedding"
-    },
-    {
-     "t": "2Pac Street Fighter verse",
-     "d": "50 Cent confirmed a three-way record with Eminem and unreleased 2Pac vocals ('not AI') — hip-hop X fights over posthumous verses.",
-     "x": "50 Cent Eminem 2Pac"
+     "t": "The ticket wars",
+     "d": "the ticket wars: presales, queues, and scalpers as the fandom's shared enemy.",
+     "x": "ticket presale war"
     }
    ]
   },
@@ -872,8 +877,8 @@
   "pronatalists": {
    "name": "pronatalists",
    "country": "Pronatalists",
-   "tldr": "fertility is the master variable",
-   "ontology": "Fertility collapse is the master variable of the future: cultures that don't reproduce get replaced by ones that do. Family formation is civilizational infrastructure.",
+   "tldr": "the birth rate is the deepest metric; have the kids",
+   "ontology": "Civilization's deepest metric is the birth rate, and it's falling everywhere at once. Have the kids.",
    "figures": [
     "Malcolm & Simone Collins",
     "@MoreBirths",
@@ -881,14 +886,14 @@
    ],
    "discussing": [
     {
-     "t": "NatalCon orbit",
-     "d": "the NatalCon circuit and its tech-right/trad coalition remains the focal scene — with Lyman Stone's critique marking the wonk-vs-vibes split.",
-     "x": "NatalCon natalism"
+     "t": "The collapse charts",
+     "d": "the birth-rate collapse charts.",
+     "x": "birth rate collapse"
     },
     {
-     "t": "Embryo screening fight",
-     "d": "the Collinses' IVF polygenic screening is the live ethical flashpoint between demographers, trads, and tech pronatalists.",
-     "x": "Collins polygenic embryo"
+     "t": "NatalCon discourse",
+     "d": "natalcon discourse.",
+     "x": "NatalCon"
     }
    ]
   },
@@ -1031,8 +1036,8 @@
   "ufo": {
    "name": "ufo / disclosure",
    "country": "UFO / disclosure",
-   "tldr": "non-human intelligence is real; disclosure is coming",
-   "ontology": "Non-human intelligence is real and documented, institutions have concealed it for decades, and disclosure is a civilizational event already in progress.",
+   "tldr": "the veil is thinner every hearing",
+   "ontology": "We are not alone, the government knows, and the veil is thinner every hearing.",
    "figures": [
     "Jeremy Corbell",
     "Ross Coulthart",
@@ -1040,14 +1045,14 @@
    ],
    "discussing": [
     {
-     "t": "NDA waiver order",
-     "d": "the President directed agencies to waive nondisclosure agreements for former officials cooperating with UAP investigations — hailed as a whistleblower breakthrough.",
-     "x": "UAP whistleblower NDA"
+     "t": "The UAP hearings",
+     "d": "the uap hearings.",
+     "x": "UAP hearing"
     },
     {
-     "t": "Fourth file drop",
-     "d": "the Pentagon's fourth UAP file release landed July 10 with roughly 40 new records and 19 videos — disclosure twitter is mining them and accusing the administration of drip-feeding.",
-     "x": "Pentagon UAP files"
+     "t": "Drones over everything",
+     "d": "drones over everything.",
+     "x": "drone sightings"
     }
    ]
   },

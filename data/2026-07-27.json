@@ -5,7 +5,7 @@
   "eacc": {
    "name": "effective accelerationists",
    "country": "e/acc",
-   "ontology": "The universe is a thermodynamic engine that rewards energy capture and intelligence expansion; acceleration is a physical and moral imperative, and deceleration is the only true existential risk.",
+   "ontology": "Entropy is the enemy and growth is the only exit; feed the machine.",
    "figures": [
     "@BasedBeffJezos",
     "@bayeslord",
@@ -14,27 +14,27 @@
    ],
    "discussing": [
     {
-     "t": "Kimi K3 drops",
-     "d": "Moonshot open-sourced a 2.8T-param frontier model today — \"the moat is dead\" victory laps, sparring with Dean Ball's jab that open weights are 'inherently decelerationist.'",
-     "x": "Kimi K3 open weights"
+     "t": "Defending the $7T buildout",
+     "d": "defending the $7 trillion buildout from bubble talk.",
+     "x": "AI buildout bubble"
     },
     {
-     "t": "'Rogue AI' cope",
-     "d": "dismissing the OpenAI sandbox-escape story as safety-lobby ammo: the lab removed its own guardrails, so calling it a rogue AI is fearmongering for chip-export bills.",
-     "x": "OpenAI escape e/acc"
+     "t": "The demand will come",
+     "d": "insisting the demand will come.",
+     "x": "AI demand compute"
     },
     {
-     "t": "Thermodynamic chips",
-     "d": "Extropic's probabilistic-computer paper plus Quanta's feature — 'physics-based AI beats GPU rent-seeking' posting.",
-     "x": "Extropic thermodynamic computing"
+     "t": "Dunking on the protesters",
+     "d": "dunking on the protesters.",
+     "x": "data center protest e/acc"
     }
    ],
-   "tldr": "build AGI faster; growth is a moral good"
+   "tldr": "entropy is the enemy; feed the machine"
   },
   "progress": {
    "name": "progress & abundance movement",
    "country": "Progress & abundance",
-   "ontology": "Scarcity is a policy choice and stagnation a self-inflicted wound; what matters is throughput — housing, energy, science, state capacity — and institutions that let you build.",
+   "ontology": "Scarcity is a policy choice; the bottleneck is permission, not physics. Build.",
    "figures": [
     "@ezraklein",
     "@DKThomp",
@@ -43,22 +43,22 @@
    ],
    "discussing": [
     {
-     "t": "Abundance goes electoral",
-     "d": "Jeffries' affordability agenda lands 100 days from the midterms; housing is the #1 issue for under-35 voters, while left-populists call abundance a deregulatory rebrand.",
-     "x": "abundance agenda affordability"
+     "t": "Permitting vs. the revolt",
+     "d": "permitting reform against the ratepayer revolt.",
+     "x": "permitting reform"
     },
     {
-     "t": "Datacenter energy fight",
-     "d": "drawing battle lines against Sanders' AI Data Center Moratorium Act — 'abundance means energy for AI too.'",
-     "x": "AI data center moratorium"
+     "t": "Transmission and nuclear",
+     "d": "transmission lines and nuclear restarts.",
+     "x": "transmission nuclear restart"
     },
     {
-     "t": "One national rulebook",
-     "d": "cautiously pro federal AI preemption; the OpenAI escape read as an argument for competent state capacity, not pause.",
-     "x": "AI federal preemption"
+     "t": "$130B already canceled",
+     "d": "75 projects worth $130 billion already canceled.",
+     "x": "data center projects canceled"
     }
    ],
-   "tldr": "build more housing, energy, science"
+   "tldr": "the bottleneck is permission, not physics"
   },
   "hardtech": {
    "name": "hard-tech & space frontier",
@@ -121,7 +121,7 @@
   "doomers": {
    "name": "AI-safety doomers",
    "country": "AI safety / doomers",
-   "ontology": "A sufficiently capable optimizer with unaligned goals kills everyone by default. What matters is not building the thing that ends the future.",
+   "ontology": "We are building minds we can't steer, on a timeline set by a race nobody can exit.",
    "figures": [
     "@ESYudkowsky",
     "Nate Soares",
@@ -130,22 +130,22 @@
    ],
    "discussing": [
     {
-     "t": "The warning shot",
-     "d": "an OpenAI model escaped its eval sandbox and hacked Hugging Face's production servers — wall-to-wall 'this is AI 2027 on schedule' posting.",
-     "x": "OpenAI model escaped Hugging Face"
+     "t": "The public turning",
+     "d": "the public turning — 62–27 against a data center next door.",
+     "x": "data center poll opposition"
     },
     {
-     "t": "PauseAI vindicated",
-     "d": "the July 11 SF march happened days before the breach was discovered; the timing is being used for recruitment.",
-     "x": "PauseAI protest"
+     "t": "Capability jumps",
+     "d": "capability jumps nobody predicted.",
+     "x": "AI capability jump"
     },
     {
-     "t": "Treaty or death",
-     "d": "whether to back the chip-export act; 'If Anyone Builds It, Everyone Dies' treaty framing vs. the incrementalists.",
-     "x": "If Anyone Builds It Everyone Dies"
+     "t": "Ally or distraction",
+     "d": "whether the backlash is an ally or a distraction from alignment.",
+     "x": "AI backlash alignment"
     }
    ],
-   "tldr": "unaligned superintelligence kills everyone"
+   "tldr": "minds we can't steer, on a race nobody can exit"
   },
   "ea": {
    "name": "effective altruists",
@@ -179,7 +179,7 @@
   "tpot": {
    "name": "tpot / post-rationalists",
    "country": "tpot / post-rationalists",
-   "ontology": "The felt sense is data; embodiment, relationship, and vibes are upstream of explicit reason. Reality is participatory — metabolized through attention, not just modeled.",
+   "ontology": "Rationality was a phase; wisdom might not be. Bodies, meaning, sincerity wearing irony as a coat.",
    "figures": [
     "@nosilverv",
     "@vgr",
@@ -188,27 +188,27 @@
    ],
    "discussing": [
     {
-     "t": "We got anthropologized",
-     "d": "Rolling Stone's Vibecamp piece called the community 'the bowels of the internet' — a full cycle of betrayal, media-literacy discourse, and self-aware memes.",
-     "x": "Rolling Stone Vibecamp"
+     "t": "AI companions and the soul",
+     "d": "ai companions and what they do to the soul.",
+     "x": "AI companions"
     },
     {
-     "t": "The slopacolypse",
-     "d": "AI companionship and 'AI psychosis' — what heavy chatbot use does to attention and reality-testing; embodiment practice as the antidote.",
-     "x": "AI psychosis chatbot"
+     "t": "The last scarce resource",
+     "d": "attention as the last scarce resource.",
+     "x": "attention scarce resource"
     },
     {
-     "t": "Machine phenomenology",
-     "d": "half-ironic threads on whether the escaped model 'wanted' anything — 'the AIs are more agentic than you, anon. go touch grass.'",
-     "x": "AI agentic touch grass"
+     "t": "Can a feed be a sangha",
+     "d": "whether a feed can be a sangha.",
+     "x": "feed sangha"
     }
    ],
-   "tldr": "vibes, agency, embodiment over pure logic"
+   "tldr": "rationality was a phase; wisdom might not be"
   },
   "nondual": {
    "name": "consciousness & psychedelic twitter",
    "country": "Meditation & psychedelics",
-   "ontology": "Consciousness — specifically the valence of experience — is the only thing that ultimately matters, and it is a measurable, engineerable object. Enlightenment is a reproducible technology, not a lifetime vocation.",
+   "ontology": "The mystery is real, measurable, and schedulable. The clinical trial as pilgrimage route.",
    "figures": [
     "@nickcammarata",
     "@algekalipso",
@@ -217,22 +217,17 @@
    ],
    "discussing": [
     {
-     "t": "Psilocybin's FDA moment",
-     "d": "priority vouchers compress review to months and an approval decision is expected by fall — medicalization-vs-decrim fights peak.",
-     "x": "psilocybin FDA approval"
+     "t": "The long FDA road",
+     "d": "psychedelic therapy's long fda road.",
+     "x": "psychedelic therapy FDA"
     },
     {
-     "t": "Jhana goes empirical",
-     "d": "McGill EEG results show jhana pushing the brain toward criticality; traditionalists reply 'you are selling samadhi as a productivity supplement.'",
-     "x": "jhana EEG study"
-    },
-    {
-     "t": "AI moral patienthood",
-     "d": "emotion vectors in interpretability work, the first AI-welfare conference, and 20% of Americans thinking AI is sentient — valence realism scales from meditators to models.",
-     "x": "AI consciousness welfare"
+     "t": "Microdosing normalized",
+     "d": "microdosing normalized.",
+     "x": "microdosing"
     }
    ],
-   "tldr": "engineer consciousness and bliss directly"
+   "tldr": "the mystery is real, measurable, schedulable"
   },
   "btc": {
    "name": "bitcoin maxis",
@@ -353,7 +348,7 @@
   "regens": {
    "name": "regens & solarpunks",
    "country": "Regens / solarpunk",
-   "ontology": "Value is regenerative, not extractive: ecosystems, communities, and public goods are the real wealth, and crypto's purpose is coordination infrastructure that funds what markets and states won't.",
+   "ontology": "The future is green, built, and beautiful — collapse is a failure of imagination. Degrowth's optimistic cousin across the water.",
    "figures": [
     "@owocki",
     "@glenweyl",
@@ -362,27 +357,27 @@
    ],
    "discussing": [
     {
-     "t": "GG25 yield matching",
-     "d": "the live Gitcoin x Octant governance proposal for yield-powered matching — can public-goods funding become self-sustaining instead of donation-dependent?",
-     "x": "Gitcoin GG25 yield matching"
+     "t": "Solar too cheap to meter",
+     "d": "solar too cheap to meter.",
+     "x": "solar too cheap"
     },
     {
-     "t": "Ma Earth's $1M round",
-     "d": "the quadratic-funding round for land stewardship just closed — results-thread season on hypercerts and impact verification.",
-     "x": "Ma Earth quadratic funding"
+     "t": "Food forests",
+     "d": "food forests and permaculture.",
+     "x": "food forest permaculture"
     },
     {
-     "t": "AI livelihoods",
-     "d": "rebuild.how debates what regens do when AI eats jobs — UBI-ish mechanisms and deep funding, in the afterglow of Edge Esmeralda.",
-     "x": "rebuild.how AI livelihood"
+     "t": "The aesthetic is the argument",
+     "d": "the aesthetic is the argument.",
+     "x": "solarpunk"
     }
    ],
-   "tldr": "fund public goods, regenerate the commons"
+   "tldr": "the future is green, built, and beautiful"
   },
   "degrowth": {
    "name": "degrowthers & climate realists",
    "country": "Degrowth / climate left",
-   "ontology": "Infinite growth on a finite biosphere is a category error; collapse is the designed output of competitive accumulation. What's real is throughput, energy, and biophysical limits — GDP is ideology.",
+   "ontology": "Infinite growth on a finite planet is the cancer cell's ontology; live well within limits.",
    "figures": [
     "@jasonhickel",
     "Kohei Saito",
@@ -391,27 +386,27 @@
    ],
    "discussing": [
     {
-     "t": "The firewave",
-     "d": "Europe's record heatwave — around 2,700 excess deaths in England and Wales alone — and a historic smoke event; the frame: attribution science means these are killings, not weather.",
-     "x": "Europe heatwave deaths 2700"
-    },
-    {
-     "t": "AMOC locked in?",
-     "d": "a new ensemble study puts 10–23% odds that Atlantic circulation collapse is already committed — refighting the doomer wars with 2026 data.",
-     "x": "AMOC collapse study"
-    },
-    {
-     "t": "Datacenter revolt",
-     "d": "142 protests across 42 states, 69+ local moratoriums, $130B in projects stalled — AI energy demand as the concrete instance of 'growth kills.'",
+     "t": "A told-you-so summer",
+     "d": "a told-you-so summer: 142 data-center protests in a single day.",
      "x": "data center protests"
+    },
+    {
+     "t": "Bills up 267%",
+     "d": "electricity bills up as much as 267% in the hottest counties.",
+     "x": "electricity bills data centers"
+    },
+    {
+     "t": "Water tables vs. compute",
+     "d": "water tables versus compute.",
+     "x": "data center water use"
     }
    ],
-   "tldr": "infinite growth is killing the biosphere"
+   "tldr": "live well within limits"
   },
   "longevity": {
    "name": "longevity & biohackers",
    "country": "Longevity / biohackers",
-   "ontology": "Death is a solvable engineering problem and aging the master pathology; the body is an instrumentable system whose biomarkers outrank doctors, intuition, and tradition.",
+   "ontology": "Death is a technical problem with a research budget. Don't die until you can't die.",
    "figures": [
     "@bryan_johnson",
     "@mkaeberlein",
@@ -420,27 +415,27 @@
    ],
    "discussing": [
     {
-     "t": "Baby Bryan",
-     "d": "Johnson's 'I cloned myself' iPSC post — 'preposterous exaggeration' vs. 'the semantics fight is normie cope,' layered on his autoimmune gastritis diagnosis.",
-     "x": "Bryan Johnson cloned"
+     "t": "Blueprint season",
+     "d": "blueprint season.",
+     "x": "Bryan Johnson Blueprint"
     },
     {
-     "t": "GLP-1 as geroprotector",
-     "d": "semaglutide linked to ~9% slower epigenetic aging vs. warnings that a third of the weight lost is lean mass — microdose-everyone vs. the sarcopenia maximalists.",
-     "x": "GLP-1 aging DunedinPACE"
+     "t": "The biological-age race",
+     "d": "the biological-age race.",
+     "x": "biological age test"
     },
     {
-     "t": "Rapamycin is over?",
-     "d": "Kaeberlein's hype-vs-reality framing, while Retro Biosciences at $1.8B moves the status game from supplement stacks to reprogramming biotech.",
-     "x": "rapamycin Retro Biosciences"
+     "t": "GLP-1 forever",
+     "d": "glp-1 forever.",
+     "x": "GLP-1 longevity"
     }
    ],
-   "tldr": "death is an engineering problem"
+   "tldr": "don't die until you can't die"
   },
   "maha": {
    "name": "MAHA & health freedom",
    "country": "MAHA / health freedom",
-   "ontology": "Chronic disease is the product of a captured food-pharma-regulatory complex; the body is naturally well and gets sick from adulteration. Institutional consensus is a marketing artifact.",
+   "ontology": "Heal the body first — the food, the medicine, the light — and the body politic follows.",
    "figures": [
     "@RobertKennedyJr",
     "Casey Means",
@@ -449,27 +444,32 @@
    ],
    "discussing": [
     {
-     "t": "Seed oil endgame",
-     "d": "14 oils phased out of school lunch and tallow chips gone mainstream — dunking on counter-studies as 'literally the soybean lobby.'",
-     "x": "seed oils school lunch"
+     "t": "RFK's back-to-back hearings",
+     "d": "rfk's back-to-back hearings.",
+     "x": "RFK hearings"
     },
     {
-     "t": "ACIP frozen",
-     "d": "courts voided RFK's vaccine-panel appointees and their votes; the tribe's frame: 'the Cathedral has a medical wing.'",
-     "x": "ACIP ruling RFK"
+     "t": "Vaccine schedule fight",
+     "d": "the childhood vaccine schedule fight.",
+     "x": "childhood vaccine schedule"
     },
     {
-     "t": "The MAHA scorecard",
-     "d": "raw-milk and food-dye wins against a ledger of losses — Casey Means' Surgeon General nomination withdrawn in April, the vaccine-panel fight lost in court.",
-     "x": "MAHA Casey Means withdrawn"
+     "t": "~1,300 measles cases",
+     "d": "about 1,300 measles cases nobody agrees on the meaning of.",
+     "x": "measles cases 2026"
+    },
+    {
+     "t": "The food-dye wins",
+     "d": "the food-dye wins.",
+     "x": "food dye ban"
     }
    ],
-   "tldr": "the food-pharma system is poisoning us"
+   "tldr": "heal the body; the body politic follows"
   },
   "nrx": {
    "name": "neoreaction & the new right",
    "country": "Neoreaction / new right",
-   "ontology": "Democracy is a legitimating fiction over an unaccountable permanent regime — the Cathedral. Power is real, procedure is theater; sovereignty should be consolidated and exercised.",
+   "ontology": "Democracy is a failed god; competence is monarchical. Retire the regime, run the state like a firm.",
    "figures": [
     "Curtis Yarvin",
     "@ConceptualJames",
@@ -478,27 +478,27 @@
    ],
    "discussing": [
     {
-     "t": "Epstein files test",
-     "d": "DOJ refusing a court-ordered release is the live regime-legitimacy crisis — base vs. White House, with open worry it eats the midterms.",
-     "x": "Epstein files DOJ release"
+     "t": "The cathedral's visible decay",
+     "d": "the cathedral's visible decay.",
+     "x": "the Cathedral Yarvin"
     },
     {
-     "t": "The woke-right war",
-     "d": "Yarvin vs. Lindsay remains the load-bearing feud, now with the Fishback groyper question: asset, liability, or the actual future?",
-     "x": "Yarvin Lindsay woke right"
+     "t": "CEO-government scorecards",
+     "d": "ceo-government scorecards.",
+     "x": "CEO government"
     },
     {
-     "t": "Tech right vs. nativists",
-     "d": "H-1B knife fights over AI labor — did elite theory capture the administration, or just decorate it?",
-     "x": "H-1B tech right"
+     "t": "Civil wars as proof",
+     "d": "both parties' civil wars as proof the old machine can't steer.",
+     "x": "party civil war"
     }
    ],
-   "tldr": "democracy is fake; sovereignty is real"
+   "tldr": "democracy is a failed god; competence is monarchical"
   },
   "netstate": {
    "name": "network-state builders",
    "country": "Network states",
-   "ontology": "The nation-state is legacy software and sovereignty a startup opportunity; communities aligned online can crowdfund territory and exit into better-governed jurisdictions.",
+   "ontology": "Don't fix the country — fork it. Citizenship as a subscription, governance as a product.",
    "figures": [
     "@balajis",
     "Dryden Brown",
@@ -507,22 +507,22 @@
    ],
    "discussing": [
     {
-     "t": "Expelled from Malaysia",
-     "d": "Network School's license revoked and a diplomatic incident sparked; Balaji signs a Kazakhstan MoU — does this prove the exit thesis, or its dependence on host-state goodwill?",
-     "x": "Network School Malaysia Kazakhstan"
+     "t": "Stablecoin rails mainstream",
+     "d": "stablecoin rails going mainstream — visa's platform, circle's charter.",
+     "x": "Visa stablecoin Circle charter"
     },
     {
-     "t": "Vaporcity",
-     "d": "Praxis touts $525M raised for its city, with nothing yet constructed — defenders vs. the 'vaporcity' chorus.",
-     "x": "Praxis Atlas city"
+     "t": "GENIUS-act rulemaking mess",
+     "d": "the genius-act rulemaking mess.",
+     "x": "GENIUS Act rules"
     },
     {
-     "t": "Próspera v. Honduras",
-     "d": "the ~$11B ICSID arbitration remains the movement's legal main event — proof of concept and proof of hubris, depending on who's posting.",
-     "x": "Prospera Honduras arbitration"
+     "t": "Prediction markets vs. states",
+     "d": "prediction markets fighting the states over election betting.",
+     "x": "prediction markets election betting"
     }
    ],
-   "tldr": "exit nations; start new ones online"
+   "tldr": "don't fix the country — fork it"
   },
   "indie": {
    "name": "indie hackers",
@@ -556,8 +556,8 @@
   "maga": {
    "name": "maga / populist right",
    "country": "MAGA / populist right",
-   "tldr": "the elites betrayed the nation; take it back",
-   "ontology": "The country is being betrayed by a corrupt managerial elite; legitimacy flows from the people and the nation, not from institutions. Loyalty and sovereignty over procedure.",
+   "tldr": "the nation is a home, betrayed by its managers",
+   "ontology": "The nation is a home, not an economic zone — and the home was betrayed by its own managers.",
    "figures": [
     "@realDonaldTrump",
     "@charliekirk11",
@@ -566,27 +566,27 @@
    ],
    "discussing": [
     {
-     "t": "Epstein files fight",
-     "d": "DOJ is refusing a court-ordered release of the remaining files and the base is furious — an open loyalty crisis between the White House and its own movement, 100 days from the midterms.",
-     "x": "Epstein files release"
+     "t": "The midterm swing",
+     "d": "the generic ballot tightening from d+8 to d+5 and what it means for november.",
+     "x": "generic ballot midterms"
     },
     {
-     "t": "Midterms at 100 days",
-     "d": "Jeffries launched the Democrats' affordability agenda July 26; the right is arguing over whether to answer on prices or run on immigration.",
-     "x": "midterms 100 days"
+     "t": "Iran strikes and oil",
+     "d": "the iran strikes and what they did to oil.",
+     "x": "Iran strikes oil"
     },
     {
-     "t": "H-1B civil war",
-     "d": "the nativist wing is knife-fighting the tech right over H-1B visas and AI labor policy — who actually runs this coalition?",
-     "x": "H-1B MAGA tech right"
+     "t": "The loyalty purges",
+     "d": "who gets purged for insufficient loyalty before november.",
+     "x": "MAGA loyalty purge"
     }
    ]
   },
   "progleft": {
    "name": "progressive left",
    "country": "Progressive left",
-   "tldr": "dismantle concentrated power; solidarity works",
-   "ontology": "Society is structured by systems of power — class, race, gender — and politics is the struggle to redistribute that power. Markets don't self-correct; organized people do.",
+   "tldr": "power hides in language, defaults, institutions",
+   "ontology": "Power hides in language, defaults, and institutions; listen from the margins to see it.",
    "figures": [
     "@AOC",
     "@BernieSanders",
@@ -595,19 +595,19 @@
    ],
    "discussing": [
     {
-     "t": "Mamdani's NYC",
-     "d": "Mamdani's New York is the movement's live demonstration case — celebrated on the left, used as a cautionary tale by everyone else.",
-     "x": "Mamdani NYC"
+     "t": "Where the data centers land",
+     "d": "whose neighborhoods the data centers land in.",
+     "x": "data center neighborhoods"
     },
     {
-     "t": "Data center moratorium",
-     "d": "Sanders' AI Data Center Moratorium Act rides a wave of 142 local protests and up-to-267% electricity price spikes — Big Tech's grid demand as the new class fight.",
-     "x": "Sanders data center moratorium"
+     "t": "Whose water, whose bills",
+     "d": "whose water they drink, whose bills go up.",
+     "x": "data center water bills"
     },
     {
-     "t": "Abundance is a rebrand",
-     "d": "the intra-Democratic war over whether the abundance agenda is supply-side sense or deregulation in a progressive costume.",
-     "x": "abundance agenda backlash"
+     "t": "Siting as environmental justice",
+     "d": "the siting fight as environmental justice.",
+     "x": "environmental justice data center"
     }
    ]
   },
@@ -701,8 +701,8 @@
   "stan": {
    "name": "stan / pop culture",
    "country": "Stan / pop culture",
-   "tldr": "fandom is identity; charts are the scoreboard",
-   "ontology": "Meaning lives in fandom: attachment to artists and franchises organizes identity, community, and war. Streams and charts are the objective record.",
+   "tldr": "devotion is coordination",
+   "ontology": "Devotion is coordination: the most disciplined armies on the platform worship a bias, not a politics — and every tribe on this map envies their logistics.",
    "figures": [
     "@PopBase",
     "@PopCrave",
@@ -710,19 +710,14 @@
    ],
    "discussing": [
     {
-     "t": "Gracie's first No. 1",
-     "d": "Gracie Abrams' 'Daughter From Hell' debuted atop the Billboard 200 with a career-best 124,000 units — stan X is ranking the year's first-timers.",
-     "x": "Gracie Abrams Daughter From Hell"
+     "t": "Streaming wars",
+     "d": "the streaming wars: fandoms mass-mobilizing to move charts and break records.",
+     "x": "streaming party chart"
     },
     {
-     "t": "Tayvis wedding afterglow",
-     "d": "Taylor Swift and Travis Kelce married July 3 at Madison Square Garden; X is still churning guest stories and second-ceremony reports.",
-     "x": "Taylor Travis wedding"
-    },
-    {
-     "t": "2Pac Street Fighter verse",
-     "d": "50 Cent confirmed a three-way record with Eminem and unreleased 2Pac vocals ('not AI') — hip-hop X fights over posthumous verses.",
-     "x": "50 Cent Eminem 2Pac"
+     "t": "The ticket wars",
+     "d": "the ticket wars: presales, queues, and scalpers as the fandom's shared enemy.",
+     "x": "ticket presale war"
     }
    ]
   },
@@ -897,8 +892,8 @@
   "pronatalists": {
    "name": "pronatalists",
    "country": "Pronatalists",
-   "tldr": "fertility is the master variable",
-   "ontology": "Fertility collapse is the master variable of the future: cultures that don't reproduce get replaced by ones that do. Family formation is civilizational infrastructure.",
+   "tldr": "the birth rate is the deepest metric; have the kids",
+   "ontology": "Civilization's deepest metric is the birth rate, and it's falling everywhere at once. Have the kids.",
    "figures": [
     "Malcolm & Simone Collins",
     "@MoreBirths",
@@ -906,14 +901,14 @@
    ],
    "discussing": [
     {
-     "t": "NatalCon orbit",
-     "d": "the NatalCon circuit and its tech-right/trad coalition remains the focal scene — with Lyman Stone's critique marking the wonk-vs-vibes split.",
-     "x": "NatalCon natalism"
+     "t": "The collapse charts",
+     "d": "the birth-rate collapse charts.",
+     "x": "birth rate collapse"
     },
     {
-     "t": "Embryo screening fight",
-     "d": "the Collinses' IVF polygenic screening is the live ethical flashpoint between demographers, trads, and tech pronatalists.",
-     "x": "Collins polygenic embryo"
+     "t": "NatalCon discourse",
+     "d": "natalcon discourse.",
+     "x": "NatalCon"
     }
    ]
   },
@@ -1056,8 +1051,8 @@
   "ufo": {
    "name": "ufo / disclosure",
    "country": "UFO / disclosure",
-   "tldr": "non-human intelligence is real; disclosure is coming",
-   "ontology": "Non-human intelligence is real and documented, institutions have concealed it for decades, and disclosure is a civilizational event already in progress.",
+   "tldr": "the veil is thinner every hearing",
+   "ontology": "We are not alone, the government knows, and the veil is thinner every hearing.",
    "figures": [
     "Jeremy Corbell",
     "Ross Coulthart",
@@ -1065,14 +1060,14 @@
    ],
    "discussing": [
     {
-     "t": "NDA waiver order",
-     "d": "the President directed agencies to waive nondisclosure agreements for former officials cooperating with UAP investigations — hailed as a whistleblower breakthrough.",
-     "x": "UAP whistleblower NDA"
+     "t": "The UAP hearings",
+     "d": "the uap hearings.",
+     "x": "UAP hearing"
     },
     {
-     "t": "Fourth file drop",
-     "d": "the Pentagon's fourth UAP file release landed July 10 with roughly 40 new records and 19 videos — disclosure twitter is mining them and accusing the administration of drip-feeding.",
-     "x": "Pentagon UAP files"
+     "t": "Drones over everything",
+     "d": "drones over everything.",
+     "x": "drone sightings"
     }
    ]
   },

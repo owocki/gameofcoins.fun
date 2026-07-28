@@ -2,26 +2,26 @@
  "eacc": {
   "name": "effective accelerationists",
   "country": "e/acc",
-  "ontology": "The universe is a thermodynamic engine that rewards energy capture and intelligence expansion; acceleration is a physical and moral imperative, and deceleration is the only true existential risk.",
+  "ontology": "Entropy is the enemy and growth is the only exit; feed the machine.",
   "figures": [
    "@BasedBeffJezos",
    "@bayeslord",
    "@garrytan",
    "@natolambert"
   ],
-  "tldr": "build AGI faster; growth is a moral good"
+  "tldr": "entropy is the enemy; feed the machine"
  },
  "progress": {
   "name": "progress & abundance movement",
   "country": "Progress & abundance",
-  "ontology": "Scarcity is a policy choice and stagnation a self-inflicted wound; what matters is throughput — housing, energy, science, state capacity — and institutions that let you build.",
+  "ontology": "Scarcity is a policy choice; the bottleneck is permission, not physics. Build.",
   "figures": [
    "@ezraklein",
    "@DKThomp",
    "@jasoncrawford",
    "@IFP_org"
   ],
-  "tldr": "build more housing, energy, science"
+  "tldr": "the bottleneck is permission, not physics"
  },
  "hardtech": {
   "name": "hard-tech & space frontier",
@@ -50,14 +50,14 @@
  "doomers": {
   "name": "AI-safety doomers",
   "country": "AI safety / doomers",
-  "ontology": "A sufficiently capable optimizer with unaligned goals kills everyone by default. What matters is not building the thing that ends the future.",
+  "ontology": "We are building minds we can't steer, on a timeline set by a race nobody can exit.",
   "figures": [
    "@ESYudkowsky",
    "Nate Soares",
    "@DKokotajlo",
    "Holly Elmore"
   ],
-  "tldr": "unaligned superintelligence kills everyone"
+  "tldr": "minds we can't steer, on a race nobody can exit"
  },
  "ea": {
   "name": "effective altruists",
@@ -74,26 +74,26 @@
  "tpot": {
   "name": "tpot / post-rationalists",
   "country": "tpot / post-rationalists",
-  "ontology": "The felt sense is data; embodiment, relationship, and vibes are upstream of explicit reason. Reality is participatory — metabolized through attention, not just modeled.",
+  "ontology": "Rationality was a phase; wisdom might not be. Bodies, meaning, sincerity wearing irony as a coat.",
   "figures": [
    "@nosilverv",
    "@vgr",
    "@QiaochuYuan",
    "@vibecamp_"
   ],
-  "tldr": "vibes, agency, embodiment over pure logic"
+  "tldr": "rationality was a phase; wisdom might not be"
  },
  "nondual": {
   "name": "consciousness & psychedelic twitter",
   "country": "Meditation & psychedelics",
-  "ontology": "Consciousness — specifically the valence of experience — is the only thing that ultimately matters, and it is a measurable, engineerable object. Enlightenment is a reproducible technology, not a lifetime vocation.",
+  "ontology": "The mystery is real, measurable, and schedulable. The clinical trial as pilgrimage route.",
   "figures": [
    "@nickcammarata",
    "@algekalipso",
    "Jhourney",
    "Daniel Ingram"
   ],
-  "tldr": "engineer consciousness and bliss directly"
+  "tldr": "the mystery is real, measurable, schedulable"
  },
  "btc": {
   "name": "bitcoin maxis",
@@ -146,74 +146,74 @@
  "regens": {
   "name": "regens & solarpunks",
   "country": "Regens / solarpunk",
-  "ontology": "Value is regenerative, not extractive: ecosystems, communities, and public goods are the real wealth, and crypto's purpose is coordination infrastructure that funds what markets and states won't.",
+  "ontology": "The future is green, built, and beautiful — collapse is a failure of imagination. Degrowth's optimistic cousin across the water.",
   "figures": [
    "@owocki",
    "@glenweyl",
    "@ReFiDAO",
    "@MaEarthMedia"
   ],
-  "tldr": "fund public goods, regenerate the commons"
+  "tldr": "the future is green, built, and beautiful"
  },
  "degrowth": {
   "name": "degrowthers & climate realists",
   "country": "Degrowth / climate left",
-  "ontology": "Infinite growth on a finite biosphere is a category error; collapse is the designed output of competitive accumulation. What's real is throughput, energy, and biophysical limits — GDP is ideology.",
+  "ontology": "Infinite growth on a finite planet is the cancer cell's ontology; live well within limits.",
   "figures": [
    "@jasonhickel",
    "Kohei Saito",
    "@GretaThunberg",
    "@rahmstorf"
   ],
-  "tldr": "infinite growth is killing the biosphere"
+  "tldr": "live well within limits"
  },
  "longevity": {
   "name": "longevity & biohackers",
   "country": "Longevity / biohackers",
-  "ontology": "Death is a solvable engineering problem and aging the master pathology; the body is an instrumentable system whose biomarkers outrank doctors, intuition, and tradition.",
+  "ontology": "Death is a technical problem with a research budget. Don't die until you can't die.",
   "figures": [
    "@bryan_johnson",
    "@mkaeberlein",
    "@PeterAttiaMD",
    "Joe Betts-Lacroix"
   ],
-  "tldr": "death is an engineering problem"
+  "tldr": "don't die until you can't die"
  },
  "maha": {
   "name": "MAHA & health freedom",
   "country": "MAHA / health freedom",
-  "ontology": "Chronic disease is the product of a captured food-pharma-regulatory complex; the body is naturally well and gets sick from adulteration. Institutional consensus is a marketing artifact.",
+  "ontology": "Heal the body first — the food, the medicine, the light — and the body politic follows.",
   "figures": [
    "@RobertKennedyJr",
    "Casey Means",
    "@CalleyMeans",
    "@foodbabe"
   ],
-  "tldr": "the food-pharma system is poisoning us"
+  "tldr": "heal the body; the body politic follows"
  },
  "nrx": {
   "name": "neoreaction & the new right",
   "country": "Neoreaction / new right",
-  "ontology": "Democracy is a legitimating fiction over an unaccountable permanent regime — the Cathedral. Power is real, procedure is theater; sovereignty should be consolidated and exercised.",
+  "ontology": "Democracy is a failed god; competence is monarchical. Retire the regime, run the state like a firm.",
   "figures": [
    "Curtis Yarvin",
    "@ConceptualJames",
    "BAP",
    "@j_fishback"
   ],
-  "tldr": "democracy is fake; sovereignty is real"
+  "tldr": "democracy is a failed god; competence is monarchical"
  },
  "netstate": {
   "name": "network-state builders",
   "country": "Network states",
-  "ontology": "The nation-state is legacy software and sovereignty a startup opportunity; communities aligned online can crowdfund territory and exit into better-governed jurisdictions.",
+  "ontology": "Don't fix the country — fork it. Citizenship as a subscription, governance as a product.",
   "figures": [
    "@balajis",
    "Dryden Brown",
    "@patrissimo",
    "Edge City"
   ],
-  "tldr": "exit nations; start new ones online"
+  "tldr": "don't fix the country — fork it"
  },
  "indie": {
   "name": "indie hackers",
@@ -230,8 +230,8 @@
  "maga": {
   "name": "maga / populist right",
   "country": "MAGA / populist right",
-  "tldr": "the elites betrayed the nation; take it back",
-  "ontology": "The country is being betrayed by a corrupt managerial elite; legitimacy flows from the people and the nation, not from institutions. Loyalty and sovereignty over procedure.",
+  "tldr": "the nation is a home, betrayed by its managers",
+  "ontology": "The nation is a home, not an economic zone — and the home was betrayed by its own managers.",
   "figures": [
    "@realDonaldTrump",
    "@charliekirk11",
@@ -242,8 +242,8 @@
  "progleft": {
   "name": "progressive left",
   "country": "Progressive left",
-  "tldr": "dismantle concentrated power; solidarity works",
-  "ontology": "Society is structured by systems of power — class, race, gender — and politics is the struggle to redistribute that power. Markets don't self-correct; organized people do.",
+  "tldr": "power hides in language, defaults, institutions",
+  "ontology": "Power hides in language, defaults, and institutions; listen from the margins to see it.",
   "figures": [
    "@AOC",
    "@BernieSanders",
@@ -290,8 +290,8 @@
  "stan": {
   "name": "stan / pop culture",
   "country": "Stan / pop culture",
-  "tldr": "fandom is identity; charts are the scoreboard",
-  "ontology": "Meaning lives in fandom: attachment to artists and franchises organizes identity, community, and war. Streams and charts are the objective record.",
+  "tldr": "devotion is coordination",
+  "ontology": "Devotion is coordination: the most disciplined armies on the platform worship a bias, not a politics — and every tribe on this map envies their logistics.",
   "figures": [
    "@PopBase",
    "@PopCrave",
@@ -380,8 +380,8 @@
  "pronatalists": {
   "name": "pronatalists",
   "country": "Pronatalists",
-  "tldr": "fertility is the master variable",
-  "ontology": "Fertility collapse is the master variable of the future: cultures that don't reproduce get replaced by ones that do. Family formation is civilizational infrastructure.",
+  "tldr": "the birth rate is the deepest metric; have the kids",
+  "ontology": "Civilization's deepest metric is the birth rate, and it's falling everywhere at once. Have the kids.",
   "figures": [
    "Malcolm & Simone Collins",
    "@MoreBirths",
@@ -455,8 +455,8 @@
  "ufo": {
   "name": "ufo / disclosure",
   "country": "UFO / disclosure",
-  "tldr": "non-human intelligence is real; disclosure is coming",
-  "ontology": "Non-human intelligence is real and documented, institutions have concealed it for decades, and disclosure is a civilizational event already in progress.",
+  "tldr": "the veil is thinner every hearing",
+  "ontology": "We are not alone, the government knows, and the veil is thinner every hearing.",
   "figures": [
    "Jeremy Corbell",
    "Ross Coulthart",
