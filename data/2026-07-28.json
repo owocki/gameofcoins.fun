@@ -1123,6 +1123,12 @@
    ],
    "discussing": [
     {
+     "t": "OP · #158",
+     "d": "Optimism — rank #158, $204M market cap, $0.0891.",
+     "x": "$OP",
+     "src": "https://www.coingecko.com/en/coins/optimism"
+    },
+    {
      "t": "CELO · #509",
      "d": "Celo — rank #509, $39M market cap, $0.0639.",
      "x": "$CELO",
@@ -1133,6 +1139,12 @@
      "d": "Gitcoin — rank #1392, $7M market cap, $0.0764.",
      "x": "$GTC",
      "src": "https://www.coingecko.com/en/coins/gitcoin"
+    },
+    {
+     "t": "GIV · #4752",
+     "d": "Giveth — rank #4752, $0.2M market cap, $0.0005.",
+     "x": "$GIV",
+     "src": "https://www.coingecko.com/en/coins/giveth"
     }
    ]
   },
