@@ -1467,6 +1467,26 @@
      "x": "$RARE",
      "src": "https://www.coingecko.com/en/coins/superrare"
     }
+   ],
+   "topics": [
+    {
+     "t": "Christie's Art+Tech Summit",
+     "d": "Christie's held its ninth annual Art + Tech Summit in New York the week of July 26, gathering artists, collectors, and tech leaders around AI, tokenization, and digital ownership, while Deadfellaz launched its free God Pull mint for holders on July 27.",
+     "x": "Christie's Art Tech Summit",
+     "src": "https://www.tekedia.com/deadfellaz-unveils-the-god-pull-while-christies-hosts-art-tech-summit/"
+    },
+    {
+     "t": "6529 museum mint",
+     "d": "The first mint of punk6529's 6529 Network Museum, a platform for showcasing digital art through NFTs, went live around July 26 and drew notable collector attention.",
+     "x": "6529 museum mint",
+     "src": "https://coinfomania.com/first-mint-of-6529-network-museum-goes-live-drawing-attention/"
+    },
+    {
+     "t": "SuperRare portrait drop",
+     "d": "SuperRare announced Loss of Language by artist ttiimmees, a set of 100 unique portraits priced at 0.02 ETH each, dropping on the platform August 3.",
+     "x": "SuperRare Loss of Language",
+     "src": "https://html.duckduckgo.com/html/?q=SuperRare+%22Loss+of+Language%22+NFT"
+    }
    ]
   }
  },
