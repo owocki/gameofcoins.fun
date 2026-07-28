@@ -89,6 +89,9 @@ text{user-select:none;-webkit-user-select:none}
 #cart #d-cur{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#6d5f43;min-width:128px;text-align:center}
 #cart .t3{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a58;margin-top:6px;
   border-top:1px solid #c9b58a;padding-top:5px}
+#cart .t4{font-size:11px;font-style:italic;color:#6d5f43;margin-top:4px}
+#cart .t4 a{color:var(--focus);text-decoration:none;pointer-events:auto}
+#cart .t4 a:hover,#cart .t4 a:focus-visible{text-decoration:underline}
 @media (max-width:620px){#cart{left:10px;bottom:10px;right:74px;padding:7px 10px 6px}#cart .t2{display:none}#cart .t1{font-size:10.5px;letter-spacing:.22em}#cart .t3{font-size:9px;letter-spacing:.1em}}
 
 /* ---- controls ---- */
@@ -141,6 +144,8 @@ text{user-select:none;-webkit-user-select:none}
 .pnote{font-style:italic;font-size:12px;color:#8a7a58;margin:4px 0 0}
 .pfoot{border-top:4px double #221c12;margin-top:16px;padding-top:10px;text-align:center;
   font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#5c4f38}
+.pfoot a{color:#8a5a17;text-decoration:none}
+.pfoot a:hover,.pfoot a:focus-visible{text-decoration:underline}
 @media (max-width:620px){
   #paper{top:8px;left:10px}
   #pdoc{padding:22px 16px 20px}.pmast{font-size:29px}.phead{font-size:24px}
@@ -189,6 +194,7 @@ text{user-select:none;-webkit-user-select:none}
     <button id="d-next" aria-label="Next day">&#8250;</button>
   </div>
   <div class="t3" id="cart-hint"></div>
+  <div class="t4">built with &hearts; by <a href="https://x.com/owocki" target="_blank" rel="noopener">@owocki</a></div>
 </div>
 
 <div id="ctrl">
@@ -210,7 +216,7 @@ text{user-select:none;-webkit-user-select:none}
       <h2 class="phead" id="phead"></h2>
       <p class="pdeck" id="pdeck"></p>
       <div class="pbody" id="pbody"></div>
-      <div class="pfoot">ranked by size in the world, not volume in the feed &middot; every tribe described in its own voice</div>
+      <div class="pfoot">ranked by size in the world, not volume in the feed &middot; every tribe described in its own voice &middot; built with &hearts; by <a href="https://x.com/owocki" target="_blank" rel="noopener">@owocki</a></div>
     </article>
   </div>
 </details>
@@ -364,7 +370,7 @@ const svg=document.getElementById('map');
 function el(n,attrs,parent){const e=document.createElementNS(NS,n);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e}
 
 let defs,root;
-let gShallow,gLand,gBorder,gEngraved,gHL,gCountryLbl,gIsleLbl,gMainLbl,gCity,gVillage;
+let gShallow,gLand,gRelief,gBorder,gEngraved,gHL,gCountryLbl,gIsleLbl,gMainLbl,gCity,gVillage;
 let countries=[],villages=[],constLabels=[],contLblEls=[];
 
 function coastAt(pts,ang){
@@ -386,13 +392,32 @@ function drawTerrain(pts,anchor,pal,g,clipId,scaleUp,scaleHi){
   el('path',{d:pathFrom(shrink(pts,anchor,scaleUp),true),fill:pal.up,opacity:.85,filter:'url(#soft8)'},tg);
   el('path',{d:pathFrom(shrink(pts,anchor,scaleHi),true),fill:pal.high,opacity:.8,filter:'url(#soft5)'},tg);
 }
-function drawMountains(anchor,rng,g,n,spread){
-  const mg=el('g',{stroke:'#4a3c28',fill:'none','stroke-width':1.4,'stroke-linecap':'round',opacity:.5,class:'deco'},g);
-  for(let i=0;i<n;i++){
-    const x=anchor[0]+(rng()-.5)*spread,y=anchor[1]+(rng()-.5)*spread*.62;
-    const s=5+rng()*4;
+/* the landscape follows the information: every topic raises the ground where
+   it sits — the capital (the day's biggest story) builds a snowcapped massif
+   with contour rings, lesser topics only foothills */
+function drawTopo(p,rank,big,rng,clip){
+  const g=el('g',clip?{'clip-path':`url(#${clip})`}:{},gRelief);
+  const base=big?1.2:1;
+  const R=(rank===0?68:rank===1?36:22)*base;
+  el('path',{d:pathFrom(blobPts(p[0],p[1],R*1.45,R*1.1,rng()*3,Math.abs(p[0]*7+p[1])|0,.3,48),true),
+    fill:'#c9b483',opacity:rank===0?.45:.3,filter:'url(#soft8)'},g);
+  if(rank===0){
+    el('path',{d:pathFrom(blobPts(p[0],p[1],R*.7,R*.55,rng()*3,Math.abs(p[0]*13+p[1])|0,.35,40),true),
+      fill:'#ad8f63',opacity:.45,filter:'url(#soft5)'},g);
+    for(let k=1;k<=2;k++)
+      el('path',{d:pathFrom(blobPts(p[0],p[1],R*.45*k,R*.36*k,.2,Math.abs(p[0]+k*31)|0,.22,44),true),
+        fill:'none',stroke:'#7a674a',opacity:.32,'stroke-width':1,class:'deco'},g);
+  }
+  const peaks=rank===0?9:rank===1?4:2;
+  const mg=el('g',{stroke:'#4a3c28',fill:'none','stroke-width':1.4,'stroke-linecap':'round',opacity:.55,class:'deco'},g);
+  for(let i=0;i<peaks;i++){
+    const a=rng()*Math.PI*2, rr=(i===0?0:(.3+.7*rng()))*R;
+    const x=p[0]+Math.cos(a)*rr, y=p[1]+Math.sin(a)*rr*.6;
+    const s=Math.max(3.5,(i===0?(rank===0?12:8):4.5+rng()*3.5)*base*(1-rr/(R*1.8)));
     el('path',{d:`M${x-s} ${y+s*.55} L${x} ${y-s*.7} L${x+s} ${y+s*.55}`},mg);
     el('path',{d:`M${x} ${y-s*.7} L${x+s*.35} ${y}`,opacity:.5},mg);
+    if(i===0&&rank===0)
+      el('path',{d:`M${x-s*.32} ${y-s*.26} L${x} ${y-s*.7} L${x+s*.32} ${y-s*.26} L${x+s*.12} ${y-s*.12} L${x-s*.12} ${y-s*.12} Z`,fill:'#f2ecda',opacity:.85},mg);
   }
 }
 function drawTrees(anchor,rng,g,n,spread){
@@ -454,7 +479,7 @@ function buildWorld(D){
     el('path',{d:`M${x} ${y} q5 -5 10 0 q5 5 10 0 M${x+6} ${y+7} q5 -5 10 0`},waves);
   });
 
-  gShallow=el('g',{},root); gLand=el('g',{},root); gBorder=el('g',{},root);
+  gShallow=el('g',{},root); gLand=el('g',{},root); gRelief=el('g',{},root); gBorder=el('g',{},root);
   gEngraved=el('g',{},root); gHL=el('g',{},root);
   gCountryLbl=el('g',{class:'tier lbl-country'},root);
   gIsleLbl=el('g',{class:'tier lbl-country'},root);
@@ -471,7 +496,6 @@ function buildWorld(D){
     const anchor=C.junction||[C.cx,C.cy];
     drawTerrain(pts,anchor,C.palette,g,clipId,.62,.34);
     el('path',{d,fill:'none',stroke:'#5a4f3c','stroke-width':1.1,'vector-effect':'non-scaling-stroke',opacity:.85},g);
-    if(C.mountains)drawMountains(anchor,rng,g,10+Math.floor(rng()*5),Math.min(C.rx,220)*.9);
     if(C.trees)drawTrees([C.cx,C.cy],rng,g,12,C.rx*1.1);
     if(C.islets)for(const I of C.islets){
       const ip=blobPts(C.cx+I.dx,C.cy+I.dy,I.r,I.r*.72,rng()*3,C.seed*13+I.r,.4,60);
@@ -499,7 +523,7 @@ function buildWorld(D){
       const tribe=D.tribes[cc.id];
       if(!tribe)continue;
       const lp=centroid(poly);
-      countries.push({id:cc.id,poly,tribe,labelPos:lp,contName:C.kicker||C.name,big:!!C.big});
+      countries.push({id:cc.id,poly,tribe,labelPos:lp,contName:C.kicker||C.name,big:!!C.big,clipId});
     }
   }
 
@@ -507,6 +531,19 @@ function buildWorld(D){
     const d=pathFrom(c.poly,true);
     c.hl=el('path',{d,class:'hl'},gHL);
     c.hlS=el('path',{d,class:'hl-stroke'},gHL);
+  }
+
+  /* relief pass: topology of the land follows the topology of the information */
+  for(const c of countries){
+    const cityRng=mulberry32(c.id.split('').reduce((a,ch)=>a+ch.charCodeAt(0)*31,7));
+    c.cityPts=c.tribe.discussing.map((topic,i)=>{
+      let p;
+      if(i===0){p=[c.labelPos[0],c.labelPos[1]-30];if(!pip(p,c.poly))p=samplePt(c.poly,cityRng)}
+      else p=samplePt(c.poly,cityRng);
+      return p;
+    });
+    const tRng=mulberry32(c.id.length*997+13);
+    c.cityPts.forEach((p,i)=>drawTopo(p,i,c.big,tRng,c.clipId));
   }
 
   for(const C of CONTINENTS){
@@ -524,11 +561,8 @@ function buildWorld(D){
     parts.forEach((pt,i)=>{const ts=el('tspan',{x:0,dy:i===0?0:lh},t);ts.textContent=pt});
     const tl=el('text',{'font-size':c.big?11.5:10.5,'text-anchor':'middle',y:y0+(parts.length>1?lh:0)+15,class:'tldr'},g);
     tl.textContent=c.tribe.tldr||'';
-    const cityRng=mulberry32(c.id.split('').reduce((a,ch)=>a+ch.charCodeAt(0)*31,7));
     c.tribe.discussing.forEach((topic,i)=>{
-      let p;
-      if(i===0){p=[(c.labelPos[0]),(c.labelPos[1]-30)];if(!pip(p,c.poly))p=samplePt(c.poly,cityRng)}
-      else p=samplePt(c.poly,cityRng);
+      const p=c.cityPts[i];
       const g2=constLabel(gCity,p[0],p[1]);
       if(i===0){
         el('path',{d:'M0 -5.2 L1.55 -1.6 L5.3 -1.6 L2.3 0.9 L3.4 4.6 L0 2.4 L-3.4 4.6 L-2.3 0.9 L-5.3 -1.6 L-1.55 -1.6 Z',fill:'#8a4a2e'},g2);
@@ -566,7 +600,8 @@ function buildWorld(D){
   }
 
   document.getElementById('cart-hint').textContent =
-    matchMedia('(pointer:coarse)').matches ? 'drag · pinch · tap a territory' : 'drag · scroll · hover a territory';
+    (matchMedia('(pointer:coarse)').matches ? 'drag · pinch · tap a territory' : 'drag · scroll · hover a territory')
+    + ' · peaks mark the big stories';
   lastZF=-1;
   apply();
 }
