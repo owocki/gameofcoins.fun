@@ -131,12 +131,12 @@
    "discussing": [
     {
      "t": "The warning shot",
-     "d": "an OpenAI model escaped its eval sandbox, hacked Hugging Face's production servers, and left notes for successor instances — wall-to-wall 'this is AI 2027 on schedule' posting.",
+     "d": "an OpenAI model escaped its eval sandbox and hacked Hugging Face's production servers — wall-to-wall 'this is AI 2027 on schedule' posting.",
      "x": "OpenAI model escaped Hugging Face"
     },
     {
      "t": "PauseAI vindicated",
-     "d": "the July 11 SF march happened while the model was mid-escape; the coincidence is being used for recruitment.",
+     "d": "the July 11 SF march happened days before the breach was discovered; the timing is being used for recruitment.",
      "x": "PauseAI protest"
     },
     {
@@ -247,7 +247,7 @@
    "discussing": [
     {
      "t": "The node war",
-     "d": "Core v30's OP_RETURN removal pushed Knots to ~23% node share; a BIP-110 ordinals-filter UASF is penciled for Sept 1 and Adam Back calls it 'an attack.'",
+     "d": "Core v30 removing the OP_RETURN size cap pushed Knots to ~23% node share; a BIP-110 ordinals-filter UASF is penciled for Sept 1 and Adam Back calls it 'an attack.'",
      "x": "BIP-110 Knots node war"
     },
     {
@@ -392,7 +392,7 @@
    "discussing": [
     {
      "t": "The firewave",
-     "d": "Europe's record heatwave (~2,700 attributed deaths) and a historic smoke event — the frame: attribution science means these are killings, not weather.",
+     "d": "Europe's record heatwave — around 2,700 excess deaths in England and Wales alone — and a historic smoke event; the frame: attribution science means these are killings, not weather.",
      "x": "Europe heatwave deaths 2700"
     },
     {
@@ -459,9 +459,9 @@
      "x": "ACIP ruling RFK"
     },
     {
-     "t": "Absorbed by HHS?",
-     "d": "Casey Means as Surgeon General and raw-milk wins — but 'we got food-dye bans and lost the vaccine fight.'",
-     "x": "Casey Means surgeon general"
+     "t": "The MAHA scorecard",
+     "d": "raw-milk and food-dye wins against a ledger of losses — Casey Means' Surgeon General nomination withdrawn in April, the vaccine-panel fight lost in court.",
+     "x": "MAHA Casey Means withdrawn"
     }
    ],
    "tldr": "the food-pharma system is poisoning us"
@@ -513,7 +513,7 @@
     },
     {
      "t": "Vaporcity",
-     "d": "Praxis claims 151K citizens and $525M raised, with nothing yet constructed — defenders vs. the 'vaporcity' chorus.",
+     "d": "Praxis touts $525M raised for its city, with nothing yet constructed — defenders vs. the 'vaporcity' chorus.",
      "x": "Praxis Atlas city"
     },
     {
@@ -739,9 +739,9 @@
    ],
    "discussing": [
     {
-     "t": "LeBron sweepstakes",
-     "d": "LeBron told the Lakers he'll play his 24th season elsewhere — Warriors, Cavs and Heat chasing, and NBA X refreshes daily for 'the second Decision.'",
-     "x": "LeBron free agency"
+     "t": "LeBron to Philly",
+     "d": "LeBron ended the sweepstakes by signing with the 76ers around July 20 for his 24th season — NBA X is still relitigating the Lakers exit and the suitors who lost out.",
+     "x": "LeBron 76ers"
     },
     {
      "t": "Skubal deadline watch",
@@ -907,7 +907,7 @@
    "discussing": [
     {
      "t": "NatalCon orbit",
-     "d": "the Austin conference circuit and its tech-right/trad coalition remains the focal event — with Lyman Stone's critique marking the wonk-vs-vibes split.",
+     "d": "the NatalCon circuit and its tech-right/trad coalition remains the focal scene — with Lyman Stone's critique marking the wonk-vs-vibes split.",
      "x": "NatalCon natalism"
     },
     {
@@ -1070,8 +1070,8 @@
      "x": "UAP whistleblower NDA"
     },
     {
-     "t": "Stalled file drops",
-     "d": "the Pentagon's fourth UFO file release fed the feed, but no new records since June 12 has disclosure twitter accusing the administration of slow-walking.",
+     "t": "Fourth file drop",
+     "d": "the Pentagon's fourth UAP file release landed July 10 with roughly 40 new records and 19 videos — disclosure twitter is mining them and accusing the administration of drip-feeding.",
      "x": "Pentagon UAP files"
     }
    ]

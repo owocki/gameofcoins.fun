@@ -51,6 +51,44 @@ After researching, end your reply with ONLY a fenced json block of this exact sh
 ```"""
 
 
+PAPER_PROMPT = """You are the front-page editor of a plain-spoken daily digest of what the tribes of X are discussing. Below are today's topics ({date}), one line per tribe, already researched and sourced — treat them as the ONLY facts you know.
+
+{digest}
+
+Write a JSON object with exactly these fields:
+- "hooks": 5 short one-line hooks, each led by one fitting emoji, each restating a single concrete fact from the lines above (keep the numbers, names, and dates; do not add any). Pick the 5 most grabbing facts across all tribes.
+- "head": a lowercase broadsheet front-page headline, 3-9 words, about the day's biggest cross-tribe story.
+- "deck": one plain sentence expanding the headline, using only facts from the lines above.
+
+Never invent an event, number, or name that is not in the lines above. Reply with ONLY a fenced json block:
+```json
+{{"hooks": ["..."], "head": "...", "deck": "..."}}
+```"""
+
+
+def write_paper(client: anthropic.Anthropic, day: dict) -> dict:
+    digest = "\n".join(
+        f"- {t['name']}: " + " | ".join(x["d"] for x in t["discussing"])
+        for t in day["tribes"].values()
+    )
+    with client.messages.stream(
+        model=MODEL,
+        max_tokens=2000,
+        messages=[{"role": "user", "content": PAPER_PROMPT.format(date=day["date"], digest=digest)}],
+    ) as stream:
+        response = stream.get_final_message()
+    text = "".join(b.text for b in response.content if b.type == "text")
+    paper = extract_json(text)
+    hooks = paper.get("hooks")
+    assert isinstance(hooks, list) and 3 <= len(hooks) <= 6, "bad hooks"
+    assert all(isinstance(h, str) and h.strip() for h in hooks), "empty hook"
+    assert isinstance(paper.get("head"), str) and paper["head"].strip(), "bad head"
+    assert isinstance(paper.get("deck"), str), "bad deck"
+    return {"hooks": [h.strip()[:200] for h in hooks],
+            "head": paper["head"].strip()[:120],
+            "deck": paper["deck"].strip()[:300]}
+
+
 def load_canon() -> dict:
     return json.loads((ROOT / "scripts" / "canon.json").read_text())
 
@@ -160,6 +198,12 @@ def main() -> int:
         entry["discussing"] = validate_topics(tid, all_topics[tid])
         day["tribes"][tid] = entry
     assert set(day["tribes"]) == set(canon), "tribe id mismatch"
+
+    try:
+        day["paper"] = write_paper(client, day)
+        print("front page written (hooks + headline)")
+    except Exception as exc:  # noqa: BLE001 — the site falls back to derived hooks
+        print(f"paper generation failed ({exc}); site will derive hooks from capitals", file=sys.stderr)
 
     out = ROOT / "data" / f"{date}.json"
     out.write_text(json.dumps(day, ensure_ascii=False, indent=1))

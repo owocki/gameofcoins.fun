@@ -19,6 +19,7 @@
   --paper:#f3e9d2; --paper-2:#ece0c4;
   --border:#96604a; --focus:#8a4a2e;
   --serif:'EB Garamond',Palatino,'Palatino Linotype',Georgia,serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 }
 html,body{height:100%}
 body{margin:0;overflow:hidden;background:var(--ocean);font-family:var(--serif);color:var(--ink);
@@ -99,6 +100,53 @@ text{user-select:none;-webkit-user-select:none}
 #ctrl button:active{transform:translateY(1px)}
 #ctrl button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 
+/* ---- the attention times: newspaper view ---- */
+#paper{position:fixed;top:12px;left:14px;z-index:44}
+#paper summary{list-style:none;display:inline-flex;align-items:center;cursor:pointer;
+  background:#f3e9d2;border:1px solid #b7a173;color:var(--ink);font-family:var(--serif);
+  font-size:13px;font-weight:600;letter-spacing:.05em;padding:6px 14px 7px;border-radius:999px;
+  box-shadow:0 2px 6px -2px #2c241766;user-select:none;-webkit-user-select:none;position:relative;z-index:46}
+#paper summary::-webkit-details-marker{display:none}
+#paper summary:hover{background:#f9f1de}
+#paper summary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+#paper summary .po{display:none}
+#paper[open] summary .po{display:inline}
+#paper[open] summary .pc{display:none}
+#psheet{display:none}
+#paper[open] #psheet{display:block;position:fixed;inset:0;z-index:45;overflow-y:auto;
+  background:#2c2417d9;padding:58px 14px 40px;-webkit-overflow-scrolling:touch}
+#pdoc{max-width:780px;margin:0 auto;background:#efe6cf;color:#221c12;
+  box-shadow:0 30px 80px -20px #000a;padding:32px 38px 28px;font-family:var(--serif)}
+.ptop{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:flex-start;margin-bottom:14px}
+.phooks{flex:1;min-width:200px;font-family:var(--mono);font-size:11px;line-height:1.75;color:#8a5a17}
+.pcopy{flex:none}
+.pcopy button{font-family:var(--mono);font-size:11px;background:#221c12;color:#efe6cf;
+  border:1px solid #221c12;padding:7px 12px;cursor:pointer}
+.pcopy button:hover{background:#3a3020}
+.pcopy button:focus-visible{outline:2px solid #8a5a17;outline-offset:2px}
+.pmast{text-align:center;font-size:44px;font-weight:600;letter-spacing:.06em;line-height:1;
+  border-bottom:4px double #221c12;padding-bottom:12px}
+.pdate{text-align:center;font-family:var(--mono);font-size:10px;letter-spacing:.18em;
+  text-transform:uppercase;color:#5c4f38;padding:9px 0 13px;border-bottom:1px solid #c9b58a;margin-bottom:18px}
+.phead{font-size:33px;font-weight:600;line-height:1.08;margin:0 0 8px;text-wrap:balance}
+.pdeck{font-style:italic;font-size:16.5px;line-height:1.4;color:#4a3f2c;margin:0 0 22px}
+.pent{border-top:1px solid #d8c9a5;padding:13px 0 11px}
+.pent h3{margin:0 0 3px;font-size:19px;font-weight:600}
+.prank{font-family:var(--mono);font-size:11px;color:#9b8a64;margin-right:4px}
+.pmeta{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a5a17;margin:0 0 6px}
+.pont{font-style:italic;font-size:14.5px;line-height:1.42;margin:0 0 6px}
+.ptrend{font-size:13.5px;margin:0}
+.ptrend a{color:#221c12;text-decoration:underline dotted #8a5a17 1.5px;text-underline-offset:3px}
+.ptrend a:hover,.ptrend a:focus-visible{color:#8a5a17}
+.pnote{font-style:italic;font-size:12px;color:#8a7a58;margin:4px 0 0}
+.pfoot{border-top:4px double #221c12;margin-top:16px;padding-top:10px;text-align:center;
+  font-family:var(--mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#5c4f38}
+@media (max-width:620px){
+  #paper{top:8px;left:10px}
+  #pdoc{padding:22px 16px 20px}.pmast{font-size:29px}.phead{font-size:24px}
+  #paper[open] #psheet{padding:52px 8px 24px}
+}
+
 /* ---- axis compass: the map's navigation logic, always visible ---- */
 .axis{position:fixed;z-index:24;pointer-events:none;color:#3e3527;opacity:.6;
   font-size:11px;letter-spacing:.32em;text-transform:uppercase;font-weight:600;
@@ -148,6 +196,24 @@ text{user-select:none;-webkit-user-select:none}
   <button id="z-out" aria-label="Zoom out">&minus;</button>
   <button id="z-fit" aria-label="Reset view" style="font-size:15px">&#8962;</button>
 </div>
+
+<details id="paper">
+  <summary><span class="pc">&#128240; read today's paper</span><span class="po">&#10005; fold the paper</span></summary>
+  <div id="psheet">
+    <article id="pdoc">
+      <div class="ptop">
+        <div class="phooks" id="phooks"></div>
+        <div class="pcopy"><button id="pcopy">&#10697; copy the article</button></div>
+      </div>
+      <div class="pmast">THE ATTENTION TIMES</div>
+      <div class="pdate" id="pdate"></div>
+      <h2 class="phead" id="phead"></h2>
+      <p class="pdeck" id="pdeck"></p>
+      <div class="pbody" id="pbody"></div>
+      <div class="pfoot">ranked by size in the world, not volume in the feed &middot; every tribe described in its own voice</div>
+    </article>
+  </div>
+</details>
 
 <div id="tt" role="tooltip"></div>
 
@@ -648,6 +714,202 @@ tt.addEventListener('pointerenter',cancelHide);
 tt.addEventListener('pointerleave',scheduleHide);
 stage.addEventListener('pointerleave',()=>{if(curId)scheduleHide()});
 
+/* ---------- the attention times: newspaper view ----------
+   Renders from the SAME day object D as the map — never a second copy.
+   PAPER ranks tribes by real-world size (honest fuzzy words), not feed volume. */
+const PMETA={
+ christian:{e:'✝️',s:"God's created order"},
+ sports:{e:'🏟️',s:'the game'},
+ stan:{e:'🎤',s:'the artist'},
+ astrology:{e:'🔮',s:"the sky's timing"},
+ maga:{e:'🦅',s:'the nation'},
+ progleft:{e:'✊',s:'solidarity'},
+ establishment:{e:'🏛️',s:'the institutions'},
+ finance:{e:'📈',s:'the market'},
+ ufo:{e:'🛸',s:'the phenomenon'},
+ tradcaths:{e:'⛪',s:'the old Mass'},
+ btc:{e:'🟠',s:'sound money'},
+ wsb:{e:'🦍',s:'the trade'},
+ maha:{e:'🥛',s:'the untainted body'},
+ degrowth:{e:'🌍',s:'the biosphere'},
+ longevity:{e:'🧬',s:'healthspan'},
+ eth:{e:'💎',s:'credible neutrality'},
+ defi:{e:'🏦',s:'open rails'},
+ degens:{e:'🎰',s:'the pump'},
+ indie:{e:'🛠️',s:'shipping'},
+ ea:{e:'⚖️',s:'counterfactual impact'},
+ rationalists:{e:'🧠',s:'the truth'},
+ doomers:{e:'⏳',s:'the lightcone'},
+ progress:{e:'🏗️',s:'abundance'},
+ hardtech:{e:'🚀',s:'the machine'},
+ eacc:{e:'⚡',s:'acceleration'},
+ tpot:{e:'🌀',s:'the vibe'},
+ nondual:{e:'🧘',s:'awareness itself'},
+ regens:{e:'🌱',s:'the commons',note:"the map-maker's tent"},
+ pronatalists:{e:'👶',s:'the family'},
+ nrx:{e:'👑',s:'sovereignty'},
+ netstate:{e:'🏝️',s:'exit'},
+ forecasters:{e:'🎲',s:'calibration'},
+ georgists:{e:'🏞️',s:'the land'},
+ metamodern:{e:'🌗',s:'development'},
+ doomeroptimists:{e:'🏕️',s:'the local'},
+ cryonics:{e:'❄️',s:'the pattern'},
+ girardians:{e:'🐐',s:'the innocent scapegoat'},
+ cozyweb:{e:'🕯️',s:'the small room'},
+ landian:{e:'👾',s:'the process'},
+ remilia:{e:'🎀',s:'the network'}
+};
+const PAPER=[
+ ['christian','~2 billion believers'],['sports','billions of fans'],['stan','hundreds of millions'],
+ ['astrology','hundreds of millions'],['maga','tens of millions'],['progleft','tens of millions'],
+ ['establishment','tens of millions'],['finance','tens of millions'],['ufo','tens of millions'],
+ ['tradcaths','millions'],['btc','millions of holders'],['wsb','millions of accounts'],
+ ['maha','millions'],['degrowth','millions'],['longevity','millions'],
+ ['eth','about a million'],['defi','hundreds of thousands'],['degens','hundreds of thousands'],
+ ['indie','hundreds of thousands'],['ea','tens of thousands'],['rationalists','tens of thousands'],
+ ['doomers','tens of thousands'],['progress','tens of thousands'],['hardtech','tens of thousands'],
+ ['eacc','tens of thousands'],['tpot','tens of thousands'],['nondual','tens of thousands'],
+ ['regens','tens of thousands'],['pronatalists','tens of thousands'],['nrx','tens of thousands'],
+ ['netstate','thousands'],['forecasters','thousands'],['georgists','thousands'],
+ ['metamodern','thousands'],['doomeroptimists','thousands'],['cryonics','thousands'],
+ ['girardians','thousands'],['cozyweb','thousands'],['landian','hundreds'],['remilia','hundreds']
+];
+const HOOK_FALLBACK=['doomers','finance','maga','sports','btc','hardtech'];
+function lcFirst(s){s=String(s);return s.charAt(0).toLowerCase()+s.slice(1)}
+function firstSent(s){s=String(s);const i=s.indexOf('. ');return i<0?s:s.slice(0,i+1)}
+function trunc(s,n){s=String(s);if(s.length<=n)return s;const c=s.slice(0,n);return c.slice(0,c.lastIndexOf(' '))+'…'}
+function xUrl(t){return 'https://x.com/search?q='+encodeURIComponent(t.x||t.t)+'&src=typed_query&f=live'}
+function getHooks(D){
+  if(D.paper&&Array.isArray(D.paper.hooks)&&D.paper.hooks.length)return D.paper.hooks.slice(0,6);
+  const out=[];
+  for(const id of HOOK_FALLBACK){
+    const tb=D.tribes[id];if(!tb||!tb.discussing||!tb.discussing[0])continue;
+    out.push(PMETA[id].e+' '+trunc(tb.discussing[0].d,110));
+    if(out.length>=5)break;
+  }
+  return out;
+}
+function getHeadDeck(D){
+  if(D.paper&&D.paper.head)return[D.paper.head,D.paper.deck||''];
+  for(const id of HOOK_FALLBACK){
+    const tb=D.tribes[id];
+    if(tb&&tb.discussing&&tb.discussing[0])return[tb.discussing[0].t.toLowerCase(),tb.discussing[0].d];
+  }
+  return['the day on x',''];
+}
+function paperDateLine(D){
+  const wd=new Date(D.date+'T12:00:00Z');
+  const day=wd.toLocaleDateString('en-US',{weekday:'long',timeZone:'UTC'}).toLowerCase();
+  const md=wd.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'UTC'}).toLowerCase();
+  return day+' · '+md;
+}
+let paperD=null;
+function renderPaper(D){
+  paperD=D;
+  document.getElementById('phooks').textContent=getHooks(D).join('  ·  ');
+  document.getElementById('pdate').textContent=
+    paperDateLine(D)+' · surveyed nightly at midnight mst · vol. '+(dateIdx+1);
+  const[head,deck]=getHeadDeck(D);
+  document.getElementById('phead').textContent=head;
+  document.getElementById('pdeck').textContent=deck;
+  document.getElementById('pbody').innerHTML=PAPER.map(([id,reach],i)=>{
+    const tb=D.tribes[id];if(!tb)return'';
+    const m=PMETA[id];
+    const tops=(tb.discussing||[]).slice(0,3).map(t=>
+      `<a href="${xUrl(t)}" target="_blank" rel="noopener">${esc(t.t.toLowerCase())}</a>`).join(' · ');
+    return `<div class="pent">
+     <h3><span class="prank">${i+1}</span> ${m.e} ${esc(tb.name)}</h3>
+     <div class="pmeta">sacred: ${esc(m.s)} · reach: ${esc(reach)}</div>
+     <p class="pont">${esc(lcFirst(tb.ontology))}</p>
+     ${tops?`<p class="ptrend">trending · ${tops}</p>`:''}
+     ${m.note?`<p class="pnote">${esc(m.note)}</p>`:''}
+    </div>`;
+  }).join('');
+}
+/* copy artifact: unicode sans-bold so names render bold in X's plain text */
+function ubold(str){
+  let o='';
+  for(const ch of String(str)){
+    const c=ch.codePointAt(0);
+    if(c>=65&&c<=90)o+=String.fromCodePoint(0x1D5D4+c-65);
+    else if(c>=97&&c<=122)o+=String.fromCodePoint(0x1D5EE+c-97);
+    else if(c>=48&&c<=57)o+=String.fromCodePoint(0x1D7EC+c-48);
+    else o+=ch;
+  }
+  return o;
+}
+function siteLink(){
+  if(!location.origin.startsWith('http'))return'';
+  return (location.origin+location.pathname).replace(/index\.html$/,'').replace(/(.)\/$/,'$1');
+}
+function paperStanzas(D){
+  const out=[];
+  PAPER.forEach(([id],i)=>{
+    const tb=D.tribes[id];if(!tb)return;
+    const m=PMETA[id];
+    const st={num:i+1,e:m.e,name:tb.name,ont:firstSent(lcFirst(tb.ontology)),
+      tops:(tb.discussing||[]).slice(0,3).map(t=>t.t.toLowerCase())};
+    out.push(st);
+  });
+  return out;
+}
+function paperPlain(D){
+  const L=['🚨 trending across the tribes of x right now:',''];
+  for(const h of getHooks(D))L.push(h);
+  L.push('');
+  L.push('🗞️ THE ATTENTION TIMES · '+paperDateLine(D));
+  L.push('');
+  for(const st of paperStanzas(D)){
+    L.push(st.num+'. '+st.e+' '+ubold(st.name));
+    L.push(st.ont);
+    if(st.tops.length){L.push('trending:');for(const t of st.tops)L.push('· '+t)}
+    L.push('');
+  }
+  const link=siteLink();
+  if(link)L.push('🗺️ the full living map — every tribe, its gods, its arguments, updated nightly: '+link);
+  L.push('by @owocki');
+  return L.join('\n');
+}
+function paperHtml(D){
+  const P=[];
+  P.push('🚨 trending across the tribes of x right now:<br><br>');
+  P.push(getHooks(D).map(esc).join('<br>')+'<br><br>');
+  P.push('🗞️ <b>THE ATTENTION TIMES</b> · '+esc(paperDateLine(D))+'<br><br>');
+  for(const st of paperStanzas(D)){
+    P.push(st.num+'. '+st.e+' <b>'+esc(st.name)+'</b><br>');
+    P.push('<i>'+esc(st.ont)+'</i><br>');
+    if(st.tops.length){P.push('trending:<br>');for(const t of st.tops)P.push('· '+esc(t)+'<br>')}
+    P.push('<br>');
+  }
+  const link=siteLink();
+  if(link)P.push('🗺️ the full living map — every tribe, its gods, its arguments, updated nightly: '+esc(link)+'<br>');
+  P.push('by @owocki');
+  return P.join('');
+}
+const paperEl=document.getElementById('paper'),pcopyBtn=document.getElementById('pcopy');
+pcopyBtn.addEventListener('click',async()=>{
+  if(!paperD)return;
+  const txt=paperPlain(paperD);
+  try{
+    if(navigator.clipboard&&window.ClipboardItem){
+      await navigator.clipboard.write([new ClipboardItem({
+        'text/plain':new Blob([txt],{type:'text/plain'}),
+        'text/html':new Blob([paperHtml(paperD)],{type:'text/html'})
+      })]);
+    }else{
+      await navigator.clipboard.writeText(txt);
+    }
+    pcopyBtn.textContent='✓ copied';
+  }catch(e){
+    try{await navigator.clipboard.writeText(txt);pcopyBtn.textContent='✓ copied'}
+    catch(e2){pcopyBtn.textContent='copy failed'}
+  }
+  setTimeout(()=>{pcopyBtn.textContent='⧉ copy the article'},1600);
+});
+document.getElementById('psheet').addEventListener('click',e=>{
+  if(e.target.id==='psheet')paperEl.removeAttribute('open');
+});
+
 /* ---------- day-by-day navigation ---------- */
 let DATES=[],dateIdx=-1;const DAY_CACHE={};
 const btnPrev=document.getElementById('d-prev'),btnNext=document.getElementById('d-next'),curEl=document.getElementById('d-cur');
@@ -665,6 +927,7 @@ async function showDate(i){
   const D=await fetchDay(DATES[i]);
   dateIdx=i;
   buildWorld(D);
+  renderPaper(D);
   const latest=dateIdx===DATES.length-1;
   btnPrev.disabled=dateIdx<=0;
   btnNext.disabled=latest;
@@ -675,7 +938,8 @@ btnPrev.onclick=()=>{showDate(dateIdx-1)};
 btnNext.onclick=()=>{showDate(dateIdx+1)};
 addEventListener('keydown',e=>{
   if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
-  if(e.key==='ArrowLeft')showDate(dateIdx-1);
+  if(e.key==='Escape')paperEl.removeAttribute('open');
+  else if(e.key==='ArrowLeft')showDate(dateIdx-1);
   else if(e.key==='ArrowRight')showDate(dateIdx+1);
 });
 

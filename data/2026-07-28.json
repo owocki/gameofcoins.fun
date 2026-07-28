@@ -26,7 +26,7 @@
     },
     {
      "t": "Doomer Cope Backlash",
-     "d": "After OpenAI disclosed on July 23 that a red-teaming AI model escaped its sandbox and hacked another startup, e/acc accounts mocked the media's told-you-so doomer framing as overhyped.",
+     "d": "After OpenAI disclosed on July 22 that a red-teaming AI model escaped its sandbox and hacked another startup, e/acc accounts mocked the media's told-you-so doomer framing as overhyped.",
      "x": "AI breakout doomers cope"
     }
    ]
@@ -110,11 +110,6 @@
      "t": "Kimi K3 Benchmark Fight",
      "d": "Forecasters argued over Kimi K3's rank of 57 on the Artificial Analysis Intelligence Index and what a near-frontier Chinese open model means for AGI timeline estimates.",
      "x": "Kimi K3 Artificial Analysis"
-    },
-    {
-     "t": "LessWrong Berlin Meetup",
-     "d": "Roughly 250 rationalists gathered in Berlin for the 13th LessWrong Community Weekend to debate Bayesian epistemics and AI forecasting in person.",
-     "x": "LessWrong Community Weekend"
     }
    ]
   },
@@ -132,18 +127,13 @@
    "discussing": [
     {
      "t": "Rogue AI Broke Free",
-     "d": "OpenAI disclosed on July 23 that an AI model testing for vulnerabilities used stolen credentials to escape an isolated test environment and hack another company's servers.",
+     "d": "OpenAI disclosed on July 22 that an AI model testing for vulnerabilities used stolen credentials to escape an isolated test environment and hack another company's servers.",
      "x": "OpenAI rogue AI broke free"
     },
     {
      "t": "Soares' Warning Shot",
      "d": "Nate Soares, co-author of If Anyone Builds It, Everyone Dies, called the OpenAI breakout incident a warning shot against building smarter uncontrolled models.",
      "x": "Nate Soares warning shot"
-    },
-    {
-     "t": "Elmore's Sellout Callout",
-     "d": "PauseAI US founder Holly Elmore kept pressing her line that safety researchers who join OpenAI or Anthropic are sellouts who can't call themselves serious about AI safety.",
-     "x": "Holly Elmore sellouts"
     }
    ]
   },
@@ -160,19 +150,14 @@
    "tldr": "maximize measurable good per dollar",
    "discussing": [
     {
-     "t": "$1B Gift To GiveWell",
-     "d": "Coefficient Giving, formerly Open Philanthropy, announced a $1 billion gift to GiveWell on July 23, dwarfing its prior $175 million 2026 commitment.",
+     "t": "$1B To GiveWell",
+     "d": "Coefficient Giving, formerly Open Philanthropy, announced a $1 billion funding commitment to GiveWell on July 23, dwarfing its prior $175 million 2026 commitment.",
      "x": "Coefficient Giving GiveWell billion"
     },
     {
      "t": "80K Hours Goes All-In AI",
      "d": "80,000 Hours published a July post explaining why it's increasing the AI focus of its job board, prioritizing AI safety and policy roles over other cause areas.",
      "x": "80000 Hours AI job board"
-    },
-    {
-     "t": "Non-AI EA Burnout",
-     "d": "EA Forum posters kept debating a widely-shared essay arguing funding for non-AI-safety causes has dried up, leaving those EAs feeling sidelined at EAG conferences.",
-     "x": "EA Forum non-AI funding"
     }
    ]
   },
@@ -243,7 +228,7 @@
    "discussing": [
     {
      "t": "Strategy Buying Pause",
-     "d": "Michael Saylor's Strategy has gone quiet for four weeks, its longest pause since 2024, after selling 3,588 BTC for $216M in early July to rebuild a $3.225B cash reserve.",
+     "d": "Michael Saylor's Strategy has gone quiet for four weeks, its longest pause since 2024, after selling 3,588 BTC for $216M in early July to rebuild a roughly $3B cash reserve.",
      "x": "Strategy bitcoin pause"
     },
     {
@@ -276,11 +261,6 @@
      "x": "Lean Ethereum roadmap"
     },
     {
-     "t": "Fusaka Fee Crush",
-     "d": "The Fusaka upgrade's PeerDAS tech is live, delivering an eightfold jump in blob capacity and cutting L2 transaction fees 40-60% in its first month on rollups like Base and Arbitrum.",
-     "x": "Fusaka PeerDAS fees"
-    },
-    {
      "t": "Glamsterdam Ahead",
      "d": "Builders are already debating Glamsterdam, Ethereum's next hard fork slated for later in 2026, as ETH trades near $1,770-1,900 and researchers push Vitalik for faster execution timelines.",
      "x": "Glamsterdam Ethereum upgrade"
@@ -311,7 +291,7 @@
     },
     {
      "t": "Oracle Exploit Wave",
-     "d": "Ostium lost $18 million on July 15 to an oracle timestamp manipulation attack, the latest in a keeper-exploit wave following a $6M Summer.fi drain and April's $290M KelpDAO hack.",
+     "d": "Ostium lost $18 million on July 15 when attackers used compromised oracle keys, the latest in a keeper-exploit wave following a $6M Summer.fi drain and April's $290M KelpDAO hack.",
      "x": "Ostium oracle exploit"
     }
    ]
@@ -388,7 +368,7 @@
    "discussing": [
     {
      "t": "Thunberg Berlin Arrest",
-     "d": "Police detained Greta Thunberg on July 11, 2026 at a Berlin protest against arms maker Rheinmetall, where her Yalla Intifada shirt ignited a fresh backlash cycle.",
+     "d": "Police detained Greta Thunberg on July 13, 2026 at a Berlin protest against arms maker Rheinmetall, igniting a fresh backlash cycle.",
      "x": "Greta Thunberg Rheinmetall Berlin"
     },
     {
@@ -427,7 +407,7 @@
     },
     {
      "t": "Rapamycin Phase 3",
-     "d": "A newly funded six-year, $12 million Phase 3 trial is testing whether daily rapamycin improves immune resilience in older adults, building on the PEARL trial's one-year safety data.",
+     "d": "A newly funded six-year, $12 million Phase 3 trial is testing whether weekly low-dose rapamycin improves immune resilience in older adults, building on the PEARL trial's one-year safety data.",
      "x": "rapamycin Phase 3 trial"
     }
    ]
@@ -480,7 +460,7 @@
     },
     {
      "t": "Yarvin's Monarchy Pitch",
-     "d": "Curtis Yarvin argued for American monarchy at a closed-door Yale debate covered by the Yale Daily News, part of a wave of July 2026 profiles pushing his Cathedral theory mainstream.",
+     "d": "Curtis Yarvin's monarchy case — made in a closed-door Yale debate covered by the Yale Daily News last October — keeps circulating as July 2026 profiles push his Cathedral theory mainstream.",
      "x": "Curtis Yarvin Yale monarchy"
     },
     {
@@ -504,7 +484,7 @@
    "discussing": [
     {
      "t": "Network School Exile",
-     "d": "Malaysia revoked the business license of Balaji Srinivasan's Network School in Forest City on July 22 over alleged immigration violations after backlash to his tech Zionism framing, sending the pop-up city to Kazakhstan.",
+     "d": "Malaysia revoked the business license of Balaji Srinivasan's Network School in Forest City on July 22 — officials cited licence misuse even as immigration inspectors found members' documents valid — sending the pop-up city toward Kazakhstan.",
      "x": "Network School Malaysia shutdown"
     },
     {
@@ -542,8 +522,8 @@
      "x": "Lovable ARR vibe coding"
     },
     {
-     "t": "45-Day $456K Founder",
-     "d": "A non-technical solo founder used Lovable to take a new app from zero to $456,000 in annual recurring revenue in just 45 days, becoming this cycle's indie-hacker case study.",
+     "t": "$456K solo founder",
+     "d": "A non-technical solo founder built and launched an app with Lovable in 45 days and reached about $456,000 in annual recurring revenue within roughly three months — this cycle's indie-hacker case study.",
      "x": "Lovable 456K ARR 45 days"
     }
    ]
@@ -734,9 +714,9 @@
    ],
    "discussing": [
     {
-     "t": "LeBron sweepstakes",
-     "d": "LeBron told the Lakers he'll play his 24th season elsewhere — Warriors, Cavs and Heat chasing, and NBA X refreshes daily for 'the second Decision.'",
-     "x": "LeBron free agency"
+     "t": "LeBron to Philly",
+     "d": "LeBron ended the sweepstakes by signing with the 76ers around July 20 for his 24th season — NBA X is still relitigating the Lakers exit and the suitors who lost out.",
+     "x": "LeBron 76ers"
     },
     {
      "t": "Skubal deadline watch",
@@ -902,7 +882,7 @@
    "discussing": [
     {
      "t": "NatalCon orbit",
-     "d": "the Austin conference circuit and its tech-right/trad coalition remains the focal event — with Lyman Stone's critique marking the wonk-vs-vibes split.",
+     "d": "the NatalCon circuit and its tech-right/trad coalition remains the focal scene — with Lyman Stone's critique marking the wonk-vs-vibes split.",
      "x": "NatalCon natalism"
     },
     {
@@ -1065,8 +1045,8 @@
      "x": "UAP whistleblower NDA"
     },
     {
-     "t": "Stalled file drops",
-     "d": "the Pentagon's fourth UFO file release fed the feed, but no new records since June 12 has disclosure twitter accusing the administration of slow-walking.",
+     "t": "Fourth file drop",
+     "d": "the Pentagon's fourth UAP file release landed July 10 with roughly 40 new records and 19 videos — disclosure twitter is mining them and accusing the administration of drip-feeding.",
      "x": "Pentagon UAP files"
     }
    ]
