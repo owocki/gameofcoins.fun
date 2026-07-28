@@ -1075,6 +1075,447 @@
      "x": "Pentagon UAP files"
     }
    ]
+  },
+  "ocean": {
+   "name": "the neoliberalism ocean",
+   "country": "The Neoliberalism Ocean",
+   "tldr": "the default every tribe defines itself against",
+   "ontology": "Mainstream liberalism — not an island but the water: markets as nature, procedure as faith, the default every tribe defines itself against. It doesn't feel like an ideology for the same reason water doesn't feel wet.",
+   "figures": [
+    "the Fed",
+    "the courts",
+    "the op-ed page"
+   ],
+   "discussing": [
+    {
+     "t": "Holding the midterm coalition",
+     "d": "the live work of mainstream liberalism: holding the midterm coalition together across its restive wings.",
+     "x": "midterm coalition democrats"
+    },
+    {
+     "t": "Defending the process",
+     "d": "defending the fed, the courts, and procedure itself as the things that keep the lights on.",
+     "x": "defend the Fed courts"
+    }
+   ]
+  },
+  "islam": {
+   "name": "the islamic revival",
+   "country": "Islamic revival",
+   "tldr": "the ummah online; submission as freedom",
+   "ontology": "A fifth of humanity in one ummah: submission as freedom, the feed as minbar. The largest coherent ontology the discourse map forgets.",
+   "figures": [
+    "@muftimenk",
+    "@omarsuleiman504",
+    "Yaqeen Institute"
+   ],
+   "discussing": [
+    {
+     "t": "The ummah online",
+     "d": "a fifth of humanity in one ummah, with the feed as minbar.",
+     "x": "ummah"
+    },
+    {
+     "t": "Gaza as moral center",
+     "d": "gaza remains the moral center of the global muslim internet.",
+     "x": "Gaza ummah"
+    }
+   ]
+  },
+  "china": {
+   "name": "the chinese techno-civilization",
+   "country": "China techno-civilization",
+   "tldr": "the state as a five-thousand-year project",
+   "ontology": "The state as a five-thousand-year project; harmony over discourse, capacity over process. Barely on X — enormous on earth.",
+   "figures": [
+    "@HuXijin_GT",
+    "Kaiser Kuo",
+    "Pekingnology"
+   ],
+   "discussing": [
+    {
+     "t": "China-speed infrastructure",
+     "d": "china-speed infrastructure as the standing argument for capacity over process.",
+     "x": "China infrastructure speed"
+    },
+    {
+     "t": "The civilization-state argument",
+     "d": "the civilization-state framing: five thousand years as the unit of analysis.",
+     "x": "civilization state China"
+    }
+   ]
+  },
+  "catholic": {
+   "name": "catholicism proper",
+   "country": "Catholic Church",
+   "tldr": "a billion members, one pope, time in centuries",
+   "ontology": "Beneath the tradcath vanguard, the two-thousand-year ship itself: a billion members, one pope, time measured in centuries.",
+   "figures": [
+    "@Pontifex",
+    "Word on Fire",
+    "@JamesMartinSJ"
+   ],
+   "discussing": [
+    {
+     "t": "The pope's line on the rift",
+     "d": "watching the pope's line on the rift between rome and washington.",
+     "x": "Pope Leo Washington"
+    },
+    {
+     "t": "The global south church",
+     "d": "the church's center of gravity keeps moving south — lagos and manila, not paris.",
+     "x": "Catholic Church global south"
+    }
+   ]
+  },
+  "india": {
+   "name": "civilizational india",
+   "country": "Civilizational India",
+   "tldr": "a civilization reawakening, not a country",
+   "ontology": "Not a country — a civilization reawakening after a thousand-year interruption. The diaspora fights its wars in english.",
+   "figures": [
+    "@narendramodi",
+    "Swarajya",
+    "J. Sai Deepak"
+   ],
+   "discussing": [
+    {
+     "t": "The hindutva project",
+     "d": "the civilizational reawakening as political project.",
+     "x": "Hindutva"
+    },
+    {
+     "t": "The diaspora wars",
+     "d": "the diaspora fights india's culture wars in english, on x.",
+     "x": "India diaspora debate"
+    }
+   ]
+  },
+  "pentecostal": {
+   "name": "global pentecostalism",
+   "country": "Global pentecostalism",
+   "tldr": "the spirit descends in lagos, são paulo, seoul",
+   "ontology": "The fastest-growing religion on earth: the spirit descends in Lagos, São Paulo, Seoul — and the feed never notices.",
+   "figures": [
+    "T.D. Jakes",
+    "Paula White",
+    "the Lagos megachurches"
+   ],
+   "discussing": [
+    {
+     "t": "Revival, streamed",
+     "d": "revival services stream from lagos, são paulo, and seoul to phones everywhere.",
+     "x": "revival livestream"
+    },
+    {
+     "t": "The global south church",
+     "d": "the fastest-growing religion on earth grows fastest where the feed never looks.",
+     "x": "pentecostal growth africa"
+    }
+   ]
+  },
+  "indigenous": {
+   "name": "the indigenous resurgence",
+   "country": "Indigenous resurgence",
+   "tldr": "the land is a relative, not a resource",
+   "ontology": "The land is not a resource but a relative, and it is taking its names back. The oldest ontology on the map, newly load-bearing.",
+   "figures": [
+    "NDN Collective",
+    "Winona LaDuke",
+    "IllumiNative"
+   ],
+   "discussing": [
+    {
+     "t": "Land back",
+     "d": "the land back movement keeps converting slogans into title transfers.",
+     "x": "land back"
+    },
+    {
+     "t": "Rights of nature rulings",
+     "d": "courts keep granting rivers and forests legal personhood.",
+     "x": "rights of nature"
+    }
+   ]
+  },
+  "manifestation": {
+   "name": "the manifestation web",
+   "country": "Manifestation web",
+   "tldr": "align the inner state; the outer follows",
+   "ontology": "Reality is a mirror: align the inner state and the outer world follows. The largest folk religion online, and it doesn't know it's one.",
+   "figures": [
+    "Rhonda Byrne",
+    "the lucky girls of TikTok",
+    "r/lawofattraction"
+   ],
+   "discussing": [
+    {
+     "t": "Lucky girl syndrome",
+     "d": "lucky girl syndrome, still compounding across the for-you page.",
+     "x": "lucky girl syndrome"
+    },
+    {
+     "t": "Astrology szn",
+     "d": "retrograde as news event; the chart as explanation of record.",
+     "x": "mercury retrograde"
+    },
+    {
+     "t": "The vibrational diet",
+     "d": "aligning the inner state as daily practice — scripting, affirmations, frequency talk.",
+     "x": "manifestation affirmations"
+    }
+   ]
+  },
+  "conspiracy": {
+   "name": "the conspiracist omniverse",
+   "country": "Conspiracist omniverse",
+   "tldr": "nothing is as it seems, on purpose",
+   "ontology": "Nothing is as it seems, and someone meant it that way. Every institution's collapse in trust washes up here as new territory.",
+   "figures": [
+    "Alex Jones",
+    "the Epstein-files posters",
+    "r/conspiracy diaspora"
+   ],
+   "discussing": [
+    {
+     "t": "The Epstein files, forever",
+     "d": "the files fight is the permanent front page of the omniverse.",
+     "x": "Epstein files"
+    },
+    {
+     "t": "Who runs the weather",
+     "d": "weather modification suspicion surges with every extreme-weather event.",
+     "x": "weather modification"
+    },
+    {
+     "t": "Cover-up of the week",
+     "d": "each week's institutional stumble becomes evidence of the design.",
+     "x": "cover up"
+    }
+   ]
+  },
+  "hustle": {
+   "name": "hustle world",
+   "country": "Hustle world",
+   "tldr": "the job is a scam; the way out is volume",
+   "ontology": "The job is a scam and the way out is volume: content, flips, funnels, reps. YouTube's biggest religion.",
+   "figures": [
+    "@AlexHormozi",
+    "@thedankoe",
+    "Codie Sanchez"
+   ],
+   "discussing": [
+    {
+     "t": "Side hustle szn",
+     "d": "the side hustle as default life advice for a generation that doesn't trust jobs.",
+     "x": "side hustle"
+    },
+    {
+     "t": "The passive-income dream",
+     "d": "funnels, flips, and faceless channels — the exit number as north star.",
+     "x": "passive income"
+    },
+    {
+     "t": "AI arbitrage",
+     "d": "every new model drop becomes a new arbitrage pitch within hours.",
+     "x": "AI side hustle"
+    }
+   ]
+  },
+  "manosphere": {
+   "name": "the manosphere",
+   "country": "Manosphere",
+   "tldr": "rebuild the man; the world follows",
+   "ontology": "The crisis is male — purpose, testosterone, marriage, meaning. Rebuild the man and the world follows.",
+   "figures": [
+    "@Cobratate",
+    "@ChrisWillx",
+    "David Goggins"
+   ],
+   "discussing": [
+    {
+     "t": "Male loneliness epidemic",
+     "d": "the male loneliness epidemic as the frame for everything else.",
+     "x": "male loneliness epidemic"
+    },
+    {
+     "t": "Fertility crash discourse",
+     "d": "the birth-rate discourse read as a crisis of men first.",
+     "x": "fertility crisis men"
+    },
+    {
+     "t": "Discipline as salvation",
+     "d": "lifting, fasting, cold water — the liturgy of self-rebuild.",
+     "x": "discipline cold shower lifting"
+    }
+   ]
+  },
+  "witchtok": {
+   "name": "witchtok & the old ways",
+   "country": "WitchTok",
+   "tldr": "ritual, tarot, the moon as calendar",
+   "ontology": "The disenchanted world re-enchants from below: ritual, tarot, the moon as calendar. The gods that were here before the feed.",
+   "figures": [
+    "The Hoodwitch",
+    "WitchTok creators",
+    "Chani Nicholas"
+   ],
+   "discussing": [
+    {
+     "t": "Full-moon ritual posting",
+     "d": "the moon as shared calendar; ritual posts spike on schedule.",
+     "x": "full moon ritual"
+    },
+    {
+     "t": "Tarot as therapy",
+     "d": "the deck as a mirror for the inner life, held half-seriously.",
+     "x": "tarot reading"
+    }
+   ]
+  },
+  "socialist": {
+   "name": "the socialist left",
+   "country": "Socialist left",
+   "tldr": "the oldest war is labor versus capital",
+   "ontology": "The oldest war is labor versus capital; everything else is noise over that signal.",
+   "figures": [
+    "@jacobin",
+    "@hasanthehun",
+    "DSA"
+   ],
+   "discussing": [
+    {
+     "t": "Socialists vs. moderates",
+     "d": "the democrats' internal civil war between its socialist and moderate wings.",
+     "x": "democrats socialists moderates"
+    },
+    {
+     "t": "Utility bills as class war",
+     "d": "electricity bills become the concrete class politics of the data-center era.",
+     "x": "utility bills data centers"
+    },
+    {
+     "t": "Ratepayer protection act",
+     "d": "making hyperscalers pay for their own grid: the ratepayer protection fight.",
+     "x": "ratepayer protection act"
+    }
+   ]
+  },
+  "postliberal": {
+   "name": "the post-liberals",
+   "country": "Post-liberals",
+   "tldr": "rebuild on faith, family, common good",
+   "ontology": "Liberalism ate its own foundations; rebuild on faith, family, and the common good.",
+   "figures": [
+    "@SohrabAhmari",
+    "Patrick Deneen",
+    "Adrian Vermeule"
+   ],
+   "discussing": [
+    {
+     "t": "Rome vs. Washington",
+     "d": "the rift between rome and washington as the live test of common-good politics.",
+     "x": "Rome Washington rift"
+    },
+    {
+     "t": "The conversion-story genre",
+     "d": "the latin mass full of twenty-somethings; the conversion memoir as genre.",
+     "x": "latin mass converts"
+    },
+    {
+     "t": "Common good vs. midterms",
+     "d": "whether common-good politics survives contact with the midterms.",
+     "x": "common good conservatism"
+    }
+   ]
+  },
+  "refusal": {
+   "name": "tech refusal",
+   "country": "Tech refusal",
+   "tldr": "the only winning move is to log off",
+   "ontology": "The machine's product is your attention, and the only winning move is to log off. The decelerate coast's far shore.",
+   "figures": [
+    "Cal Newport",
+    "@JonHaidt",
+    "Freya India"
+   ],
+   "discussing": [
+    {
+     "t": "Dumbphone spring",
+     "d": "dumbphones and app deletion as a lifestyle wave.",
+     "x": "dumbphone"
+    },
+    {
+     "t": "Digital sabbath",
+     "d": "scheduled disconnection as practice, not aesthetic.",
+     "x": "digital sabbath"
+    },
+    {
+     "t": "Kids off phones",
+     "d": "the school phone bans keep spreading.",
+     "x": "school phone ban"
+    }
+   ]
+  },
+  "dacc": {
+   "name": "d/acc",
+   "country": "d/acc",
+   "tldr": "accelerate the defensive things",
+   "ontology": "Accelerate the defensive things — crypto, bio-defense, open source — so the power lands in everyone's hands.",
+   "figures": [
+    "@VitalikButerin",
+    "open-source biosecurity",
+    "the open-weights camp"
+   ],
+   "discussing": [
+    {
+     "t": "KYC creep in stablecoins",
+     "d": "bank-grade kyc creeping into stablecoin rails worries the defensive-acceleration camp.",
+     "x": "stablecoin KYC"
+    },
+    {
+     "t": "One issuer near 70%",
+     "d": "a single stablecoin issuer nearing 70% of volume reads as centralization risk.",
+     "x": "stablecoin dominance"
+    },
+    {
+     "t": "Keeping open weights open",
+     "d": "keeping open-weight models open while the walls go up.",
+     "x": "open weights models"
+    }
+   ]
+  },
+  "liminal": {
+   "name": "the liminal web",
+   "country": "Liminal web",
+   "tldr": "hold the whole; don't pick a jersey",
+   "ontology": "The crisis under the crises is sensemaking itself; hold the whole, don't pick a jersey.",
+   "figures": [
+    "Jonathan Rowson",
+    "Daniel Thorson",
+    "The Stoa"
+   ],
+   "discussing": [
+    {
+     "t": "The metacrisis, surfacing",
+     "d": "reading the data-center revolt as the metacrisis surfacing in one place.",
+     "x": "metacrisis"
+    },
+    {
+     "t": "Sensemaking the pile-up",
+     "d": "energy, ai risk, governance, and trust read as one story, not four.",
+     "x": "sensemaking crisis"
+    }
+   ]
+  },
+  "nihilists": {
+   "name": "the nihilist trench",
+   "country": "The Nihilist Trench",
+   "tldr": "named, not steelmanned",
+   "ontology": "Nothing means anything and nothing is worth wanting — the undertow beneath every other territory. Named here as a hazard to navigation, not steelmanned, by design.",
+   "figures": [
+    "no one claims it"
+   ],
+   "discussing": []
   }
  }
 }

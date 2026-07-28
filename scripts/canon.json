@@ -462,5 +462,201 @@
    "Ross Coulthart",
    "Lue Elizondo"
   ]
+ },
+ "ocean": {
+  "name": "the neoliberalism ocean",
+  "country": "The Neoliberalism Ocean",
+  "tldr": "the default every tribe defines itself against",
+  "ontology": "Mainstream liberalism — not an island but the water: markets as nature, procedure as faith, the default every tribe defines itself against. It doesn't feel like an ideology for the same reason water doesn't feel wet.",
+  "figures": [
+   "the Fed",
+   "the courts",
+   "the op-ed page"
+  ]
+ },
+ "islam": {
+  "name": "the islamic revival",
+  "country": "Islamic revival",
+  "tldr": "the ummah online; submission as freedom",
+  "ontology": "A fifth of humanity in one ummah: submission as freedom, the feed as minbar. The largest coherent ontology the discourse map forgets.",
+  "figures": [
+   "@muftimenk",
+   "@omarsuleiman504",
+   "Yaqeen Institute"
+  ]
+ },
+ "china": {
+  "name": "the chinese techno-civilization",
+  "country": "China techno-civilization",
+  "tldr": "the state as a five-thousand-year project",
+  "ontology": "The state as a five-thousand-year project; harmony over discourse, capacity over process. Barely on X — enormous on earth.",
+  "figures": [
+   "@HuXijin_GT",
+   "Kaiser Kuo",
+   "Pekingnology"
+  ]
+ },
+ "catholic": {
+  "name": "catholicism proper",
+  "country": "Catholic Church",
+  "tldr": "a billion members, one pope, time in centuries",
+  "ontology": "Beneath the tradcath vanguard, the two-thousand-year ship itself: a billion members, one pope, time measured in centuries.",
+  "figures": [
+   "@Pontifex",
+   "Word on Fire",
+   "@JamesMartinSJ"
+  ]
+ },
+ "india": {
+  "name": "civilizational india",
+  "country": "Civilizational India",
+  "tldr": "a civilization reawakening, not a country",
+  "ontology": "Not a country — a civilization reawakening after a thousand-year interruption. The diaspora fights its wars in english.",
+  "figures": [
+   "@narendramodi",
+   "Swarajya",
+   "J. Sai Deepak"
+  ]
+ },
+ "pentecostal": {
+  "name": "global pentecostalism",
+  "country": "Global pentecostalism",
+  "tldr": "the spirit descends in lagos, são paulo, seoul",
+  "ontology": "The fastest-growing religion on earth: the spirit descends in Lagos, São Paulo, Seoul — and the feed never notices.",
+  "figures": [
+   "T.D. Jakes",
+   "Paula White",
+   "the Lagos megachurches"
+  ]
+ },
+ "indigenous": {
+  "name": "the indigenous resurgence",
+  "country": "Indigenous resurgence",
+  "tldr": "the land is a relative, not a resource",
+  "ontology": "The land is not a resource but a relative, and it is taking its names back. The oldest ontology on the map, newly load-bearing.",
+  "figures": [
+   "NDN Collective",
+   "Winona LaDuke",
+   "IllumiNative"
+  ]
+ },
+ "manifestation": {
+  "name": "the manifestation web",
+  "country": "Manifestation web",
+  "tldr": "align the inner state; the outer follows",
+  "ontology": "Reality is a mirror: align the inner state and the outer world follows. The largest folk religion online, and it doesn't know it's one.",
+  "figures": [
+   "Rhonda Byrne",
+   "the lucky girls of TikTok",
+   "r/lawofattraction"
+  ]
+ },
+ "conspiracy": {
+  "name": "the conspiracist omniverse",
+  "country": "Conspiracist omniverse",
+  "tldr": "nothing is as it seems, on purpose",
+  "ontology": "Nothing is as it seems, and someone meant it that way. Every institution's collapse in trust washes up here as new territory.",
+  "figures": [
+   "Alex Jones",
+   "the Epstein-files posters",
+   "r/conspiracy diaspora"
+  ]
+ },
+ "hustle": {
+  "name": "hustle world",
+  "country": "Hustle world",
+  "tldr": "the job is a scam; the way out is volume",
+  "ontology": "The job is a scam and the way out is volume: content, flips, funnels, reps. YouTube's biggest religion.",
+  "figures": [
+   "@AlexHormozi",
+   "@thedankoe",
+   "Codie Sanchez"
+  ]
+ },
+ "manosphere": {
+  "name": "the manosphere",
+  "country": "Manosphere",
+  "tldr": "rebuild the man; the world follows",
+  "ontology": "The crisis is male — purpose, testosterone, marriage, meaning. Rebuild the man and the world follows.",
+  "figures": [
+   "@Cobratate",
+   "@ChrisWillx",
+   "David Goggins"
+  ]
+ },
+ "witchtok": {
+  "name": "witchtok & the old ways",
+  "country": "WitchTok",
+  "tldr": "ritual, tarot, the moon as calendar",
+  "ontology": "The disenchanted world re-enchants from below: ritual, tarot, the moon as calendar. The gods that were here before the feed.",
+  "figures": [
+   "The Hoodwitch",
+   "WitchTok creators",
+   "Chani Nicholas"
+  ]
+ },
+ "socialist": {
+  "name": "the socialist left",
+  "country": "Socialist left",
+  "tldr": "the oldest war is labor versus capital",
+  "ontology": "The oldest war is labor versus capital; everything else is noise over that signal.",
+  "figures": [
+   "@jacobin",
+   "@hasanthehun",
+   "DSA"
+  ]
+ },
+ "postliberal": {
+  "name": "the post-liberals",
+  "country": "Post-liberals",
+  "tldr": "rebuild on faith, family, common good",
+  "ontology": "Liberalism ate its own foundations; rebuild on faith, family, and the common good.",
+  "figures": [
+   "@SohrabAhmari",
+   "Patrick Deneen",
+   "Adrian Vermeule"
+  ]
+ },
+ "refusal": {
+  "name": "tech refusal",
+  "country": "Tech refusal",
+  "tldr": "the only winning move is to log off",
+  "ontology": "The machine's product is your attention, and the only winning move is to log off. The decelerate coast's far shore.",
+  "figures": [
+   "Cal Newport",
+   "@JonHaidt",
+   "Freya India"
+  ]
+ },
+ "dacc": {
+  "name": "d/acc",
+  "country": "d/acc",
+  "tldr": "accelerate the defensive things",
+  "ontology": "Accelerate the defensive things — crypto, bio-defense, open source — so the power lands in everyone's hands.",
+  "figures": [
+   "@VitalikButerin",
+   "open-source biosecurity",
+   "the open-weights camp"
+  ]
+ },
+ "liminal": {
+  "name": "the liminal web",
+  "country": "Liminal web",
+  "tldr": "hold the whole; don't pick a jersey",
+  "ontology": "The crisis under the crises is sensemaking itself; hold the whole, don't pick a jersey.",
+  "figures": [
+   "Jonathan Rowson",
+   "Daniel Thorson",
+   "The Stoa"
+  ]
+ },
+ "nihilists": {
+  "name": "the nihilist trench",
+  "country": "The Nihilist Trench",
+  "tldr": "named, not steelmanned",
+  "ontology": "Nothing means anything and nothing is worth wanting — the undertow beneath every other territory. Named here as a hazard to navigation, not steelmanned, by design.",
+  "figures": [
+   "no one claims it"
+  ]
  }
 }
