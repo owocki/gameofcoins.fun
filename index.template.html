@@ -216,7 +216,7 @@ window.ATLAS_DATA = __ATLAS_DATA__;
 
 (() => {
 'use strict';
-const X0=-850,Y0=-600,X1=3320,Y1=2200,MARGIN=120;
+const X0=-1500,Y0=-1250,X1=4350,Y1=2950,MARGIN=120;
 const D = window.ATLAS_DATA;
 document.getElementById('cart-date').textContent = 'updated ' + D.dateLabel + (matchMedia('(pointer:coarse)').matches ? ' · drag · pinch · tap a territory' : ' · drag · scroll · hover a territory') + ' · peaks mark the big stories';
 
@@ -335,12 +335,69 @@ const CONTINENTS=[
   countries:[{id:'stan',a0:0,a1:6.283}]},
  {id:'m-sports',name:'',kicker:'MAINSTREAM',big:true,cx:1700,cy:-330,rx:340,ry:230,rot:.07,seed:163,rug:.25,
   junction:null,mountains:false,palette:{low:'#b5c2a0',up:'#d5caa4',high:'#b09873'},
-  countries:[{id:'sports',a0:0,a1:6.283}]}
+  countries:[{id:'sports',a0:0,a1:6.283}]},
+ /* the wider world: the giant ontologies the discourse map forgets, at the far edges */
+ {id:'w-china',name:'',kicker:'THE WIDER WORLD',big:true,cx:-700,cy:-820,rx:380,ry:240,rot:.04,seed:167,rug:.21,
+  junction:null,mountains:false,palette:{low:'#b2bd97',up:'#d3c79d',high:'#af9670'},
+  countries:[{id:'china',a0:0,a1:6.283}]},
+ {id:'w-catholic',name:'',kicker:'THE WIDER WORLD',big:true,cx:1050,cy:-880,rx:300,ry:210,rot:-.05,seed:173,rug:.22,
+  junction:null,mountains:false,trees:true,palette:{low:'#aec1a0',up:'#cfc7a2',high:'#ac9271'},
+  countries:[{id:'catholic',a0:0,a1:6.283}]},
+ {id:'w-islam',name:'',kicker:'THE WIDER WORLD',big:true,cx:2450,cy:-950,rx:420,ry:220,rot:.03,seed:179,rug:.2,
+  junction:null,mountains:false,palette:{low:'#bcc09b',up:'#dccda6',high:'#b59b74'},
+  countries:[{id:'islam',a0:0,a1:6.283}]},
+ {id:'w-socialist',name:'',kicker:'THE WIDER WORLD',cx:3600,cy:-550,rx:150,ry:110,rot:-.1,seed:181,rug:.27,
+  junction:null,mountains:false,palette:{low:'#adc09b',up:'#cec59c',high:'#aa8f6a'},
+  countries:[{id:'socialist',a0:0,a1:6.283}]},
+ {id:'w-india',name:'',kicker:'THE WIDER WORLD',big:true,cx:3900,cy:300,rx:330,ry:260,rot:.08,seed:191,rug:.23,
+  junction:null,mountains:false,trees:true,palette:{low:'#b8c295',up:'#d8caa0',high:'#b29671'},
+  countries:[{id:'india',a0:0,a1:6.283}]},
+ {id:'w-postliberal',name:'',kicker:'THE WIDER WORLD',cx:3800,cy:950,rx:140,ry:100,rot:.12,seed:193,rug:.28,
+  junction:null,mountains:false,trees:true,palette:{low:'#b0c19d',up:'#d0c6a0',high:'#ad9370'},
+  countries:[{id:'postliberal',a0:0,a1:6.283}]},
+ {id:'w-indigenous',name:'',kicker:'THE WIDER WORLD',big:true,cx:3850,cy:2300,rx:290,ry:210,rot:-.06,seed:197,rug:.24,
+  junction:null,mountains:false,trees:true,palette:{low:'#a6c48c',up:'#ccc593',high:'#a98d61'},
+  countries:[{id:'indigenous',a0:0,a1:6.283}]},
+ {id:'w-refusal',name:'',kicker:'THE WIDER WORLD',cx:3300,cy:2700,rx:150,ry:100,rot:.1,seed:199,rug:.29,
+  junction:null,mountains:false,trees:true,palette:{low:'#aac795',up:'#cdc79c',high:'#ab9068'},
+  countries:[{id:'refusal',a0:0,a1:6.283}]},
+ {id:'w-pentecostal',name:'',kicker:'THE WIDER WORLD',big:true,cx:2750,cy:2600,rx:240,ry:165,rot:-.04,seed:211,rug:.23,
+  junction:null,mountains:false,palette:{low:'#b6c497',up:'#d6c9a0',high:'#b19772'},
+  countries:[{id:'pentecostal',a0:0,a1:6.283}]},
+ {id:'w-manosphere',name:'',kicker:'THE WIDER WORLD',big:true,cx:2150,cy:2500,rx:160,ry:105,rot:.14,seed:223,rug:.3,
+  junction:null,mountains:false,palette:{low:'#b0b18d',up:'#c9bc90',high:'#9d7f58'},
+  countries:[{id:'manosphere',a0:0,a1:6.283}]},
+ {id:'w-witchtok',name:'',kicker:'THE WIDER WORLD',cx:1650,cy:2680,rx:110,ry:80,rot:-.2,seed:227,rug:.32,
+  junction:null,mountains:false,trees:true,palette:{low:'#a3bb90',up:'#c3bd93',high:'#9f8663'},
+  countries:[{id:'witchtok',a0:0,a1:6.283}]},
+ {id:'w-manifestation',name:'',kicker:'THE WIDER WORLD',big:true,cx:1050,cy:2600,rx:230,ry:150,rot:.06,seed:229,rug:.26,
+  junction:null,mountains:false,palette:{low:'#bcc39a',up:'#dccaa5',high:'#b39872'},
+  countries:[{id:'manifestation',a0:0,a1:6.283}]},
+ {id:'w-conspiracy',name:'',kicker:'THE WIDER WORLD',big:true,cx:250,cy:2550,rx:240,ry:160,rot:-.08,seed:233,rug:.31,
+  junction:null,mountains:false,palette:{low:'#aaa98a',up:'#c2b68c',high:'#8f7354'},
+  countries:[{id:'conspiracy',a0:0,a1:6.283}]},
+ {id:'w-hustle',name:'',kicker:'THE WIDER WORLD',big:true,cx:-800,cy:2100,rx:240,ry:160,rot:.09,seed:239,rug:.27,
+  junction:null,mountains:false,palette:{low:'#bdc192',up:'#dcc79b',high:'#b2926a'},
+  countries:[{id:'hustle',a0:0,a1:6.283}]},
+ {id:'w-dacc',name:'',kicker:'THE WIDER WORLD',cx:-1000,cy:900,rx:160,ry:110,rot:-.12,seed:241,rug:.28,
+  junction:null,mountains:false,trees:true,palette:{low:'#a9c78f',up:'#cdc697',high:'#a98e62'},
+  countries:[{id:'dacc',a0:0,a1:6.283}]},
+ {id:'w-liminal',name:'',kicker:'THE WIDER WORLD',cx:2620,cy:1760,rx:95,ry:70,rot:.18,seed:251,rug:.3,
+  junction:null,mountains:false,trees:true,palette:{low:'#b1c496',up:'#d2c79d',high:'#ae9370'},
+  countries:[{id:'liminal',a0:0,a1:6.283}]}
 ];
 /* fix a typo-safe palette value */
 CONTINENTS[1].palette.high='#b89064';
 
-const OCEANS=[];
+/* the waters: ontologies that are not land. Labels drawn on the sea; each label
+   point is a hover target. The neoliberalism ocean IS the ocean; the nihilist
+   trench is a dark deep, named but not steelmanned. */
+const OCEANS=[
+ {id:'ocean',t:'THE NEOLIBERALISM OCEAN',x:1600,y:-700,w:300,size:30,arc:1800},
+ {id:'ocean',t:'THE NEOLIBERALISM OCEAN',x:-1100,y:350,w:240,size:20,arc:-1600},
+ {id:'ocean',t:'THE NEOLIBERALISM OCEAN',x:3600,y:1650,w:240,size:20,arc:1600},
+ {id:'nihilists',t:'THE NIHILIST TRENCH',x:1450,y:2880,w:200,size:22,arc:2200}
+];
 
 /* ---------- build svg ---------- */
 const NS='http://www.w3.org/2000/svg';
@@ -374,6 +431,10 @@ const waves=el('g',{stroke:'#4d6b78',fill:'none','stroke-width':1.1,opacity:.28,
 [[350,250],[290,930],[1620,620],[830,690],[1350,1230],[2240,940],[2300,190],[160,1290],[1750,530],[620,60],[1900,1440],[80,560],[2330,1300],[1440,330],[-600,300],[-350,1600],[3000,600],[3100,1500],[600,1950],[2200,2050],[-550,-350],[1500,-450],[2900,-350],[500,-480],[-700,800],[3200,50]].forEach(([x,y])=>{
   el('path',{d:`M${x} ${y} q5 -5 10 0 q5 5 10 0 M${x+6} ${y+7} q5 -5 10 0`},waves);
 });
+
+/* the nihilist trench: a dark deep in the far southern sea */
+el('path',{d:pathFrom(blobPts(1450,2870,300,55,.03,997,.22,80),true),fill:'#57737f',opacity:.75,filter:'url(#soft8)'},root);
+el('path',{d:pathFrom(blobPts(1450,2872,210,36,.03,991,.25,60),true),fill:'#42606e',opacity:.7,filter:'url(#soft5)'},root);
 
 const gShallow=el('g',{},root), gLand=el('g',{},root), gRelief=el('g',{},root), gBorder=el('g',{},root),
       gDeco=el('g',{},root), gEngraved=el('g',{},root), gHL=el('g',{},root),
@@ -524,9 +585,12 @@ for(const C of CONTINENTS){
   if(!C.name||!C.label)continue;
   contLblEls.push(engraved(C.name,C.label.x,C.label.y,C.label.w,C.label.size,1400,0,'lbl-continent',C.label.ls||0.42));
 }
-const oceanLblEls=[];
+const oceanLblEls=[],waterHits=[];
 for(const O of OCEANS){
   oceanLblEls.push(engraved(O.t,O.x,O.y,O.w,O.size,O.arc,O.rot||0,'lbl-ocean',0.28));
+  const wtribe=D.tribes[O.id];
+  if(wtribe)waterHits.push({x:O.x,y:O.y,tribe:wtribe,id:O.id,
+    kick:O.id==='ocean'?'THE WATER ITSELF':'HAZARD · NOT STEELMANNED'});
 }
 
 /* ---------- screen-constant labels (countries, cities, regions) ---------- */
@@ -703,16 +767,22 @@ function findCountry(wx,wy){
   return null;
 }
 function renderCard(tb,kick){
+  const topics=(tb.discussing&&tb.discussing.length)
+    ?`<p class="today">Trending today · tap a topic to see it on X</p>
+   <ul>${tb.discussing.map(x=>`<li><a href="https://x.com/search?q=${encodeURIComponent(x.x||x.t)}&src=typed_query&f=live" target="_blank" rel="noopener"><b>${esc(x.t)} ↗</b></a> — ${esc(x.d)}</li>`).join('')}</ul>`:'';
   tt.innerHTML=`<p class="kick">${esc(kick)}</p>
    <h3>${esc(tb.country)}</h3>
    <p class="ont">${esc(tb.ontology)}</p>
-   <p class="today">Trending today · tap a topic to see it on X</p>
-   <ul>${tb.discussing.map(x=>`<li><a href="https://x.com/search?q=${encodeURIComponent(x.x||x.t)}&src=typed_query&f=live" target="_blank" rel="noopener"><b>${esc(x.t)} ↗</b></a> — ${esc(x.d)}</li>`).join('')}</ul>
+   ${topics}
    <p class="figs">Key accounts: ${esc(tb.figures.join(', '))}</p>`;
 }
 function findVillage(wx,wy){
   if(scale/fitScale()<2.6)return null;
   for(const v of villages)if(Math.hypot(v.pos[0]-wx,v.pos[1]-wy)*scale<26)return v;
+  return null;
+}
+function findWater(wx,wy){
+  for(const w of waterHits)if(Math.hypot(w.x-wx,w.y-wy)*scale<80)return w;
   return null;
 }
 function titleCase(s){return s.toLowerCase().replace(/(^|\s)\S/g,m=>m.toUpperCase())}
@@ -739,11 +809,13 @@ function hover(px,py,isTap){
   const [wx,wy]=screenToWorld(px,py);
   const v=findVillage(wx,wy);
   const c=v?null:findCountry(wx,wy);
-  if(v||c)cancelHide();
-  const id=v?('v:'+v.id):(c?c.id:null);
+  const w=(v||c)?null:findWater(wx,wy);
+  if(v||c||w)cancelHide();
+  const id=v?('v:'+v.id):(c?c.id:(w?('w:'+w.id):null));
   if(id&&id!==curId){
     for(const o of countries){o.hl.classList.toggle('on',o===c);o.hlS.classList.toggle('on',o===c)}
     if(v)renderCard(v.tribe,v.parentName?('BESPOKE · IN '+v.parentName):'BESPOKE');
+    else if(w)renderCard(w.tribe,w.kick);
     else renderCard(c.tribe,c.contName||'INDEPENDENT');
     tt.classList.add('on');curId=id;
     placeCard(px,py);
@@ -760,37 +832,54 @@ stage.addEventListener('pointerleave',()=>{if(curId)scheduleHide()});
    Renders from the SAME data object D as the map — never a second copy.
    PAPER ranks tribes by real-world size (honest fuzzy words), not feed volume. */
 const PMETA={
- christian:{e:'✝️',s:"God's created order"},
+ ocean:{e:'🌊',s:'the institutions'},
  sports:{e:'🏟️',s:'the game'},
- stan:{e:'🎤',s:'the artist'},
- astrology:{e:'🔮',s:"the sky's timing"},
+ islam:{e:'☪️',s:'the ummah'},
+ christian:{e:'✝️',s:"God's created order"},
+ china:{e:'🐉',s:'the civilization-state'},
+ catholic:{e:'⛪',s:'the church eternal'},
+ india:{e:'🕉️',s:'the eternal dharma-nation'},
+ pentecostal:{e:'🕊️',s:'the spirit moving'},
+ indigenous:{e:'🌎',s:'the living land'},
+ manifestation:{e:'🔮',s:'the responsive universe'},
+ astrology:{e:'✨',s:"the sky's timing"},
+ conspiracy:{e:'🕳️',s:'the hidden truth'},
+ stan:{e:'💜',s:'the idol'},
+ hustle:{e:'💸',s:'the exit number'},
  maga:{e:'🦅',s:'the nation'},
- progleft:{e:'✊',s:'solidarity'},
+ progleft:{e:'✊',s:'the marginalized'},
  establishment:{e:'🏛️',s:'the institutions'},
  finance:{e:'📈',s:'the market'},
- ufo:{e:'🛸',s:'the phenomenon'},
- tradcaths:{e:'⛪',s:'the old Mass'},
+ maha:{e:'🥩',s:'the body'},
+ manosphere:{e:'🗿',s:'masculinity'},
+ ufo:{e:'🛸',s:'the veil'},
+ socialist:{e:'🌹',s:'the working class'},
+ witchtok:{e:'🌙',s:'the old gods'},
+ tradcaths:{e:'📿',s:'the old Mass'},
+ postliberal:{e:'🙏',s:'god'},
  btc:{e:'🟠',s:'sound money'},
  wsb:{e:'🦍',s:'the trade'},
- maha:{e:'🥛',s:'the untainted body'},
- degrowth:{e:'🌍',s:'the biosphere'},
- longevity:{e:'🧬',s:'healthspan'},
+ degrowth:{e:'🌱',s:'the living earth'},
+ longevity:{e:'🧬',s:'escape velocity'},
+ nondual:{e:'🧘',s:'awareness itself'},
  eth:{e:'💎',s:'credible neutrality'},
  defi:{e:'🏦',s:'open rails'},
  degens:{e:'🎰',s:'the pump'},
  indie:{e:'🛠️',s:'shipping'},
+ refusal:{e:'📵',s:'presence'},
  ea:{e:'⚖️',s:'counterfactual impact'},
  rationalists:{e:'🧠',s:'the truth'},
- doomers:{e:'⏳',s:'the lightcone'},
- progress:{e:'🏗️',s:'abundance'},
+ doomers:{e:'🛑',s:'our continuity'},
+ progress:{e:'🏗️',s:'plenty'},
  hardtech:{e:'🚀',s:'the machine'},
- eacc:{e:'⚡',s:'acceleration'},
+ eacc:{e:'⚡',s:'technocapital'},
  tpot:{e:'🌀',s:'the vibe'},
- nondual:{e:'🧘',s:'awareness itself'},
- regens:{e:'🌱',s:'the commons',note:"the map-maker's tent"},
- pronatalists:{e:'👶',s:'the family'},
- nrx:{e:'👑',s:'sovereignty'},
- netstate:{e:'🏝️',s:'exit'},
+ regens:{e:'🌻',s:'the garden',note:"the map-maker's tent"},
+ pronatalists:{e:'👶',s:'the unborn billions'},
+ nrx:{e:'👑',s:'order'},
+ netstate:{e:'🏙️',s:'exit'},
+ dacc:{e:'🛡️',s:'distributed power'},
+ liminal:{e:'🧭',s:'the whole'},
  forecasters:{e:'🎲',s:'calibration'},
  georgists:{e:'🏞️',s:'the land'},
  metamodern:{e:'🌗',s:'development'},
@@ -799,22 +888,36 @@ const PMETA={
  girardians:{e:'🐐',s:'the innocent scapegoat'},
  cozyweb:{e:'🕯️',s:'the small room'},
  landian:{e:'👾',s:'the process'},
- remilia:{e:'🎀',s:'the network'}
+ remilia:{e:'🎀',s:'the network'},
+ nihilists:{e:'🌑',s:'nothing',note:'named as a hazard to navigation, not steelmanned'}
 };
 const PAPER=[
- ['christian','~2 billion believers'],['sports','billions of fans'],['stan','hundreds of millions'],
- ['astrology','hundreds of millions'],['maga','tens of millions'],['progleft','tens of millions'],
- ['establishment','tens of millions'],['finance','tens of millions'],['ufo','tens of millions'],
- ['tradcaths','millions'],['btc','millions of holders'],['wsb','millions of accounts'],
- ['maha','millions'],['degrowth','millions'],['longevity','millions'],
- ['eth','about a million'],['defi','hundreds of thousands'],['degens','hundreds of thousands'],
- ['indie','hundreds of thousands'],['ea','tens of thousands'],['rationalists','tens of thousands'],
- ['doomers','tens of thousands'],['progress','tens of thousands'],['hardtech','tens of thousands'],
- ['eacc','tens of thousands'],['tpot','tens of thousands'],['nondual','tens of thousands'],
- ['regens','tens of thousands'],['pronatalists','tens of thousands'],['nrx','tens of thousands'],
- ['netstate','thousands'],['forecasters','thousands'],['georgists','thousands'],
+ ['ocean','most of the developed world, invisibly'],
+ ['sports','billions of fans'],['islam','~2 billion'],['christian','~2 billion believers'],
+ ['china','~1.4 billion, one civilization-state'],['catholic','~1.4 billion, one pope'],
+ ['india','~1.1 billion claimed'],['pentecostal','~600 million, fastest-growing'],
+ ['indigenous','hundreds of millions, oldest'],['manifestation','hundreds of millions in practice'],
+ ['astrology','hundreds of millions'],['conspiracy','hundreds of millions, load-bearing'],
+ ['stan','tens of millions, best logistics'],['hustle','tens of millions of subscribers'],
+ ['maga','tens of millions — loudest inner tribe'],['progleft','tens of millions, past peak'],
+ ['establishment','tens of millions'],['finance','tens of millions'],
+ ['maha','tens of millions across both wings'],['manosphere','millions of men, plus their coaches'],
+ ['ufo','millions of believers, small vanguard'],['socialist','millions, organized'],
+ ['witchtok','millions on the moon calendar'],['tradcaths','millions'],['postliberal','millions, rising'],
+ ['btc','millions of holders'],['wsb','millions of accounts'],
+ ['degrowth','a movement of millions, quiet online'],['longevity','millions watching, thousands on protocol'],
+ ['nondual','millions dosed, clinical vanguard small'],['eth','about a million'],
+ ['defi','hundreds of thousands'],['degens','hundreds of thousands'],['indie','hundreds of thousands'],
+ ['refusal','a growing congregation of the logged-off'],['ea','tens of thousands'],
+ ['rationalists','tens of thousands'],['doomers','tens of thousands steering billions in compute'],
+ ['progress','a policy class, loud beyond its size'],['hardtech','tens of thousands'],
+ ['eacc','embers'],['tpot','a few thousand accounts, dense'],['regens','small, seeding'],
+ ['pronatalists','small, spreadsheeted, rising'],['nrx','a few hundred posters, adjacent to power'],
+ ['netstate','thousands, passports to spare'],['dacc','a few thousand builders holding keys'],
+ ['liminal','small & steady, holding the whole'],['forecasters','thousands'],['georgists','thousands'],
  ['metamodern','thousands'],['doomeroptimists','thousands'],['cryonics','thousands'],
- ['girardians','thousands'],['cozyweb','thousands'],['landian','hundreds'],['remilia','hundreds']
+ ['girardians','thousands'],['cozyweb','thousands'],['landian','hundreds'],['remilia','hundreds'],
+ ['nihilists','unnumbered, unclaimed']
 ];
 const HOOK_FALLBACK=['doomers','finance','maga','sports','btc','hardtech'];
 function lcFirst(s){s=String(s);return s.charAt(0).toLowerCase()+s.slice(1)}
