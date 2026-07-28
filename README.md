@@ -21,6 +21,8 @@
 
 An interactive, earth-style map of the tribes of X, laid out on two axes — west = accelerate, east = restrain, north = work within institutions, south = exit and build parallel systems. Three tiers: 7 mainstream continents, 19 frontier territories, 14 bespoke villages at deep zoom. Each territory's cities are the topics that tribe is discussing that day. Browse day by day with the ‹ › navigator (or arrow keys); every day is deep-linkable as `#YYYY-MM-DD`.
 
+There is also a second view of the same data: **The Attention Times** (the "📰 read today's paper" pill, top left) — a broadsheet census of all 40 tribes ranked by real-world size rather than feed volume, each described in its own voice, with the day's trending arguments linked to X. Its "⧉ copy the article" button writes a paste-ready plain-text + rich-text version to the clipboard for posting. The paper renders from the same per-day JSON as the map, so the two views cannot disagree; the nightly job additionally writes an optional `paper` field (`{hooks, head, deck}` — the ticker, headline, and deck, synthesized only from that day's sourced topics), and the page derives fallback hooks from the day's capitals when it is absent.
+
 ## Architecture
 
 - `index.html` — the whole site, static (fonts baked in). Fetches `data/index.json` for the list of days, then `data/<date>.json` per day. Built from `site.template.html` by `scripts/build_site.py` — only rebuild when the template changes.
