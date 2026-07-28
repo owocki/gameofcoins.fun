@@ -119,7 +119,7 @@ def research_cluster(client: anthropic.Anthropic, name: str, ids: list, canon: d
         date=date,
         cluster_name=name,
         tribe_lines=tribe_lines,
-        n_topics="1-2" if bespoke else "2-3",
+        n_topics="1-2" if bespoke else "2-4",
         bespoke_note=(" These are small, low-volume communities: the last few weeks is "
                       "acceptable, and an honestly framed evergreen live debate is fine "
                       "if nothing dated exists." if bespoke else ""),
@@ -159,9 +159,9 @@ def research_cluster(client: anthropic.Anthropic, name: str, ids: list, canon: d
 def validate_topics(tid: str, topics: list) -> list:
     if tid in STATIC_EMPTY:
         return []
-    assert isinstance(topics, list) and 1 <= len(topics) <= 4, f"{tid}: bad topic list"
+    assert isinstance(topics, list) and 1 <= len(topics) <= 6, f"{tid}: bad topic list"
     clean = []
-    for topic in topics[:3]:
+    for topic in topics[:5]:
         assert topic.get("t") and topic.get("d"), f"{tid}: topic missing t/d"
         entry = {"t": str(topic["t"])[:40],
                  "d": str(topic["d"])[:400],

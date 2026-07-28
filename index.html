@@ -59,7 +59,9 @@ text{user-select:none;-webkit-user-select:none}
 #tt.on{opacity:1;transform:translateY(0);pointer-events:auto}
 #tt .kick{font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:#8a7a58;margin:0 0 6px}
 #tt h3{margin:0 0 2px;font-size:23px;font-weight:600;letter-spacing:.04em;line-height:1.05;text-wrap:balance}
-#tt .ont{font-size:15px;line-height:1.42;margin:0 0 11px}
+#tt ul.ont{margin:6px 0 11px;padding:0;list-style:none}
+#tt ul.ont li{font-size:14.5px;line-height:1.4;margin:0 0 4px;padding-left:14px;position:relative}
+#tt ul.ont li::before{content:'—';position:absolute;left:0;top:0;color:#8a7a58}
 #tt .today{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--focus);
   border-top:1px solid #c9b58a;padding-top:9px;margin:0 0 7px}
 #tt ul{margin:0 0 10px;padding:0;list-style:none}
@@ -69,6 +71,10 @@ text{user-select:none;-webkit-user-select:none}
 #tt li a{color:inherit;text-decoration:none}
 #tt li a b{color:var(--focus)}
 #tt li a:hover b,#tt li a:focus-visible b{text-decoration:underline}
+#tt li a.tpc .tprev{display:none}
+#tt li a.tpc.armed .tprev{display:inline}
+#tt li a.tpc.armed b{text-decoration:underline}
+#tt .thint{color:var(--focus);font-style:italic}
 #tt .figs{font-size:12.5px;font-style:italic;color:#7d6e50;border-top:1px solid #c9b58a;padding-top:7px}
 @media (max-width:620px){
   #tt{left:10px !important;right:10px;bottom:10px !important;top:auto !important;max-width:none;pointer-events:auto}
@@ -780,14 +786,31 @@ function findWater(wx,wy){
 }
 function esc(s){return String(s).replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]))}
 function renderCard(tb,kick){
+  const claims=String(tb.ontology).replace(/\.\s+/g,'.|').replace(/;\s+/g,'|').split('|')
+    .map(s=>s.trim().replace(/\.$/,'')).filter(Boolean);
   const topics=(tb.discussing&&tb.discussing.length)
-    ?`<p class="today">Trending · tap a topic to see it on X</p>
-   <ul>${tb.discussing.map(x=>`<li><a href="https://x.com/search?q=${encodeURIComponent(x.x||x.t)}&src=typed_query&f=live" target="_blank" rel="noopener"><b>${esc(x.t)} ↗</b></a> — ${esc(x.d)}</li>`).join('')}</ul>`:'';
+    ?`<p class="today">Trending · tap a topic for the story, again for X</p>
+   <ul>${tb.discussing.slice(0,5).map(x=>`<li><a class="tpc" href="https://x.com/search?q=${encodeURIComponent(x.x||x.t)}&src=typed_query&f=live" target="_blank" rel="noopener"><b>${esc(x.t)}</b><span class="tprev"> — ${esc(x.d)} <span class="thint">tap again to open on X ↗</span></span></a></li>`).join('')}</ul>`:'';
   tt.innerHTML=`<p class="kick">${esc(kick)}</p>
    <h3>${esc(tb.country)}</h3>
-   <p class="ont">${esc(tb.ontology)}</p>
+   <ul class="ont">${claims.map(cl=>`<li>${esc(cl)}</li>`).join('')}</ul>
    ${topics}
    <p class="figs">Key accounts: ${esc(tb.figures.join(', '))}</p>`;
+}
+/* first tap on a topic previews its story; the second tap goes to X */
+tt.addEventListener('click',e=>{
+  const a=e.target.closest('a.tpc');
+  if(!a)return;
+  if(!a.classList.contains('armed')){
+    e.preventDefault();
+    tt.querySelectorAll('a.tpc.armed').forEach(x=>x.classList.remove('armed'));
+    a.classList.add('armed');
+    placeCardKeep();
+  }
+});
+function placeCardKeep(){
+  const r=tt.getBoundingClientRect();
+  if(r.bottom>vh-8)tt.style.top=Math.max(8,vh-8-r.height)+'px';
 }
 let hideT=null;
 function clearSel(){
@@ -863,7 +886,7 @@ const PMETA={
  wsb:{e:'🦍',s:'the trade'},
  degrowth:{e:'🌱',s:'the living earth'},
  longevity:{e:'🧬',s:'escape velocity'},
- nondual:{e:'🧘',s:'awareness itself'},
+ nondual:{e:'🍄',s:'the medicine'},
  eth:{e:'💎',s:'credible neutrality'},
  defi:{e:'🏦',s:'open rails'},
  degens:{e:'🎰',s:'the pump'},
@@ -881,7 +904,7 @@ const PMETA={
  nrx:{e:'👑',s:'order'},
  netstate:{e:'🏙️',s:'exit'},
  dacc:{e:'🛡️',s:'distributed power'},
- liminal:{e:'🧭',s:'the whole'},
+ liminal:{e:'🧘',s:'the whole'},
  forecasters:{e:'🎲',s:'calibration'},
  georgists:{e:'🏞️',s:'the land'},
  metamodern:{e:'🌗',s:'development'},
