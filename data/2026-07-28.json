@@ -772,6 +772,32 @@
      "x": "$ARB",
      "src": "https://www.coingecko.com/en/coins/arbitrum"
     }
+   ],
+   "topics": [
+    {
+     "t": "Robinhood Chain mania",
+     "d": "Robinhood's new Arbitrum-built chain topped Base in daily users on July 23 — driven by memecoins, not tokenized stocks — after racking up 100M transactions in weeks.",
+     "x": "robinhood chain",
+     "src": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcE8wSWpIclhsS1UtX2c4S21tMFptYjJUbE9hY1I2VGlUeG5INlZIbXRHdjBac0VBTG9zVkx3SWlJZFdEaDYtZHMyWUxRUUFiQ2FmT0owLTVnQXQwUno0dnFWVmI1bkI3MFhMRUJRUzh2eG1DQ2tCUDRRQ0NCUnprUmo2NUs1YU1nQVVJb3p6NU5oenR1Y1hkNnFPRGktNC1qUDBSVmtDeUd2TzNYN1RpNVZMa0trZlJqS1VkeC0zMjk"
+    },
+    {
+     "t": "Arbitrum money fight",
+     "d": "The Arbitrum Foundation asked for a $43M budget for 2027 on July 22, the same day a 'Fast Feed' proposal would route 97% of revenue to the DAO treasury.",
+     "x": "arbitrum dao budget",
+     "src": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNc05pSVVnMHhmVVVWbzdYY0hjSnNFZkVTNktWNmdNczZ0VFQ3a29WYWd5NlpYSHJ3VzFJbEo0V2w1MTR6a2c5MV9lWWdYQ0VRM0xyajYyNXR0SU04Y2lPanN3UUdWNzlmeHB3dVlTNXQ3MTlSeGRLNG96VnBqbldMcndwVTZUSHdFNk0zM0hsWGExNW80a2ItTzZ5eFRPR3lwclc5ZUVtWDBwcEtOYzM1YVRpOXQ"
+    },
+    {
+     "t": "Mantle flees to CCIP",
+     "d": "Mantle moved $2.5B of MNT to Chainlink's CCIP, part of a $7B migration triggered by a $650M wave of bridge hacks, CryptoSlate reported July 26.",
+     "x": "mantle ccip",
+     "src": "https://cryptoslate.com/a-650-million-wave-of-bridge-hacks-just-triggered-a-7-billion-mass-migration-to-chainlink/"
+    },
+    {
+     "t": "L2 scoreboard",
+     "d": "Ethereum L2s now hold $37.4B in TVL led by Base, Arbitrum and Optimism (July 23), while L2 transaction fees have fallen 95%.",
+     "x": "L2 TVL",
+     "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRmxBRnhpLTF4bEl0MXF0SGZGOEpPQ0hsd0s4bEFWN05GX3Fua2pYWktUb2M1YlNxTElsc1lCby1sZ1JXSjRQMEZIdnU1bU1uY0FqZjMxTEg0amE1NUtmM1VfZFRqZ3ZWd2EteHQ1ZFItczBDdXBxZDFTbUZ0OGhEWmUwdHVjY0R4QXpqeFBBWTdGTGsyMjkwa0NQOUdkdw"
+    }
    ]
   },
   "linkmarines": {
@@ -790,6 +816,32 @@
      "d": "Chainlink — rank #18, $6.2B market cap, $8.34.",
      "x": "$LINK",
      "src": "https://www.coingecko.com/en/coins/chainlink"
+    }
+   ],
+   "topics": [
+    {
+     "t": "$7B CCIP migration",
+     "d": "After roughly $650M in bridge hacks, over $7B in tokens from Mantle, KelpDAO, Lombard, Kraken and others migrated to Chainlink CCIP in Q2, CryptoSlate reported July 26.",
+     "x": "chainlink ccip migration",
+     "src": "https://cryptoslate.com/a-650-million-wave-of-bridge-hacks-just-triggered-a-7-billion-mass-migration-to-chainlink/"
+    },
+    {
+     "t": "Sergey joins CFTC",
+     "d": "Chainlink co-founder Sergey Nazarov was appointed to the CFTC's Innovation Advisory Committee on July 22.",
+     "x": "nazarov cftc",
+     "src": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcEZ2di13UVdOS1VweVRjRm41Z1FYTWxsZVBuY1JWTERRUnFDcmZUamhQRG9zbERiaXF3UzhFaHNVcF9la1oxcDBzckc5SkRGRV9JSFBhdERjTkVFa2FKS25pT1NnRVpsXzRuZHJVcUlkeXlJa1RjckNmUjBrRUo2aXlaQ0RzVXBpcXQ5X1FYLXMzeHJUVEQ4THhnSkdaM3UtUHlqR2g5aUVsNjdBNWI2NU5fczFES0Ry?oc=5"
+    },
+    {
+     "t": "Whales load LINK",
+     "d": "Whales accumulated over 14M LINK with the price holding near $8.54, including a single $13.2M buy of 1.58M LINK reported July 27.",
+     "x": "LINK whale",
+     "src": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPTkFza3VmTFM3cU00RFNzelhKZzRFUzZUYkZrU3lkLXNpNTAzSDNDOS1fU05LQU1hS0tJNUJuaDlHVnd3b1lBX0oyUEVQeGxuQTBGa1lRNWxnV1R0Y0l0c1czY3FhaENPMEhGQUtPUmdaWEJKQnNrOVcxYUtiWGktX0E0Vno?oc=5"
+    },
+    {
+     "t": "Coinbase taps Chainlink",
+     "d": "COIN stock rose on July 25 after Coinbase deepened its DeFi strategy with a Chainlink integration.",
+     "x": "coinbase chainlink",
+     "src": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQc3V2RnJEd0d4WC0yVjFwb2pFTlZpWHVBLU9rM3hfazJYVlU4N2F4Ny1iVUxfckFOWms5TzhrQjBRN3RMZWtfc3N0TWstVjlFcDBObWtXTXl2dkFFaHJ5MnhmdVFlMWJZZU1VZWtrSGU4SG9fVnhmSUpKMlFrWnU0cVNFTGFNNUpyLTlDM0p1U2E1c0N5ai1qNjI2bE1UZnluQWJ4UWV4eUlpSEZ1VS0xVTFTT3k3ZnYtdVFhWE5wT19"
     }
    ]
   },
@@ -978,6 +1030,32 @@
      "x": "$ENA",
      "src": "https://www.coingecko.com/en/coins/ethena"
     }
+   ],
+   "topics": [
+    {
+     "t": "KelpDAO $292M hack",
+     "d": "Restaking protocol KelpDAO was exploited for $292M, and even after Arbitrum froze $71.2M in ETH the hacker moved another $175M by July 25.",
+     "x": "kelpdao exploit",
+     "src": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWWxvR19BNV90YmhMeVFUbDJpb0pUMFp3T2pVVmF3T0dqM1JseTVzRnl5N25sdkdfNzZaUzlETjM4ZFdGam9DYnNHNFNRYzZuWXJLeS1WRjYyMVk0U3NjQVFjZDZuaUd6TFVhbVRnNDE1bmdWZFF6X2Q2djg2YUlyNHZXR1lGUGJ0ai1QYkU2bThaOWo2OGRKUmFwbDBXYloyWGp1ODJtakxGWllmdlB0dkpHR0k"
+    },
+    {
+     "t": "Bridge hack day",
+     "d": "Three crypto bridge hacks in one day on July 23 erased $35.6M — led by AFX's $24M — pushing July's total hack losses toward $100M.",
+     "x": "bridge hack",
+     "src": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPY2Q1QXFUdjVQOGcyVmdSY2NoQ3daVWZianlqNHd0RjIzdDRPSHVKb1loaVV2Q1FoOV9uV1o3aWNFdHoyOVhjTlRka1FCYXBlTUgxM0Q1R0QxRkhoZ1RKb0x1MUdockR1Z3hKX3c2ZUl1dWUzWnJzX3MzZmFLVVFfcjgtOXdDamYxT09Ec0lPX3oydEdfN1o1Q3dXZklmU25wX2JtUmx5V0pBWG5OWjdfQlRTcnNjbEFISHc"
+    },
+    {
+     "t": "Record hack year",
+     "d": "WEMIX and Garden were both hacked around July 27, adding to what trackers are calling a record year for crypto breaches in 2026.",
+     "x": "wemix hack",
+     "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4xa1A5enBrNmJlRTFNM3Y3QUtSZGdCS09fbHhiSXpmNU1qY2tRQ3M2c1N2cC1mczRTeEhVbWNVcWRJU3ZyME5XMGhyTWoyTXVqLWlrdXJmaC1DcWZOcUIxYU8tTdIBY0FVX3lxTE4xa1A5enBrNmJlRTFNM3Y3QUtSZGdCS09fbHhiSXpmNU1qY2tRQ3M2c1N2cC1mczRTeEhVbWNVcWRJU3ZyME5XMGhyTWoyTXVqLWlrdXJmaC1DcWZ"
+    },
+    {
+     "t": "Morpho hits $3B",
+     "d": "Lending protocol Morpho surpassed $3B in deposits on July 26, a rare growth story in an exploit-heavy DeFi week.",
+     "x": "morpho deposits",
+     "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CbkZkdjZzMGFGSnJnZWlWTkxXUVUxTXNQRk1lVkx1Nk5sbnVRdEtja2VlY001QlNXQUtGamNWQ3pKTjMxRmJLUHJrQnpNNkwxRWpMOGRhQVd0eUk4UlVPaTExT2NMOXZoT0N0ZVVfaUJCUWVnMGNqb1lQUQ"
+    }
    ]
   },
   "memecoins": {
@@ -1027,6 +1105,26 @@
      "x": "$币安人生",
      "src": "https://www.coingecko.com/en/coins/bianrensheng"
     }
+   ],
+   "topics": [
+    {
+     "t": "Pump.fun rips",
+     "d": "PUMP surged 15% on July 27 as BOOST-mode buybacks absorbed vesting supply, with pump.fun printing over $1.17M revenue in 24 hours after overtaking TRON and Hyperliquid in daily revenue on July 23.",
+     "x": "pump.fun BOOST",
+     "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51YnBub0JqekpLNGk5Mk1aRDRKQ1lTa3BUSzU0VXNpMWZsSlRTQVVTSFZpaXV4T2g4Ui1hWXlORVlwZXlFQkpNVy1YcG1IZllzbFVxTGh6UVZVbV8xdW90WTJGZ2FhN3phNFJtRTR3ZU4?oc=5"
+    },
+    {
+     "t": "Musk DOGE dip",
+     "d": "Dogecoin fell 5% on July 24 after Elon Musk said he 'got carried away' with politics, leaving DOGE grinding near its yearly low.",
+     "x": "dogecoin musk",
+     "src": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPejRUcm9kdlZEXzZEc20yUnF3U3RPZnhvNXBweE43NjlsbTNDemRWRlhQWG5jSzJJVmdpV0oxdTRPRk5uaVdpWmxhRTEtV09BdG9yb0hsSlNiY1dmLS1PN2MwcHhxdkxKdVlYQjBMay1DdkJVVzJaaGFiY1plNWY1MnBNQ0VJN1VZOXRGY29FYmk1YXhBYkE?oc=5"
+    },
+    {
+     "t": "Tenev hack token",
+     "d": "Robinhood CEO Vlad Tenev's X account was hacked on July 23 to shill a fake VLAD memecoin, and the exploiter made about $1.2M before the posts came down.",
+     "x": "Tenev hacked memecoin",
+     "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBBS2VJaGlhLW1UMVI0TTkxOVF1aGt1RmY1NGdGRVN4MkZCYVkxb1VzUTFSRllacDJHa1dBYXhsWE9Pem44TjhWaU1tS3hpUVlVN0xvejdzTmJ0cHROa0U0aGRTbTYwdV9MMkpPajFEUms?oc=5"
+    }
    ]
   },
   "degenperps": {
@@ -1051,6 +1149,32 @@
      "d": "Lighter — rank #92, $571M market cap, $2.28.",
      "x": "$LIT",
      "src": "https://www.coingecko.com/en/coins/lighter"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Perp volume slump",
+     "d": "Perp DEX volumes hit a nine-month low in July (reported July 25), and CryptoRank noted on July 27 that only one perp DEX grew volume this month — and it wasn't Hyperliquid.",
+     "x": "perp dex volume",
+     "src": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZnpaVWd5OExVRWJtUkpldzE5VkpTNnppUi00XzBGaUdjdklvTnI3YkV5SU1pUEt5Z1hCZ1pKYnRfR2VPbUJGZmpkMzgwRGgwUms4X09RZ1RaZjhiNy1FbWxCSGM5VENPQzVWcFlVRUhPYW5FM3VNQU9WUjNnZjhiVWJDZm5aQUVDMVRpV0RuU01NdGM5aUJaUA"
+    },
+    {
+     "t": "AFX bridge drained",
+     "d": "Arbitrum perp DEX AFX Trade lost $24.15M in USDC on July 23 after its bridge keys were compromised, then offered the hacker 30% to return the rest.",
+     "x": "AFX Trade hack",
+     "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1VV2R5MWhhSGpLQXQxRGl2RG1KWmlDaENsUWdKQXNmbnBtT3c4c290TlRWYU9SVFdEazVKbTY0Mlo2Q2dKVHg2eXVfdmk0YkFDVnYzWGUyeGxLUGgwTlpVb2VPc2ZzUWhUWkFCMldQbjFMZmE4Tk92QVNPdw"
+    },
+    {
+     "t": "Tom Lee backs Lighter",
+     "d": "Tom Lee hailed Lighter as a key Ethereum L2 exchange on July 27, citing $43B of trading volume in 30 days, as Lighter completed a 16M LIT buyback and kicked off quarterly burns.",
+     "x": "Tom Lee Lighter",
+     "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRjJZUExjQmV6R3BZeDRrSy04bTlwUnhXZXhfVGFMWUV0VHk1cnFNRW5yZnRuQVAxcFlpLXpTMzZCLTBUSl9LZkNoVmFRZGZqVGtrWnFxMWVaT0ltZ21teXo4SmJzbkw4WGpKeFRMTWlFei1UT0hTeWZ6QkVycTRTS0lRVG5sUjdZRC1nMUVmUm1VVUVWdEhDeFZsakNQb1k"
+    },
+    {
+     "t": "dYdX goes permissionless",
+     "d": "dYdX shipped Chain v5.1 on July 23, opening the door to permissionless market listings, while its community's new Arcus DEX brought tokenized stock trading to Robinhood Chain.",
+     "x": "dydx permissionless listings",
+     "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5VTnZHdHVYVjBrZXk4WmtkQkV3NkdEQ1hQNmJnd3RFY2p2ZXRMWHFBMUlRQVg3RmxTVktoMDVwSG1rZ3pUUDF0Z0hoSnJiU1BIa05NMmJqLTBYRWlwb2pCVFR3UG95TllINGMtZkctd0JvNlYydXJ6NNIBfkFVX3lxTE5TRUdVTVY3UGlETmxMZjk5VDBqNnVDV00zbUtEa0VncXkxVVRXdDlhZTU5WVVSTG9uTmVWSFdBMmVtdVBVTE8"
     }
    ]
   },
@@ -1108,6 +1232,32 @@
      "d": "Hyperliquid — rank #10, $12.3B market cap, $55.24.",
      "x": "$HYPE",
      "src": "https://www.coingecko.com/en/coins/hyperliquid"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Fund unstake exodus",
+     "d": "HYPE slid below $60 the week of July 22 after Multicoin unstaked $120M and institutions pulled $291M, with funds queuing roughly $150M more of locked tokens for withdrawal.",
+     "x": "HYPE unstake",
+     "src": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQS2YyQURUQk5YUFNCYnktU1dSMG9RbFNTQTA2b0NYUzhJbUZrMzEtSElVeXJmZHhvYWZNcXJ3Z2UySi1mck0zV0RrcHg2NWY1U1h5R3pjUmo0X1VqdzJDQnc3S1h3N3NnQUZ3b2Q3T3BqSTJxN1NhTlgyUlVNbHptanEtRG9NMGp4TWpwYUg1dHZjdzBla3FNRFJHRmtHamtjTDhBZFcwbw"
+    },
+    {
+     "t": "SK Hynix flash crash",
+     "d": "Hyperliquid's SK Hynix stock futures flash-crashed to $927 on July 28 and set off a liquidation cascade, days after the exchange promised automated refunds for an API outage.",
+     "x": "hyperliquid flash crash",
+     "src": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRjlxWFBBUWJycFd3RFVRaktEMkk5YWhQWjAxRXpkOC1CN2wwX1I1T1NHNHJxMmo5cFBPQU1veVVJS3lGZnlaNnBJanpzNWE4VWFrMUhPQ1dfVzVBZ2x6SnZDTURYQU9uNnJyUk9sdktkSk9nUjFLLV81a3kxNXlYMk1DMjI"
+    },
+    {
+     "t": "DC policy center",
+     "d": "Hyperliquid opened a $29M DeFi Policy Center in Washington DC on July 23 and, with Multicoin, pushed the CFTC toward a single prediction-market rulebook on July 28.",
+     "x": "hyperliquid policy center",
+     "src": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOLURsWHBxZnFRRzV5UWJSSmJxajg5SER3ZzIzcWJLVHQ5RlQ1QkNLb25fcmRCYThHRjhDZUhQUENuTXlxZTJUdG5aT0haUWwwMmxDV1BibVRaQU91S0V5WXFRZmpCbHdQVEZrbERabnZHQ0JoQUY1ZzZoV0FBdlM4TWdPN0lJMV9RWS1IazJPYXlzVVJ5N19lMVRldVAtYWcyWDhKaFFkMk0"
+    },
+    {
+     "t": "HYPE ETF race",
+     "d": "Bitwise moved closer to a Hyperliquid ETF launch with a second SEC filing on July 27, while Grayscale dropped Coinbase for Anchorage as custodian of its own HYPE ETF on July 22.",
+     "x": "hyperliquid ETF",
+     "src": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOc0kxM0l5WlNiWUJSbkVRNXZFazlsY1NtLVA0NllidHpyYnRpVk1Pc09MX05EVEowdnJZajNDVjlfWjk5LWxnS1RwQm16Mld5a1gwUUNCRTdGdGdwZWp2bWNjdFc5cExIYU9UcU51ejhZa0p6dXVkT3BsUE5TUy1JRGdpM2Z0VTQ2U2lhd1RJbFdGOUZiQm5hUW9iN1J0UU83R1pJ"
     }
    ]
   },
@@ -1291,13 +1441,13 @@
  },
  "paper": {
   "hooks": [
-   "🟠 bitcoin is $1.29T of the top 100's $2.22T — 58% of the mapped economy",
-   "💵 the stablecoin economy holds $296.0B across 19 coins in the top 100",
-   "🏦 tokenized tradfi — treasuries, gold, credit — is $59.0B and 19 coins strong",
-   "🎰 hyperliquid leads the perp casinos at $12.3B",
-   "🐸 the trenches: 6 memecoins made the top 100, $17.8B together"
+   "🟠 bitcoin sank to $63,000 on july 28 as an asian chip-stock crash spilled into wall street",
+   "💧 HYPE slid below $60 after multicoin unstaked $120M and institutions pulled $291M",
+   "💵 circle bought nearly 1,000 blockchain patents from IBM — america's biggest blockchain patent holder",
+   "☀️ morgan stanley launched the market's cheapest solana ETF, with staking rewards",
+   "📡 storj, a decentralized-storage pioneer, filed for chapter 11"
   ],
-  "head": "the top 100, drawn as a world",
-  "deck": "Every coin in CoinGecko's top 100 placed as a city in its tribe's territory — $2.22T of crypto, from bitcoin's $1.29T continent to the memecoin trenches."
+  "head": "the map trades red into fed week",
+  "deck": "Bitcoin at $63K after the chip-stock spill, HYPE under $60 on fund exits, and every island watching Wednesday's Fed decision — while Circle quietly bought a thousand IBM patents."
  }
 }
