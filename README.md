@@ -1,0 +1,38 @@
+# Atlas of Frontier Ontologies
+
+An interactive, earth-style map of the tribes of X, laid out on two axes — west = accelerate, east = restrain, north = work within institutions, south = exit and build parallel systems. Three tiers: 7 mainstream continents, 19 frontier territories, 14 bespoke villages at deep zoom. Each territory's cities are the topics that tribe is discussing that day. Browse day by day with the ‹ › navigator (or arrow keys); every day is deep-linkable as `#YYYY-MM-DD`.
+
+## Architecture
+
+- `index.html` — the whole site, static (fonts baked in). Fetches `data/index.json` for the list of days, then `data/<date>.json` per day. Built from `site.template.html` by `scripts/build_site.py` — only rebuild when the template changes.
+- `data/YYYY-MM-DD.json` — one snapshot per day. Static per tribe: `country` (map label), `tldr`, `ontology`, `figures`. Daily: `discussing` — topics `{t: label, d: sentence, x: X search query}`; the first topic is the capital (star).
+- `scripts/canon.json` — the fixed tribe canon (names, TLDRs, ontologies). Tribe ids are geometry keys — never change them.
+- `scripts/research.py` — the nightly job. Five Claude calls (one per tribe cluster) with server-side web search, merged with the canon, validated, written to `data/`. Fails safe: a bad run writes nothing and the site keeps serving yesterday.
+- `.github/workflows/nightly.yml` — runs research at 06:10 UTC (≈ midnight Denver) and commits the new day. Vercel redeploys on push.
+
+## One-time setup
+
+1. **GitHub**: `gh auth login`, then from this directory:
+   ```sh
+   gh repo create daily-ontological-map --private --source . --push
+   ```
+2. **API key**: add the Anthropic key as a repo secret:
+   ```sh
+   gh secret set ANTHROPIC_API_KEY
+   ```
+3. **Vercel**: at vercel.com → Add New Project → import `daily-ontological-map`. No build settings needed (static site, output = repo root). Every push (including the nightly bot commit) deploys automatically.
+4. Test the pipeline without waiting for midnight: Actions tab → "Nightly atlas survey" → Run workflow.
+
+## Local development
+
+```sh
+python3 -m http.server 8741   # then open http://localhost:8741
+python3 scripts/build_site.py # rebuild index.html after editing site.template.html
+ANTHROPIC_API_KEY=... python3 scripts/research.py  # run a survey locally
+```
+
+Model for the nightly research defaults to `claude-opus-5`; override with `ATLAS_MODEL`.
+
+## Legacy
+
+The map also exists as a Claude artifact (https://claude.ai/code/artifact/763990df-4ba1-4dc2-b1e3-2116a6ebda60) updated by a claude.ai routine ("Daily Ontological Atlas survey" at claude.ai/code/routines). Once the Vercel site is live, that routine can be disabled — the GitHub pipeline replaces it. `index.template.html` is the single-file artifact template (fonts + data inlined), kept for that pipeline.

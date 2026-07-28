@@ -1,0 +1,660 @@
+<!-- Atlas of Frontier Ontologies -->
+<title>Atlas of Frontier Ontologies</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%BA%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<style>
+/* Hallmark · route: custom (bespoke) · structure: full-viewport interactive atlas · idea: "the discourse as a physical earth"
+ * paper: oklch(94% 0.025 90) · accent: oklch(52% 0.09 40) · display: EB Garamond · body: EB Garamond
+ * axes: light / roman-serif / chromatic-terracotta · gates: all-pass · studied: no
+ * pre-emit critique: P5 H4 E4 S5 R4 V5
+ */
+@font-face{font-family:'EB Garamond';font-style:normal;font-weight:500;src:url(data:font/woff2;base64,__FONT_N500__) format('woff2')}
+@font-face{font-family:'EB Garamond';font-style:normal;font-weight:600;src:url(data:font/woff2;base64,__FONT_N600__) format('woff2')}
+@font-face{font-family:'EB Garamond';font-style:italic;font-weight:500;src:url(data:font/woff2;base64,__FONT_I500__) format('woff2')}
+:root{
+  --ocean:#93b7c0; --ocean-deep:#7e9fae;
+  --ink:#3e3527; --ink-soft:#5a4f3c;
+  --paper:#f3e9d2; --paper-2:#ece0c4;
+  --border:#96604a; --focus:#8a4a2e;
+  --serif:'EB Garamond',Palatino,'Palatino Linotype',Georgia,serif;
+}
+html,body{height:100%}
+body{margin:0;overflow:hidden;background:var(--ocean);font-family:var(--serif);color:var(--ink);
+  -webkit-font-smoothing:antialiased}
+#stage{position:fixed;inset:0;cursor:grab}
+#stage.dragging{cursor:grabbing}
+#map{width:100%;height:100%;display:block;touch-action:none}
+text{user-select:none;-webkit-user-select:none}
+
+/* ---- label voices ---- */
+.lbl-continent{fill:var(--ink);opacity:.62;letter-spacing:.42em;font-weight:600;paint-order:stroke;stroke:#ddd2ae80;stroke-width:5px;stroke-linejoin:round}
+.lbl-ocean{fill:#48657390;font-style:italic;letter-spacing:.28em;font-weight:500}
+.lbl-country text{fill:var(--ink);font-weight:600;letter-spacing:.05em;
+  paint-order:stroke;stroke:#f0e6cc;stroke-width:3px;stroke-linejoin:round}
+.lbl-city text{fill:var(--ink-soft);font-weight:500;
+  paint-order:stroke;stroke:#eee3c9;stroke-width:2.6px;stroke-linejoin:round}
+.tldr{fill:#5a4f3c;font-style:italic;opacity:0;transition:opacity .35s ease-out}
+#map.mid .tldr{opacity:.9}
+.deco{transition:opacity .45s ease-out}
+#map.deep .deco{opacity:.18}
+.tier{transition:opacity .35s ease-out}
+.tier.hidden{opacity:0 !important;pointer-events:none}
+
+/* ---- hover ---- */
+.hit{cursor:pointer}
+.hl{fill:#fffdf2;opacity:0;transition:opacity .18s ease-out;pointer-events:none}
+.hl.on{opacity:.16}
+.hl-stroke{fill:none;stroke:var(--focus);stroke-width:1.6;opacity:0;transition:opacity .18s ease-out;
+  pointer-events:none;vector-effect:non-scaling-stroke}
+.hl-stroke.on{opacity:.85}
+
+/* ---- tooltip ---- */
+#tt{position:fixed;z-index:40;max-width:342px;pointer-events:none;opacity:0;
+  transform:translateY(4px);transition:opacity .16s ease-out,transform .16s ease-out;
+  background:linear-gradient(160deg,#f6edd8,#efe3c6);color:var(--ink);
+  border:1px solid #b7a173;box-shadow:0 0 0 3px #f6edd8,0 0 0 4px #b7a17366,0 14px 34px -12px #2c241755;
+  padding:15px 17px 13px}
+#tt.on{opacity:1;transform:translateY(0);pointer-events:auto}
+#tt .kick{font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:#8a7a58;margin:0 0 6px}
+#tt h3{margin:0 0 2px;font-size:23px;font-weight:600;letter-spacing:.04em;line-height:1.05;text-wrap:balance}
+#tt .tribe{font-style:italic;font-size:14.5px;color:#6d5f43;margin:0 0 9px}
+#tt .ont{font-size:15px;line-height:1.42;margin:0 0 11px}
+#tt .today{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--focus);
+  border-top:1px solid #c9b58a;padding-top:9px;margin:0 0 7px}
+#tt ul{margin:0 0 10px;padding:0;list-style:none}
+#tt li{font-size:14px;line-height:1.38;margin:0 0 6px;padding-left:14px;position:relative}
+#tt li::before{content:'•';position:absolute;left:1px;top:0;font-size:14px;color:var(--focus)}
+#tt li b{font-weight:600}
+#tt li a{color:inherit;text-decoration:none}
+#tt li a b{color:var(--focus)}
+#tt li a:hover b,#tt li a:focus-visible b{text-decoration:underline}
+#tt .figs{font-size:12.5px;font-style:italic;color:#7d6e50;border-top:1px solid #c9b58a;padding-top:7px}
+@media (max-width:620px){
+  #tt{left:10px !important;right:10px;bottom:10px !important;top:auto !important;max-width:none;pointer-events:auto}
+}
+
+/* ---- cartouche ---- */
+#cart{position:fixed;left:18px;bottom:18px;z-index:30;background:#f3e9d2ee;color:var(--ink);
+  border:1px solid #b7a173;box-shadow:0 0 0 3px #f3e9d2ee,0 0 0 4px #b7a17355;
+  padding:10px 14px 9px;text-align:center;pointer-events:none}
+#cart .t1{font-size:12.5px;font-weight:600;letter-spacing:.3em;text-transform:uppercase}
+#cart .t2{font-size:11.5px;font-style:italic;color:#6d5f43;margin-top:3px}
+#cart .t3{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#8a7a58;margin-top:6px;
+  border-top:1px solid #c9b58a;padding-top:5px}
+@media (max-width:620px){#cart{left:10px;bottom:10px;right:74px;padding:7px 10px 6px;text-align:left}#cart .t2{display:none}#cart .t1{font-size:10.5px;letter-spacing:.22em}#cart .t3{font-size:9px;letter-spacing:.1em}}
+
+/* ---- controls ---- */
+#ctrl{position:fixed;right:16px;bottom:18px;z-index:30;display:flex;flex-direction:column;gap:7px}
+#ctrl button{width:38px;height:38px;border:1px solid #b7a173;background:#f3e9d2;color:var(--ink);
+  font-family:var(--serif);font-size:21px;font-weight:600;line-height:1;cursor:pointer;
+  box-shadow:0 2px 6px -2px #2c241766;transition:transform .12s ease-out,background .12s ease-out;padding:0}
+#ctrl button:hover{background:#f9f1de}
+#ctrl button:active{transform:translateY(1px)}
+#ctrl button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+#ctrl button svg{display:block;margin:auto}
+
+/* ---- axis compass: the map's navigation logic, always visible ---- */
+.axis{position:fixed;z-index:24;pointer-events:none;color:#3e3527;opacity:.6;
+  font-size:11px;letter-spacing:.32em;text-transform:uppercase;font-weight:600;
+  text-shadow:0 0 3px #cfe0de,0 0 6px #cfe0de,0 0 10px #cfe0de}
+#ax-n{top:10px;left:50%;transform:translateX(-50%)}
+#ax-s{bottom:12px;left:50%;transform:translateX(-50%)}
+#ax-w{left:14px;top:50%;transform:translateY(-50%) rotate(180deg);writing-mode:vertical-rl}
+#ax-e{right:14px;top:50%;transform:translateY(-50%);writing-mode:vertical-rl}
+@media (max-width:620px){.axis{font-size:9px;letter-spacing:.22em}}
+
+/* ---- overlays ---- */
+#grain{position:fixed;inset:0;z-index:20;pointer-events:none;opacity:.35;mix-blend-mode:multiply}
+#vig{position:fixed;inset:0;z-index:21;pointer-events:none;
+  background:radial-gradient(ellipse 130% 120% at 50% 42%,transparent 62%,#4a3d2a2e 100%)}
+@media (prefers-reduced-motion:reduce){.pulse{animation:none !important}}
+@keyframes pulse{0%,100%{opacity:.55}50%{opacity:.15}}
+.pulse{animation:pulse 2.6s ease-in-out infinite}
+</style>
+
+<div id="stage">
+  <svg id="map" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+
+<svg id="grain" width="100%" height="100%"><filter id="gf"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="7" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0.45 0 0 0 0 0.40 0 0 0 0 0.30 0 0 0 0.5 0"/><feComponentTransfer><feFuncA type="linear" slope="0.16"/></feComponentTransfer></filter><rect width="100%" height="100%" filter="url(#gf)"/></svg>
+<div id="vig"></div>
+
+<div class="axis" id="ax-n">&#8593; work within institutions</div>
+<div class="axis" id="ax-s">&#8595; exit &middot; build parallel systems</div>
+<div class="axis" id="ax-w">accelerate</div>
+<div class="axis" id="ax-e">restrain</div>
+
+<div id="cart" role="note">
+  <div class="t1">Atlas of Frontier Ontologies</div>
+  <div class="t2">what each tribe of X is talking about today</div>
+  <div class="t3" id="cart-date"></div>
+</div>
+
+<div id="ctrl">
+  <button id="z-in" aria-label="Zoom in">+</button>
+  <button id="z-out" aria-label="Zoom out">−</button>
+  <button id="z-fit" aria-label="Reset view" style="font-size:15px">⌂</button>
+</div>
+
+<div id="tt" role="tooltip"></div>
+
+<script>
+/*__DATA_START__*/
+window.ATLAS_DATA = __ATLAS_DATA__;
+/*__DATA_END__*/
+
+(() => {
+'use strict';
+const X0=-850,Y0=-600,X1=3320,Y1=2200,MARGIN=120;
+const D = window.ATLAS_DATA;
+document.getElementById('cart-date').textContent = 'updated ' + D.dateLabel + (matchMedia('(pointer:coarse)').matches ? ' · drag · pinch · tap a territory' : ' · drag · scroll · hover a territory');
+
+/* ---------- seeded rng + blob geometry ---------- */
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function blobPts(cx,cy,rx,ry,rot,seed,rug,N){
+  N=N||150;const rng=mulberry32(seed);
+  const H1=[],H2=[];for(let k=0;k<8;k++){H1.push(rng()*Math.PI*2);H2.push(rng()*Math.PI*2)}
+  const cosR=Math.cos(rot),sinR=Math.sin(rot),pts=[];
+  for(let i=0;i<N;i++){
+    const th=i/N*Math.PI*2;let m=1;
+    for(let k=2;k<=6;k++)m+=(rug/k)*Math.sin(k*th+H1[k]);
+    m+=(rug/5)*Math.sin(11*th+H2[0])+(rug/8)*Math.sin(17*th+H2[1]);
+    m=Math.max(.42,m);
+    const x=rx*m*Math.cos(th),y=ry*m*Math.sin(th);
+    pts.push([cx+x*cosR-y*sinR,cy+x*sinR+y*cosR]);
+  }
+  return pts;
+}
+function pathFrom(pts,close){let d='M'+pts[0][0].toFixed(1)+' '+pts[0][1].toFixed(1);for(let i=1;i<pts.length;i++)d+='L'+pts[i][0].toFixed(1)+' '+pts[i][1].toFixed(1);return close?d+'Z':d}
+function wobble(a,b,seed,amp,segs){
+  segs=segs||13;const rng=mulberry32(seed),out=[];
+  const dx=b[0]-a[0],dy=b[1]-a[1],len=Math.hypot(dx,dy)||1,nx=-dy/len,ny=dx/len;
+  for(let i=0;i<=segs;i++){const t=i/segs,e=Math.sin(Math.PI*t)*amp*(rng()*2-1);
+    out.push([a[0]+dx*t+nx*e,a[1]+dy*t+ny*e])}
+  return out;
+}
+function pip(p,poly){let inside=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){
+  const xi=poly[i][0],yi=poly[i][1],xj=poly[j][0],yj=poly[j][1];
+  if(((yi>p[1])!==(yj>p[1]))&&(p[0]<(xj-xi)*(p[1]-yi)/(yj-yi)+xi))inside=!inside}return inside}
+function centroid(poly){let x=0,y=0;for(const p of poly){x+=p[0];y+=p[1]}return[x/poly.length,y/poly.length]}
+function samplePt(poly,rng){
+  let minx=1e9,miny=1e9,maxx=-1e9,maxy=-1e9;
+  for(const p of poly){minx=Math.min(minx,p[0]);miny=Math.min(miny,p[1]);maxx=Math.max(maxx,p[0]);maxy=Math.max(maxy,p[1])}
+  for(let t=0;t<80;t++){const p=[minx+rng()*(maxx-minx),miny+rng()*(maxy-miny)];if(pip(p,poly))return p}
+  return centroid(poly);
+}
+function shrink(pts,anchor,s){return pts.map(p=>[anchor[0]+(p[0]-anchor[0])*s,anchor[1]+(p[1]-anchor[1])*s])}
+
+/* ---------- world geography ---------- */
+const CONTINENTS=[
+ {id:'accel',name:'TECH OPTIMISTS',cx:500,cy:420,rx:305,ry:232,rot:-.2,seed:11,rug:.30,
+  junction:[520,435],mountains:true,palette:{low:'#b3c892',up:'#d9c795',high:'#bc9468'},
+  label:{x:500,y:412,w:250,size:32},
+  countries:[
+   {id:'eacc',a0:-0.38,a1:1.8},
+   {id:'progress',a0:3.34,a1:5.9},
+   {id:'hardtech',a0:1.8,a1:3.34}]},
+ {id:'epist',name:'AI SAFETY & RATIONALITY',cx:2150,cy:350,rx:245,ry:205,rot:.15,seed:23,rug:.27,
+  junction:[2140,345],mountains:true,palette:{low:'#b7c795',up:'#dcc99a',high:'#b8placeholder'},
+  label:{x:2150,y:345,w:200,size:22},
+  countries:[
+   {id:'doomers',a0:2.25,a1:4.35},
+   {id:'rationalists',a0:4.35,a1:6.85},
+   {id:'ea',a0:0.57,a1:2.25}]},
+ {id:'vital',name:'HEALTH & LONGEVITY',cx:1400,cy:250,rx:215,ry:152,rot:-.1,seed:37,rug:.26,
+  junction:[1395,245],mountains:false,palette:{low:'#bfcb93',up:'#ddca97',high:'#bc9468'},
+  label:{x:1400,y:245,w:170,size:24},
+  countries:[
+   {id:'longevity',a0:1.62,a1:5.03},
+   {id:'maha',a0:-1.25,a1:1.62}]},
+ {id:'sover',name:'THE ONLINE RIGHT',cx:1600,cy:1380,rx:238,ry:108,rot:.05,seed:41,rug:.28,
+  junction:null,mountains:false,trees:true,palette:{low:'#9db183',up:'#c2bd8d',high:'#a68a62'},
+  label:{x:1600,y:1372,w:210,size:24,ls:.3},
+  countries:[{id:'nrx',a0:0,a1:6.283}]},
+ {id:'interior',name:'POST-RATIONALITY',cx:1300,cy:900,rx:182,ry:158,rot:.3,seed:53,rug:.29,
+  junction:[1295,905],mountains:true,palette:{low:'#b9c490',up:'#dbc99b',high:'#b28f66'},
+  label:{x:1300,y:901,w:160,size:22},
+  countries:[
+   {id:'tpot',a0:-2.45,a1:0.82},
+   {id:'nondual',a0:0.82,a1:3.83}]},
+ {id:'chain',name:'CRYPTO',cx:550,cy:1300,rx:322,ry:232,rot:.1,seed:67,rug:.31,
+  junction:[540,1295],mountains:true,palette:{low:'#c2be8b',up:'#dcc795',high:'#b18a5e'},
+  label:{x:550,y:1292,w:260,size:40},
+  countries:[
+   {id:'btc',a0:2.62,a1:4.42},
+   {id:'eth',a0:-0.72,a1:1.22},
+   {id:'defi',a0:1.22,a1:2.62}]},
+ {id:'regen',name:'CLIMATE & REGENERATION',cx:2450,cy:1050,rx:245,ry:192,rot:-.15,seed:79,rug:.28,
+  junction:[2445,1045],mountains:false,trees:true,palette:{low:'#a8c687',up:'#cdc48e',high:'#ab8c60'},
+  label:{x:2450,y:1045,w:200,size:22},
+  countries:[
+   {id:'regens',a0:0.0,a1:3.14},
+   {id:'degrowth',a0:3.14,a1:6.283}]},
+ {id:'exit',name:'',cx:900,cy:1750,rx:96,ry:62,rot:.35,seed:97,rug:.34,
+  junction:null,mountains:false,palette:{low:'#b8c491',up:'#d8c795',high:'#bc9468'},
+  islets:[{dx:-130,dy:52,r:26},{dx:118,dy:-38,r:20},{dx:24,dy:96,r:15}],
+  countries:[{id:'netstate',a0:0,a1:6.283}]},
+ {id:'degen',name:'',cx:-80,cy:1650,rx:84,ry:58,rot:-.25,seed:101,rug:.36,
+  junction:null,mountains:true,palette:{low:'#a8a186',up:'#bfae87',high:'#8d6b4c'},
+  islets:[{dx:126,dy:-30,r:22},{dx:-108,dy:44,r:17}],
+  countries:[{id:'degens',a0:0,a1:6.283}]},
+ {id:'indie',name:'',cx:450,cy:850,rx:74,ry:47,rot:.15,seed:113,rug:.33,
+  junction:null,mountains:false,palette:{low:'#b6c893',up:'#d6c493',high:'#bc9468'},
+  islets:[{dx:104,dy:30,r:18},{dx:-96,dy:-26,r:14}],
+  countries:[{id:'indie',a0:0,a1:6.283}]},
+ /* mainstream tier: big settled continents at the edges of the world */
+ {id:'m-maga',name:'',kicker:'MAINSTREAM',big:true,cx:1550,cy:1880,rx:430,ry:270,rot:.06,seed:131,rug:.2,
+  junction:null,mountains:true,palette:{low:'#b7bd9c',up:'#d6c9a2',high:'#b59a74'},
+  countries:[{id:'maga',a0:0,a1:6.283}]},
+ {id:'m-progleft',name:'',kicker:'MAINSTREAM',big:true,cx:2950,cy:250,rx:330,ry:330,rot:-.08,seed:137,rug:.25,
+  junction:null,mountains:false,trees:true,palette:{low:'#aec2a2',up:'#cfc7a0',high:'#ab9070'},
+  countries:[{id:'progleft',a0:0,a1:6.283}]},
+ {id:'m-estab',name:'',kicker:'MAINSTREAM',big:true,cx:650,cy:-300,rx:430,ry:210,rot:.03,seed:139,rug:.22,
+  junction:null,mountains:false,palette:{low:'#b3bfa6',up:'#d2cbaa',high:'#b2a07f'},
+  countries:[{id:'establishment',a0:0,a1:6.283}]},
+ {id:'m-finance',name:'',kicker:'MAINSTREAM',big:true,cx:-400,cy:-120,rx:380,ry:300,rot:-.05,seed:149,rug:.23,
+  junction:null,mountains:true,palette:{low:'#b9bfa4',up:'#d8cca6',high:'#b49b76'},
+  countries:[{id:'finance',a0:0,a1:6.283}]},
+ {id:'m-christian',name:'',kicker:'MAINSTREAM',big:true,cx:2750,cy:1800,rx:400,ry:250,rot:.05,seed:151,rug:.24,
+  junction:null,mountains:false,trees:true,palette:{low:'#b2c19e',up:'#d3c8a2',high:'#ae9572'},
+  countries:[{id:'christian',a0:0,a1:6.283}]},
+ {id:'m-stan',name:'',kicker:'MAINSTREAM',big:true,cx:2620,cy:-330,rx:370,ry:240,rot:-.04,seed:157,rug:.26,
+  junction:null,mountains:false,palette:{low:'#bcc0a0',up:'#dbcda8',high:'#b79d78'},
+  countries:[{id:'stan',a0:0,a1:6.283}]},
+ {id:'m-sports',name:'',kicker:'MAINSTREAM',big:true,cx:1700,cy:-330,rx:340,ry:230,rot:.07,seed:163,rug:.25,
+  junction:null,mountains:false,palette:{low:'#b5c2a0',up:'#d5caa4',high:'#b09873'},
+  countries:[{id:'sports',a0:0,a1:6.283}]}
+];
+/* fix a typo-safe palette value */
+CONTINENTS[1].palette.high='#b89064';
+
+const OCEANS=[];
+
+/* ---------- build svg ---------- */
+const NS='http://www.w3.org/2000/svg';
+const svg=document.getElementById('map');
+function el(n,attrs,parent){const e=document.createElementNS(NS,n);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e}
+
+const defs=el('defs',{},svg);
+defs.innerHTML=`
+ <filter id="soft8" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+ <filter id="soft5" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+ <filter id="soft14" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="14"/></filter>
+ <filter id="oceanTex" x="0" y="0" width="100%" height="100%">
+   <feTurbulence type="fractalNoise" baseFrequency="0.012 0.02" numOctaves="3" seed="4" result="n"/>
+   <feColorMatrix in="n" values="0 0 0 0 0.42 0 0 0 0 0.55 0 0 0 0 0.58 0 0 0 0.08 0"/>
+   <feComposite in2="SourceGraphic" operator="over"/>
+ </filter>
+ <radialGradient id="oceanGrad" cx="46%" cy="42%" r="75%">
+   <stop offset="0%" stop-color="#9fc0c6"/><stop offset="62%" stop-color="#93b7c0"/><stop offset="100%" stop-color="#7e9fae"/>
+ </radialGradient>`;
+
+const root=el('g',{id:'root'},svg);
+/* ocean */
+el('rect',{x:X0-400,y:Y0-400,width:(X1-X0)+800,height:(Y1-Y0)+800,fill:'url(#oceanGrad)'},root);
+el('rect',{x:X0-400,y:Y0-400,width:(X1-X0)+800,height:(Y1-Y0)+800,fill:'#93b7c0',filter:'url(#oceanTex)',opacity:.9},root);
+/* graticule */
+const grat=el('g',{stroke:'#48657326','stroke-width':1,fill:'none'},root);
+for(let x=Math.ceil(X0/240)*240;x<=X1;x+=240)el('path',{d:`M${x} ${Y0-400} Q ${x+((x-(X0+X1)/2)*0.04)} ${(Y0+Y1)/2} ${x} ${Y1+400}`},grat);
+for(let y=Math.ceil(Y0/240)*240;y<=Y1;y+=240)el('path',{d:`M${X0-400} ${y} Q ${(X0+X1)/2} ${y+((y-(Y0+Y1)/2)*0.04)} ${X1+400} ${y}`},grat);
+/* wave marks */
+const waves=el('g',{stroke:'#4d6b78',fill:'none','stroke-width':1.1,opacity:.28,'stroke-linecap':'round'},root);
+[[350,250],[290,930],[1620,620],[830,690],[1350,1230],[2240,940],[2300,190],[160,1290],[1750,530],[620,60],[1900,1440],[80,560],[2330,1300],[1440,330],[-600,300],[-350,1600],[3000,600],[3100,1500],[600,1950],[2200,2050],[-550,-350],[1500,-450],[2900,-350],[500,-480],[-700,800],[3200,50]].forEach(([x,y])=>{
+  el('path',{d:`M${x} ${y} q5 -5 10 0 q5 5 10 0 M${x+6} ${y+7} q5 -5 10 0`},waves);
+});
+
+const gShallow=el('g',{},root), gLand=el('g',{},root), gBorder=el('g',{},root),
+      gDeco=el('g',{},root), gEngraved=el('g',{},root), gHL=el('g',{},root),
+      gCountryLbl=el('g',{class:'tier lbl-country'},root),
+      gIsleLbl=el('g',{class:'tier lbl-country'},root),
+      gMainLbl=el('g',{class:'lbl-country'},root),
+      gCity=el('g',{class:'tier hidden lbl-city'},root),
+      gVillage=el('g',{class:'tier hidden lbl-city'},root);
+
+const countries=[]; /* {id, poly, tribe, labelPos, cities:[], contName} */
+
+function coastAt(pts,ang){
+  const N=pts.length;let a=ang%(Math.PI*2);if(a<0)a+=Math.PI*2;
+  return pts[Math.round(a/(Math.PI*2)*N)%N];
+}
+function drawLandmass(pts,pal,parent,seed){
+  const d=pathFrom(pts,true);
+  /* shallow halo */
+  el('path',{d,fill:'none',stroke:'#c9dcd6',opacity:.55,'stroke-width':30,filter:'url(#soft14)'},gShallow);
+  el('path',{d,fill:'none',stroke:'#bdd6d2',opacity:.7,'stroke-width':13,filter:'url(#soft8)'},gShallow);
+  const g=el('g',{},parent);
+  const clipId='clip'+seed;
+  const cp=el('clipPath',{id:clipId},defs);el('path',{d},cp);
+  el('path',{d,fill:pal.low},g);
+  return {g,d,clipId};
+}
+function drawTerrain(pts,anchor,pal,g,clipId,scaleUp,scaleHi){
+  const tg=el('g',{'clip-path':`url(#${clipId})`},g);
+  el('path',{d:pathFrom(shrink(pts,anchor,scaleUp),true),fill:pal.up,opacity:.85,filter:'url(#soft8)'},tg);
+  el('path',{d:pathFrom(shrink(pts,anchor,scaleHi),true),fill:pal.high,opacity:.8,filter:'url(#soft5)'},tg);
+  return tg;
+}
+function drawMountains(anchor,rng,g,n,spread){
+  const mg=el('g',{stroke:'#4a3c28',fill:'none','stroke-width':1.4,'stroke-linecap':'round',opacity:.5,class:'deco'},g);
+  for(let i=0;i<n;i++){
+    const x=anchor[0]+(rng()-.5)*spread,y=anchor[1]+(rng()-.5)*spread*.62;
+    const s=5+rng()*4;
+    el('path',{d:`M${x-s} ${y+s*.55} L${x} ${y-s*.7} L${x+s} ${y+s*.55}`},mg);
+    el('path',{d:`M${x} ${y-s*.7} L${x+s*.35} ${y}`,opacity:.5},mg);
+  }
+}
+function drawTrees(anchor,rng,g,n,spread){
+  const tg=el('g',{opacity:.5,class:'deco'},g);
+  for(let i=0;i<n;i++){
+    const x=anchor[0]+(rng()-.5)*spread,y=anchor[1]+(rng()-.5)*spread*.7;
+    el('path',{d:`M${x-3.2} ${y} L${x} ${y-6.5} L${x+3.2} ${y} Z`,fill:'#4f6136'},tg);
+    el('path',{d:`M${x} ${y} L${x} ${y+2.4}`,stroke:'#4a3c28','stroke-width':1},tg);
+  }
+}
+
+for(const C of CONTINENTS){
+  const pts=blobPts(C.cx,C.cy,C.rx,C.ry,C.rot,C.seed,C.rug,160);
+  const rng=mulberry32(C.seed*7+3);
+  const {g,d,clipId}=drawLandmass(pts,C.palette,gLand,C.seed);
+  const anchor=C.junction||[C.cx,C.cy];
+  drawTerrain(pts,anchor,C.palette,g,clipId,.62,.34);
+  el('path',{d,fill:'none',stroke:'#5a4f3c','stroke-width':1.1,'vector-effect':'non-scaling-stroke',opacity:.85},g);
+  if(C.mountains)drawMountains(anchor,rng,g,10+Math.floor(rng()*5),Math.min(C.rx,220)*.9);
+  if(C.trees)drawTrees([C.cx,C.cy],rng,g,12,C.rx*1.1);
+  /* islets */
+  if(C.islets)for(const I of C.islets){
+    const ip=blobPts(C.cx+I.dx,C.cy+I.dy,I.r,I.r*.72,rng()*3,C.seed*13+I.r,.4,60);
+    const idd=pathFrom(ip,true);
+    el('path',{d:idd,fill:'none',stroke:'#c9dcd6',opacity:.5,'stroke-width':14,filter:'url(#soft8)'},gShallow);
+    el('path',{d:idd,fill:C.palette.low},g);
+    el('path',{d:idd,fill:'none',stroke:'#5a4f3c','stroke-width':1,'vector-effect':'non-scaling-stroke',opacity:.8},g);
+  }
+  /* countries */
+  const N=pts.length;
+  for(const cc of C.countries){
+    let poly;
+    if(C.countries.length===1){poly=pts}
+    else{
+      const J=C.junction;
+      const pA=coastAt(pts,cc.a0),pB=coastAt(pts,cc.a1);
+      let i0=Math.round(((cc.a0%(2*Math.PI))+2*Math.PI)%(2*Math.PI)/(2*Math.PI)*N)%N;
+      let i1=Math.round(((cc.a1%(2*Math.PI))+2*Math.PI)%(2*Math.PI)/(2*Math.PI)*N)%N;
+      const arc=[];let i=i0;while(i!==i1){arc.push(pts[i]);i=(i+1)%N}arc.push(pts[i1]);
+      const b1=wobble(J,pA,C.seed*31+Math.round(cc.a0*100),14),
+            b2=wobble(pB,J,C.seed*31+Math.round(cc.a1*100),14);
+      poly=[J,...b1,...arc,...b2];
+      /* internal border (draw once per edge: draw b1 only) */
+      el('path',{d:pathFrom(b1,false),fill:'none',stroke:'#96604a','stroke-width':1.3,
+        'vector-effect':'non-scaling-stroke','stroke-dasharray':'7 5',class:'intborder',opacity:.75},gBorder);
+    }
+    const tribe=D.tribes[cc.id];
+    if(!tribe)continue;
+    const lp=centroid(poly);
+    countries.push({id:cc.id,poly,tribe,labelPos:lp,contName:C.kicker||C.name,big:!!C.big});
+  }
+}
+
+/* ---------- hover overlays + hit areas ---------- */
+for(const c of countries){
+  const d=pathFrom(c.poly,true);
+  c.hl=el('path',{d,class:'hl'},gHL);
+  c.hlS=el('path',{d,class:'hl-stroke'},gHL);
+}
+
+/* ---------- engraved labels (continents + oceans) ---------- */
+function engraved(t,x,y,w,size,arc,rot,cls,spacing){
+  const id='ep'+Math.round(x)+'_'+Math.round(y);
+  const sweep=arc<0?0:1,r=Math.abs(arc);
+  /* half-width from text length so letterspaced caps never truncate */
+  w=Math.max(w,t.length*size*(0.34+(spacing||0)/2)+size);
+  const p=el('path',{id,d:`M${x-w} ${y} A ${r} ${r} 0 0 ${sweep} ${x+w} ${y}`,fill:'none'},gEngraved);
+  const g=el('g',{},gEngraved);
+  if(rot)g.setAttribute('transform',`rotate(${rot} ${x} ${y})`);
+  const tx=el('text',{'font-size':size,class:cls},g);
+  if(spacing&&spacing!==0.42&&cls==='lbl-continent')tx.style.letterSpacing=spacing+'em';
+  const tp=el('textPath',{href:'#'+id,startOffset:'50%','text-anchor':'middle'},tx);
+  tp.textContent=t;
+  return g;
+}
+const contLblEls=[];
+for(const C of CONTINENTS){
+  if(!C.name||!C.label)continue;
+  contLblEls.push(engraved(C.name,C.label.x,C.label.y,C.label.w,C.label.size,1400,0,'lbl-continent',C.label.ls||0.42));
+}
+const oceanLblEls=[];
+for(const O of OCEANS){
+  oceanLblEls.push(engraved(O.t,O.x,O.y,O.w,O.size,O.arc,O.rot||0,'lbl-ocean',0.28));
+}
+
+/* ---------- screen-constant labels (countries, cities, regions) ---------- */
+const constLabels=[]; /* {el,x,y} */
+function constLabel(parent,x,y){
+  const g=el('g',{},parent);constLabels.push({el:g,x,y});return g;
+}
+function splitName(n){
+  if(n.length<=13)return[n];
+  const mid=n.length/2;let best=-1,bd=1e9;
+  for(let i=0;i<n.length;i++)if(n[i]===' '){const d=Math.abs(i-mid);if(d<bd){bd=d;best=i}}
+  return best<0?[n]:[n.slice(0,best),n.slice(best+1)];
+}
+for(const c of countries){
+  const isIsle=!c.contName;
+  const g=constLabel(c.big?gMainLbl:(isIsle?gIsleLbl:gCountryLbl),c.labelPos[0],c.labelPos[1]);
+  const parts=splitName(c.tribe.country);
+  const fs=c.big?17:14,lh=c.big?18:15;
+  const y0=isIsle?-22:(parts.length>1?-3:4);
+  const t=el('text',{'font-size':fs,'text-anchor':'middle',y:y0},g);
+  parts.forEach((pt,i)=>{const ts=el('tspan',{x:0,dy:i===0?0:lh},t);ts.textContent=pt});
+  const tl=el('text',{'font-size':c.big?11.5:10.5,'text-anchor':'middle',y:y0+(parts.length>1?lh:0)+15,class:'tldr'},g);
+  tl.textContent=c.tribe.tldr||'';
+  c.lblEl=g;
+  /* cities = today's topics */
+  const cityRng=mulberry32(c.id.split('').reduce((a,ch)=>a+ch.charCodeAt(0)*31,7));
+  c.tribe.discussing.forEach((topic,i)=>{
+    let p;
+    if(i===0){p=[(c.labelPos[0]),(c.labelPos[1]-30)];if(!pip(p,c.poly))p=samplePt(c.poly,cityRng)}
+    else p=samplePt(c.poly,cityRng);
+    const g2=constLabel(gCity,p[0],p[1]);
+    if(i===0){
+      el('path',{d:'M0 -5.2 L1.55 -1.6 L5.3 -1.6 L2.3 0.9 L3.4 4.6 L0 2.4 L-3.4 4.6 L-2.3 0.9 L-5.3 -1.6 L-1.55 -1.6 Z',fill:'#8a4a2e'},g2);
+      el('circle',{r:8,fill:'none',stroke:'#8a4a2e','stroke-width':1,class:'pulse'},g2);
+    } else {
+      el('circle',{r:2.6,fill:'#5a4f3c'},g2);
+      el('circle',{r:2.6,fill:'none',stroke:'#5a4f3c','stroke-width':.8,opacity:.4},g2);
+    }
+    const t2=el('text',{x:8,y:3.5,'font-size':11.5},g2);
+    t2.textContent=topic.t;
+  });
+}
+
+/* ---------- bespoke villages: rare ontologies, visible at deep zoom ---------- */
+const BESPOKE=[
+ {id:'georgists',parent:'progress',dx:-30,dy:55},
+ {id:'girardians',parent:'nrx',dx:95,dy:28},
+ {id:'landian',parent:'eacc',dx:60,dy:-45},
+ {id:'metamodern',parent:'tpot',dx:42,dy:-32},
+ {id:'forecasters',parent:'rationalists',dx:72,dy:-22},
+ {id:'cryonics',parent:'longevity',dx:52,dy:42},
+ {id:'pronatalists',parent:'maha',dx:-42,dy:52},
+ {id:'doomeroptimists',parent:'degrowth',dx:42,dy:62},
+ {id:'remilia',parent:'degens',dx:-18,dy:22},
+ {id:'cozyweb',parent:'indie',dx:-14,dy:26},
+ {id:'tradcaths',parent:'christian',dx:-90,dy:-42},
+ {id:'wsb',parent:'finance',dx:-62,dy:85},
+ {id:'astrology',x:1150,y:1180,islet:20},
+ {id:'ufo',x:-430,y:1180,islet:22}
+];
+const villages=[];
+for(const B of BESPOKE){
+  const tribe=D.tribes[B.id];if(!tribe)continue;
+  let pos,parentC=null;
+  if(B.parent){
+    parentC=countries.find(c=>c.id===B.parent);if(!parentC)continue;
+    pos=[parentC.labelPos[0]+B.dx,parentC.labelPos[1]+B.dy];
+    if(!pip(pos,parentC.poly))pos=samplePt(parentC.poly,mulberry32(B.id.length*131+7));
+  } else {
+    pos=[B.x,B.y];
+    const ip=blobPts(B.x,B.y,B.islet,B.islet*.75,.4,B.id.length*17+5,.42,48);
+    const idd=pathFrom(ip,true);
+    el('path',{d:idd,fill:'none',stroke:'#c9dcd6',opacity:.5,'stroke-width':12,filter:'url(#soft8)'},gShallow);
+    const ig=el('g',{},gLand);
+    el('path',{d:idd,fill:'#b8c491'},ig);
+    el('path',{d:idd,fill:'none',stroke:'#5a4f3c','stroke-width':1,'vector-effect':'non-scaling-stroke',opacity:.8},ig);
+  }
+  const g=constLabel(gVillage,pos[0],pos[1]);
+  el('path',{d:'M-4.5 1 h9 v5 h-9 Z M-6 1 L0 -5.5 L6 1 Z',fill:'#8a4a2e',stroke:'#3e3527','stroke-width':.7,'stroke-linejoin':'round'},g);
+  const vt=el('text',{x:9,y:4,'font-size':11},g);
+  vt.textContent=tribe.country;
+  villages.push({id:B.id,tribe,pos,parentName:parentC?parentC.tribe.country:null});
+}
+
+/* ---------- viewport / pan / zoom ---------- */
+const stage=document.getElementById('stage');
+let vw=innerWidth,vh=innerHeight;
+const fitScale=()=>Math.min(vw/((X1-X0)+2*MARGIN),vh/((Y1-Y0)+2*MARGIN));
+let scale=fitScale(),minS,maxS;
+let cxv=(X0+X1)/2,cyv=(Y0+Y1)/2; /* world coords at viewport center */
+function recalcLimits(){minS=fitScale()*.85;maxS=fitScale()*9}
+recalcLimits();
+
+function apply(){
+  const w=vw/scale,h=vh/scale;
+  /* clamp */
+  const mx=MARGIN+w*0.1,my=MARGIN+h*0.1;
+  cxv=(w>=(X1-X0)+2*mx)?(X0+X1)/2:Math.max(X0+w/2-mx,Math.min(X1-w/2+mx,cxv));
+  cyv=(h>=(Y1-Y0)+2*my)?(Y0+Y1)/2:Math.max(Y0+h/2-my,Math.min(Y1-h/2+my,cyv));
+  svg.setAttribute('viewBox',`${cxv-w/2} ${cyv-h/2} ${w} ${h}`);
+  updateSemantics();
+}
+let lastZF=-1;
+function updateSemantics(){
+  const zf=scale/fitScale();
+  /* counter-scale labels */
+  const k=1/scale;
+  for(const L of constLabels)L.el.setAttribute('transform',`translate(${L.x} ${L.y}) scale(${k})`);
+  if(Math.abs(zf-lastZF)<.02)return;lastZF=zf;
+  gCountryLbl.classList.toggle('hidden',zf<1.35);
+  gIsleLbl.classList.toggle('hidden',zf<(vw<620?1.6:1.35));
+  gCity.classList.toggle('hidden',zf<2.2);
+  gVillage.classList.toggle('hidden',zf<2.6);
+  svg.classList.toggle('mid',zf>1.8);
+  svg.classList.toggle('deep',zf>3.6);
+  const contOp=zf<2.1?.62:Math.max(0,.62-(zf-2.1)*.6);
+  for(const e of contLblEls)e.style.opacity=contOp;
+  const ocOp=zf<3?1:Math.max(0,1-(zf-3)*.8);
+  for(const e of oceanLblEls)e.style.opacity=ocOp;
+  document.querySelectorAll('.intborder').forEach(p=>p.setAttribute('stroke-dasharray',`${7/Math.sqrt(zf)} ${5/Math.sqrt(zf)}`));
+}
+addEventListener('resize',()=>{vw=innerWidth;vh=innerHeight;recalcLimits();scale=Math.max(minS,Math.min(maxS,scale));apply()});
+
+function screenToWorld(px,py){const w=vw/scale,h=vh/scale;return[cxv-w/2+px/vw*w,cyv-h/2+py/vh*h]}
+
+function zoomAbout(f,px,py){
+  const [wx,wy]=screenToWorld(px,py);
+  scale=Math.max(minS,Math.min(maxS,scale*f));
+  const w=vw/scale,h=vh/scale;
+  cxv=wx-(px/vw-0.5)*w;cyv=wy-(py/vh-0.5)*h;
+  apply();
+}
+stage.addEventListener('wheel',e=>{e.preventDefault();zoomAbout(Math.exp(-e.deltaY*0.0016),e.clientX,e.clientY)},{passive:false});
+stage.addEventListener('dblclick',e=>zoomAbout(1.8,e.clientX,e.clientY));
+document.getElementById('z-in').onclick=()=>zoomAbout(1.4,vw/2,vh/2);
+document.getElementById('z-out').onclick=()=>zoomAbout(1/1.4,vw/2,vh/2);
+document.getElementById('z-fit').onclick=()=>{scale=fitScale();cxv=(X0+X1)/2;cyv=(Y0+Y1)/2;apply()};
+
+/* drag + pinch */
+const ptrs=new Map();let dragStart=null,pinchD=0,moved=false;
+stage.addEventListener('pointerdown',e=>{
+  ptrs.set(e.pointerId,[e.clientX,e.clientY]);stage.setPointerCapture(e.pointerId);
+  moved=false;
+  if(ptrs.size===1){dragStart=[e.clientX,e.clientY,cxv,cyv];stage.classList.add('dragging')}
+  else if(ptrs.size===2){const a=[...ptrs.values()];pinchD=Math.hypot(a[0][0]-a[1][0],a[0][1]-a[1][1]);dragStart=null}
+});
+stage.addEventListener('pointermove',e=>{
+  if(ptrs.has(e.pointerId))ptrs.set(e.pointerId,[e.clientX,e.clientY]);
+  if(ptrs.size===1&&dragStart){
+    const dx=e.clientX-dragStart[0],dy=e.clientY-dragStart[1];
+    if(Math.abs(dx)+Math.abs(dy)>4)moved=true;
+    cxv=dragStart[2]-dx/scale;cyv=dragStart[3]-dy/scale;apply();
+  } else if(ptrs.size===2){
+    const a=[...ptrs.values()];const d=Math.hypot(a[0][0]-a[1][0],a[0][1]-a[1][1]);
+    if(pinchD>0)zoomAbout(d/pinchD,(a[0][0]+a[1][0])/2,(a[0][1]+a[1][1])/2);
+    pinchD=d;moved=true;
+  }
+  if(e.pointerType==='mouse')hover(e.clientX,e.clientY,false);
+});
+function endPtr(e){
+  ptrs.delete(e.pointerId);
+  if(ptrs.size<2)pinchD=0;
+  if(ptrs.size===0){
+    stage.classList.remove('dragging');
+    if(!moved&&e.pointerType!=='mouse')hover(e.clientX,e.clientY,true);
+    dragStart=null;
+  }
+}
+stage.addEventListener('pointerup',endPtr);
+stage.addEventListener('pointercancel',endPtr);
+
+/* ---------- hover / tooltip ---------- */
+const tt=document.getElementById('tt');
+let curId=null;
+function findCountry(wx,wy){
+  for(const c of countries)if(pip([wx,wy],c.poly))return c;
+  return null;
+}
+function renderCard(tb,kick){
+  tt.innerHTML=`<p class="kick">${esc(kick)}</p>
+   <h3>${esc(tb.country)}</h3>
+   <p class="ont">${esc(tb.ontology)}</p>
+   <p class="today">Trending today · tap a topic to see it on X</p>
+   <ul>${tb.discussing.map(x=>`<li><a href="https://x.com/search?q=${encodeURIComponent(x.x||x.t)}&src=typed_query&f=live" target="_blank" rel="noopener"><b>${esc(x.t)} ↗</b></a> — ${esc(x.d)}</li>`).join('')}</ul>
+   <p class="figs">Key accounts: ${esc(tb.figures.join(', '))}</p>`;
+}
+function findVillage(wx,wy){
+  if(scale/fitScale()<2.6)return null;
+  for(const v of villages)if(Math.hypot(v.pos[0]-wx,v.pos[1]-wy)*scale<26)return v;
+  return null;
+}
+function titleCase(s){return s.toLowerCase().replace(/(^|\s)\S/g,m=>m.toUpperCase())}
+function esc(s){return String(s).replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]))}
+let hideT=null;
+function clearSel(){
+  for(const o of countries){o.hl.classList.remove('on');o.hlS.classList.remove('on')}
+  tt.classList.remove('on');curId=null;
+}
+function scheduleHide(){if(hideT)return;hideT=setTimeout(()=>{hideT=null;clearSel()},350)}
+function cancelHide(){if(hideT){clearTimeout(hideT);hideT=null}}
+function placeCard(px,py){
+  if(!matchMedia('(min-width:621px)').matches)return;
+  tt.style.left='8px';tt.style.top='8px';
+  requestAnimationFrame(()=>{
+    const r=tt.getBoundingClientRect();
+    let x=px+18,y=py+16;
+    if(x+r.width>vw-12)x=px-r.width-18;
+    if(y+r.height>vh-12)y=py-r.height-16;
+    tt.style.left=Math.max(8,x)+'px';tt.style.top=Math.max(8,y)+'px';
+  });
+}
+function hover(px,py,isTap){
+  const [wx,wy]=screenToWorld(px,py);
+  const v=findVillage(wx,wy);
+  const c=v?null:findCountry(wx,wy);
+  if(v||c)cancelHide();
+  const id=v?('v:'+v.id):(c?c.id:null);
+  if(id&&id!==curId){
+    for(const o of countries){o.hl.classList.toggle('on',o===c);o.hlS.classList.toggle('on',o===c)}
+    if(v)renderCard(v.tribe,v.parentName?('BESPOKE · IN '+v.parentName):'BESPOKE');
+    else renderCard(c.tribe,c.contName||'INDEPENDENT');
+    tt.classList.add('on');curId=id;
+    placeCard(px,py);
+  } else if(!id&&curId){
+    scheduleHide();
+  }
+}
+tt.addEventListener('wheel',e=>{e.preventDefault();zoomAbout(Math.exp(-e.deltaY*0.0016),e.clientX,e.clientY)},{passive:false});
+tt.addEventListener('pointerenter',cancelHide);
+tt.addEventListener('pointerleave',scheduleHide);
+stage.addEventListener('pointerleave',()=>{if(curId)scheduleHide()});
+
+apply();
+})();
+</script>

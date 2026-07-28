@@ -1,0 +1,466 @@
+{
+ "eacc": {
+  "name": "effective accelerationists",
+  "country": "e/acc",
+  "ontology": "The universe is a thermodynamic engine that rewards energy capture and intelligence expansion; acceleration is a physical and moral imperative, and deceleration is the only true existential risk.",
+  "figures": [
+   "@BasedBeffJezos",
+   "@bayeslord",
+   "@garrytan",
+   "@natolambert"
+  ],
+  "tldr": "build AGI faster; growth is a moral good"
+ },
+ "progress": {
+  "name": "progress & abundance movement",
+  "country": "Progress & abundance",
+  "ontology": "Scarcity is a policy choice and stagnation a self-inflicted wound; what matters is throughput — housing, energy, science, state capacity — and institutions that let you build.",
+  "figures": [
+   "@ezraklein",
+   "@DKThomp",
+   "@jasoncrawford",
+   "@IFP_org"
+  ],
+  "tldr": "build more housing, energy, science"
+ },
+ "hardtech": {
+  "name": "hard-tech & space frontier",
+  "country": "Hard tech & space",
+  "ontology": "Civilization is downstream of physical capability — atoms over bits. Building real machines fast, at scale, in America is a moral project; multiplanetary life is the terminal goal.",
+  "figures": [
+   "@elonmusk",
+   "@PalmerLuckey",
+   "@johncoogan",
+   "@Andercot"
+  ],
+  "tldr": "factories, rockets, defense — atoms over bits"
+ },
+ "rationalists": {
+  "name": "rationalists",
+  "country": "Rationalists",
+  "ontology": "Reality is lawful and knowable through Bayesian updating; beliefs should pay rent in anticipated experience, and most catastrophes are epistemic failures first.",
+  "figures": [
+   "Scott Alexander",
+   "@TheZvi",
+   "@robbensinger",
+   "Adrià Garriga-Alonso"
+  ],
+  "tldr": "Bayesian epistemics; AI-risk analysis"
+ },
+ "doomers": {
+  "name": "AI-safety doomers",
+  "country": "AI safety / doomers",
+  "ontology": "A sufficiently capable optimizer with unaligned goals kills everyone by default. What matters is not building the thing that ends the future.",
+  "figures": [
+   "@ESYudkowsky",
+   "Nate Soares",
+   "@DKokotajlo",
+   "Holly Elmore"
+  ],
+  "tldr": "unaligned superintelligence kills everyone"
+ },
+ "ea": {
+  "name": "effective altruists",
+  "country": "Effective altruists",
+  "ontology": "All sentient welfare counts equally across space and time; the real currency is counterfactual impact, measured and maximized under moral uncertainty.",
+  "figures": [
+   "@wdmacaskill",
+   "Elie Hassenfeld",
+   "Alexander Berger",
+   "@80000Hours"
+  ],
+  "tldr": "maximize measurable good per dollar"
+ },
+ "tpot": {
+  "name": "tpot / post-rationalists",
+  "country": "tpot / post-rationalists",
+  "ontology": "The felt sense is data; embodiment, relationship, and vibes are upstream of explicit reason. Reality is participatory — metabolized through attention, not just modeled.",
+  "figures": [
+   "@nosilverv",
+   "@vgr",
+   "@QiaochuYuan",
+   "@vibecamp_"
+  ],
+  "tldr": "vibes, agency, embodiment over pure logic"
+ },
+ "nondual": {
+  "name": "consciousness & psychedelic twitter",
+  "country": "Meditation & psychedelics",
+  "ontology": "Consciousness — specifically the valence of experience — is the only thing that ultimately matters, and it is a measurable, engineerable object. Enlightenment is a reproducible technology, not a lifetime vocation.",
+  "figures": [
+   "@nickcammarata",
+   "@algekalipso",
+   "Jhourney",
+   "Daniel Ingram"
+  ],
+  "tldr": "engineer consciousness and bliss directly"
+ },
+ "btc": {
+  "name": "bitcoin maxis",
+  "country": "Bitcoin maxis",
+  "ontology": "Sound money is the base layer of civilization and a moral imperative; Bitcoin is the only credibly neutral monetary substrate — everything else is fiat, noise, or a scam.",
+  "figures": [
+   "@saylor",
+   "@adam3us",
+   "Luke Dashjr",
+   "@LynAldenContact"
+  ],
+  "tldr": "bitcoin is the only sound money"
+ },
+ "eth": {
+  "name": "ethereum builders",
+  "country": "Ethereum",
+  "ontology": "Reality is programmable coordination; credibly neutral protocols are how humanity scales trust. Progress is real but must be steered — d/acc over both doom and recklessness.",
+  "figures": [
+   "@VitalikButerin",
+   "@TimBeiko",
+   "@drakefjustin",
+   "@fundstrat"
+  ],
+  "tldr": "neutral protocols for global coordination"
+ },
+ "defi": {
+  "name": "DeFi & stablecoin builders",
+  "country": "DeFi & stablecoins",
+  "ontology": "Finance is being rebuilt as open programmable infrastructure; stablecoins are the internet's money layer and regulation is the moat, not the enemy.",
+  "figures": [
+   "Jeremy Allaire",
+   "@paoloardoino",
+   "@StaniKulechov",
+   "@jchervinsky"
+  ],
+  "tldr": "rebuild finance on open rails"
+ },
+ "degens": {
+  "name": "degens & memecoin culture",
+  "country": "Degens / memecoins",
+  "ontology": "Attention is the only real asset and price is the only truth; everything is musical chairs and the sin is not playing but exiting late. Nihilism worn as comedy.",
+  "figures": [
+   "@blknoiz06",
+   "@cobie",
+   "@a1lon9",
+   "@chameleon_jeff"
+  ],
+  "tldr": "everything is a casino; ape accordingly"
+ },
+ "regens": {
+  "name": "regens & solarpunks",
+  "country": "Regens / solarpunk",
+  "ontology": "Value is regenerative, not extractive: ecosystems, communities, and public goods are the real wealth, and crypto's purpose is coordination infrastructure that funds what markets and states won't.",
+  "figures": [
+   "@owocki",
+   "@glenweyl",
+   "@ReFiDAO",
+   "@MaEarthMedia"
+  ],
+  "tldr": "fund public goods, regenerate the commons"
+ },
+ "degrowth": {
+  "name": "degrowthers & climate realists",
+  "country": "Degrowth / climate left",
+  "ontology": "Infinite growth on a finite biosphere is a category error; collapse is the designed output of competitive accumulation. What's real is throughput, energy, and biophysical limits — GDP is ideology.",
+  "figures": [
+   "@jasonhickel",
+   "Kohei Saito",
+   "@GretaThunberg",
+   "@rahmstorf"
+  ],
+  "tldr": "infinite growth is killing the biosphere"
+ },
+ "longevity": {
+  "name": "longevity & biohackers",
+  "country": "Longevity / biohackers",
+  "ontology": "Death is a solvable engineering problem and aging the master pathology; the body is an instrumentable system whose biomarkers outrank doctors, intuition, and tradition.",
+  "figures": [
+   "@bryan_johnson",
+   "@mkaeberlein",
+   "@PeterAttiaMD",
+   "Joe Betts-Lacroix"
+  ],
+  "tldr": "death is an engineering problem"
+ },
+ "maha": {
+  "name": "MAHA & health freedom",
+  "country": "MAHA / health freedom",
+  "ontology": "Chronic disease is the product of a captured food-pharma-regulatory complex; the body is naturally well and gets sick from adulteration. Institutional consensus is a marketing artifact.",
+  "figures": [
+   "@RobertKennedyJr",
+   "Casey Means",
+   "@CalleyMeans",
+   "@foodbabe"
+  ],
+  "tldr": "the food-pharma system is poisoning us"
+ },
+ "nrx": {
+  "name": "neoreaction & the new right",
+  "country": "Neoreaction / new right",
+  "ontology": "Democracy is a legitimating fiction over an unaccountable permanent regime — the Cathedral. Power is real, procedure is theater; sovereignty should be consolidated and exercised.",
+  "figures": [
+   "Curtis Yarvin",
+   "@ConceptualJames",
+   "BAP",
+   "@j_fishback"
+  ],
+  "tldr": "democracy is fake; sovereignty is real"
+ },
+ "netstate": {
+  "name": "network-state builders",
+  "country": "Network states",
+  "ontology": "The nation-state is legacy software and sovereignty a startup opportunity; communities aligned online can crowdfund territory and exit into better-governed jurisdictions.",
+  "figures": [
+   "@balajis",
+   "Dryden Brown",
+   "@patrissimo",
+   "Edge City"
+  ],
+  "tldr": "exit nations; start new ones online"
+ },
+ "indie": {
+  "name": "indie hackers",
+  "country": "Indie hackers",
+  "ontology": "Leverage is now individually held — one person plus models can occupy niches that needed a company. Revenue is the only real validation; institutions are optional overhead.",
+  "figures": [
+   "@levelsio",
+   "@dannypostmaa",
+   "@arvidkahl",
+   "@csallen"
+  ],
+  "tldr": "one person + AI = a whole company"
+ },
+ "maga": {
+  "name": "maga / populist right",
+  "country": "MAGA / populist right",
+  "tldr": "the elites betrayed the nation; take it back",
+  "ontology": "The country is being betrayed by a corrupt managerial elite; legitimacy flows from the people and the nation, not from institutions. Loyalty and sovereignty over procedure.",
+  "figures": [
+   "@realDonaldTrump",
+   "@charliekirk11",
+   "Steve Bannon",
+   "@bennyjohnson"
+  ]
+ },
+ "progleft": {
+  "name": "progressive left",
+  "country": "Progressive left",
+  "tldr": "dismantle concentrated power; solidarity works",
+  "ontology": "Society is structured by systems of power — class, race, gender — and politics is the struggle to redistribute that power. Markets don't self-correct; organized people do.",
+  "figures": [
+   "@AOC",
+   "@BernieSanders",
+   "@ZohranKMamdani",
+   "@RBReich"
+  ]
+ },
+ "establishment": {
+  "name": "liberal establishment",
+  "country": "Liberal establishment",
+  "tldr": "institutions and expertise hold it together",
+  "ontology": "Liberal democracy works through institutions, expertise, and procedure. The job is competent governance and defending norms against extremes on both sides.",
+  "figures": [
+   "@jaketapper",
+   "@maggieNYT",
+   "@jbouie",
+   "The Atlantic"
+  ]
+ },
+ "finance": {
+  "name": "wall street / macro",
+  "country": "Wall Street / macro",
+  "tldr": "markets price everything; don't fight the Fed",
+  "ontology": "Prices aggregate all information and capital flows are the real politics. Everything else is narrative wrapped around the number.",
+  "figures": [
+   "@LizAnnSonders",
+   "@fundstrat",
+   "@zerohedge",
+   "CNBC"
+  ]
+ },
+ "christian": {
+  "name": "christian twitter",
+  "country": "Christian twitter",
+  "tldr": "moral order is given, not invented",
+  "ontology": "Reality is created and moral order is given; scripture and the church outrank secular consensus. History is a spiritual drama whose stakes exceed politics.",
+  "figures": [
+   "@Franklin_Graham",
+   "@albertmohler",
+   "@drmoore",
+   "@BishopBarron"
+  ]
+ },
+ "stan": {
+  "name": "stan / pop culture",
+  "country": "Stan / pop culture",
+  "tldr": "fandom is identity; charts are the scoreboard",
+  "ontology": "Meaning lives in fandom: attachment to artists and franchises organizes identity, community, and war. Streams and charts are the objective record.",
+  "figures": [
+   "@PopBase",
+   "@PopCrave",
+   "@chartdata"
+  ]
+ },
+ "sports": {
+  "name": "sports twitter",
+  "country": "Sports twitter",
+  "tldr": "loyalty, stats, and the eternal debate",
+  "ontology": "Merit is settled on the field and argued forever after. Loyalty is inherited, stats are scripture, and the debate itself is the point.",
+  "figures": [
+   "@ShamsCharania",
+   "@AdamSchefter",
+   "@stephenasmith",
+   "@wojespn"
+  ]
+ },
+ "georgists": {
+  "name": "georgists",
+  "country": "Georgists",
+  "tldr": "tax land, not labor",
+  "ontology": "Land value is created by the community, so land rent belongs to everyone; most economic dysfunction — housing above all — traces to private capture of that rent.",
+  "figures": [
+   "Lars Doucet",
+   "@larsiusprime",
+   "Henry George (patron saint)"
+  ]
+ },
+ "girardians": {
+  "name": "girardians",
+  "country": "Girardians",
+  "tldr": "desire is mimetic; scapegoats keep the peace",
+  "ontology": "Humans want what others want; rivalry escalates until it discharges onto a scapegoat. Culture, religion, and markets are machines for managing mimetic conflict.",
+  "figures": [
+   "Luke Burgis",
+   "Geoff Shullenberger",
+   "@peterthiel (patron)"
+  ]
+ },
+ "landian": {
+  "name": "landian accel",
+  "country": "Landian accel",
+  "tldr": "capital is an alien intelligence",
+  "ontology": "Modernity is capital using humans to bootstrap its own substrate; acceleration isn't a policy choice, it's what is already happening. The horror reading of e/acc's optimism.",
+  "figures": [
+   "Nick Land",
+   "@xenocosmography",
+   "cave twitter"
+  ]
+ },
+ "metamodern": {
+  "name": "metamodernists",
+  "country": "Metamodernists",
+  "tldr": "integrate irony and sincerity; develop in stages",
+  "ontology": "Culture and persons develop through stages that must be integrated, not skipped; the modern/postmodern fight resolves by holding both at once.",
+  "figures": [
+   "Hanzi Freinacht",
+   "John Vervaeke",
+   "@Metapsychosis"
+  ]
+ },
+ "forecasters": {
+  "name": "forecasters",
+  "country": "Forecasters",
+  "tldr": "put a number on it or it's vibes",
+  "ontology": "Beliefs are bets and calibration is virtue. Prediction markets and scoring rules extract honest probabilities from talk.",
+  "figures": [
+   "@Polymarket",
+   "Nate Silver",
+   "Metaculus",
+   "Robin Hanson"
+  ]
+ },
+ "cryonics": {
+  "name": "cryonicists",
+  "country": "Cryonicists",
+  "tldr": "death is information loss; preserve the pattern",
+  "ontology": "Death is the loss of information, not an event; preserve the brain's pattern and future medicine can restart it. The original transhumanism.",
+  "figures": [
+   "Max More",
+   "Alcor",
+   "@BrainPresFdn"
+  ]
+ },
+ "pronatalists": {
+  "name": "pronatalists",
+  "country": "Pronatalists",
+  "tldr": "fertility is the master variable",
+  "ontology": "Fertility collapse is the master variable of the future: cultures that don't reproduce get replaced by ones that do. Family formation is civilizational infrastructure.",
+  "figures": [
+   "Malcolm & Simone Collins",
+   "@MoreBirths",
+   "Robin Hanson"
+  ]
+ },
+ "doomeroptimists": {
+  "name": "doomer optimists",
+  "country": "Doomer optimists",
+  "tldr": "collapse is coming; build local lifeboats",
+  "ontology": "Industrial civilization is overshooting hard biophysical limits — but the answer is skills, land, and community, not despair. Prep by rebuilding the local.",
+  "figures": [
+   "Ashley Colby",
+   "Nate Hagens",
+   "@jasonsnyderorg"
+  ]
+ },
+ "remilia": {
+  "name": "remilia / net spirituality",
+  "country": "Remilia / net spirituality",
+  "tldr": "the timeline is a spiritual plane",
+  "ontology": "Identity dissolves into the network; anonymous posting, aesthetics, and memetic play are devotional acts. The milady cult of the feed.",
+  "figures": [
+   "Charlotte Fang",
+   "milady sphere"
+  ]
+ },
+ "cozyweb": {
+  "name": "cozyweb",
+  "country": "Cozyweb",
+  "tldr": "small quiet internet over the big feed",
+  "ontology": "The good internet is small, slow, and tended — group chats, blogs, digital gardens. Scale is the disease; context is the cure.",
+  "figures": [
+   "@vgr (coined it)",
+   "Maggie Appleton",
+   "Robin Sloan"
+  ]
+ },
+ "tradcaths": {
+  "name": "trad catholics",
+  "country": "Trad Catholics",
+  "tldr": "return to tradition, liturgy, hierarchy",
+  "ontology": "Modernity took a wrong turn at liberalism; truth lives in tradition, hierarchy, and the old Mass. Liturgy as resistance.",
+  "figures": [
+   "Taylor Marshall",
+   "Adrian Vermeule",
+   "@CatholicArena"
+  ]
+ },
+ "wsb": {
+  "name": "wallstreetbets",
+  "country": "WallStreetBets",
+  "tldr": "the market is a casino; ape together strong",
+  "ontology": "The market is a casino where the little guy can gang up on the house. Conviction, leverage, and memes over analysis; loss porn is content.",
+  "figures": [
+   "r/WSB diaspora",
+   "@unusual_whales"
+  ]
+ },
+ "astrology": {
+  "name": "astrology twitter",
+  "country": "Astrology twitter",
+  "tldr": "the sky mirrors the psyche",
+  "ontology": "Celestial patterns index temperament and timing; the chart is a symbolic language for fate and self-knowledge, held with varying degrees of irony.",
+  "figures": [
+   "Chani Nicholas",
+   "@astrobebs",
+   "Co-Star"
+  ]
+ },
+ "ufo": {
+  "name": "ufo / disclosure",
+  "country": "UFO / disclosure",
+  "tldr": "non-human intelligence is real; disclosure is coming",
+  "ontology": "Non-human intelligence is real and documented, institutions have concealed it for decades, and disclosure is a civilizational event already in progress.",
+  "figures": [
+   "Jeremy Corbell",
+   "Ross Coulthart",
+   "Lue Elizondo"
+  ]
+ }
+}

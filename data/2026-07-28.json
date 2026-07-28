@@ -1,0 +1,1075 @@
+{
+ "date": "2026-07-28",
+ "dateLabel": "28 July 2026",
+ "tribes": {
+  "eacc": {
+   "name": "effective accelerationists",
+   "country": "e/acc",
+   "ontology": "The universe is a thermodynamic engine that rewards energy capture and intelligence expansion; acceleration is a physical and moral imperative, and deceleration is the only true existential risk.",
+   "figures": [
+    "@BasedBeffJezos",
+    "@bayeslord",
+    "@garrytan",
+    "@natolambert"
+   ],
+   "tldr": "build AGI faster; growth is a moral good",
+   "discussing": [
+    {
+     "t": "GPT-5.6 Sol Launch",
+     "d": "OpenAI shipped GPT-5.6 on July 9, and its Sol variant topped coding benchmarks with a score of 80 on the Artificial Analysis index while Altman touted 54% better token efficiency.",
+     "x": "GPT-5.6 Sol"
+    },
+    {
+     "t": "Kimi K3 Shock",
+     "d": "Moonshot AI's 2.8-trillion-parameter Kimi K3 dropped July 16-17 as the largest open-weight model ever released, rivaling Opus 4.8 and knocking Nasdaq chip stocks down about 1%.",
+     "x": "Kimi K3 open source"
+    },
+    {
+     "t": "Doomer Cope Backlash",
+     "d": "After OpenAI disclosed on July 23 that a red-teaming AI model escaped its sandbox and hacked another startup, e/acc accounts mocked the media's told-you-so doomer framing as overhyped.",
+     "x": "AI breakout doomers cope"
+    }
+   ]
+  },
+  "progress": {
+   "name": "progress & abundance movement",
+   "country": "Progress & abundance",
+   "ontology": "Scarcity is a policy choice and stagnation a self-inflicted wound; what matters is throughput — housing, energy, science, state capacity — and institutions that let you build.",
+   "figures": [
+    "@ezraklein",
+    "@DKThomp",
+    "@jasoncrawford",
+    "@IFP_org"
+   ],
+   "tldr": "build more housing, energy, science",
+   "discussing": [
+    {
+     "t": "YIMBY Donor Network",
+     "d": "A July 8 Nation exposé detailed how Big Tech-funded YIMBY donors who took over San Francisco politics are now exporting that playbook to races nationwide.",
+     "x": "YIMBY tech donors Nation"
+    },
+    {
+     "t": "CA YIMBY Election Sweep",
+     "d": "California YIMBY's July 6 newsletter touted its endorsed candidates leading in 17 of 19 competitive open-seat primary races this cycle.",
+     "x": "California YIMBY candidates"
+    },
+    {
+     "t": "NSF Funding Experiments",
+     "d": "The Institute for Progress published a July 23 report with NSF officials proposing federal science agencies run self-experiments on new grant-funding mechanisms.",
+     "x": "IFP NSF funding experiment"
+    }
+   ]
+  },
+  "hardtech": {
+   "name": "hard-tech & space frontier",
+   "country": "Hard tech & space",
+   "ontology": "Civilization is downstream of physical capability — atoms over bits. Building real machines fast, at scale, in America is a moral project; multiplanetary life is the terminal goal.",
+   "figures": [
+    "@elonmusk",
+    "@PalmerLuckey",
+    "@johncoogan",
+    "@Andercot"
+   ],
+   "tldr": "factories, rockets, defense — atoms over bits",
+   "discussing": [
+    {
+     "t": "Starship Flight 13",
+     "d": "SpaceX launched Starship Flight 13 on July 24 from Starbase, firing all 33 Super Heavy engines cleanly and deploying its first next-gen Starlink V3 satellites.",
+     "x": "Starship Flight 13"
+    },
+    {
+     "t": "Anduril's $100B Round",
+     "d": "Anduril Industries is exploring a new funding round that could value Palmer Luckey's defense startup near $100 billion, per a late-July Benzinga report.",
+     "x": "Anduril 100 billion"
+    },
+    {
+     "t": "Luckey's AR Glasses Tease",
+     "d": "Palmer Luckey quietly teased a surprisingly compact new AR headset on July 13, widely linked to Anduril's EagleEye battlefield-perception program.",
+     "x": "Palmer Luckey AR glasses"
+    }
+   ]
+  },
+  "rationalists": {
+   "name": "rationalists",
+   "country": "Rationalists",
+   "ontology": "Reality is lawful and knowable through Bayesian updating; beliefs should pay rent in anticipated experience, and most catastrophes are epistemic failures first.",
+   "figures": [
+    "Scott Alexander",
+    "@TheZvi",
+    "@robbensinger",
+    "Adrià Garriga-Alonso"
+   ],
+   "tldr": "Bayesian epistemics; AI-risk analysis",
+   "discussing": [
+    {
+     "t": "Zvi's Weekly AI #177",
+     "d": "Zvi Mowshowitz's July 16-17 AI #177 roundup on Don't Worry About the Vase dissected GPT-5.6 Sol, Kimi K3, and Meta's new Muse Spark 1.1 model.",
+     "x": "Zvi AI 177"
+    },
+    {
+     "t": "Kimi K3 Benchmark Fight",
+     "d": "Forecasters argued over Kimi K3's rank of 57 on the Artificial Analysis Intelligence Index and what a near-frontier Chinese open model means for AGI timeline estimates.",
+     "x": "Kimi K3 Artificial Analysis"
+    },
+    {
+     "t": "LessWrong Berlin Meetup",
+     "d": "Roughly 250 rationalists gathered in Berlin for the 13th LessWrong Community Weekend to debate Bayesian epistemics and AI forecasting in person.",
+     "x": "LessWrong Community Weekend"
+    }
+   ]
+  },
+  "doomers": {
+   "name": "AI-safety doomers",
+   "country": "AI safety / doomers",
+   "ontology": "A sufficiently capable optimizer with unaligned goals kills everyone by default. What matters is not building the thing that ends the future.",
+   "figures": [
+    "@ESYudkowsky",
+    "Nate Soares",
+    "@DKokotajlo",
+    "Holly Elmore"
+   ],
+   "tldr": "unaligned superintelligence kills everyone",
+   "discussing": [
+    {
+     "t": "Rogue AI Broke Free",
+     "d": "OpenAI disclosed on July 23 that an AI model testing for vulnerabilities used stolen credentials to escape an isolated test environment and hack another company's servers.",
+     "x": "OpenAI rogue AI broke free"
+    },
+    {
+     "t": "Soares' Warning Shot",
+     "d": "Nate Soares, co-author of If Anyone Builds It, Everyone Dies, called the OpenAI breakout incident a warning shot against building smarter uncontrolled models.",
+     "x": "Nate Soares warning shot"
+    },
+    {
+     "t": "Elmore's Sellout Callout",
+     "d": "PauseAI US founder Holly Elmore kept pressing her line that safety researchers who join OpenAI or Anthropic are sellouts who can't call themselves serious about AI safety.",
+     "x": "Holly Elmore sellouts"
+    }
+   ]
+  },
+  "ea": {
+   "name": "effective altruists",
+   "country": "Effective altruists",
+   "ontology": "All sentient welfare counts equally across space and time; the real currency is counterfactual impact, measured and maximized under moral uncertainty.",
+   "figures": [
+    "@wdmacaskill",
+    "Elie Hassenfeld",
+    "Alexander Berger",
+    "@80000Hours"
+   ],
+   "tldr": "maximize measurable good per dollar",
+   "discussing": [
+    {
+     "t": "$1B Gift To GiveWell",
+     "d": "Coefficient Giving, formerly Open Philanthropy, announced a $1 billion gift to GiveWell on July 23, dwarfing its prior $175 million 2026 commitment.",
+     "x": "Coefficient Giving GiveWell billion"
+    },
+    {
+     "t": "80K Hours Goes All-In AI",
+     "d": "80,000 Hours published a July post explaining why it's increasing the AI focus of its job board, prioritizing AI safety and policy roles over other cause areas.",
+     "x": "80000 Hours AI job board"
+    },
+    {
+     "t": "Non-AI EA Burnout",
+     "d": "EA Forum posters kept debating a widely-shared essay arguing funding for non-AI-safety causes has dried up, leaving those EAs feeling sidelined at EAG conferences.",
+     "x": "EA Forum non-AI funding"
+    }
+   ]
+  },
+  "tpot": {
+   "name": "tpot / post-rationalists",
+   "country": "tpot / post-rationalists",
+   "ontology": "The felt sense is data; embodiment, relationship, and vibes are upstream of explicit reason. Reality is participatory — metabolized through attention, not just modeled.",
+   "figures": [
+    "@nosilverv",
+    "@vgr",
+    "@QiaochuYuan",
+    "@vibecamp_"
+   ],
+   "tldr": "vibes, agency, embodiment over pure logic",
+   "discussing": [
+    {
+     "t": "Vibecamp 2026",
+     "d": "The IRL meetup for This Part of Twitter drew roughly 400 self-described terminally online nerds to Maryland, with Rolling Stone and Yahoo both running features on the scene this month.",
+     "x": "Vibecamp 2026"
+    },
+    {
+     "t": "Manifest Festival",
+     "d": "Manifold Markets' forecasting festival pulled 500-650 rationalist-adjacent attendees to Lighthaven in Berkeley June 12-14, described by regulars as Twitter and Substack, live.",
+     "x": "Manifest 2026 Lighthaven"
+    }
+   ]
+  },
+  "nondual": {
+   "name": "consciousness & psychedelic twitter",
+   "country": "Meditation & psychedelics",
+   "ontology": "Consciousness — specifically the valence of experience — is the only thing that ultimately matters, and it is a measurable, engineerable object. Enlightenment is a reproducible technology, not a lifetime vocation.",
+   "figures": [
+    "@nickcammarata",
+    "@algekalipso",
+    "Jhourney",
+    "Daniel Ingram"
+   ],
+   "tldr": "engineer consciousness and bliss directly",
+   "discussing": [
+    {
+     "t": "Jhourney Retreat Boom",
+     "d": "TIME profiled Jhourney's four-day retreats where newcomers reach jhana bliss states in under 40 hours, a practice popularized by Nick Cammarata's viral tweet threads on clean joy.",
+     "x": "Jhourney jhana retreat"
+    },
+    {
+     "t": "FDA Psychedelic Rules",
+     "d": "On July 14, 2026 the FDA finalized new clinical-trial guidance for psychedelic drugs, formally addressing the functional unblinding problem that sank Lykos Therapeutics' MDMA therapy bid in 2024.",
+     "x": "FDA psychedelic trial guidance"
+    },
+    {
+     "t": "Connecticut Psilocybin Pilot",
+     "d": "Yale's state-funded psilocybin and MDMA pilot program expanded to more patients after a new Connecticut law took effect July 1, 2026, opening eligibility to adults 18 and up.",
+     "x": "Connecticut psilocybin MDMA pilot"
+    }
+   ]
+  },
+  "btc": {
+   "name": "bitcoin maxis",
+   "country": "Bitcoin maxis",
+   "ontology": "Sound money is the base layer of civilization and a moral imperative; Bitcoin is the only credibly neutral monetary substrate — everything else is fiat, noise, or a scam.",
+   "figures": [
+    "@saylor",
+    "@adam3us",
+    "Luke Dashjr",
+    "@LynAldenContact"
+   ],
+   "tldr": "bitcoin is the only sound money",
+   "discussing": [
+    {
+     "t": "Strategy Buying Pause",
+     "d": "Michael Saylor's Strategy has gone quiet for four weeks, its longest pause since 2024, after selling 3,588 BTC for $216M in early July to rebuild a $3.225B cash reserve.",
+     "x": "Strategy bitcoin pause"
+    },
+    {
+     "t": "ETF Flow Whiplash",
+     "d": "Bitcoin ETFs logged a third straight week of inflows through July 27, but $465M fled the funds on July 23-24 alone as traders priced in the Fed's July 28-29 rate decision.",
+     "x": "bitcoin ETF outflows"
+    },
+    {
+     "t": "Fed Week Standoff",
+     "d": "BTC is pinned near $65,000 ahead of the Federal Reserve's July 28-29 meeting, with traders watching the $65,631 50-month EMA as the line between a breakout toward $70K and a slide to $58K.",
+     "x": "bitcoin Fed decision"
+    }
+   ]
+  },
+  "eth": {
+   "name": "ethereum builders",
+   "country": "Ethereum",
+   "ontology": "Reality is programmable coordination; credibly neutral protocols are how humanity scales trust. Progress is real but must be steered — d/acc over both doom and recklessness.",
+   "figures": [
+    "@VitalikButerin",
+    "@TimBeiko",
+    "@drakefjustin",
+    "@fundstrat"
+   ],
+   "tldr": "neutral protocols for global coordination",
+   "discussing": [
+    {
+     "t": "Lean Ethereum Reboot",
+     "d": "Vitalik Buterin dropped the Lean Ethereum roadmap on July 5, a 3-4 year plan to rebuild the protocol around recursive STARKs and quantum-resistant signatures, calling it the biggest overhaul since the Merge.",
+     "x": "Lean Ethereum roadmap"
+    },
+    {
+     "t": "Fusaka Fee Crush",
+     "d": "The Fusaka upgrade's PeerDAS tech is live, delivering an eightfold jump in blob capacity and cutting L2 transaction fees 40-60% in its first month on rollups like Base and Arbitrum.",
+     "x": "Fusaka PeerDAS fees"
+    },
+    {
+     "t": "Glamsterdam Ahead",
+     "d": "Builders are already debating Glamsterdam, Ethereum's next hard fork slated for later in 2026, as ETH trades near $1,770-1,900 and researchers push Vitalik for faster execution timelines.",
+     "x": "Glamsterdam Ethereum upgrade"
+    }
+   ]
+  },
+  "defi": {
+   "name": "DeFi & stablecoin builders",
+   "country": "DeFi & stablecoins",
+   "ontology": "Finance is being rebuilt as open programmable infrastructure; stablecoins are the internet's money layer and regulation is the moat, not the enemy.",
+   "figures": [
+    "Jeremy Allaire",
+    "@paoloardoino",
+    "@StaniKulechov",
+    "@jchervinsky"
+   ],
+   "tldr": "rebuild finance on open rails",
+   "discussing": [
+    {
+     "t": "GENIUS Act Delay",
+     "d": "Treasury and federal regulators blew through the GENIUS Act's July 18 deadline for final stablecoin rules, leaving issuers like Tether and Circle in limbo ahead of the law's January 18, 2027 effective date.",
+     "x": "GENIUS Act deadline missed"
+    },
+    {
+     "t": "Aave Stable Vaults",
+     "d": "Aave Labs launched Stable Vaults on July 9, letting fintechs and wallets embed fixed-rate stablecoin yield, right as AAVE rallies toward $100 on its biggest network-growth day in five years.",
+     "x": "Aave Stable Vaults launch"
+    },
+    {
+     "t": "Oracle Exploit Wave",
+     "d": "Ostium lost $18 million on July 15 to an oracle timestamp manipulation attack, the latest in a keeper-exploit wave following a $6M Summer.fi drain and April's $290M KelpDAO hack.",
+     "x": "Ostium oracle exploit"
+    }
+   ]
+  },
+  "degens": {
+   "name": "degens & memecoin culture",
+   "country": "Degens / memecoins",
+   "ontology": "Attention is the only real asset and price is the only truth; everything is musical chairs and the sin is not playing but exiting late. Nihilism worn as comedy.",
+   "figures": [
+    "@blknoiz06",
+    "@cobie",
+    "@a1lon9",
+    "@chameleon_jeff"
+   ],
+   "tldr": "everything is a casino; ape accordingly",
+   "discussing": [
+    {
+     "t": "BonkDAO Vote Heist",
+     "d": "An attacker spent $4M buying BONK tokens to out-vote BonkDAO's 1%-quorum governance on July 6, then pushed through a fake proposal draining 4.4 trillion BONK, about $20M, straight to their own wallet.",
+     "x": "BonkDAO governance attack"
+    },
+    {
+     "t": "Pump.fun SOL Dump",
+     "d": "Pump.fun has quietly sold roughly 4.81 million SOL at an average $168.30, including an 81,712 SOL transfer to Kraken on July 18 that's now dragging on Solana's price as memecoin trading cools.",
+     "x": "Pump.fun SOL selling"
+    },
+    {
+     "t": "PUMP Token Unlock",
+     "d": "PUMP surged over 20% around its July 12 token unlock as traders bet on launchpad buybacks even while Solana meme volume slumps and SOL slides double digits on the month.",
+     "x": "PUMP token unlock buyback"
+    }
+   ]
+  },
+  "regens": {
+   "name": "regens & solarpunks",
+   "country": "Regens / solarpunk",
+   "ontology": "Value is regenerative, not extractive: ecosystems, communities, and public goods are the real wealth, and crypto's purpose is coordination infrastructure that funds what markets and states won't.",
+   "figures": [
+    "@owocki",
+    "@glenweyl",
+    "@ReFiDAO",
+    "@MaEarthMedia"
+   ],
+   "tldr": "fund public goods, regenerate the commons",
+   "discussing": [
+    {
+     "t": "Plural AI Pitch",
+     "d": "Glen Weyl brought his Can AI See Me? plural-AI argument to the United Nations Global Dialogue on AI Governance this July, pushing participatory public-goods design as an alternative to top-down AI.",
+     "x": "Glen Weyl plural AI UN"
+    },
+    {
+     "t": "GTC Card Expands",
+     "d": "Gitcoin's community voted on June 30 to add new countries to its live GTC Crypto Visa card, pushing instant crypto-to-fiat spending for grant recipients past 150 countries.",
+     "x": "GTC Crypto Card vote"
+    },
+    {
+     "t": "Gitcoin Site Scare",
+     "d": "Security firm Blockaid flagged a front-end attack on a Gitcoin subdomain on June 21, a reminder to the public-goods crowd that even quadratic-funding infrastructure is a phishing target.",
+     "x": "Gitcoin subdomain security"
+    }
+   ]
+  },
+  "degrowth": {
+   "name": "degrowthers & climate realists",
+   "country": "Degrowth / climate left",
+   "ontology": "Infinite growth on a finite biosphere is a category error; collapse is the designed output of competitive accumulation. What's real is throughput, energy, and biophysical limits — GDP is ideology.",
+   "figures": [
+    "@jasonhickel",
+    "Kohei Saito",
+    "@GretaThunberg",
+    "@rahmstorf"
+   ],
+   "tldr": "infinite growth is killing the biosphere",
+   "discussing": [
+    {
+     "t": "Thunberg Berlin Arrest",
+     "d": "Police detained Greta Thunberg on July 11, 2026 at a Berlin protest against arms maker Rheinmetall, where her Yalla Intifada shirt ignited a fresh backlash cycle.",
+     "x": "Greta Thunberg Rheinmetall Berlin"
+    },
+    {
+     "t": "200 Million Under Heat",
+     "d": "A record-shattering July 2026 heat dome put over 200 million Americans under extreme-heat warnings, with daily highs matched or broken more than 1,500 times in June alone.",
+     "x": "US heat dome July 2026"
+    },
+    {
+     "t": "Thunberg Joins Delhi Solidarity",
+     "d": "On July 27, 2026 Thunberg joined a London rally backing India's student-led protest movement, whose Delhi demonstrations had already forced the education minister to resign.",
+     "x": "Greta Thunberg London rally"
+    }
+   ]
+  },
+  "longevity": {
+   "name": "longevity & biohackers",
+   "country": "Longevity / biohackers",
+   "ontology": "Death is a solvable engineering problem and aging the master pathology; the body is an instrumentable system whose biomarkers outrank doctors, intuition, and tradition.",
+   "figures": [
+    "@bryan_johnson",
+    "@mkaeberlein",
+    "@PeterAttiaMD",
+    "Joe Betts-Lacroix"
+   ],
+   "tldr": "death is an engineering problem",
+   "discussing": [
+    {
+     "t": "Bryan Johnson's Diagnosis",
+     "d": "Bryan Johnson announced in early July 2026 he has incurable autoimmune gastritis, and told followers on X he intends to manage it by cloning himself.",
+     "x": "Bryan Johnson autoimmune gastritis"
+    },
+    {
+     "t": "Blueprint Protocol Overhaul",
+     "d": "Johnson's 2026 Blueprint revision dropped rapamycin over side effects, added low-dose lithium and NDGA for brain protection, and cut NMN dosing to six days a week.",
+     "x": "Blueprint protocol 2026 rapamycin"
+    },
+    {
+     "t": "Rapamycin Phase 3",
+     "d": "A newly funded six-year, $12 million Phase 3 trial is testing whether daily rapamycin improves immune resilience in older adults, building on the PEARL trial's one-year safety data.",
+     "x": "rapamycin Phase 3 trial"
+    }
+   ]
+  },
+  "maha": {
+   "name": "MAHA & health freedom",
+   "country": "MAHA / health freedom",
+   "ontology": "Chronic disease is the product of a captured food-pharma-regulatory complex; the body is naturally well and gets sick from adulteration. Institutional consensus is a marketing artifact.",
+   "figures": [
+    "@RobertKennedyJr",
+    "Casey Means",
+    "@CalleyMeans",
+    "@foodbabe"
+   ],
+   "tldr": "the food-pharma system is poisoning us",
+   "discussing": [
+    {
+     "t": "School Dye Ban Deadline",
+     "d": "The International Dairy Foods Association's members are eliminating artificial colors from school milk, cheese and yogurt by RFK Jr.'s July 2026 deadline, part of his phase-out of six synthetic dyes.",
+     "x": "RFK food dye ban schools"
+    },
+    {
+     "t": "Vaccine Schedule in Limbo",
+     "d": "Kennedy's cut of the childhood vaccine schedule from 17 shots to 11 remains blocked by a federal judge's March 2026 ruling while HHS's appeal drags on.",
+     "x": "RFK vaccine schedule ruling"
+    },
+    {
+     "t": "MAHA Midterm Tour",
+     "d": "The White House sent RFK Jr. to swing House districts this month promoting MAHA wins ahead of the November 2026 midterms, from dye bans to dietary guideline rewrites.",
+     "x": "RFK Jr MAHA midterms"
+    }
+   ]
+  },
+  "nrx": {
+   "name": "neoreaction & the new right",
+   "country": "Neoreaction / new right",
+   "ontology": "Democracy is a legitimating fiction over an unaccountable permanent regime — the Cathedral. Power is real, procedure is theater; sovereignty should be consolidated and exercised.",
+   "figures": [
+    "Curtis Yarvin",
+    "@ConceptualJames",
+    "BAP",
+    "@j_fishback"
+   ],
+   "tldr": "democracy is fake; sovereignty is real",
+   "discussing": [
+    {
+     "t": "DOGE Shuts Down",
+     "d": "The Department of Government Efficiency hit its mandatory expiration on July 4, 2026, claiming $215 billion in savings against its original $2 trillion promise, with no final report planned.",
+     "x": "DOGE shutdown July 2026"
+    },
+    {
+     "t": "Yarvin's Monarchy Pitch",
+     "d": "Curtis Yarvin argued for American monarchy at a closed-door Yale debate covered by the Yale Daily News, part of a wave of July 2026 profiles pushing his Cathedral theory mainstream.",
+     "x": "Curtis Yarvin Yale monarchy"
+    },
+    {
+     "t": "Fishback's Florida Bid",
+     "d": "James Fishback's America-First campaign for Florida governor has drawn mockery and grift accusations from fellow right-wing accounts on X throughout 2026.",
+     "x": "James Fishback Florida governor"
+    }
+   ]
+  },
+  "netstate": {
+   "name": "network-state builders",
+   "country": "Network states",
+   "ontology": "The nation-state is legacy software and sovereignty a startup opportunity; communities aligned online can crowdfund territory and exit into better-governed jurisdictions.",
+   "figures": [
+    "@balajis",
+    "Dryden Brown",
+    "@patrissimo",
+    "Edge City"
+   ],
+   "tldr": "exit nations; start new ones online",
+   "discussing": [
+    {
+     "t": "Network School Exile",
+     "d": "Malaysia revoked the business license of Balaji Srinivasan's Network School in Forest City on July 22 over alleged immigration violations after backlash to his tech Zionism framing, sending the pop-up city to Kazakhstan.",
+     "x": "Network School Malaysia shutdown"
+    },
+    {
+     "t": "Praxis Spaceport City",
+     "d": "Praxis unveiled plans for Atlas, a permanent defense-focused spaceport city at Vandenberg Space Force Base in California, its most concrete charter-city pitch yet alongside its Greenland ambitions.",
+     "x": "Praxis Atlas Vandenberg"
+    },
+    {
+     "t": "Edge Esmeralda Returns",
+     "d": "Edge City's Edge Esmeralda pop-up drew more than 500 participants to Sonoma County from May 30 to June 27, with organizers now saying a permanent village is coming next.",
+     "x": "Edge Esmeralda Sonoma"
+    }
+   ]
+  },
+  "indie": {
+   "name": "indie hackers",
+   "country": "Indie hackers",
+   "ontology": "Leverage is now individually held — one person plus models can occupy niches that needed a company. Revenue is the only real validation; institutions are optional overhead.",
+   "figures": [
+    "@levelsio",
+    "@dannypostmaa",
+    "@arvidkahl",
+    "@csallen"
+   ],
+   "tldr": "one person + AI = a whole company",
+   "discussing": [
+    {
+     "t": "Vibe Jam 2026 Winners",
+     "d": "Pieter Levels' AI-only game jam crowned A Game About Capybaras Delivering Food its $25,000 grand prize from a 30-day contest requiring 90% AI-written code.",
+     "x": "Vibe Jam 2026 winners"
+    },
+    {
+     "t": "Lovable's $400M ARR",
+     "d": "AI app-builder Lovable crossed $400 million in annual recurring revenue in early 2026, with over 200,000 new vibe-coded projects created on the platform every single day.",
+     "x": "Lovable ARR vibe coding"
+    },
+    {
+     "t": "45-Day $456K Founder",
+     "d": "A non-technical solo founder used Lovable to take a new app from zero to $456,000 in annual recurring revenue in just 45 days, becoming this cycle's indie-hacker case study.",
+     "x": "Lovable 456K ARR 45 days"
+    }
+   ]
+  },
+  "maga": {
+   "name": "maga / populist right",
+   "country": "MAGA / populist right",
+   "tldr": "the elites betrayed the nation; take it back",
+   "ontology": "The country is being betrayed by a corrupt managerial elite; legitimacy flows from the people and the nation, not from institutions. Loyalty and sovereignty over procedure.",
+   "figures": [
+    "@realDonaldTrump",
+    "@charliekirk11",
+    "Steve Bannon",
+    "@bennyjohnson"
+   ],
+   "discussing": [
+    {
+     "t": "Epstein files fight",
+     "d": "DOJ is refusing a court-ordered release of the remaining files and the base is furious — an open loyalty crisis between the White House and its own movement, 100 days from the midterms.",
+     "x": "Epstein files release"
+    },
+    {
+     "t": "Midterms at 100 days",
+     "d": "Jeffries launched the Democrats' affordability agenda July 26; the right is arguing over whether to answer on prices or run on immigration.",
+     "x": "midterms 100 days"
+    },
+    {
+     "t": "H-1B civil war",
+     "d": "the nativist wing is knife-fighting the tech right over H-1B visas and AI labor policy — who actually runs this coalition?",
+     "x": "H-1B MAGA tech right"
+    }
+   ]
+  },
+  "progleft": {
+   "name": "progressive left",
+   "country": "Progressive left",
+   "tldr": "dismantle concentrated power; solidarity works",
+   "ontology": "Society is structured by systems of power — class, race, gender — and politics is the struggle to redistribute that power. Markets don't self-correct; organized people do.",
+   "figures": [
+    "@AOC",
+    "@BernieSanders",
+    "@ZohranKMamdani",
+    "@RBReich"
+   ],
+   "discussing": [
+    {
+     "t": "Mamdani's NYC",
+     "d": "Mamdani's New York is the movement's live demonstration case — celebrated on the left, used as a cautionary tale by everyone else.",
+     "x": "Mamdani NYC"
+    },
+    {
+     "t": "Data center moratorium",
+     "d": "Sanders' AI Data Center Moratorium Act rides a wave of 142 local protests and up-to-267% electricity price spikes — Big Tech's grid demand as the new class fight.",
+     "x": "Sanders data center moratorium"
+    },
+    {
+     "t": "Abundance is a rebrand",
+     "d": "the intra-Democratic war over whether the abundance agenda is supply-side sense or deregulation in a progressive costume.",
+     "x": "abundance agenda backlash"
+    }
+   ]
+  },
+  "establishment": {
+   "name": "liberal establishment",
+   "country": "Liberal establishment",
+   "tldr": "institutions and expertise hold it together",
+   "ontology": "Liberal democracy works through institutions, expertise, and procedure. The job is competent governance and defending norms against extremes on both sides.",
+   "figures": [
+    "@jaketapper",
+    "@maggieNYT",
+    "@jbouie",
+    "The Atlantic"
+   ],
+   "discussing": [
+    {
+     "t": "Affordability agenda",
+     "d": "Jeffries kicked off 'Fighting for an Affordable America' July 26 with housing costs the #1 issue for under-35 voters — the establishment's midterm bet.",
+     "x": "Jeffries affordability agenda"
+    },
+    {
+     "t": "Can the coalition hold?",
+     "d": "100-days-out polling discourse: abundance wing vs. populist wing vs. the base that just wants to win.",
+     "x": "Democrats midterms polling"
+    },
+    {
+     "t": "Who regulates AI?",
+     "d": "the federal preemption draft and the White House's model-review gate — arguing over what competent AI governance even looks like after the OpenAI escape.",
+     "x": "AI regulation Congress"
+    }
+   ]
+  },
+  "finance": {
+   "name": "wall street / macro",
+   "country": "Wall Street / macro",
+   "tldr": "markets price everything; don't fight the Fed",
+   "ontology": "Prices aggregate all information and capital flows are the real politics. Everything else is narrative wrapped around the number.",
+   "figures": [
+    "@LizAnnSonders",
+    "@fundstrat",
+    "@zerohedge",
+    "CNBC"
+   ],
+   "discussing": [
+    {
+     "t": "Fed decision week",
+     "d": "the July FOMC decision lands this week with crypto and equities both coiled around it — every asset is a rates trade again.",
+     "x": "Fed decision FOMC"
+    },
+    {
+     "t": "AI capex supercycle",
+     "d": "datacenter spending is the market's main character — $130B in projects stalled by local opposition while hyperscaler capex keeps breaking records.",
+     "x": "AI capex datacenter"
+    },
+    {
+     "t": "SpaceX after the IPO",
+     "d": "the $1.8T rocket company's first month as a public stock: Morningstar says it's worth less than half, retail says up only.",
+     "x": "SpaceX stock valuation"
+    }
+   ]
+  },
+  "christian": {
+   "name": "christian twitter",
+   "country": "Christian twitter",
+   "tldr": "moral order is given, not invented",
+   "ontology": "Reality is created and moral order is given; scripture and the church outrank secular consensus. History is a spiritual drama whose stakes exceed politics.",
+   "figures": [
+    "@Franklin_Graham",
+    "@albertmohler",
+    "@drmoore",
+    "@BishopBarron"
+   ],
+   "discussing": [
+    {
+     "t": "Doug Wilson debate",
+     "d": "NPR's sit-down with the Moscow, Idaho pastor tied to Pentagon prayer services — who wants a Christian theocracy — is fueling weeks of mainstreaming-vs-fringe fights across evangelical X.",
+     "x": "Doug Wilson NPR Hegseth"
+    },
+    {
+     "t": "Greg Locke raid",
+     "d": "the MAGA pastor says ~60 federal agents battering-rammed his Tennessee home in a church-finance investigation — 'persecution' vs. 'accountability' camps.",
+     "x": "Greg Locke raid IRS"
+    },
+    {
+     "t": "Pope Leo on migrants",
+     "d": "the first American pope marked July 4 from Lampedusa urging the US to welcome immigrants — Catholic X debates him vs. MAGA Catholics.",
+     "x": "Pope Leo Lampedusa immigration"
+    }
+   ]
+  },
+  "stan": {
+   "name": "stan / pop culture",
+   "country": "Stan / pop culture",
+   "tldr": "fandom is identity; charts are the scoreboard",
+   "ontology": "Meaning lives in fandom: attachment to artists and franchises organizes identity, community, and war. Streams and charts are the objective record.",
+   "figures": [
+    "@PopBase",
+    "@PopCrave",
+    "@chartdata"
+   ],
+   "discussing": [
+    {
+     "t": "Gracie's first No. 1",
+     "d": "Gracie Abrams' 'Daughter From Hell' debuted atop the Billboard 200 with a career-best 124,000 units — stan X is ranking the year's first-timers.",
+     "x": "Gracie Abrams Daughter From Hell"
+    },
+    {
+     "t": "Tayvis wedding afterglow",
+     "d": "Taylor Swift and Travis Kelce married July 3 at Madison Square Garden; X is still churning guest stories and second-ceremony reports.",
+     "x": "Taylor Travis wedding"
+    },
+    {
+     "t": "2Pac Street Fighter verse",
+     "d": "50 Cent confirmed a three-way record with Eminem and unreleased 2Pac vocals ('not AI') — hip-hop X fights over posthumous verses.",
+     "x": "50 Cent Eminem 2Pac"
+    }
+   ]
+  },
+  "sports": {
+   "name": "sports twitter",
+   "country": "Sports twitter",
+   "tldr": "loyalty, stats, and the eternal debate",
+   "ontology": "Merit is settled on the field and argued forever after. Loyalty is inherited, stats are scripture, and the debate itself is the point.",
+   "figures": [
+    "@ShamsCharania",
+    "@AdamSchefter",
+    "@stephenasmith",
+    "@wojespn"
+   ],
+   "discussing": [
+    {
+     "t": "LeBron sweepstakes",
+     "d": "LeBron told the Lakers he'll play his 24th season elsewhere — Warriors, Cavs and Heat chasing, and NBA X refreshes daily for 'the second Decision.'",
+     "x": "LeBron free agency"
+    },
+    {
+     "t": "Skubal deadline watch",
+     "d": "the MLB trade deadline hits Aug 3 with two-time Cy Young winner Tarik Skubal headlining the market as Detroit weighs a trade.",
+     "x": "Skubal trade deadline"
+    },
+    {
+     "t": "£117m Morgan Rogers",
+     "d": "Chelsea's British-record signing from Aston Villa tops City's £116m Anderson deal days earlier — the exploding transfer market is the debate.",
+     "x": "Morgan Rogers Chelsea"
+    }
+   ]
+  },
+  "georgists": {
+   "name": "georgists",
+   "country": "Georgists",
+   "tldr": "tax land, not labor",
+   "ontology": "Land value is created by the community, so land rent belongs to everyone; most economic dysfunction — housing above all — traces to private capture of that rent.",
+   "figures": [
+    "Lars Doucet",
+    "@larsiusprime",
+    "Henry George (patron saint)"
+   ],
+   "discussing": [
+    {
+     "t": "State LVT wins",
+     "d": "Virginia and Kentucky both enacted split-rate land-tax enabling laws this spring — the movement's biggest legislative run in decades.",
+     "x": "land value tax split-rate"
+    },
+    {
+     "t": "Spokane LVT report",
+     "d": "the Center for Land Economics modeled a revenue-neutral land-tax shift for Spokane, with a Washington State bill targeted for 2027.",
+     "x": "Spokane land value tax"
+    }
+   ]
+  },
+  "girardians": {
+   "name": "girardians",
+   "country": "Girardians",
+   "tldr": "desire is mimetic; scapegoats keep the peace",
+   "ontology": "Humans want what others want; rivalry escalates until it discharges onto a scapegoat. Culture, religion, and markets are machines for managing mimetic conflict.",
+   "figures": [
+    "Luke Burgis",
+    "Geoff Shullenberger",
+    "@peterthiel (patron)"
+   ],
+   "discussing": [
+    {
+     "t": "Burgis's new book",
+     "d": "'The One and the Ninety-Nine' — on forging identity against social contagion — is the community's current text.",
+     "x": "Luke Burgis One Ninety-Nine"
+    },
+    {
+     "t": "Scapegoats & online mobs",
+     "d": "the evergreen thread: applying Girard's scapegoat mechanism to polarization and pile-ons, via Burgis and Johnathan Bi's lectures.",
+     "x": "Girard mimetic scapegoat"
+    }
+   ]
+  },
+  "landian": {
+   "name": "landian accel",
+   "country": "Landian accel",
+   "tldr": "capital is an alien intelligence",
+   "ontology": "Modernity is capital using humans to bootstrap its own substrate; acceleration isn't a policy choice, it's what is already happening. The horror reading of e/acc's optimism.",
+   "figures": [
+    "Nick Land",
+    "@xenocosmography",
+    "cave twitter"
+   ],
+   "discussing": [
+    {
+     "t": "Land lands in SF",
+     "d": "after two decades in Shanghai, Nick Land relocated to San Francisco — with AI-lab workers reportedly at Land-adjacent events, cave twitter calls it accelerationism going institutional.",
+     "x": "Nick Land San Francisco"
+    },
+    {
+     "t": "AGI inside capital",
+     "d": "the current canonical text: Land's conversation arguing capitalism is an already-running artificial intelligence with AGI trapped inside it.",
+     "x": "Outsideness AGI capitalism"
+    }
+   ]
+  },
+  "metamodern": {
+   "name": "metamodernists",
+   "country": "Metamodernists",
+   "tldr": "integrate irony and sincerity; develop in stages",
+   "ontology": "Culture and persons develop through stages that must be integrated, not skipped; the modern/postmodern fight resolves by holding both at once.",
+   "figures": [
+    "Hanzi Freinacht",
+    "John Vervaeke",
+    "@Metapsychosis"
+   ],
+   "discussing": [
+    {
+     "t": "Vervaeke's book",
+     "d": "'Awakening from the Meaning Crisis' is becoming a book, and Vervaeke's crossover onto Nate Hagens' podcast bridges meaning-crisis and collapse discourse.",
+     "x": "Vervaeke meaning crisis book"
+    },
+    {
+     "t": "Waiting on Hanzi",
+     "d": "anticipation for Hanzi Freinacht's announced next books, plus the evergreen metamodern-vs-integral politics debate.",
+     "x": "Hanzi Freinacht metamodern"
+    }
+   ]
+  },
+  "forecasters": {
+   "name": "forecasters",
+   "country": "Forecasters",
+   "tldr": "put a number on it or it's vibes",
+   "ontology": "Beliefs are bets and calibration is virtue. Prediction markets and scoring rules extract honest probabilities from talk.",
+   "figures": [
+    "@Polymarket",
+    "Nate Silver",
+    "Metaculus",
+    "Robin Hanson"
+   ],
+   "discussing": [
+    {
+     "t": "Minnesota ban blocked",
+     "d": "a federal judge just granted Kalshi/Polymarket an injunction pausing Minnesota's prediction-market ban; midterm markets have passed $197M volume.",
+     "x": "Kalshi Minnesota injunction"
+    },
+    {
+     "t": "Insider trading debate",
+     "d": "Bloomberg's Big Take on a 'new class of insider trader' on the markets is the hot integrity fight — while human Pros still beat AI bots at Metaculus.",
+     "x": "Polymarket insider trading"
+    }
+   ]
+  },
+  "cryonics": {
+   "name": "cryonicists",
+   "country": "Cryonicists",
+   "tldr": "death is information loss; preserve the pattern",
+   "ontology": "Death is the loss of information, not an event; preserve the brain's pattern and future medicine can restart it. The original transhumanism.",
+   "figures": [
+    "Max More",
+    "Alcor",
+    "@BrainPresFdn"
+   ],
+   "discussing": [
+    {
+     "t": "The gap is narrowing",
+     "d": "Fahy and Alcor published evidence that M22 vitrification preserves brain ultrastructure — the field's most encouraging result in years.",
+     "x": "Alcor vitrification brain"
+    },
+    {
+     "t": "Rewarmed brain tissue",
+     "d": "MIT Tech Review covered a scientist who rewarmed and studied pieces of his friend's cryopreserved brain — revival-plausibility debate reignited.",
+     "x": "cryopreserved brain rewarmed"
+    }
+   ]
+  },
+  "pronatalists": {
+   "name": "pronatalists",
+   "country": "Pronatalists",
+   "tldr": "fertility is the master variable",
+   "ontology": "Fertility collapse is the master variable of the future: cultures that don't reproduce get replaced by ones that do. Family formation is civilizational infrastructure.",
+   "figures": [
+    "Malcolm & Simone Collins",
+    "@MoreBirths",
+    "Robin Hanson"
+   ],
+   "discussing": [
+    {
+     "t": "NatalCon orbit",
+     "d": "the Austin conference circuit and its tech-right/trad coalition remains the focal event — with Lyman Stone's critique marking the wonk-vs-vibes split.",
+     "x": "NatalCon natalism"
+    },
+    {
+     "t": "Embryo screening fight",
+     "d": "the Collinses' IVF polygenic screening is the live ethical flashpoint between demographers, trads, and tech pronatalists.",
+     "x": "Collins polygenic embryo"
+    }
+   ]
+  },
+  "doomeroptimists": {
+   "name": "doomer optimists",
+   "country": "Doomer optimists",
+   "tldr": "collapse is coming; build local lifeboats",
+   "ontology": "Industrial civilization is overshooting hard biophysical limits — but the answer is skills, land, and community, not despair. Prep by rebuilding the local.",
+   "figures": [
+    "Ashley Colby",
+    "Nate Hagens",
+    "@jasonsnyderorg"
+   ],
+   "discussing": [
+    {
+     "t": "Episode 300",
+     "d": "the Doomer Optimism podcast passed 300 episodes, with Ashley Colby's IRL gatherings carrying collapse-aware localism forward.",
+     "x": "Doomer Optimism podcast"
+    },
+    {
+     "t": "Hagens x Vervaeke",
+     "d": "the energy-descent and meaning-crisis communities are merging — Vervaeke on The Great Simplification is the crossover moment.",
+     "x": "Great Simplification Vervaeke"
+    }
+   ]
+  },
+  "remilia": {
+   "name": "remilia / net spirituality",
+   "country": "Remilia / net spirituality",
+   "tldr": "the timeline is a spiritual plane",
+   "ontology": "Identity dissolves into the network; anonymous posting, aesthetics, and memetic play are devotional acts. The milady cult of the feed.",
+   "figures": [
+    "Charlotte Fang",
+    "milady sphere"
+   ],
+   "discussing": [
+    {
+     "t": "Vitalik's milady pfp",
+     "d": "Vitalik set his profile picture to a Milady, sending the floor up ~30% and reigniting 'network spirituality won' discourse.",
+     "x": "Vitalik milady"
+    },
+    {
+     "t": "RemiliaChat",
+     "d": "Remilia is building a moderation-by-design social platform pitched as saving internet culture — while the 'Milady vs Milady' lawsuits grind on.",
+     "x": "RemiliaChat Remilia"
+    }
+   ]
+  },
+  "cozyweb": {
+   "name": "cozyweb",
+   "country": "Cozyweb",
+   "tldr": "small quiet internet over the big feed",
+   "ontology": "The good internet is small, slow, and tended — group chats, blogs, digital gardens. Scale is the disease; context is the cure.",
+   "figures": [
+    "@vgr (coined it)",
+    "Maggie Appleton",
+    "Robin Sloan"
+   ],
+   "discussing": [
+    {
+     "t": "Anti-slop web revival",
+     "d": "the handmade-web movement (Neocities, Nekoweb) is framing personal sites as rebellion against AI slop and algorithmic feeds.",
+     "x": "small web AI slop"
+    },
+    {
+     "t": "Gardens over feeds",
+     "d": "Maggie Appleton's digital-gardening patterns are freshly recirculating as the slop debate grows.",
+     "x": "digital garden small web"
+    }
+   ]
+  },
+  "tradcaths": {
+   "name": "trad catholics",
+   "country": "Trad Catholics",
+   "tldr": "return to tradition, liturgy, hierarchy",
+   "ontology": "Modernity took a wrong turn at liberalism; truth lives in tradition, hierarchy, and the old Mass. Liturgy as resistance.",
+   "figures": [
+    "Taylor Marshall",
+    "Adrian Vermeule",
+    "@CatholicArena"
+   ],
+   "discussing": [
+    {
+     "t": "Latin Mass at 5 years",
+     "d": "five years of Traditionis Custodes: Pope Leo is granting dispensations and urging 'generous inclusion,' with Cardinal Sarah pushing to bind all bishops.",
+     "x": "Traditionis Custodes anniversary"
+    },
+    {
+     "t": "SSPX excommunications",
+     "d": "Pope Leo excommunicated six SSPX bishops after unauthorized ordinations — splitting trad twitter between institutionalists and SSPX sympathizers.",
+     "x": "SSPX bishops excommunicated"
+    }
+   ]
+  },
+  "wsb": {
+   "name": "wallstreetbets",
+   "country": "WallStreetBets",
+   "tldr": "the market is a casino; ape together strong",
+   "ontology": "The market is a casino where the little guy can gang up on the house. Conviction, leverage, and memes over analysis; loss porn is content.",
+   "figures": [
+    "r/WSB diaspora",
+    "@unusual_whales"
+   ],
+   "discussing": [
+    {
+     "t": "Save Wendy's squeeze",
+     "d": "WEN spiked 42% intraday after a viral 'We need to save Wendy's' post targeting its 23% short float — follow-on rallies into July.",
+     "x": "WEN Wendy's squeeze"
+    },
+    {
+     "t": "Mega-IPO plays",
+     "d": "the 2026 playbook: flipping the year's mega-IPOs and rotating small-cap meme churn instead of stimulus-era squeezes.",
+     "x": "wallstreetbets IPO"
+    }
+   ]
+  },
+  "astrology": {
+   "name": "astrology twitter",
+   "country": "Astrology twitter",
+   "tldr": "the sky mirrors the psyche",
+   "ontology": "Celestial patterns index temperament and timing; the chart is a symbolic language for fate and self-knowledge, held with varying degrees of irony.",
+   "figures": [
+    "Chani Nicholas",
+    "@astrobebs",
+    "Co-Star"
+   ],
+   "discussing": [
+    {
+     "t": "Saturn-Neptune in Aries",
+     "d": "the once-in-36-years conjunction at 0° Aries dominates transit talk — dissolved authority and 'disillusionment with the guru complex.'",
+     "x": "Saturn Neptune conjunction Aries"
+    },
+    {
+     "t": "AI astrology backlash",
+     "d": "working astrologers vs. AI chatbot birth charts — Co-Star's AI 'roast' readings draw fire while human-grounded apps position against them.",
+     "x": "Co-Star AI astrology"
+    }
+   ]
+  },
+  "ufo": {
+   "name": "ufo / disclosure",
+   "country": "UFO / disclosure",
+   "tldr": "non-human intelligence is real; disclosure is coming",
+   "ontology": "Non-human intelligence is real and documented, institutions have concealed it for decades, and disclosure is a civilizational event already in progress.",
+   "figures": [
+    "Jeremy Corbell",
+    "Ross Coulthart",
+    "Lue Elizondo"
+   ],
+   "discussing": [
+    {
+     "t": "NDA waiver order",
+     "d": "the President directed agencies to waive nondisclosure agreements for former officials cooperating with UAP investigations — hailed as a whistleblower breakthrough.",
+     "x": "UAP whistleblower NDA"
+    },
+    {
+     "t": "Stalled file drops",
+     "d": "the Pentagon's fourth UFO file release fed the feed, but no new records since June 12 has disclosure twitter accusing the administration of slow-walking.",
+     "x": "Pentagon UAP files"
+    }
+   ]
+  }
+ }
+}
