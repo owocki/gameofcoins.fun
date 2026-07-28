@@ -1646,7 +1646,21 @@
     "BluntDAO",
     "@LinksDAO"
    ],
-   "discussing": []
+   "discussing": [],
+   "topics": [
+    {
+     "t": "LinksDAO delivery doubts",
+     "d": "This corner is quiet right now; the story still echoing is Fried Egg Golf's February 6, 2026 report that LinksDAO is struggling to deliver on its promises to token-holding golfers.",
+     "x": "LinksDAO",
+     "src": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTDhCZC1vTjlEVUdBNGhFOE5WZllUSmhyN2U4Z3g4MHBhQXA0MTRXLWkxdFpCR01ZdTNaZ0Q1cjg4VVdiWkJ5V2Z4UHdEa04xSjRUaFZVZ3c1QnNqamlrcGNNczFlZ1FQQ1hjRzhsa04xRzJIUWFNZXZyWmxGM0Fna04zb0I0cTFRdzJQY3ZGUndQbEU?oc=5"
+    },
+    {
+     "t": "Pizza Day flywheel",
+     "d": "Evergreen: PizzaDAO's whole model is the annual Bitcoin Pizza Day global pizza party (May 22) funding free slices worldwide, and news coverage of the DAO between parties is close to zero.",
+     "x": "PizzaDAO pizza party",
+     "src": "https://news.google.com/rss/search?q=%22PizzaDAO%22%20OR%20%22Rare%20Pizzas%22%20OR%20%22Global%20Pizza%20Party%22"
+    }
+   ]
   },
   "restakers": {
    "name": "the restakers",
@@ -1670,6 +1684,26 @@
      "d": "EigenCloud (prev. EigenLayer) — rank #200, $146M market cap, $0.1975.",
      "x": "$EIGEN",
      "src": "https://www.coingecko.com/en/coins/eigenlayer"
+    }
+   ],
+   "topics": [
+    {
+     "t": "EigenCloud token problem",
+     "d": "A July 27 TipRanks piece argues EigenCloud dominates restaking while its EIGEN token badly lags that dominance, reigniting the value-accrual debate.",
+     "x": "EigenCloud EIGEN token",
+     "src": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYndmbVY3c01fbExnaUk3S3VOVW1IbUhXZ1VHcEg2NjEtSXVkUnJrdUNkUU4tTnQ1THlMSnBaeEZLdzlWT2xkVnJQSnRZQ3BYRGpKaDFwWDdIOFphaW9ON3lrOGIzX2YyTllBQnk4Y2RWVXc3ZjlKVFN3bURHRy13WGo2VnFDdHJhT0owQQ?oc=5"
+    },
+    {
+     "t": "ether.fi slashing cover",
+     "d": "ether.fi partnered with Nexus Mutual on July 17 to insure institutional ETH stakers against slashing losses.",
+     "x": "ether.fi Nexus Mutual",
+     "src": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcGYzQmM2UVVDM0NLQnpDTzBONWNzNHByeXBkcjY4NDVyY25WMXhMY2JrUUVLYXB4cHdmMWZ2MXVzSXBMN19YWVFEQlZqUlg0SFhwOVRfMVRBYUs3QkxTZG9hdU5zWjZGMEg0emQxUDZBbmpQQi0yZENEUk9PbF9VT0ZLbUZXNXVRdW9WZHhycjZCQ3QybTJieDRTalVFUTRoTXJ1bVpYX1dpUllqUDZtejlMd1JadDMzTFE?oc=5"
+    },
+    {
+     "t": "EIGEN whale accumulation",
+     "d": "Crypto Briefing reported July 23 that whale transactions and new wallets surged on EigenLayer after the EIGEN transfer unlock, even as the price stayed flat.",
+     "x": "EIGEN whales accumulate",
+     "src": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUFRGaWpoMXo5cUw3d1FoeVJ1WW40am1yX0k2a3FPVkoyN3poVXEweGhlWm1zZy1CdHVzUW4xa09TaXVjUnM5My1raV9OREFKWnpsYktLbFlMOGhDbml3ektCVThpOU1zaGx1dGtnODVTZ0dadnRDTXdTRWtRZmtLcQ?oc=5"
     }
    ]
   },
@@ -1702,6 +1736,26 @@
      "x": "$MINA",
      "src": "https://www.coingecko.com/en/coins/mina-protocol"
     }
+   ],
+   "topics": [
+    {
+     "t": "Starknet gets Nightfall",
+     "d": "Starknet integrated EY's Nightfall on July 24 to enable private institutional payments, a big-four stamp on ZK privacy rails.",
+     "x": "Starknet Nightfall EY",
+     "src": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPaVpjNUVCT0tnbGJ0d0V1ZEFxNk8zQVpEX01hQXROQXVWcFBLZGYxWHhtdEtUTFV6WVhQMTROX1U5bWFmV0piNXlEU00xZkk1UDhybGlUbWpDMXhiazZDV0IyMFJaUmdKMm8wa1ptLWNVanJIZ3F3NFctd09DX2MxamNNSVlqTHZqb1lfZXBFa2VSd0FsT1BIOHhoTmxBTlE5c1R4TVl6Z1lDTWpRZ1Vja2JzUEdSQms?oc=5"
+    },
+    {
+     "t": "ZKsync claws back $5M",
+     "d": "ZKsync recovered $5M in stolen funds, reported July 26, with the episode being read as proof its security response works.",
+     "x": "ZKsync stolen funds",
+     "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBudWVpRmI0a3hqYXNhaEFwQ0FzaHBXUlNIZFFDZEphYWtyNl9DbW1TRFVVekNneGRtd2U5NGdjLU0tT2h4Wk1ScjlKTzNVSEc2bVB4TzFpM0lQdw?oc=5"
+    },
+    {
+     "t": "Starknet privacy layer",
+     "d": "Starknet shipped a ZK privacy layer for ERC-20 tokens on July 17, with private swaps going live on avnu days later.",
+     "x": "Starknet private swaps",
+     "src": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQnlhcGlsUjc1OS1nLUFCcC1iYm5kMGNYcmVJVjVzYWdhejBmcGdfY2JlM3ZRb2JZQUdlbWc0VFJFM25vUzFFbU9qZWkyWUtkeWgxWDkxVkZCMno5YXhiUDlJdDlKa0puTFRENWxfQ0ZWVXdzRUVCRzNFYXIwNWFvTGN4dnZfRndvM0FubC1uNERXV0tMSnR4ZA?oc=5"
+    }
    ]
   },
   "mevsearchers": {
@@ -1714,7 +1768,27 @@
     "the searchers",
     "the block builders"
    ],
-   "discussing": []
+   "discussing": [],
+   "topics": [
+    {
+     "t": "ePBS and FairFIL",
+     "d": "Flashbots' MEV Letter #148 (July 28) spotlights ePBS moving builder selection into the protocol, a FairFIL mechanism forcing builders to disclose excluded transactions or forfeit rewards, and Glamsterdam devnets going live.",
+     "x": "ePBS Glamsterdam",
+     "src": "https://collective.flashbots.net/t/mev-letter-148/5872"
+    },
+    {
+     "t": "Builder wants in",
+     "d": "Builder AdValorem petitioned Flashbots on July 21 for inclusion in MEV-Share's downstream forwarding list, a rare public look at who gets private order flow.",
+     "x": "MEV-Share AdValorem",
+     "src": "https://collective.flashbots.net/t/requesting-builder-inclusion-in-mev-share-downstream-forwarding-advalorem-rbuilder/5846"
+    },
+    {
+     "t": "CEX signals vs MEV",
+     "d": "A July 27 Flashbots forum research proposal asks whether centralized-exchange microstructure signals can survive Ethereum's execution latency and MEV to reduce adverse selection on DEXes.",
+     "x": "CEX signal MEV",
+     "src": "https://collective.flashbots.net/t/can-a-cex-microstructure-signal-survive-ethereum-execution-latency-and-mev/5866"
+    }
+   ]
   },
   "airdropfarmers": {
    "name": "the airdrop farmers",
@@ -1726,7 +1800,27 @@
     "the sybil hunters",
     "the L2 questers"
    ],
-   "discussing": []
+   "discussing": [],
+   "topics": [
+    {
+     "t": "Grass deadline crunch",
+     "d": "Grass's Season 2 airdrop claim is live with a final deadline confirmed July 28, paying rewards in USDC alongside a new wallet update.",
+     "x": "Grass airdrop deadline",
+     "src": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORldSVnhwU0lsTFhqcEY0V2gwdnFsU0hPWFVvbVFsbkNqQm9CM2w2UEtTQnJWQWxmRUNvV2oteERlYnFWM2ptaEs5QXZRM2hrek0zMGw3Z0F6SlAwUGNPYUt2TVhLek9ROUl0c21URExILUJwV3NMeFdCZ2NxS0lzc3NtaS1vTFc4S2t6OE1nNXM1b2hmZmtOT3R2U0pSYnBtUEhPWjNIZWxKVGJ3RXZYeGtFRQ?oc=5"
+    },
+    {
+     "t": "AEON on Binance Alpha",
+     "d": "Binance Alpha listed AEON on July 27 with an early-access airdrop of 250 AEON per eligible claimer, and farmers raced the claim window.",
+     "x": "AEON Binance Alpha",
+     "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQekJXMnhQR0J6N2FSTkJxWTViRG93NUR4Qm1NMlFnZDctTFRmbmdvZVRKdjVsd2JDMlNaZXJCS1JwSkdkSVN2bmt0QUVZNzRXSC03TDJRMnFFRzljY04wek9uRXhNcG9HUks2eW1MbnBBdlFOT3V5M2RkMm1IXzRWSUd4cTVrZXhtOWowTEhzclpoQ256UF9qWVVIMGLSAZwBQVVfeXFMUHpCVzJ4UEdCejdhUk5CcVk1YkRvdzVEeEJ"
+    },
+    {
+     "t": "$800K RLUSD carrot",
+     "d": "Binance launched an $800K XRP airdrop campaign in mid-July to push RLUSD adoption, and XRP jumped 2% when the reward campaign went live July 16.",
+     "x": "RLUSD airdrop Binance",
+     "src": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQX1Zaam81X01IekxkVmNfTnlRbXBqMVEtYllJODVtQ3ozV2xNWjBiVzF2VjUxUlZlV3hlVFpZUFJkR2VVUk5HMUVVQ1l3Rnp0MXJLTUFxdDRmbEFnN0E0Sk8wWnFPeUZELUhBb0s2TVdiY08wN3dyY0w0ZHpELVJ0TDRnSzJyc2ZSdVlGU0Jn"
+    }
+   ]
   },
   "ghostchains": {
    "name": "the ghost chains",
@@ -1757,6 +1851,26 @@
      "x": "$A",
      "src": "https://www.coingecko.com/en/coins/vaulta"
     }
+   ],
+   "topics": [
+    {
+     "t": "IOTA joins Pyth Pro",
+     "d": "IOTA announced July 28 it is migrating price feeds to Pyth Pro, gaining 3,000+ institutional-grade feeds but forcing all devs off the free Pyth Core by an August 18 hard deadline.",
+     "x": "IOTA Pyth Pro",
+     "src": "https://blog.iota.org/iota-connects-pyth-pro/"
+    },
+    {
+     "t": "Can EOS wake up",
+     "d": "Even the July 23 Coinpedia price-prediction coverage of Vaulta-era EOS is titled around whether the chain can finally break its long silence.",
+     "x": "Vaulta EOS",
+     "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTE01VHczWjc1MFRXYzAtbGtoUnJCQUsxT09tWmJBTGI5Z243dVVvQkJBY1dsSzNPaDRMd0JuYUxDRHQ0UVFRd3hHWjJGU3ZrUVUwbDF6VTZQeVE2SXp1aDFyYlFWV0dvSGJZbHkzS9IBckFVX3lxTFA1QW5CU2ZvNURVV3pOZ1A1TGFlNHVnWm53TGk0SDFTaHB0bDJmSEZxMWpoSjFwVFNHZlZ1bm5UMnV5N08xbElEaV92V3RWTHRiaER"
+    },
+    {
+     "t": "TWIN trade rails",
+     "d": "IOTA's July 1 Q2 2026 progress update details its TWIN trade-infrastructure push, the foundation's main bet after ADAPT pilots in Kenya, Morocco, and Nigeria.",
+     "x": "IOTA TWIN",
+     "src": "https://blog.iota.org/"
+    }
    ]
   },
   "desci": {
@@ -1782,6 +1896,26 @@
      "x": "$VITA",
      "src": "https://www.coingecko.com/en/coins/vitadao"
     }
+   ],
+   "topics": [
+    {
+     "t": "VitaDAO ships VitaApp",
+     "d": "VitaDAO unveiled VitaApp on July 21, a personalized longevity-tracking app that gives the token a consumer-facing product.",
+     "x": "VitaDAO VitaApp",
+     "src": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB6VnJ0aGp0SHFtN3l1dkNxYzhkYnhpZ180eERpV2lkY19aaTdZenpyRzVOWTQweEk4eW16cndacU52QkVHV0JBMTRFbmpOUWxwUGU3ZUY4Z28tb2NVUTByNEl3dkdfcUNKQ2tKQ0ZoSQ"
+    },
+    {
+     "t": "DeepMind rattles DeSci",
+     "d": "A July 16 Crypto Briefing piece asks how crypto DeSci should respond to Google DeepMind and Isomorphic Labs teaming up on bioresilience.",
+     "x": "DeSci DeepMind Isomorphic",
+     "src": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9fOV9xNmNZbFp3S1ZCM3VYTzZZSnBsal9XODNsSDdYNXl1bmFteTFCNHhlZGJaSEFtTTAyMXdmM1htMmpuQkIwUGRGR0NQX0VQVVdwQ1BKWUljRk40SVUzMHFtZGVPdGp1alBORzUtclZnM1N3Z1RjRzc4bzM"
+    },
+    {
+     "t": "Bio Protocol OpenLabs",
+     "d": "From late June: Bio Protocol launched OpenLabs and an AI research hub pitched as a challenge to traditional grant gatekeepers.",
+     "x": "Bio Protocol OpenLabs",
+     "src": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNFh5NE1hUkt5RnVBaFFuVU1HYzgxZzBkU0huOXprTVpRV0xWVDJjZEF3LUtqNkZWWDZVU0E5Wm16ZHljR0dYanI2eDZnYnVCQVA0UzJMTmNQekFtMXhxbTRmWmU0cVBfczBKTURTZ0Jnc2s3QkFMdVpuNlNyeks1azhVUHpHYkNQbno0ZGR6aVZuY2c?oc=5"
+    }
    ]
   },
   "ordinals": {
@@ -1800,6 +1934,26 @@
      "d": "Dog (Bitcoin) — rank #368, $60M market cap, $0.0006.",
      "x": "$DOG",
      "src": "https://www.coingecko.com/en/coins/dog-go-to-the-moon-rune"
+    }
+   ],
+   "topics": [
+    {
+     "t": "DOG Mode vs BIP-110",
+     "d": "Ordinals advocate Leonidas proposed 'DOG Mode' on July 17, a Bitcoin client built to bypass BIP-110's data restrictions, opening a new front in Bitcoin's blockspace governance fight.",
+     "x": "DOG Mode BIP-110",
+     "src": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObTcybEJhZmprWW51cmhSY01xTnJaUTlUT21vd3A4S2d1U201NkYxWWtQQm5zM2h0SVpWNF9obngxeEQyMEV3bmVQcFNSYzRYS0ZyOEl2M3BDUm1JamFKNXlyVWFNeXFsZnVkN052eC1HQWJSMmZBcEhfQjJRVGtrUVlTeVFod0w2eDEtOXpPSEdaZw"
+    },
+    {
+     "t": "BTC fees flip ETH",
+     "d": "Bitcoin overtook Ethereum in transaction fees around July 20 on the back of a renewed Ordinals frenzy, per CoinMarketCap.",
+     "x": "Bitcoin fees Ordinals",
+     "src": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTW9RTWZSZ0E3azZmRmNRQTk1WUNUczVlZU9PbDlSVHdFcko5azVqU3h0YUJiV2JLOUpoZ2pROWxTTXMzOHQ0OTFVNVB0dHVyeUJFd2tDdHkyVG1Xa1FOZjRBZzhlRE45WTh5ZXJweHM4S3QyN1FPd3ctQV9mMU1BUFg1UWl6UWJfZFZIQXNhRzdvdHkzaVpkOVRTMUg0NXlRSkFHdXpFYWVlQ1AtNXFBeWxWblRIQldLWE9RMlNtZW1"
+    },
+    {
+     "t": "Microtransaction surge",
+     "d": "Bitcoin on-chain activity neared record levels by July 25 as microtransactions surged, per CoinMarketCap.",
+     "x": "Bitcoin microtransactions record",
+     "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMWJ2RjBHWHhXWUE4dFdoal9KamY4alpvMDJKcDJvM0NBbWtGVmRLeTcyVVNMbGszdjdXNXlZZmdmYTBxMkRjMkFubml0NTR4Q1ZRb2I0bHFDU1RBWWRuR2V2cFZRLUVSZlQ0RFNWNHdZbF9FR2lUbDVRczBHam10bEhrUDV5OVBkYWRrX2RuOUtoc1hkX3MtMFBSRVdyNUE"
     }
    ]
   },
