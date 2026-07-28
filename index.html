@@ -216,7 +216,7 @@ text{user-select:none;-webkit-user-select:none}
     <button id="d-next" aria-label="Next day">&#8250;</button>
   </div>
   <div class="t3" id="cart-hint"></div>
-  <div class="t4">built with &hearts; by <a href="https://x.com/owocki" target="_blank" rel="noopener">@owocki</a></div>
+  <div class="t4">built with &hearts; by <a href="https://x.com/owocki" target="_blank" rel="noopener">@owocki</a> &middot; <a href="https://t.me/+_TMrvEHi8ew1MjFh" target="_blank" rel="noopener">telegram</a></div>
 </div>
 
 <div id="ctrl">
@@ -238,7 +238,7 @@ text{user-select:none;-webkit-user-select:none}
       <h2 class="phead" id="phead"></h2>
       <p class="pdeck" id="pdeck"></p>
       <div class="pbody" id="pbody"></div>
-      <div class="pfoot">ranked by market cap, honestly &middot; every tribe described in its own voice &middot; built with &hearts; by <a href="https://x.com/owocki" target="_blank" rel="noopener">@owocki</a></div>
+      <div class="pfoot">ranked by market cap, honestly &middot; every tribe described in its own voice &middot; built with &hearts; by <a href="https://x.com/owocki" target="_blank" rel="noopener">@owocki</a> &middot; <a href="https://t.me/+_TMrvEHi8ew1MjFh" target="_blank" rel="noopener">telegram</a></div>
     </article>
   </div>
 </details>
@@ -337,7 +337,11 @@ const CONTINENTS=[
   countries:[{id:'memecoins',a0:0,a1:6.283}]},
  {id:'c-perps',name:'',kicker:'THE TRENCHES',big:true,cx:1950,cy:2350,rx:220,ry:150,rot:-.09,seed:151,rug:.3,
   junction:null,mountains:false,palette:{low:'#b0b18d',up:'#c9bc90',high:'#9d7f58'},
-  countries:[{id:'degenperps',a0:0,a1:6.283}]}
+  countries:[{id:'degenperps',a0:0,a1:6.283}]},
+ {id:'c-hype',name:'',kicker:'THE TRENCHES',big:true,cx:2650,cy:2500,rx:170,ry:120,rot:.11,seed:163,rug:.28,
+  junction:null,mountains:false,palette:{low:'#9fc0a4',up:'#c6c69a',high:'#a08a60'},
+  islets:[{dx:220,dy:-30,r:18}],
+  countries:[{id:'hyperliquid',a0:0,a1:6.283}]}
 ];
 
 /* the waters: fiat is not a coin but the sea every coin floats in.
@@ -704,16 +708,19 @@ function findWater(wx,wy){
   return null;
 }
 function esc(s){return String(s).replace(/[&<>"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]))}
+function topicList(items,label){
+  if(!items||!items.length)return'';
+  return `<p class="today">${label}</p>
+   <ul>${items.slice(0,5).map(x=>`<li><a class="tpc" href="https://x.com/search?q=${encodeURIComponent(x.x||x.t)}&src=typed_query&f=live" target="_blank" rel="noopener"><b>${esc(x.t)}</b><span class="tprev"> — ${esc(x.d)} <span class="thint">tap again to open on X ↗</span></span></a></li>`).join('')}</ul>`;
+}
 function renderCard(tb,kick){
   const claims=String(tb.ontology).replace(/\.\s+/g,'.|').replace(/;\s+/g,'|').split('|')
     .map(s=>s.trim().replace(/\.$/,'')).filter(Boolean);
-  const topics=(tb.discussing&&tb.discussing.length)
-    ?`<p class="today">Trending · tap a topic for the story, again for X</p>
-   <ul>${tb.discussing.slice(0,5).map(x=>`<li><a class="tpc" href="https://x.com/search?q=${encodeURIComponent(x.x||x.t)}&src=typed_query&f=live" target="_blank" rel="noopener"><b>${esc(x.t)}</b><span class="tprev"> — ${esc(x.d)} <span class="thint">tap again to open on X ↗</span></span></a></li>`).join('')}</ul>`:'';
   tt.innerHTML=`<p class="kick">${esc(kick)}</p>
    <h3>${esc(tb.country)}</h3>
    <ul class="ont">${claims.map(cl=>`<li>${esc(cl)}</li>`).join('')}</ul>
-   ${topics}
+   ${topicList(tb.topics,'Trending this week · tap for the story, again for X')}
+   ${topicList(tb.discussing,'The coins · tap for details, again for X')}
    <p class="figs">Key accounts: ${esc(tb.figures.join(', '))}</p>`;
 }
 /* first tap on a topic previews its story; the second tap goes to X */
@@ -787,6 +794,7 @@ const PMETA={
  memecoins:{e:'🐸',s:'attention'},
  privacy:{e:'🕵️',s:'the unseen ledger'},
  degenperps:{e:'🎰',s:'leverage'},
+ hyperliquid:{e:'💧',s:'the onchain orderbook'},
  oldguard:{e:'🏛️',s:'the roadmap'},
  aicoins:{e:'🤖',s:'open intelligence'},
  defi:{e:'⚙️',s:'permissionless finance'},
@@ -806,12 +814,13 @@ const PAPER=[
  ['solana','$43.6B across 2 coins'],
  ['memecoins','$17.8B across 6 coins'],
  ['privacy','$14.9B across 3 coins'],
- ['degenperps','$14.6B across 3 coins'],
+ ['hyperliquid','$12.3B across 1 coin'],
  ['defi','$9.9B across 7 coins'],
  ['newl1s','$8.9B across 5 coins'],
  ['aicoins','$7.3B across 6 coins'],
  ['linkmarines','$6.2B across 1 coin'],
- ['l2s','$2.6B across 3 coins']
+ ['l2s','$2.6B across 3 coins'],
+ ['degenperps','$2.3B across 2 coins']
 ];
 const HOOK_FALLBACK=['btcmaxis','ethereum','stablecoins','solana','memecoins','degenperps'];
 function lcFirst(s){s=String(s);return s.charAt(0).toLowerCase()+s.slice(1)}
@@ -854,7 +863,8 @@ function renderPaper(D){
   document.getElementById('pbody').innerHTML=PAPER.map(([id,reach],i)=>{
     const tb=D.tribes[id];if(!tb)return'';
     const m=PMETA[id];
-    const tops=(tb.discussing||[]).slice(0,3).map(t=>
+    const tr=(tb.topics&&tb.topics.length)?tb.topics:(tb.discussing||[]);
+    const tops=tr.slice(0,3).map(t=>
       `<a href="${xUrl(t)}" target="_blank" rel="noopener">${esc(t.t.toLowerCase())}</a>`).join(' · ');
     return `<div class="pent">
      <h3><span class="prank">${i+1}</span> ${m.e} ${esc(tb.name)}</h3>
@@ -886,8 +896,9 @@ function paperStanzas(D){
   PAPER.forEach(([id],i)=>{
     const tb=D.tribes[id];if(!tb)return;
     const m=PMETA[id];
+    const tr=(tb.topics&&tb.topics.length)?tb.topics:(tb.discussing||[]);
     const st={num:i+1,e:m.e,name:tb.name,ont:firstSent(lcFirst(tb.ontology)),
-      tops:(tb.discussing||[]).slice(0,3).map(t=>t.t.toLowerCase())};
+      tops:tr.slice(0,3).map(t=>t.t.toLowerCase())};
     out.push(st);
   });
   return out;

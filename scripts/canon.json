@@ -170,9 +170,9 @@
   "tldr": "the casino, on-chain, 24/7",
   "ontology": "The market is a 24/7 casino and the only honest venue is one that cannot close; leverage is a right and the funding rate is the weather.",
   "figures": [
-   "@HyperliquidX",
    "the Aster degens",
-   "the funding-rate watchers"
+   "the funding-rate watchers",
+   "the perp DEX builders"
   ]
  },
  "fiat": {
@@ -184,6 +184,17 @@
    "the Fed",
    "the ECB",
    "your bank"
+  ]
+ },
+ "hyperliquid": {
+  "name": "hyperliquid",
+  "country": "Hyperliquid",
+  "tldr": "the exchange that cannot close",
+  "ontology": "One chain, one orderbook, no VCs: the exchange belongs onchain and to its users. The airdrop was the proof and HYPE is the deed.",
+  "figures": [
+   "@HyperliquidX",
+   "@chameleon_jeff",
+   "the hyperps"
   ]
  }
 }

@@ -785,17 +785,11 @@
    "tldr": "the casino, on-chain, 24/7",
    "ontology": "The market is a 24/7 casino and the only honest venue is one that cannot close; leverage is a right and the funding rate is the weather.",
    "figures": [
-    "@HyperliquidX",
     "the Aster degens",
-    "the funding-rate watchers"
+    "the funding-rate watchers",
+    "the perp DEX builders"
    ],
    "discussing": [
-    {
-     "t": "HYPE · #10",
-     "d": "Hyperliquid — rank #10, $12.3B market cap, $55.24.",
-     "x": "$HYPE",
-     "src": "https://www.coingecko.com/en/coins/hyperliquid"
-    },
     {
      "t": "ASTER · #46",
      "d": "Aster — rank #46, $1.7B market cap, $0.6213.",
@@ -821,6 +815,25 @@
     "your bank"
    ],
    "discussing": []
+  },
+  "hyperliquid": {
+   "name": "hyperliquid",
+   "country": "Hyperliquid",
+   "tldr": "the exchange that cannot close",
+   "ontology": "One chain, one orderbook, no VCs: the exchange belongs onchain and to its users. The airdrop was the proof and HYPE is the deed.",
+   "figures": [
+    "@HyperliquidX",
+    "@chameleon_jeff",
+    "the hyperps"
+   ],
+   "discussing": [
+    {
+     "t": "HYPE · #10",
+     "d": "Hyperliquid — rank #10, $12.3B market cap, $55.24.",
+     "x": "$HYPE",
+     "src": "https://www.coingecko.com/en/coins/hyperliquid"
+    }
+   ]
   }
  },
  "paper": {
