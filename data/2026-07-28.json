@@ -1512,6 +1512,26 @@
      "x": "$ENS",
      "src": "https://www.coingecko.com/en/coins/ethereum-name-service"
     }
+   ],
+   "topics": [
+    {
+     "t": "Arbitrum budget fight",
+     "d": "Arbitrum Foundation is asking the DAO for $16M in stablecoins, 1,740 ETH and 230M ARB (roughly $40M+ total) to fund 2027 operations, and delegates are demanding line-item breakdowns and milestone-based releases instead of an upfront lump sum.",
+     "x": "Arbitrum Foundation budget",
+     "src": "https://forum.arbitrum.foundation/t/continued-funding-for-the-arbitrum-foundation/30908"
+    },
+    {
+     "t": "ENS 5M delegation plan",
+     "d": "Alex Van de Sande proposed the ENS DAO delegate 5M treasury ENS tokens to five stakeholder groups to fix falling turnout, and Nick Johnson pushed back with a smaller 1M-token, 3-month trial after critics warned it creates a political class with no skin in the game.",
+     "x": "ENS delegate 5M tokens",
+     "src": "https://discuss.ens.domains/t/22247"
+    },
+    {
+     "t": "Lido LDO buybacks",
+     "d": "Lido's long-running liquid buyback plan — spending 50% of treasury inflows above $40M/year (capped at $10M) to buy LDO and pair it with wstETH, only when ETH is above $3,000 — hit 53 replies with debate still live on July 28 over a roughly 10% annual impermanent-loss drag.",
+     "x": "Lido LDO buyback",
+     "src": "https://research.lido.fi/t/10894"
+    }
    ]
   }
  },
