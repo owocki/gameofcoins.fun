@@ -3,22 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CryptoTwitter Ontology Map</title>
+<title>Game of Coins — the CryptoTwitter Ontology Map</title>
 <meta name="description" content="An earth-style map of the tribes of crypto twitter — every coin in the CoinGecko top 100 drawn as a city in its tribe's territory, market cap as terrain.">
 <!-- social unfurl: every page built from this template carries these cards -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CryptoTwitter Ontology Map">
 <meta property="og:title" content="CryptoTwitter Ontology Map">
 <meta property="og:description" content="The tribes of crypto twitter as continents — bitcoin, the stablecoin economy, tokenized tradfi, the trenches — with every top-100 coin as a city and market cap as the mountains.">
-<meta property="og:url" content="https://daily-ontological-map.vercel.app/">
-<meta property="og:image" content="https://daily-ontological-map.vercel.app/og.png">
+<meta property="og:url" content="https://gameofcoins.fun/">
+<meta property="og:image" content="https://gameofcoins.fun/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="A hand-drawn style world map where every continent is a tribe of crypto twitter">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="CryptoTwitter Ontology Map">
 <meta name="twitter:description" content="The tribes of crypto twitter as continents — every top-100 coin a city, market cap as the mountains.">
-<meta name="twitter:image" content="https://daily-ontological-map.vercel.app/og.png">
+<meta name="twitter:image" content="https://gameofcoins.fun/og.png">
 <meta name="twitter:creator" content="@owocki">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%BA%EF%B8%8F%3C/text%3E%3C/svg%3E">
 <style>
@@ -225,6 +225,9 @@ body.cine.cinedone #cine .bar{opacity:0}
   background:radial-gradient(ellipse 130% 120% at 50% 42%,transparent 62%,#4a3d2a2e 100%)}
 @media (prefers-reduced-motion:reduce){.pulse{animation:none !important}}
 @keyframes pulse{0%,100%{opacity:.55}50%{opacity:.15}}
+@keyframes riverflow{to{stroke-dashoffset:-104}}
+.riverflow{animation:riverflow 2.4s linear infinite}
+@media (prefers-reduced-motion:reduce){.riverflow{animation:none}}
 .pulse{animation:pulse 2.6s ease-in-out infinite}
 </style>
 </head>
@@ -243,7 +246,7 @@ body.cine.cinedone #cine .bar{opacity:0}
 <div class="axis" id="ax-e">sound money</div>
 
 <div id="cart" role="note">
-  <div class="t1">CryptoTwitter Ontology Map</div>
+  <div class="t1">Game of Coins</div>
   <div class="t2">the coingecko top 100, drawn as a world &middot; market cap is the terrain</div>
   <div class="dnav">
     <button id="d-prev" aria-label="Previous day">&#8249;</button>
@@ -251,7 +254,7 @@ body.cine.cinedone #cine .bar{opacity:0}
     <button id="d-next" aria-label="Next day">&#8250;</button>
   </div>
   <div class="t3" id="cart-hint"></div>
-  <div class="t4">built with &hearts; by <a href="https://x.com/owocki" target="_blank" rel="noopener">@owocki</a> &middot; <a href="https://t.me/+_TMrvEHi8ew1MjFh" target="_blank" rel="noopener">telegram</a></div>
+  <div class="t4">built with &hearts; by <a href="https://x.com/owocki" target="_blank" rel="noopener">@owocki</a> &middot; <a href="https://t.me/+_TMrvEHi8ew1MjFh" target="_blank" rel="noopener">telegram</a> &middot; <a href="https://gameofcoins.fun" target="_blank" rel="noopener">gameofcoins.fun</a></div>
 </div>
 
 <div id="ctrl">
@@ -346,10 +349,10 @@ const CONTINENTS=[
   label:{x:1300,y:690,w:300,size:30},mountains:false,
   palette:{low:'#b7c795',up:'#dcc99a',high:'#b89064'},
   countries:[{id:'ethereum',big:true},{id:'linkmarines'},{id:'zkpurists'},
-   {id:'restakers'},{id:'defi',big:true},{id:'l2s'}]},
+   {id:'restakers'},{id:'defi',big:true},{id:'l2s'},{id:'base'}]},
  {id:'k-commons',region:true,name:'THE COMMONS',kicker:'THE COMMONS',dyn:true,a0start:0.6,
-  cx:-150,cy:1600,rx:640,ry:380,rot:.06,seed:83,rug:.26,junction:[-150,1600],
-  label:{x:-150,y:1590,w:240,size:26},trees:true,mountains:false,
+  cx:500,cy:2050,rx:600,ry:360,rot:.06,seed:83,rug:.26,junction:[500,2050],
+  label:{x:500,y:2040,w:240,size:26},trees:true,mountains:false,
   palette:{low:'#a8c98c',up:'#ccc794',high:'#a98e5e'},
   countries:[{id:'nft',big:true},{id:'artists'},{id:'regens',big:true},
    {id:'daos'},{id:'memedaos'},{id:'desci'}]},
@@ -358,15 +361,15 @@ const CONTINENTS=[
   label:{x:3050,y:990,w:280,size:24},mountains:false,
   palette:{low:'#d9c795',up:'#e2cf9e',high:'#bc9468'},
   countries:[{id:'btcmaxis',big:true},{id:'oldguard',big:true},{id:'ghostchains'},{id:'privacy'}]},
- {id:'k-fast',region:true,name:'THE SHIP-FAST FRONTIER',kicker:'THE SHIP-FAST FRONTIER',dyn:true,a0start:5.4,
-  cx:-950,cy:300,rx:640,ry:460,rot:-.05,seed:113,rug:.27,junction:[-950,300],
-  label:{x:-950,y:290,w:260,size:24},mountains:false,
+ {id:'k-fast',region:true,name:'THE SHIP-FAST FRONTIER',kicker:'THE SHIP-FAST FRONTIER',dyn:true,a0start:0.9,
+  cx:-950,cy:150,rx:640,ry:460,rot:-.05,seed:113,rug:.27,junction:[-950,150],
+  label:{x:-950,y:140,w:260,size:24},mountains:false,
   palette:{low:'#b3c892',up:'#d9c795',high:'#bc9468'},
-  countries:[{id:'solana',big:true},{id:'newl1s',big:true},{id:'base'},
+  countries:[{id:'solana',big:true},{id:'newl1s',big:true},
    {id:'aicoins',big:true},{id:'depin'},{id:'airdropfarmers'}]},
- {id:'k-trench',region:true,name:'THE TRENCHES',kicker:'THE TRENCHES',dyn:true,a0start:3.6,
-  cx:1500,cy:2250,rx:640,ry:330,rot:.05,seed:149,rug:.3,junction:[1500,2250],
-  label:{x:1500,y:2240,w:240,size:26},mountains:false,
+ {id:'k-trench',region:true,name:'THE TRENCHES',kicker:'THE TRENCHES',dyn:true,a0start:3.9,
+  cx:-800,cy:1350,rx:620,ry:320,rot:.04,seed:149,rug:.3,junction:[-800,1350],
+  label:{x:-800,y:1340,w:240,size:26},mountains:false,
   palette:{low:'#b0b18d',up:'#c9bc90',high:'#9d7f58'},
   countries:[{id:'memecoins',big:true},{id:'degenperps'},{id:'hyperliquid',big:true},{id:'mevsearchers'}]}
 ];
@@ -385,7 +388,7 @@ const FLOWS=[
 const OCEANS=[
  {id:'fiat',t:'THE FIAT OCEAN',x:2950,y:-880,w:170,size:16,arc:1600},
  {id:'fiat',t:'THE FIAT OCEAN',x:-1400,y:2650,w:170,size:16,arc:-1600},
- {t:'THE EFFICAX VALLEY',x:480,y:1210,w:150,size:15,arc:1400},
+ {t:'THE EFFICAX VALLEY',x:760,y:1420,w:150,size:15,arc:1400},
  {t:'THE ONRAMP PASS',x:1350,y:-30,w:130,size:13,arc:-1400}
 ];
 
@@ -401,6 +404,7 @@ function el(n,attrs,parent){const e=document.createElementNS(NS,n);for(const k i
 
 let defs,root;
 let gShallow,gLand,gRelief,gRivers,gBorder,gEngraved,gHL,gCountryLbl,gIsleLbl,gMainLbl,gCity,gVillage;
+let gClouds,gCloudShadow,cloudList=[],cloudRaf=null;
 let countries=[],villages=[],constLabels=[],contLblEls=[],oceanLblEls=[],waterHits=[];
 
 function coastAt(pts,ang){
@@ -598,6 +602,94 @@ function buildWorld(D){
     c.hlS=el('path',{d,class:'hl-stroke'},gHL);
   }
 
+  /* living countryside: the space between tribes is not empty —
+     meadows, hills, forests, lakes, and hamlets fill the plains */
+  {
+    const rng=mulberry32(4242);
+    const SLc=[1025,900],SLrx=2700,SLry=1800;
+    const onLand=(x,y,pad)=>{const dx=(x-SLc[0])/(SLrx-pad),dy=(y-SLc[1])/(SLry-pad);return dx*dx+dy*dy<1};
+    const nearCap=(x,y,d)=>countries.some(c=>Math.hypot(c.labelPos[0]-x,c.labelPos[1]-y)<d);
+    const gCountryside=el('g',{},gLand);
+    /* meadow tone patches */
+    for(let i=0;i<26;i++){
+      const x=SLc[0]+(rng()*2-1)*SLrx*0.92,y=SLc[1]+(rng()*2-1)*SLry*0.92;
+      if(!onLand(x,y,260))continue;
+      el('path',{d:pathFrom(blobPts(x,y,120+rng()*220,90+rng()*150,rng()*3,(i*97+11)|0,.3,36),true),
+        fill:rng()<.5?'#b1c48e':'#c4c99b',opacity:.22,filter:'url(#soft14)'},gCountryside);
+    }
+    /* rolling hills */
+    for(let i=0;i<150;i++){
+      const x=SLc[0]+(rng()*2-1)*SLrx*0.95,y=SLc[1]+(rng()*2-1)*SLry*0.95;
+      if(!onLand(x,y,200)||nearCap(x,y,170))continue;
+      const s=5+rng()*7;
+      el('path',{d:`M${x-s} ${y} Q ${x} ${y-s*1.1} ${x+s} ${y}`,fill:'none',stroke:'#8d7c5c',
+        'stroke-width':1.1,opacity:.4,class:'deco'},gCountryside);
+    }
+    /* forests */
+    for(let i=0;i<95;i++){
+      const x=SLc[0]+(rng()*2-1)*SLrx*0.95,y=SLc[1]+(rng()*2-1)*SLry*0.95;
+      if(!onLand(x,y,220)||nearCap(x,y,150))continue;
+      const n=4+Math.floor(rng()*5),fg=el('g',{opacity:.5,class:'deco'},gCountryside);
+      for(let k=0;k<n;k++){
+        const tx=x+(rng()-.5)*46,ty=y+(rng()-.5)*34;
+        el('path',{d:`M${tx-3} ${ty} L${tx} ${ty-6.2} L${tx+3} ${ty} Z`,fill:'#4f6136'},fg);
+      }
+    }
+    /* lakes */
+    for(let i=0;i<15;i++){
+      const x=SLc[0]+(rng()*2-1)*SLrx*0.85,y=SLc[1]+(rng()*2-1)*SLry*0.85;
+      if(!onLand(x,y,320)||nearCap(x,y,220))continue;
+      const lp=pathFrom(blobPts(x,y,26+rng()*34,18+rng()*24,rng()*3,(i*53+7)|0,.35,28),true);
+      el('path',{d:lp,fill:'#8fb4c2',opacity:.9},gCountryside);
+      el('path',{d:lp,fill:'none',stroke:'#4d6b78',opacity:.4,'stroke-width':1},gCountryside);
+    }
+    /* hamlets */
+    for(let i=0;i<42;i++){
+      const x=SLc[0]+(rng()*2-1)*SLrx*0.9,y=SLc[1]+(rng()*2-1)*SLry*0.9;
+      if(!onLand(x,y,260)||nearCap(x,y,190))continue;
+      const hg=el('g',{opacity:.55,class:'deco'},gCountryside);
+      const n=2+Math.floor(rng()*2);
+      for(let k=0;k<n;k++){
+        const hx=x+k*9-(n*4),hy=y+(rng()-.5)*6;
+        el('path',{d:`M${hx-3} ${hy} h6 v4 h-6 Z M${hx-4} ${hy} L${hx} ${hy-4} L${hx+4} ${hy} Z`,
+          fill:'#8a6a4a',stroke:'#4a3c28','stroke-width':.5},hg);
+      }
+    }
+  }
+
+  /* clouds: an atmosphere over the world, drifting */
+  {
+    const rng=mulberry32(777);
+    gCloudShadow=el('g',{id:'gcsh'},root);gClouds=el('g',{id:'gcl'},root);
+    cloudList=[];
+    for(let i=0;i<9;i++){
+      const cx=X0+rng()*(X1-X0),cy=Y0+rng()*(Y1-Y0);
+      const sh=el('g',{opacity:.10},gCloudShadow),cl=el('g',{opacity:.5+rng()*.3},gClouds);
+      const n=3+Math.floor(rng()*3);
+      for(let k=0;k<n;k++){
+        const ox=(rng()-.5)*160,oy=(rng()-.5)*50,r=45+rng()*70;
+        el('ellipse',{cx:ox,cy:oy,rx:r,ry:r*.52,fill:'#fffdf4',filter:'url(#soft14)'},cl);
+        el('ellipse',{cx:ox,cy:oy,rx:r,ry:r*.52,fill:'#2c2417',filter:'url(#soft14)'},sh);
+      }
+      cloudList.push({cl,sh,x:cx,y:cy,v:6+rng()*10,wob:rng()*6.28});
+    }
+    if(!cloudRaf&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+      let last=performance.now();
+      const drift=(now)=>{
+        const dt=Math.min(.1,(now-last)/1000);last=now;
+        for(const c of cloudList){
+          c.x+=c.v*dt; c.wob+=dt*.3;
+          if(c.x>X1+500)c.x=X0-500;
+          const wy=c.y+Math.sin(c.wob)*18;
+          c.cl.setAttribute('transform',`translate(${c.x} ${wy})`);
+          c.sh.setAttribute('transform',`translate(${c.x+110} ${wy+150})`);
+        }
+        cloudRaf=requestAnimationFrame(drift);
+      };
+      cloudRaf=requestAnimationFrame(drift);
+    }
+  }
+
   /* relief pass: topology of the land follows the topology of the information */
   for(const c of countries){
     const cityRng=mulberry32(c.id.split('').reduce((a,ch)=>a+ch.charCodeAt(0)*31,7));
@@ -623,6 +715,8 @@ function buildWorld(D){
     const w=3+2.2*Math.log10(1+mcapOf(Bc.tribe)/1e9);
     el('path',{d,fill:'none',stroke:'#4d6b78',opacity:.42,'stroke-width':w+2.5,'stroke-linecap':'round','stroke-linejoin':'round'},gRivers);
     el('path',{d,fill:'none',stroke:'#9cc0cc',opacity:.75,'stroke-width':w,'stroke-linecap':'round','stroke-linejoin':'round'},gRivers);
+    el('path',{d,fill:'none',stroke:'#ecf7f9',opacity:.8,'stroke-width':Math.max(1.2,w*0.3),'stroke-linecap':'round',
+      'stroke-dasharray':'14 90',class:'riverflow'},gRivers);
     const p1=pts[pts.length-3],p2=pts[pts.length-1];
     const ang=Math.atan2(p2[1]-p1[1],p2[0]-p1[0]),ah=w*2.4;
     el('path',{d:`M${p2[0]} ${p2[1]} L${p2[0]-ah*Math.cos(ang-.42)} ${p2[1]-ah*Math.sin(ang-.42)} L${p2[0]-ah*Math.cos(ang+.42)} ${p2[1]-ah*Math.sin(ang+.42)} Z`,
@@ -1083,6 +1177,15 @@ document.getElementById('psheet').addEventListener('click',e=>{
   if(e.target.id==='psheet')paperEl.removeAttribute('open');
 });
 
+function mcapOfTribe(tb){
+  let s=0;
+  for(const t of ((tb&&tb.discussing)||[])){
+    const m=/\$([\d.]+)(T|B|M|K) market cap/.exec(t.d||'');
+    if(m)s+=parseFloat(m[1])*({T:1e12,B:1e9,M:1e6,K:1e3})[m[2]];
+  }
+  return s;
+}
+
 /* ---------- graceful camera flights (search + flyover) ---------- */
 let flyRaf=null;
 function easeIO(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
@@ -1154,7 +1257,8 @@ document.addEventListener('pointerdown',ev=>{
 });
 
 /* ---------- an original score in the key of westeros ---------- */
-function buildScore(ctx,dest,t0){
+function buildScore(ctx,dest,t0,BARS){
+  BARS=BARS||100;
   const BPM=166,B=60/BPM,BAR=3*B;
   const master=ctx.createGain();master.gain.value=0.8;
   const comp=ctx.createDynamicsCompressor();
@@ -1186,12 +1290,12 @@ function buildScore(ctx,dest,t0){
   const CH={Dm:[N.D3,N.A3,N.D4,N.F4,N.A3,N.F4],Bb:[N.Bb2,N.F3,N.Bb3,N.D4,N.F3,N.D4],
             Gm:[N.G2,N.D3,N.G3,N.Bb3,N.D3,N.Bb3],A:[N.A2,N.E3,N.A3,N.Cs4,N.E3,N.Cs4]};
   const PROG=['Dm','Dm','Bb','Gm','Dm','Dm','Gm','A'];
-  for(let bar=0;bar<100;bar++){
+  for(let bar=0;bar<BARS;bar++){
     const t=t0+bar*BAR;
-    if(bar<96){str(N.D2,t,BAR*1.05,0.10,320);str(N.A2,t,BAR*1.05,0.06,320)}
+    if(bar<BARS-4){str(N.D2,t,BAR*1.05,0.10,320);str(N.A2,t,BAR*1.05,0.06,320)}
     thump(t,bar<8?0.5:0.85);
     if(bar>=4)tick(t+2*B,0.25);
-    if(bar>=8&&bar<96){
+    if(bar>=8&&bar<BARS-4){
       const notes=CH[PROG[bar%8]];
       for(let k=0;k<6;k++)str(notes[k],t+k*(B/2),(B/2)*0.95,0.10,900);
     }
@@ -1202,19 +1306,21 @@ function buildScore(ctx,dest,t0){
   function playTheme(startBar,oct,vol){
     for(const[n,sb,d]of THEME)str(N[n]*oct,t0+startBar*BAR+sb*B,d*B*0.98,vol,1900);
   }
-  playTheme(16,1,0.16);
-  playTheme(40,1,0.17);
-  playTheme(64,1,0.17);playTheme(64,2,0.07);
-  playTheme(86,0.5,0.12);
+  for(let sb=16;sb+16<BARS-6;sb+=24){
+    playTheme(sb,1,0.165);
+    if(sb>=64)playTheme(sb,2,0.06);
+  }
+  playTheme(Math.max(16,BARS-14),0.5,0.12);
 }
 let liveCtx=null;
-function startScore(){
+function startScore(bars){
   liveCtx=new (window.AudioContext||window.webkitAudioContext)();
-  buildScore(liveCtx,liveCtx.destination,liveCtx.currentTime+0.08);
+  buildScore(liveCtx,liveCtx.destination,liveCtx.currentTime+0.08,bars);
 }
-window.__renderScore=async function(){
-  const sr=32000,oc=new OfflineAudioContext(1,sr*116,sr);
-  buildScore(oc,oc.destination,0.05);
+window.__renderScore=async function(seconds,bars){
+  seconds=seconds||116;
+  const sr=32000,oc=new OfflineAudioContext(1,Math.floor(sr*seconds),sr);
+  buildScore(oc,oc.destination,0.05,bars);
   const buf=await oc.startRendering();
   const data=buf.getChannelData(0);
   const wav=new DataView(new ArrayBuffer(44+data.length*2));
@@ -1231,7 +1337,21 @@ window.__renderScore=async function(){
 
 /* ---------- the flyover: a cinematic tour (?flyover) ---------- */
 const CINE=/[?&]flyover/.test(location.search);
-if(CINE){
+const CINE3D=CINE&&!/[?&]flyover2d/.test(location.search);
+if(CINE3D){
+  document.body.classList.add('cine');
+  const boot3=setInterval(()=>{
+    if(!countries.length)return;
+    clearInterval(boot3);
+    window.__atlas={world:{X0,Y0,X1,Y1},PMETA,PAPER,
+      get countries(){return countries},
+      mcap:mcapOfTribe,startScore,esc};
+    const s1=document.createElement('script');s1.src='vendor/three.min.js';
+    s1.onload=()=>{const s2=document.createElement('script');s2.src='flyover3d.js';document.body.appendChild(s2)};
+    document.body.appendChild(s1);
+  },200);
+}
+if(CINE&&!CINE3D){
   document.body.classList.add('cine');
   const AUTO=/[?&]auto=1/.test(location.search);
   const cardEl=document.getElementById('cinecard'),ckEl=cardEl.querySelector('.ck'),
