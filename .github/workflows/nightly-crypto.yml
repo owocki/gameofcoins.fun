@@ -1,0 +1,49 @@
+name: Nightly crypto survey
+
+# NOTE: GitHub only fires scheduled workflows from the DEFAULT branch, so this
+# file must exist on main; it checks out and updates the cryptotwitter branch.
+on:
+  schedule:
+    # 06:40 UTC = 00:40 America/Denver in summer (staggered after the main atlas survey)
+    - cron: "40 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nightly-crypto-survey
+  cancel-in-progress: false
+
+jobs:
+  survey:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: cryptotwitter
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install SDK
+        run: pip install anthropic
+
+      - name: Refresh coins and weekly narratives
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/research_crypto.py
+
+      - name: Commit the day's data
+        run: |
+          git config user.name "atlas-bot"
+          git config user.email "atlas-bot@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+          else
+            git commit -m "crypto survey: $(date -u +%F)"
+            git push origin cryptotwitter
+          fi

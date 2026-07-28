@@ -335,36 +335,36 @@ function shrink(pts,anchor,s){return pts.map(p=>[anchor[0]+(p[0]-anchor[0])*s,an
    LIVE from its coins' market caps (sqrt-scaled, floored) — the map redraws
    itself around the day's data. */
 const CONTINENTS=[
- {id:'k-dollar',name:'THE DOLLAR MAINLAND',kicker:'THE DOLLAR MAINLAND',dyn:true,a0start:2.9,
+ {id:'k-dollar',region:true,name:'THE DOLLAR MAINLAND',kicker:'THE DOLLAR MAINLAND',dyn:true,a0start:2.9,
   cx:1400,cy:-480,rx:840,ry:330,rot:.02,seed:11,rug:.22,junction:[1400,-480],
   label:{x:1400,y:-500,w:300,size:30},trees:false,mountains:false,
   palette:{low:'#b3bfa6',up:'#d2cbaa',high:'#b2a07f'},
   countries:[{id:'stablecoins',big:true},{id:'exchangetokens',big:true},{id:'brokerchains'},
    {id:'predictionmarkets'},{id:'rwa',big:true},{id:'xrparmy',big:true}]},
- {id:'k-wc',name:'THE WORLD COMPUTER',kicker:'THE WORLD COMPUTER',dyn:true,a0start:1.4,
+ {id:'k-wc',region:true,name:'THE WORLD COMPUTER',kicker:'THE WORLD COMPUTER',dyn:true,a0start:1.4,
   cx:1300,cy:700,rx:780,ry:420,rot:-.04,seed:23,rug:.24,junction:[1300,700],
   label:{x:1300,y:690,w:300,size:30},mountains:false,
   palette:{low:'#b7c795',up:'#dcc99a',high:'#b89064'},
   countries:[{id:'ethereum',big:true},{id:'linkmarines'},{id:'zkpurists'},
    {id:'restakers'},{id:'defi',big:true},{id:'l2s'}]},
- {id:'k-commons',name:'THE COMMONS',kicker:'THE COMMONS',dyn:true,a0start:0.6,
+ {id:'k-commons',region:true,name:'THE COMMONS',kicker:'THE COMMONS',dyn:true,a0start:0.6,
   cx:-150,cy:1600,rx:640,ry:380,rot:.06,seed:83,rug:.26,junction:[-150,1600],
   label:{x:-150,y:1590,w:240,size:26},trees:true,mountains:false,
   palette:{low:'#a8c98c',up:'#ccc794',high:'#a98e5e'},
   countries:[{id:'nft',big:true},{id:'artists'},{id:'regens',big:true},
    {id:'daos'},{id:'memedaos'},{id:'desci'}]},
- {id:'k-sound',name:'SOUND MONEY HIGHLANDS',kicker:'SOUND MONEY HIGHLANDS',dyn:true,a0start:2.2,
+ {id:'k-sound',region:true,name:'SOUND MONEY HIGHLANDS',kicker:'SOUND MONEY HIGHLANDS',dyn:true,a0start:2.2,
   cx:3050,cy:1000,rx:600,ry:500,rot:.03,seed:53,rug:.23,junction:[3050,1000],
   label:{x:3050,y:990,w:280,size:24},mountains:false,
   palette:{low:'#d9c795',up:'#e2cf9e',high:'#bc9468'},
   countries:[{id:'btcmaxis',big:true},{id:'oldguard',big:true},{id:'ghostchains'},{id:'privacy'}]},
- {id:'k-fast',name:'THE SHIP-FAST FRONTIER',kicker:'THE SHIP-FAST FRONTIER',dyn:true,a0start:5.4,
+ {id:'k-fast',region:true,name:'THE SHIP-FAST FRONTIER',kicker:'THE SHIP-FAST FRONTIER',dyn:true,a0start:5.4,
   cx:-950,cy:300,rx:640,ry:460,rot:-.05,seed:113,rug:.27,junction:[-950,300],
   label:{x:-950,y:290,w:260,size:24},mountains:false,
   palette:{low:'#b3c892',up:'#d9c795',high:'#bc9468'},
   countries:[{id:'solana',big:true},{id:'newl1s',big:true},{id:'base'},
    {id:'aicoins',big:true},{id:'depin'},{id:'airdropfarmers'}]},
- {id:'k-trench',name:'THE TRENCHES',kicker:'THE TRENCHES',dyn:true,a0start:3.6,
+ {id:'k-trench',region:true,name:'THE TRENCHES',kicker:'THE TRENCHES',dyn:true,a0start:3.6,
   cx:1500,cy:2250,rx:640,ry:330,rot:.05,seed:149,rug:.3,junction:[1500,2250],
   label:{x:1500,y:2240,w:240,size:26},mountains:false,
   palette:{low:'#b0b18d',up:'#c9bc90',high:'#9d7f58'},
@@ -373,6 +373,7 @@ const CONTINENTS=[
 
 /* rivers: how the resources flow — width follows the receiving tribe's market cap */
 const FLOWS=[
+ ['btcmaxis','ethereum'],
  ['exchangetokens','btcmaxis'],['exchangetokens','ethereum'],['stablecoins','ethereum'],
  ['stablecoins','defi'],['ethereum','l2s'],['ethereum','restakers'],
  ['ethereum','regens'],['regens','artists'],['daos','regens'],
@@ -382,11 +383,10 @@ const FLOWS=[
 /* the waters: fiat is not a coin but the sea every coin floats in.
    Its labels are hover targets. */
 const OCEANS=[
- {id:'fiat',t:'THE FIAT OCEAN',x:-1300,y:2350,w:220,size:22,arc:1800},
- {id:'fiat',t:'THE FIAT OCEAN',x:2300,y:1750,w:200,size:18,arc:-1600},
- {id:'fiat',t:'THE FIAT OCEAN',x:2750,y:-800,w:200,size:18,arc:1600},
- {t:'THE EFFICAX STRAIT',x:480,y:1210,w:150,size:15,arc:1400},
- {t:'THE ONRAMP CHANNEL',x:1350,y:-30,w:140,size:14,arc:-1400}
+ {id:'fiat',t:'THE FIAT OCEAN',x:2950,y:-880,w:170,size:16,arc:1600},
+ {id:'fiat',t:'THE FIAT OCEAN',x:-1400,y:2650,w:170,size:16,arc:-1600},
+ {t:'THE EFFICAX VALLEY',x:480,y:1210,w:150,size:15,arc:1400},
+ {t:'THE ONRAMP PASS',x:1350,y:-30,w:130,size:13,arc:-1400}
 ];
 
 /* bespoke villages: rare ontologies, visible at deep zoom */
@@ -425,10 +425,10 @@ function drawTerrain(pts,anchor,pal,g,clipId,scaleUp,scaleHi){
 /* the landscape follows the information: every topic raises the ground where
    it sits — the capital (the day's biggest story) builds a snowcapped massif
    with contour rings, lesser topics only foothills */
-function drawTopo(p,rank,big,rng,clip){
+function drawTopo(p,rank,big,rng,clip,mcap){
   const g=el('g',clip?{'clip-path':`url(#${clip})`}:{},gRelief);
-  const base=big?1.2:1;
-  const R=(rank===0?68:rank===1?36:22)*base;
+  const base=big?1.1:1;
+  const R=(rank===0?(34+26*Math.log10(1+(mcap||0)/1e9)):rank===1?36:22)*base;
   el('path',{d:pathFrom(blobPts(p[0],p[1],R*1.45,R*1.1,rng()*3,Math.abs(p[0]*7+p[1])|0,.3,48),true),
     fill:'#c9b483',opacity:rank===0?.45:.3,filter:'url(#soft8)'},g);
   if(rank===0){
@@ -438,12 +438,12 @@ function drawTopo(p,rank,big,rng,clip){
       el('path',{d:pathFrom(blobPts(p[0],p[1],R*.45*k,R*.36*k,.2,Math.abs(p[0]+k*31)|0,.22,44),true),
         fill:'none',stroke:'#7a674a',opacity:.32,'stroke-width':1,class:'deco'},g);
   }
-  const peaks=rank===0?9:rank===1?4:2;
+  const peaks=rank===0?Math.min(16,6+Math.round(R/11)):rank===1?4:2;
   const mg=el('g',{stroke:'#4a3c28',fill:'none','stroke-width':1.4,'stroke-linecap':'round',opacity:.55,class:'deco'},g);
   for(let i=0;i<peaks;i++){
     const a=rng()*Math.PI*2, rr=(i===0?0:(.3+.7*rng()))*R;
     const x=p[0]+Math.cos(a)*rr, y=p[1]+Math.sin(a)*rr*.6;
-    const s=Math.max(3.5,(i===0?(rank===0?12:8):4.5+rng()*3.5)*base*(1-rr/(R*1.8)));
+    const s=Math.max(3.5,(i===0?(rank===0?10+R*0.055:8):4.5+rng()*3.5)*base*(1-rr/(R*1.8)));
     el('path',{d:`M${x-s} ${y+s*.55} L${x} ${y-s*.7} L${x+s} ${y+s*.55}`},mg);
     el('path',{d:`M${x} ${y-s*.7} L${x+s*.35} ${y}`,opacity:.5},mg);
     if(i===0&&rank===0)
@@ -504,10 +504,8 @@ function buildWorld(D){
   const grat=el('g',{stroke:'#48657326','stroke-width':1,fill:'none'},root);
   for(let x=Math.ceil(X0/240)*240;x<=X1;x+=240)el('path',{d:`M${x} ${Y0-400} Q ${x+((x-(X0+X1)/2)*0.04)} ${(Y0+Y1)/2} ${x} ${Y1+400}`},grat);
   for(let y=Math.ceil(Y0/240)*240;y<=Y1;y+=240)el('path',{d:`M${X0-400} ${y} Q ${(X0+X1)/2} ${y+((y-(Y0+Y1)/2)*0.04)} ${X1+400} ${y}`},grat);
-  const waves=el('g',{stroke:'#4d6b78',fill:'none','stroke-width':1.1,opacity:.28,'stroke-linecap':'round'},root);
-  [[350,250],[290,930],[1620,620],[830,690],[1350,1230],[2240,940],[2300,190],[160,1290],[1750,530],[620,60],[1900,1440],[80,560],[2330,1300],[1440,330],[-600,300],[-350,1600],[3000,600],[3100,1500],[600,1950],[2200,2050],[-550,-350],[1500,-450],[2900,-350],[500,-480],[-700,800],[3200,50]].forEach(([x,y])=>{
-    el('path',{d:`M${x} ${y} q5 -5 10 0 q5 5 10 0 M${x+6} ${y+7} q5 -5 10 0`},waves);
-  });
+  /* one landmass: no mid-ocean wave marks */
+
 
   gShallow=el('g',{},root); gLand=el('g',{},root); gRelief=el('g',{},root); gRivers=el('g',{},root); gBorder=el('g',{},root);
   gEngraved=el('g',{},root); gHL=el('g',{},root);
@@ -520,6 +518,18 @@ function buildWorld(D){
   countries=[];villages=[];constLabels=[];contLblEls=[];oceanLblEls=[];waterHits=[];
 
 
+  /* the whole world is one landmass; the ocean survives only at the margins */
+  {
+    const SLC=[1025,900];
+    const SL=blobPts(SLC[0],SLC[1],2700,1800,0.02,7,.10,220);
+    const d=pathFrom(SL,true);
+    el('path',{d,fill:'none',stroke:'#c9dcd6',opacity:.55,'stroke-width':34,filter:'url(#soft14)'},gShallow);
+    el('path',{d,fill:'none',stroke:'#bdd6d2',opacity:.7,'stroke-width':14,filter:'url(#soft8)'},gShallow);
+    const g=el('g',{},gLand);
+    el('path',{d,fill:'#bcc79b'},g);
+    el('path',{d:pathFrom(shrink(SL,SLC,.82),true),fill:'#c6cba0',opacity:.55,filter:'url(#soft14)'},g);
+    el('path',{d,fill:'none',stroke:'#5a4f3c','stroke-width':1.2,'vector-effect':'non-scaling-stroke',opacity:.85},g);
+  }
   function mcapOf(tb){
     let s=0;
     for(const t of ((tb&&tb.discussing)||[])){
@@ -537,10 +547,20 @@ function buildWorld(D){
     } else if(C.countries.length===1){C.countries[0].a0=0;C.countries[0].a1=6.283}
     const pts=blobPts(C.cx,C.cy,C.rx,C.ry,C.rot,C.seed,C.rug,160);
     const rng=mulberry32(C.seed*7+3);
-    const {g,d,clipId}=drawLandmass(pts,C.palette,gLand,C.seed);
-    const anchor=C.junction||[C.cx,C.cy];
-    drawTerrain(pts,anchor,C.palette,g,clipId,.62,.34);
-    el('path',{d,fill:'none',stroke:'#5a4f3c','stroke-width':1.1,'vector-effect':'non-scaling-stroke',opacity:.85},g);
+    let g,d,clipId;
+    if(C.region){
+      d=pathFrom(pts,true);
+      clipId='clip'+C.seed;
+      const cp=el('clipPath',{id:clipId},defs);el('path',{d},cp);
+      g=el('g',{},gLand);
+      el('path',{d,fill:C.palette.low,opacity:.5,filter:'url(#soft14)'},g);
+      el('path',{d:pathFrom(shrink(pts,C.junction||[C.cx,C.cy],.6),true),fill:C.palette.up,opacity:.35,filter:'url(#soft14)'},g);
+    } else {
+      ({g,d,clipId}=drawLandmass(pts,C.palette,gLand,C.seed));
+      const anchor=C.junction||[C.cx,C.cy];
+      drawTerrain(pts,anchor,C.palette,g,clipId,.62,.34);
+      el('path',{d,fill:'none',stroke:'#5a4f3c','stroke-width':1.1,'vector-effect':'non-scaling-stroke',opacity:.85},g);
+    }
     if(C.trees)drawTrees([C.cx,C.cy],rng,g,12,C.rx*1.1);
     if(C.islets)for(const I of C.islets){
       const ip=blobPts(C.cx+I.dx,C.cy+I.dy,I.r,I.r*.72,rng()*3,C.seed*13+I.r,.4,60);
@@ -588,7 +608,8 @@ function buildWorld(D){
       return p;
     });
     const tRng=mulberry32(c.id.length*997+13);
-    c.cityPts.forEach((p,i)=>drawTopo(p,i,c.big,tRng,c.clipId));
+    const cm=mcapOf(c.tribe);
+    c.cityPts.forEach((p,i)=>drawTopo(p,i,c.big,tRng,c.clipId,i===0?cm:0));
   }
 
   /* rivers of value: drawn from tribe to tribe, width from the receiver's market cap */
