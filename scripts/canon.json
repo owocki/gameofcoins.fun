@@ -196,5 +196,38 @@
    "@chameleon_jeff",
    "the hyperps"
   ]
+ },
+ "regens": {
+  "name": "regens & public goods",
+  "country": "Regens / public goods",
+  "tldr": "fund what markets won't",
+  "ontology": "Value is regenerative, not extractive: public goods are the real wealth, and crypto's purpose is coordination infrastructure that funds what markets and states won't.",
+  "figures": [
+   "@owocki",
+   "@gitcoin",
+   "the RetroPGF rounds"
+  ]
+ },
+ "nft": {
+  "name": "nft land",
+  "country": "NFTs & gaming",
+  "tldr": "the jpeg was never the point",
+  "ontology": "Ownership is the primitive: art, identity, and game economies belong to their holders. The jpeg was never the point; the community deed was.",
+  "figures": [
+   "@pudgypenguins",
+   "@BoredApeYC",
+   "@blur_io"
+  ]
+ },
+ "depin": {
+  "name": "depin",
+  "country": "DePIN",
+  "tldr": "physical infrastructure, token-bootstrapped",
+  "ontology": "Networks of real hardware — wireless, compute, sensors — bootstrap themselves with tokens instead of capex; the crowd builds the infrastructure the telcos would not.",
+  "figures": [
+   "@helium",
+   "@akashnet_",
+   "@iotex_io"
+  ]
  }
 }

@@ -341,7 +341,18 @@ const CONTINENTS=[
  {id:'c-hype',name:'',kicker:'THE TRENCHES',big:true,cx:2650,cy:2500,rx:170,ry:120,rot:.11,seed:163,rug:.28,
   junction:null,mountains:false,palette:{low:'#9fc0a4',up:'#c6c69a',high:'#a08a60'},
   islets:[{dx:220,dy:-30,r:18}],
-  countries:[{id:'hyperliquid',a0:0,a1:6.283}]}
+  countries:[{id:'hyperliquid',a0:0,a1:6.283}]},
+ {id:'c-regen',name:'',kicker:'THE COMMONS',cx:-500,cy:1950,rx:170,ry:120,rot:-.1,seed:167,rug:.3,
+  junction:null,mountains:false,trees:true,palette:{low:'#a4cd8a',up:'#cbc98e',high:'#a98e5e'},
+  islets:[{dx:210,dy:40,r:18}],
+  countries:[{id:'regens',a0:0,a1:6.283}]},
+ {id:'c-nft',name:'',kicker:'THE CULTURE',cx:350,cy:2350,rx:180,ry:130,rot:.08,seed:173,rug:.29,
+  junction:null,mountains:false,palette:{low:'#c4bd93',up:'#dcc79b',high:'#b2926a'},
+  islets:[{dx:-230,dy:-30,r:20}],
+  countries:[{id:'nft',a0:0,a1:6.283}]},
+ {id:'c-depin',name:'',kicker:'SHIP FAST',cx:-1050,cy:1750,rx:180,ry:130,rot:.14,seed:179,rug:.28,
+  junction:null,mountains:false,trees:true,palette:{low:'#aec8a0',up:'#cfc79d',high:'#a98e62'},
+  countries:[{id:'depin',a0:0,a1:6.283}]}
 ];
 
 /* the waters: fiat is not a coin but the sea every coin floats in.
@@ -795,6 +806,9 @@ const PMETA={
  privacy:{e:'🕵️',s:'the unseen ledger'},
  degenperps:{e:'🎰',s:'leverage'},
  hyperliquid:{e:'💧',s:'the onchain orderbook'},
+ regens:{e:'🌻',s:'the commons',note:"the map-maker's tent"},
+ nft:{e:'🖼️',s:'ownership'},
+ depin:{e:'📡',s:'the crowd-built grid'},
  oldguard:{e:'🏛️',s:'the roadmap'},
  aicoins:{e:'🤖',s:'open intelligence'},
  defi:{e:'⚙️',s:'permissionless finance'},
@@ -820,7 +834,10 @@ const PAPER=[
  ['aicoins','$7.3B across 6 coins'],
  ['linkmarines','$6.2B across 1 coin'],
  ['l2s','$2.6B across 3 coins'],
- ['degenperps','$2.3B across 2 coins']
+ ['degenperps','$2.3B across 2 coins'],
+ ['nft','$1.0B across 6 coins'],
+ ['depin','$182M across 3 coins'],
+ ['regens','$46M across 2 coins']
 ];
 const HOOK_FALLBACK=['btcmaxis','ethereum','stablecoins','solana','memecoins','degenperps'];
 function lcFirst(s){s=String(s);return s.charAt(0).toLowerCase()+s.slice(1)}

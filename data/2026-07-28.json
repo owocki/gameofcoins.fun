@@ -990,6 +990,111 @@
      "src": "https://www.coingecko.com/en/coins/hyperliquid"
     }
    ]
+  },
+  "regens": {
+   "name": "regens & public goods",
+   "country": "Regens / public goods",
+   "tldr": "fund what markets won't",
+   "ontology": "Value is regenerative, not extractive: public goods are the real wealth, and crypto's purpose is coordination infrastructure that funds what markets and states won't.",
+   "figures": [
+    "@owocki",
+    "@gitcoin",
+    "the RetroPGF rounds"
+   ],
+   "discussing": [
+    {
+     "t": "CELO · #509",
+     "d": "Celo — rank #509, $39M market cap, $0.0639.",
+     "x": "$CELO",
+     "src": "https://www.coingecko.com/en/coins/celo"
+    },
+    {
+     "t": "GTC · #1392",
+     "d": "Gitcoin — rank #1392, $7M market cap, $0.0764.",
+     "x": "$GTC",
+     "src": "https://www.coingecko.com/en/coins/gitcoin"
+    }
+   ]
+  },
+  "nft": {
+   "name": "nft land",
+   "country": "NFTs & gaming",
+   "tldr": "the jpeg was never the point",
+   "ontology": "Ownership is the primitive: art, identity, and game economies belong to their holders. The jpeg was never the point; the community deed was.",
+   "figures": [
+    "@pudgypenguins",
+    "@BoredApeYC",
+    "@blur_io"
+   ],
+   "discussing": [
+    {
+     "t": "PENGU · #111",
+     "d": "Pudgy Penguins — rank #111, $378M market cap, $0.0060.",
+     "x": "$PENGU",
+     "src": "https://www.coingecko.com/en/coins/pudgy-penguins"
+    },
+    {
+     "t": "IMX · #264",
+     "d": "Immutable — rank #264, $230M market cap, $0.1149.",
+     "x": "$IMX",
+     "src": "https://www.coingecko.com/en/coins/immutable-x"
+    },
+    {
+     "t": "APE · #189",
+     "d": "ApeCoin — rank #189, $153M market cap, $0.1529.",
+     "x": "$APE",
+     "src": "https://www.coingecko.com/en/coins/apecoin"
+    },
+    {
+     "t": "SAND · #238",
+     "d": "The Sandbox — rank #238, $128M market cap, $0.0427.",
+     "x": "$SAND",
+     "src": "https://www.coingecko.com/en/coins/the-sandbox"
+    },
+    {
+     "t": "GALA · #275",
+     "d": "GALA — rank #275, $89M market cap, $0.0018.",
+     "x": "$GALA",
+     "src": "https://www.coingecko.com/en/coins/gala"
+    },
+    {
+     "t": "BLUR · #475",
+     "d": "Blur — rank #475, $42M market cap, $0.0147.",
+     "x": "$BLUR",
+     "src": "https://www.coingecko.com/en/coins/blur"
+    }
+   ]
+  },
+  "depin": {
+   "name": "depin",
+   "country": "DePIN",
+   "tldr": "physical infrastructure, token-bootstrapped",
+   "ontology": "Networks of real hardware — wireless, compute, sensors — bootstrap themselves with tokens instead of capex; the crowd builds the infrastructure the telcos would not.",
+   "figures": [
+    "@helium",
+    "@akashnet_",
+    "@iotex_io"
+   ],
+   "discussing": [
+    {
+     "t": "AKT · #218",
+     "d": "Akash Network — rank #218, $129M market cap, $0.4370.",
+     "x": "$AKT",
+     "src": "https://www.coingecko.com/en/coins/akash-network"
+    },
+    {
+     "t": "HNT · #582",
+     "d": "Helium — rank #582, $33M market cap, $0.1838.",
+     "x": "$HNT",
+     "src": "https://www.coingecko.com/en/coins/helium"
+    },
+    {
+     "t": "IOTX · #786",
+     "d": "IoTeX — rank #786, $20M market cap, $0.0022.",
+     "x": "$IOTX",
+     "src": "https://www.coingecko.com/en/coins/iotex"
+    }
+   ]
   }
  },
  "paper": {
