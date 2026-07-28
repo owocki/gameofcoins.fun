@@ -359,7 +359,36 @@ const CONTINENTS=[
   countries:[{id:'artists',a0:0,a1:6.283}]},
  {id:'c-daos',name:'',kicker:'THE COMMONS',cx:-850,cy:2250,rx:160,ry:115,rot:.1,seed:191,rug:.29,
   junction:null,mountains:false,trees:true,palette:{low:'#a8c496',up:'#ccc59a',high:'#a78c63'},
-  countries:[{id:'daos',a0:0,a1:6.283}]}
+  countries:[{id:'daos',a0:0,a1:6.283}]},
+ {id:'c-pm',name:'',kicker:'THE DOLLAR ZONE',cx:2600,cy:200,rx:160,ry:110,rot:-.07,seed:193,rug:.27,
+  junction:null,mountains:false,palette:{low:'#b8c295',up:'#d8caa0',high:'#b29671'},
+  countries:[{id:'predictionmarkets',a0:0,a1:6.283}]},
+ {id:'c-base',name:'',kicker:'SHIP FAST',cx:350,cy:-100,rx:180,ry:130,rot:.09,seed:197,rug:.26,
+  junction:null,mountains:false,palette:{low:'#a9c2b9',up:'#cbc8a4',high:'#a99270'},
+  countries:[{id:'base',a0:0,a1:6.283}]},
+ {id:'c-memedaos',name:'',kicker:'THE COMMONS',cx:-1250,cy:2450,rx:150,ry:105,rot:-.12,seed:199,rug:.32,
+  junction:null,mountains:false,trees:true,palette:{low:'#b6c88e',up:'#d5c795',high:'#ab8f63'},
+  islets:[{dx:190,dy:-25,r:15}],
+  countries:[{id:'memedaos',a0:0,a1:6.283}]},
+ {id:'c-restake',name:'',kicker:'THE WORLD COMPUTER',cx:1250,cy:1250,rx:150,ry:105,rot:.13,seed:211,rug:.28,
+  junction:null,mountains:false,palette:{low:'#b7c795',up:'#dcc99a',high:'#b89064'},
+  countries:[{id:'restakers',a0:0,a1:6.283}]},
+ {id:'c-zk',name:'',kicker:'THE WORLD COMPUTER',cx:2050,cy:900,rx:170,ry:120,rot:-.09,seed:223,rug:.27,
+  junction:null,mountains:false,palette:{low:'#aec1a0',up:'#cfc7a2',high:'#ac9271'},
+  countries:[{id:'zkpurists',a0:0,a1:6.283}]},
+ {id:'c-mev',name:'',kicker:'THE TRENCHES',cx:1550,cy:1550,rx:130,ry:90,rot:.16,seed:227,rug:.33,
+  junction:null,mountains:false,trees:true,palette:{low:'#8fa07e',up:'#a8ab80',high:'#7c6a4d'},
+  countries:[{id:'mevsearchers',a0:0,a1:6.283}]},
+ {id:'c-airdrop',name:'',kicker:'SHIP FAST',cx:-1300,cy:500,rx:140,ry:95,rot:-.14,seed:229,rug:.34,
+  junction:null,mountains:false,palette:{low:'#c2be8b',up:'#dcc795',high:'#b18a5e'},
+  islets:[{dx:180,dy:30,r:14},{dx:-170,dy:-25,r:12}],
+  countries:[{id:'airdropfarmers',a0:0,a1:6.283}]},
+ {id:'c-ghost',name:'',kicker:'SOUND MONEY',cx:3450,cy:1450,rx:150,ry:105,rot:.08,seed:233,rug:.3,
+  junction:null,mountains:false,palette:{low:'#adaa93',up:'#c4bb95',high:'#8f7d5e'},
+  countries:[{id:'ghostchains',a0:0,a1:6.283}]},
+ {id:'c-desci',name:'',kicker:'SHIP FAST',cx:-1350,cy:1450,rx:130,ry:90,rot:.1,seed:239,rug:.29,
+  junction:null,mountains:false,trees:true,palette:{low:'#a4cd8a',up:'#cbc98e',high:'#a98e5e'},
+  countries:[{id:'desci',a0:0,a1:6.283}]}
 ];
 
 /* the waters: fiat is not a coin but the sea every coin floats in.
@@ -371,7 +400,9 @@ const OCEANS=[
 ];
 
 /* bespoke villages: rare ontologies, visible at deep zoom */
-const BESPOKE=[];
+const BESPOKE=[
+ {id:'ordinals',parent:'btcmaxis',dx:90,dy:110}
+];
 
 /* ---------- svg scaffolding ---------- */
 const NS='http://www.w3.org/2000/svg';
@@ -817,6 +848,16 @@ const PMETA={
  nft:{e:'🖼️',s:'ownership'},
  artists:{e:'🎨',s:'the work itself'},
  daos:{e:'🗳️',s:'the community'},
+ predictionmarkets:{e:'🎲',s:'calibration'},
+ base:{e:'🔵',s:'the onramp'},
+ memedaos:{e:'🍕',s:'the bit, taken seriously'},
+ restakers:{e:'♻️',s:'stacked yield'},
+ zkpurists:{e:'🔐',s:'the proof'},
+ mevsearchers:{e:'🌲',s:'the invisible auction'},
+ airdropfarmers:{e:'🪂',s:'the snapshot'},
+ ghostchains:{e:'🏚️',s:'what remains'},
+ desci:{e:'🧫',s:'open science'},
+ ordinals:{e:'🧿',s:'the inscription'},
  depin:{e:'📡',s:'the crowd-built grid'},
  oldguard:{e:'🏛️',s:'the roadmap'},
  aicoins:{e:'🤖',s:'open intelligence'},
@@ -827,7 +868,7 @@ const PMETA={
 };
 const PAPER=[
  ['fiat','the water — all of it prices in dollars'],
- ['btcmaxis','$1.29T across 3 coins'],
+ ['btcmaxis','$1287.9B across 3 coins'],
  ['stablecoins','$296.1B across 19 coins'],
  ['ethereum','$230.8B across 1 coin'],
  ['exchangetokens','$101.0B across 10 coins'],
@@ -844,11 +885,21 @@ const PAPER=[
  ['linkmarines','$6.2B across 1 coin'],
  ['l2s','$2.6B across 3 coins'],
  ['degenperps','$2.3B across 2 coins'],
- ['daos','$490M across 2 coins'],
- ['artists','$55M across 3 coins'],
  ['nft','$1.0B across 6 coins'],
+ ['base','$843M across 3 coins'],
+ ['restakers','$552M across 2 coins'],
+ ['daos','$490M across 2 coins'],
+ ['ghostchains','$386M across 3 coins'],
+ ['zkpurists','$335M across 3 coins'],
+ ['predictionmarkets','$283M across 1 coin'],
+ ['regens','$250M across 4 coins'],
  ['depin','$182M across 3 coins'],
- ['regens','$250M across 4 coins']
+ ['desci','$83M across 2 coins'],
+ ['ordinals','$60M across 1 coin'],
+ ['artists','$55M across 3 coins'],
+ ['memedaos','no token, on purpose'],
+ ['mevsearchers','no token — they take it in-flight'],
+ ['airdropfarmers','no token of their own; they want yours']
 ];
 const HOOK_FALLBACK=['btcmaxis','ethereum','stablecoins','solana','memecoins','degenperps'];
 function lcFirst(s){s=String(s);return s.charAt(0).toLowerCase()+s.slice(1)}

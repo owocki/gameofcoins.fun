@@ -1533,6 +1533,223 @@
      "src": "https://research.lido.fi/t/10894"
     }
    ]
+  },
+  "predictionmarkets": {
+   "name": "the prediction markets",
+   "country": "Prediction markets",
+   "tldr": "put a number on it or it's vibes",
+   "ontology": "Beliefs are bets: markets extract honest probabilities from talk, and the odds page becomes the front page. The regulators are the last counterparty.",
+   "figures": [
+    "@Polymarket",
+    "@Kalshi",
+    "@gnosisdao"
+   ],
+   "discussing": [
+    {
+     "t": "GNO · #129",
+     "d": "Gnosis — rank #129, $283M market cap, $107.39.",
+     "x": "$GNO",
+     "src": "https://www.coingecko.com/en/coins/gnosis"
+    }
+   ]
+  },
+  "base": {
+   "name": "base & onchain consumer",
+   "country": "Base",
+   "tldr": "bring the next billion onchain, an app at a time",
+   "ontology": "Crypto grows when normal people can use it: one tap, low fees, real apps. The consumer chain is the onramp, and culture — social, creators, mini-apps — is the killer app.",
+   "figures": [
+    "@base",
+    "@jessepollak",
+    "@aerodromefi"
+   ],
+   "discussing": [
+    {
+     "t": "AERO · #106",
+     "d": "Aerodrome Finance — rank #106, $425M market cap, $0.4359.",
+     "x": "$AERO",
+     "src": "https://www.coingecko.com/en/coins/aerodrome-finance"
+    },
+    {
+     "t": "VIRTUAL · #112",
+     "d": "Virtuals Protocol — rank #112, $375M market cap, $0.5697.",
+     "x": "$VIRTUAL",
+     "src": "https://www.coingecko.com/en/coins/virtual-protocol"
+    },
+    {
+     "t": "DEGEN · #459",
+     "d": "Degen — rank #459, $43M market cap, $0.0012.",
+     "x": "$DEGEN",
+     "src": "https://www.coingecko.com/en/coins/degen-base"
+    }
+   ]
+  },
+  "memedaos": {
+   "name": "the meme DAOs",
+   "country": "Meme DAOs",
+   "tldr": "absurd on purpose; coordinated for real",
+   "ontology": "Start with a joke, end with a global co-op: pizza parties, sesh circles, golf courses. The meme is the recruiting poster and the DAO is the proof that strangers can fund real things together.",
+   "figures": [
+    "PizzaDAO",
+    "BluntDAO",
+    "@LinksDAO"
+   ],
+   "discussing": []
+  },
+  "restakers": {
+   "name": "the restakers",
+   "country": "Restaking",
+   "tldr": "stake once, secure everything",
+   "ontology": "Security is a commodity to be rented: restake the same collateral to secure many systems, and yield stacks on yield. The risk debate is the culture.",
+   "figures": [
+    "@eigenlayer",
+    "@ether_fi",
+    "the AVS operators"
+   ],
+   "discussing": [
+    {
+     "t": "ETHFI · #107",
+     "d": "Ether.fi — rank #107, $406M market cap, $0.4171.",
+     "x": "$ETHFI",
+     "src": "https://www.coingecko.com/en/coins/ether-fi"
+    },
+    {
+     "t": "EIGEN · #200",
+     "d": "EigenCloud (prev. EigenLayer) — rank #200, $146M market cap, $0.1975.",
+     "x": "$EIGEN",
+     "src": "https://www.coingecko.com/en/coins/eigenlayer"
+    }
+   ]
+  },
+  "zkpurists": {
+   "name": "the zk purists",
+   "country": "ZK",
+   "tldr": "don't trust, verify — cryptographically",
+   "ontology": "The endgame is proofs: computation verified, privacy preserved, trust minimized to mathematics. Everything else is a temporary scaffold.",
+   "figures": [
+    "@zksync",
+    "@Starknet",
+    "@MinaProtocol"
+   ],
+   "discussing": [
+    {
+     "t": "STRK · #168",
+     "d": "Starknet — rank #168, $192M market cap, $0.0285.",
+     "x": "$STRK",
+     "src": "https://www.coingecko.com/en/coins/starknet"
+    },
+    {
+     "t": "ZK · #283",
+     "d": "ZKsync — rank #283, $87M market cap, $0.0086.",
+     "x": "$ZK",
+     "src": "https://www.coingecko.com/en/coins/zksync"
+    },
+    {
+     "t": "MINA · #385",
+     "d": "Mina Protocol — rank #385, $56M market cap, $0.0431.",
+     "x": "$MINA",
+     "src": "https://www.coingecko.com/en/coins/mina-protocol"
+    }
+   ]
+  },
+  "mevsearchers": {
+   "name": "the mev searchers",
+   "country": "MEV / dark forest",
+   "tldr": "the mempool is a dark forest",
+   "ontology": "Every transaction is prey and every block is an auction; searchers, builders, and relays run the invisible market inside the market. Seen only when something goes wrong.",
+   "figures": [
+    "Flashbots",
+    "the searchers",
+    "the block builders"
+   ],
+   "discussing": []
+  },
+  "airdropfarmers": {
+   "name": "the airdrop farmers",
+   "country": "Airdrop farmers",
+   "tldr": "every points program is a job posting",
+   "ontology": "The protocols need users and the farmers need tokens: points are wages, sybils are scale, and loyalty lasts exactly until the snapshot.",
+   "figures": [
+    "the points farmers",
+    "the sybil hunters",
+    "the L2 questers"
+   ],
+   "discussing": []
+  },
+  "ghostchains": {
+   "name": "the ghost chains",
+   "country": "Ghost chains",
+   "tldr": "the ruins of former top tens",
+   "ontology": "Once top-ten, still running: blocks produced, treasuries intact, communities dispersed. The map keeps its ruins because every cycle builds on them.",
+   "figures": [
+    "the EOS diaspora",
+    "the IOTA faithful",
+    "the NEO holders"
+   ],
+   "discussing": [
+    {
+     "t": "IOTA · #197",
+     "d": "IOTA — rank #197, $148M market cap, $0.0325.",
+     "x": "$IOTA",
+     "src": "https://www.coingecko.com/en/coins/iota"
+    },
+    {
+     "t": "NEO · #209",
+     "d": "NEO — rank #209, $135M market cap, $1.92.",
+     "x": "$NEO",
+     "src": "https://www.coingecko.com/en/coins/neo"
+    },
+    {
+     "t": "A · #252",
+     "d": "Vaulta — rank #252, $103M market cap, $0.0625.",
+     "x": "$A",
+     "src": "https://www.coingecko.com/en/coins/vaulta"
+    }
+   ]
+  },
+  "desci": {
+   "name": "desci",
+   "country": "DeSci",
+   "tldr": "fund the science the grants won't",
+   "ontology": "Research is a public good funded like a startup: token-holders back longevity molecules and open data, and the lab notebook goes onchain.",
+   "figures": [
+    "@VitaDAO",
+    "@ResearchHub",
+    "the DeSci degens"
+   ],
+   "discussing": [
+    {
+     "t": "RSC · #836",
+     "d": "ResearchCoin — rank #836, $77M market cap, $0.0774.",
+     "x": "$RSC",
+     "src": "https://www.coingecko.com/en/coins/researchcoin"
+    },
+    {
+     "t": "VITA · #1451",
+     "d": "VitaDAO — rank #1451, $6.0M market cap, $0.2277.",
+     "x": "$VITA",
+     "src": "https://www.coingecko.com/en/coins/vitadao"
+    }
+   ]
+  },
+  "ordinals": {
+   "name": "the ordinals & runes",
+   "country": "Ordinals",
+   "tldr": "bitcoin is for building too",
+   "ontology": "The blockspace belongs to whoever pays for it: inscriptions, runes, and art on the oldest chain — heresy to the maxis, homecoming to the builders.",
+   "figures": [
+    "@rodarmor",
+    "the inscribers",
+    "the runes traders"
+   ],
+   "discussing": [
+    {
+     "t": "DOG · #368",
+     "d": "Dog (Bitcoin) — rank #368, $60M market cap, $0.0006.",
+     "x": "$DOG",
+     "src": "https://www.coingecko.com/en/coins/dog-go-to-the-moon-rune"
+    }
+   ]
   }
  },
  "paper": {
