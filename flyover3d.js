@@ -8,6 +8,18 @@
   if (!A || !window.THREE) { console.error('flyover3d: missing bridge or three'); return; }
   const T = window.THREE;
   const AUTO = /[?&]auto=1/.test(location.search);
+  const RECORDQ = /[?&]record=1/.test(location.search);
+  let beginEl = null, beginSub = null, sceneReady = false, wantsStart = null;
+  if (!AUTO && !RECORDQ) {
+    beginEl = document.createElement('div');
+    beginEl.id = 'cinebegin';
+    beginEl.style.zIndex = 66;
+    beginEl.innerHTML = '<div class="b1" style="font-size:min(6vw,44px)">GAMEOFCOINS.XYZ</div>' +
+      '<div class="b2 pulse" id="cinesub">loading the realm&hellip;</div>';
+    document.body.appendChild(beginEl);
+    beginSub = beginEl.querySelector('#cinesub');
+    beginEl.addEventListener('click', () => { if (sceneReady && wantsStart) { beginEl.remove(); wantsStart(); } });
+  }
 
   const { X0, Y0, X1, Y1 } = A.world;
   const CXW = (X0 + X1) / 2, CYW = (Y0 + Y1) / 2;
@@ -58,7 +70,7 @@
   // ---------- renderer / scene ----------
   const renderer = new T.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
   renderer.setSize(innerWidth, innerHeight);
-  renderer.setPixelRatio(1);
+  renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));
   renderer.domElement.id = 'fly3d';
   renderer.domElement.style.cssText = 'position:fixed;inset:0;z-index:50;background:#0b0d12';
   document.body.appendChild(renderer.domElement);
@@ -201,7 +213,7 @@
   logo.id = 'goclogo';
   logo.style.cssText = 'position:fixed;inset:0;z-index:64;background:#0a0805;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;color:#e8c877;font-family:var(--serif);transition:opacity 2s ease;pointer-events:none';
   logo.innerHTML = '<div style="font-size:min(9vw,96px);font-weight:600;letter-spacing:.22em;text-shadow:0 0 60px #e8c87744">GAME OF COINS</div>' +
-    '<div style="font-size:15px;letter-spacing:.5em;color:#c9a86a">GAMEOFCOINS.FUN</div>';
+    '<div style="font-size:15px;letter-spacing:.5em;color:#c9a86a">GAMEOFCOINS.XYZ</div>';
   document.body.appendChild(logo);
 
   // ---------- the tour (virtual-clock: renderAt(tt) is pure in tour-time) ----------
@@ -232,6 +244,7 @@
       flatZones.push({ x: cap[0], y: cap[1], r: Rt * 1.6, h: getHraw(cap[0], cap[1]) });
     }
     const tex = await rasterizeMap();
+    document.getElementById('stage').style.display='none';  // stop repainting the SVG under the GL canvas
     buildTerrain(tex);
     buildClouds();
     const order = [...POP, ...NICHE];
@@ -286,7 +299,7 @@
       }
       if (cardKey !== cardFor) {
         cardFor = cardKey;
-        if (cardKey === '__outro') card('BUILT WITH ♥ BY @OWOCKI', 'Game of Coins', 'gameofcoins.fun · the cryptotwitter ontology map · resurveyed nightly');
+        if (cardKey === '__outro') card('BUILT WITH ♥ BY @OWOCKI', 'Game of Coins', 'gameofcoins.xyz · the cryptotwitter ontology map · resurveyed nightly');
         else if (cardKey) { const sc = stopCard(cardKey); card(sc.kick, sc.title, sc.line); }
       }
       setCardAlpha(cardKey ? cardAlpha : 0);
@@ -305,7 +318,7 @@
     window.__total = TOTAL;
     window.__flyReady = true;
 
-    const RECORD = /[?&]record=1/.test(location.search);
+    const RECORD = RECORDQ;
     function begin(withSound) {
       if (withSound) { try { A.startScore(168); } catch (e) {} }
       const t0 = performance.now();
@@ -319,12 +332,10 @@
     }
     if (RECORD) { renderAt(0); return; }
     if (AUTO) { begin(false); return; }
-    const bg = document.createElement('div');
-    bg.id = 'cinebegin';
-    bg.innerHTML = '<div class="b1">Game of Coins</div><div class="b2">tap to begin the flyover \u00b7 with sound</div>';
-    bg.style.zIndex = 66;
-    document.body.appendChild(bg);
-    bg.addEventListener('click', () => { bg.remove(); begin(true); }, { once: true });
+    sceneReady = true;
+    wantsStart = () => begin(true);
+    if (beginSub) { beginSub.classList.remove('pulse'); beginSub.textContent = 'tap to start'; }
+    if (beginEl) beginEl.style.cursor = 'pointer';
   }
   addEventListener('resize', () => {
     cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix();

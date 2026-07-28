@@ -3,24 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Game of Coins — the CryptoTwitter Ontology Map</title>
+<title>gameofcoins.xyz</title>
 <meta name="description" content="An earth-style map of the tribes of crypto twitter — every coin in the CoinGecko top 100 drawn as a city in its tribe's territory, market cap as terrain.">
 <!-- social unfurl: every page built from this template carries these cards -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CryptoTwitter Ontology Map">
 <meta property="og:title" content="CryptoTwitter Ontology Map">
 <meta property="og:description" content="The tribes of crypto twitter as continents — bitcoin, the stablecoin economy, tokenized tradfi, the trenches — with every top-100 coin as a city and market cap as the mountains.">
-<meta property="og:url" content="https://gameofcoins.fun/">
-<meta property="og:image" content="https://gameofcoins.fun/og.png">
+<meta property="og:url" content="https://gameofcoins.xyz/">
+<meta property="og:image" content="https://gameofcoins.xyz/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="A hand-drawn style world map where every continent is a tribe of crypto twitter">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="CryptoTwitter Ontology Map">
 <meta name="twitter:description" content="The tribes of crypto twitter as continents — every top-100 coin a city, market cap as the mountains.">
-<meta name="twitter:image" content="https://gameofcoins.fun/og.png">
+<meta name="twitter:image" content="https://gameofcoins.xyz/og.png">
 <meta name="twitter:creator" content="@owocki">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%97%BA%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230a0805'/%3E%3Ccircle cx='50' cy='50' r='36' fill='%23e8c877' stroke='%238a6a2a' stroke-width='4'/%3E%3Ccircle cx='50' cy='50' r='27' fill='none' stroke='%23a5813a' stroke-width='2'/%3E%3Cpath d='M50 20 L54 30 L52 62 L58 68 L50 66 L42 68 L48 62 L46 30 Z' fill='%235c4318'/%3E%3Crect x='38' y='36' width='24' height='5' rx='2' fill='%235c4318'/%3E%3C/svg%3E">
 <style>
 /* Hallmark · route: custom (bespoke) · structure: full-viewport interactive atlas · idea: "the discourse as a physical earth"
  * paper: oklch(94% 0.025 90) · accent: oklch(52% 0.09 40) · display: EB Garamond · body: EB Garamond
@@ -100,7 +100,15 @@ text{user-select:none;-webkit-user-select:none}
 #cart{position:fixed;left:50%;bottom:40px;transform:translateX(-50%);z-index:30;background:#f3e9d2ee;color:var(--ink);
   border:1px solid #b7a173;box-shadow:0 0 0 3px #f3e9d2ee,0 0 0 4px #b7a17355;
   padding:10px 14px 9px;text-align:center;pointer-events:none;max-width:92vw}
-#cart .t1{font-size:12.5px;font-weight:600;letter-spacing:.3em;text-transform:uppercase}
+#cart .t1{font-size:12.5px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;
+  background:none;border:none;color:var(--ink);font-family:var(--serif);cursor:pointer;
+  pointer-events:auto;padding:2px 6px;display:inline-flex;align-items:center;gap:8px}
+#cart .t1:hover{color:var(--focus)}
+#cart .t1:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+#cart .chev{display:inline-block;transition:transform .25s ease;font-size:13px;color:var(--focus)}
+#cart.open .chev{transform:rotate(180deg)}
+#cart .cartbody{display:none}
+#cart.open .cartbody{display:block}
 #cart .t2{font-size:11.5px;font-style:italic;color:#6d5f43;margin-top:3px}
 #cart .dnav{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:7px;pointer-events:auto}
 #cart .dnav button{border:1px solid #b7a173;background:#f3e9d2;font-family:var(--serif);font-size:16px;
@@ -188,6 +196,12 @@ text{user-select:none;-webkit-user-select:none}
 #isearch .sug div.sel,#isearch .sug div:hover{background:#efe0bd}
 #isearch .sug .sm{color:#8a7a58;font-size:11px;margin-left:6px}
 @media (max-width:620px){#isearch{top:50px;right:10px;width:200px}}
+#flybtn{position:fixed;top:104px;right:16px;z-index:44;background:#f3e9d2;border:1px solid #b7a173;
+  border-radius:999px;color:var(--ink);font-family:var(--serif);font-size:13px;font-weight:600;
+  letter-spacing:.05em;padding:6px 14px 7px;text-decoration:none;box-shadow:0 2px 6px -2px #2c241766}
+#flybtn:hover{background:#f9f1de}
+#flybtn:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+@media (max-width:620px){#flybtn{top:92px;right:10px}}
 
 /* ---- flyover: cinematic mode ---- */
 body.cine #cart,body.cine #ctrl,body.cine #paper,body.cine #tt,body.cine .axis,body.cine #isearch{display:none!important}
@@ -246,15 +260,17 @@ body.cine.cinedone #cine .bar{opacity:0}
 <div class="axis" id="ax-e">sound money</div>
 
 <div id="cart" role="note">
-  <div class="t1">Game of Coins</div>
-  <div class="t2">the coingecko top 100, drawn as a world &middot; market cap is the terrain</div>
-  <div class="dnav">
-    <button id="d-prev" aria-label="Previous day">&#8249;</button>
-    <span id="d-cur">loading&hellip;</span>
-    <button id="d-next" aria-label="Next day">&#8250;</button>
+  <button class="t1" id="cart-toggle" aria-expanded="false">gameofcoins.xyz <span class="chev">&#8964;</span></button>
+  <div class="cartbody">
+    <div class="t2">the coingecko top 100, drawn as a world &middot; market cap is the terrain</div>
+    <div class="dnav">
+      <button id="d-prev" aria-label="Previous day">&#8249;</button>
+      <span id="d-cur">loading&hellip;</span>
+      <button id="d-next" aria-label="Next day">&#8250;</button>
+    </div>
+    <div class="t3" id="cart-hint"></div>
+    <div class="t4">built with &hearts; by <a href="https://x.com/owocki" target="_blank" rel="noopener">@owocki</a> &middot; <a href="https://t.me/+_TMrvEHi8ew1MjFh" target="_blank" rel="noopener">telegram</a> &middot; <a href="https://gameofcoins.xyz" target="_blank" rel="noopener">gameofcoins.xyz</a></div>
   </div>
-  <div class="t3" id="cart-hint"></div>
-  <div class="t4">built with &hearts; by <a href="https://x.com/owocki" target="_blank" rel="noopener">@owocki</a> &middot; <a href="https://t.me/+_TMrvEHi8ew1MjFh" target="_blank" rel="noopener">telegram</a> &middot; <a href="https://gameofcoins.fun" target="_blank" rel="noopener">gameofcoins.fun</a></div>
 </div>
 
 <div id="ctrl">
@@ -280,6 +296,8 @@ body.cine.cinedone #cine .bar{opacity:0}
     </article>
   </div>
 </details>
+
+<a id="flybtn" href="?flyover">&#127916; the flyover</a>
 
 <div id="isearch">
   <input id="isq" type="text" placeholder="find an island&hellip;" autocomplete="off" spellcheck="false" aria-label="Find an island">
@@ -676,6 +694,7 @@ function buildWorld(D){
     if(!cloudRaf&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
       let last=performance.now();
       const drift=(now)=>{
+        if(document.getElementById('stage').style.display==='none'){last=now;cloudRaf=requestAnimationFrame(drift);return}
         const dt=Math.min(.1,(now-last)/1000);last=now;
         for(const c of cloudList){
           c.x+=c.v*dt; c.wob+=dt*.3;
@@ -1211,16 +1230,22 @@ function flyTo(tx,ty,tzf,dur,done){
 /* ---------- island search: autocomplete + graceful flight ---------- */
 const isq=document.getElementById('isq'),isug=document.getElementById('isug');
 let sugSel=0,sugItems=[];
+function termsOf(tb){
+  return (tb.country+' '+tb.name+' '+(tb.tldr||'')+' '
+    +((tb.discussing||[]).map(t=>t.t+' '+t.d).join(' '))+' '
+    +((tb.topics||[]).map(t=>t.t).join(' '))+' '
+    +((tb.figures||[]).join(' '))).toLowerCase();
+}
 function searchIndex(){
   const ix=[];
-  for(const c of countries)ix.push({id:c.id,label:c.tribe.country,tribe:c.tribe,pos:c.labelPos,zf:c.big?2.3:3.0,c});
-  for(const v of villages)ix.push({id:v.id,label:v.tribe.country,tribe:v.tribe,pos:v.pos,zf:3.6,kick:'BESPOKE'});
-  for(const w of waterHits)if(!ix.some(e=>e.id===w.id))ix.push({id:w.id,label:w.tribe.country,tribe:w.tribe,pos:[w.x,w.y],zf:2.0,kick:w.kick});
+  for(const c of countries)ix.push({id:c.id,label:c.tribe.country,tribe:c.tribe,pos:c.labelPos,zf:c.big?2.3:3.0,c,terms:termsOf(c.tribe)});
+  for(const v of villages)ix.push({id:v.id,label:v.tribe.country,tribe:v.tribe,pos:v.pos,zf:3.6,kick:'BESPOKE',terms:termsOf(v.tribe)});
+  for(const w of waterHits)if(!ix.some(e=>e.id===w.id))ix.push({id:w.id,label:w.tribe.country,tribe:w.tribe,pos:[w.x,w.y],zf:2.0,kick:w.kick,terms:termsOf(w.tribe)});
   return ix;
 }
 function showSug(q){
   q=(q||'').trim().toLowerCase();
-  sugItems=searchIndex().filter(e=>!q||e.label.toLowerCase().includes(q)||e.tribe.name.toLowerCase().includes(q)||e.id.includes(q))
+  sugItems=searchIndex().filter(e=>!q||e.id.includes(q)||e.terms.includes(q))
     .sort((a,b)=>a.label.localeCompare(b.label)).slice(0,12);
   sugSel=0;
   if(!sugItems.length){isug.classList.remove('on');return}
@@ -1260,57 +1285,92 @@ document.addEventListener('pointerdown',ev=>{
 function buildScore(ctx,dest,t0,BARS){
   BARS=BARS||100;
   const BPM=166,B=60/BPM,BAR=3*B;
-  const master=ctx.createGain();master.gain.value=0.8;
+  const master=ctx.createGain();master.gain.value=0.72;
   const comp=ctx.createDynamicsCompressor();
+  comp.threshold.value=-18;comp.ratio.value=6;
   master.connect(comp);comp.connect(dest);
-  const N={D2:73.42,A2:110.0,Bb2:116.54,G2:98.0,Cs3:138.59,D3:146.83,E3:164.81,F3:174.61,G3:196.0,A3:220.0,Bb3:233.08,C4:261.63,Cs4:277.18,D4:293.66,E4:329.63,F4:349.23,G4:392.0,A4:440.0,Bb4:466.16,C5:523.25,D5:587.33};
-  function str(f,t,d,vol,bright){
-    const o1=ctx.createOscillator(),o2=ctx.createOscillator(),g=ctx.createGain(),lp=ctx.createBiquadFilter();
-    o1.type='sawtooth';o2.type='sawtooth';o1.frequency.value=f;o2.frequency.value=f*1.004;
-    lp.type='lowpass';lp.frequency.value=bright||1100;lp.Q.value=0.6;
-    g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(vol,t+0.05);
-    g.gain.setValueAtTime(vol,Math.max(t+0.05,t+d*0.7));g.gain.linearRampToValueAtTime(0.0001,t+d);
-    o1.connect(lp);o2.connect(lp);lp.connect(g);g.connect(master);
-    o1.start(t);o2.start(t);o1.stop(t+d+0.05);o2.stop(t+d+0.05);
+  /* a little hall: feedback delay as the send bus */
+  const send=ctx.createGain();send.gain.value=0.9;
+  const dly=ctx.createDelay(1.0);dly.delayTime.value=0.27;
+  const fb=ctx.createGain();fb.gain.value=0.38;
+  const wet=ctx.createGain();wet.gain.value=0.30;
+  const damp=ctx.createBiquadFilter();damp.type='lowpass';damp.frequency.value=1600;
+  send.connect(dly);dly.connect(damp);damp.connect(fb);fb.connect(dly);damp.connect(wet);wet.connect(master);
+  const N={D2:73.42,F2:87.31,G2:98.0,A2:110.0,Bb2:116.54,C3:130.81,Cs3:138.59,D3:146.83,E3:164.81,F3:174.61,G3:196.0,A3:220.0,Bb3:233.08,C4:261.63,Cs4:277.18,D4:293.66,E4:329.63,F4:349.23,G4:392.0,A4:440.0,Bb4:466.16,C5:523.25,D5:587.33};
+  function cello(f,t,d,vol,bright){
+    const g=ctx.createGain(),lp=ctx.createBiquadFilter();
+    lp.type='lowpass';lp.frequency.setValueAtTime((bright||750)*0.7,t);
+    lp.frequency.linearRampToValueAtTime(bright||750,t+Math.min(0.18,d*0.4));lp.Q.value=0.8;
+    [1,1.006,0.995].forEach((det,k)=>{
+      const o=ctx.createOscillator();o.type='sawtooth';o.frequency.value=f*det;
+      o.connect(lp);o.start(t);o.stop(t+d+0.08);
+    });
+    g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(vol,t+0.06);
+    g.gain.setValueAtTime(vol*0.9,Math.max(t+0.06,t+d*0.75));g.gain.linearRampToValueAtTime(0.0001,t+d+0.05);
+    lp.connect(g);g.connect(master);g.connect(send);
   }
-  function thump(t,vol){
+  function swell(f,t,d,vol){
+    const o=ctx.createOscillator(),o2=ctx.createOscillator(),g=ctx.createGain(),lp=ctx.createBiquadFilter();
+    o.type='sawtooth';o2.type='sawtooth';o.frequency.value=f;o2.frequency.value=f*0.5;
+    lp.type='lowpass';lp.frequency.value=620;lp.Q.value=0.4;
+    g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(vol,t+d*0.55);
+    g.gain.linearRampToValueAtTime(0.0001,t+d);
+    o.connect(lp);o2.connect(lp);lp.connect(g);g.connect(master);g.connect(send);
+    o.start(t);o2.start(t);o.stop(t+d+0.1);o2.stop(t+d+0.1);
+  }
+  function taiko(t,vol){
     const o=ctx.createOscillator(),g=ctx.createGain();
-    o.type='sine';o.frequency.setValueAtTime(64,t);o.frequency.exponentialRampToValueAtTime(30,t+0.28);
-    g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.32);
-    o.connect(g);g.connect(master);o.start(t);o.stop(t+0.36);
+    o.type='sine';o.frequency.setValueAtTime(72,t);o.frequency.exponentialRampToValueAtTime(27,t+0.34);
+    g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.4);
+    o.connect(g);g.connect(master);g.connect(send);o.start(t);o.stop(t+0.45);
+    const len=0.09,buf=ctx.createBuffer(1,Math.floor(ctx.sampleRate*len),ctx.sampleRate),dd=buf.getChannelData(0);
+    for(let i=0;i<dd.length;i++)dd[i]=(Math.random()*2-1)*(1-i/dd.length);
+    const s=ctx.createBufferSource();s.buffer=buf;
+    const lp2=ctx.createBiquadFilter();lp2.type='lowpass';lp2.frequency.value=420;
+    const g2=ctx.createGain();g2.gain.value=vol*0.5;
+    s.connect(lp2);lp2.connect(g2);g2.connect(master);s.start(t);
   }
   function tick(t,vol){
-    const len=0.06,buf=ctx.createBuffer(1,Math.floor(ctx.sampleRate*len),ctx.sampleRate),d=buf.getChannelData(0);
-    for(let i=0;i<d.length;i++)d[i]=(Math.random()*2-1)*(1-i/d.length);
+    const len=0.05,buf=ctx.createBuffer(1,Math.floor(ctx.sampleRate*len),ctx.sampleRate),dd=buf.getChannelData(0);
+    for(let i=0;i<dd.length;i++)dd[i]=(Math.random()*2-1)*(1-i/dd.length);
     const s=ctx.createBufferSource();s.buffer=buf;
-    const bp=ctx.createBiquadFilter();bp.type='bandpass';bp.frequency.value=2400;bp.Q.value=1.2;
+    const bp=ctx.createBiquadFilter();bp.type='bandpass';bp.frequency.value=2600;bp.Q.value=1.3;
     const g=ctx.createGain();g.gain.value=vol;
     s.connect(bp);bp.connect(g);g.connect(master);s.start(t);
   }
-  const CH={Dm:[N.D3,N.A3,N.D4,N.F4,N.A3,N.F4],Bb:[N.Bb2,N.F3,N.Bb3,N.D4,N.F3,N.D4],
-            Gm:[N.G2,N.D3,N.G3,N.Bb3,N.D3,N.Bb3],A:[N.A2,N.E3,N.A3,N.Cs4,N.E3,N.Cs4]};
+  /* the gallop: DUM DUM da-da — root, root, third, root */
+  const CH={Dm:{r:N.D3,t3:N.F3,fifth:N.A2},Bb:{r:N.Bb2,t3:N.D3,fifth:N.F2},
+            Gm:{r:N.G2,t3:N.Bb2,fifth:N.D3},A:{r:N.A2,t3:N.Cs3,fifth:N.E3}};
   const PROG=['Dm','Dm','Bb','Gm','Dm','Dm','Gm','A'];
   for(let bar=0;bar<BARS;bar++){
-    const t=t0+bar*BAR;
-    if(bar<BARS-4){str(N.D2,t,BAR*1.05,0.10,320);str(N.A2,t,BAR*1.05,0.06,320)}
-    thump(t,bar<8?0.5:0.85);
-    if(bar>=4)tick(t+2*B,0.25);
+    const t=t0+bar*BAR,ch=CH[PROG[bar%8]];
+    if(bar<BARS-4){cello(N.D2,t,BAR*1.04,0.085,300);cello(N.A2,t,BAR*1.04,0.05,300)}
+    taiko(t,bar<8?0.5:0.95);
+    if(bar>=4)tick(t+2*B,0.22);
+    if(bar>=16&&bar%2===0)taiko(t+2*B,0.35);
     if(bar>=8&&bar<BARS-4){
-      const notes=CH[PROG[bar%8]];
-      for(let k=0;k<6;k++)str(notes[k],t+k*(B/2),(B/2)*0.95,0.10,900);
+      cello(ch.r,t,B*0.92,0.13,820);
+      cello(ch.r,t+B,B*0.92,0.115,820);
+      cello(ch.t3,t+2*B,B*0.45,0.12,880);
+      cello(ch.r,t+2.5*B,B*0.45,0.105,820);
+    }
+    if(bar>=12&&bar<BARS-6&&bar%4===0){
+      swell(ch.r*2,t,BAR*4,0.05);swell(ch.t3*2,t,BAR*4,0.035);
     }
   }
   const THEME=[['D5',0,2],['A4',2,1],['Bb4',3,1.5],['A4',4.5,.5],['G4',5,1],['F4',6,2],['G4',8,1],['A4',9,3],
    ['D5',12,2],['A4',14,1],['C5',15,1.5],['Bb4',16.5,.5],['A4',17,1],['G4',18,2],['E4',20,1],['D4',21,3],
    ['F4',24,2],['G4',26,1],['A4',27,2],['Bb4',29,1],['C5',30,2],['A4',32,1],['Bb4',33,1.5],['G4',34.5,1.5],['A4',36,6]];
-  function playTheme(startBar,oct,vol){
-    for(const[n,sb,d]of THEME)str(N[n]*oct,t0+startBar*BAR+sb*B,d*B*0.98,vol,1900);
+  function playTheme(startBar,oct,vol,bright){
+    for(const[n,sb,d]of THEME)cello(N[n]*oct,t0+startBar*BAR+sb*B,d*B*0.98,vol,bright||1600);
   }
+  let stmt=0;
   for(let sb=16;sb+16<BARS-6;sb+=24){
-    playTheme(sb,1,0.165);
-    if(sb>=64)playTheme(sb,2,0.06);
+    if(stmt===0)playTheme(sb,0.5,0.20,1100);          /* cello states the theme */
+    else{playTheme(sb,1,0.17,1900);if(stmt>=2)playTheme(sb,0.5,0.10,1100)}
+    stmt++;
   }
-  playTheme(Math.max(16,BARS-14),0.5,0.12);
+  playTheme(Math.max(16,BARS-14),0.5,0.13,900);
 }
 let liveCtx=null;
 function startScore(bars){
@@ -1436,6 +1496,10 @@ async function showDate(i){
   curEl.textContent=D.dateLabel+(latest?'':' · archive');
   if(history.replaceState)history.replaceState(null,'',latest?location.pathname+location.search:('#'+DATES[dateIdx]));
 }
+document.getElementById('cart-toggle').addEventListener('click',function(){
+  const open=document.getElementById('cart').classList.toggle('open');
+  this.setAttribute('aria-expanded',String(open));
+});
 btnPrev.onclick=()=>{showDate(dateIdx-1)};
 btnNext.onclick=()=>{showDate(dateIdx+1)};
 addEventListener('keydown',e=>{
