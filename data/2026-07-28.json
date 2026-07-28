@@ -31,6 +31,32 @@
      "x": "$LTC",
      "src": "https://www.coingecko.com/en/coins/litecoin"
     }
+   ],
+   "topics": [
+    {
+     "t": "Bitcoin pierces $63K",
+     "d": "Bitcoin sank to $63,000 on July 28 as an Asian chip-stock crash spilled into Wall Street and the US Senate shelved the Clarity Act ahead of the Fed decision.",
+     "x": "bitcoin 63k clarity act",
+     "src": "https://cointelegraph.com/markets/bitcoin-lows-pierce-63k-as-asia-chip-stock-crash-spills"
+    },
+    {
+     "t": "Strategy skips bitcoin again",
+     "d": "Michael Saylor's Strategy skipped its bitcoin buy for a fifth straight week on July 27, adding $525 million to cash reserves instead of stacking BTC.",
+     "x": "Strategy skips bitcoin buy",
+     "src": "https://decrypt.co/374369/strategy-adds-525m-to-cash-reserve-skips-bitcoin-buy-for-fifth-week"
+    },
+    {
+     "t": "Saylor on BIP-110",
+     "d": "Saylor declared on July 28 that Bitcoin's code is 'a constitution' and that proposed BIP-110 changes are attacks on holders' economic rights, reigniting Core politics.",
+     "x": "Saylor BIP-110 constitution",
+     "src": "https://decrypt.co/374588/michael-saylor-bitcoin-constitution-bip-110"
+    },
+    {
+     "t": "Bitcoin ETF outflows",
+     "d": "US spot bitcoin ETFs shed $465 million over the two days into July 27, led by BlackRock's IBIT.",
+     "x": "bitcoin ETF outflows IBIT",
+     "src": "https://decrypt.co/374354/bitcoin-etfs-shed-465m-over-two-days-led-by-blackrocks-ibit"
+    }
    ]
   },
   "ethereum": {
@@ -49,6 +75,32 @@
      "d": "Ethereum — rank #2, $230.8B market cap, $1,913.",
      "x": "$ETH",
      "src": "https://www.coingecko.com/en/coins/ethereum"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Morgan Stanley ETH ETF",
+     "d": "Morgan Stanley launched Ethereum and Solana ETFs on July 28 with the market's lowest fee at 0.14% plus staking rewards, following its bitcoin fund's success.",
+     "x": "Morgan Stanley ethereum ETF",
+     "src": "https://www.theblock.co/post/409898"
+    },
+    {
+     "t": "Bitmine nears 5% of ETH",
+     "d": "Tom Lee's Bitmine kept buying Ether and is now approaching 5% of all Ethereum supply with an $11.8 billion treasury as of July 27.",
+     "x": "Bitmine ethereum supply",
+     "src": "https://decrypt.co/374389/bitmine-nears-5-percent-ethereum-supply-with-11-8-billion-treasury"
+    },
+    {
+     "t": "Lido validator overhaul",
+     "d": "Lido kicked off a staking overhaul on July 27-28 — reported as a $16 billion migration — with an upgrade that aims to cut Ethereum's validator count by one-third.",
+     "x": "Lido upgrade validators",
+     "src": "https://cointelegraph.com/news/lido-upgrade-ethereum-validator-count-one-third-slash"
+    },
+    {
+     "t": "L2 TVL two-year low",
+     "d": "Ethereum's layer-2 ecosystem is losing momentum, with L2 total value locked dropping to a two-year low per The Block on July 28.",
+     "x": "ethereum L2 TVL low",
+     "src": "https://www.theblock.co/post/409811"
     }
    ]
   },
@@ -202,6 +254,32 @@
      "x": "$TUSD",
      "src": "https://www.coingecko.com/en/coins/true-usd"
     }
+   ],
+   "topics": [
+    {
+     "t": "Circle buys IBM patents",
+     "d": "Circle bought nearly 1,000 blockchain patents from IBM on July 27, making the USDC issuer America's biggest blockchain patent holder.",
+     "x": "Circle IBM patents",
+     "src": "https://decrypt.co/374388/circle-ibm-blockchain-patent-estate"
+    },
+    {
+     "t": "USDC on Samsung Wallet",
+     "d": "Samsung said on July 24 that Samsung Wallet will add native stablecoin support including USDC, putting dollar tokens on Galaxy phones worldwide.",
+     "x": "Samsung Wallet USDC",
+     "src": "https://decrypt.co/374324/samsung-wallet-stablecoin-support-usdc"
+    },
+    {
+     "t": "PayPal stablecoin push",
+     "d": "PayPal expanded its stablecoin push in its July 28 Q2 earnings, with crypto assets now a factor in the payment giant's results.",
+     "x": "PayPal stablecoin Q2",
+     "src": "https://cointelegraph.com/markets/paypal-expands-stablecoin-push-crypto-assets-q2-results"
+    },
+    {
+     "t": "Tether gold certified",
+     "d": "Tether's XAUt gold token received Shariah certification on July 27, opening the tokenized-gold product to Islamic finance markets.",
+     "x": "Tether XAUt Shariah",
+     "src": "https://cointelegraph.com/news/tether-xaut-gold-token-receives-shariah-certification-islamic-finance-access"
+    }
    ]
   },
   "rwa": {
@@ -329,6 +407,32 @@
      "x": "$XDC",
      "src": "https://www.coingecko.com/en/coins/xdce-crowd-sale"
     }
+   ],
+   "topics": [
+    {
+     "t": "Tokenized stocks surge",
+     "d": "Tokenized stock trading jumped fivefold on Robinhood Chain, Decrypt reported July 27, as onchain equities set records across venues.",
+     "x": "Robinhood tokenized stocks",
+     "src": "https://decrypt.co/374357/morning-minute-tokenized-stocks-jump-5x-on-robinhood-chain"
+    },
+    {
+     "t": "Ondo drops L1 plan",
+     "d": "Ondo scrapped its layer-1 blockchain plan on July 27 and launched the offchain Ondo Network, days after its Oasis Pro unit won FINRA authorization for tokenized US stocks.",
+     "x": "Ondo Network launch",
+     "src": "https://cointelegraph.com/news/ondo-shifts-from-layer-1-blockchain-plan-to-offchain-execution-network"
+    },
+    {
+     "t": "Securitize gets SEC license",
+     "d": "Securitize's Capital unit became an SEC-registered investment adviser on July 27, adding regulated plumbing under Wall Street's tokenized funds.",
+     "x": "Securitize SEC adviser",
+     "src": "https://cointelegraph.com/news/securitize-becomes-sec-registered-investment-adviser-through-capital-unit"
+    },
+    {
+     "t": "Tokenized IPO shares",
+     "d": "Kraken opened the Jersey Mike's IPO to retail investors on July 28 through tokenized shares and direct allocations.",
+     "x": "Kraken tokenized IPO",
+     "src": "https://cointelegraph.com/news/kraken-opens-jersey-mikes-ipo-to-retail-investors-through-tokenized-shares-and-direct-allocations"
+    }
    ]
   },
   "exchangetokens": {
@@ -401,6 +505,32 @@
      "d": "Gate — rank #83, $703M market cap, $6.59.",
      "x": "$GT",
      "src": "https://www.coingecko.com/en/coins/gatechain-token"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Exchanges shutting down",
+     "d": "BitMEX and BitMart both moved to wind down this week — CoinDesk on July 28 called them the first casualties of the crypto trading slump as volumes consolidate onto Binance and OKX.",
+     "x": "BitMart BitMEX shutdown",
+     "src": "https://www.coindesk.com/business/2026/07/28/bitmex-and-bitmart-may-be-first-casualties-of-crypto-trading-slump"
+    },
+    {
+     "t": "Binance crime report",
+     "d": "A new report covered July 28 says Binance makes fighting crypto crime more difficult, with police complaining the exchange slows their tracking of scammers.",
+     "x": "Binance police scammers",
+     "src": "https://www.coindesk.com/business/2026/07/28/binance-makes-fighting-crypto-crime-more-difficult-says-new-nyt-article"
+    },
+    {
+     "t": "CZ backs ASEAN passport",
+     "d": "Binance co-founder CZ came out on July 28 for crypto license passporting across ASEAN, so one country's license would work across the region.",
+     "x": "CZ ASEAN license",
+     "src": "https://cointelegraph.com/news/binance-co-founder-cz-backs-crypto-license-passporting-across-asean"
+    },
+    {
+     "t": "Binance app pulled in EU",
+     "d": "The Binance app disappeared from Google Play in certain EU countries on July 27, per Cointelegraph.",
+     "x": "Binance Google Play EU",
+     "src": "https://cointelegraph.com/news/binance-disappears-android-google-play-certain-eu-countries"
     }
    ]
   },
@@ -814,7 +944,33 @@
     "the ECB",
     "your bank"
    ],
-   "discussing": []
+   "discussing": [],
+   "topics": [
+    {
+     "t": "Fed decision Wednesday",
+     "d": "The Fed announces rates Wednesday July 29, and prediction-market traders spent July 27 bracing for a surprise rate hike.",
+     "x": "Fed surprise rate hike",
+     "src": "https://decrypt.co/374453/prediction-market-traders-brace-for-surprise-fed-rate-hike"
+    },
+    {
+     "t": "Kospi plunges 10%",
+     "d": "Korea's Kospi plunged 10% on July 28 as an AI chip-stock crash spread through markets, knocking bitcoin down 2% after the US close.",
+     "x": "Kospi crash crypto",
+     "src": "https://www.coindesk.com/markets/2026/07/28/bitcoin-slides-2-after-u-s-close-while-korea-s-kospi-plunges-10"
+    },
+    {
+     "t": "Yen at 40-year lows",
+     "d": "The yen fell back to 40-year lows against the US dollar on July 28 as markets eye the Bank of Japan's meeting on Friday.",
+     "x": "yen 40 year low",
+     "src": "https://cointelegraph.com/markets/markets-eye-bank-of-japan-meeting-on-friday-as-yen-repeats-40-year-us-dollar-lows"
+    },
+    {
+     "t": "Crypto awaits the Fed",
+     "d": "CoinDesk wrote July 27 that bitcoin shrugged off the AI stock selloff but the high-stakes Fed meeting could determine what happens next for crypto.",
+     "x": "bitcoin Fed meeting",
+     "src": "https://www.coindesk.com/markets/2026/07/27/bitcoin-shrugs-off-ai-selloff-but-high-stakes-fed-meeting-could-determine-what-s-next"
+    }
+   ]
   },
   "hyperliquid": {
    "name": "hyperliquid",
