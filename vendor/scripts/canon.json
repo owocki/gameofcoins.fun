@@ -1,0 +1,376 @@
+{
+ "btcmaxis": {
+  "name": "bitcoin maxis",
+  "country": "Bitcoin",
+  "tldr": "the only sound money; everything else is noise",
+  "ontology": "Sound money is the base layer of civilization; Bitcoin is the only credibly neutral monetary substrate — everything else on this map is fiat, noise, or a scam.",
+  "figures": [
+   "@saylor",
+   "@adam3us",
+   "@LynAldenContact"
+  ]
+ },
+ "ethereum": {
+  "name": "ethereum",
+  "country": "Ethereum",
+  "tldr": "credibly neutral protocols; the world computer",
+  "ontology": "Reality is programmable coordination; credibly neutral protocols are how humanity scales trust. The world computer settles everything else on this map eventually.",
+  "figures": [
+   "@VitalikButerin",
+   "@TimBeiko",
+   "@sassal0x"
+  ]
+ },
+ "solana": {
+  "name": "solana",
+  "country": "Solana",
+  "tldr": "one global state machine, as fast as light allows",
+  "ontology": "Speed is the feature and the market is the test; one global state machine, block by 400-millisecond block. Increase bandwidth, reduce latency.",
+  "figures": [
+   "@aeyakovenko",
+   "@rajgokal",
+   "@solana"
+  ]
+ },
+ "stablecoins": {
+  "name": "the stablecoin economy",
+  "country": "Stablecoins",
+  "tldr": "the dollar won crypto; crypto won the dollar's rails",
+  "ontology": "The dollar won crypto and crypto won the dollar's rails; the stablecoin is the internet's checking account, and regulation is the moat.",
+  "figures": [
+   "Jeremy Allaire",
+   "@paoloardoino",
+   "@ethena_labs"
+  ]
+ },
+ "rwa": {
+  "name": "tokenized tradfi",
+  "country": "Tokenized TradFi",
+  "tldr": "every asset migrates on-chain eventually",
+  "ontology": "Every asset — treasuries, gold, credit, houses — migrates on-chain eventually; the blockchain is the back office of the next financial system.",
+  "figures": [
+   "@OndoFinance",
+   "BlackRock's BUIDL",
+   "the tokenization desks"
+  ]
+ },
+ "exchangetokens": {
+  "name": "the exchange empires",
+  "country": "Exchange tokens",
+  "tldr": "the casino always wins; own the house",
+  "ontology": "Flow is the moat and the listing is the favor; whatever the cycle does, the house collects the fee. Own the house.",
+  "figures": [
+   "@cz_binance",
+   "@heyibinance",
+   "the CEX empires"
+  ]
+ },
+ "xrparmy": {
+  "name": "the xrp army",
+  "country": "XRP army",
+  "tldr": "the standard is coming",
+  "ontology": "The banks will settle on our rails and the lawsuit was proof of importance; patience is the strategy and the standard is coming.",
+  "figures": [
+   "@bgarlinghouse",
+   "@Ripple",
+   "the XRP army"
+  ]
+ },
+ "oldguard": {
+  "name": "the old guard L1s",
+  "country": "Old guard L1s",
+  "tldr": "the tech was never the problem",
+  "ontology": "The roadmaps were right, the peer review was real, and the market is a popularity contest; the tech was never the problem. Ecosystems outlive cycles.",
+  "figures": [
+   "@IOHK_Charles",
+   "@gavofyork",
+   "@justinsuntron"
+  ]
+ },
+ "privacy": {
+  "name": "privacy coins",
+  "country": "Privacy coins",
+  "tldr": "cash was private; money should be again",
+  "ontology": "Financial privacy is a human right, surveillance is the default, and the only cash left is the kind they cannot see. The original cypherpunk errand.",
+  "figures": [
+   "the Monero community",
+   "@zooko",
+   "the cypherpunks"
+  ]
+ },
+ "l2s": {
+  "name": "the L2 archipelago",
+  "country": "L2s / rollups",
+  "tldr": "scale ethereum, inherit its security",
+  "ontology": "Blockspace scales in layers: inherit Ethereum's security, compress the cost, and the rollup becomes the city where people actually live.",
+  "figures": [
+   "@arbitrum",
+   "@Optimism",
+   "@0xMantle"
+  ]
+ },
+ "linkmarines": {
+  "name": "the link marines",
+  "country": "Link marines",
+  "tldr": "the oracle is the truth layer",
+  "ontology": "Smart contracts are blind without oracles; whoever feeds the chain the world's data is the truth layer of everything built on it.",
+  "figures": [
+   "@SergeyNazarov",
+   "@chainlink",
+   "the Link Marines"
+  ]
+ },
+ "newl1s": {
+  "name": "the new L1 frontier",
+  "country": "New L1s",
+  "tldr": "the next chain will be the fast one",
+  "ontology": "Every cycle mints a new fastest chain and a new believer class; throughput is destiny and migration is always one killer app away.",
+  "figures": [
+   "@SuiNetwork",
+   "@Aptos",
+   "the Pi pioneers"
+  ]
+ },
+ "aicoins": {
+  "name": "the AI coins",
+  "country": "AI coins",
+  "tldr": "decentralize the machine intelligence",
+  "ontology": "Intelligence is becoming the world's largest market and it must not be owned by five companies; tokens are how compute, models, and identity stay open.",
+  "figures": [
+   "@opentensor",
+   "@rendernetwork",
+   "@worldcoin"
+  ]
+ },
+ "defi": {
+  "name": "defi",
+  "country": "DeFi",
+  "tldr": "finance without permission",
+  "ontology": "Finance is being rebuilt as open programmable infrastructure; lending, trading, and yield without permission — the protocols outlive their founders.",
+  "figures": [
+   "@Uniswap",
+   "@aave",
+   "@MorphoLabs"
+  ]
+ },
+ "memecoins": {
+  "name": "the trenches",
+  "country": "Memecoins",
+  "tldr": "attention is the only fundamental",
+  "ontology": "Attention is the only real asset and price is the only truth; the coin is the community and the sin is not playing but exiting late.",
+  "figures": [
+   "@pumpdotfun",
+   "the doge whales",
+   "the trenches"
+  ]
+ },
+ "degenperps": {
+  "name": "the perp casinos",
+  "country": "Perp DEXs",
+  "tldr": "the casino, on-chain, 24/7",
+  "ontology": "The market is a 24/7 casino and the only honest venue is one that cannot close; leverage is a right and the funding rate is the weather.",
+  "figures": [
+   "the Aster degens",
+   "the funding-rate watchers",
+   "the perp DEX builders"
+  ]
+ },
+ "fiat": {
+  "name": "the fiat ocean",
+  "country": "The Fiat Ocean",
+  "tldr": "the water every coin defines itself against",
+  "ontology": "State money — not an island but the water: the unit of account, the exit everyone prices in, the default every tribe on this map defines itself against. It doesn't feel like a system for the same reason water doesn't feel wet.",
+  "figures": [
+   "the Fed",
+   "the ECB",
+   "your bank"
+  ]
+ },
+ "hyperliquid": {
+  "name": "hyperliquid",
+  "country": "Hyperliquid",
+  "tldr": "the exchange that cannot close",
+  "ontology": "One chain, one orderbook, no VCs: the exchange belongs onchain and to its users. The airdrop was the proof and HYPE is the deed.",
+  "figures": [
+   "@HyperliquidX",
+   "@chameleon_jeff",
+   "the hyperps"
+  ]
+ },
+ "regens": {
+  "name": "regens & public goods",
+  "country": "Regens / public goods",
+  "tldr": "fund what markets won't",
+  "ontology": "Value is regenerative, not extractive: public goods are the real wealth, and crypto's purpose is coordination infrastructure that funds what markets and states won't.",
+  "figures": [
+   "@owocki",
+   "@gitcoin",
+   "the RetroPGF rounds"
+  ]
+ },
+ "nft": {
+  "name": "nft land",
+  "country": "NFTs & gaming",
+  "tldr": "online-first communities; the token is the membership",
+  "ontology": "PFPs, online communities, RWAs, and DeFi liquidity: the token is the membership card and the culture lives online. Monoculture is the risk, and the floor price is the mood.",
+  "figures": [
+   "@pudgypenguins",
+   "@BoredApeYC",
+   "@blur_io"
+  ]
+ },
+ "depin": {
+  "name": "depin",
+  "country": "DePIN",
+  "tldr": "physical infrastructure, token-bootstrapped",
+  "ontology": "Networks of real hardware — wireless, compute, sensors — bootstrap themselves with tokens instead of capex; the crowd builds the infrastructure the telcos would not.",
+  "figures": [
+   "@helium",
+   "@akashnet_",
+   "@iotex_io"
+  ]
+ },
+ "artists": {
+  "name": "the onchain artists",
+  "country": "Onchain artists",
+  "tldr": "1/1 intentional work; crypto is just the payment rails",
+  "ontology": "One-of-one, intentional work: IRL-first culture and communities with room for audiences outside crypto and a seat inside the traditional art world. The passion is the creative output — the crypto is just the payment rails.",
+  "figures": [
+   "@beeple",
+   "Snowfro",
+   "@zora"
+  ]
+ },
+ "daos": {
+  "name": "the DAOs",
+  "country": "DAOs",
+  "tldr": "people show up for the community, not the ticker",
+  "ontology": "The org chart is a smart contract and membership is participation: people spend their time here for the community and the mission, not because price dictates their enjoyment. Coordination is the product — and the hardest thing to explain on the street.",
+  "figures": [
+   "@ensdomains",
+   "@LidoFinance",
+   "the governance forums"
+  ]
+ },
+ "predictionmarkets": {
+  "name": "the prediction markets",
+  "country": "Prediction markets",
+  "tldr": "put a number on it or it's vibes",
+  "ontology": "Beliefs are bets: markets extract honest probabilities from talk, and the odds page becomes the front page. The regulators are the last counterparty.",
+  "figures": [
+   "@Polymarket",
+   "@Kalshi",
+   "@gnosisdao"
+  ]
+ },
+ "base": {
+  "name": "base & onchain consumer",
+  "country": "Base",
+  "tldr": "bring the next billion onchain, an app at a time",
+  "ontology": "Crypto grows when normal people can use it: one tap, low fees, real apps. The consumer chain is the onramp, and culture — social, creators, mini-apps — is the killer app.",
+  "figures": [
+   "@base",
+   "@jessepollak",
+   "@aerodromefi"
+  ]
+ },
+ "memedaos": {
+  "name": "the meme DAOs",
+  "country": "Meme DAOs",
+  "tldr": "absurd on purpose; coordinated for real",
+  "ontology": "Start with a joke, end with a global co-op: pizza parties, sesh circles, golf courses. The meme is the recruiting poster and the DAO is the proof that strangers can fund real things together.",
+  "figures": [
+   "PizzaDAO",
+   "BluntDAO",
+   "@LinksDAO"
+  ]
+ },
+ "restakers": {
+  "name": "the restakers",
+  "country": "Restaking",
+  "tldr": "stake once, secure everything",
+  "ontology": "Security is a commodity to be rented: restake the same collateral to secure many systems, and yield stacks on yield. The risk debate is the culture.",
+  "figures": [
+   "@eigenlayer",
+   "@ether_fi",
+   "the AVS operators"
+  ]
+ },
+ "zkpurists": {
+  "name": "the zk purists",
+  "country": "ZK",
+  "tldr": "don't trust, verify — cryptographically",
+  "ontology": "The endgame is proofs: computation verified, privacy preserved, trust minimized to mathematics. Everything else is a temporary scaffold.",
+  "figures": [
+   "@zksync",
+   "@Starknet",
+   "@MinaProtocol"
+  ]
+ },
+ "mevsearchers": {
+  "name": "the mev searchers",
+  "country": "MEV / dark forest",
+  "tldr": "the mempool is a dark forest",
+  "ontology": "Every transaction is prey and every block is an auction; searchers, builders, and relays run the invisible market inside the market. Seen only when something goes wrong.",
+  "figures": [
+   "Flashbots",
+   "the searchers",
+   "the block builders"
+  ]
+ },
+ "airdropfarmers": {
+  "name": "the airdrop farmers",
+  "country": "Airdrop farmers",
+  "tldr": "every points program is a job posting",
+  "ontology": "The protocols need users and the farmers need tokens: points are wages, sybils are scale, and loyalty lasts exactly until the snapshot.",
+  "figures": [
+   "the points farmers",
+   "the sybil hunters",
+   "the L2 questers"
+  ]
+ },
+ "ghostchains": {
+  "name": "the ghost chains",
+  "country": "Ghost chains",
+  "tldr": "the ruins of former top tens",
+  "ontology": "Once top-ten, still running: blocks produced, treasuries intact, communities dispersed. The map keeps its ruins because every cycle builds on them.",
+  "figures": [
+   "the EOS diaspora",
+   "the IOTA faithful",
+   "the NEO holders"
+  ]
+ },
+ "desci": {
+  "name": "desci",
+  "country": "DeSci",
+  "tldr": "fund the science the grants won't",
+  "ontology": "Research is a public good funded like a startup: token-holders back longevity molecules and open data, and the lab notebook goes onchain.",
+  "figures": [
+   "@VitaDAO",
+   "@ResearchHub",
+   "the DeSci degens"
+  ]
+ },
+ "ordinals": {
+  "name": "the ordinals & runes",
+  "country": "Ordinals",
+  "tldr": "bitcoin is for building too",
+  "ontology": "The blockspace belongs to whoever pays for it: inscriptions, runes, and art on the oldest chain — heresy to the maxis, homecoming to the builders.",
+  "figures": [
+   "@rodarmor",
+   "the inscribers",
+   "the runes traders"
+  ]
+ },
+ "brokerchains": {
+  "name": "the broker chains",
+  "country": "Broker chains",
+  "tldr": "the brokerage becomes the chain",
+  "ontology": "The customers were always there: the broker turns its app into a chain, tokenizes the stocks, and onboards millions without them noticing. TradFi ships crypto faster than crypto ships tradfi.",
+  "figures": [
+   "@RobinhoodApp",
+   "@vladtenev",
+   "the tokenized-stock desks"
+  ]
+ }
+}

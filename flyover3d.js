@@ -593,8 +593,15 @@
     const ctrl = document.getElementById('ctrl');
     if (ctrl) ctrl.style.display = 'none';   // the 2D zoom buttons steer the hidden SVG
     const tgt = new T.Vector3(SLc[0] - CXW, 0, SLc[1] - CYW);
-    const MIND = 150, MAXD = 4600;
-    let dist = 3050, yaw = 0, pitch = 0.95;
+    const MIND = 150, MAXD = 5400;
+    let dist = 3800, yaw = 0, pitch = 1.32;   // start: bird's-eye over the whole landmass
+    // from above, the cinematic's haze and high clouds just obscure the map
+    scene.fog.near = 8000; scene.fog.far = 22000;
+    clouds.forEach((c, k) => {
+      c.m.position.y = 120 + (k % 6) * 22;              // hug the valleys, never blanket the peaks
+      c.m.material.opacity *= 0.55;
+      c.m.scale.multiplyScalar(0.8);
+    });
     let dragging = false, rotating = false, lx = 0, ly = 0;
     let glide = null, hovered = null, hoverT = 0;
 
@@ -621,7 +628,18 @@
     addEventListener('pointerup', () => { dragging = false; el.style.cursor = 'grab'; });
     el.addEventListener('wheel', ev => {
       ev.preventDefault();
-      dist = Math.max(MIND, Math.min(MAXD, dist * Math.exp(ev.deltaY * 0.0011)));
+      const nd = Math.max(MIND, Math.min(MAXD, dist * Math.exp(ev.deltaY * 0.0011)));
+      if (nd < dist) {
+        // zoom dives toward the point under the cursor, not the screen center
+        const g = groundPoint(ev.clientX, ev.clientY);
+        if (g) {
+          const k = 1 - nd / dist;
+          tgt.x += (g[0] - CXW - tgt.x) * k;
+          tgt.z += (g[1] - CYW - tgt.z) * k;
+          clampTgt();
+        }
+      }
+      dist = nd;
       glide = null;
     }, { passive: false });
     el.addEventListener('pointermove', ev => {
@@ -630,7 +648,7 @@
         lx = ev.clientX; ly = ev.clientY;
         if (rotating) {
           yaw -= dx * 0.004;
-          pitch = Math.max(0.3, Math.min(1.42, pitch + dy * 0.004));
+          pitch = Math.max(0.3, Math.min(1.5, pitch + dy * 0.004));
         } else {
           const k = dist / innerHeight * 1.35;
           const fx = -Math.sin(yaw), fz = -Math.cos(yaw);   // camera-forward on the ground
@@ -644,21 +662,25 @@
       }
       hoverPick(ev);
     });
-    // hover: march the pick ray down onto the analytic height field, then ask the 2D map who lives there
+    // march a pick ray down onto the analytic height field -> world [wx, wy]
     const rc = new T.Raycaster();
+    function groundPoint(cx, cy) {
+      rc.setFromCamera({ x: (cx / innerWidth) * 2 - 1, y: -(cy / innerHeight) * 2 + 1 }, cam);
+      const o = rc.ray.origin, d = rc.ray.direction;
+      let t = 0;
+      for (let i = 0; i < 260 && t < 14000; i++) {
+        const px = o.x + d.x * t, py = o.y + d.y * t, pz = o.z + d.z * t;
+        const h = getH(px + CXW, pz + CYW);
+        if (py <= h + 1) return [px + CXW, pz + CYW];
+        t += Math.max(5, (py - h) * 0.45);
+      }
+      return null;
+    }
     function hoverPick(ev) {
       const now = performance.now();
       if (now - hoverT < 90) return;
       hoverT = now;
-      rc.setFromCamera({ x: (ev.clientX / innerWidth) * 2 - 1, y: -(ev.clientY / innerHeight) * 2 + 1 }, cam);
-      const o = rc.ray.origin, d = rc.ray.direction;
-      let t = 0, hit = null;
-      for (let i = 0; i < 260 && t < 14000; i++) {
-        const px = o.x + d.x * t, py = o.y + d.y * t, pz = o.z + d.z * t;
-        const h = getH(px + CXW, pz + CYW);
-        if (py <= h + 1) { hit = [px + CXW, pz + CYW]; break; }
-        t += Math.max(5, (py - h) * 0.45);
-      }
+      const hit = groundPoint(ev.clientX, ev.clientY);
       const c = hit ? A.pick(hit[0], hit[1]) : null;
       const id = c ? c.id : null;
       if (id !== hovered) {

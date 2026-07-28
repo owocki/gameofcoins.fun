@@ -1,0 +1,231 @@
+#!/usr/bin/env python3
+"""Nightly research: what is each tribe of X discussing today?
+
+For each of five tribe clusters, asks Claude (with server-side web search) for
+2-3 current topics per tribe, merges the results with the static canon
+(scripts/canon.json), validates, and writes data/YYYY-MM-DD.json plus an
+updated data/index.json. Exits non-zero without writing anything on failure,
+so a bad run never corrupts the site.
+
+Env: ANTHROPIC_API_KEY (required), ATLAS_MODEL (default claude-opus-5),
+     ATLAS_DATE (override the date stamp, mostly for testing).
+"""
+import datetime
+import json
+import os
+import re
+import sys
+from pathlib import Path
+
+import anthropic
+
+ROOT = Path(__file__).resolve().parent.parent
+MODEL = os.environ.get("ATLAS_MODEL", "claude-opus-5")
+
+CLUSTERS = {
+    "frontier tech": ["eacc", "progress", "hardtech", "rationalists", "doomers", "ea"],
+    "crypto": ["btc", "eth", "defi", "degens", "regens", "netstate"],
+    "culture and health frontier": ["tpot", "nondual", "longevity", "maha", "nrx", "degrowth", "indie"],
+    "mainstream": ["maga", "progleft", "establishment", "finance", "christian", "stan", "sports"],
+    "bespoke niche": ["georgists", "girardians", "landian", "metamodern", "forecasters",
+                      "cryonics", "pronatalists", "doomeroptimists", "remilia", "cozyweb",
+                      "tradcaths", "wsb", "astrology", "ufo"],
+    "world civilizations and religions": ["islam", "china", "catholic", "india",
+                                          "pentecostal", "indigenous", "ocean"],
+    "folk internet and political currents": ["manifestation", "conspiracy", "hustle",
+                                             "manosphere", "witchtok", "socialist",
+                                             "postliberal", "refusal", "dacc", "liminal"],
+}
+BESPOKE = set(CLUSTERS["bespoke niche"])
+# The nihilist trench is never researched or steelmanned: it keeps an empty
+# topic list by design (a named hazard, not a participant).
+STATIC_EMPTY = {"nihilists"}
+
+PROMPT = """Today is {date}. You are researching what specific communities ("tribes") on X (Twitter) are discussing TODAY. Use web search extensively to find real, dated, verifiable events and discourse cycles — launches, papers, dramas, price moves, rulings, protests, viral posts.
+
+Cluster: {cluster_name}. Tribes (id -> what it is):
+{tribe_lines}
+
+Rules:
+- Every topic must be REAL and verifiable. Never invent. Prefer the last 48 hours, accept the last 7 days.{bespoke_note}
+- Every topic MUST come from a source you actually opened via web search in this session. Include "src": the URL of the best source. If you cannot point to a real source, DROP the topic — one real topic beats three invented ones. Never state votes, launches, products, or numbers a source does not state.
+- Plain language. No cute coinages.
+- Per topic: "t" = punchy 2-4 word label; "d" = one plain vivid sentence with names/numbers/dates; "x" = a 2-5 word X search query that would surface this discourse (proper nouns beat generic words).
+- {n_topics} topics per tribe. The FIRST topic must be the tribe's biggest story today.
+
+After researching, end your reply with ONLY a fenced json block of this exact shape (all tribe ids present):
+```json
+{{"<tribe_id>": [{{"t": "...", "d": "...", "x": "...", "src": "https://..."}}, ...], ...}}
+```"""
+
+
+PAPER_PROMPT = """You are the front-page editor of a plain-spoken daily digest of what the tribes of X are discussing. Below are today's topics ({date}), one line per tribe, already researched and sourced — treat them as the ONLY facts you know.
+
+{digest}
+
+Write a JSON object with exactly these fields:
+- "hooks": 5 short one-line hooks, each led by one fitting emoji, each restating a single concrete fact from the lines above (keep the numbers, names, and dates; do not add any). Pick the 5 most grabbing facts across all tribes.
+- "head": a lowercase broadsheet front-page headline, 3-9 words, about the day's biggest cross-tribe story.
+- "deck": one plain sentence expanding the headline, using only facts from the lines above.
+
+Never invent an event, number, or name that is not in the lines above. Reply with ONLY a fenced json block:
+```json
+{{"hooks": ["..."], "head": "...", "deck": "..."}}
+```"""
+
+
+def write_paper(client: anthropic.Anthropic, day: dict) -> dict:
+    digest = "\n".join(
+        f"- {t['name']}: " + " | ".join(x["d"] for x in t["discussing"])
+        for t in day["tribes"].values()
+    )
+    with client.messages.stream(
+        model=MODEL,
+        max_tokens=2000,
+        messages=[{"role": "user", "content": PAPER_PROMPT.format(date=day["date"], digest=digest)}],
+    ) as stream:
+        response = stream.get_final_message()
+    text = "".join(b.text for b in response.content if b.type == "text")
+    paper = extract_json(text)
+    hooks = paper.get("hooks")
+    assert isinstance(hooks, list) and 3 <= len(hooks) <= 6, "bad hooks"
+    assert all(isinstance(h, str) and h.strip() for h in hooks), "empty hook"
+    assert isinstance(paper.get("head"), str) and paper["head"].strip(), "bad head"
+    assert isinstance(paper.get("deck"), str), "bad deck"
+    return {"hooks": [h.strip()[:200] for h in hooks],
+            "head": paper["head"].strip()[:120],
+            "deck": paper["deck"].strip()[:300]}
+
+
+def load_canon() -> dict:
+    return json.loads((ROOT / "scripts" / "canon.json").read_text())
+
+
+def extract_json(text: str) -> dict:
+    blocks = re.findall(r"```json\s*(\{.*?\})\s*```", text, re.S)
+    if not blocks:
+        blocks = re.findall(r"(\{.*\})", text, re.S)
+    if not blocks:
+        raise ValueError("no JSON block in model output")
+    return json.loads(blocks[-1])
+
+
+def research_cluster(client: anthropic.Anthropic, name: str, ids: list, canon: dict, date: str) -> dict:
+    tribe_lines = "\n".join(
+        f"- {tid}: {canon[tid]['country']} — {canon[tid]['tldr']}" for tid in ids
+    )
+    bespoke = ids[0] in BESPOKE
+    prompt = PROMPT.format(
+        date=date,
+        cluster_name=name,
+        tribe_lines=tribe_lines,
+        n_topics="1-2" if bespoke else "2-4",
+        bespoke_note=(" These are small, low-volume communities: the last few weeks is "
+                      "acceptable, and an honestly framed evergreen live debate is fine "
+                      "if nothing dated exists." if bespoke else ""),
+    )
+    messages = [{"role": "user", "content": prompt}]
+    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": 12}]
+    for _ in range(6):  # pause_turn continuation cap
+        with client.messages.stream(
+            model=MODEL,
+            max_tokens=32000,
+            tools=tools,
+            messages=messages,
+        ) as stream:
+            response = stream.get_final_message()
+        if response.stop_reason == "pause_turn":
+            messages = [
+                {"role": "user", "content": prompt},
+                {"role": "assistant", "content": response.content},
+            ]
+            continue
+        break
+    if response.stop_reason == "refusal":
+        raise RuntimeError(f"model refused cluster {name!r}")
+    text = "".join(b.text for b in response.content if b.type == "text")
+    topics = extract_json(text)
+    missing = set(ids) - set(topics)
+    if missing:
+        raise ValueError(f"cluster {name!r} missing tribes: {sorted(missing)}")
+    for tid in ids:  # fresh research must cite sources (carried-forward topics are exempt)
+        for topic in topics[tid]:
+            src = str(topic.get("src") or "")
+            if not src.startswith("http"):
+                raise ValueError(f"{tid}: topic {topic.get('t')!r} has no source URL")
+    return {tid: topics[tid] for tid in ids}
+
+
+def validate_topics(tid: str, topics: list) -> list:
+    if tid in STATIC_EMPTY:
+        return []
+    assert isinstance(topics, list) and 1 <= len(topics) <= 6, f"{tid}: bad topic list"
+    clean = []
+    for topic in topics[:5]:
+        assert topic.get("t") and topic.get("d"), f"{tid}: topic missing t/d"
+        entry = {"t": str(topic["t"])[:40],
+                 "d": str(topic["d"])[:400],
+                 "x": str(topic.get("x") or topic["t"])[:80]}
+        if str(topic.get("src") or "").startswith("http"):
+            entry["src"] = str(topic["src"])[:300]
+        clean.append(entry)
+    return clean
+
+
+def main() -> int:
+    date = os.environ.get("ATLAS_DATE") or datetime.date.today().isoformat()
+    label = datetime.date.fromisoformat(date).strftime("%-d %B %Y")
+    canon = load_canon()
+    client = anthropic.Anthropic()
+
+    all_topics = {tid: [] for tid in STATIC_EMPTY}
+    failures = []
+    for name, ids in CLUSTERS.items():
+        try:
+            print(f"researching cluster: {name} ({len(ids)} tribes)")
+            all_topics.update(research_cluster(client, name, ids, canon, date))
+        except Exception as exc:  # noqa: BLE001 — collect, decide below
+            print(f"  FAILED: {exc}", file=sys.stderr)
+            failures.append(name)
+
+    if failures:
+        # Fall back to the previous day's topics for failed clusters only if
+        # most clusters succeeded; otherwise abort so the site keeps yesterday.
+        if len(failures) > 3:
+            print(f"too many failed clusters ({failures}); aborting", file=sys.stderr)
+            return 1
+        index = json.loads((ROOT / "data" / "index.json").read_text())
+        prev = sorted(index["dates"])[-1]
+        prev_data = json.loads((ROOT / "data" / f"{prev}.json").read_text())
+        for name in failures:
+            for tid in CLUSTERS[name]:
+                all_topics[tid] = prev_data["tribes"][tid]["discussing"]
+        print(f"carried topics from {prev} for failed clusters: {failures}")
+
+    day = {"date": date, "dateLabel": label, "tribes": {}}
+    for tid, static in canon.items():
+        entry = dict(static)
+        entry["discussing"] = validate_topics(tid, all_topics[tid])
+        day["tribes"][tid] = entry
+    assert set(day["tribes"]) == set(canon), "tribe id mismatch"
+
+    try:
+        day["paper"] = write_paper(client, day)
+        print("front page written (hooks + headline)")
+    except Exception as exc:  # noqa: BLE001 — the site falls back to derived hooks
+        print(f"paper generation failed ({exc}); site will derive hooks from capitals", file=sys.stderr)
+
+    out = ROOT / "data" / f"{date}.json"
+    out.write_text(json.dumps(day, ensure_ascii=False, indent=1))
+    index_path = ROOT / "data" / "index.json"
+    index = json.loads(index_path.read_text())
+    if date not in index["dates"]:
+        index["dates"].append(date)
+    index["dates"].sort()
+    index_path.write_text(json.dumps(index, indent=1))
+    print(f"wrote {out.name}; index now has {len(index['dates'])} days")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

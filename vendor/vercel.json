@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "daily-ontological-map-git-cryptotwitter-allocapital.vercel.app" }],
+      "destination": "https://gameofcoins.fun/$1",
+      "permanent": false
+    }
+  ]
+}

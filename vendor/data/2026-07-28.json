@@ -1,0 +1,2010 @@
+{
+ "date": "2026-07-28",
+ "dateLabel": "28 July 2026",
+ "tribes": {
+  "btcmaxis": {
+   "name": "bitcoin maxis",
+   "country": "Bitcoin",
+   "tldr": "the only sound money; everything else is noise",
+   "ontology": "Sound money is the base layer of civilization; Bitcoin is the only credibly neutral monetary substrate — everything else on this map is fiat, noise, or a scam.",
+   "figures": [
+    "@saylor",
+    "@adam3us",
+    "@LynAldenContact"
+   ],
+   "discussing": [
+    {
+     "t": "BTC · #1",
+     "d": "Bitcoin — rank #1, $1.28T market cap, $63,694.",
+     "x": "$BTC",
+     "src": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "t": "BCH · #23",
+     "d": "Bitcoin Cash — rank #23, $4.3B market cap, $213.00.",
+     "x": "$BCH",
+     "src": "https://www.coingecko.com/en/coins/bitcoin-cash"
+    },
+    {
+     "t": "LTC · #27",
+     "d": "Litecoin — rank #27, $3.6B market cap, $46.25.",
+     "x": "$LTC",
+     "src": "https://www.coingecko.com/en/coins/litecoin"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Bitcoin pierces $63K",
+     "d": "Bitcoin sank to $63,000 on July 28 as an Asian chip-stock crash spilled into Wall Street and the US Senate shelved the Clarity Act ahead of the Fed decision.",
+     "x": "bitcoin 63k clarity act",
+     "src": "https://cointelegraph.com/markets/bitcoin-lows-pierce-63k-as-asia-chip-stock-crash-spills"
+    },
+    {
+     "t": "Strategy skips bitcoin again",
+     "d": "Michael Saylor's Strategy skipped its bitcoin buy for a fifth straight week on July 27, adding $525 million to cash reserves instead of stacking BTC.",
+     "x": "Strategy skips bitcoin buy",
+     "src": "https://decrypt.co/374369/strategy-adds-525m-to-cash-reserve-skips-bitcoin-buy-for-fifth-week"
+    },
+    {
+     "t": "Saylor on BIP-110",
+     "d": "Saylor declared on July 28 that Bitcoin's code is 'a constitution' and that proposed BIP-110 changes are attacks on holders' economic rights, reigniting Core politics.",
+     "x": "Saylor BIP-110 constitution",
+     "src": "https://decrypt.co/374588/michael-saylor-bitcoin-constitution-bip-110"
+    },
+    {
+     "t": "Bitcoin ETF outflows",
+     "d": "US spot bitcoin ETFs shed $465 million over the two days into July 27, led by BlackRock's IBIT.",
+     "x": "bitcoin ETF outflows IBIT",
+     "src": "https://decrypt.co/374354/bitcoin-etfs-shed-465m-over-two-days-led-by-blackrocks-ibit"
+    }
+   ]
+  },
+  "ethereum": {
+   "name": "ethereum",
+   "country": "Ethereum",
+   "tldr": "credibly neutral protocols; the world computer",
+   "ontology": "Reality is programmable coordination; credibly neutral protocols are how humanity scales trust. The world computer settles everything else on this map eventually.",
+   "figures": [
+    "@VitalikButerin",
+    "@TimBeiko",
+    "@sassal0x"
+   ],
+   "discussing": [
+    {
+     "t": "ETH · #2",
+     "d": "Ethereum — rank #2, $230.8B market cap, $1,913.",
+     "x": "$ETH",
+     "src": "https://www.coingecko.com/en/coins/ethereum"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Morgan Stanley ETH ETF",
+     "d": "Morgan Stanley launched Ethereum and Solana ETFs on July 28 with the market's lowest fee at 0.14% plus staking rewards, following its bitcoin fund's success.",
+     "x": "Morgan Stanley ethereum ETF",
+     "src": "https://www.theblock.co/post/409898"
+    },
+    {
+     "t": "Bitmine nears 5% of ETH",
+     "d": "Tom Lee's Bitmine kept buying Ether and is now approaching 5% of all Ethereum supply with an $11.8 billion treasury as of July 27.",
+     "x": "Bitmine ethereum supply",
+     "src": "https://decrypt.co/374389/bitmine-nears-5-percent-ethereum-supply-with-11-8-billion-treasury"
+    },
+    {
+     "t": "Lido validator overhaul",
+     "d": "Lido kicked off a staking overhaul on July 27-28 — reported as a $16 billion migration — with an upgrade that aims to cut Ethereum's validator count by one-third.",
+     "x": "Lido upgrade validators",
+     "src": "https://cointelegraph.com/news/lido-upgrade-ethereum-validator-count-one-third-slash"
+    },
+    {
+     "t": "L2 TVL two-year low",
+     "d": "Ethereum's layer-2 ecosystem is losing momentum, with L2 total value locked dropping to a two-year low per The Block on July 28.",
+     "x": "ethereum L2 TVL low",
+     "src": "https://www.theblock.co/post/409811"
+    }
+   ]
+  },
+  "solana": {
+   "name": "solana",
+   "country": "Solana",
+   "tldr": "one global state machine, as fast as light allows",
+   "ontology": "Speed is the feature and the market is the test; one global state machine, block by 400-millisecond block. Increase bandwidth, reduce latency.",
+   "figures": [
+    "@aeyakovenko",
+    "@rajgokal",
+    "@solana"
+   ],
+   "discussing": [
+    {
+     "t": "SOL · #7",
+     "d": "Solana — rank #7, $43.0B market cap, $73.80.",
+     "x": "$SOL",
+     "src": "https://www.coingecko.com/en/coins/solana"
+    },
+    {
+     "t": "JUP · #89",
+     "d": "Jupiter — rank #89, $626M market cap, $0.1885.",
+     "x": "$JUP",
+     "src": "https://www.coingecko.com/en/coins/jupiter-exchange-solana"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Morgan Stanley SOL ETF",
+     "d": "Morgan Stanley launched the market's cheapest Solana ETF with staking rewards on July 28, after its bitcoin fund topped $381 million.",
+     "x": "Morgan Stanley Solana ETF",
+     "src": "https://www.theblock.co/post/409898/morgan-stanley-debuts-ethereum-solana-etfs-markets-lowest-fee-staking-rewards"
+    },
+    {
+     "t": "No. 2 in hacks",
+     "d": "Blockaid's July 28 report says Solana passed Arbitrum for second-highest hack losses in H1 2026, driven mostly by key compromises.",
+     "x": "Solana hack losses Blockaid",
+     "src": "https://cointelegraph.com/news/ethereum-solana-led-crypto-hack-losses-h1-2026-blockaid"
+    },
+    {
+     "t": "SOL loses $75",
+     "d": "SOL slipped below $75 on July 28 as traders rotated into ETH, with chartists still calling for a breakout back toward $90.",
+     "x": "SOL $75 breakout",
+     "src": "https://news.google.com/rss/search?q=Solana+SOL+when:7d"
+    }
+   ]
+  },
+  "stablecoins": {
+   "name": "the stablecoin economy",
+   "country": "Stablecoins",
+   "tldr": "the dollar won crypto; crypto won the dollar's rails",
+   "ontology": "The dollar won crypto and crypto won the dollar's rails; the stablecoin is the internet's checking account, and regulation is the moat.",
+   "figures": [
+    "Jeremy Allaire",
+    "@paoloardoino",
+    "@ethena_labs"
+   ],
+   "discussing": [
+    {
+     "t": "USDT · #3",
+     "d": "Tether — rank #3, $183.9B market cap, $0.9989.",
+     "x": "$USDT",
+     "src": "https://www.coingecko.com/en/coins/tether"
+    },
+    {
+     "t": "USDC · #5",
+     "d": "USDC — rank #5, $72.4B market cap, $0.9999.",
+     "x": "$USDC",
+     "src": "https://www.coingecko.com/en/coins/usd-coin"
+    },
+    {
+     "t": "USDS · #12",
+     "d": "USDS — rank #12, $10.0B market cap, $0.9997.",
+     "x": "$USDS",
+     "src": "https://www.coingecko.com/en/coins/usds"
+    },
+    {
+     "t": "DAI · #21",
+     "d": "Dai — rank #21, $4.6B market cap, $0.9998.",
+     "x": "$DAI",
+     "src": "https://www.coingecko.com/en/coins/dai"
+    },
+    {
+     "t": "USD1 · #24",
+     "d": "USD1 — rank #24, $4.1B market cap, $0.9988.",
+     "x": "$USD1",
+     "src": "https://www.coingecko.com/en/coins/usd1-wlfi"
+    },
+    {
+     "t": "USDE · #26",
+     "d": "Ethena USDe — rank #26, $3.9B market cap, $0.9997.",
+     "x": "$USDE",
+     "src": "https://www.coingecko.com/en/coins/ethena-usde"
+    },
+    {
+     "t": "USDG · #28",
+     "d": "Global Dollar — rank #28, $3.3B market cap, $1.00.",
+     "x": "$USDG",
+     "src": "https://www.coingecko.com/en/coins/global-dollar"
+    },
+    {
+     "t": "PYUSD · #34",
+     "d": "PayPal USD — rank #34, $2.7B market cap, $0.9998.",
+     "x": "$PYUSD",
+     "src": "https://www.coingecko.com/en/coins/paypal-usd"
+    },
+    {
+     "t": "RLUSD · #47",
+     "d": "Ripple USD — rank #47, $1.6B market cap, $1.00.",
+     "x": "$RLUSD",
+     "src": "https://www.coingecko.com/en/coins/ripple-usd"
+    },
+    {
+     "t": "USDD · #49",
+     "d": "USDD — rank #49, $1.6B market cap, $0.9988.",
+     "x": "$USDD",
+     "src": "https://www.coingecko.com/en/coins/usdd"
+    },
+    {
+     "t": "USDF · #52",
+     "d": "Falcon USD — rank #52, $1.4B market cap, $0.9946.",
+     "x": "$USDF",
+     "src": "https://www.coingecko.com/en/coins/falcon-finance"
+    },
+    {
+     "t": "BFUSD · #53",
+     "d": "BFUSD — rank #53, $1.3B market cap, $0.9983.",
+     "x": "$BFUSD",
+     "src": "https://www.coingecko.com/en/coins/bfusd"
+    },
+    {
+     "t": "USDGO · #62",
+     "d": "USDGO — rank #62, $1.1B market cap, $1.00.",
+     "x": "$USDGO",
+     "src": "https://www.coingecko.com/en/coins/usdgo"
+    },
+    {
+     "t": "U · #63",
+     "d": "United Stables — rank #63, $1.1B market cap, $1.0000.",
+     "x": "$U",
+     "src": "https://www.coingecko.com/en/coins/united-stables"
+    },
+    {
+     "t": "STABLE · #69",
+     "d": "​​Stable — rank #69, $904M market cap, $0.0363.",
+     "x": "$STABLE",
+     "src": "https://www.coingecko.com/en/coins/stable-2"
+    },
+    {
+     "t": "GHO · #86",
+     "d": "GHO — rank #86, $648M market cap, $0.9989.",
+     "x": "$GHO",
+     "src": "https://www.coingecko.com/en/coins/gho"
+    },
+    {
+     "t": "USD0 · #94",
+     "d": "Usual USD — rank #94, $553M market cap, $0.9995.",
+     "x": "$USD0",
+     "src": "https://www.coingecko.com/en/coins/usual-usd"
+    },
+    {
+     "t": "USX · #97",
+     "d": "USX — rank #97, $523M market cap, $0.9996.",
+     "x": "$USX",
+     "src": "https://www.coingecko.com/en/coins/usx"
+    },
+    {
+     "t": "TUSD · #99",
+     "d": "TrueUSD — rank #99, $492M market cap, $0.9952.",
+     "x": "$TUSD",
+     "src": "https://www.coingecko.com/en/coins/true-usd"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Circle buys IBM patents",
+     "d": "Circle bought nearly 1,000 blockchain patents from IBM on July 27, making the USDC issuer America's biggest blockchain patent holder.",
+     "x": "Circle IBM patents",
+     "src": "https://decrypt.co/374388/circle-ibm-blockchain-patent-estate"
+    },
+    {
+     "t": "USDC on Samsung Wallet",
+     "d": "Samsung said on July 24 that Samsung Wallet will add native stablecoin support including USDC, putting dollar tokens on Galaxy phones worldwide.",
+     "x": "Samsung Wallet USDC",
+     "src": "https://decrypt.co/374324/samsung-wallet-stablecoin-support-usdc"
+    },
+    {
+     "t": "PayPal stablecoin push",
+     "d": "PayPal expanded its stablecoin push in its July 28 Q2 earnings, with crypto assets now a factor in the payment giant's results.",
+     "x": "PayPal stablecoin Q2",
+     "src": "https://cointelegraph.com/markets/paypal-expands-stablecoin-push-crypto-assets-q2-results"
+    },
+    {
+     "t": "Tether gold certified",
+     "d": "Tether's XAUt gold token received Shariah certification on July 27, opening the tokenized-gold product to Islamic finance markets.",
+     "x": "Tether XAUt Shariah",
+     "src": "https://cointelegraph.com/news/tether-xaut-gold-token-receives-shariah-certification-islamic-finance-access"
+    }
+   ]
+  },
+  "rwa": {
+   "name": "tokenized tradfi",
+   "country": "Tokenized TradFi",
+   "tldr": "every asset migrates on-chain eventually",
+   "ontology": "Every asset — treasuries, gold, credit, houses — migrates on-chain eventually; the blockchain is the back office of the next financial system.",
+   "figures": [
+    "@OndoFinance",
+    "BlackRock's BUIDL",
+    "the tokenization desks"
+   ],
+   "discussing": [
+    {
+     "t": "FIGR_HELOC · #9",
+     "d": "Figure Heloc — rank #9, $20.6B market cap, $1.00.",
+     "x": "$FIGR_HELOC",
+     "src": "https://www.coingecko.com/en/coins/figure-heloc"
+    },
+    {
+     "t": "RAIN · #13",
+     "d": "Rain — rank #13, $9.5B market cap, $0.0137.",
+     "x": "$RAIN",
+     "src": "https://www.coingecko.com/en/coins/rain"
+    },
+    {
+     "t": "CC · #22",
+     "d": "Canton — rank #22, $4.6B market cap, $0.1173.",
+     "x": "$CC",
+     "src": "https://www.coingecko.com/en/coins/canton-network"
+    },
+    {
+     "t": "USYC · #29",
+     "d": "Circle USYC — rank #29, $3.0B market cap, $1.13.",
+     "x": "$USYC",
+     "src": "https://www.coingecko.com/en/coins/hashnote-usyc"
+    },
+    {
+     "t": "HBAR · #30",
+     "d": "Hedera — rank #30, $3.0B market cap, $0.0680.",
+     "x": "$HBAR",
+     "src": "https://www.coingecko.com/en/coins/hedera-hashgraph"
+    },
+    {
+     "t": "BUIDL · #35",
+     "d": "BlackRock USD Institutional Digital Liquidity Fund — rank #35, $2.6B market cap, $1.00.",
+     "x": "$BUIDL",
+     "src": "https://www.coingecko.com/en/coins/blackrock-usd-institutional-digital-liquidity-fund"
+    },
+    {
+     "t": "XAUT · #37",
+     "d": "Tether Gold — rank #37, $2.5B market cap, $4,014.",
+     "x": "$XAUT",
+     "src": "https://www.coingecko.com/en/coins/tether-gold"
+    },
+    {
+     "t": "USDY · #39",
+     "d": "Ondo US Dollar Yield — rank #39, $2.1B market cap, $1.14.",
+     "x": "$USDY",
+     "src": "https://www.coingecko.com/en/coins/ondo-us-dollar-yield"
+    },
+    {
+     "t": "ONDO · #41",
+     "d": "Ondo — rank #41, $2.0B market cap, $0.4034.",
+     "x": "$ONDO",
+     "src": "https://www.coingecko.com/en/coins/ondo-finance"
+    },
+    {
+     "t": "PAXG · #44",
+     "d": "PAX Gold — rank #44, $1.8B market cap, $4,018.",
+     "x": "$PAXG",
+     "src": "https://www.coingecko.com/en/coins/pax-gold"
+    },
+    {
+     "t": "BCAP · #66",
+     "d": "Blockchain Capital — rank #66, $968M market cap, $106.22.",
+     "x": "$BCAP",
+     "src": "https://www.coingecko.com/en/coins/blockchain-capital"
+    },
+    {
+     "t": "EUTBL · #67",
+     "d": "Spiko EU T-Bills Money Market Fund — rank #67, $952M market cap, $1.20.",
+     "x": "$EUTBL",
+     "src": "https://www.coingecko.com/en/coins/eutbl"
+    },
+    {
+     "t": "EURSAFO · #70",
+     "d": "Spiko Amundi Overnight Swap Fund (EUR) — rank #70, $882M market cap, $1.15.",
+     "x": "$EURSAFO",
+     "src": "https://www.coingecko.com/en/coins/spiko-amundi-overnight-swap-fund-eur"
+    },
+    {
+     "t": "QNT · #71",
+     "d": "Quant — rank #71, $877M market cap, $60.33.",
+     "x": "$QNT",
+     "src": "https://www.coingecko.com/en/coins/quant-network"
+    },
+    {
+     "t": "JTRSY · #72",
+     "d": "Janus Henderson Anemoy Treasury Fund — rank #72, $871M market cap, $1.11.",
+     "x": "$JTRSY",
+     "src": "https://www.coingecko.com/en/coins/janus-henderson-anemoy-treasury-fund"
+    },
+    {
+     "t": "USTB · #74",
+     "d": "Invesco Short Duration US Government Securities Fund — rank #74, $833M market cap, $11.16.",
+     "x": "$USTB",
+     "src": "https://www.coingecko.com/en/coins/superstate-short-duration-us-government-securities-fund-ustb"
+    },
+    {
+     "t": "JAAA · #84",
+     "d": "Janus Henderson Anemoy AAA CLO Fund — rank #84, $687M market cap, $1.04.",
+     "x": "$JAAA",
+     "src": "https://www.coingecko.com/en/coins/janus-henderson-anemoy-aaa-clo-fund"
+    },
+    {
+     "t": "YLDS · #91",
+     "d": "YLDS — rank #91, $612M market cap, $0.9999.",
+     "x": "$YLDS",
+     "src": "https://www.coingecko.com/en/coins/ylds"
+    },
+    {
+     "t": "XDC · #96",
+     "d": "XDC Network — rank #96, $541M market cap, $0.0271.",
+     "x": "$XDC",
+     "src": "https://www.coingecko.com/en/coins/xdce-crowd-sale"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Tokenized stocks surge",
+     "d": "Tokenized stock trading jumped fivefold on Robinhood Chain, Decrypt reported July 27, as onchain equities set records across venues.",
+     "x": "Robinhood tokenized stocks",
+     "src": "https://decrypt.co/374357/morning-minute-tokenized-stocks-jump-5x-on-robinhood-chain"
+    },
+    {
+     "t": "Ondo drops L1 plan",
+     "d": "Ondo scrapped its layer-1 blockchain plan on July 27 and launched the offchain Ondo Network, days after its Oasis Pro unit won FINRA authorization for tokenized US stocks.",
+     "x": "Ondo Network launch",
+     "src": "https://cointelegraph.com/news/ondo-shifts-from-layer-1-blockchain-plan-to-offchain-execution-network"
+    },
+    {
+     "t": "Securitize gets SEC license",
+     "d": "Securitize's Capital unit became an SEC-registered investment adviser on July 27, adding regulated plumbing under Wall Street's tokenized funds.",
+     "x": "Securitize SEC adviser",
+     "src": "https://cointelegraph.com/news/securitize-becomes-sec-registered-investment-adviser-through-capital-unit"
+    },
+    {
+     "t": "Tokenized IPO shares",
+     "d": "Kraken opened the Jersey Mike's IPO to retail investors on July 28 through tokenized shares and direct allocations.",
+     "x": "Kraken tokenized IPO",
+     "src": "https://cointelegraph.com/news/kraken-opens-jersey-mikes-ipo-to-retail-investors-through-tokenized-shares-and-direct-allocations"
+    }
+   ]
+  },
+  "exchangetokens": {
+   "name": "the exchange empires",
+   "country": "Exchange tokens",
+   "tldr": "the casino always wins; own the house",
+   "ontology": "Flow is the moat and the listing is the favor; whatever the cycle does, the house collects the fee. Own the house.",
+   "figures": [
+    "@cz_binance",
+    "@heyibinance",
+    "the CEX empires"
+   ],
+   "discussing": [
+    {
+     "t": "BNB · #4",
+     "d": "BNB — rank #4, $75.8B market cap, $569.32.",
+     "x": "$BNB",
+     "src": "https://www.coingecko.com/en/coins/binancecoin"
+    },
+    {
+     "t": "LEO · #14",
+     "d": "LEO Token — rank #14, $9.0B market cap, $9.74.",
+     "x": "$LEO",
+     "src": "https://www.coingecko.com/en/coins/leo-token"
+    },
+    {
+     "t": "WBT · #16",
+     "d": "WhiteBIT Coin — rank #16, $6.6B market cap, $55.83.",
+     "x": "$WBT",
+     "src": "https://www.coingecko.com/en/coins/whitebit"
+    },
+    {
+     "t": "CRO · #36",
+     "d": "Cronos — rank #36, $2.6B market cap, $0.0557.",
+     "x": "$CRO",
+     "src": "https://www.coingecko.com/en/coins/crypto-com-chain"
+    },
+    {
+     "t": "OKB · #43",
+     "d": "OKB — rank #43, $1.8B market cap, $86.34.",
+     "x": "$OKB",
+     "src": "https://www.coingecko.com/en/coins/okb"
+    },
+    {
+     "t": "HTX · #48",
+     "d": "HTX DAO — rank #48, $1.6B market cap, $0.0000.",
+     "x": "$HTX",
+     "src": "https://www.coingecko.com/en/coins/htx-dao"
+    },
+    {
+     "t": "BGB · #60",
+     "d": "Bitget Token — rank #60, $1.2B market cap, $1.65.",
+     "x": "$BGB",
+     "src": "https://www.coingecko.com/en/coins/bitget-token"
+    },
+    {
+     "t": "KCS · #68",
+     "d": "KuCoin — rank #68, $917M market cap, $6.69.",
+     "x": "$KCS",
+     "src": "https://www.coingecko.com/en/coins/kucoin-shares"
+    },
+    {
+     "t": "NEXO · #81",
+     "d": "NEXO — rank #81, $731M market cap, $0.7310.",
+     "x": "$NEXO",
+     "src": "https://www.coingecko.com/en/coins/nexo"
+    },
+    {
+     "t": "GT · #83",
+     "d": "Gate — rank #83, $703M market cap, $6.59.",
+     "x": "$GT",
+     "src": "https://www.coingecko.com/en/coins/gatechain-token"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Exchanges shutting down",
+     "d": "BitMEX and BitMart both moved to wind down this week — CoinDesk on July 28 called them the first casualties of the crypto trading slump as volumes consolidate onto Binance and OKX.",
+     "x": "BitMart BitMEX shutdown",
+     "src": "https://www.coindesk.com/business/2026/07/28/bitmex-and-bitmart-may-be-first-casualties-of-crypto-trading-slump"
+    },
+    {
+     "t": "Binance crime report",
+     "d": "A new report covered July 28 says Binance makes fighting crypto crime more difficult, with police complaining the exchange slows their tracking of scammers.",
+     "x": "Binance police scammers",
+     "src": "https://www.coindesk.com/business/2026/07/28/binance-makes-fighting-crypto-crime-more-difficult-says-new-nyt-article"
+    },
+    {
+     "t": "CZ backs ASEAN passport",
+     "d": "Binance co-founder CZ came out on July 28 for crypto license passporting across ASEAN, so one country's license would work across the region.",
+     "x": "CZ ASEAN license",
+     "src": "https://cointelegraph.com/news/binance-co-founder-cz-backs-crypto-license-passporting-across-asean"
+    },
+    {
+     "t": "Binance app pulled in EU",
+     "d": "The Binance app disappeared from Google Play in certain EU countries on July 27, per Cointelegraph.",
+     "x": "Binance Google Play EU",
+     "src": "https://cointelegraph.com/news/binance-disappears-android-google-play-certain-eu-countries"
+    }
+   ]
+  },
+  "xrparmy": {
+   "name": "the xrp army",
+   "country": "XRP army",
+   "tldr": "the standard is coming",
+   "ontology": "The banks will settle on our rails and the lawsuit was proof of importance; patience is the strategy and the standard is coming.",
+   "figures": [
+    "@bgarlinghouse",
+    "@Ripple",
+    "the XRP army"
+   ],
+   "discussing": [
+    {
+     "t": "XRP · #6",
+     "d": "XRP — rank #6, $66.1B market cap, $1.06.",
+     "x": "$XRP",
+     "src": "https://www.coingecko.com/en/coins/ripple"
+    },
+    {
+     "t": "XLM · #20",
+     "d": "Stellar — rank #20, $5.9B market cap, $0.1723.",
+     "x": "$XLM",
+     "src": "https://www.coingecko.com/en/coins/stellar"
+    },
+    {
+     "t": "FLR · #95",
+     "d": "Flare — rank #95, $542M market cap, $0.0062.",
+     "x": "$FLR",
+     "src": "https://www.coingecko.com/en/coins/flare-networks"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Clarity Act shelved",
+     "d": "XRP slid on July 28 after the US Senate shelved the CLARITY market-structure bill, the regulation the army was counting on, right before the Fed decision.",
+     "x": "XRP Clarity Act",
+     "src": "https://decrypt.co/374579/xrp-price-slides-senate-clarity-act-fed-rate-looms"
+    },
+    {
+     "t": "RLUSD boosts, volume drop",
+     "d": "Ripple launched Ripple Mint and added Notabene compliance support for RLUSD on July 24, even as the stablecoin's transfer volume fell 25%.",
+     "x": "RLUSD Ripple Mint",
+     "src": "https://www.coindesk.com/business/2026/07/24/ripple-s-rlusd-gets-two-boosts-as-transfer-volume-drops-25"
+    },
+    {
+     "t": "S&P snubs XRP",
+     "d": "S&P Dow Jones and Pantera launched an 18-coin crypto index on July 22 led by Ethereum, BNB, Solana and Tron, and XRP holders fumed that XRP was left out.",
+     "x": "S&P crypto index XRP",
+     "src": "https://www.msn.com/en-us/money/savingandinvesting/s-p-s-new-crypto-index-excludes-xrp-and-bitcoin-here-s-the-real-reason/ar-AA28rRVL"
+    }
+   ]
+  },
+  "oldguard": {
+   "name": "the old guard L1s",
+   "country": "Old guard L1s",
+   "tldr": "the tech was never the problem",
+   "ontology": "The roadmaps were right, the peer review was real, and the market is a popularity contest; the tech was never the problem. Ecosystems outlive cycles.",
+   "figures": [
+    "@IOHK_Charles",
+    "@gavofyork",
+    "@justinsuntron"
+   ],
+   "discussing": [
+    {
+     "t": "TRX · #8",
+     "d": "TRON — rank #8, $30.8B market cap, $0.3242.",
+     "x": "$TRX",
+     "src": "https://www.coingecko.com/en/coins/tron"
+    },
+    {
+     "t": "ADA · #19",
+     "d": "Cardano — rank #19, $5.9B market cap, $0.1583.",
+     "x": "$ADA",
+     "src": "https://www.coingecko.com/en/coins/cardano"
+    },
+    {
+     "t": "AVAX · #31",
+     "d": "Avalanche — rank #31, $2.8B market cap, $6.54.",
+     "x": "$AVAX",
+     "src": "https://www.coingecko.com/en/coins/avalanche-2"
+    },
+    {
+     "t": "DOT · #57",
+     "d": "Polkadot — rank #57, $1.3B market cap, $0.7594.",
+     "x": "$DOT",
+     "src": "https://www.coingecko.com/en/coins/polkadot"
+    },
+    {
+     "t": "ICP · #59",
+     "d": "Internet Computer — rank #59, $1.2B market cap, $2.11.",
+     "x": "$ICP",
+     "src": "https://www.coingecko.com/en/coins/internet-computer"
+    },
+    {
+     "t": "ETC · #64",
+     "d": "Ethereum Classic — rank #64, $1.1B market cap, $6.71.",
+     "x": "$ETC",
+     "src": "https://www.coingecko.com/en/coins/ethereum-classic"
+    },
+    {
+     "t": "ALGO · #82",
+     "d": "Algorand — rank #82, $713M market cap, $0.0795.",
+     "x": "$ALGO",
+     "src": "https://www.coingecko.com/en/coins/algorand"
+    },
+    {
+     "t": "ATOM · #85",
+     "d": "Cosmos Hub — rank #85, $677M market cap, $1.30.",
+     "x": "$ATOM",
+     "src": "https://www.coingecko.com/en/coins/cosmos"
+    },
+    {
+     "t": "FIL · #93",
+     "d": "Filecoin — rank #93, $566M market cap, $0.6998.",
+     "x": "$FIL",
+     "src": "https://www.coingecko.com/en/coins/filecoin"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Tron makes S&P index",
+     "d": "Tron landed in S&P Dow Jones and Pantera's first crypto index on July 21-22, picked as a top revenue-generating protocol while Bitcoin and XRP were excluded.",
+     "x": "Tron S&P crypto index",
+     "src": "https://www.msn.com/en-us/money/savingandinvesting/s-p-s-new-crypto-index-excludes-xrp-and-bitcoin-here-s-the-real-reason/ar-AA28rRVL"
+    },
+    {
+     "t": "Midnight bridge hack",
+     "d": "Cardano sidechain token NIGHT rebounded 19% on July 22 after the Wanchain bridge hack, with Charles Hoskinson urging the industry to dump legacy bridges.",
+     "x": "Midnight Wanchain hack",
+     "src": "https://www.coindesk.com/business/2026/07/22/midnight-token-rebounds-after-wanchain-bridge-hack-hoskinson-calls-for-industry-overhaul"
+    },
+    {
+     "t": "SecondFi shuts down",
+     "d": "Cardano platform SecondFi announced on July 22 it is shutting down after a $2.4 million ADA wallet theft blamed on transaction-signing software.",
+     "x": "SecondFi ADA theft",
+     "src": "https://www.coindesk.com/web3/2026/07/22/secondfi-to-shut-down-after-usd2-4-million-ada-wallet-theft"
+    }
+   ]
+  },
+  "privacy": {
+   "name": "privacy coins",
+   "country": "Privacy coins",
+   "tldr": "cash was private; money should be again",
+   "ontology": "Financial privacy is a human right, surveillance is the default, and the only cash left is the kind they cannot see. The original cypherpunk errand.",
+   "figures": [
+    "the Monero community",
+    "@zooko",
+    "the cypherpunks"
+   ],
+   "discussing": [
+    {
+     "t": "ZEC · #15",
+     "d": "Zcash — rank #15, $7.9B market cap, $468.98.",
+     "x": "$ZEC",
+     "src": "https://www.coingecko.com/en/coins/zcash"
+    },
+    {
+     "t": "XMR · #17",
+     "d": "Monero — rank #17, $6.4B market cap, $338.96.",
+     "x": "$XMR",
+     "src": "https://www.coingecko.com/en/coins/monero"
+    },
+    {
+     "t": "BDX · #87",
+     "d": "Beldex — rank #87, $643M market cap, $0.0817.",
+     "x": "$BDX",
+     "src": "https://www.coingecko.com/en/coins/beldex"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Zcash Ironwood live",
+     "d": "Zcash activated its Ironwood upgrade on July 28, retiring the Orchard shielded pool after a counterfeiting-risk bug and sealing a $1.7 billion shielded pool.",
+     "x": "Zcash Ironwood upgrade",
+     "src": "https://www.theblock.co/post/409934/zcash-ironwood-upgrade-launching-new-shielded-pool-after-orchard-vulnerability"
+    },
+    {
+     "t": "Monero eyes $400",
+     "d": "Monero jumped 10% on July 25 and pushed at $400 resistance as traders bet the privacy-coin trade that lifted ZEC into the top 15 is rotating to XMR.",
+     "x": "Monero XMR rally",
+     "src": "https://coinpedia.org/price-analysis/monero-xmr-price-eyes-400-resistance-is-the-privacy-narrative-making-a-comeback/"
+    },
+    {
+     "t": "ZEC miner goes big",
+     "d": "DCG's Zcash mining arm Fortitude powered up a Nebraska facility on July 28 and is eyeing a public listing, a sign of institutional money behind ZEC.",
+     "x": "Fortitude Zcash miner",
+     "src": "https://decrypt.co/374491/zcash-miner-fortitude-nebraska-mining-facility"
+    }
+   ]
+  },
+  "l2s": {
+   "name": "the L2 archipelago",
+   "country": "L2s / rollups",
+   "tldr": "scale ethereum, inherit its security",
+   "ontology": "Blockspace scales in layers: inherit Ethereum's security, compress the cost, and the rollup becomes the city where people actually live.",
+   "figures": [
+    "@arbitrum",
+    "@Optimism",
+    "@0xMantle"
+   ],
+   "discussing": [
+    {
+     "t": "MNT · #56",
+     "d": "Mantle — rank #56, $1.3B market cap, $0.3978.",
+     "x": "$MNT",
+     "src": "https://www.coingecko.com/en/coins/mantle"
+    },
+    {
+     "t": "POL · #77",
+     "d": "POL (ex-MATIC) — rank #77, $771M market cap, $0.0722.",
+     "x": "$POL",
+     "src": "https://www.coingecko.com/en/coins/polygon-ecosystem-token"
+    },
+    {
+     "t": "ARB · #98",
+     "d": "Arbitrum — rank #98, $518M market cap, $0.0783.",
+     "x": "$ARB",
+     "src": "https://www.coingecko.com/en/coins/arbitrum"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Robinhood Chain mania",
+     "d": "Robinhood's new Arbitrum-built chain topped Base in daily users on July 23 — driven by memecoins, not tokenized stocks — after racking up 100M transactions in weeks.",
+     "x": "robinhood chain",
+     "src": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcE8wSWpIclhsS1UtX2c4S21tMFptYjJUbE9hY1I2VGlUeG5INlZIbXRHdjBac0VBTG9zVkx3SWlJZFdEaDYtZHMyWUxRUUFiQ2FmT0owLTVnQXQwUno0dnFWVmI1bkI3MFhMRUJRUzh2eG1DQ2tCUDRRQ0NCUnprUmo2NUs1YU1nQVVJb3p6NU5oenR1Y1hkNnFPRGktNC1qUDBSVmtDeUd2TzNYN1RpNVZMa0trZlJqS1VkeC0zMjk"
+    },
+    {
+     "t": "Arbitrum money fight",
+     "d": "The Arbitrum Foundation asked for a $43M budget for 2027 on July 22, the same day a 'Fast Feed' proposal would route 97% of revenue to the DAO treasury.",
+     "x": "arbitrum dao budget",
+     "src": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNc05pSVVnMHhmVVVWbzdYY0hjSnNFZkVTNktWNmdNczZ0VFQ3a29WYWd5NlpYSHJ3VzFJbEo0V2w1MTR6a2c5MV9lWWdYQ0VRM0xyajYyNXR0SU04Y2lPanN3UUdWNzlmeHB3dVlTNXQ3MTlSeGRLNG96VnBqbldMcndwVTZUSHdFNk0zM0hsWGExNW80a2ItTzZ5eFRPR3lwclc5ZUVtWDBwcEtOYzM1YVRpOXQ"
+    },
+    {
+     "t": "Mantle flees to CCIP",
+     "d": "Mantle moved $2.5B of MNT to Chainlink's CCIP, part of a $7B migration triggered by a $650M wave of bridge hacks, CryptoSlate reported July 26.",
+     "x": "mantle ccip",
+     "src": "https://cryptoslate.com/a-650-million-wave-of-bridge-hacks-just-triggered-a-7-billion-mass-migration-to-chainlink/"
+    },
+    {
+     "t": "L2 scoreboard",
+     "d": "Ethereum L2s now hold $37.4B in TVL led by Base, Arbitrum and Optimism (July 23), while L2 transaction fees have fallen 95%.",
+     "x": "L2 TVL",
+     "src": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRmxBRnhpLTF4bEl0MXF0SGZGOEpPQ0hsd0s4bEFWN05GX3Fua2pYWktUb2M1YlNxTElsc1lCby1sZ1JXSjRQMEZIdnU1bU1uY0FqZjMxTEg0amE1NUtmM1VfZFRqZ3ZWd2EteHQ1ZFItczBDdXBxZDFTbUZ0OGhEWmUwdHVjY0R4QXpqeFBBWTdGTGsyMjkwa0NQOUdkdw"
+    }
+   ]
+  },
+  "linkmarines": {
+   "name": "the link marines",
+   "country": "Link marines",
+   "tldr": "the oracle is the truth layer",
+   "ontology": "Smart contracts are blind without oracles; whoever feeds the chain the world's data is the truth layer of everything built on it.",
+   "figures": [
+    "@SergeyNazarov",
+    "@chainlink",
+    "the Link Marines"
+   ],
+   "discussing": [
+    {
+     "t": "LINK · #18",
+     "d": "Chainlink — rank #18, $6.2B market cap, $8.34.",
+     "x": "$LINK",
+     "src": "https://www.coingecko.com/en/coins/chainlink"
+    }
+   ],
+   "topics": [
+    {
+     "t": "$7B CCIP migration",
+     "d": "After roughly $650M in bridge hacks, over $7B in tokens from Mantle, KelpDAO, Lombard, Kraken and others migrated to Chainlink CCIP in Q2, CryptoSlate reported July 26.",
+     "x": "chainlink ccip migration",
+     "src": "https://cryptoslate.com/a-650-million-wave-of-bridge-hacks-just-triggered-a-7-billion-mass-migration-to-chainlink/"
+    },
+    {
+     "t": "Sergey joins CFTC",
+     "d": "Chainlink co-founder Sergey Nazarov was appointed to the CFTC's Innovation Advisory Committee on July 22.",
+     "x": "nazarov cftc",
+     "src": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcEZ2di13UVdOS1VweVRjRm41Z1FYTWxsZVBuY1JWTERRUnFDcmZUamhQRG9zbERiaXF3UzhFaHNVcF9la1oxcDBzckc5SkRGRV9JSFBhdERjTkVFa2FKS25pT1NnRVpsXzRuZHJVcUlkeXlJa1RjckNmUjBrRUo2aXlaQ0RzVXBpcXQ5X1FYLXMzeHJUVEQ4THhnSkdaM3UtUHlqR2g5aUVsNjdBNWI2NU5fczFES0Ry?oc=5"
+    },
+    {
+     "t": "Whales load LINK",
+     "d": "Whales accumulated over 14M LINK with the price holding near $8.54, including a single $13.2M buy of 1.58M LINK reported July 27.",
+     "x": "LINK whale",
+     "src": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPTkFza3VmTFM3cU00RFNzelhKZzRFUzZUYkZrU3lkLXNpNTAzSDNDOS1fU05LQU1hS0tJNUJuaDlHVnd3b1lBX0oyUEVQeGxuQTBGa1lRNWxnV1R0Y0l0c1czY3FhaENPMEhGQUtPUmdaWEJKQnNrOVcxYUtiWGktX0E0Vno?oc=5"
+    },
+    {
+     "t": "Coinbase taps Chainlink",
+     "d": "COIN stock rose on July 25 after Coinbase deepened its DeFi strategy with a Chainlink integration.",
+     "x": "coinbase chainlink",
+     "src": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQc3V2RnJEd0d4WC0yVjFwb2pFTlZpWHVBLU9rM3hfazJYVlU4N2F4Ny1iVUxfckFOWms5TzhrQjBRN3RMZWtfc3N0TWstVjlFcDBObWtXTXl2dkFFaHJ5MnhmdVFlMWJZZU1VZWtrSGU4SG9fVnhmSUpKMlFrWnU0cVNFTGFNNUpyLTlDM0p1U2E1c0N5ai1qNjI2bE1UZnluQWJ4UWV4eUlpSEZ1VS0xVTFTT3k3ZnYtdVFhWE5wT19"
+    }
+   ]
+  },
+  "newl1s": {
+   "name": "the new L1 frontier",
+   "country": "New L1s",
+   "tldr": "the next chain will be the fast one",
+   "ontology": "Every cycle mints a new fastest chain and a new believer class; throughput is destiny and migration is always one killer app away.",
+   "figures": [
+    "@SuiNetwork",
+    "@Aptos",
+    "the Pi pioneers"
+   ],
+   "discussing": [
+    {
+     "t": "GRAM · #25",
+     "d": "Gram (prev. Toncoin) — rank #25, $4.0B market cap, $1.46.",
+     "x": "$GRAM",
+     "src": "https://www.coingecko.com/en/coins/the-open-network"
+    },
+    {
+     "t": "SUI · #32",
+     "d": "Sui — rank #32, $2.8B market cap, $0.6892.",
+     "x": "$SUI",
+     "src": "https://www.coingecko.com/en/coins/sui"
+    },
+    {
+     "t": "PI · #73",
+     "d": "Pi Network — rank #73, $837M market cap, $0.0765.",
+     "x": "$PI",
+     "src": "https://www.coingecko.com/en/coins/pi-network"
+    },
+    {
+     "t": "KAS · #79",
+     "d": "Kaspa — rank #79, $765M market cap, $0.0278.",
+     "x": "$KAS",
+     "src": "https://www.coingecko.com/en/coins/kaspa"
+    },
+    {
+     "t": "APT · #100",
+     "d": "Aptos — rank #100, $492M market cap, $0.5829.",
+     "x": "$APT",
+     "src": "https://www.coingecko.com/en/coins/aptos"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Telegram takes TON",
+     "d": "Toncoin jumped 36% around July 25 on news Telegram is taking over the TON chain, folding the network tighter into the app.",
+     "x": "Telegram TON takeover",
+     "src": "https://news.google.com/rss/search?q=TON+OR+Sui+OR+Aptos+OR+Kaspa+OR+%22Pi+Network%22+crypto+when:7d"
+    },
+    {
+     "t": "Gram wallet rollout",
+     "d": "Pavel Durov announced Telegram's 'largest rollout' of non-custodial crypto wallets to over 1 billion users on July 21, lifting the renamed Gram token 7%.",
+     "x": "Durov Gram wallet",
+     "src": "https://www.msn.com/en-us/technology/cryptocurrencies/pavel-durov-announces-largest-rollout-of-non-custodial-crypto-wallets-for-over-1-billion-telegram-users-gram-token-lifts-7%2far-AA28qKXP"
+    },
+    {
+     "t": "Pi unlock dump",
+     "d": "Pi Network fell 10% to about $0.083 on July 24 as token unlocks and whale selling loomed, just after the protocol v25 upgrade went live.",
+     "x": "Pi Network unlock",
+     "src": "https://coingape.com/markets/pi-network-price-slips-10-ahead-of-token-unlock-is-more-selling-ahead/"
+    }
+   ]
+  },
+  "aicoins": {
+   "name": "the AI coins",
+   "country": "AI coins",
+   "tldr": "decentralize the machine intelligence",
+   "ontology": "Intelligence is becoming the world's largest market and it must not be owned by five companies; tokens are how compute, models, and identity stay open.",
+   "figures": [
+    "@opentensor",
+    "@rendernetwork",
+    "@worldcoin"
+   ],
+   "discussing": [
+    {
+     "t": "NEAR · #40",
+     "d": "NEAR Protocol — rank #40, $2.1B market cap, $1.64.",
+     "x": "$NEAR",
+     "src": "https://www.coingecko.com/en/coins/near"
+    },
+    {
+     "t": "TAO · #42",
+     "d": "Bittensor — rank #42, $1.8B market cap, $191.58.",
+     "x": "$TAO",
+     "src": "https://www.coingecko.com/en/coins/bittensor"
+    },
+    {
+     "t": "WLD · #61",
+     "d": "Worldcoin — rank #61, $1.1B market cap, $0.3192.",
+     "x": "$WLD",
+     "src": "https://www.coingecko.com/en/coins/worldcoin-wld"
+    },
+    {
+     "t": "BEAT · #65",
+     "d": "Audiera — rank #65, $985M market cap, $3.18.",
+     "x": "$BEAT",
+     "src": "https://www.coingecko.com/en/coins/audiera"
+    },
+    {
+     "t": "RENDER · #80",
+     "d": "Render — rank #80, $738M market cap, $1.42.",
+     "x": "$RENDER",
+     "src": "https://www.coingecko.com/en/coins/render-token"
+    },
+    {
+     "t": "VVV · #90",
+     "d": "Venice Token — rank #90, $621M market cap, $13.14.",
+     "x": "$VVV",
+     "src": "https://www.coingecko.com/en/coins/venice-token"
+    }
+   ],
+   "topics": [
+    {
+     "t": "World's $52.5M sale",
+     "d": "Sam Altman's World Foundation raised $52.5 million on July 24 in a Pantera-led deal, selling locked WLD to fund World ID human-verification tech.",
+     "x": "Worldcoin 52.5 million",
+     "src": "https://cointelegraph.com/news/world-foundation-funding-led-by-pantera-world-id-infrastructure"
+    },
+    {
+     "t": "Grayscale WLD ETF",
+     "d": "Grayscale filed an S-1 on July 21 for the first US Worldcoin ETF, extending its ETF lineup beyond Bitcoin and Ether.",
+     "x": "Grayscale Worldcoin ETF",
+     "src": "https://cointelegraph.com/news/grayscale-files-s-1-for-worldcoin-etf"
+    },
+    {
+     "t": "TAO staking push",
+     "d": "MEXC and Yuma launched Bittensor TAO staking on July 23 while traders watched TAO test $220 resistance after network upgrades.",
+     "x": "Bittensor TAO staking",
+     "src": "https://news.google.com/rss/search?q=Bittensor+OR+Worldcoin+OR+Render+AI+crypto+when:7d"
+    }
+   ]
+  },
+  "defi": {
+   "name": "defi",
+   "country": "DeFi",
+   "tldr": "finance without permission",
+   "ontology": "Finance is being rebuilt as open programmable infrastructure; lending, trading, and yield without permission — the protocols outlive their founders.",
+   "figures": [
+    "@Uniswap",
+    "@aave",
+    "@MorphoLabs"
+   ],
+   "discussing": [
+    {
+     "t": "UNI · #38",
+     "d": "Uniswap — rank #38, $2.4B market cap, $3.86.",
+     "x": "$UNI",
+     "src": "https://www.coingecko.com/en/coins/uniswap"
+    },
+    {
+     "t": "WLFI · #45",
+     "d": "World Liberty Financial — rank #45, $1.7B market cap, $0.0549.",
+     "x": "$WLFI",
+     "src": "https://www.coingecko.com/en/coins/world-liberty-financial"
+    },
+    {
+     "t": "AAVE · #50",
+     "d": "Aave — rank #50, $1.6B market cap, $100.96.",
+     "x": "$AAVE",
+     "src": "https://www.coingecko.com/en/coins/aave"
+    },
+    {
+     "t": "SKY · #55",
+     "d": "Sky — rank #55, $1.3B market cap, $0.0564.",
+     "x": "$SKY",
+     "src": "https://www.coingecko.com/en/coins/sky"
+    },
+    {
+     "t": "MORPHO · #54",
+     "d": "Morpho — rank #54, $1.3B market cap, $2.01.",
+     "x": "$MORPHO",
+     "src": "https://www.coingecko.com/en/coins/morpho"
+    },
+    {
+     "t": "JST · #75",
+     "d": "JUST — rank #75, $815M market cap, $0.0995.",
+     "x": "$JST",
+     "src": "https://www.coingecko.com/en/coins/just"
+    },
+    {
+     "t": "ENA · #76",
+     "d": "Ethena — rank #76, $797M market cap, $0.0834.",
+     "x": "$ENA",
+     "src": "https://www.coingecko.com/en/coins/ethena"
+    }
+   ],
+   "topics": [
+    {
+     "t": "KelpDAO $292M hack",
+     "d": "Restaking protocol KelpDAO was exploited for $292M, and even after Arbitrum froze $71.2M in ETH the hacker moved another $175M by July 25.",
+     "x": "kelpdao exploit",
+     "src": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWWxvR19BNV90YmhMeVFUbDJpb0pUMFp3T2pVVmF3T0dqM1JseTVzRnl5N25sdkdfNzZaUzlETjM4ZFdGam9DYnNHNFNRYzZuWXJLeS1WRjYyMVk0U3NjQVFjZDZuaUd6TFVhbVRnNDE1bmdWZFF6X2Q2djg2YUlyNHZXR1lGUGJ0ai1QYkU2bThaOWo2OGRKUmFwbDBXYloyWGp1ODJtakxGWllmdlB0dkpHR0k"
+    },
+    {
+     "t": "Bridge hack day",
+     "d": "Three crypto bridge hacks in one day on July 23 erased $35.6M — led by AFX's $24M — pushing July's total hack losses toward $100M.",
+     "x": "bridge hack",
+     "src": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPY2Q1QXFUdjVQOGcyVmdSY2NoQ3daVWZianlqNHd0RjIzdDRPSHVKb1loaVV2Q1FoOV9uV1o3aWNFdHoyOVhjTlRka1FCYXBlTUgxM0Q1R0QxRkhoZ1RKb0x1MUdockR1Z3hKX3c2ZUl1dWUzWnJzX3MzZmFLVVFfcjgtOXdDamYxT09Ec0lPX3oydEdfN1o1Q3dXZklmU25wX2JtUmx5V0pBWG5OWjdfQlRTcnNjbEFISHc"
+    },
+    {
+     "t": "Record hack year",
+     "d": "WEMIX and Garden were both hacked around July 27, adding to what trackers are calling a record year for crypto breaches in 2026.",
+     "x": "wemix hack",
+     "src": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE4xa1A5enBrNmJlRTFNM3Y3QUtSZGdCS09fbHhiSXpmNU1qY2tRQ3M2c1N2cC1mczRTeEhVbWNVcWRJU3ZyME5XMGhyTWoyTXVqLWlrdXJmaC1DcWZOcUIxYU8tTdIBY0FVX3lxTE4xa1A5enBrNmJlRTFNM3Y3QUtSZGdCS09fbHhiSXpmNU1qY2tRQ3M2c1N2cC1mczRTeEhVbWNVcWRJU3ZyME5XMGhyTWoyTXVqLWlrdXJmaC1DcWZ"
+    },
+    {
+     "t": "Morpho hits $3B",
+     "d": "Lending protocol Morpho surpassed $3B in deposits on July 26, a rare growth story in an exploit-heavy DeFi week.",
+     "x": "morpho deposits",
+     "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1CbkZkdjZzMGFGSnJnZWlWTkxXUVUxTXNQRk1lVkx1Nk5sbnVRdEtja2VlY001QlNXQUtGamNWQ3pKTjMxRmJLUHJrQnpNNkwxRWpMOGRhQVd0eUk4UlVPaTExT2NMOXZoT0N0ZVVfaUJCUWVnMGNqb1lQUQ"
+    }
+   ]
+  },
+  "memecoins": {
+   "name": "the trenches",
+   "country": "Memecoins",
+   "tldr": "attention is the only fundamental",
+   "ontology": "Attention is the only real asset and price is the only truth; the coin is the community and the sin is not playing but exiting late.",
+   "figures": [
+    "@pumpdotfun",
+    "the doge whales",
+    "the trenches"
+   ],
+   "discussing": [
+    {
+     "t": "DOGE · #11",
+     "d": "Dogecoin — rank #11, $11.0B market cap, $0.0706.",
+     "x": "$DOGE",
+     "src": "https://www.coingecko.com/en/coins/dogecoin"
+    },
+    {
+     "t": "SHIB · #33",
+     "d": "Shiba Inu — rank #33, $2.7B market cap, $0.0000.",
+     "x": "$SHIB",
+     "src": "https://www.coingecko.com/en/coins/shiba-inu"
+    },
+    {
+     "t": "M · #51",
+     "d": "MemeCore — rank #51, $1.5B market cap, $1.14.",
+     "x": "$M",
+     "src": "https://www.coingecko.com/en/coins/memecore"
+    },
+    {
+     "t": "PEPE · #58",
+     "d": "Pepe — rank #58, $1.2B market cap, $0.0000.",
+     "x": "$PEPE",
+     "src": "https://www.coingecko.com/en/coins/pepe"
+    },
+    {
+     "t": "PUMP · #78",
+     "d": "Pump.fun — rank #78, $771M market cap, $0.0019.",
+     "x": "$PUMP",
+     "src": "https://www.coingecko.com/en/coins/pump-fun"
+    },
+    {
+     "t": "币安人生 · #88",
+     "d": "币安人生 (BinanceLife) — rank #88, $632M market cap, $0.6324.",
+     "x": "$币安人生",
+     "src": "https://www.coingecko.com/en/coins/bianrensheng"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Pump.fun rips",
+     "d": "PUMP surged 15% on July 27 as BOOST-mode buybacks absorbed vesting supply, with pump.fun printing over $1.17M revenue in 24 hours after overtaking TRON and Hyperliquid in daily revenue on July 23.",
+     "x": "pump.fun BOOST",
+     "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTE51YnBub0JqekpLNGk5Mk1aRDRKQ1lTa3BUSzU0VXNpMWZsSlRTQVVTSFZpaXV4T2g4Ui1hWXlORVlwZXlFQkpNVy1YcG1IZllzbFVxTGh6UVZVbV8xdW90WTJGZ2FhN3phNFJtRTR3ZU4?oc=5"
+    },
+    {
+     "t": "Musk DOGE dip",
+     "d": "Dogecoin fell 5% on July 24 after Elon Musk said he 'got carried away' with politics, leaving DOGE grinding near its yearly low.",
+     "x": "dogecoin musk",
+     "src": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPejRUcm9kdlZEXzZEc20yUnF3U3RPZnhvNXBweE43NjlsbTNDemRWRlhQWG5jSzJJVmdpV0oxdTRPRk5uaVdpWmxhRTEtV09BdG9yb0hsSlNiY1dmLS1PN2MwcHhxdkxKdVlYQjBMay1DdkJVVzJaaGFiY1plNWY1MnBNQ0VJN1VZOXRGY29FYmk1YXhBYkE?oc=5"
+    },
+    {
+     "t": "Tenev hack token",
+     "d": "Robinhood CEO Vlad Tenev's X account was hacked on July 23 to shill a fake VLAD memecoin, and the exploiter made about $1.2M before the posts came down.",
+     "x": "Tenev hacked memecoin",
+     "src": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBBS2VJaGlhLW1UMVI0TTkxOVF1aGt1RmY1NGdGRVN4MkZCYVkxb1VzUTFSRllacDJHa1dBYXhsWE9Pem44TjhWaU1tS3hpUVlVN0xvejdzTmJ0cHROa0U0aGRTbTYwdV9MMkpPajFEUms?oc=5"
+    }
+   ]
+  },
+  "degenperps": {
+   "name": "the perp casinos",
+   "country": "Perp DEXs",
+   "tldr": "the casino, on-chain, 24/7",
+   "ontology": "The market is a 24/7 casino and the only honest venue is one that cannot close; leverage is a right and the funding rate is the weather.",
+   "figures": [
+    "the Aster degens",
+    "the funding-rate watchers",
+    "the perp DEX builders"
+   ],
+   "discussing": [
+    {
+     "t": "ASTER · #46",
+     "d": "Aster — rank #46, $1.7B market cap, $0.6213.",
+     "x": "$ASTER",
+     "src": "https://www.coingecko.com/en/coins/aster-2"
+    },
+    {
+     "t": "LIT · #92",
+     "d": "Lighter — rank #92, $571M market cap, $2.28.",
+     "x": "$LIT",
+     "src": "https://www.coingecko.com/en/coins/lighter"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Perp volume slump",
+     "d": "Perp DEX volumes hit a nine-month low in July (reported July 25), and CryptoRank noted on July 27 that only one perp DEX grew volume this month — and it wasn't Hyperliquid.",
+     "x": "perp dex volume",
+     "src": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZnpaVWd5OExVRWJtUkpldzE5VkpTNnppUi00XzBGaUdjdklvTnI3YkV5SU1pUEt5Z1hCZ1pKYnRfR2VPbUJGZmpkMzgwRGgwUms4X09RZ1RaZjhiNy1FbWxCSGM5VENPQzVWcFlVRUhPYW5FM3VNQU9WUjNnZjhiVWJDZm5aQUVDMVRpV0RuU01NdGM5aUJaUA"
+    },
+    {
+     "t": "AFX bridge drained",
+     "d": "Arbitrum perp DEX AFX Trade lost $24.15M in USDC on July 23 after its bridge keys were compromised, then offered the hacker 30% to return the rest.",
+     "x": "AFX Trade hack",
+     "src": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1VV2R5MWhhSGpLQXQxRGl2RG1KWmlDaENsUWdKQXNmbnBtT3c4c290TlRWYU9SVFdEazVKbTY0Mlo2Q2dKVHg2eXVfdmk0YkFDVnYzWGUyeGxLUGgwTlpVb2VPc2ZzUWhUWkFCMldQbjFMZmE4Tk92QVNPdw"
+    },
+    {
+     "t": "Tom Lee backs Lighter",
+     "d": "Tom Lee hailed Lighter as a key Ethereum L2 exchange on July 27, citing $43B of trading volume in 30 days, as Lighter completed a 16M LIT buyback and kicked off quarterly burns.",
+     "x": "Tom Lee Lighter",
+     "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRjJZUExjQmV6R3BZeDRrSy04bTlwUnhXZXhfVGFMWUV0VHk1cnFNRW5yZnRuQVAxcFlpLXpTMzZCLTBUSl9LZkNoVmFRZGZqVGtrWnFxMWVaT0ltZ21teXo4SmJzbkw4WGpKeFRMTWlFei1UT0hTeWZ6QkVycTRTS0lRVG5sUjdZRC1nMUVmUm1VVUVWdEhDeFZsakNQb1k"
+    },
+    {
+     "t": "dYdX goes permissionless",
+     "d": "dYdX shipped Chain v5.1 on July 23, opening the door to permissionless market listings, while its community's new Arcus DEX brought tokenized stock trading to Robinhood Chain.",
+     "x": "dydx permissionless listings",
+     "src": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5VTnZHdHVYVjBrZXk4WmtkQkV3NkdEQ1hQNmJnd3RFY2p2ZXRMWHFBMUlRQVg3RmxTVktoMDVwSG1rZ3pUUDF0Z0hoSnJiU1BIa05NMmJqLTBYRWlwb2pCVFR3UG95TllINGMtZkctd0JvNlYydXJ6NNIBfkFVX3lxTE5TRUdVTVY3UGlETmxMZjk5VDBqNnVDV00zbUtEa0VncXkxVVRXdDlhZTU5WVVSTG9uTmVWSFdBMmVtdVBVTE8"
+    }
+   ]
+  },
+  "fiat": {
+   "name": "the fiat ocean",
+   "country": "The Fiat Ocean",
+   "tldr": "the water every coin defines itself against",
+   "ontology": "State money — not an island but the water: the unit of account, the exit everyone prices in, the default every tribe on this map defines itself against. It doesn't feel like a system for the same reason water doesn't feel wet.",
+   "figures": [
+    "the Fed",
+    "the ECB",
+    "your bank"
+   ],
+   "discussing": [],
+   "topics": [
+    {
+     "t": "Fed decision Wednesday",
+     "d": "The Fed announces rates Wednesday July 29, and prediction-market traders spent July 27 bracing for a surprise rate hike.",
+     "x": "Fed surprise rate hike",
+     "src": "https://decrypt.co/374453/prediction-market-traders-brace-for-surprise-fed-rate-hike"
+    },
+    {
+     "t": "Kospi plunges 10%",
+     "d": "Korea's Kospi plunged 10% on July 28 as an AI chip-stock crash spread through markets, knocking bitcoin down 2% after the US close.",
+     "x": "Kospi crash crypto",
+     "src": "https://www.coindesk.com/markets/2026/07/28/bitcoin-slides-2-after-u-s-close-while-korea-s-kospi-plunges-10"
+    },
+    {
+     "t": "Yen at 40-year lows",
+     "d": "The yen fell back to 40-year lows against the US dollar on July 28 as markets eye the Bank of Japan's meeting on Friday.",
+     "x": "yen 40 year low",
+     "src": "https://cointelegraph.com/markets/markets-eye-bank-of-japan-meeting-on-friday-as-yen-repeats-40-year-us-dollar-lows"
+    },
+    {
+     "t": "Crypto awaits the Fed",
+     "d": "CoinDesk wrote July 27 that bitcoin shrugged off the AI stock selloff but the high-stakes Fed meeting could determine what happens next for crypto.",
+     "x": "bitcoin Fed meeting",
+     "src": "https://www.coindesk.com/markets/2026/07/27/bitcoin-shrugs-off-ai-selloff-but-high-stakes-fed-meeting-could-determine-what-s-next"
+    }
+   ]
+  },
+  "hyperliquid": {
+   "name": "hyperliquid",
+   "country": "Hyperliquid",
+   "tldr": "the exchange that cannot close",
+   "ontology": "One chain, one orderbook, no VCs: the exchange belongs onchain and to its users. The airdrop was the proof and HYPE is the deed.",
+   "figures": [
+    "@HyperliquidX",
+    "@chameleon_jeff",
+    "the hyperps"
+   ],
+   "discussing": [
+    {
+     "t": "HYPE · #10",
+     "d": "Hyperliquid — rank #10, $12.3B market cap, $55.24.",
+     "x": "$HYPE",
+     "src": "https://www.coingecko.com/en/coins/hyperliquid"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Fund unstake exodus",
+     "d": "HYPE slid below $60 the week of July 22 after Multicoin unstaked $120M and institutions pulled $291M, with funds queuing roughly $150M more of locked tokens for withdrawal.",
+     "x": "HYPE unstake",
+     "src": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQS2YyQURUQk5YUFNCYnktU1dSMG9RbFNTQTA2b0NYUzhJbUZrMzEtSElVeXJmZHhvYWZNcXJ3Z2UySi1mck0zV0RrcHg2NWY1U1h5R3pjUmo0X1VqdzJDQnc3S1h3N3NnQUZ3b2Q3T3BqSTJxN1NhTlgyUlVNbHptanEtRG9NMGp4TWpwYUg1dHZjdzBla3FNRFJHRmtHamtjTDhBZFcwbw"
+    },
+    {
+     "t": "SK Hynix flash crash",
+     "d": "Hyperliquid's SK Hynix stock futures flash-crashed to $927 on July 28 and set off a liquidation cascade, days after the exchange promised automated refunds for an API outage.",
+     "x": "hyperliquid flash crash",
+     "src": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQRjlxWFBBUWJycFd3RFVRaktEMkk5YWhQWjAxRXpkOC1CN2wwX1I1T1NHNHJxMmo5cFBPQU1veVVJS3lGZnlaNnBJanpzNWE4VWFrMUhPQ1dfVzVBZ2x6SnZDTURYQU9uNnJyUk9sdktkSk9nUjFLLV81a3kxNXlYMk1DMjI"
+    },
+    {
+     "t": "DC policy center",
+     "d": "Hyperliquid opened a $29M DeFi Policy Center in Washington DC on July 23 and, with Multicoin, pushed the CFTC toward a single prediction-market rulebook on July 28.",
+     "x": "hyperliquid policy center",
+     "src": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOLURsWHBxZnFRRzV5UWJSSmJxajg5SER3ZzIzcWJLVHQ5RlQ1QkNLb25fcmRCYThHRjhDZUhQUENuTXlxZTJUdG5aT0haUWwwMmxDV1BibVRaQU91S0V5WXFRZmpCbHdQVEZrbERabnZHQ0JoQUY1ZzZoV0FBdlM4TWdPN0lJMV9RWS1IazJPYXlzVVJ5N19lMVRldVAtYWcyWDhKaFFkMk0"
+    },
+    {
+     "t": "HYPE ETF race",
+     "d": "Bitwise moved closer to a Hyperliquid ETF launch with a second SEC filing on July 27, while Grayscale dropped Coinbase for Anchorage as custodian of its own HYPE ETF on July 22.",
+     "x": "hyperliquid ETF",
+     "src": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOc0kxM0l5WlNiWUJSbkVRNXZFazlsY1NtLVA0NllidHpyYnRpVk1Pc09MX05EVEowdnJZajNDVjlfWjk5LWxnS1RwQm16Mld5a1gwUUNCRTdGdGdwZWp2bWNjdFc5cExIYU9UcU51ejhZa0p6dXVkT3BsUE5TUy1JRGdpM2Z0VTQ2U2lhd1RJbFdGOUZiQm5hUW9iN1J0UU83R1pJ"
+    }
+   ]
+  },
+  "regens": {
+   "name": "regens & public goods",
+   "country": "Regens / public goods",
+   "tldr": "fund what markets won't",
+   "ontology": "Value is regenerative, not extractive: public goods are the real wealth, and crypto's purpose is coordination infrastructure that funds what markets and states won't.",
+   "figures": [
+    "@owocki",
+    "@gitcoin",
+    "the RetroPGF rounds"
+   ],
+   "discussing": [
+    {
+     "t": "OP · #158",
+     "d": "Optimism — rank #158, $204M market cap, $0.0891.",
+     "x": "$OP",
+     "src": "https://www.coingecko.com/en/coins/optimism"
+    },
+    {
+     "t": "CELO · #509",
+     "d": "Celo — rank #509, $39M market cap, $0.0639.",
+     "x": "$CELO",
+     "src": "https://www.coingecko.com/en/coins/celo"
+    },
+    {
+     "t": "GTC · #1392",
+     "d": "Gitcoin — rank #1392, $7M market cap, $0.0764.",
+     "x": "$GTC",
+     "src": "https://www.coingecko.com/en/coins/gitcoin"
+    },
+    {
+     "t": "GIV · #4752",
+     "d": "Giveth — rank #4752, $0.2M market cap, $0.0005.",
+     "x": "$GIV",
+     "src": "https://www.coingecko.com/en/coins/giveth"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Gitcoin stewards reboot",
+     "d": "Kevin Owocki's July 14 temp check proposes a small paid 'transitionary stewards' cohort (Aug 2026-Aug 2027) to oversee Gitcoin's pivot from Ethereum-native grants toward real-world local funding, drawing pushback on scope and pay through July 26.",
+     "x": "gitcoin transitionary stewards",
+     "src": "https://gov.gitcoin.co/t/temp-check-transitionary-stewards-cohort/25342"
+    },
+    {
+     "t": "OP grants autopsy",
+     "d": "A July 21 RFC on the Optimism forum asks for $15,000 to build a 'Capital Efficiency Oracle' that audits Season 9 OP grant recipients for Sybil-farmed TVL before Season 10 allocation votes.",
+     "x": "optimism season 9 grants",
+     "src": "https://gov.optimism.io/t/rfc-operational-mandate-s9-impact-autopsy-s10-capital-efficiency-oracle/10772"
+    },
+    {
+     "t": "Celo runs op-reth",
+     "d": "Celo mainnet swapped its execution client from op-geth to op-reth on July 22, deepening its OP Stack alignment, and the core team warned node operators that op-geth nodes will no longer follow the chain.",
+     "x": "celo op-reth upgrade",
+     "src": "https://forum.celo.org/t/celo-mainnet-is-now-running-op-reth/13594"
+    }
+   ]
+  },
+  "nft": {
+   "name": "nft land",
+   "country": "NFTs & gaming",
+   "tldr": "online-first communities; the token is the membership",
+   "ontology": "PFPs, online communities, RWAs, and DeFi liquidity: the token is the membership card and the culture lives online. Monoculture is the risk, and the floor price is the mood.",
+   "figures": [
+    "@pudgypenguins",
+    "@BoredApeYC",
+    "@blur_io"
+   ],
+   "discussing": [
+    {
+     "t": "PENGU · #111",
+     "d": "Pudgy Penguins — rank #111, $378M market cap, $0.0060.",
+     "x": "$PENGU",
+     "src": "https://www.coingecko.com/en/coins/pudgy-penguins"
+    },
+    {
+     "t": "IMX · #264",
+     "d": "Immutable — rank #264, $230M market cap, $0.1149.",
+     "x": "$IMX",
+     "src": "https://www.coingecko.com/en/coins/immutable-x"
+    },
+    {
+     "t": "APE · #189",
+     "d": "ApeCoin — rank #189, $153M market cap, $0.1529.",
+     "x": "$APE",
+     "src": "https://www.coingecko.com/en/coins/apecoin"
+    },
+    {
+     "t": "SAND · #238",
+     "d": "The Sandbox — rank #238, $128M market cap, $0.0427.",
+     "x": "$SAND",
+     "src": "https://www.coingecko.com/en/coins/the-sandbox"
+    },
+    {
+     "t": "GALA · #275",
+     "d": "GALA — rank #275, $89M market cap, $0.0018.",
+     "x": "$GALA",
+     "src": "https://www.coingecko.com/en/coins/gala"
+    },
+    {
+     "t": "BLUR · #475",
+     "d": "Blur — rank #475, $42M market cap, $0.0147.",
+     "x": "$BLUR",
+     "src": "https://www.coingecko.com/en/coins/blur"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Pengu hits Target",
+     "d": "Pudgy Penguins landed Pengu plushies in over 1,800 US Target stores on July 19 — its biggest retail push yet — with 5% of net merch revenue flowing to NFT holders and PENGU popping 4.6% on the news.",
+     "x": "pudgy penguins target",
+     "src": "https://egamers.io/pengu-plushies-land-in-over-1800-target-stores-as-pudgy-penguins-goes-mainstream/"
+    },
+    {
+     "t": "BAYC Discord hacked",
+     "d": "Bored Ape Yacht Club's Discord was hacked on July 24, capping a week in which CoinMarketCap reported dozens of NFTs stolen and holders traded 'STAY SAFE' warnings.",
+     "x": "bored ape discord hack",
+     "src": "https://news.google.com/rss/search?q=%22Bored%20Ape%22%20Discord%20hacked%20when:14d"
+    },
+    {
+     "t": "ApeCoin 3-month high",
+     "d": "APE surged to a 3-month high over the July 24-27 weekend, with Stocktwits reporting one whale netting a $700,000 profit on the move before pullback chatter set in.",
+     "x": "apecoin rally 3-month high",
+     "src": "https://news.google.com/rss/search?q=ApeCoin%20APE%20rally%20when:7d"
+    }
+   ]
+  },
+  "depin": {
+   "name": "depin",
+   "country": "DePIN",
+   "tldr": "physical infrastructure, token-bootstrapped",
+   "ontology": "Networks of real hardware — wireless, compute, sensors — bootstrap themselves with tokens instead of capex; the crowd builds the infrastructure the telcos would not.",
+   "figures": [
+    "@helium",
+    "@akashnet_",
+    "@iotex_io"
+   ],
+   "discussing": [
+    {
+     "t": "AKT · #218",
+     "d": "Akash Network — rank #218, $129M market cap, $0.4370.",
+     "x": "$AKT",
+     "src": "https://www.coingecko.com/en/coins/akash-network"
+    },
+    {
+     "t": "HNT · #582",
+     "d": "Helium — rank #582, $33M market cap, $0.1838.",
+     "x": "$HNT",
+     "src": "https://www.coingecko.com/en/coins/helium"
+    },
+    {
+     "t": "IOTX · #786",
+     "d": "IoTeX — rank #786, $20M market cap, $0.0022.",
+     "x": "$IOTX",
+     "src": "https://www.coingecko.com/en/coins/iotex"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Storj goes bankrupt",
+     "d": "Decentralized-storage pioneer Storj Labs filed for Chapter 11 around July 25-27, with The Block headlining a roughly 20% STORJ drop and BeInCrypto asking what's left for token holders.",
+     "x": "storj chapter 11",
+     "src": "https://news.google.com/rss/search?q=Storj%20%22Chapter%2011%22%20when:14d"
+    },
+    {
+     "t": "MOBILE token sunset",
+     "d": "Crypto.com delists Helium Mobile's MOBILE token on July 28 and is supporting a swap into HNT, the latest step in Helium folding its subtokens into a single-token economy.",
+     "x": "helium mobile hnt swap",
+     "src": "https://coinfomania.com/crypto-com-supports-helium-mobile-token-swap-to-hnt-ahead-of-delisting/"
+    },
+    {
+     "t": "SEC DePIN pass",
+     "d": "SEC Commissioner Hester Peirce confirmed on July 21 that the agency issued a no-action letter for a decentralized-energy DePIN project, read across the sector as a friendlier regulatory stance.",
+     "x": "peirce depin no-action letter",
+     "src": "https://coinfomania.com/commissioner-hester-peirce-confirms-no-action-letter-for-depin-project/"
+    }
+   ]
+  },
+  "artists": {
+   "name": "the onchain artists",
+   "country": "Onchain artists",
+   "tldr": "1/1 intentional work; crypto is just the payment rails",
+   "ontology": "One-of-one, intentional work: IRL-first culture and communities with room for audiences outside crypto and a seat inside the traditional art world. The passion is the creative output — the crypto is just the payment rails.",
+   "figures": [
+    "@beeple",
+    "Snowfro",
+    "@zora"
+   ],
+   "discussing": [
+    {
+     "t": "ZORA · #677",
+     "d": "Zora — rank #677, $27M market cap, $0.0060.",
+     "x": "$ZORA",
+     "src": "https://www.coingecko.com/en/coins/zora"
+    },
+    {
+     "t": "AUDIO · #847",
+     "d": "Audius — rank #847, $18M market cap, $0.0126.",
+     "x": "$AUDIO",
+     "src": "https://www.coingecko.com/en/coins/audius"
+    },
+    {
+     "t": "RARE · #1137",
+     "d": "SuperRare — rank #1137, $10.0M market cap, $0.0121.",
+     "x": "$RARE",
+     "src": "https://www.coingecko.com/en/coins/superrare"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Christie's Art+Tech Summit",
+     "d": "Christie's held its ninth annual Art + Tech Summit in New York the week of July 26, gathering artists, collectors, and tech leaders around AI, tokenization, and digital ownership, while Deadfellaz launched its free God Pull mint for holders on July 27.",
+     "x": "Christie's Art Tech Summit",
+     "src": "https://www.tekedia.com/deadfellaz-unveils-the-god-pull-while-christies-hosts-art-tech-summit/"
+    },
+    {
+     "t": "6529 museum mint",
+     "d": "The first mint of punk6529's 6529 Network Museum, a platform for showcasing digital art through NFTs, went live around July 26 and drew notable collector attention.",
+     "x": "6529 museum mint",
+     "src": "https://coinfomania.com/first-mint-of-6529-network-museum-goes-live-drawing-attention/"
+    },
+    {
+     "t": "SuperRare portrait drop",
+     "d": "SuperRare announced Loss of Language by artist ttiimmees, a set of 100 unique portraits priced at 0.02 ETH each, dropping on the platform August 3.",
+     "x": "SuperRare Loss of Language",
+     "src": "https://html.duckduckgo.com/html/?q=SuperRare+%22Loss+of+Language%22+NFT"
+    }
+   ]
+  },
+  "daos": {
+   "name": "the DAOs",
+   "country": "DAOs",
+   "tldr": "people show up for the community, not the ticker",
+   "ontology": "The org chart is a smart contract and membership is participation: people spend their time here for the community and the mission, not because price dictates their enjoyment. Coordination is the product — and the hardest thing to explain on the street.",
+   "figures": [
+    "@ensdomains",
+    "@LidoFinance",
+    "the governance forums"
+   ],
+   "discussing": [
+    {
+     "t": "LDO · #121",
+     "d": "Lido DAO — rank #121, $312M market cap, $0.3733.",
+     "x": "$LDO",
+     "src": "https://www.coingecko.com/en/coins/lido-dao"
+    },
+    {
+     "t": "ENS · #173",
+     "d": "Ethereum Name Service — rank #173, $178M market cap, $4.33.",
+     "x": "$ENS",
+     "src": "https://www.coingecko.com/en/coins/ethereum-name-service"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Arbitrum budget fight",
+     "d": "Arbitrum Foundation is asking the DAO for $16M in stablecoins, 1,740 ETH and 230M ARB (roughly $40M+ total) to fund 2027 operations, and delegates are demanding line-item breakdowns and milestone-based releases instead of an upfront lump sum.",
+     "x": "Arbitrum Foundation budget",
+     "src": "https://forum.arbitrum.foundation/t/continued-funding-for-the-arbitrum-foundation/30908"
+    },
+    {
+     "t": "ENS 5M delegation plan",
+     "d": "Alex Van de Sande proposed the ENS DAO delegate 5M treasury ENS tokens to five stakeholder groups to fix falling turnout, and Nick Johnson pushed back with a smaller 1M-token, 3-month trial after critics warned it creates a political class with no skin in the game.",
+     "x": "ENS delegate 5M tokens",
+     "src": "https://discuss.ens.domains/t/22247"
+    },
+    {
+     "t": "Lido LDO buybacks",
+     "d": "Lido's long-running liquid buyback plan — spending 50% of treasury inflows above $40M/year (capped at $10M) to buy LDO and pair it with wstETH, only when ETH is above $3,000 — hit 53 replies with debate still live on July 28 over a roughly 10% annual impermanent-loss drag.",
+     "x": "Lido LDO buyback",
+     "src": "https://research.lido.fi/t/10894"
+    }
+   ]
+  },
+  "predictionmarkets": {
+   "name": "the prediction markets",
+   "country": "Prediction markets",
+   "tldr": "put a number on it or it's vibes",
+   "ontology": "Beliefs are bets: markets extract honest probabilities from talk, and the odds page becomes the front page. The regulators are the last counterparty.",
+   "figures": [
+    "@Polymarket",
+    "@Kalshi",
+    "@gnosisdao"
+   ],
+   "discussing": [
+    {
+     "t": "GNO · #129",
+     "d": "Gnosis — rank #129, $283M market cap, $107.39.",
+     "x": "$GNO",
+     "src": "https://www.coingecko.com/en/coins/gnosis"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Minnesota ban blocked",
+     "d": "Federal judge Katherine Menendez blocked Minnesota's first-in-the-nation prediction-market ban (SF 3432) on July 27, days before it would have made Kalshi and Polymarket felonies in the state.",
+     "x": "Kalshi Minnesota injunction",
+     "src": "https://decrypt.co/374498/kalshi-polymarket-score-win-as-judge-blocks-minnesota-prediction-market-ban-for-now"
+    },
+    {
+     "t": "World Cup betting billions",
+     "d": "The World Cup final drove prediction-market volume into the billions, with Kalshi alone seeing about $27 billion in World Cup-related trading versus roughly $1 billion for the Super Bowl.",
+     "x": "Kalshi World Cup volume",
+     "src": "https://www.pymnts.com/cryptocurrency/2026/robinhood-eyes-crypto-com-to-expand-role-on-prediction-market-stage/"
+    },
+    {
+     "t": "Wisconsin voter suppression fight",
+     "d": "After the Wisconsin Elections Commission warned July 21-22 that election bets on Kalshi or Polymarket could bring felony charges and disqualify voters, Kalshi blasted the warning as 'voter suppression' and 'incredibly dangerous to democracy.'",
+     "x": "Kalshi Wisconsin voter suppression",
+     "src": "https://www.wpr.org/news/polymarket-kalshi-wisconsin-elections-commission-warns-betting"
+    },
+    {
+     "t": "Seattle judge rules against Kalshi",
+     "d": "A King County Superior Court judge granted Washington state a preliminary injunction against Kalshi on July 21, ruling the platform is likely running illegal online gambling and rejecting its federal-preemption defense.",
+     "x": "Kalshi Washington ruling",
+     "src": "https://www.geekwire.com/?s=kalshi"
+    }
+   ]
+  },
+  "base": {
+   "name": "base & onchain consumer",
+   "country": "Base",
+   "tldr": "bring the next billion onchain, an app at a time",
+   "ontology": "Crypto grows when normal people can use it: one tap, low fees, real apps. The consumer chain is the onramp, and culture — social, creators, mini-apps — is the killer app.",
+   "figures": [
+    "@base",
+    "@jessepollak",
+    "@aerodromefi"
+   ],
+   "discussing": [
+    {
+     "t": "AERO · #106",
+     "d": "Aerodrome Finance — rank #106, $425M market cap, $0.4359.",
+     "x": "$AERO",
+     "src": "https://www.coingecko.com/en/coins/aerodrome-finance"
+    },
+    {
+     "t": "VIRTUAL · #112",
+     "d": "Virtuals Protocol — rank #112, $375M market cap, $0.5697.",
+     "x": "$VIRTUAL",
+     "src": "https://www.coingecko.com/en/coins/virtual-protocol"
+    },
+    {
+     "t": "DEGEN · #459",
+     "d": "Degen — rank #459, $43M market cap, $0.0012.",
+     "x": "$DEGEN",
+     "src": "https://www.coingecko.com/en/coins/degen-base"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Pollak admits social failed",
+     "d": "Base co-founder Jesse Pollak said 'I was definitely wrong' about the social and creator-coin bet on July 15-16, refocusing Base on trading, payments, and AI agents while Cobie takes over the Base App.",
+     "x": "Base Pollak pivot",
+     "src": "https://www.cryptotimes.io/2026/07/16/bases-jesse-pollak-admits-creator-coin-strategy-failed-signals-ai-pivot/"
+    },
+    {
+     "t": "Robinhood Chain passes Base",
+     "d": "Robinhood Chain overtook Base on daily active users on July 21 (323,969 vs 274,520), just three weeks after mainnet launch, with memecoin trading via Pump.fun driving much of the activity.",
+     "x": "Robinhood Chain Base users",
+     "src": "https://thedefiant.io/news/defi/robinhood-chain-overtakes-base-on-daily-active-users-three-weeks-after-launch"
+    },
+    {
+     "t": "100M agent payments",
+     "d": "Base crossed 100 million x402 payments per Chainalysis, and Coinbase CEO Brian Armstrong said on July 27 that AI agents transacting onchain will eventually outnumber human transactions.",
+     "x": "Base x402 payments",
+     "src": "https://crypto.news/coinbase-bets-on-agentic-finance-as-base-payments-cross-100m/"
+    },
+    {
+     "t": "1:1 tokenized stocks coming",
+     "d": "Jesse Pollak said July 21 that Coinbase is 'close' to launching tokenized stocks on Base backed one-for-one by real shares, admitting 'we've been behind on this' versus Robinhood's derivative-based tokens.",
+     "x": "Base tokenized stocks",
+     "src": "https://crypto.news/base-coinbase-near-11-tokenized-stocks-as-robinhood-leads/"
+    }
+   ]
+  },
+  "memedaos": {
+   "name": "the meme DAOs",
+   "country": "Meme DAOs",
+   "tldr": "absurd on purpose; coordinated for real",
+   "ontology": "Start with a joke, end with a global co-op: pizza parties, sesh circles, golf courses. The meme is the recruiting poster and the DAO is the proof that strangers can fund real things together.",
+   "figures": [
+    "PizzaDAO",
+    "BluntDAO",
+    "@LinksDAO"
+   ],
+   "discussing": [],
+   "topics": [
+    {
+     "t": "LinksDAO delivery doubts",
+     "d": "This corner is quiet right now; the story still echoing is Fried Egg Golf's February 6, 2026 report that LinksDAO is struggling to deliver on its promises to token-holding golfers.",
+     "x": "LinksDAO",
+     "src": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOTDhCZC1vTjlEVUdBNGhFOE5WZllUSmhyN2U4Z3g4MHBhQXA0MTRXLWkxdFpCR01ZdTNaZ0Q1cjg4VVdiWkJ5V2Z4UHdEa04xSjRUaFZVZ3c1QnNqamlrcGNNczFlZ1FQQ1hjRzhsa04xRzJIUWFNZXZyWmxGM0Fna04zb0I0cTFRdzJQY3ZGUndQbEU?oc=5"
+    },
+    {
+     "t": "Pizza Day flywheel",
+     "d": "Evergreen: PizzaDAO's whole model is the annual Bitcoin Pizza Day global pizza party (May 22) funding free slices worldwide, and news coverage of the DAO between parties is close to zero.",
+     "x": "PizzaDAO pizza party",
+     "src": "https://news.google.com/rss/search?q=%22PizzaDAO%22%20OR%20%22Rare%20Pizzas%22%20OR%20%22Global%20Pizza%20Party%22"
+    }
+   ]
+  },
+  "restakers": {
+   "name": "the restakers",
+   "country": "Restaking",
+   "tldr": "stake once, secure everything",
+   "ontology": "Security is a commodity to be rented: restake the same collateral to secure many systems, and yield stacks on yield. The risk debate is the culture.",
+   "figures": [
+    "@eigenlayer",
+    "@ether_fi",
+    "the AVS operators"
+   ],
+   "discussing": [
+    {
+     "t": "ETHFI · #107",
+     "d": "Ether.fi — rank #107, $406M market cap, $0.4171.",
+     "x": "$ETHFI",
+     "src": "https://www.coingecko.com/en/coins/ether-fi"
+    },
+    {
+     "t": "EIGEN · #200",
+     "d": "EigenCloud (prev. EigenLayer) — rank #200, $146M market cap, $0.1975.",
+     "x": "$EIGEN",
+     "src": "https://www.coingecko.com/en/coins/eigenlayer"
+    }
+   ],
+   "topics": [
+    {
+     "t": "EigenCloud token problem",
+     "d": "A July 27 TipRanks piece argues EigenCloud dominates restaking while its EIGEN token badly lags that dominance, reigniting the value-accrual debate.",
+     "x": "EigenCloud EIGEN token",
+     "src": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNYndmbVY3c01fbExnaUk3S3VOVW1IbUhXZ1VHcEg2NjEtSXVkUnJrdUNkUU4tTnQ1THlMSnBaeEZLdzlWT2xkVnJQSnRZQ3BYRGpKaDFwWDdIOFphaW9ON3lrOGIzX2YyTllBQnk4Y2RWVXc3ZjlKVFN3bURHRy13WGo2VnFDdHJhT0owQQ?oc=5"
+    },
+    {
+     "t": "ether.fi slashing cover",
+     "d": "ether.fi partnered with Nexus Mutual on July 17 to insure institutional ETH stakers against slashing losses.",
+     "x": "ether.fi Nexus Mutual",
+     "src": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPcGYzQmM2UVVDM0NLQnpDTzBONWNzNHByeXBkcjY4NDVyY25WMXhMY2JrUUVLYXB4cHdmMWZ2MXVzSXBMN19YWVFEQlZqUlg0SFhwOVRfMVRBYUs3QkxTZG9hdU5zWjZGMEg0emQxUDZBbmpQQi0yZENEUk9PbF9VT0ZLbUZXNXVRdW9WZHhycjZCQ3QybTJieDRTalVFUTRoTXJ1bVpYX1dpUllqUDZtejlMd1JadDMzTFE?oc=5"
+    },
+    {
+     "t": "EIGEN whale accumulation",
+     "d": "Crypto Briefing reported July 23 that whale transactions and new wallets surged on EigenLayer after the EIGEN transfer unlock, even as the price stayed flat.",
+     "x": "EIGEN whales accumulate",
+     "src": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUFRGaWpoMXo5cUw3d1FoeVJ1WW40am1yX0k2a3FPVkoyN3poVXEweGhlWm1zZy1CdHVzUW4xa09TaXVjUnM5My1raV9OREFKWnpsYktLbFlMOGhDbml3ektCVThpOU1zaGx1dGtnODVTZ0dadnRDTXdTRWtRZmtLcQ?oc=5"
+    }
+   ]
+  },
+  "zkpurists": {
+   "name": "the zk purists",
+   "country": "ZK",
+   "tldr": "don't trust, verify — cryptographically",
+   "ontology": "The endgame is proofs: computation verified, privacy preserved, trust minimized to mathematics. Everything else is a temporary scaffold.",
+   "figures": [
+    "@zksync",
+    "@Starknet",
+    "@MinaProtocol"
+   ],
+   "discussing": [
+    {
+     "t": "STRK · #168",
+     "d": "Starknet — rank #168, $192M market cap, $0.0285.",
+     "x": "$STRK",
+     "src": "https://www.coingecko.com/en/coins/starknet"
+    },
+    {
+     "t": "ZK · #283",
+     "d": "ZKsync — rank #283, $87M market cap, $0.0086.",
+     "x": "$ZK",
+     "src": "https://www.coingecko.com/en/coins/zksync"
+    },
+    {
+     "t": "MINA · #385",
+     "d": "Mina Protocol — rank #385, $56M market cap, $0.0431.",
+     "x": "$MINA",
+     "src": "https://www.coingecko.com/en/coins/mina-protocol"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Starknet gets Nightfall",
+     "d": "Starknet integrated EY's Nightfall on July 24 to enable private institutional payments, a big-four stamp on ZK privacy rails.",
+     "x": "Starknet Nightfall EY",
+     "src": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPaVpjNUVCT0tnbGJ0d0V1ZEFxNk8zQVpEX01hQXROQXVWcFBLZGYxWHhtdEtUTFV6WVhQMTROX1U5bWFmV0piNXlEU00xZkk1UDhybGlUbWpDMXhiazZDV0IyMFJaUmdKMm8wa1ptLWNVanJIZ3F3NFctd09DX2MxamNNSVlqTHZqb1lfZXBFa2VSd0FsT1BIOHhoTmxBTlE5c1R4TVl6Z1lDTWpRZ1Vja2JzUEdSQms?oc=5"
+    },
+    {
+     "t": "ZKsync claws back $5M",
+     "d": "ZKsync recovered $5M in stolen funds, reported July 26, with the episode being read as proof its security response works.",
+     "x": "ZKsync stolen funds",
+     "src": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBudWVpRmI0a3hqYXNhaEFwQ0FzaHBXUlNIZFFDZEphYWtyNl9DbW1TRFVVekNneGRtd2U5NGdjLU0tT2h4Wk1ScjlKTzNVSEc2bVB4TzFpM0lQdw?oc=5"
+    },
+    {
+     "t": "Starknet privacy layer",
+     "d": "Starknet shipped a ZK privacy layer for ERC-20 tokens on July 17, with private swaps going live on avnu days later.",
+     "x": "Starknet private swaps",
+     "src": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPQnlhcGlsUjc1OS1nLUFCcC1iYm5kMGNYcmVJVjVzYWdhejBmcGdfY2JlM3ZRb2JZQUdlbWc0VFJFM25vUzFFbU9qZWkyWUtkeWgxWDkxVkZCMno5YXhiUDlJdDlKa0puTFRENWxfQ0ZWVXdzRUVCRzNFYXIwNWFvTGN4dnZfRndvM0FubC1uNERXV0tMSnR4ZA?oc=5"
+    }
+   ]
+  },
+  "mevsearchers": {
+   "name": "the mev searchers",
+   "country": "MEV / dark forest",
+   "tldr": "the mempool is a dark forest",
+   "ontology": "Every transaction is prey and every block is an auction; searchers, builders, and relays run the invisible market inside the market. Seen only when something goes wrong.",
+   "figures": [
+    "Flashbots",
+    "the searchers",
+    "the block builders"
+   ],
+   "discussing": [],
+   "topics": [
+    {
+     "t": "ePBS and FairFIL",
+     "d": "Flashbots' MEV Letter #148 (July 28) spotlights ePBS moving builder selection into the protocol, a FairFIL mechanism forcing builders to disclose excluded transactions or forfeit rewards, and Glamsterdam devnets going live.",
+     "x": "ePBS Glamsterdam",
+     "src": "https://collective.flashbots.net/t/mev-letter-148/5872"
+    },
+    {
+     "t": "Builder wants in",
+     "d": "Builder AdValorem petitioned Flashbots on July 21 for inclusion in MEV-Share's downstream forwarding list, a rare public look at who gets private order flow.",
+     "x": "MEV-Share AdValorem",
+     "src": "https://collective.flashbots.net/t/requesting-builder-inclusion-in-mev-share-downstream-forwarding-advalorem-rbuilder/5846"
+    },
+    {
+     "t": "CEX signals vs MEV",
+     "d": "A July 27 Flashbots forum research proposal asks whether centralized-exchange microstructure signals can survive Ethereum's execution latency and MEV to reduce adverse selection on DEXes.",
+     "x": "CEX signal MEV",
+     "src": "https://collective.flashbots.net/t/can-a-cex-microstructure-signal-survive-ethereum-execution-latency-and-mev/5866"
+    }
+   ]
+  },
+  "airdropfarmers": {
+   "name": "the airdrop farmers",
+   "country": "Airdrop farmers",
+   "tldr": "every points program is a job posting",
+   "ontology": "The protocols need users and the farmers need tokens: points are wages, sybils are scale, and loyalty lasts exactly until the snapshot.",
+   "figures": [
+    "the points farmers",
+    "the sybil hunters",
+    "the L2 questers"
+   ],
+   "discussing": [],
+   "topics": [
+    {
+     "t": "Grass deadline crunch",
+     "d": "Grass's Season 2 airdrop claim is live with a final deadline confirmed July 28, paying rewards in USDC alongside a new wallet update.",
+     "x": "Grass airdrop deadline",
+     "src": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORldSVnhwU0lsTFhqcEY0V2gwdnFsU0hPWFVvbVFsbkNqQm9CM2w2UEtTQnJWQWxmRUNvV2oteERlYnFWM2ptaEs5QXZRM2hrek0zMGw3Z0F6SlAwUGNPYUt2TVhLek9ROUl0c21URExILUJwV3NMeFdCZ2NxS0lzc3NtaS1vTFc4S2t6OE1nNXM1b2hmZmtOT3R2U0pSYnBtUEhPWjNIZWxKVGJ3RXZYeGtFRQ?oc=5"
+    },
+    {
+     "t": "AEON on Binance Alpha",
+     "d": "Binance Alpha listed AEON on July 27 with an early-access airdrop of 250 AEON per eligible claimer, and farmers raced the claim window.",
+     "x": "AEON Binance Alpha",
+     "src": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQekJXMnhQR0J6N2FSTkJxWTViRG93NUR4Qm1NMlFnZDctTFRmbmdvZVRKdjVsd2JDMlNaZXJCS1JwSkdkSVN2bmt0QUVZNzRXSC03TDJRMnFFRzljY04wek9uRXhNcG9HUks2eW1MbnBBdlFOT3V5M2RkMm1IXzRWSUd4cTVrZXhtOWowTEhzclpoQ256UF9qWVVIMGLSAZwBQVVfeXFMUHpCVzJ4UEdCejdhUk5CcVk1YkRvdzVEeEJ"
+    },
+    {
+     "t": "$800K RLUSD carrot",
+     "d": "Binance launched an $800K XRP airdrop campaign in mid-July to push RLUSD adoption, and XRP jumped 2% when the reward campaign went live July 16.",
+     "x": "RLUSD airdrop Binance",
+     "src": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQX1Zaam81X01IekxkVmNfTnlRbXBqMVEtYllJODVtQ3ozV2xNWjBiVzF2VjUxUlZlV3hlVFpZUFJkR2VVUk5HMUVVQ1l3Rnp0MXJLTUFxdDRmbEFnN0E0Sk8wWnFPeUZELUhBb0s2TVdiY08wN3dyY0w0ZHpELVJ0TDRnSzJyc2ZSdVlGU0Jn"
+    }
+   ]
+  },
+  "ghostchains": {
+   "name": "the ghost chains",
+   "country": "Ghost chains",
+   "tldr": "the ruins of former top tens",
+   "ontology": "Once top-ten, still running: blocks produced, treasuries intact, communities dispersed. The map keeps its ruins because every cycle builds on them.",
+   "figures": [
+    "the EOS diaspora",
+    "the IOTA faithful",
+    "the NEO holders"
+   ],
+   "discussing": [
+    {
+     "t": "IOTA · #197",
+     "d": "IOTA — rank #197, $148M market cap, $0.0325.",
+     "x": "$IOTA",
+     "src": "https://www.coingecko.com/en/coins/iota"
+    },
+    {
+     "t": "NEO · #209",
+     "d": "NEO — rank #209, $135M market cap, $1.92.",
+     "x": "$NEO",
+     "src": "https://www.coingecko.com/en/coins/neo"
+    },
+    {
+     "t": "A · #252",
+     "d": "Vaulta — rank #252, $103M market cap, $0.0625.",
+     "x": "$A",
+     "src": "https://www.coingecko.com/en/coins/vaulta"
+    }
+   ],
+   "topics": [
+    {
+     "t": "IOTA joins Pyth Pro",
+     "d": "IOTA announced July 28 it is migrating price feeds to Pyth Pro, gaining 3,000+ institutional-grade feeds but forcing all devs off the free Pyth Core by an August 18 hard deadline.",
+     "x": "IOTA Pyth Pro",
+     "src": "https://blog.iota.org/iota-connects-pyth-pro/"
+    },
+    {
+     "t": "Can EOS wake up",
+     "d": "Even the July 23 Coinpedia price-prediction coverage of Vaulta-era EOS is titled around whether the chain can finally break its long silence.",
+     "x": "Vaulta EOS",
+     "src": "https://news.google.com/rss/articles/CBMibEFVX3lxTE01VHczWjc1MFRXYzAtbGtoUnJCQUsxT09tWmJBTGI5Z243dVVvQkJBY1dsSzNPaDRMd0JuYUxDRHQ0UVFRd3hHWjJGU3ZrUVUwbDF6VTZQeVE2SXp1aDFyYlFWV0dvSGJZbHkzS9IBckFVX3lxTFA1QW5CU2ZvNURVV3pOZ1A1TGFlNHVnWm53TGk0SDFTaHB0bDJmSEZxMWpoSjFwVFNHZlZ1bm5UMnV5N08xbElEaV92V3RWTHRiaER"
+    },
+    {
+     "t": "TWIN trade rails",
+     "d": "IOTA's July 1 Q2 2026 progress update details its TWIN trade-infrastructure push, the foundation's main bet after ADAPT pilots in Kenya, Morocco, and Nigeria.",
+     "x": "IOTA TWIN",
+     "src": "https://blog.iota.org/"
+    }
+   ]
+  },
+  "desci": {
+   "name": "desci",
+   "country": "DeSci",
+   "tldr": "fund the science the grants won't",
+   "ontology": "Research is a public good funded like a startup: token-holders back longevity molecules and open data, and the lab notebook goes onchain.",
+   "figures": [
+    "@VitaDAO",
+    "@ResearchHub",
+    "the DeSci degens"
+   ],
+   "discussing": [
+    {
+     "t": "RSC · #836",
+     "d": "ResearchCoin — rank #836, $77M market cap, $0.0774.",
+     "x": "$RSC",
+     "src": "https://www.coingecko.com/en/coins/researchcoin"
+    },
+    {
+     "t": "VITA · #1451",
+     "d": "VitaDAO — rank #1451, $6.0M market cap, $0.2277.",
+     "x": "$VITA",
+     "src": "https://www.coingecko.com/en/coins/vitadao"
+    }
+   ],
+   "topics": [
+    {
+     "t": "VitaDAO ships VitaApp",
+     "d": "VitaDAO unveiled VitaApp on July 21, a personalized longevity-tracking app that gives the token a consumer-facing product.",
+     "x": "VitaDAO VitaApp",
+     "src": "https://news.google.com/rss/articles/CBMib0FVX3lxTFB6VnJ0aGp0SHFtN3l1dkNxYzhkYnhpZ180eERpV2lkY19aaTdZenpyRzVOWTQweEk4eW16cndacU52QkVHV0JBMTRFbmpOUWxwUGU3ZUY4Z28tb2NVUTByNEl3dkdfcUNKQ2tKQ0ZoSQ"
+    },
+    {
+     "t": "DeepMind rattles DeSci",
+     "d": "A July 16 Crypto Briefing piece asks how crypto DeSci should respond to Google DeepMind and Isomorphic Labs teaming up on bioresilience.",
+     "x": "DeSci DeepMind Isomorphic",
+     "src": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9fOV9xNmNZbFp3S1ZCM3VYTzZZSnBsal9XODNsSDdYNXl1bmFteTFCNHhlZGJaSEFtTTAyMXdmM1htMmpuQkIwUGRGR0NQX0VQVVdwQ1BKWUljRk40SVUzMHFtZGVPdGp1alBORzUtclZnM1N3Z1RjRzc4bzM"
+    },
+    {
+     "t": "Bio Protocol OpenLabs",
+     "d": "From late June: Bio Protocol launched OpenLabs and an AI research hub pitched as a challenge to traditional grant gatekeepers.",
+     "x": "Bio Protocol OpenLabs",
+     "src": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNFh5NE1hUkt5RnVBaFFuVU1HYzgxZzBkU0huOXprTVpRV0xWVDJjZEF3LUtqNkZWWDZVU0E5Wm16ZHljR0dYanI2eDZnYnVCQVA0UzJMTmNQekFtMXhxbTRmWmU0cVBfczBKTURTZ0Jnc2s3QkFMdVpuNlNyeks1azhVUHpHYkNQbno0ZGR6aVZuY2c?oc=5"
+    }
+   ]
+  },
+  "ordinals": {
+   "name": "the ordinals & runes",
+   "country": "Ordinals",
+   "tldr": "bitcoin is for building too",
+   "ontology": "The blockspace belongs to whoever pays for it: inscriptions, runes, and art on the oldest chain — heresy to the maxis, homecoming to the builders.",
+   "figures": [
+    "@rodarmor",
+    "the inscribers",
+    "the runes traders"
+   ],
+   "discussing": [
+    {
+     "t": "DOG · #368",
+     "d": "Dog (Bitcoin) — rank #368, $60M market cap, $0.0006.",
+     "x": "$DOG",
+     "src": "https://www.coingecko.com/en/coins/dog-go-to-the-moon-rune"
+    }
+   ],
+   "topics": [
+    {
+     "t": "DOG Mode vs BIP-110",
+     "d": "Ordinals advocate Leonidas proposed 'DOG Mode' on July 17, a Bitcoin client built to bypass BIP-110's data restrictions, opening a new front in Bitcoin's blockspace governance fight.",
+     "x": "DOG Mode BIP-110",
+     "src": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObTcybEJhZmprWW51cmhSY01xTnJaUTlUT21vd3A4S2d1U201NkYxWWtQQm5zM2h0SVpWNF9obngxeEQyMEV3bmVQcFNSYzRYS0ZyOEl2M3BDUm1JamFKNXlyVWFNeXFsZnVkN052eC1HQWJSMmZBcEhfQjJRVGtrUVlTeVFod0w2eDEtOXpPSEdaZw"
+    },
+    {
+     "t": "BTC fees flip ETH",
+     "d": "Bitcoin overtook Ethereum in transaction fees around July 20 on the back of a renewed Ordinals frenzy, per CoinMarketCap.",
+     "x": "Bitcoin fees Ordinals",
+     "src": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTW9RTWZSZ0E3azZmRmNRQTk1WUNUczVlZU9PbDlSVHdFcko5azVqU3h0YUJiV2JLOUpoZ2pROWxTTXMzOHQ0OTFVNVB0dHVyeUJFd2tDdHkyVG1Xa1FOZjRBZzhlRE45WTh5ZXJweHM4S3QyN1FPd3ctQV9mMU1BUFg1UWl6UWJfZFZIQXNhRzdvdHkzaVpkOVRTMUg0NXlRSkFHdXpFYWVlQ1AtNXFBeWxWblRIQldLWE9RMlNtZW1"
+    },
+    {
+     "t": "Microtransaction surge",
+     "d": "Bitcoin on-chain activity neared record levels by July 25 as microtransactions surged, per CoinMarketCap.",
+     "x": "Bitcoin microtransactions record",
+     "src": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMWJ2RjBHWHhXWUE4dFdoal9KamY4alpvMDJKcDJvM0NBbWtGVmRLeTcyVVNMbGszdjdXNXlZZmdmYTBxMkRjMkFubml0NTR4Q1ZRb2I0bHFDU1RBWWRuR2V2cFZRLUVSZlQ0RFNWNHdZbF9FR2lUbDVRczBHam10bEhrUDV5OVBkYWRrX2RuOUtoc1hkX3MtMFBSRVdyNUE"
+    }
+   ]
+  },
+  "brokerchains": {
+   "name": "the broker chains",
+   "country": "Broker chains",
+   "tldr": "the brokerage becomes the chain",
+   "ontology": "The customers were always there: the broker turns its app into a chain, tokenizes the stocks, and onboards millions without them noticing. TradFi ships crypto faster than crypto ships tradfi.",
+   "figures": [
+    "@RobinhoodApp",
+    "@vladtenev",
+    "the tokenized-stock desks"
+   ],
+   "discussing": [],
+   "topics": [
+    {
+     "t": "Robinhood Chain tops Base",
+     "d": "Three weeks after launch, Robinhood Chain beat Base on daily active users on July 21 (323,969 vs 274,520) and hit a record $588.9 million TVL, though memecoins, not stock tokens, dominate the volume.",
+     "x": "Robinhood Chain TVL",
+     "src": "https://thedefiant.io/news/defi/robinhood-chain-overtakes-base-on-daily-active-users-three-weeks-after-launch"
+    },
+    {
+     "t": "Q2 earnings July 29",
+     "d": "Robinhood reports Q2 results after close on July 29 with analysts expecting $1.24-1.28 billion revenue (about 25% growth), while Bernstein estimates prediction markets could bring Robinhood $586 million in 2026 revenue.",
+     "x": "HOOD Q2 earnings",
+     "src": "https://crypto.news/robinhood-stock-tests-89-support-before-q2-earnings/"
+    },
+    {
+     "t": "Crypto.com prediction talks",
+     "d": "WSJ reported July 24 that Robinhood is in talks to add Crypto.com's prediction-market contracts to its prediction hub, adding a second venue alongside current partner Kalshi.",
+     "x": "Robinhood Crypto.com talks",
+     "src": "https://www.pymnts.com/cryptocurrency/2026/robinhood-eyes-crypto-com-to-expand-role-on-prediction-market-stage/"
+    },
+    {
+     "t": "328K tokenized stock holders",
+     "d": "Robinhood leads tokenized stocks with 328,000 of 752,000 total holders (44%) since its July 1 launch, but holds only $44 million in assets at an average of $134 per user, far behind Ondo's $857 million.",
+     "x": "Robinhood tokenized stocks holders",
+     "src": "https://crypto.news/tokenized-stocks-reach-752k-holders-as-robinhood-leads/"
+    }
+   ]
+  }
+ },
+ "paper": {
+  "hooks": [
+   "🟠 bitcoin sank to $63,000 on july 28 as an asian chip-stock crash spilled into wall street",
+   "💧 HYPE slid below $60 after multicoin unstaked $120M and institutions pulled $291M",
+   "💵 circle bought nearly 1,000 blockchain patents from IBM — america's biggest blockchain patent holder",
+   "☀️ morgan stanley launched the market's cheapest solana ETF, with staking rewards",
+   "📡 storj, a decentralized-storage pioneer, filed for chapter 11"
+  ],
+  "head": "the map trades red into fed week",
+  "deck": "Bitcoin at $63K after the chip-stock spill, HYPE under $60 on fund exits, and every island watching Wednesday's Fed decision — while Circle quietly bought a thousand IBM patents."
+ }
+}
