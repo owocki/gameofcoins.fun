@@ -51,7 +51,7 @@ Deploy anywhere that serves static files (on Vercel: import the repo, no build s
 
 The flyover renders deterministically from a virtual clock, so the film captures frame-perfect even when headless WebGL is slow:
 
-1. Serve the site locally and open `?flyover&auto=1&record=1` in headless Chromium (Playwright).
+1. Serve the site locally and open `?flyover&auto=1&record=1` in headless Chromium (Playwright) with a **1080×1920 viewport** — the flyover is a 9:16 mobile-native film.
 2. Wait for `window.__flyReady`, then call `window.__renderAt(t)` and screenshot at `t = frame/24` for each frame; call `window.__renderScore(seconds, bars)` for the WAV (render a few seconds longer than the film).
 3. Assemble: `ffmpeg -framerate 24 -i frames/f%05d.jpg -i score.wav -c:v libx264 -crf 20 -pix_fmt yuv420p -c:a aac -b:a 160k -shortest flyover.mp4`
 

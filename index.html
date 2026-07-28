@@ -196,20 +196,15 @@ text{user-select:none;-webkit-user-select:none}
 #isearch .sug div.sel,#isearch .sug div:hover{background:#efe0bd}
 #isearch .sug .sm{color:#8a7a58;font-size:11px;margin-left:6px}
 @media (max-width:620px){#isearch{top:8px;right:10px;width:200px}}
-#flybtn{position:fixed;top:104px;right:16px;z-index:44;background:#f3e9d2;border:1px solid #b7a173;
-  border-radius:999px;color:var(--ink);font-family:var(--serif);font-size:13px;font-weight:600;
-  letter-spacing:.05em;padding:6px 14px 7px;text-decoration:none;box-shadow:0 2px 6px -2px #2c241766}
-#flybtn:hover{background:#f9f1de}
-#flybtn:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
-@media (max-width:620px){#flybtn{top:92px;right:10px}}
-#dimtoggle{position:fixed;top:150px;right:16px;z-index:44;background:#f3e9d2;border:1px solid #b7a173;
-  border-radius:999px;color:var(--ink);font-family:var(--serif);font-size:13px;font-weight:600;
-  letter-spacing:.05em;padding:6px 14px 7px;text-decoration:none;box-shadow:0 2px 6px -2px #2c241766}
-#dimtoggle:hover{background:#f9f1de}
-@media (max-width:620px){#dimtoggle{top:134px;right:10px}}
-
+#vmode{position:fixed;top:104px;right:16px;z-index:44}
+#vmode select{appearance:none;-webkit-appearance:none;background:#f3e9d2;border:1px solid #b7a173;border-radius:999px;
+  padding:7px 30px 7px 14px;font-family:inherit;font-size:13.5px;color:var(--ink);cursor:pointer;letter-spacing:.02em}
+#vmode::after{content:"\25BE";position:absolute;right:12px;top:50%;transform:translateY(-50%);pointer-events:none;color:#8a7a58;font-size:11px}
+#vmode select:hover{background:#f9f1de}
+#vmode select:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+@media (max-width:620px){#vmode{top:92px;right:10px}}
 /* ---- flyover: cinematic mode ---- */
-body.cine #cart,body.cine #ctrl,body.cine #paper,body.cine #tt,body.cine .axis,body.cine #isearch{display:none!important}
+body.cine #cart,body.cine #ctrl,body.cine #paper,body.cine #tt,body.cine .axis,body.cine #isearch,body.cine #vmode{display:none!important}
 #cine{position:fixed;inset:0;z-index:60;pointer-events:none;display:none}
 body.cine #cine{display:block}
 #cine .bar{position:fixed;left:0;right:0;height:11vh;background:#120e08;transition:opacity 1.5s ease}
@@ -221,6 +216,14 @@ body.cine.cinedone #cine .bar{opacity:0}
 #cinecard .ck{font-size:13px;letter-spacing:.42em;text-transform:uppercase;color:#c9a86a}
 #cinecard h1{margin:6px 0 8px;font-size:52px;font-weight:600;letter-spacing:.1em;line-height:1;text-wrap:balance}
 #cinecard .cl{font-size:16.5px;font-style:italic;color:#eee2c6;line-height:1.4}
+/* 9:16 mobile-native flyover: captions sized off the video frame width (--cw),
+   big and roman for one-glance reads, letterbox bars dropped */
+body.v916 #cine .bar{display:none}
+body.v916 #cinecard{bottom:15%;width:calc(var(--cw,100vw)*0.92);
+  text-shadow:0 2px 18px #000c,0 0 6px #0009}
+body.v916 #cinecard .ck{font-size:max(13px,calc(var(--cw,100vw)*0.034));letter-spacing:.3em}
+body.v916 #cinecard h1{font-size:calc(var(--cw,100vw)*0.1);letter-spacing:.04em}
+body.v916 #cinecard .cl{font-size:max(15px,calc(var(--cw,100vw)*0.046));font-style:normal;color:#f3e9d2}
 #cinebegin{position:fixed;inset:0;z-index:65;display:flex;align-items:center;justify-content:center;
   background:#120e08f2;pointer-events:auto;cursor:pointer;flex-direction:column;gap:16px;color:#f3e9d2;
   font-family:var(--serif)}
@@ -307,7 +310,11 @@ body.cine.cinedone #cine .bar{opacity:0}
   </div>
 </details>
 
-<a id="flybtn" href="?flyover">&#127916; the flyover</a>
+<span id="vmode"><select id="vmsel" aria-label="View mode">
+  <option value="2d">&#128506; flat map</option>
+  <option value="3d">&#9968; 3d world</option>
+  <option value="fly">&#127916; the flyover</option>
+</select></span>
 
 <div id="cine"><div class="bar bt"></div><div class="bar bb"></div>
   <div id="cinecard"><div class="ck"></div><h1></h1><div class="cl"></div></div>
@@ -1430,13 +1437,13 @@ if(CINE3D||FREE3D){
     document.body.appendChild(s1);
   },200);
 }
-/* view toggle: flat parchment by default, 3D world on request */
+/* mode dropdown: flat map (default) · 3d world · the flyover */
 {
-  const tog=document.createElement('a');
-  tog.id='dimtoggle';
-  if(FREE3D){tog.href=location.pathname;tog.innerHTML='&#128506; flat map';}
-  else{tog.href='?map3d';tog.innerHTML='&#9968; 3d world';}
-  document.body.appendChild(tog);
+  const sel=document.getElementById('vmsel');
+  sel.value=CINE?'fly':(FREE3D?'3d':'2d');
+  sel.addEventListener('change',()=>{
+    location.href=sel.value==='3d'?'?map3d':sel.value==='fly'?'?flyover':location.pathname;
+  });
 }
 if(CINE&&!CINE3D){
   document.body.classList.add('cine');

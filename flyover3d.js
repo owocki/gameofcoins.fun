@@ -17,12 +17,17 @@
     beginEl.style.zIndex = 66;
     beginEl.style.cursor = 'default';
     const btn = 'display:inline-block;margin:6px 8px;padding:10px 22px;border:1px solid #c9a86a;border-radius:999px;color:#e8c877;font-size:14px;letter-spacing:.18em;cursor:pointer;background:#0a080566';
-    beginEl.innerHTML = '<div class="b1" style="font-size:min(6vw,44px)">GAMEOFCOINS.FUN</div>' +
+    beginEl.innerHTML = '<div class="b1" style="font-size:min(8vw,44px)">GAMEOFCOINS.XYZ</div>' +
       '<div style="margin-top:6px">' +
       '<span id="gocfilm" style="' + btn + '">&#9654; WATCH THE FILM</span>' +
       '<span id="goclive" style="' + btn + ';opacity:.45">&#9876; FLY IT LIVE <span id="cinesub" class="pulse">&middot; loading&hellip;</span></span>' +
       '</div>';
     document.body.appendChild(beginEl);
+    const backLk = document.createElement('a');
+    backLk.href = location.pathname;
+    backLk.textContent = '← back to the map';
+    backLk.style.cssText = 'position:fixed;top:14px;left:16px;z-index:67;color:#e8c877;font-size:13px;letter-spacing:.14em;text-decoration:none;padding:7px 14px;border:1px solid #c9a86a55;border-radius:999px;background:#0a080588';
+    beginEl.appendChild(backLk);
     beginSub = beginEl.querySelector('#cinesub');
     beginEl.querySelector('#gocfilm').addEventListener('click', (ev) => {
       ev.stopPropagation();
@@ -87,17 +92,33 @@
   const W2S = (wx, wy, h) => new T.Vector3(wx - CXW, h, wy - CYW);
 
   // ---------- renderer / scene ----------
+  // ?flyover renders as a 9:16 mobile video: full-bleed on phones,
+  // pillarboxed to a vertical frame on desktop. Free-roam stays full-window.
+  const V916 = !FREE;
+  function cineSize() {
+    return { w: Math.min(innerWidth, Math.round(innerHeight * 9 / 16)), h: innerHeight };
+  }
   const renderer = new T.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
   renderer.setSize(innerWidth, innerHeight);
   renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));
   renderer.domElement.id = 'fly3d';
   renderer.domElement.style.cssText = 'position:fixed;inset:0;z-index:50;background:#0b0d12';
   if (FREE) { renderer.domElement.style.zIndex = '5'; renderer.domElement.style.cursor = 'grab'; }
+  if (V916) {
+    const { w, h } = cineSize();
+    renderer.setSize(w, h);
+    renderer.domElement.style.cssText = 'position:fixed;top:0;left:50%;transform:translateX(-50%);z-index:50;background:#0b0d12';
+    document.documentElement.style.setProperty('--cw', w + 'px');
+    document.body.classList.add('v916');
+    const pillar = document.createElement('div');
+    pillar.style.cssText = 'position:fixed;inset:0;z-index:49;background:#000';
+    document.body.appendChild(pillar);
+  }
   document.body.appendChild(renderer.domElement);
   const scene = new T.Scene();
   scene.background = new T.Color(0xb9d0d4);
   scene.fog = new T.Fog(0xbfd4d6, 900, 5200);
-  const cam = new T.PerspectiveCamera(55, innerWidth / innerHeight, 2, 14000);
+  const cam = new T.PerspectiveCamera(55, V916 ? cineSize().w / cineSize().h : innerWidth / innerHeight, 2, 14000);
   scene.add(new T.HemisphereLight(0xfff4dd, 0x9a9678, 0.95));
   scene.add(new T.AmbientLight(0xf2e8d0, 0.42));
   const sun = new T.DirectionalLight(0xffe8c0, 0.95);
@@ -105,7 +126,7 @@
   scene.add(sun);
 
   // ---------- terrain (map rasterized onto extruded ground) ----------
-  function rasterizeMap() {
+  function rasterizeMap(keepNames) {
     return new Promise((resolve) => {
       const svg = document.getElementById('map');
       const clone = svg.cloneNode(true);
@@ -117,7 +138,10 @@
       // filters render black inside <img> rasterization — strip them,
       // and drop the highlight/label/cloud layers entirely
       clone.querySelectorAll('[filter]').forEach(e => e.removeAttribute('filter'));
-      clone.querySelectorAll('.hl, .hl-stroke, g.tier, g.lbl-country, #gcl, #gcsh').forEach(e => e.remove());
+      // free-roam keeps the country names in the texture so tribes read
+      // from the top-down view; the cinematic strips them
+      clone.querySelectorAll(keepNames ? '.hl, .hl-stroke, g.tier, #gcl, #gcsh'
+                                       : '.hl, .hl-stroke, g.tier, g.lbl-country, #gcl, #gcsh').forEach(e => e.remove());
       clone.setAttribute('width', '2048'); clone.setAttribute('height', '2048');
       clone.setAttribute('viewBox', `${X0 - 400} ${Y0 - 400} ${(X1 - X0) + 800} ${(Y1 - Y0) + 800}`);
       const xml = new XMLSerializer().serializeToString(clone);
@@ -155,10 +179,31 @@
     scene.add(sea);
   }
 
-  // ---------- generative medieval towns ----------
+  // ---------- generative towns, one architectural voice per tribe ----------
   const townMats = [0xd8cbaa, 0xcbb98f, 0xb59a74, 0xa9906b].map(c => new T.MeshLambertMaterial({ color: c }));
   const roofMat = new T.MeshLambertMaterial({ color: 0x96604a });
   const darkRoof = new T.MeshLambertMaterial({ color: 0x6f4a38 });
+  // walls: 4 wall colors · roof: roof color · keep: the central keep's accent
+  // style: cone timber town | fort squat citadel | crystal slim spires with gem tops
+  //        dome marble domes | tower tall narrow | flat slab roofs | ruin broken grey
+  const DEFAULT_LOOK = { walls: [0xd8cbaa, 0xcbb98f, 0xb59a74, 0xa9906b], roof: 0x96604a, keep: 0x6f4a38, style: 'cone' };
+  const TRIBE_LOOK = {
+    btcmaxis:       { walls: [0xe0b36a, 0xd9a24f, 0xc9963f, 0xb3823a], roof: 0x3a3630, keep: 0xf7931a, style: 'fort' },
+    ethereum:       { walls: [0xb7c3e8, 0x9fb0e0, 0x8a9cd8, 0xcdd6f0], roof: 0x4a5aa8, keep: 0x627eea, style: 'crystal' },
+    stablecoins:    { walls: [0xf2eee0, 0xe8e2cf, 0xdcd5bd, 0xf7f4ea], roof: 0x3f7d4f, keep: 0x2f6f45, style: 'dome' },
+    exchangetokens: { walls: [0x4a4438, 0x5a523f, 0x3a352c, 0x6a6049], roof: 0xe8b93b, keep: 0xf0b90b, style: 'tower' },
+    xrparmy:        { walls: [0xdfe8f0, 0xc8d8e8, 0xb0c8e0, 0xeef4f8], roof: 0x2a6db5, keep: 0x1a4a80, style: 'flat' },
+    rwa:            { walls: [0xd8a878, 0xcc9868, 0xc08858, 0xe0b888], roof: 0x8a4a2e, keep: 0x9a5a3a, style: 'dome' },
+    solana:         { walls: [0x8a5ac8, 0x9a6ad0, 0x6a48b0, 0x5adba0], roof: 0x14f195, keep: 0x9945ff, style: 'tower' },
+    linkmarines:    { walls: [0x6a7a94, 0x58687f, 0x7d8da8, 0x4a5870], roof: 0x24528f, keep: 0x2a5db0, style: 'tower' },
+    regens:         { walls: [0xb5a878, 0xa89868, 0x988a5c, 0xc0b088], roof: 0x5c8a3c, keep: 0x4f8136, style: 'cone' },
+    memedaos:       { walls: [0xe86a5a, 0x5ab8e8, 0xe8d05a, 0xb05ae8], roof: 0xe84a90, keep: 0xffd400, style: 'cone' },
+    desci:          { walls: [0xa8d8d0, 0x90c8c0, 0x78b8b0, 0xc0e8e0], roof: 0x3a8a80, keep: 0x63b8a8, style: 'dome' },
+    airdropfarmers: { walls: [0xc0563e, 0x4e7dae, 0xd8b13a, 0x7d5aa0], roof: 0xa89060, keep: 0xd4af37, style: 'flat' },
+    mevsearchers:   { walls: [0x2e2a33, 0x3a3540, 0x26222b, 0x45404d], roof: 0x151218, keep: 0xffe25c, style: 'tower' },
+    artists:        { walls: [0xe8c8d8, 0xc8d8e8, 0xd8e8c8, 0xe8e0c0], roof: 0x7d5aa0, keep: 0xc0563e, style: 'cone' },
+    ghostchains:    { walls: [0x9a948a, 0x8a857c, 0x7a756d, 0xaaa49a], roof: 0x6a655e, keep: 0x8a857c, style: 'ruin' }
+  };
   function rng32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; } }
   function buildTown(id) {
     const c = A.countries.find(x => x.id === id);
@@ -169,26 +214,65 @@
     const Rt = 55 + 22 * Math.log10(1 + mc / 1e9);
     const n = Math.round(34 + 14 * Math.log10(1 + mc / 1e9));
     const base = getH(cap[0], cap[1]);
-    // keep at the center
-    const keep = new T.Mesh(new T.CylinderGeometry(9, 11, 46, 8), townMats[1]);
-    keep.position.copy(W2S(cap[0], cap[1], base + 23)); g.add(keep);
-    const kr = new T.Mesh(new T.ConeGeometry(12, 16, 8), darkRoof);
-    kr.position.copy(W2S(cap[0], cap[1], base + 54)); g.add(kr);
+    const look = TRIBE_LOOK[id] || DEFAULT_LOOK;
+    const walls = look.walls.map(cc => new T.MeshLambertMaterial({ color: cc }));
+    const roofM = new T.MeshLambertMaterial({ color: look.roof });
+    const keepM = new T.MeshLambertMaterial({ color: look.keep });
+    const st = look.style;
+    // keep at the center, crowned in the tribe's accent
+    const keepH = st === 'crystal' || st === 'tower' ? 62 : 46;
+    const keep = new T.Mesh(new T.CylinderGeometry(9, 11, keepH, 8), walls[1]);
+    keep.position.copy(W2S(cap[0], cap[1], base + keepH / 2)); g.add(keep);
+    if (st === 'dome') {
+      const kr = new T.Mesh(new T.SphereGeometry(11, 12, 8, 0, Math.PI * 2, 0, Math.PI / 2), keepM);
+      kr.position.copy(W2S(cap[0], cap[1], base + keepH)); g.add(kr);
+    } else if (st === 'crystal') {
+      const kr = new T.Mesh(new T.OctahedronGeometry(9), keepM);
+      kr.position.copy(W2S(cap[0], cap[1], base + keepH + 9)); g.add(kr);
+      propsAnim.push({ type: 'spinbob', m: kr, y0: base + keepH + 9, ph: 2 });
+    } else {
+      const kr = new T.Mesh(new T.ConeGeometry(12, 16, 8), keepM);
+      kr.position.copy(W2S(cap[0], cap[1], base + keepH + 8)); g.add(kr);
+    }
     // houses in rings, leaving a main street along x for the camera
     for (let i = 0; i < n; i++) {
       const a = rnd() * Math.PI * 2, r = Rt * (0.32 + 0.68 * Math.sqrt(rnd()));
       const wx = cap[0] + Math.cos(a) * r, wy = cap[1] + Math.sin(a) * r * 0.8;
       if (Math.abs(wy - cap[1]) < 13) continue; // main street stays clear
-      const bw = 7 + rnd() * 7, bd = 7 + rnd() * 7, bh = 9 + rnd() * 13;
+      let bw = 7 + rnd() * 7, bd = 7 + rnd() * 7, bh = 9 + rnd() * 13;
+      if (st === 'tower' || st === 'crystal') { bw *= 0.72; bd *= 0.72; bh *= 1.8; }
+      if (st === 'fort') { bw *= 1.25; bd *= 1.25; bh *= 0.85; }
+      if (st === 'ruin') { bh *= 0.55 + rnd() * 0.4; }
       const hgt = getH(wx, wy);
-      const b = new T.Mesh(new T.BoxGeometry(bw, bh, bd), townMats[Math.floor(rnd() * townMats.length)]);
+      const b = new T.Mesh(new T.BoxGeometry(bw, bh, bd), walls[Math.floor(rnd() * walls.length)]);
       b.position.copy(W2S(wx, wy, hgt + bh / 2));
       b.rotation.y = rnd() * 0.6 - 0.3;
       g.add(b);
-      const roof = new T.Mesh(new T.ConeGeometry(Math.max(bw, bd) * 0.72, 6 + rnd() * 5, 4), roofMat);
-      roof.position.copy(W2S(wx, wy, hgt + bh + 3));
+      if (st === 'ruin' && rnd() < 0.45) continue;          // roofless shells
+      let roof;
+      if (st === 'flat' || st === 'fort') {
+        roof = new T.Mesh(new T.BoxGeometry(bw + 2, 1.6, bd + 2), roofM);
+        roof.position.copy(W2S(wx, wy, hgt + bh + 0.8));
+      } else if (st === 'dome') {
+        roof = new T.Mesh(new T.SphereGeometry(Math.max(bw, bd) * 0.56, 8, 6, 0, Math.PI * 2, 0, Math.PI / 2), roofM);
+        roof.position.copy(W2S(wx, wy, hgt + bh));
+      } else if (st === 'crystal') {
+        roof = new T.Mesh(new T.OctahedronGeometry(Math.max(bw, bd) * 0.5), keepM);
+        roof.position.copy(W2S(wx, wy, hgt + bh + 3));
+      } else if (st === 'tower') {
+        roof = new T.Mesh(new T.ConeGeometry(Math.max(bw, bd) * 0.66, 9 + rnd() * 5, 4), roofM);
+        roof.position.copy(W2S(wx, wy, hgt + bh + 4));
+      } else {
+        roof = new T.Mesh(new T.ConeGeometry(Math.max(bw, bd) * 0.72, 6 + rnd() * 5, 4), roofM);
+        roof.position.copy(W2S(wx, wy, hgt + bh + 3));
+      }
       roof.rotation.y = b.rotation.y + Math.PI / 4;
       g.add(roof);
+      if (st === 'fort' && rnd() < 0.3) {                   // corner watch cubes
+        const par = new T.Mesh(new T.BoxGeometry(2.4, 2.4, 2.4), keepM);
+        par.position.copy(W2S(wx + bw / 2 - 1, wy + bd / 2 - 1, hgt + bh + 2.4));
+        g.add(par);
+      }
     }
     scene.add(g);
     return { id, cap, Rt, base, tribe: c.tribe };
@@ -468,6 +552,41 @@
     desci: [flaskProp], airdropfarmers: [paraProp], mevsearchers: [pinesProp],
     artists: [easelProp], ghostchains: [ruinsProp]
   };
+  // a floating coin above each town: gold disc stamped with the tribe's
+  // capital-coin ticker (or its emoji), so towns read at a glance
+  function buildCoinLogo(tw) {
+    const tb = tw.tribe;
+    const d0 = tb.discussing && tb.discussing[0];
+    const tick = (((d0 && (d0.x || d0.t)) || '').replace(/^\$/, '').split(/[\s·]/)[0] || '').toUpperCase();
+    const m = A.PMETA[tw.id] || {};
+    const label = /^[A-Z0-9]{2,5}$/.test(tick) ? tick : (m.e || '?');
+    const cv = document.createElement('canvas'); cv.width = cv.height = 256;
+    const ctx = cv.getContext('2d');
+    const gr = ctx.createRadialGradient(128, 104, 26, 128, 128, 128);
+    gr.addColorStop(0, '#ffe9a8'); gr.addColorStop(1, '#d9a428');
+    ctx.fillStyle = gr; ctx.beginPath(); ctx.arc(128, 128, 126, 0, 6.3); ctx.fill();
+    ctx.lineWidth = 9; ctx.strokeStyle = '#8a5a14';
+    ctx.beginPath(); ctx.arc(128, 128, 117, 0, 6.3); ctx.stroke();
+    ctx.fillStyle = '#4a3005';
+    ctx.font = '700 ' + (label.length > 3 ? 78 : 102) + 'px "EB Garamond", Georgia, serif';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(label, 128, 134);
+    const tex = new T.CanvasTexture(cv); tex.colorSpace = T.SRGBColorSpace;
+    const r = Math.max(15, tw.Rt * 0.3);
+    const face = new T.MeshBasicMaterial({ map: tex });
+    const grp = new T.Group();
+    // rim tube + two circle faces (back face flipped) so the ticker reads
+    // upright from either side — cylinder caps rotate their UVs 90°
+    const rim = new T.Mesh(new T.CylinderGeometry(r, r, r * 0.14, 36, 1, true),
+      new T.MeshLambertMaterial({ color: 0xb8860b }));
+    rim.rotation.x = Math.PI / 2; grp.add(rim);
+    const zoff = r * 0.07 + 0.05;
+    const f1 = new T.Mesh(new T.CircleGeometry(r, 36), face); f1.position.z = zoff; grp.add(f1);
+    const f2 = new T.Mesh(new T.CircleGeometry(r, 36), face); f2.position.z = -zoff; f2.rotation.y = Math.PI; grp.add(f2);
+    grp.position.copy(W2S(tw.cap[0], tw.cap[1], tw.base + 92 + r));
+    scene.add(grp);
+    propsAnim.push({ type: 'coinlogo', m: grp, y0: grp.position.y, ph: tw.Rt % 6 });
+  }
   function makeLabel(text) {
     const cv = document.createElement('canvas'); cv.width = 512; cv.height = 128;
     const ctx = cv.getContext('2d');
@@ -498,6 +617,7 @@
   function animateProps(t) {
     for (const p of propsAnim) {
       if (p.type === 'spinbob') { p.m.rotation.y = t * 0.8 + p.ph; p.m.position.y = p.y0 + Math.sin(t * 1.4 + p.ph) * 2.4; }
+      else if (p.type === 'coinlogo') { p.m.rotation.y = t * 0.55 + p.ph; p.m.position.y = p.y0 + Math.sin(t * 1.1 + p.ph) * 3; }
       else if (p.type === 'spin') { p.m.rotation.z = t * 0.9 + p.ph; }
       else if (p.type === 'wave') { p.m.rotation.y = Math.sin(t * 2.2 + p.ph) * 0.35; }
       else if (p.type === 'orbit') {
@@ -570,17 +690,18 @@
     const c = A.countries.find(x => x.id === id);
     const m = A.PMETA[id] || {}; const tb = c.tribe;
     const top = (tb.topics && tb.topics[0]) || (tb.discussing && tb.discussing[0]);
-    return { kick: (m.e || '') + '  sacred: ' + (m.s || '') + '  ·  ' + reachOf(id), title: tb.country,
-             line: top ? (top.t + ' — ' + top.d).slice(0, 200) : tb.tldr };
+    // mobile captions: one glance, three short lines
+    return { kick: ((m.e || '') + '  ' + (reachOf(id) || '')).trim(), title: tb.country,
+             line: top ? top.t.slice(0, 64) : '' };
   }
   const logo = document.createElement('div');
   logo.id = 'goclogo';
   logo.style.cssText = 'position:fixed;inset:0;z-index:64;background:radial-gradient(ellipse at center,#0a0805d9 30%,#0a0805f2 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:#e8c877;font-family:var(--serif);pointer-events:none';
-  logo.innerHTML = '<div style="font-size:13px;letter-spacing:.6em;color:#c9a86a">GAME OF COINS</div>' +
-    '<div style="height:1px;width:min(40vw,420px);background:linear-gradient(90deg,transparent,#c9a86a,transparent)"></div>' +
-    '<div style="font-size:min(7.5vw,84px);font-weight:600;letter-spacing:.12em;text-shadow:0 0 70px #e8c87766,0 4px 30px #000">gameofcoins.fun</div>' +
-    '<div style="height:1px;width:min(40vw,420px);background:linear-gradient(90deg,transparent,#c9a86a,transparent)"></div>' +
-    '<div style="font-size:12px;letter-spacing:.42em;color:#c9a86a">THE CRYPTOTWITTER ONTOLOGY MAP</div>';
+  logo.innerHTML = '<div style="font-size:max(12px,calc(var(--cw,100vw)*0.032));letter-spacing:.6em;color:#c9a86a">GAME OF COINS</div>' +
+    '<div style="height:1px;width:calc(var(--cw,100vw)*0.55);background:linear-gradient(90deg,transparent,#c9a86a,transparent)"></div>' +
+    '<div style="font-size:calc(var(--cw,100vw)*0.105);font-weight:600;letter-spacing:.06em;text-shadow:0 0 70px #e8c87766,0 4px 30px #000">gameofcoins.xyz</div>' +
+    '<div style="height:1px;width:calc(var(--cw,100vw)*0.55);background:linear-gradient(90deg,transparent,#c9a86a,transparent)"></div>' +
+    '<div style="font-size:max(11px,calc(var(--cw,100vw)*0.028));letter-spacing:.42em;color:#c9a86a">THE CRYPTOTWITTER MAP</div>';
   document.body.appendChild(logo);
   if (FREE) logo.style.display = 'none';
   const endOv = document.createElement('div');
@@ -590,11 +711,21 @@
   // ---------- free-roam: the default main view (drag to pan, wheel to zoom, right-drag to orbit) ----------
   function freeMode() {
     const el = renderer.domElement;
-    const ctrl = document.getElementById('ctrl');
-    if (ctrl) ctrl.style.display = 'none';   // the 2D zoom buttons steer the hidden SVG
     const tgt = new T.Vector3(SLc[0] - CXW, 0, SLc[1] - CYW);
     const MIND = 150, MAXD = 5400;
-    let dist = 3800, yaw = 0, pitch = 1.32;   // start: bird's-eye over the whole landmass
+    let dist = MAXD, yaw = 0, pitch = 1.5;   // start: fully zoomed-out top-down atlas view
+    // re-wire the map's zoom buttons to the 3D camera (clone strips 2D handlers)
+    const ctrl = document.getElementById('ctrl');
+    if (ctrl) {
+      ctrl.style.display = '';
+      ['z-in', 'z-out', 'z-fit'].forEach(bid => { const b = document.getElementById(bid); b.replaceWith(b.cloneNode(true)); });
+      document.getElementById('z-in').addEventListener('click', () => { dist = Math.max(MIND, dist * 0.66); glide = null; });
+      document.getElementById('z-out').addEventListener('click', () => { dist = Math.min(MAXD, dist / 0.66); glide = null; });
+      document.getElementById('z-fit').addEventListener('click', () => {
+        yaw = 0; pitch = 1.5; dist = MAXD; glide = null;
+        tgt.set(SLc[0] - CXW, 0, SLc[1] - CYW);
+      });
+    }
     // from above, the cinematic's haze and high clouds just obscure the map
     scene.fog.near = 8000; scene.fog.far = 22000;
     clouds.forEach((c, k) => {
@@ -722,15 +853,19 @@
   }
 
   // ---------- the tour (virtual-clock: renderAt(tt) is pure in tour-time) ----------
+  // Shot grammar, not a fly-through: each town gets an approach (descend onto
+  // the orbit), a slow ~140° crane orbit that keeps the keep + props + coin
+  // composed in frame, then a rising exit toward the next town. Orbit
+  // direction alternates per stop so consecutive shots don't rhyme.
   function buildPath(towns) {
     const pts = [];
     let prev = W2S(CXW - 1800, CYW + 1400, 2400);
     pts.push(prev.clone());
-    towns.forEach((tw) => {
+    const orb = (tw, a, rr, y) =>
+      W2S(tw.cap[0] + Math.cos(a) * rr, tw.cap[1] + Math.sin(a) * rr * 0.8, y);
+    towns.forEach((tw, i) => {
       const c0 = W2S(tw.cap[0], tw.cap[1], 0);
-      const inDir = new T.Vector3(c0.x - prev.x, 0, c0.z - prev.z).normalize();
-      const off = tw.Rt * 2.4;
-      // high waypoint clearing whatever terrain lies between towns
+      // high transfer waypoint clearing whatever terrain lies between towns
       const mid = prev.clone().lerp(c0, 0.5);
       let hmax = 0;
       for (let k = 0; k <= 10; k++) {
@@ -738,10 +873,16 @@
         hmax = Math.max(hmax, getH(q.x + CXW, q.z + CYW));
       }
       mid.y = Math.max(prev.y * 0.5 + 110, hmax + 150);
-      const pA = c0.clone().addScaledVector(inDir, -off); pA.y = tw.base + 170;
-      const pB = c0.clone(); pB.y = tw.base + 46;
-      const pC = c0.clone().addScaledVector(inDir, off); pC.y = tw.base + 150;
-      pts.push(mid, pA, pB, pC);
+      const Ro = tw.Rt * 3.0;    // orbit radius tuned to the narrow 9:16 horizontal FOV
+      const eye = tw.base + 40 + tw.Rt * 0.8;        // crane height: gentle look-down
+      const dirn = i % 2 ? -1 : 1;                   // alternate orbit direction
+      const a0 = Math.atan2((prev.z + CYW - tw.cap[1]) / 0.8, prev.x + CXW - tw.cap[0]);
+      const S = 2.4 * dirn;                          // ~140° sweep
+      const pA = orb(tw, a0, Ro * 1.05, eye + 45);   // orbit entry, still descending
+      const p1 = orb(tw, a0 + S * 0.35, Ro * 0.92, eye);
+      const p2 = orb(tw, a0 + S * 0.7, Ro * 0.88, eye - 8);   // low point, closest pass
+      const pC = orb(tw, a0 + S, Ro * 1.15, eye + 55);         // rising exit
+      pts.push(mid, pA, p1, p2, pC);
       prev = pC;
     });
     pts.push(W2S(CXW, CYW, 2600));
@@ -759,7 +900,7 @@
       const Rt = 55 + 22 * Math.log10(1 + A.mcap(c.tribe) / 1e9);
       flatZones.push({ x: cap[0], y: cap[1], r: Rt * 1.6, h: getHraw(cap[0], cap[1]) });
     }
-    const tex = await rasterizeMap();
+    const tex = await rasterizeMap(FREE);
     if (!FREE) document.getElementById('stage').style.display='none';  // stop repainting the SVG under the GL canvas
     buildTerrain(tex);
     buildClouds();
@@ -767,6 +908,7 @@
     const towns = TOWN_IDS.map(buildTown);
     towns.forEach((tw, i) => {
       const rnd = rng32(i * 733 + 19);
+      buildCoinLogo(tw);
       buildWindmill(tw, rnd);
       if (tw.Rt > 75) buildWindmill(tw, rnd);
       buildSmoke(tw, rnd);
@@ -778,23 +920,35 @@
     const { curve, count } = buildPath(towns);
     const cloudBase = clouds.map(c => c.m.position.x);
 
-    const REVEAL = 3, PER = 8, OUTRO = 7;
+    const REVEAL = 1.6, PER = 8, OUTRO = 7;
     const TOUR = REVEAL + order.length * PER + OUTRO;
     const TOTAL = TOUR;
-    const segU = 1 / (count - 1);
+    // getPointAt() is arc-length uniform, but the shot beats must land on
+    // their waypoints exactly — precompute each control point's true
+    // arc-length fraction and interpolate between those.
+    const LDIV = 4000;
+    const lens = curve.getLengths(LDIV), totL = lens[LDIV];
+    const uOf = [];
+    for (let j = 0; j < count; j++) uOf.push(lens[Math.round(j / (count - 1) * LDIV)] / totL);
+    const idxU = (x) => {
+      const j = Math.max(0, Math.min(count - 1, x));
+      const j0 = Math.floor(j);
+      return j0 >= count - 1 ? uOf[count - 1] : uOf[j0] + (uOf[j0 + 1] - uOf[j0]) * (j - j0);
+    };
+    // per-town beats: approach 0–.25 · crane orbit .25–.85 · exit .85–1
+    const BEATS = [0, 0.25, 0.45, 0.67, 0.85, 1];
     const uAt = (tt) => {
-      if (tt <= REVEAL) return (tt / REVEAL) * segU;               // start -> first high waypoint
+      if (tt <= REVEAL) return idxU(tt / REVEAL);                  // start -> first high waypoint
       const t2 = tt - REVEAL, n = order.length;
       if (t2 >= n * PER) {                                          // outro: last exit -> overview
         const fo = Math.min(1, (t2 - n * PER) / (OUTRO * 0.75));
-        return ((1 + (n - 1) * 4 + 3) + fo) * segU;
+        return idxU(1 + (n - 1) * 5 + 4 + fo);
       }
       const i = Math.floor(t2 / PER), fq = (t2 - i * PER) / PER;
-      let step;                                                     // dwell inside the town
-      if (fq < 0.38) step = fq / 0.38;                              // cruise in
-      else if (fq < 0.62) step = 1 + (fq - 0.38) / 0.24;            // through the streets
-      else step = 2 + (fq - 0.62) / 0.38;                           // climb out
-      return (1 + i * 4 + step) * segU;
+      let step = 5;                                                 // beat-paced dwell in the shot
+      for (let k = 1; k < BEATS.length; k++)
+        if (fq <= BEATS[k]) { step = (k - 1) + (fq - BEATS[k - 1]) / (BEATS[k] - BEATS[k - 1]); break; }
+      return idxU(1 + i * 5 + step);
     };
     cardEl.style.transition = 'none';
     let cardFor = null;
@@ -802,12 +956,12 @@
 
     function renderAt(t) {
       const lt = t;
-      // title floats over the already-moving world, gone by ~4.5s
-      const la = lt < 0.8 ? 1 : Math.max(0, 1 - (lt - 0.8) / 0.8);
+      // title floats over the already-moving world, gone by ~1.2s
+      const la = lt < 0.45 ? 1 : Math.max(0, 1 - (lt - 0.45) / 0.75);
       logo.style.opacity = String(la);
       logo.style.display = la <= 0 ? 'none' : 'flex';
-      // final fade to black under the closing card
-      endOv.style.opacity = String(Math.max(0, Math.min(0.88, (lt - (TOUR - 2.6)) / 1.7)));
+      // final fade to black arrives with the closing card, not after it
+      endOv.style.opacity = String(Math.max(0, Math.min(0.88, (lt - (TOUR - OUTRO + 2)) / 2.2)));
       const tt = Math.max(0, Math.min(TOUR, lt));
       // camera
       animateLife(lt);
@@ -827,8 +981,14 @@
       let cardKey = null, cardAlpha = 0;
       if (t2 >= 0 && i >= 0 && i < order.length) {
         const tw = towns[i], f = (t2 - i * PER) / PER;
-        const tc = W2S(tw.cap[0], tw.cap[1], tw.base + 26);
-        look = ahead.clone().lerp(tc, f < 0.55 ? 0.65 : Math.max(0, 0.65 - (f - 0.55) * 2));
+        // subject lock: during the orbit the camera holds the town keep,
+        // framed low for 9:16 with sky above; released on exit toward travel
+        const tc = W2S(tw.cap[0], tw.cap[1], tw.base + 30 + tw.Rt * 0.22);
+        let w;
+        if (f < 0.25) w = 0.5 + (f / 0.25) * 0.42;
+        else if (f < 0.85) w = 0.92;
+        else w = Math.max(0, 0.92 * (1 - (f - 0.85) / 0.13));
+        look = ahead.clone().lerp(tc, w);
         if (f > 0.28 && f < 0.96) {
           cardKey = order[i];
           const fin = Math.min(1, (f - 0.28) / 0.07), fout = Math.min(1, (0.96 - f) / 0.05);
@@ -841,7 +1001,7 @@
       }
       if (cardKey !== cardFor) {
         cardFor = cardKey;
-        if (cardKey === '__outro') card('GAME OF COINS', 'gameofcoins.fun', 'the cryptotwitter ontology map · resurveyed nightly · built with ♥ by @owocki');
+        if (cardKey === '__outro') card('GAME OF COINS', 'gameofcoins.xyz', 'the cryptotwitter map · resurveyed nightly');
         else if (cardKey) { const sc = stopCard(cardKey); card(sc.kick, sc.title, sc.line); }
       }
       setCardAlpha(cardKey ? cardAlpha : 0);
@@ -880,8 +1040,15 @@
     if (beginEl) { const b = beginEl.querySelector('#goclive'); if (b) b.style.opacity = '1'; }
   }
   addEventListener('resize', () => {
-    cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix();
-    renderer.setSize(innerWidth, innerHeight);
+    if (V916) {
+      const { w, h } = cineSize();
+      cam.aspect = w / h; cam.updateProjectionMatrix();
+      renderer.setSize(w, h);
+      document.documentElement.style.setProperty('--cw', w + 'px');
+    } else {
+      cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix();
+      renderer.setSize(innerWidth, innerHeight);
+    }
   });
   start();
 })();
