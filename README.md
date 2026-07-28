@@ -6,7 +6,7 @@ An interactive fantasy-style map of crypto twitter. Every tribe (Bitcoin maxis, 
 
 **The three views:**
 
-- **Main view** — a free-roam 3D world. Drag to pan, wheel to zoom, right-drag (or shift-drag) to orbit. Hover a territory for its card: the tribe's ontology, this week's trending narratives (tap once for the story, again for X), and its coins. The search box top-right flies you to any island, coin ticker, topic, or influencer. "flat map" switches to the 2D parchment (`?map2d`).
+- **Main view** — the flat 2D parchment map. Hover a territory for its card: the tribe's ontology, this week's trending narratives (tap once for the story, again for X), and its coins. The search box top-right flies you to any island, coin ticker, topic, or influencer. "3d world" switches to the free-roam 3D world (`?map3d`): drag to pan, wheel to zoom, right-drag (or shift-drag) to orbit.
 - **The flyover** (`?flyover` or the 🎬 button) — a Game-of-Thrones-style cinematic over the 7 biggest and 8 most niche tribes: 3D terrain, generative medieval towns, dragons, per-tribe props (orange coins, diamonds, marching marines, solarpunk plants), influencer walkers, and an original score. Watch the pre-rendered film or fly it live in WebGL.
 - **The Attention Times** (📰 button) — the same day's data as a broadsheet newspaper, ranked by real-world size, with a copy-to-clipboard artifact for posting.
 

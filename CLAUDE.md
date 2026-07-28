@@ -45,11 +45,12 @@ build.
 
 `flyover3d.js` reads the URL:
 
-- No `?flyover` → **free-roam main view**: orbit camera, hover picking, search
-  flyTo. Talks to the 2D map through the `window.__atlas` bridge (defined in
-  `site.template.html`), which exposes `countries`, hit-testing (`pick`), and
-  card rendering. The 2D SVG stays as the `?map2d` fallback and is what gets
-  rasterized into the 3D terrain texture.
+- `?map3d` (no `?flyover`) → **free-roam 3D view**: orbit camera, hover
+  picking, search flyTo. Talks to the 2D map through the `window.__atlas`
+  bridge (defined in `site.template.html`), which exposes `countries`,
+  hit-testing (`pick`), and card rendering. The 2D SVG is the default main
+  view (the "3d world" toggle links to `?map3d`) and is what gets rasterized
+  into the 3D terrain texture.
 - `?flyover` → **the cinematic tour**. `?flyover2d` forces the legacy 2D tour.
 - `?flyover&auto=1&record=1` → deterministic recording mode:
   `window.__renderAt(t)` renders any tour-time, `window.__renderScore(sec,
@@ -99,7 +100,7 @@ python3 scripts/build_site.py    # after any template edit
 ANTHROPIC_API_KEY=... python3 scripts/research_crypto.py   # run a survey manually
 ```
 
-Useful test URLs: `/` (3D main view) · `/?map2d` (flat map) · `/?flyover`
+Useful test URLs: `/` (flat map, the default) · `/?map3d` (3D world) · `/?flyover`
 (cinematic) · `/#YYYY-MM-DD` (a specific day).
 
 A convention for agents: don't `git checkout` another branch while a local

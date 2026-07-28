@@ -134,7 +134,7 @@ text{user-select:none;-webkit-user-select:none}
 #ctrl button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 
 /* ---- the attention times: newspaper view ---- */
-#paper{position:fixed;top:12px;right:16px;z-index:44}
+#paper{position:fixed;top:58px;right:16px;z-index:44}
 #paper summary{list-style:none;display:inline-flex;align-items:center;cursor:pointer;
   background:#f3e9d2;border:1px solid #b7a173;color:var(--ink);font-family:var(--serif);
   font-size:13px;font-weight:600;letter-spacing:.05em;padding:6px 14px 7px;border-radius:999px;
@@ -177,13 +177,13 @@ text{user-select:none;-webkit-user-select:none}
 .pfoot a{color:#8a5a17;text-decoration:none}
 .pfoot a:hover,.pfoot a:focus-visible{text-decoration:underline}
 @media (max-width:620px){
-  #paper{top:8px;right:10px}
+  #paper{top:50px;right:10px}
   #pdoc{padding:22px 16px 20px}.pmast{font-size:29px}.phead{font-size:24px}
   #paper[open] #psheet{padding:52px 8px 24px}
 }
 
 /* ---- island search ---- */
-#isearch{position:fixed;top:58px;right:16px;z-index:44;width:240px}
+#isearch{position:fixed;top:12px;right:16px;z-index:44;width:240px}
 #isearch input{width:100%;box-sizing:border-box;background:#f3e9d2;border:1px solid #b7a173;border-radius:999px;
   font-family:var(--serif);font-size:13px;color:var(--ink);padding:7px 14px;outline:none;
   box-shadow:0 2px 6px -2px #2c241766}
@@ -195,7 +195,7 @@ text{user-select:none;-webkit-user-select:none}
 #isearch .sug div:last-child{border-bottom:none}
 #isearch .sug div.sel,#isearch .sug div:hover{background:#efe0bd}
 #isearch .sug .sm{color:#8a7a58;font-size:11px;margin-left:6px}
-@media (max-width:620px){#isearch{top:50px;right:10px;width:200px}}
+@media (max-width:620px){#isearch{top:8px;right:10px;width:200px}}
 #flybtn{position:fixed;top:104px;right:16px;z-index:44;background:#f3e9d2;border:1px solid #b7a173;
   border-radius:999px;color:var(--ink);font-family:var(--serif);font-size:13px;font-weight:600;
   letter-spacing:.05em;padding:6px 14px 7px;text-decoration:none;box-shadow:0 2px 6px -2px #2c241766}
@@ -284,6 +284,11 @@ body.cine.cinedone #cine .bar{opacity:0}
   <button id="z-fit" aria-label="Reset view" style="font-size:15px">&#8962;</button>
 </div>
 
+<div id="isearch">
+  <input id="isq" type="text" placeholder="find an island&hellip;" autocomplete="off" spellcheck="false" aria-label="Find an island">
+  <div class="sug" id="isug"></div>
+</div>
+
 <details id="paper">
   <summary><span class="pc">&#128240; read today's paper</span><span class="po">&#10005; fold the paper</span></summary>
   <div id="psheet">
@@ -303,11 +308,6 @@ body.cine.cinedone #cine .bar{opacity:0}
 </details>
 
 <a id="flybtn" href="?flyover">&#127916; the flyover</a>
-
-<div id="isearch">
-  <input id="isq" type="text" placeholder="find an island&hellip;" autocomplete="off" spellcheck="false" aria-label="Find an island">
-  <div class="sug" id="isug"></div>
-</div>
 
 <div id="cine"><div class="bar bt"></div><div class="bar bb"></div>
   <div id="cinecard"><div class="ck"></div><h1></h1><div class="cl"></div></div>
@@ -1410,8 +1410,9 @@ window.__renderScore=async function(seconds,bars){
 /* ---------- the flyover: a cinematic tour (?flyover) ---------- */
 const CINE=/[?&]flyover/.test(location.search);
 const CINE3D=CINE&&!/[?&]flyover2d/.test(location.search);
-const FLAT2D=/[?&]map2d/.test(location.search);
-const FREE3D=!CINE&&!FLAT2D;
+const WANT3D=/[?&]map3d/.test(location.search);
+const FREE3D=!CINE&&WANT3D;
+const FLAT2D=!CINE&&!WANT3D;
 if(CINE3D||FREE3D){
   if(CINE3D)document.body.classList.add('cine');
   const boot3=setInterval(()=>{
@@ -1429,12 +1430,12 @@ if(CINE3D||FREE3D){
     document.body.appendChild(s1);
   },200);
 }
-/* view toggle: 3D world by default, flat parchment on request */
+/* view toggle: flat parchment by default, 3D world on request */
 {
   const tog=document.createElement('a');
   tog.id='dimtoggle';
-  if(FLAT2D){tog.href=location.pathname;tog.innerHTML='&#9968; 3d world';}
-  else{tog.href='?map2d';tog.innerHTML='&#128506; flat map';}
+  if(FREE3D){tog.href=location.pathname;tog.innerHTML='&#128506; flat map';}
+  else{tog.href='?map3d';tog.innerHTML='&#9968; 3d world';}
   document.body.appendChild(tog);
 }
 if(CINE&&!CINE3D){
