@@ -1,5 +1,24 @@
 # Atlas of Frontier Ontologies
 
+> # ⚠️ TODO — finish deployment (≈2 minutes)
+>
+> Everything is built, tested, and committed locally. These three steps are the only things left, and they need your logins:
+>
+> 1. **Push to GitHub:**
+>    ```sh
+>    gh auth login
+>    gh repo create daily-ontological-map --private --source . --push
+>    ```
+> 2. **Add the API key** (used by the nightly research job):
+>    ```sh
+>    gh secret set ANTHROPIC_API_KEY
+>    ```
+> 3. **Deploy on Vercel:** vercel.com → Add New Project → import `daily-ontological-map`. No build settings — static site. The Git integration makes the nightly bot commit auto-deploy.
+>
+> Then test without waiting for midnight: GitHub repo → **Actions → "Nightly atlas survey" → Run workflow**.
+>
+> Once the Vercel site is live, disable the old claude.ai routine ("Daily Ontological Atlas survey" at claude.ai/code/routines) — or ask Claude to — so the GitHub pipeline is the single source of truth.
+
 An interactive, earth-style map of the tribes of X, laid out on two axes — west = accelerate, east = restrain, north = work within institutions, south = exit and build parallel systems. Three tiers: 7 mainstream continents, 19 frontier territories, 14 bespoke villages at deep zoom. Each territory's cities are the topics that tribe is discussing that day. Browse day by day with the ‹ › navigator (or arrow keys); every day is deep-linkable as `#YYYY-MM-DD`.
 
 ## Architecture
