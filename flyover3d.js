@@ -14,11 +14,29 @@
     beginEl = document.createElement('div');
     beginEl.id = 'cinebegin';
     beginEl.style.zIndex = 66;
+    beginEl.style.cursor = 'default';
+    const btn = 'display:inline-block;margin:6px 8px;padding:10px 22px;border:1px solid #c9a86a;border-radius:999px;color:#e8c877;font-size:14px;letter-spacing:.18em;cursor:pointer;background:#0a080566';
     beginEl.innerHTML = '<div class="b1" style="font-size:min(6vw,44px)">GAMEOFCOINS.XYZ</div>' +
-      '<div class="b2 pulse" id="cinesub">loading the realm&hellip;</div>';
+      '<div style="margin-top:6px">' +
+      '<span id="gocfilm" style="' + btn + '">&#9654; WATCH THE FILM</span>' +
+      '<span id="goclive" style="' + btn + ';opacity:.45">&#9876; FLY IT LIVE <span id="cinesub" class="pulse">&middot; loading&hellip;</span></span>' +
+      '</div>';
     document.body.appendChild(beginEl);
     beginSub = beginEl.querySelector('#cinesub');
-    beginEl.addEventListener('click', () => { if (sceneReady && wantsStart) { beginEl.remove(); wantsStart(); } });
+    beginEl.querySelector('#gocfilm').addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      const v = document.createElement('video');
+      v.src = 'flyover.mp4'; v.autoplay = true; v.playsInline = true;
+      v.style.cssText = 'position:fixed;inset:0;z-index:70;width:100vw;height:100vh;object-fit:contain;background:#000';
+      v.onended = () => { location.href = location.pathname; };
+      v.addEventListener('click', () => { v.paused ? v.play() : v.pause(); });
+      document.body.appendChild(v);
+      beginEl.remove();
+    });
+    beginEl.querySelector('#goclive').addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      if (sceneReady && wantsStart) { beginEl.remove(); wantsStart(); }
+    });
   }
 
   const { X0, Y0, X1, Y1 } = A.world;
@@ -211,10 +229,16 @@
   }
   const logo = document.createElement('div');
   logo.id = 'goclogo';
-  logo.style.cssText = 'position:fixed;inset:0;z-index:64;background:#0a0805;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;color:#e8c877;font-family:var(--serif);transition:opacity 2s ease;pointer-events:none';
-  logo.innerHTML = '<div style="font-size:min(9vw,96px);font-weight:600;letter-spacing:.22em;text-shadow:0 0 60px #e8c87744">GAME OF COINS</div>' +
-    '<div style="font-size:15px;letter-spacing:.5em;color:#c9a86a">GAMEOFCOINS.XYZ</div>';
+  logo.style.cssText = 'position:fixed;inset:0;z-index:64;background:radial-gradient(ellipse at center,#0a0805d9 30%,#0a0805f2 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:#e8c877;font-family:var(--serif);pointer-events:none';
+  logo.innerHTML = '<div style="font-size:13px;letter-spacing:.6em;color:#c9a86a">GAME OF COINS</div>' +
+    '<div style="height:1px;width:min(40vw,420px);background:linear-gradient(90deg,transparent,#c9a86a,transparent)"></div>' +
+    '<div style="font-size:min(7.5vw,84px);font-weight:600;letter-spacing:.12em;text-shadow:0 0 70px #e8c87766,0 4px 30px #000">gameofcoins.xyz</div>' +
+    '<div style="height:1px;width:min(40vw,420px);background:linear-gradient(90deg,transparent,#c9a86a,transparent)"></div>' +
+    '<div style="font-size:12px;letter-spacing:.42em;color:#c9a86a">THE CRYPTOTWITTER ONTOLOGY MAP</div>';
   document.body.appendChild(logo);
+  const endOv = document.createElement('div');
+  endOv.style.cssText = 'position:fixed;inset:0;z-index:59;background:#0a0805;opacity:0;pointer-events:none';
+  document.body.appendChild(endOv);
 
   // ---------- the tour (virtual-clock: renderAt(tt) is pure in tour-time) ----------
   function buildPath(towns) {
@@ -252,9 +276,9 @@
     const { curve, count } = buildPath(towns);
     const cloudBase = clouds.map(c => c.m.position.x);
 
-    const LOGO = 6, REVEAL = 9, PER = 11.5, OUTRO = 12;
+    const REVEAL = 9, PER = 11.5, OUTRO = 12;
     const TOUR = REVEAL + order.length * PER + OUTRO;
-    const TOTAL = LOGO + TOUR;
+    const TOTAL = TOUR;
     const segU = 1 / (count - 1);
     const uAt = (tt) => {
       if (tt <= REVEAL) return (tt / REVEAL) * segU;
@@ -268,12 +292,14 @@
     function setCardAlpha(a) { cardEl.style.opacity = String(Math.max(0, Math.min(1, a))); }
 
     function renderAt(t) {
-      const lt = t;                             // absolute timeline incl. logo
-      // logo
-      const la = lt < LOGO ? 1 : Math.max(0, 1 - (lt - LOGO) / 2);
+      const lt = t;
+      // title floats over the already-moving world, gone by ~4.5s
+      const la = lt < 2.6 ? 1 : Math.max(0, 1 - (lt - 2.6) / 1.9);
       logo.style.opacity = String(la);
       logo.style.display = la <= 0 ? 'none' : 'flex';
-      const tt = Math.max(0, Math.min(TOUR, lt - LOGO));
+      // final fade to black under the closing card
+      endOv.style.opacity = String(Math.max(0, Math.min(0.88, (lt - (TOUR - 2.6)) / 1.7)));
+      const tt = Math.max(0, Math.min(TOUR, lt));
       // camera
       const u = Math.max(0, Math.min(0.9999, uAt(tt)));
       const p = curve.getPointAt(u);
@@ -299,7 +325,7 @@
       }
       if (cardKey !== cardFor) {
         cardFor = cardKey;
-        if (cardKey === '__outro') card('BUILT WITH ♥ BY @OWOCKI', 'Game of Coins', 'gameofcoins.xyz · the cryptotwitter ontology map · resurveyed nightly');
+        if (cardKey === '__outro') card('GAME OF COINS', 'gameofcoins.xyz', 'the cryptotwitter ontology map · resurveyed nightly · built with ♥ by @owocki');
         else if (cardKey) { const sc = stopCard(cardKey); card(sc.kick, sc.title, sc.line); }
       }
       setCardAlpha(cardKey ? cardAlpha : 0);
@@ -334,8 +360,8 @@
     if (AUTO) { begin(false); return; }
     sceneReady = true;
     wantsStart = () => begin(true);
-    if (beginSub) { beginSub.classList.remove('pulse'); beginSub.textContent = 'tap to start'; }
-    if (beginEl) beginEl.style.cursor = 'pointer';
+    if (beginSub) { beginSub.classList.remove('pulse'); beginSub.textContent = ''; }
+    if (beginEl) { const b = beginEl.querySelector('#goclive'); if (b) b.style.opacity = '1'; }
   }
   addEventListener('resize', () => {
     cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix();
