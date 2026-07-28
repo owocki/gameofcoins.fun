@@ -1437,6 +1437,37 @@
      "src": "https://coinfomania.com/commissioner-hester-peirce-confirms-no-action-letter-for-depin-project/"
     }
    ]
+  },
+  "artists": {
+   "name": "the onchain artists",
+   "country": "Onchain artists",
+   "tldr": "the culture organizes in person; the chain keeps the receipts",
+   "ontology": "The art was always the point: provenance, patronage, and scenes that organize in person — galleries, residencies, city by city. The market is downstream of the culture, not the other way around.",
+   "figures": [
+    "@beeple",
+    "Snowfro",
+    "@zora"
+   ],
+   "discussing": [
+    {
+     "t": "ZORA · #677",
+     "d": "Zora — rank #677, $27M market cap, $0.0060.",
+     "x": "$ZORA",
+     "src": "https://www.coingecko.com/en/coins/zora"
+    },
+    {
+     "t": "AUDIO · #847",
+     "d": "Audius — rank #847, $18M market cap, $0.0126.",
+     "x": "$AUDIO",
+     "src": "https://www.coingecko.com/en/coins/audius"
+    },
+    {
+     "t": "RARE · #1137",
+     "d": "SuperRare — rank #1137, $10.0M market cap, $0.0121.",
+     "x": "$RARE",
+     "src": "https://www.coingecko.com/en/coins/superrare"
+    }
+   ]
   }
  },
  "paper": {

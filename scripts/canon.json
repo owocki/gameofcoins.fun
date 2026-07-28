@@ -229,5 +229,16 @@
    "@akashnet_",
    "@iotex_io"
   ]
+ },
+ "artists": {
+  "name": "the onchain artists",
+  "country": "Onchain artists",
+  "tldr": "the culture organizes in person; the chain keeps the receipts",
+  "ontology": "The art was always the point: provenance, patronage, and scenes that organize in person — galleries, residencies, city by city. The market is downstream of the culture, not the other way around.",
+  "figures": [
+   "@beeple",
+   "Snowfro",
+   "@zora"
+  ]
  }
 }
