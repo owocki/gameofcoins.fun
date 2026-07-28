@@ -30,8 +30,16 @@ CLUSTERS = {
     "bespoke niche": ["georgists", "girardians", "landian", "metamodern", "forecasters",
                       "cryonics", "pronatalists", "doomeroptimists", "remilia", "cozyweb",
                       "tradcaths", "wsb", "astrology", "ufo"],
+    "world civilizations and religions": ["islam", "china", "catholic", "india",
+                                          "pentecostal", "indigenous", "ocean"],
+    "folk internet and political currents": ["manifestation", "conspiracy", "hustle",
+                                             "manosphere", "witchtok", "socialist",
+                                             "postliberal", "refusal", "dacc", "liminal"],
 }
 BESPOKE = set(CLUSTERS["bespoke niche"])
+# The nihilist trench is never researched or steelmanned: it keeps an empty
+# topic list by design (a named hazard, not a participant).
+STATIC_EMPTY = {"nihilists"}
 
 PROMPT = """Today is {date}. You are researching what specific communities ("tribes") on X (Twitter) are discussing TODAY. Use web search extensively to find real, dated, verifiable events and discourse cycles — launches, papers, dramas, price moves, rulings, protests, viral posts.
 
@@ -149,6 +157,8 @@ def research_cluster(client: anthropic.Anthropic, name: str, ids: list, canon: d
 
 
 def validate_topics(tid: str, topics: list) -> list:
+    if tid in STATIC_EMPTY:
+        return []
     assert isinstance(topics, list) and 1 <= len(topics) <= 4, f"{tid}: bad topic list"
     clean = []
     for topic in topics[:3]:
@@ -168,7 +178,7 @@ def main() -> int:
     canon = load_canon()
     client = anthropic.Anthropic()
 
-    all_topics = {}
+    all_topics = {tid: [] for tid in STATIC_EMPTY}
     failures = []
     for name, ids in CLUSTERS.items():
         try:
@@ -181,7 +191,7 @@ def main() -> int:
     if failures:
         # Fall back to the previous day's topics for failed clusters only if
         # most clusters succeeded; otherwise abort so the site keeps yesterday.
-        if len(failures) > 2:
+        if len(failures) > 3:
             print(f"too many failed clusters ({failures}); aborting", file=sys.stderr)
             return 1
         index = json.loads((ROOT / "data" / "index.json").read_text())
