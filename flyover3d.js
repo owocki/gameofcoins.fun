@@ -656,6 +656,7 @@
       else { const c = new T.Mesh(new T.CylinderGeometry(2.0, 2.0, 0.6, 8), hatDark); c.position.y = 7.5; g.add(c); }
       // banners float above the rooflines, staggered so they never collide
       const label = makeLabel(handle);
+      label.scale.set(42, 10.5, 1);
       label.position.y = 21 + i * 3.4; g.add(label);
       const line = new T.Mesh(new T.CylinderGeometry(0.12, 0.12, label.position.y - 11.5, 4), leaderMat);
       line.renderOrder = 39;
@@ -1069,16 +1070,28 @@
         const h = Math.max(legMax(prev, cand), legMax(cand, c0));
         if (h < best - 25) { best = h; mid = cand; }  // detour only when clearly lower
       }
-      mid.y = Math.max(prev.y * 0.5 + 110, best + 130);
+      // zoom out, pan high, zoom back in: the transfer cruises well above
+      // the terrain ceiling so hills never loom into frame
+      mid.y = Math.max(prev.y * 0.6 + 160, best + 300);
       const Ro = tw.Rt * 3.0;    // orbit radius tuned to the narrow 9:16 horizontal FOV
       const eye = tw.base + 40 + tw.Rt * 0.8;        // crane height: gentle look-down
-      const dirn = i % 2 ? -1 : 1;                   // alternate orbit direction
       const a0 = Math.atan2((prev.z + CYW - tw.cap[1]) / 0.8, prev.x + CXW - tw.cap[0]);
+      // sweep toward whichever side of the ring has the lower terrain, so the
+      // crane never grinds along a neighboring mountainside
+      const ringH = (ang) => getH(tw.cap[0] + Math.cos(ang) * Ro, tw.cap[1] + Math.sin(ang) * Ro * 0.8);
+      let hPlus = 0, hMinus = 0;
+      for (let k = 1; k <= 6; k++) {
+        hPlus = Math.max(hPlus, ringH(a0 + k / 6 * 2.4));
+        hMinus = Math.max(hMinus, ringH(a0 - k / 6 * 2.4));
+      }
+      const dirn = hPlus <= hMinus ? 1 : -1;
       const S = 2.4 * dirn;                          // ~140° sweep
-      const pA = orb(tw, a0, Ro * 1.05, eye + 45);   // orbit entry, still descending
-      const p1 = orb(tw, a0 + S * 0.35, Ro * 0.92, eye);
-      const p2 = orb(tw, a0 + S * 0.7, Ro * 0.88, eye - 8);   // low point, closest pass
-      const pC = orb(tw, a0 + S, Ro * 1.15, eye + 55);         // rising exit
+      // every orbit waypoint clears its own local terrain, not just the town's
+      const lift = (p, want) => { p.y = Math.max(want, getH(p.x + CXW, p.z + CYW) + 70); return p; };
+      const pA = lift(orb(tw, a0, Ro * 1.05, 0), eye + 65);    // orbit entry, still descending
+      const p1 = lift(orb(tw, a0 + S * 0.35, Ro * 0.92, 0), eye);
+      const p2 = lift(orb(tw, a0 + S * 0.7, Ro * 0.88, 0), eye - 8);  // low point, closest pass
+      const pC = lift(orb(tw, a0 + S, Ro * 1.15, 0), eye + 95);       // rising exit
       pts.push(mid, pA, p1, p2, pC);
       prev = pC;
     });
