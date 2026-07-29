@@ -771,6 +771,12 @@
      "d": "Arbitrum — rank #98, $518M market cap, $0.0783.",
      "x": "$ARB",
      "src": "https://www.coingecko.com/en/coins/arbitrum"
+    },
+    {
+     "t": "OP · #158",
+     "d": "Optimism — rank #158, $204M market cap, $0.0891.",
+     "x": "$OP",
+     "src": "https://www.coingecko.com/en/coins/optimism"
     }
    ],
    "topics": [
@@ -1273,22 +1279,16 @@
    ],
    "discussing": [
     {
-     "t": "OP · #158",
-     "d": "Optimism — rank #158, $204M market cap, $0.0891.",
-     "x": "$OP",
-     "src": "https://www.coingecko.com/en/coins/optimism"
+     "t": "GTC · #1392",
+     "d": "Gitcoin — rank #1392, $7M market cap, $0.0764.",
+     "x": "$GTC",
+     "src": "https://www.coingecko.com/en/coins/gitcoin"
     },
     {
      "t": "CELO · #509",
      "d": "Celo — rank #509, $39M market cap, $0.0639.",
      "x": "$CELO",
      "src": "https://www.coingecko.com/en/coins/celo"
-    },
-    {
-     "t": "GTC · #1392",
-     "d": "Gitcoin — rank #1392, $7M market cap, $0.0764.",
-     "x": "$GTC",
-     "src": "https://www.coingecko.com/en/coins/gitcoin"
     },
     {
      "t": "GIV · #4752",

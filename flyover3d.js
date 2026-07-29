@@ -219,7 +219,7 @@
   const TRIBE_LOOK = {
     btcmaxis:       { walls: [0xe0b36a, 0xd9a24f, 0xc9963f, 0xb3823a], roof: 0x3a3630, keep: 0xf7931a, style: 'fort', name: 'The Vault of 21M' },
     ethereum:       { walls: [0xb7c3e8, 0x9fb0e0, 0x8a9cd8, 0xcdd6f0], roof: 0x4a5aa8, keep: 0x627eea, style: 'crystal', name: 'The Beacon Spire' },
-    base:           { walls: [0xd8e2f8, 0xc2d2f0, 0xaac0ea, 0xe8eefc], roof: 0x0052ff, keep: 0x0052ff, style: 'flat', name: 'The Onchain Gate' },
+    base:           { walls: [0xd8e2f8, 0xc2d2f0, 0xaac0ea, 0xe8eefc], roof: 0x0052ff, keep: 0x0052ff, style: 'flat', name: 'The Onchain Gate', coin: 'BASE' },
     brokerchains:   { walls: [0xe2ece4, 0xd0e0d4, 0xbcd4c2, 0xeef6f0], roof: 0x00c805, keep: 0x00b465, style: 'tower', name: 'The Brokerage' },
     trumpcoins:     { walls: [0xf2ead8, 0xeadcc4, 0xe0d0b0, 0xf8f2e4], roof: 0xa02828, keep: 0xd8b13a, style: 'fort', name: 'Mar-a-Chain' },
     predictionmarkets: { walls: [0xd0dce8, 0xc0d0e0, 0xb0c4d8, 0xe0e8f0], roof: 0x1652f0, keep: 0x2a8a3c, style: 'flat', name: 'The Odds Bazaar' },
@@ -620,7 +620,8 @@
     const tick = VERT.paperKick ? ''
       : (((d0 && (d0.x || d0.t)) || '').replace(/^\$/, '').split(/[\s·]/)[0] || '').toUpperCase();
     const m = A.PMETA[tw.id] || {};
-    const label = /^[A-Z0-9]{2,5}$/.test(tick) ? tick : (m.e || '?');
+    const lookCoin = (TRIBE_LOOK[tw.id] || {}).coin;   // chains without a token mint their own name
+    const label = lookCoin || (/^[A-Z0-9]{2,5}$/.test(tick) ? tick : (m.e || '?'));
     const cv = document.createElement('canvas'); cv.width = cv.height = 256;
     const ctx = cv.getContext('2d');
     const gr = ctx.createRadialGradient(128, 104, 26, 128, 128, 128);

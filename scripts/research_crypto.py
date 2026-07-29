@@ -34,7 +34,7 @@ TRIBE_OF = {
     'TRUMP': 'trumpcoins', 'WLFI': 'trumpcoins', 'USD1': 'trumpcoins',
     'BTC': 'btcmaxis', 'BCH': 'btcmaxis', 'LTC': 'btcmaxis',
     'ETH': 'ethereum',
-    'MNT': 'l2s', 'POL': 'l2s', 'ARB': 'l2s', 'OP': 'regens',
+    'MNT': 'l2s', 'POL': 'l2s', 'ARB': 'l2s', 'OP': 'l2s', 'GTC': 'regens',
     'SOL': 'solana', 'JUP': 'solana',
     'USDT': 'stablecoins', 'USDC': 'stablecoins', 'USDS': 'stablecoins', 'DAI': 'stablecoins',
     'USD1': 'stablecoins', 'USDE': 'stablecoins', 'USDG': 'stablecoins', 'PYUSD': 'stablecoins',
