@@ -19,7 +19,9 @@
     beginEl.style.zIndex = 66;
     beginEl.style.cursor = 'default';
     const btn = 'display:inline-block;margin:6px 8px;padding:10px 22px;border:1px solid #c9a86a;border-radius:999px;color:#e8c877;font-size:14px;letter-spacing:.18em;cursor:pointer;background:#0a080566';
+    const edition = (window.__vert && window.__vert.edition) || '';
     beginEl.innerHTML = '<div class="b1" style="font-size:min(8vw,44px)">GAMEOFCOINS.FUN</div>' +
+      (edition ? '<div style="margin-top:10px;font-size:15px;letter-spacing:.5em;text-indent:.5em;color:#c9a86a">' + edition + '</div>' : '') +
       '<div style="margin-top:6px">' +
       '<span id="gocfilm" style="' + btn + '">&#9654; WATCH THE FILM</span>' +
       '<span id="goclive" style="' + btn + ';opacity:.45">&#9876; FLY IT LIVE <span id="cinesub" class="pulse">&middot; loading&hellip;</span></span>' +
@@ -947,7 +949,7 @@
     // ---- the "back to the sky" chip ----
     const back = document.createElement('button');
     back.textContent = '\u2191 back to the sky';
-    back.style.cssText = 'position:fixed;top:14px;left:16px;z-index:46;display:none;' +
+    back.style.cssText = 'position:fixed;top:58px;left:16px;z-index:46;display:none;' +
       'background:#f3e9d2;border:1px solid #b7a173;border-radius:999px;padding:8px 16px;' +
       'font-family:var(--serif);font-size:13.5px;font-weight:600;color:#2c2417;cursor:pointer;' +
       'letter-spacing:.04em;box-shadow:0 2px 6px -2px #2c241766';

@@ -202,8 +202,14 @@ text{user-select:none;-webkit-user-select:none}
 #vmode select:hover{background:#f9f1de}
 #vmode select:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 @media (max-width:620px){#vmode{top:92px;right:10px}}
+#homelnk{position:fixed;top:14px;left:16px;z-index:44;background:#f3e9d2;border:1px solid #b7a173;
+  border-radius:999px;color:var(--ink);font-family:var(--serif);font-size:13px;font-weight:600;
+  letter-spacing:.05em;padding:7px 15px;text-decoration:none;box-shadow:0 2px 6px -2px #2c241766}
+#homelnk:hover{background:#f9f1de}
+#homelnk:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+@media (max-width:620px){#homelnk{top:8px;left:10px}}
 /* ---- flyover: cinematic mode ---- */
-body.cine #cart,body.cine #ctrl,body.cine #paper,body.cine #tt,body.cine .axis,body.cine #isearch,body.cine #vmode{display:none!important}
+body.cine #cart,body.cine #ctrl,body.cine #paper,body.cine #tt,body.cine .axis,body.cine #isearch,body.cine #vmode,body.cine #homelnk{display:none!important}
 #cine{position:fixed;inset:0;z-index:60;pointer-events:none;display:none}
 body.cine #cine{display:block}
 #cine .bar{position:fixed;left:0;right:0;height:11vh;background:#120e08;transition:opacity 1.5s ease}
@@ -283,6 +289,8 @@ body.v916 #cinecard .cl .tk{display:block;margin-bottom:2px;font-size:max(11px,c
     <div class="t4">built with &hearts; by <a href="https://x.com/owocki" target="_blank" rel="noopener">@owocki</a> &middot; <a href="https://t.me/+_TMrvEHi8ew1MjFh" target="_blank" rel="noopener">telegram</a> &middot; <a href="https://github.com/owocki/gameofcoins.fun" target="_blank" rel="noopener">github</a> &middot; <a href="https://gameofcoins.fun" target="_blank" rel="noopener">gameofcoins.fun</a></div>
   </div>
 </div>
+
+<a id="homelnk" href="/">&larr; all maps</a>
 
 <div id="ctrl">
   <button id="z-in" aria-label="Zoom in">+</button>
@@ -475,6 +483,7 @@ const BESPOKE=[
 
 /* per-vertical runtime config (read by the cine paths + flyover3d.js) */
 window.__vert={
+ edition:'THE MACRO EDITION',
  name:'macro',
  MAINLAND:{rx:3000,ry:1650,rot:-0.55,seed:57,rug:.22},
  weight:{islam:2600000000000,china:2131999999999,catholic:1748239999999,india:1433556799999,pentecostal:1175516575999,christian:963923592319,indigenous:790417345702,manifestation:648142223475,conspiracy:531476623250,sports:435810831065,stan:357364881473,finance:293039202808,hustle:240292146302,maga:197039559968,progleft:161572439173,maha:132489400122,manosphere:108641308100,witchtok:89085872642,ufo:73050415566,socialist:59901340764,postliberal:49119099427,nondual:40277661530,longevity:33027682454,wsb:27082699612,btc:22207813682,progress:18210407219,degrowth:14932533920,refusal:12244677814,indie:10040635807,eth:8233321362,regens:6751323517,defi:5536085284,degens:4539589933,pronatalists:3722463745,doomers:3052420270,rationalists:2502984622,ea:2052447390,eacc:1683006859,tpot:1380065625,nrx:1131653812,netstate:927956126,hardtech:760924023,tradcaths:623957699,astrology:511645313,dacc:419549157,liminal:344030308,establishment:2000000000,georgists:2000000000,girardians:2000000000,landian:2000000000,metamodern:2000000000,forecasters:2000000000,cryonics:2000000000,doomeroptimists:2000000000,remilia:2000000000,cozyweb:2000000000},

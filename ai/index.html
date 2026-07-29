@@ -202,8 +202,14 @@ text{user-select:none;-webkit-user-select:none}
 #vmode select:hover{background:#f9f1de}
 #vmode select:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 @media (max-width:620px){#vmode{top:92px;right:10px}}
+#homelnk{position:fixed;top:14px;left:16px;z-index:44;background:#f3e9d2;border:1px solid #b7a173;
+  border-radius:999px;color:var(--ink);font-family:var(--serif);font-size:13px;font-weight:600;
+  letter-spacing:.05em;padding:7px 15px;text-decoration:none;box-shadow:0 2px 6px -2px #2c241766}
+#homelnk:hover{background:#f9f1de}
+#homelnk:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+@media (max-width:620px){#homelnk{top:8px;left:10px}}
 /* ---- flyover: cinematic mode ---- */
-body.cine #cart,body.cine #ctrl,body.cine #paper,body.cine #tt,body.cine .axis,body.cine #isearch,body.cine #vmode{display:none!important}
+body.cine #cart,body.cine #ctrl,body.cine #paper,body.cine #tt,body.cine .axis,body.cine #isearch,body.cine #vmode,body.cine #homelnk{display:none!important}
 #cine{position:fixed;inset:0;z-index:60;pointer-events:none;display:none}
 body.cine #cine{display:block}
 #cine .bar{position:fixed;left:0;right:0;height:11vh;background:#120e08;transition:opacity 1.5s ease}
@@ -283,6 +289,8 @@ body.v916 #cinecard .cl .tk{display:block;margin-bottom:2px;font-size:max(11px,c
     <div class="t4">built with &hearts; by <a href="https://x.com/owocki" target="_blank" rel="noopener">@owocki</a> &middot; <a href="https://t.me/+_TMrvEHi8ew1MjFh" target="_blank" rel="noopener">telegram</a> &middot; <a href="https://github.com/owocki/gameofcoins.fun" target="_blank" rel="noopener">github</a> &middot; <a href="https://gameofcoins.fun" target="_blank" rel="noopener">gameofcoins.fun</a></div>
   </div>
 </div>
+
+<a id="homelnk" href="/">&larr; all maps</a>
 
 <div id="ctrl">
   <button id="z-in" aria-label="Zoom in">+</button>
@@ -425,6 +433,7 @@ const BESPOKE=[];
 
 /* per-vertical runtime config (read by the cine paths + flyover3d.js) */
 window.__vert={
+ edition:'THE AI EDITION',
  name:'ai',
  POP:['openai','anthropic','deepmind','xai','metallama','mistral','qwen','deepseek','kimi'],
  NICHE:['localllama','vibecoding','agents','venice','genmedia','robotics','aisafety','eacc'],

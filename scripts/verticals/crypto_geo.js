@@ -60,6 +60,7 @@ const BESPOKE=[
 
 /* per-vertical runtime config (read by the cine paths + flyover3d.js) */
 window.__vert={
+ edition:'THE CRYPTO EDITION',
  name:'crypto',
  POP:['btcmaxis','stablecoins','ethereum','base','exchangetokens','xrparmy','rwa','brokerchains','trumpcoins','solana'],
  NICHE:['predictionmarkets','linkmarines','regens','memedaos','desci','airdropfarmers','mevsearchers','artists','ghostchains'],

@@ -53,6 +53,7 @@ const BESPOKE=[];
 
 /* per-vertical runtime config (read by the cine paths + flyover3d.js) */
 window.__vert={
+ edition:'THE AI EDITION',
  name:'ai',
  POP:['openai','anthropic','deepmind','xai','metallama','mistral','qwen','deepseek','kimi'],
  NICHE:['localllama','vibecoding','agents','venice','genmedia','robotics','aisafety','eacc'],
