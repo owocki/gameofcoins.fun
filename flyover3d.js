@@ -49,8 +49,10 @@
 
   const { X0, Y0, X1, Y1 } = A.world;
   const CXW = (X0 + X1) / 2, CYW = (Y0 + Y1) / 2;
-  const POP = ['btcmaxis', 'stablecoins', 'ethereum', 'base', 'exchangetokens', 'xrparmy', 'rwa', 'brokerchains', 'solana'];
-  const NICHE = ['linkmarines', 'regens', 'memedaos', 'desci', 'airdropfarmers', 'mevsearchers', 'artists', 'ghostchains'];
+  const VERT = window.__vert || {};
+  const POP = VERT.POP || ['btcmaxis', 'stablecoins', 'ethereum', 'base', 'exchangetokens', 'xrparmy', 'rwa', 'brokerchains', 'solana'];
+  const NICHE = VERT.NICHE || ['linkmarines', 'regens', 'memedaos', 'desci', 'airdropfarmers', 'mevsearchers', 'artists', 'ghostchains'];
+  const SUBTITLE = VERT.sub || 'THE CRYPTOTWITTER MAP';
 
   // ---------- height field (must match what the towns sit on) ----------
   const SLc = [1025, 900], SLrx = 2700, SLry = 1800;
@@ -224,6 +226,7 @@
     artists:        { walls: [0xe8c8d8, 0xc8d8e8, 0xd8e8c8, 0xe8e0c0], roof: 0x7d5aa0, keep: 0xc0563e, style: 'cone', name: 'The Gallery' },
     ghostchains:    { walls: [0x9a948a, 0x8a857c, 0x7a756d, 0xaaa49a], roof: 0x6a655e, keep: 0x8a857c, style: 'ruin', name: 'The Mausoleum' }
   };
+  Object.assign(TRIBE_LOOK, VERT.LOOK || {});   // vertical-specific architecture
   function rng32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; } }
   function buildTown(id) {
     const c = A.countries.find(x => x.id === id);
@@ -834,9 +837,14 @@
     const c = A.countries.find(x => x.id === id);
     const tb = c.tribe;
     // kicker: market cap, then the coins that live here
-    const coins = (tb.discussing || []).map(tickOf).filter(s => /^[A-Z0-9]{2,6}$/.test(s)).slice(0, 4);
+    let coins = (tb.discussing || []).map(d0 => {
+      const s = ((d0.t || '').split('·')[0]).trim();
+      return /^[A-Za-z0-9$]/.test(s) ? s.replace(/^\$/, '').toUpperCase() : '';
+    }).filter(Boolean);
+    while (coins.length > 1 && coins.join(' · ').length > 30) coins.pop();
     const mc = A.mcap(tb);
     const kick = coins.length && mc > 1e6 ? fmtCap(mc) + ' · ' + coins.join(' · ')
+               : coins.length ? ((A.PMETA[id] || {}).e || '') + '  ' + coins.join(' · ')
                : ((A.PMETA[id] || {}).e || '') + '  the new frontier';
     // trending block: dated header + up to five of the day's narratives
     const tops = (tb.topics || []).slice(0, 5).map(tp => tp.t.slice(0, 48));
@@ -853,7 +861,7 @@
     '<div style="height:1px;width:calc(var(--cw,100vw)*0.55);background:linear-gradient(90deg,transparent,#c9a86a,transparent)"></div>' +
     '<div style="font-size:calc(var(--cw,100vw)*0.105);font-weight:600;letter-spacing:.06em;text-shadow:0 0 70px #e8c87766,0 4px 30px #000">gameofcoins.xyz</div>' +
     '<div style="height:1px;width:calc(var(--cw,100vw)*0.55);background:linear-gradient(90deg,transparent,#c9a86a,transparent)"></div>' +
-    '<div style="font-size:max(11px,calc(var(--cw,100vw)*0.028));letter-spacing:.42em;color:#c9a86a">THE CRYPTOTWITTER MAP</div>';
+    '<div style="font-size:max(11px,calc(var(--cw,100vw)*0.028));letter-spacing:.42em;color:#c9a86a">' + SUBTITLE + '</div>';
   document.body.appendChild(logo);
   if (FREE) logo.style.display = 'none';
   const endOv = document.createElement('div');
@@ -1237,7 +1245,7 @@
       }
       if (cardKey !== cardFor) {
         cardFor = cardKey;
-        if (cardKey === '__outro') card('GAME OF COINS', 'gameofcoins.xyz', A.esc('the cryptotwitter map · resurveyed nightly'));
+        if (cardKey === '__outro') card('GAME OF COINS', 'gameofcoins.xyz', A.esc(SUBTITLE.toLowerCase() + ' · resurveyed nightly'));
         else if (cardKey) { const sc = stopCard(cardKey); card(sc.kick, sc.title, sc.line); }
       }
       setCardAlpha(cardKey ? cardAlpha : 0);

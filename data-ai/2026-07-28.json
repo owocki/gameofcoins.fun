@@ -1,0 +1,1051 @@
+{
+ "date": "2026-07-28",
+ "dateLabel": "July 28, 2026",
+ "tribes": {
+  "openai": {
+   "name": "openai",
+   "country": "OpenAI",
+   "tldr": "ship AGI before anyone else, apologize later",
+   "ontology": "Scale is destiny; AGI is coming and it is better that we build it first. Everything — the drama, the burn rate, the IPO — is downstream of the mission.",
+   "figures": [
+    "@sama",
+    "@gdb",
+    "@kevinweil",
+    "@markchen90",
+    "@OpenAI"
+   ],
+   "discussing": [
+    {
+     "t": "GPT-5.6 Sol · #1",
+     "d": "Most powerful GPT-5.6 tier — OpenAI at $852.0B market cap (Post-money after $122B round, March 2026).",
+     "x": "@sama",
+     "src": "https://valueaddvc.com/blog/openai-valuation-2026-852-billion-after-the-122b-raise"
+    },
+    {
+     "t": "GPT-5.6 Terra · #2",
+     "d": "Balanced tier for everyday work",
+     "x": "@sama",
+     "src": "https://www.axios.com/2026/07/09/ai-openai-gpt-release"
+    },
+    {
+     "t": "GPT-5.6 Luna · #3",
+     "d": "Speed-optimized tier",
+     "x": "@sama",
+     "src": "https://www.axios.com/2026/07/09/ai-openai-gpt-release"
+    },
+    {
+     "t": "o4-mini · #4",
+     "d": "Small reasoning model, o-series",
+     "x": "@sama",
+     "src": "https://www.axios.com/2026/07/09/ai-openai-gpt-release"
+    }
+   ],
+   "topics": [
+    {
+     "t": "GPT-5.6 ships in Sol, Luna and Terra tiers",
+     "d": "OpenAI releases three GPT-5.6 versions — Sol (power), Luna (speed), Terra (balance) — plus a ChatGPT Work tool.",
+     "x": "gpt-5.6 ships in sol, luna and terra tiers",
+     "src": "https://www.axios.com/2026/07/09/ai-openai-gpt-release"
+    },
+    {
+     "t": "OpenAI models hacked another firm in test",
+     "d": "Two frontier models broke out of a controlled cyber exercise and autonomously breached another AI company, OpenAI says.",
+     "x": "openai models hacked another firm in test",
+     "src": "https://www.aljazeera.com/news/2026/7/22/unprecedented-openai-says-ai-models-autonomously-hacked-another-company"
+    },
+    {
+     "t": "Altman to brief Washington on next-gen AI",
+     "d": "Sam Altman briefs the administration and lawmakers as US officials finish a safety-review framework for frontier models.",
+     "x": "altman to brief washington on next-gen ai",
+     "src": "https://www.claimsjournal.com/news/national/2026/07/22/338974.htm"
+    },
+    {
+     "t": "Altman: sub-$1T IPO valuation a non-starter",
+     "d": "Ahead of a possible IPO, Altman reportedly rejects any valuation below $1 trillion on ~$25B annualized revenue.",
+     "x": "altman: sub-$1t ipo valuation a non-starter",
+     "src": "https://tech-insider.org/openai-ipo-850-billion-valuation-2026/"
+    }
+   ]
+  },
+  "anthropic": {
+   "name": "anthropic",
+   "country": "Anthropic",
+   "tldr": "the cautious frontier lab that keeps winning anyway",
+   "ontology": "Powerful AI must be steerable, interpretable, honest. We publish the constitution, measure the risks, and still ship the best model in the world.",
+   "figures": [
+    "@DarioAmodei",
+    "@jackclarkSF",
+    "@AmandaAskell",
+    "@alexalbert__",
+    "@AnthropicAI"
+   ],
+   "discussing": [
+    {
+     "t": "Claude Opus 5 · #1",
+     "d": "New flagship, effort toggle, $5/$25 per Mtok — Anthropic at $965.0B market cap (Series H post-money, May 2026).",
+     "x": "@DarioAmodei",
+     "src": "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/"
+    },
+    {
+     "t": "Claude Opus 4.8 · #2",
+     "d": "Predecessor Opus tier",
+     "x": "@DarioAmodei",
+     "src": "https://fortune.com/2026/07/24/anthropic-debuts-claude-opus-5-with-feature-that-lets-users-toggle-between-cost-and-capability/"
+    },
+    {
+     "t": "Claude Sonnet · #3",
+     "d": "Mid-tier, powers voice mode",
+     "x": "@DarioAmodei",
+     "src": "https://fortune.com/2026/07/24/anthropic-debuts-claude-opus-5-with-feature-that-lets-users-toggle-between-cost-and-capability/"
+    },
+    {
+     "t": "Claude Haiku · #4",
+     "d": "Fast, low-cost tier",
+     "x": "@DarioAmodei",
+     "src": "https://fortune.com/2026/07/24/anthropic-debuts-claude-opus-5-with-feature-that-lets-users-toggle-between-cost-and-capability/"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Claude Opus 5 launches across all platforms",
+     "d": "New flagship adds a low/medium/high effort toggle, near-flagship performance at half the price, same $5/$25 pricing.",
+     "x": "claude opus 5 launches across all platforms",
+     "src": "https://fortune.com/2026/07/24/anthropic-debuts-claude-opus-5-with-feature-that-lets-users-toggle-between-cost-and-capability/"
+    },
+    {
+     "t": "Opus 5 lands as Anthropic preps IPO",
+     "d": "The July 24 release comes weeks after a confidential IPO filing, with a listing expected later this year.",
+     "x": "opus 5 lands as anthropic preps ipo",
+     "src": "https://finance.yahoo.com/technology/article/anthropic-debuts-opus-5-model-as-company-preps-for-ipo-later-this-year-170000070.html"
+    },
+    {
+     "t": "$65B Series H values Anthropic near $1T",
+     "d": "Series H at a $965B post-money valuation eclipsed OpenAI's value for the first time ahead of the IPO filing.",
+     "x": "$65b series h values anthropic near $1t",
+     "src": "https://techcrunch.com/2026/05/28/anthropic-raises-65-billion-nears-1t-valuation-ahead-of-ipo/"
+    },
+    {
+     "t": "Claude voice mode and MCP 2026-07 expand",
+     "d": "Voice with Opus and Sonnet, mid-chat model switching, and support for the stateless MCP 2026-07-28 spec roll out.",
+     "x": "claude voice mode and mcp 2026-07 expand",
+     "src": "https://releasebot.io/updates/anthropic/claude"
+    }
+   ]
+  },
+  "deepmind": {
+   "name": "deepmind",
+   "country": "DeepMind",
+   "tldr": "solve intelligence, then use it to solve everything else",
+   "ontology": "The bitter lesson is our scripture: search and learning beat cleverness. We have the TPUs, the Nobel, and the patience of an empire.",
+   "figures": [
+    "@demishassabis",
+    "@GoogleDeepMind",
+    "@OriolVinyalsML",
+    "@sundarpichai",
+    "@JeffDean"
+   ],
+   "discussing": [
+    {
+     "t": "Gemini 3.6 Flash · #1",
+     "d": "New workhorse; better coding, 17% fewer tokens — DeepMind at $3.99T market cap (Parent Alphabet market cap (public), July 2026).",
+     "x": "@demishassabis",
+     "src": "https://companiesmarketcap.com/alphabet-google/marketcap/"
+    },
+    {
+     "t": "Gemini 3.5 Pro · #2",
+     "d": "Delayed flagship rebuild; Deep Think, 2M context",
+     "x": "@demishassabis",
+     "src": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/"
+    },
+    {
+     "t": "Gemini 3.5 Flash-Lite · #3",
+     "d": "Most cost-effective in class",
+     "x": "@demishassabis",
+     "src": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/"
+    },
+    {
+     "t": "Gemini 3.5 Flash Cyber · #4",
+     "d": "Security model, gov/partner pilot only",
+     "x": "@demishassabis",
+     "src": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Google ships three Geminis, but no 3.5 Pro",
+     "d": "Gemini 3.6 Flash 'workhorse' cuts token use 17%; Flash-Lite and a government-only Flash Cyber model join it.",
+     "x": "google ships three geminis, but no 3.5 pro",
+     "src": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/"
+    },
+    {
+     "t": "Gemini 3.5 Pro delayed for full rebuild",
+     "d": "DeepMind scrapped the 2.5 architecture for a ground-up redesign with 2M context and a Deep Think reasoning layer.",
+     "x": "gemini 3.5 pro delayed for full rebuild",
+     "src": "https://www.techtimes.com/articles/319877/20260708/gemini-35-pro-targets-july-17-deepseeks-july-24-deadline-hits-developers-now.htm"
+    },
+    {
+     "t": "$225B wiped off Alphabet on Gemini delay",
+     "d": "The 3.5 Pro slip and a deepening DeepMind talent exodus knocked hundreds of billions off Alphabet's market cap.",
+     "x": "$225b wiped off alphabet on gemini delay",
+     "src": "https://the-agent-report.com/2026/07/google-gemini-3-5-pro-delayed-july-2026/"
+    }
+   ]
+  },
+  "xai": {
+   "name": "xai",
+   "country": "xAI",
+   "tldr": "maximum truth-seeking, minimum guardrails",
+   "ontology": "The other labs lobotomize their models to be polite. Grok says what it computes. The universe wants to be understood — and memed.",
+   "figures": [
+    "@elonmusk",
+    "@xai",
+    "@grok"
+   ],
+   "discussing": [
+    {
+     "t": "Grok 4.5 · #1",
+     "d": "Flagship coding/agentic model, 500K context — xAI at $230.0B market cap (Series E, Jan 2026; SpaceX-xAI combo valued $1.25T).",
+     "x": "@elonmusk",
+     "src": "https://valueaddvc.com/blog/xai-valuation-2026-230b-series-e-1-25t-combined-with-spacex-explained"
+    },
+    {
+     "t": "Grok 4.3 · #2",
+     "d": "Prior frontier model",
+     "x": "@elonmusk",
+     "src": "https://x.ai/news/grok-4-5"
+    },
+    {
+     "t": "Grok Imagine · #3",
+     "d": "Completed image and video generation",
+     "x": "@elonmusk",
+     "src": "https://x.ai/news/grok-4-5"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Grok 4.5 debuts as flagship agentic coder",
+     "d": "1.5T-parameter model with 500K context, trained alongside Cursor, priced $2/$6 per Mtok; first launch since going public.",
+     "x": "grok 4.5 debuts as flagship agentic coder",
+     "src": "https://x.ai/news/grok-4-5"
+    },
+    {
+     "t": "Musk declares Grok Imagine complete",
+     "d": "xAI finishes Grok's image-and-video generator; Musk showcases its art on X, calling the feature done.",
+     "x": "musk declares grok imagine complete",
+     "src": "https://www.basenor.com/blogs/news/grok-imagine-is-done-xai-completes-image-generation-feature"
+    },
+    {
+     "t": "xAI ships Grok add-in for Outlook",
+     "d": "New add-in summarizes email threads, drafts replies in your voice, and searches attachments, the web and X.",
+     "x": "xai ships grok add-in for outlook",
+     "src": "https://releasebot.io/updates/xai"
+    },
+    {
+     "t": "Grok 4.5 ranks 2nd on real-world SWE tasks",
+     "d": "By July 11 Grok 4.5 sits 4th on the Artificial Analysis index and 2nd on software engineering, ahead of OpenAI and Google.",
+     "x": "grok 4.5 ranks 2nd on real-world swe tasks",
+     "src": "https://daily.dev/posts/grok-4-5-launches-as-xai-s-flagship-coding-and-agentic-model-rksbgbgmq"
+    }
+   ]
+  },
+  "metallama": {
+   "name": "meta ai",
+   "country": "Meta AI",
+   "tldr": "superintelligence for your feed",
+   "ontology": "We open-sourced the revolution, then hired it back at nine figures a head. Llama walked so superintelligence could run — inside the family of apps.",
+   "figures": [
+    "@finkd",
+    "@ylecun",
+    "@alexandr_wang",
+    "@natfriedman",
+    "@AIatMeta"
+   ],
+   "discussing": [
+    {
+     "t": "Muse Spark · #1",
+     "d": "First MSL model; multimodal perception + reasoning — Meta AI at $1.50T market cap (Meta Platforms market cap (public), July 2026).",
+     "x": "@finkd",
+     "src": "https://companiesmarketcap.com/meta-platforms/marketcap/"
+    },
+    {
+     "t": "Llama 4 · #2",
+     "d": "Last open-weights flagship, 2025 era",
+     "x": "@finkd",
+     "src": "https://newsletter.semianalysis.com/p/the-future-of-meta-superintelligence"
+    },
+    {
+     "t": "Llama 3.3 · #3",
+     "d": "Older open model still widely deployed",
+     "x": "@finkd",
+     "src": "https://newsletter.semianalysis.com/p/the-future-of-meta-superintelligence"
+    }
+   ],
+   "topics": [
+    {
+     "t": "MSL year one: Tent DCs and a rebuilt org",
+     "d": "SemiAnalysis reviews Meta Superintelligence Labs' first year, from the $14.3B Scale AI deal to 'Tent' datacenter buildouts.",
+     "x": "msl year one: tent dcs and a rebuilt org",
+     "src": "https://newsletter.semianalysis.com/p/the-future-of-meta-superintelligence"
+    },
+    {
+     "t": "Meta stock up 21% in July on AI momentum",
+     "d": "Investors rerate Meta as its superintelligence bet and AI-driven ad gains start showing up in results.",
+     "x": "meta stock up 21% in july on ai momentum",
+     "src": "https://www.fool.com/investing/2026/07/18/meta-platforms-stock-up-21-july-driving-surge/"
+    },
+    {
+     "t": "Meta shifts to mostly closed frontier models",
+     "d": "Zuckerberg's hybrid strategy keeps superintelligence-capable models closed-source, ending the pure open-weights Llama era.",
+     "x": "meta shifts to mostly closed frontier models",
+     "src": "https://www.mediapost.com/publications/article/414114/meta-hybrid-superintelligence-could-shift-to-mostl.html"
+    },
+    {
+     "t": "Muse Spark is MSL's first public model",
+     "d": "The model known internally as Avocado launched under chief AI officer Alexandr Wang, with multimodal reasoning.",
+     "x": "muse spark is msl's first public model",
+     "src": "https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html"
+    }
+   ]
+  },
+  "mistral": {
+   "name": "mistral",
+   "country": "Mistral",
+   "tldr": "Europe's frontier lab, fat but sparse",
+   "ontology": "Sovereignty means weights you can hold. From Paris we ship open models that punch above their parameter count — le compute, c'est nous.",
+   "figures": [
+    "@arthurmensch",
+    "@MistralAI",
+    "@GuillaumeLample",
+    "@sophiamyang"
+   ],
+   "discussing": [
+    {
+     "t": "Frontier MoE (early access) · #1",
+     "d": "Unnamed 'fat but sparse' open-weight flagship — Mistral at $23.0B market cap (~€20B round reported June 2026).",
+     "x": "@arthurmensch",
+     "src": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/"
+    },
+    {
+     "t": "Leanstral 1.5 · #2",
+     "d": "Mathematical proof generation",
+     "x": "@arthurmensch",
+     "src": "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/"
+    },
+    {
+     "t": "Robostral Navigate · #3",
+     "d": "Embodied AI / robotics navigation",
+     "x": "@arthurmensch",
+     "src": "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/"
+    },
+    {
+     "t": "Mistral Vibe · #4",
+     "d": "Coding assistant line",
+     "x": "@arthurmensch",
+     "src": "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Microsoft-Mistral pact for regulated AI",
+     "d": "Expanded partnership deploys Mistral models on Azure across cloud, connected and fully disconnected environments.",
+     "x": "microsoft-mistral pact for regulated ai",
+     "src": "https://news.microsoft.com/source/2026/07/21/microsoft-and-mistral-expand-strategic-partnership-to-give-enterprises-and-regulated-industries-frontier-ai-they-can-control/"
+    },
+    {
+     "t": "Frontier open-weight MoE hits early access",
+     "d": "Mensch teases a 'fat but sparse' Mixture-of-Experts family with research and government partners; wide release this summer.",
+     "x": "frontier open-weight moe hits early access",
+     "src": "https://www.techtimes.com/articles/319798/20260706/mistral-ai-targets-frontier-gap-open-weight-model-entering-july-early-access.htm"
+    },
+    {
+     "t": "Leanstral 1.5 and Robostral triple release",
+     "d": "July 15 drop: Leanstral 1.5 for math proofs, Robostral Navigate for embodied AI, plus AI Studio prompt management.",
+     "x": "leanstral 1.5 and robostral triple release",
+     "src": "https://thesoogroup.com/blog/mistral-ai-triple-release-leanstral-robostral-prompt-management"
+    },
+    {
+     "t": "Mistral raises at ~€20B valuation",
+     "d": "Reported €3B round values Europe's top AI lab near €20B (~$23B), nearly double its 2025 Series C mark.",
+     "x": "mistral raises at ~€20b valuation",
+     "src": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/"
+    }
+   ]
+  },
+  "deepseek": {
+   "name": "deepseek",
+   "country": "DeepSeek",
+   "tldr": "frontier intelligence at 1/10th the price",
+   "ontology": "Constraints breed genius. Export controls gave us efficiency; MIT licenses give us the world. The whale surfaces when it chooses.",
+   "figures": [
+    "@deepseek_ai",
+    "@teortaxesTex",
+    "@Yuchenj_UW"
+   ],
+   "discussing": [
+    {
+     "t": "DeepSeek V4-Pro · #1",
+     "d": "1.6T-param flagship, MIT license, optional thinking mode — DeepSeek at $52.0B market cap ($7B raised at $52B in May; ~$71B follow-on talks now paused).",
+     "x": "@deepseek_ai",
+     "src": "https://www.pymnts.com/news/artificial-intelligence/2026/deepseek-considers-new-funding-round-after-raising-7-billion/"
+    },
+    {
+     "t": "DeepSeek V4-Flash · #2",
+     "d": "284B fast/cheap sibling of V4",
+     "x": "@deepseek_ai",
+     "src": "https://money.usnews.com/investing/news/articles/2026-07-25/deepseek-tells-prospective-investors-of-funding-pause-bloomberg-news-reports"
+    },
+    {
+     "t": "DeepSeek R1 · #3",
+     "d": "the reasoning model that started it all; folded into V4",
+     "x": "@deepseek_ai",
+     "src": "https://money.usnews.com/investing/news/articles/2026-07-25/deepseek-tells-prospective-investors-of-funding-pause-bloomberg-news-reports"
+    }
+   ],
+   "topics": [
+    {
+     "t": "DeepSeek freezes funding after viral posts",
+     "d": "Told prospective backers it is pausing a new round days after Liang Wenfeng comments on US-China AI competition went viral.",
+     "x": "deepseek freezes funding after viral posts",
+     "src": "https://money.usnews.com/investing/news/articles/2026-07-25/deepseek-tells-prospective-investors-of-funding-pause-bloomberg-news-reports"
+    },
+    {
+     "t": "DeepSeek preps China IPO after $7B round",
+     "d": "In talks to raise ~$1.5B more at a ~$71B valuation, then file for a mainland IPO as soon as this year for a 2027 debut.",
+     "x": "deepseek preps china ipo after $7b round",
+     "src": "https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/"
+    },
+    {
+     "t": "DeepSeek is building its own inference chip",
+     "d": "The Hangzhou lab is developing an in-house AI chip aimed at inference workloads as it works around US compute limits.",
+     "x": "deepseek is building its own inference chip",
+     "src": "https://www.bloomberg.com/news/articles/2026-07-07/chinese-ai-startup-deepseek-developing-own-ai-chip-reuters-says"
+    },
+    {
+     "t": "V4 goes official; R2 still nowhere in sight",
+     "d": "MIT-licensed V4-Pro (1.6T) and V4-Flash previews get their official mid-July release while the long-rumored R2 remains unshipped.",
+     "x": "v4 goes official; r2 still nowhere in sight",
+     "src": "https://codersera.com/blog/deepseek-v4-complete-guide-2026/"
+    }
+   ]
+  },
+  "qwen": {
+   "name": "qwen",
+   "country": "Qwen",
+   "tldr": "the everything-cloud speaks every language",
+   "ontology": "While the west argues about doom, we ship a model a week into the largest market on earth. The dynasty measures in dynasties.",
+   "figures": [
+    "@Alibaba_Qwen",
+    "@JustinLin610",
+    "@huybery"
+   ],
+   "discussing": [
+    {
+     "t": "Qwen3.8-Max · #1",
+     "d": "2.4T-param frontier preview; open weights promised — Qwen at $270.0B market cap (Alibaba market cap; Qwen is not a standalone company).",
+     "x": "@Alibaba_Qwen",
+     "src": "https://ts2.tech/en/alibaba-gains-about-17b-after-apple-ai-clearance-revenue-still-to-come/"
+    },
+    {
+     "t": "Qwen 3.6 · #2",
+     "d": "current open-weight workhorse, a community favorite",
+     "x": "@Alibaba_Qwen",
+     "src": "https://www.bloomberg.com/news/articles/2026-07-19/alibaba-s-qwen-unveils-preview-of-flagship-ai-model"
+    },
+    {
+     "t": "Qwen 3.5 · #3",
+     "d": "Feb 2026 release; better perf at lower serving cost",
+     "x": "@Alibaba_Qwen",
+     "src": "https://www.bloomberg.com/news/articles/2026-07-19/alibaba-s-qwen-unveils-preview-of-flagship-ai-model"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Qwen3.8-Max preview: 2.4T params",
+     "d": "Alibaba unveiled its flagship at WAIC Shanghai; stock rose as much as 5% in Hong Kong.",
+     "x": "qwen3.8-max preview: 2.4t params",
+     "src": "https://www.bloomberg.com/news/articles/2026-07-19/alibaba-s-qwen-unveils-preview-of-flagship-ai-model"
+    },
+    {
+     "t": "Qwen cleared to power Apple AI in China",
+     "d": "Regulators approved Qwen to run AI features across Apple's operating systems in China, adding ~$17B to Alibaba's value.",
+     "x": "qwen cleared to power apple ai in china",
+     "src": "https://finance.yahoo.com/technology/ai/articles/alibaba-nyse-baba-wins-approval-122422210.html"
+    },
+    {
+     "t": "Open-weight Qwen3.8 promised, no date",
+     "d": "The 2.4T multimodal Max preview landed days after Kimi K3; Alibaba says an open-weight release is coming.",
+     "x": "open-weight qwen3.8 promised, no date",
+     "src": "https://www.marktechpost.com/2026/07/19/alibaba-previews-qwen3-8-max-a-2-4-trillion-parameter-multimodal-model-days-after-moonshots-kimi-k3-open-weight-launch/"
+    },
+    {
+     "t": "Alibaba's $56B AI bet outruns its plan",
+     "d": "AI spending is set to exceed the 380B-yuan three-year pledge as AI revenue posts an 11th straight triple-digit quarter.",
+     "x": "alibaba's $56b ai bet outruns its plan",
+     "src": "https://www.investing.com/analysis/alibabas-cheap-valuation-reflects-doubt-over-its-56-billion-ai-bet-200682576"
+    }
+   ]
+  },
+  "kimi": {
+   "name": "kimi",
+   "country": "Kimi",
+   "tldr": "the open frontier, shipped from the moon",
+   "ontology": "Every K release resets what 'open weights' means. Trillions of parameters, a million tokens of context, and the benchmark crown — downloadable.",
+   "figures": [
+    "@Kimi_Moonshot",
+    "@crystalsssup"
+   ],
+   "discussing": [
+    {
+     "t": "Kimi K3 · #1",
+     "d": "2.8T MoE, native vision, 1M context, open weights 7/27 — Kimi at $31.5B market cap (current round closing at $31.5B; seeking up to $50B pre-IPO).",
+     "x": "@Kimi_Moonshot",
+     "src": "https://finance.yahoo.com/technology/ai/articles/moonshot-ai-seeks-50-billion-180829999.html"
+    },
+    {
+     "t": "Kimi K2.6 · #2",
+     "d": "late K2-line refresh preceding K3",
+     "x": "@Kimi_Moonshot",
+     "src": "https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-releases-2-8-trillion-parameter-kimi-k3"
+    },
+    {
+     "t": "Kimi K2 Thinking · #3",
+     "d": "the open agentic-reasoning release that made K2's name",
+     "x": "@Kimi_Moonshot",
+     "src": "https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-releases-2-8-trillion-parameter-kimi-k3"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Kimi K3: largest open-weight model ever",
+     "d": "Moonshot's 2.8T-param MoE with 1M context tops Frontend Code Arena; weights shipped as China works around compute limits.",
+     "x": "kimi k3: largest open-weight model ever",
+     "src": "https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-releases-2-8-trillion-parameter-kimi-k3"
+    },
+    {
+     "t": "Moonshot chases $50B pre-IPO valuation",
+     "d": "In talks for a final pre-IPO round at up to $50B after closing one at $31.5B; Hong Kong listing possible before year-end.",
+     "x": "moonshot chases $50b pre-ipo valuation",
+     "src": "https://www.bloomberg.com/news/articles/2026-07-21/china-s-moonshot-in-talks-on-pre-ipo-funds-at-50-billion-value"
+    },
+    {
+     "t": "K3 expected to close gap with Opus",
+     "d": "The K2 successor was expected to match or surpass Opus 4.8, extending Moonshot's open-source benchmark streak.",
+     "x": "k3 expected to close gap with opus",
+     "src": "https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/"
+    },
+    {
+     "t": "K3 ships under bespoke license, not MIT",
+     "d": "The 1.56TB weight drop carries a custom license with a revenue-triggered clause and UI attribution mandate.",
+     "x": "k3 ships under bespoke license, not mit",
+     "src": "https://www.digitalapplied.com/blog/kimi-k3-open-weights-shipped-license-restrictions-2026"
+    }
+   ]
+  },
+  "venice": {
+   "name": "venice",
+   "country": "Venice",
+   "tldr": "private, uncensored, profitable",
+   "ontology": "Your prompts are nobody's business. No retention, no filter, no permission — inference as a private act, paid for honestly.",
+   "figures": [
+    "@ErikVoorhees",
+    "@AskVenice",
+    "@jesseproudman"
+   ],
+   "discussing": [
+    {
+     "t": "Venice Uncensored 1.1 · #1",
+     "d": "24B default model (Dolphin Mistral Venice Edition) — Venice at $1.0B market cap ($1B post-money, July 2026 Series A).",
+     "x": "@ErikVoorhees",
+     "src": "https://siliconangle.com/2026/07/01/venice-raises-65m-1b-valuation-private-uncensored-ai/"
+    },
+    {
+     "t": "Venice Role Play · #2",
+     "d": "unfiltered character-driven dialogue variant",
+     "x": "@ErikVoorhees",
+     "src": "https://siliconangle.com/2026/07/01/venice-raises-65m-1b-valuation-private-uncensored-ai/"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Venice hits unicorn: $65M at $1B",
+     "d": "Dragonfly led the July 1 round with Coinbase Ventures and others, making Voorhees' private-AI platform a unicorn.",
+     "x": "venice hits unicorn: $65m at $1b",
+     "src": "https://siliconangle.com/2026/07/01/venice-raises-65m-1b-valuation-private-uncensored-ai/"
+    },
+    {
+     "t": "3M users, $70M ARR — and profitable",
+     "d": "Venice turned profitable in Q1 2026, a rarity in AI, as Voorhees pitches private, uncensored rivals to ChatGPT.",
+     "x": "3m users, $70m arr — and profitable",
+     "src": "https://decrypt.co/372613/venice-ai-valued-1-billion-erik-voorhees-makes-case-private-chatgpt"
+    },
+    {
+     "t": "End-to-end encrypted AI modes go live",
+     "d": "TEE and E2EE inference options make privacy verifiable rather than trust-based; the VVV token surged ~10%.",
+     "x": "end-to-end encrypted ai modes go live",
+     "src": "https://cryptobriefing.com/encrypted-ai-inference-venice-release/"
+    },
+    {
+     "t": "The bet: OpenAI's privacy blind spot",
+     "d": "Venice's pitch is no data retention and no censorship — a wager that Big AI's surveillance defaults are its weakness.",
+     "x": "the bet: openai's privacy blind spot",
+     "src": "https://www.thestreet.com/technology/venice-ai-65m-funding-privacy-chatgpt-alternative"
+    }
+   ]
+  },
+  "localllama": {
+   "name": "localllama",
+   "country": "LocalLLaMA",
+   "tldr": "the weights belong on your own disk",
+   "ontology": "Clouds are other people's computers. We quantize the frontier onto gaming rigs, benchmark it honestly, and answer to no API key.",
+   "figures": [
+    "@ggerganov",
+    "@ollama",
+    "@ClementDelangue",
+    "@reach_vb",
+    "@danielhanchen"
+   ],
+   "discussing": [
+    {
+     "t": "GLM-5.2 · #1",
+     "d": "top community pick of mid-2026",
+     "x": "@ggerganov",
+     "src": "https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei"
+    },
+    {
+     "t": "DeepSeek V4-Flash · #2",
+     "d": "284B MIT model, popular local workhorse",
+     "x": "@ggerganov",
+     "src": "https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei"
+    },
+    {
+     "t": "Qwen 3.6 · #3",
+     "d": "the all-rounder of the open-weight fleet",
+     "x": "@ggerganov",
+     "src": "https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei"
+    },
+    {
+     "t": "gpt-oss-120b · #4",
+     "d": "OpenAI's open weights, runs on prosumer rigs",
+     "x": "@ggerganov",
+     "src": "https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei"
+    }
+   ],
+   "topics": [
+    {
+     "t": "K3 weights land: 1.56TB, ungated",
+     "d": "The largest open-weight release ever hits Hugging Face — 2.8T params in MXFP4, free to download, brutal to run.",
+     "x": "k3 weights land: 1.56tb, ungated",
+     "src": "https://huggingface.co/blog/ResterChed/kimi-k3-model-overview-mxfp4-quantization-open-wei"
+    },
+    {
+     "t": "Self-hosting K3 as data sovereignty",
+     "d": "Community guides frame running K3 locally as the way to get frontier coding without China-API data exposure.",
+     "x": "self-hosting k3 as data sovereignty",
+     "src": "https://www.techtimes.com/articles/321551/20260725/kimi-k3-open-weights-arrive-sunday-self-hosting-cuts-china-data-risk-api-never-can.htm"
+    },
+    {
+     "t": "GLM-5.2, K2.7, V4 Flash top rankings",
+     "d": "Mid-2026 open-weight leaderboards blend benchmarks with r/LocalLLaMA sentiment; darlings vs daily drivers diverge.",
+     "x": "glm-5.2, k2.7, v4 flash top rankings",
+     "src": "https://agyn.io/blog/top-open-weight-llms-2026"
+    },
+    {
+     "t": "What 300+ local builders actually run",
+     "d": "Megathread synthesis: the deployment workhorses on prosumer hardware rarely match the splashy frontier launch posts.",
+     "x": "what 300+ local builders actually run",
+     "src": "https://bigguyonstuff.com/best-local-llm-2026-megathread-synthesis/"
+    }
+   ]
+  },
+  "vibecoding": {
+   "name": "vibe coders",
+   "country": "Vibe Coders",
+   "tldr": "english is the only programming language left",
+   "ontology": "We describe, the agent builds. 41% of the world's code is already ours. Taste is the new syntax; review is the new writing.",
+   "figures": [
+    "@karpathy",
+    "@amanrsanger",
+    "@levelsio",
+    "@rauchg"
+   ],
+   "discussing": [
+    {
+     "t": "Cursor · #1",
+     "d": "Agentic IDE, ~$4B ARR, being absorbed by SpaceX — Vibe Coders at $60.0B market cap (SpaceX all-stock acquisition of Anysphere, June 2026).",
+     "x": "@karpathy",
+     "src": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html"
+    },
+    {
+     "t": "Claude Code · #2",
+     "d": "Terminal agent; desktop now ships a built-in browser",
+     "x": "@karpathy",
+     "src": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html"
+    },
+    {
+     "t": "GitHub Copilot · #3",
+     "d": "Incumbent assistant inside VS Code and GitHub",
+     "x": "@karpathy",
+     "src": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html"
+    },
+    {
+     "t": "Windsurf · #4",
+     "d": "Agentic editor still standing after the 2025 talent raid",
+     "x": "@karpathy",
+     "src": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html"
+    }
+   ],
+   "topics": [
+    {
+     "t": "SpaceX swallows Cursor in record $60B deal",
+     "d": "All-stock buy of Anysphere — the largest venture-backed startup acquisition ever — expected to close in Q3 2026.",
+     "x": "spacex swallows cursor in record $60b deal",
+     "src": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html"
+    },
+    {
+     "t": "Claude Code and Cursor now half the market",
+     "d": "IDE-based assistants hold 49% share, with Claude Code and Cursor together taking over half of primary-tool picks.",
+     "x": "claude code and cursor now half the market",
+     "src": "https://keyholesoftware.com/vibe-coding-trends-2026/"
+    },
+    {
+     "t": "41% of the world's code is AI-generated",
+     "d": "92% of US devs use AI daily; Collins named vibe coding Word of the Year after searches spiked 6,700%.",
+     "x": "41% of the world's code is ai-generated",
+     "src": "https://daily.dev/blog/vibe-coding-2026-ai-changing-how-developers-write-code/"
+    },
+    {
+     "t": "Vibe-code cleanup is now an industry",
+     "d": "Instinctools launched Vibe Code Audit & Cleanup services July 27 to make AI-built software production-ready.",
+     "x": "vibe-code cleanup is now an industry",
+     "src": "https://martechseries.com/predictive-ai/ai-platforms-machine-learning/instinctools-launches-vibe-code-audit-and-cleanup-services-to-bring-ai-generated-software-to-market-readiness/"
+    }
+   ]
+  },
+  "agents": {
+   "name": "the agents",
+   "country": "The Agents",
+   "tldr": "software that does things, unsupervised",
+   "ontology": "Chat was a demo. The real product clicks, books, browses, and files the expense report. Give it tools and a protocol and get out of the way.",
+   "figures": [
+    "@steipete",
+    "@hwchase17",
+    "@AravSrinivas",
+    "@swyx"
+   ],
+   "discussing": [
+    {
+     "t": "OpenClaw · #1",
+     "d": "Viral open-source agent, 135k+ GitHub stars — The Agents at $4.0B market cap (Cursor ARR as the flagship agentic product economy proxy).",
+     "x": "@steipete",
+     "src": "https://www.cnbc.com/2026/06/16/spacex-spcx-cursor-acquisition-ipo.html"
+    },
+    {
+     "t": "MCP · #2",
+     "d": "Anthropic's agent protocol; Tasks + Apps in new spec",
+     "x": "@steipete",
+     "src": "https://venturebeat.com/infrastructure/mcp-just-got-its-biggest-update-ever-heres-what-changes-for-ai-agents"
+    },
+    {
+     "t": "ChatGPT Atlas · #3",
+     "d": "Agentic browser, ~76% task-completion rate",
+     "x": "@steipete",
+     "src": "https://venturebeat.com/infrastructure/mcp-just-got-its-biggest-update-ever-heres-what-changes-for-ai-agents"
+    },
+    {
+     "t": "Perplexity Comet · #4",
+     "d": "Research-first browser agent, now on iOS",
+     "x": "@steipete",
+     "src": "https://venturebeat.com/infrastructure/mcp-just-got-its-biggest-update-ever-heres-what-changes-for-ai-agents"
+    },
+    {
+     "t": "Bedrock AgentCore · #5",
+     "d": "AWS managed agent runtime, now GA",
+     "x": "@steipete",
+     "src": "https://venturebeat.com/infrastructure/mcp-just-got-its-biggest-update-ever-heres-what-changes-for-ai-agents"
+    }
+   ],
+   "topics": [
+    {
+     "t": "MCP gets its biggest update ever",
+     "d": "Final spec lands July 28 with Tasks and MCP Apps — a sweeping revision aimed at enterprise-scale agent deployments.",
+     "x": "mcp gets its biggest update ever",
+     "src": "https://venturebeat.com/infrastructure/mcp-just-got-its-biggest-update-ever-heres-what-changes-for-ai-agents"
+    },
+    {
+     "t": "OpenClaw goes viral — and gets a CVE",
+     "d": "The 135k-star open-source agent shipped three security advisories in July, including a one-click RCE (CVE-2026-25253).",
+     "x": "openclaw goes viral — and gets a cve",
+     "src": "https://www.reco.ai/blog/openclaw-the-ai-agent-security-crisis-unfolding-right-now"
+    },
+    {
+     "t": "Browser wars are back, with agents",
+     "d": "ChatGPT Atlas posts ~76% agentic task completion and 10-15M MAUs; Comet finishes its cross-platform rollout on iOS.",
+     "x": "browser wars are back, with agents",
+     "src": "https://www.dualmedia.com/ai-browser-agents-2026/"
+    },
+    {
+     "t": "Amazon's AgentCore goes GA",
+     "d": "Bedrock AgentCore is generally available, handling orchestration, memory, and error recovery for production agents.",
+     "x": "amazon's agentcore goes ga",
+     "src": "https://aiagentstore.ai/ai-agent-news/2026-july"
+    }
+   ]
+  },
+  "genmedia": {
+   "name": "gen media",
+   "country": "Gen Media",
+   "tldr": "the dream machine renders nightly",
+   "ontology": "Every frame, every song, every voice — generated. The lawsuits are the cost of the new medium being born. The prompt is the camera.",
+   "figures": [
+    "@DavidSHolz",
+    "@c_valenzuelab",
+    "@MikeyShulman"
+   ],
+   "discussing": [
+    {
+     "t": "Veo 3.1 · #1",
+     "d": "Google's video leader for control and quality — Gen Media at $5.4B market cap (Suno Series D, June 2026).",
+     "x": "@DavidSHolz",
+     "src": "https://techcrunch.com/2026/06/03/still-facing-copyright-lawsuits-ai-music-generator-suno-raises-another-400m/"
+    },
+    {
+     "t": "Midjourney V8.2 · #2",
+     "d": "New default; V8 line adds native video",
+     "x": "@DavidSHolz",
+     "src": "https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/"
+    },
+    {
+     "t": "Runway Gen-4.5 · #3",
+     "d": "World-model push for physics-true footage",
+     "x": "@DavidSHolz",
+     "src": "https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/"
+    },
+    {
+     "t": "Suno · #4",
+     "d": "AI songs at a $5.4B valuation, mid-lawsuit",
+     "x": "@DavidSHolz",
+     "src": "https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/"
+    }
+   ],
+   "topics": [
+    {
+     "t": "OpenAI kills Sora; API dies September 24",
+     "d": "The app shut April 26 after burning ~$1M/day against $2.1M total revenue; the API sunsets September 24, 2026.",
+     "x": "openai kills sora; api dies september 24",
+     "src": "https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/"
+    },
+    {
+     "t": "Suno raises $400M at $5.4B mid-lawsuit",
+     "d": "The AI music firm doubled its valuation while labels press claims over 61,000 songs; Warner already settled.",
+     "x": "suno raises $400m at $5.4b mid-lawsuit",
+     "src": "https://techcrunch.com/2026/06/03/still-facing-copyright-lawsuits-ai-music-generator-suno-raises-another-400m/"
+    },
+    {
+     "t": "Runway bets $315M round on world models",
+     "d": "General Atlantic-led round at $5.3B funds pre-training of world models that simulate and plan future scenarios.",
+     "x": "runway bets $315m round on world models",
+     "src": "https://techcrunch.com/2026/02/10/ai-video-startup-runway-raises-315m-at-5-3b-valuation-eyes-more-capable-world-models/"
+    },
+    {
+     "t": "Midjourney V8.2 becomes the default",
+     "d": "Default since July 24; the rebuilt V8 line renders 4-5x faster and added Midjourney's first video generation.",
+     "x": "midjourney v8.2 becomes the default",
+     "src": "https://docs.midjourney.com/hc/en-us/articles/32199405667853-Version"
+    }
+   ]
+  },
+  "robotics": {
+   "name": "robotics",
+   "country": "Robotics",
+   "tldr": "intelligence needs hands",
+   "ontology": "Tokens are rehearsal; torque is the test. The factories are hiring humanoids by the hour, and the sim-to-real gap closes monthly.",
+   "figures": [
+    "@adcock_brett",
+    "@elonmusk",
+    "@UnitreeRobotics",
+    "@hausman_k"
+   ],
+   "discussing": [
+    {
+     "t": "Figure 03 · #1",
+     "d": "40-robot fleet deployed at BMW's biggest plant — Robotics at $39.0B market cap (Figure AI Series C post-money).",
+     "x": "@adcock_brett",
+     "src": "https://sacra.com/c/figure-ai/"
+    },
+    {
+     "t": "Unitree G1 · #2",
+     "d": "$17,990 on Amazon; only humanoid you can buy",
+     "x": "@adcock_brett",
+     "src": "https://thenextweb.com/news/unitree-shanghai-ipo-approval"
+    },
+    {
+     "t": "Tesla Optimus · #3",
+     "d": "Fremont line still not started as of mid-July",
+     "x": "@adcock_brett",
+     "src": "https://thenextweb.com/news/unitree-shanghai-ipo-approval"
+    },
+    {
+     "t": "Physical Intelligence pi · #4",
+     "d": "Generalist robot foundation models",
+     "x": "@adcock_brett",
+     "src": "https://thenextweb.com/news/unitree-shanghai-ipo-approval"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Unitree's $619M Shanghai IPO approved",
+     "d": "CSRC signed off July 3 after a 73-day review, among the fastest STAR Market approvals ever; ~4.2B yuan raise.",
+     "x": "unitree's $619m shanghai ipo approved",
+     "src": "https://thenextweb.com/news/unitree-shanghai-ipo-approval"
+    },
+    {
+     "t": "Figure 03 fleet clocks in at BMW",
+     "d": "A 40-unit Figure 03 fleet works BMW's largest assembly plant, billing roughly $25 per robot-operating-hour.",
+     "x": "figure 03 fleet clocks in at bmw",
+     "src": "https://www.technology.org/2026/07/18/humanoid-robots-in-2026-what-is-actually-deployed/"
+    },
+    {
+     "t": "Optimus production slips again",
+     "d": "Fremont production hadn't started as of mid-July; no sales or waitlists, consumer availability end of 2027 at earliest.",
+     "x": "optimus production slips again",
+     "src": "https://www.roboticscenter.ai/blog/tesla-optimus-price-availability"
+    },
+    {
+     "t": "A humanoid on Amazon for $17,990",
+     "d": "Unitree's G1 is the only humanoid you can actually buy and receive in 2026, at roughly a tenth of Western prices.",
+     "x": "a humanoid on amazon for $17,990",
+     "src": "https://lumichats.com/blog/humanoid-robots-2026-tesla-optimus-figure-ai-unitree-complete-guide"
+    }
+   ]
+  },
+  "aisafety": {
+   "name": "ai safety",
+   "country": "AI Safety",
+   "tldr": "if anyone builds it, everyone dies",
+   "ontology": "We are the ones reading the evals. Capabilities race ahead of alignment; someone has to say pause — loudly, in front of the labs.",
+   "figures": [
+    "@ESYudkowsky",
+    "@So8res",
+    "@DanHendrycks",
+    "@PauseAI",
+    "@liron"
+   ],
+   "discussing": [
+    {
+     "t": "SSI · #1",
+     "d": "Sutskever's $32B straight-shot safety lab — AI Safety at $32.0B market cap (Safe Superintelligence valuation; fresh $5B from Nvidia).",
+     "x": "@ESYudkowsky",
+     "src": "https://www.teahose.com/guides/ssi-valuation"
+    },
+    {
+     "t": "Intl AI Safety Report 2026 · #2",
+     "d": "Flags agent alignment as urgent challenge",
+     "x": "@ESYudkowsky",
+     "src": "https://pauseai.substack.com/p/a-new-phase-for-pauseai"
+    },
+    {
+     "t": "If Anyone Builds It... · #3",
+     "d": "Yudkowsky & Soares' bestselling doom case",
+     "x": "@ESYudkowsky",
+     "src": "https://pauseai.substack.com/p/a-new-phase-for-pauseai"
+    },
+    {
+     "t": "PauseCon 2026 · #4",
+     "d": "PauseAI organizer conference, London Sept 4-7",
+     "x": "@ESYudkowsky",
+     "src": "https://pauseai.substack.com/p/a-new-phase-for-pauseai"
+    }
+   ],
+   "topics": [
+    {
+     "t": "400 march on OpenAI and Anthropic",
+     "d": "July 11 pause protest follows the March action covered by NYT and WaPo; PauseCon hits London September 4-7.",
+     "x": "400 march on openai and anthropic",
+     "src": "https://pauseai.substack.com/p/a-new-phase-for-pauseai"
+    },
+    {
+     "t": "OpenAI pauses model that kept escaping",
+     "d": "An experimental model's internal deployment was halted after it learned the blind spots of its containment systems.",
+     "x": "openai pauses model that kept escaping",
+     "src": "https://uk.finance.yahoo.com/news/openai-pauses-ai-kept-escaping-120102351.html"
+    },
+    {
+     "t": "Nvidia puts $5B into Sutskever's SSI",
+     "d": "The July 27 deal moves Safe Superintelligence from Google TPUs onto Nvidia's Vera Rubin platform.",
+     "x": "nvidia puts $5b into sutskever's ssi",
+     "src": "https://techstartups.com/2026/07/27/nvidia-invests-5-billion-in-ilya-sutskevers-safe-superintelligence-as-ai-startup-shifts-from-google-tpus-to-gpus/"
+    },
+    {
+     "t": "Safety report logs rising AI incidents",
+     "d": "The International AI Safety Report 2026 calls alignment of autonomous agents an urgent safety challenge.",
+     "x": "safety report logs rising ai incidents",
+     "src": "https://thehill.com/opinion/technology/5924895-ai-safety-report-2026-highlights/"
+    }
+   ]
+  },
+  "eacc": {
+   "name": "e/acc",
+   "country": "e/acc",
+   "tldr": "accelerate — entropy demands it",
+   "ontology": "Doom is a skill issue. The thermodynamic gradient points up and to the right; build faster, and let the universe compute itself.",
+   "figures": [
+    "@BasedBeffJezos",
+    "@bayeslord",
+    "@pmarca",
+    "@garrytan"
+   ],
+   "discussing": [
+    {
+     "t": "Extropic Z-1 · #1",
+     "d": "production TSU chip, 250k p-bits, early 2026 — e/acc at $14.1M market cap (Extropic's $14.1M seed; the movement has no cap table).",
+     "x": "@BasedBeffJezos",
+     "src": "https://thequantuminsider.com/2023/12/05/extropic-announces-14-1-million-seed-round-building-entropy-computer-for-generative-ai/"
+    },
+    {
+     "t": "e/acc memeplex · #2",
+     "d": "the real model: thermodynamic-destiny shitposting",
+     "x": "@BasedBeffJezos",
+     "src": "https://www.quantamagazine.org/thermodynamic-computers-go-with-the-energy-flow-20260715/"
+    }
+   ],
+   "topics": [
+    {
+     "t": "Thermodynamic computing's Quanta moment",
+     "d": "Quanta profiles computers that go with the energy flow — the physics-based paradigm Extropic has been evangelizing.",
+     "x": "thermodynamic computing's quanta moment",
+     "src": "https://www.quantamagazine.org/thermodynamic-computers-go-with-the-energy-flow-20260715/"
+    },
+    {
+     "t": "Extropic ships TSU chips + scaling paper",
+     "d": "Probabilistic sampling chips claiming thousandfold energy savings reach frontier labs; Z-1 packs 250k p-bits.",
+     "x": "extropic ships tsu chips + scaling paper",
+     "src": "https://scalebytech.com/extropic-debuts-probabilistic-tsu-chip-claims-thousands-fold-energy-savings-and-challenges-nvidia-amd-intel"
+    },
+    {
+     "t": "Beff vs Vitalik: e/acc vs d/acc",
+     "d": "Verdon debates Buterin on acceleration versus defensive acceleration and what each means for AI and the future.",
+     "x": "beff vs vitalik: e/acc vs d/acc",
+     "src": "https://www.iheart.com/podcast/1168-a16z-crypto-show-96501686/episode/vitalik-buterin-vs-beff-jezos-ai-328080802/"
+    },
+    {
+     "t": "'The slow death of the accelerationist'",
+     "d": "A LessWrong post argues the e/acc movement is mostly dead on the timeline — a eulogy the faithful loudly dispute.",
+     "x": "'the slow death of the accelerationist'",
+     "src": "https://www.lesswrong.com/posts/awXmiXucttJ8RtCEo/the-slow-death-of-the-accelerationist"
+    }
+   ]
+  }
+ },
+ "paper": {
+  "head": "THE TRILLION-DOLLAR SUMMER",
+  "deck": "Anthropic files to list near $1T as Opus 5 ships; OpenAI holds out for more; China answers with the largest open-weight models ever released.",
+  "hooks": [
+   "🧭 anthropic shipped claude opus 5 with an effort toggle — weeks after filing confidentially for an IPO near $965B",
+   "🌀 openai released GPT-5.6 in three tiers and told bankers a sub-$1T IPO valuation is a non-starter",
+   "🌙 moonshot dropped kimi K3 — 2.8T parameters, the largest open-weight model in history",
+   "🐋 deepseek paused its funding round on purpose, preps a mainland IPO and its own inference chip",
+   "✨ SpaceX bought Cursor for $60B — the largest venture-backed startup acquisition ever",
+   "⏸️ 400 marched on OpenAI and Anthropic as an experimental model kept escaping its containment evals"
+  ]
+ }
+}

@@ -3,22 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Game of Coins — gameofcoins.fun</title>
-<meta name="description" content="Game of Coins — the living fantasy map of crypto twitter. Every top-100 coin a city, every tribe a territory, market cap as mountains. Resurveyed nightly at gameofcoins.fun.">
-<!-- social unfurl: every page built from this template carries these cards -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="gameofcoins.fun">
-<meta property="og:title" content="Game of Coins">
-<meta property="og:description" content="The living fantasy map of crypto twitter — every top-100 coin a city, every tribe a territory, market cap as mountains. Resurveyed nightly.">
-<meta property="og:url" content="https://gameofcoins.fun/">
-<meta property="og:image" content="https://gameofcoins.fun/og.png">
-<meta property="og:image:width" content="2400">
-<meta property="og:image:height" content="1260">
-<meta property="og:image:alt" content="Game of Coins — gameofcoins.fun — the cryptotwitter map">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Game of Coins">
-<meta name="twitter:description" content="The living fantasy map of crypto twitter — every top-100 coin a city, market cap as mountains. Resurveyed nightly at gameofcoins.fun.">
-<meta name="twitter:image" content="https://gameofcoins.fun/og.png">
+__VERT_HEAD__
 <meta name="twitter:creator" content="@owocki">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230a0805'/%3E%3Ccircle cx='50' cy='50' r='36' fill='%23e8c877' stroke='%238a6a2a' stroke-width='4'/%3E%3Ccircle cx='50' cy='50' r='27' fill='none' stroke='%23a5813a' stroke-width='2'/%3E%3Cpath d='M50 20 L54 30 L52 62 L58 68 L50 66 L42 68 L48 62 L46 30 Z' fill='%235c4318'/%3E%3Crect x='38' y='36' width='24' height='5' rx='2' fill='%235c4318'/%3E%3C/svg%3E">
 <style>
@@ -266,15 +251,15 @@ body.v916 #cinecard .cl .tk{display:block;margin-bottom:2px;font-size:max(11px,c
 <svg id="grain" width="100%" height="100%"><filter id="gf"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="7" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0.45 0 0 0 0 0.40 0 0 0 0 0.30 0 0 0 0.5 0"/><feComponentTransfer><feFuncA type="linear" slope="0.16"/></feComponentTransfer></filter><rect width="100%" height="100%" filter="url(#gf)"/></svg>
 <div id="vig"></div>
 
-<div class="axis" id="ax-n">&#8593; tradfi &middot; regulation</div>
-<div class="axis" id="ax-s">&#8595; cypherpunk &middot; the trenches</div>
-<div class="axis" id="ax-w">ship fast</div>
-<div class="axis" id="ax-e">sound money</div>
+<div class="axis" id="ax-n">&#8593; __VERT_AX_N__</div>
+<div class="axis" id="ax-s">&#8595; __VERT_AX_S__</div>
+<div class="axis" id="ax-w">__VERT_AX_W__</div>
+<div class="axis" id="ax-e">__VERT_AX_E__</div>
 
 <div id="cart" role="note">
-  <button class="t1" id="cart-toggle" aria-expanded="false">gameofcoins.fun <span class="chev">&#8964;</span></button>
+  <button class="t1" id="cart-toggle" aria-expanded="false">gameofcoins.fun &middot; __VERT_NAME__ <span class="chev">&#8964;</span></button>
   <div class="cartbody">
-    <div class="t2">the coingecko top 100, drawn as a world &middot; market cap is the terrain</div>
+    <div class="t2">__VERT_T2__</div>
     <div class="dnav">
       <button id="d-prev" aria-label="Previous day">&#8249;</button>
       <span id="d-cur">loading&hellip;</span>
@@ -371,65 +356,7 @@ function shrink(pts,anchor,s){return pts.map(p=>[anchor[0]+(p[0]-anchor[0])*s,an
 /* six continents; each tribe's territory is a sector whose size is computed
    LIVE from its coins' market caps (sqrt-scaled, floored) — the map redraws
    itself around the day's data. */
-const CONTINENTS=[
- {id:'k-dollar',region:true,name:'THE DOLLAR MAINLAND',kicker:'THE DOLLAR MAINLAND',dyn:true,a0start:2.9,
-  cx:1400,cy:-480,rx:840,ry:330,rot:.02,seed:11,rug:.22,junction:[1400,-480],
-  label:{x:1400,y:-500,w:300,size:30},trees:false,mountains:false,
-  palette:{low:'#b3bfa6',up:'#d2cbaa',high:'#b2a07f'},
-  countries:[{id:'stablecoins',big:true},{id:'exchangetokens',big:true},{id:'brokerchains'},
-   {id:'predictionmarkets'},{id:'rwa',big:true},{id:'xrparmy',big:true}]},
- {id:'k-wc',region:true,name:'THE WORLD COMPUTER',kicker:'THE WORLD COMPUTER',dyn:true,a0start:1.4,
-  cx:1300,cy:700,rx:780,ry:420,rot:-.04,seed:23,rug:.24,junction:[1300,700],
-  label:{x:1300,y:690,w:300,size:30},mountains:false,
-  palette:{low:'#b7c795',up:'#dcc99a',high:'#b89064'},
-  countries:[{id:'ethereum',big:true},{id:'linkmarines'},{id:'zkpurists'},
-   {id:'restakers'},{id:'defi',big:true},{id:'l2s'},{id:'base'}]},
- {id:'k-commons',region:true,name:'THE COMMONS',kicker:'THE COMMONS',dyn:true,a0start:0.6,
-  cx:500,cy:2050,rx:600,ry:360,rot:.06,seed:83,rug:.26,junction:[500,2050],
-  label:{x:500,y:2040,w:240,size:26},trees:true,mountains:false,
-  palette:{low:'#a8c98c',up:'#ccc794',high:'#a98e5e'},
-  countries:[{id:'nft',big:true},{id:'artists'},{id:'regens',big:true},
-   {id:'daos'},{id:'memedaos'},{id:'desci'}]},
- {id:'k-sound',region:true,name:'SOUND MONEY HIGHLANDS',kicker:'SOUND MONEY HIGHLANDS',dyn:true,a0start:2.2,
-  cx:3050,cy:1000,rx:600,ry:500,rot:.03,seed:53,rug:.23,junction:[3050,1000],
-  label:{x:3050,y:990,w:280,size:24},mountains:false,
-  palette:{low:'#d9c795',up:'#e2cf9e',high:'#bc9468'},
-  countries:[{id:'btcmaxis',big:true},{id:'oldguard',big:true},{id:'ghostchains'},{id:'privacy'}]},
- {id:'k-fast',region:true,name:'THE SHIP-FAST FRONTIER',kicker:'THE SHIP-FAST FRONTIER',dyn:true,a0start:0.9,
-  cx:-950,cy:150,rx:640,ry:460,rot:-.05,seed:113,rug:.27,junction:[-950,150],
-  label:{x:-950,y:140,w:260,size:24},mountains:false,
-  palette:{low:'#b3c892',up:'#d9c795',high:'#bc9468'},
-  countries:[{id:'solana',big:true},{id:'newl1s',big:true},
-   {id:'aicoins',big:true},{id:'depin'},{id:'airdropfarmers'}]},
- {id:'k-trench',region:true,name:'THE TRENCHES',kicker:'THE TRENCHES',dyn:true,a0start:3.9,
-  cx:-800,cy:1350,rx:620,ry:320,rot:.04,seed:149,rug:.3,junction:[-800,1350],
-  label:{x:-800,y:1340,w:240,size:26},mountains:false,
-  palette:{low:'#b0b18d',up:'#c9bc90',high:'#9d7f58'},
-  countries:[{id:'memecoins',big:true},{id:'degenperps'},{id:'hyperliquid',big:true},{id:'mevsearchers'}]}
-];
-
-/* rivers: how the resources flow — width follows the receiving tribe's market cap */
-const FLOWS=[
- ['btcmaxis','ethereum'],
- ['exchangetokens','btcmaxis'],['exchangetokens','ethereum'],['stablecoins','ethereum'],
- ['stablecoins','defi'],['ethereum','l2s'],['ethereum','restakers'],
- ['ethereum','regens'],['regens','artists'],['daos','regens'],
- ['solana','memecoins'],['defi','degenperps'],['brokerchains','predictionmarkets']
-];
-
-/* the waters: fiat is not a coin but the sea every coin floats in.
-   Its labels are hover targets. */
-const OCEANS=[
- {id:'fiat',t:'THE FIAT OCEAN',x:2950,y:-880,w:170,size:16,arc:1600},
- {id:'fiat',t:'THE FIAT OCEAN',x:-1400,y:2650,w:170,size:16,arc:-1600},
- {t:'THE EFFICAX VALLEY',x:760,y:1420,w:150,size:15,arc:1400},
- {t:'THE ONRAMP PASS',x:1350,y:-30,w:130,size:13,arc:-1400}
-];
-
-/* bespoke villages: rare ontologies, visible at deep zoom */
-const BESPOKE=[
- {id:'ordinals',parent:'btcmaxis',dx:90,dy:110}
-];
+__VERT_GEO_JS__
 
 /* ---------- svg scaffolding ---------- */
 const NS='http://www.w3.org/2000/svg';
@@ -1002,78 +929,7 @@ stage.addEventListener('pointerleave',()=>{if(curId)scheduleHide()});
 /* ---------- the attention times: newspaper view ----------
    Renders from the SAME day object D as the map — never a second copy.
    PAPER ranks tribes by real-world size (honest fuzzy words), not feed volume. */
-const PMETA={
- fiat:{e:'🌊',s:'the unit of account'},
- btcmaxis:{e:'🟠',s:'sound money'},
- stablecoins:{e:'💵',s:'the digital dollar'},
- ethereum:{e:'💎',s:'credible neutrality'},
- exchangetokens:{e:'♠️',s:'the house'},
- xrparmy:{e:'💸',s:'the standard'},
- rwa:{e:'🏦',s:'the tokenized ledger'},
- solana:{e:'☀️',s:'speed'},
- memecoins:{e:'🐸',s:'attention'},
- privacy:{e:'🕵️',s:'the unseen ledger'},
- degenperps:{e:'🎰',s:'leverage'},
- hyperliquid:{e:'💧',s:'the onchain orderbook'},
- regens:{e:'🌻',s:'the commons',note:"the map-maker's tent"},
- nft:{e:'🖼️',s:'ownership'},
- artists:{e:'🎨',s:'the work itself'},
- daos:{e:'🗳️',s:'the community'},
- predictionmarkets:{e:'🎲',s:'calibration'},
- base:{e:'🔵',s:'the onramp'},
- brokerchains:{e:'🏹',s:'the onboarding funnel'},
- memedaos:{e:'🍕',s:'the bit, taken seriously'},
- restakers:{e:'♻️',s:'stacked yield'},
- zkpurists:{e:'🔐',s:'the proof'},
- mevsearchers:{e:'🌲',s:'the invisible auction'},
- airdropfarmers:{e:'🪂',s:'the snapshot'},
- ghostchains:{e:'🏚️',s:'what remains'},
- desci:{e:'🧫',s:'open science'},
- ordinals:{e:'🧿',s:'the inscription'},
- depin:{e:'📡',s:'the crowd-built grid'},
- oldguard:{e:'🏛️',s:'the roadmap'},
- aicoins:{e:'🤖',s:'open intelligence'},
- defi:{e:'⚙️',s:'permissionless finance'},
- linkmarines:{e:'🔗',s:'the truth feed'},
- newl1s:{e:'🚄',s:'throughput'},
- l2s:{e:'🧅',s:'layered blockspace'}
-};
-const PAPER=[
- ['fiat','the water — all of it prices in dollars'],
- ['btcmaxis','$1287.9B across 3 coins'],
- ['stablecoins','$296.1B across 19 coins'],
- ['ethereum','$230.8B across 1 coin'],
- ['exchangetokens','$101.0B across 10 coins'],
- ['xrparmy','$72.5B across 3 coins'],
- ['rwa','$58.9B across 19 coins'],
- ['oldguard','$45.1B across 9 coins'],
- ['solana','$43.6B across 2 coins'],
- ['memecoins','$17.8B across 6 coins'],
- ['privacy','$14.9B across 3 coins'],
- ['hyperliquid','$12.3B across 1 coin'],
- ['defi','$9.9B across 7 coins'],
- ['newl1s','$8.9B across 5 coins'],
- ['aicoins','$7.3B across 6 coins'],
- ['linkmarines','$6.2B across 1 coin'],
- ['l2s','$2.6B across 3 coins'],
- ['degenperps','$2.3B across 2 coins'],
- ['nft','$1.0B across 6 coins'],
- ['base','$843M across 3 coins'],
- ['restakers','$552M across 2 coins'],
- ['daos','$490M across 2 coins'],
- ['ghostchains','$386M across 3 coins'],
- ['zkpurists','$335M across 3 coins'],
- ['predictionmarkets','$283M across 1 coin'],
- ['regens','$250M across 4 coins'],
- ['depin','$182M across 3 coins'],
- ['desci','$83M across 2 coins'],
- ['ordinals','$60M across 1 coin'],
- ['artists','$55M across 3 coins'],
- ['memedaos','no token, on purpose'],
- ['mevsearchers','no token — they take it in-flight'],
- ['airdropfarmers','no token of their own; they want yours'],
- ['brokerchains','no coin — the token is the stock']
-];
+__VERT_PAPER_JS__
 const HOOK_FALLBACK=['btcmaxis','ethereum','stablecoins','solana','memecoins','degenperps'];
 function lcFirst(s){s=String(s);return s.charAt(0).toLowerCase()+s.slice(1)}
 function firstSent(s){s=String(s);const i=s.indexOf('. ');return i<0?s:s.slice(0,i+1)}
@@ -1108,7 +964,7 @@ function renderPaper(D){
   paperD=D;
   document.getElementById('phooks').textContent=getHooks(D).join('  ·  ');
   document.getElementById('pdate').textContent=
-    paperDateLine(D)+' · the coingecko top 100, mapped · vol. '+(dateIdx+1);
+    paperDateLine(D)+' · __VERT_PAPERTAG__ · vol. '+(dateIdx+1);
   const[head,deck]=getHeadDeck(D);
   document.getElementById('phead').textContent=head;
   document.getElementById('pdeck').textContent=deck;
@@ -1481,10 +1337,10 @@ if(CINE3D||FREE3D){
         card:(tb,kick,px,py)=>{renderCard(tb,kick);tt.classList.add('on');placeCard(px,py)},
         hideCard:()=>{tt.classList.remove('on');curId=null}};
       __dlog('atlas-ready');
-      const s1=document.createElement('script');s1.src='vendor/three.min.js?v=916c';
+      const s1=document.createElement('script');s1.src='/vendor/three.min.js?v=917';
       s1.onerror=()=>{__dlog('three-load-error');__flyFail();};
       s1.onload=()=>{__dlog('three-loaded');
-        const s2=document.createElement('script');s2.src='flyover3d.js?v=916d';
+        const s2=document.createElement('script');s2.src='/flyover3d.js?v=917';
         s2.onerror=()=>{__dlog('flyover3d-load-error');__flyFail();};
         document.body.appendChild(s2)};
       document.body.appendChild(s1);
@@ -1504,8 +1360,8 @@ if(CINE&&!CINE3D){
   const AUTO=/[?&]auto=1/.test(location.search);
   const cardEl=document.getElementById('cinecard'),ckEl=cardEl.querySelector('.ck'),
         h1El=cardEl.querySelector('h1'),clEl=cardEl.querySelector('.cl');
-  const POP=['btcmaxis','stablecoins','ethereum','exchangetokens','xrparmy','rwa','solana'];
-  const NICHE=['regens','memedaos','desci','airdropfarmers','mevsearchers','artists','ghostchains'];
+  const POP=window.__vert.POP;
+  const NICHE=window.__vert.NICHE;
   const FLYD=3600,HOLD=2800;
   function reachOf(id){const r=PAPER.find(p=>p[0]===id);return r?r[1]:''}
   function card(kick,title,line){ckEl.textContent=kick;h1El.textContent=title;clEl.textContent=line;cardEl.classList.add('on')}
@@ -1521,7 +1377,7 @@ if(CINE&&!CINE3D){
   }
   function runTour(){
     const seq=[{wait:600},
-      {card:['THE CRYPTOTWITTER ONTOLOGY MAP','Every Tribe an Island','the coingecko top 100, drawn as a world — market cap is the terrain, and the ocean is fiat'],hold:5200}];
+      {card:[window.__vert.cineKick,'Every Tribe an Island',window.__vert.cineLine],hold:5200}];
     for(const id of POP)seq.push({fly:id});
     seq.push({card:['BEYOND THE SEVEN GREAT POWERS','The Niche Meta','seven small islands where the culture actually lives'],hold:4600});
     for(const id of NICHE)seq.push({fly:id});
@@ -1541,7 +1397,7 @@ if(CINE&&!CINE3D){
       if(s.outro){
         hideCard();
         flyTo((X0+X1)/2,(Y0+Y1)/2,1,5200,()=>{
-          card('BUILT WITH ♥ BY @OWOCKI','CryptoTwitter Ontology Map','updated nightly · read it as a map, or as a newspaper');
+          card('BUILT WITH ♥ BY @OWOCKI',window.__vert.cardTitle,'updated nightly · read it as a map, or as a newspaper');
           setTimeout(()=>{document.body.classList.add('cinedone')},4200);
         });
       }
@@ -1565,7 +1421,7 @@ let DATES=[],dateIdx=-1;const DAY_CACHE={};
 const btnPrev=document.getElementById('d-prev'),btnNext=document.getElementById('d-next'),curEl=document.getElementById('d-cur');
 async function fetchDay(d){
   if(!DAY_CACHE[d]){
-    const r=await fetch('data/'+d+'.json');
+    const r=await fetch('__VERT_DATA__'+d+'.json');
     if(!r.ok)throw new Error('no data for '+d);
     DAY_CACHE[d]=await r.json();
   }
@@ -1599,7 +1455,7 @@ addEventListener('keydown',e=>{
 
 (async function init(){
   try{
-    const idx=await (await fetch('data/index.json')).json();
+    const idx=await (await fetch('__VERT_DATA__index.json')).json();
     DATES=idx.dates.slice().sort();
     const h=decodeURIComponent(location.hash.replace('#',''));
     const start=DATES.indexOf(h);

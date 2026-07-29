@@ -6,8 +6,10 @@ don't know about it.
 
 ## The build rule (most important)
 
-`index.html` is generated. **Never edit it directly.** Edit
-`site.template.html`, then run:
+ALL three `index.html` files are generated (`/index.html` selector,
+`crypto/index.html`, `ai/index.html`). **Never edit them directly.** Edit
+`site.template.html` (both verticals), `selector.template.html` (the root
+chooser), or the per-vertical config in `scripts/verticals/*` — then run:
 
 ```sh
 python3 scripts/build_site.py
@@ -100,7 +102,7 @@ python3 scripts/build_site.py    # after any template edit
 ANTHROPIC_API_KEY=... python3 scripts/research_crypto.py   # run a survey manually
 ```
 
-Useful test URLs: `/` (flat map, the default) · `/?map3d` (3D world) · `/?flyover`
+Useful test URLs: `/` (selector) · `/crypto/` and `/ai/` (flat maps) · `/{vert}/?map3d` (3D world) · `/{vert}/?flyover`
 (cinematic) · `/#YYYY-MM-DD` (a specific day).
 
 A convention for agents: don't `git checkout` another branch while a local

@@ -4,7 +4,12 @@
 
 An interactive fantasy-style map of crypto twitter. Every tribe (Bitcoin maxis, Ethereum, Solana, Link Marines, regens, memecoin trenches, DeSci, MEV searchers — 34 in all) is a territory on one landmass. Every CoinGecko top-100 coin is a city at its real market-cap rank. Market cap is the terrain: bigger caps make taller mountains and wider territories, recomputed live from the day's data. Rivers show value flowing between tribes. A nightly research job resurveys what each tribe is actually talking about, with source URLs required for every claim.
 
-**The three views:**
+**Two worlds, one engine:** the root `/` is a selector; `/crypto/` maps the
+tribes of crypto twitter (data in `data/`, resurveyed nightly) and `/ai/` maps
+the camps of the AI world (data in `data-ai/`) — same geometry engine, separate
+canons, geographies, films, and unfurls, all configured in `scripts/verticals/`.
+
+**The three views (per world):**
 
 - **Main view** — the flat 2D parchment map. Hover a territory for its card: the tribe's ontology, this week's trending narratives (tap once for the story, again for X), and its coins. The search box top-right flies you to any island, coin ticker, topic, or influencer. "3d world" switches to the free-roam 3D world (`?map3d`): drag to pan, wheel to zoom, right-drag (or shift-drag) to orbit.
 - **The flyover** (`?flyover` or the 🎬 button) — a Game-of-Thrones-style cinematic over the 7 biggest and 8 most niche tribes: 3D terrain, generative medieval towns, dragons, per-tribe props (orange coins, diamonds, marching marines, solarpunk plants), influencer walkers, and an original score. Watch the pre-rendered film or fly it live in WebGL.

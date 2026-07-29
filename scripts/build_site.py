@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""Bake the EB Garamond fonts into site.template.html -> index.html.
+"""Build the two vertical experiences + the root selector.
 
-Only needed when site.template.html changes; the nightly job does NOT run this
-(index.html is static, data/*.json is what changes daily).
+site.template.html + scripts/verticals/{vert}_geo.js/_paper.js/_head.html
+  -> crypto/index.html and ai/index.html
+selector.template.html -> index.html (the / chooser)
+
+Fonts are baked in from the cached scripts/fonts.json (fetched once).
 """
 import base64
 import json
@@ -16,6 +19,29 @@ CSS_URL = ("https://fonts.googleapis.com/css2"
            "?family=EB+Garamond:ital,wght@0,500;0,600;1,500&display=swap")
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
       "AppleWebKit/537.36 Chrome/120 Safari/537.36")
+
+VERTS = {
+    "crypto": {
+        "name": "crypto",
+        "t2": "the coingecko top 100, drawn as a world &middot; market cap is the terrain",
+        "papertag": "the coingecko top 100, mapped",
+        "data": "../data/",
+        "ax_n": "tradfi &middot; regulation",
+        "ax_s": "cypherpunk &middot; the trenches",
+        "ax_w": "ship fast",
+        "ax_e": "sound money",
+    },
+    "ai": {
+        "name": "ai",
+        "t2": "the world of AI, drawn as a world &middot; valuation is the terrain",
+        "papertag": "the AI world, mapped",
+        "data": "../data-ai/",
+        "ax_n": "capital &middot; the citadels",
+        "ax_s": "ideology &middot; the marches",
+        "ax_w": "open weights",
+        "ax_e": "the east",
+    },
+}
 
 
 def fetch_fonts() -> dict:
@@ -35,6 +61,14 @@ def fetch_fonts() -> dict:
     return out
 
 
+def bake_fonts(html: str, fonts: dict) -> str:
+    out = (html.replace("__FONT_N500__", fonts["normal-500"])
+               .replace("__FONT_N600__", fonts["normal-600"])
+               .replace("__FONT_I500__", fonts["italic-500"]))
+    assert "__FONT_" not in out
+    return out
+
+
 def main() -> None:
     cache = ROOT / "scripts" / "fonts.json"
     if cache.exists():
@@ -42,13 +76,33 @@ def main() -> None:
     else:
         fonts = fetch_fonts()
         cache.write_text(json.dumps(fonts))
+
     tpl = (ROOT / "site.template.html").read_text()
-    out = (tpl.replace("__FONT_N500__", fonts["normal-500"])
-              .replace("__FONT_N600__", fonts["normal-600"])
-              .replace("__FONT_I500__", fonts["italic-500"]))
-    assert "__FONT_" not in out
-    (ROOT / "index.html").write_text(out)
-    print(f"built index.html ({len(out)} bytes)")
+    for vert, cfg in VERTS.items():
+        vd = ROOT / "scripts" / "verticals"
+        out = (tpl.replace("__VERT_HEAD__", (vd / f"{vert}_head.html").read_text().strip())
+                  .replace("__VERT_GEO_JS__", (vd / f"{vert}_geo.js").read_text())
+                  .replace("__VERT_PAPER_JS__", (vd / f"{vert}_paper.js").read_text())
+                  .replace("__VERT_NAME__", cfg["name"])
+                  .replace("__VERT_T2__", cfg["t2"])
+                  .replace("__VERT_PAPERTAG__", cfg["papertag"])
+                  .replace("__VERT_AX_N__", cfg["ax_n"])
+                  .replace("__VERT_AX_S__", cfg["ax_s"])
+                  .replace("__VERT_AX_W__", cfg["ax_w"])
+                  .replace("__VERT_AX_E__", cfg["ax_e"])
+                  .replace("__VERT_DATA__", cfg["data"]))
+        assert "__VERT_" not in out, "unreplaced vertical placeholder"
+        out = bake_fonts(out, fonts)
+        dest = ROOT / vert
+        dest.mkdir(exist_ok=True)
+        (dest / "index.html").write_text(out)
+        print(f"built {vert}/index.html ({len(out)} bytes)")
+
+    sel = ROOT / "selector.template.html"
+    if sel.exists():
+        out = bake_fonts(sel.read_text(), fonts)
+        (ROOT / "index.html").write_text(out)
+        print(f"built index.html selector ({len(out)} bytes)")
 
 
 if __name__ == "__main__":
