@@ -976,7 +976,7 @@ function renderCard(tb,kick){
    <h3>${esc(tb.country)}</h3>
    <ul class="ont">${claims.map(cl=>`<li>${esc(cl)}</li>`).join('')}</ul>
    ${topicList(tb.topics,'Trending this week · tap for the story, again for X')}
-   ${topicList(tb.discussing,'The coins · tap for details, again for X')}
+   ${window.__vert&&window.__vert.weight?'':topicList(tb.discussing,'The coins · tap for details, again for X')}
    <p class="figs">Key accounts: ${esc(tb.figures.join(', '))}</p>`;
 }
 /* first tap on a topic previews its story; the second tap goes to X */
