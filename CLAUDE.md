@@ -102,7 +102,7 @@ python3 scripts/build_site.py    # after any template edit
 ANTHROPIC_API_KEY=... python3 scripts/research_crypto.py   # run a survey manually
 ```
 
-Useful test URLs: `/` (selector) · `/crypto/` and `/ai/` (flat maps) · `/{vert}/?map3d` (3D world) · `/{vert}/?flyover`
+Useful test URLs: `/` (selector) · `/crypto/`, `/ai/`, `/macro/` (flat maps) · `/{vert}/?map3d` (3D world) · `/{vert}/?flyover`
 (cinematic) · `/#YYYY-MM-DD` (a specific day).
 
 A convention for agents: don't `git checkout` another branch while a local

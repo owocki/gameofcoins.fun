@@ -41,6 +41,16 @@ VERTS = {
         "ax_w": "open weights",
         "ax_e": "the east",
     },
+    "macro": {
+        "name": "macro",
+        "t2": "the tribes of x, drawn as a world &middot; here be discourse",
+        "papertag": "the feed, mapped",
+        "data": "../data-macro/",
+        "ax_n": "the transcendent north &middot; god &middot; order &middot; meaning",
+        "ax_s": "the material south &middot; matter &middot; bodies &middot; power",
+        "ax_w": "decelerate",
+        "ax_e": "accelerate",
+    },
 }
 
 

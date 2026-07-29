@@ -4,10 +4,14 @@
 
 An interactive fantasy-style map of crypto twitter. Every tribe (Bitcoin maxis, Ethereum, Solana, Link Marines, regens, memecoin trenches, DeSci, MEV searchers — 34 in all) is a territory on one landmass. Every CoinGecko top-100 coin is a city at its real market-cap rank. Market cap is the terrain: bigger caps make taller mountains and wider territories, recomputed live from the day's data. Rivers show value flowing between tribes. A nightly research job resurveys what each tribe is actually talking about, with source URLs required for every claim.
 
-**Two worlds, one engine:** the root `/` is a selector; `/crypto/` maps the
-tribes of crypto twitter (data in `data/`, resurveyed nightly) and `/ai/` maps
-the camps of the AI world (data in `data-ai/`) — same geometry engine, separate
-canons, geographies, films, and unfurls, all configured in `scripts/verticals/`.
+**Three worlds, one engine:** the root `/` is a selector; `/crypto/` maps the
+tribes of crypto twitter (data in `data/`, resurveyed nightly), `/ai/` maps the
+camps of the AI world (data in `data-ai/`), and `/macro/` maps the tribes of X
+(imported from the Tribes of X atlas, data in `data-macro/`) — same geometry
+engine, separate canons, geographies, films, and unfurls, all configured in
+`scripts/verticals/`. Macro is an island archipelago (no mainland) and ranks
+territories by audience reach instead of market cap via a per-vertical weight
+table.
 
 **The three views (per world):**
 

@@ -66,6 +66,14 @@
       peaks.push({ x: c.cityPts[i][0], y: c.cityPts[i][1], h: 34, s: 80 });
   }
   function landMask(x, y) {
+    if (VERT.ISLES) {          // island-world verticals: land is the union of isles
+      let m = 0;
+      for (const isl of VERT.ISLES) {
+        const dx = (x - isl[0]) / (isl[2] * 1.25), dy = (y - isl[1]) / (isl[3] * 1.25);
+        m = Math.max(m, (1 - Math.sqrt(dx * dx + dy * dy)) * 4);
+      }
+      return Math.max(0, Math.min(1, m));
+    }
     const dx = (x - SLc[0]) / SLrx, dy = (y - SLc[1]) / SLry;
     const d = Math.sqrt(dx * dx + dy * dy);
     return Math.max(0, Math.min(1, (1 - d) * 6));
@@ -837,6 +845,12 @@
     const c = A.countries.find(x => x.id === id);
     const tb = c.tribe;
     // kicker: market cap, then the coins that live here
+    if (VERT.paperKick) {      // audience-reach kicker (macro): no dollars here
+      const reach = (A.PAPER.find(p => p[0] === id) || [])[1] || '';
+      return { kick: (((A.PMETA[id] || {}).e || '') + '  ' + reach).trim().slice(0, 44),
+               title: tb.country,
+               line: stopTrendHtml(tb) };
+    }
     let coins = (tb.discussing || []).map(d0 => {
       const s = ((d0.t || '').split('·')[0]).trim();
       return /^[A-Za-z0-9$]/.test(s) ? s.replace(/^\$/, '').toUpperCase() : '';
@@ -846,13 +860,15 @@
     const kick = coins.length && mc > 1e6 ? fmtCap(mc) + ' · ' + coins.join(' · ')
                : coins.length ? ((A.PMETA[id] || {}).e || '') + '  ' + coins.join(' · ')
                : ((A.PMETA[id] || {}).e || '') + '  the new frontier';
-    // trending block: dated header + up to five of the day's narratives
+    return { kick, title: tb.country, line: stopTrendHtml(tb) };
+  }
+  // trending block: dated header + up to five of the day's narratives
+  function stopTrendHtml(tb) {
     const tops = (tb.topics || []).slice(0, 5).map(tp => tp.t.slice(0, 48));
     const day = fmtDay(nextDay(A.day));
-    const html = tops.length
+    return tops.length
       ? '<span class="tk">Trending' + (day ? ' · ' + A.esc(day) : '') + '</span>' + tops.map(s => A.esc(s)).join('<br>')
       : '';
-    return { kick, title: tb.country, line: html };
   }
   const logo = document.createElement('div');
   logo.id = 'goclogo';

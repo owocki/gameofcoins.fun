@@ -567,8 +567,9 @@ function buildWorld(D){
   countries=[];villages=[];constLabels=[];contLblEls=[];oceanLblEls=[];waterHits=[];
 
 
-  /* the whole world is one landmass; the ocean survives only at the margins */
-  {
+  /* the whole world is one landmass; the ocean survives only at the margins.
+     Island-world verticals (macro) skip the mainland entirely. */
+  if(!(window.__vert&&window.__vert.noMainland)){
     const SLC=[1025,900];
     const SL=blobPts(SLC[0],SLC[1],2700,1800,0.02,7,.10,220);
     const d=pathFrom(SL,true);
@@ -580,6 +581,8 @@ function buildWorld(D){
     el('path',{d,fill:'none',stroke:'#5a4f3c','stroke-width':1.2,'vector-effect':'non-scaling-stroke',opacity:.85},g);
   }
   function mcapOf(tb){
+    const W=window.__vert&&window.__vert.weight;   // weight-table verticals (macro)
+    if(W)return (tb&&W[tb.id])||0;
     let s=0;
     for(const t of ((tb&&tb.discussing)||[])){
       const m=/\$([\d.]+)(T|B|M|K) market cap/.exec(t.d||'');
@@ -1224,6 +1227,8 @@ document.getElementById('psheet').addEventListener('click',e=>{
 });
 
 function mcapOfTribe(tb){
+  const W=window.__vert&&window.__vert.weight;   // weight-table verticals (macro)
+  if(W)return (tb&&W[tb.id])||0;
   let s=0;
   for(const t of ((tb&&tb.discussing)||[])){
     const m=/\$([\d.]+)(T|B|M|K) market cap/.exec(t.d||'');
