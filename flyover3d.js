@@ -19,7 +19,7 @@
     beginEl.style.zIndex = 66;
     beginEl.style.cursor = 'default';
     const btn = 'display:inline-block;margin:6px 8px;padding:10px 22px;border:1px solid #c9a86a;border-radius:999px;color:#e8c877;font-size:14px;letter-spacing:.18em;cursor:pointer;background:#0a080566';
-    beginEl.innerHTML = '<div class="b1" style="font-size:min(8vw,44px)">GAMEOFCOINS.XYZ</div>' +
+    beginEl.innerHTML = '<div class="b1" style="font-size:min(8vw,44px)">GAMEOFCOINS.FUN</div>' +
       '<div style="margin-top:6px">' +
       '<span id="gocfilm" style="' + btn + '">&#9654; WATCH THE FILM</span>' +
       '<span id="goclive" style="' + btn + ';opacity:.45">&#9876; FLY IT LIVE <span id="cinesub" class="pulse">&middot; loading&hellip;</span></span>' +
@@ -882,7 +882,7 @@
   logo.style.cssText = 'position:fixed;inset:0;z-index:64;background:radial-gradient(ellipse at center,#0a0805d9 30%,#0a0805f2 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;color:#e8c877;font-family:var(--serif);pointer-events:none';
   logo.innerHTML = '<div style="font-size:max(12px,calc(var(--cw,100vw)*0.032));letter-spacing:.6em;color:#c9a86a">GAME OF COINS</div>' +
     '<div style="height:1px;width:calc(var(--cw,100vw)*0.55);background:linear-gradient(90deg,transparent,#c9a86a,transparent)"></div>' +
-    '<div style="font-size:calc(var(--cw,100vw)*0.105);font-weight:600;letter-spacing:.06em;text-shadow:0 0 70px #e8c87766,0 4px 30px #000">gameofcoins.xyz</div>' +
+    '<div style="font-size:calc(var(--cw,100vw)*0.105);font-weight:600;letter-spacing:.06em;text-shadow:0 0 70px #e8c87766,0 4px 30px #000">gameofcoins.fun</div>' +
     '<div style="height:1px;width:calc(var(--cw,100vw)*0.55);background:linear-gradient(90deg,transparent,#c9a86a,transparent)"></div>' +
     '<div style="font-size:max(11px,calc(var(--cw,100vw)*0.028));letter-spacing:.42em;color:#c9a86a">' + SUBTITLE + '</div>';
   document.body.appendChild(logo);
@@ -1341,7 +1341,7 @@
       }
       if (cardKey !== cardFor) {
         cardFor = cardKey;
-        if (cardKey === '__outro') card('GAME OF COINS', 'gameofcoins.xyz', A.esc(SUBTITLE.toLowerCase() + ' · resurveyed nightly'));
+        if (cardKey === '__outro') card('GAME OF COINS', 'gameofcoins.fun', A.esc(SUBTITLE.toLowerCase() + ' · resurveyed nightly'));
         else if (cardKey) { const sc = stopCard(cardKey); card(sc.kick, sc.title, sc.line); }
       }
       setCardAlpha(cardKey ? cardAlpha : 0);
