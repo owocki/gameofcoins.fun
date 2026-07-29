@@ -49,7 +49,7 @@
 
   const { X0, Y0, X1, Y1 } = A.world;
   const CXW = (X0 + X1) / 2, CYW = (Y0 + Y1) / 2;
-  const POP = ['btcmaxis', 'stablecoins', 'ethereum', 'exchangetokens', 'xrparmy', 'rwa', 'solana'];
+  const POP = ['btcmaxis', 'stablecoins', 'ethereum', 'base', 'exchangetokens', 'xrparmy', 'rwa', 'brokerchains', 'solana'];
   const NICHE = ['linkmarines', 'regens', 'memedaos', 'desci', 'airdropfarmers', 'mevsearchers', 'artists', 'ghostchains'];
 
   // ---------- height field (must match what the towns sit on) ----------
@@ -208,6 +208,8 @@
   const TRIBE_LOOK = {
     btcmaxis:       { walls: [0xe0b36a, 0xd9a24f, 0xc9963f, 0xb3823a], roof: 0x3a3630, keep: 0xf7931a, style: 'fort', name: 'The Vault of 21M' },
     ethereum:       { walls: [0xb7c3e8, 0x9fb0e0, 0x8a9cd8, 0xcdd6f0], roof: 0x4a5aa8, keep: 0x627eea, style: 'crystal', name: 'The Beacon Spire' },
+    base:           { walls: [0xd8e2f8, 0xc2d2f0, 0xaac0ea, 0xe8eefc], roof: 0x0052ff, keep: 0x0052ff, style: 'flat', name: 'The Onchain Gate' },
+    brokerchains:   { walls: [0xe2ece4, 0xd0e0d4, 0xbcd4c2, 0xeef6f0], roof: 0x00c805, keep: 0x00b465, style: 'tower', name: 'The Brokerage' },
     stablecoins:    { walls: [0xf2eee0, 0xe8e2cf, 0xdcd5bd, 0xf7f4ea], roof: 0x3f7d4f, keep: 0x2f6f45, style: 'dome', name: 'The Mint' },
     exchangetokens: { walls: [0x4a4438, 0x5a523f, 0x3a352c, 0x6a6049], roof: 0xe8b93b, keep: 0xf0b90b, style: 'tower', name: 'The Order Books' },
     xrparmy:        { walls: [0xdfe8f0, 0xc8d8e8, 0xb0c8e0, 0xeef4f8], roof: 0x2a6db5, keep: 0x1a4a80, style: 'flat', name: 'The Courthouse' },
@@ -833,7 +835,9 @@
     const tb = c.tribe;
     // kicker: market cap, then the coins that live here
     const coins = (tb.discussing || []).map(tickOf).filter(s => /^[A-Z0-9]{2,6}$/.test(s)).slice(0, 4);
-    const kick = fmtCap(A.mcap(tb)) + (coins.length ? ' · ' + coins.join(' · ') : '');
+    const mc = A.mcap(tb);
+    const kick = coins.length && mc > 1e6 ? fmtCap(mc) + ' · ' + coins.join(' · ')
+               : ((A.PMETA[id] || {}).e || '') + '  the new frontier';
     // trending block: dated header + up to five of the day's narratives
     const tops = (tb.topics || []).slice(0, 5).map(tp => tp.t.slice(0, 48));
     const day = fmtDay(nextDay(A.day));
