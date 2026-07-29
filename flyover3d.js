@@ -807,6 +807,13 @@
     const p = (s || '').split('-');
     return p.length === 3 ? MON[+p[1] - 1] + ' ' + (+p[2]) + ' ' + p[0] : '';
   }
+  // the film is surveyed overnight and airs the next morning — date it so
+  function nextDay(s) {
+    const p = (s || '').split('-');
+    if (p.length !== 3) return '';
+    const d = new Date(Date.UTC(+p[0], +p[1] - 1, +p[2] + 1));
+    return d.getUTCFullYear() + '-' + String(d.getUTCMonth() + 1).padStart(2, '0') + '-' + String(d.getUTCDate()).padStart(2, '0');
+  }
   function fmtCap(mc) {
     return mc >= 1e12 ? '$' + (mc / 1e12).toFixed(2) + 'T'
          : mc >= 1e9 ? '$' + Math.round(mc / 1e9) + 'B'
@@ -821,7 +828,7 @@
     const kick = fmtCap(A.mcap(tb)) + (coins.length ? ' · ' + coins.join(' · ') : '');
     // trending block: dated header + up to five of the day's narratives
     const tops = (tb.topics || []).slice(0, 5).map(tp => tp.t.slice(0, 48));
-    const day = fmtDay(A.day);
+    const day = fmtDay(nextDay(A.day));
     const html = tops.length
       ? '<span class="tk">Trending' + (day ? ' · ' + A.esc(day) : '') + '</span>' + tops.map(s => A.esc(s)).join('<br>')
       : '';
@@ -1043,14 +1050,26 @@
       W2S(tw.cap[0] + Math.cos(a) * rr, tw.cap[1] + Math.sin(a) * rr * 0.8, y);
     towns.forEach((tw, i) => {
       const c0 = W2S(tw.cap[0], tw.cap[1], 0);
-      // high transfer waypoint clearing whatever terrain lies between towns
-      const mid = prev.clone().lerp(c0, 0.5);
-      let hmax = 0;
-      for (let k = 0; k <= 10; k++) {
-        const q = prev.clone().lerp(c0, k / 10);
-        hmax = Math.max(hmax, getH(q.x + CXW, q.z + CYW));
+      // route the transfer AROUND big terrain, not through it: try lateral
+      // offsets for the midpoint and keep the route with the lowest ceiling,
+      // so mountains get panned around instead of flown into
+      const legMax = (a, b) => {
+        let m = 0;
+        for (let k = 0; k <= 12; k++) {
+          const q = a.clone().lerp(b, k / 12);
+          m = Math.max(m, getH(q.x + CXW, q.z + CYW));
+        }
+        return m;
+      };
+      const straight = prev.clone().lerp(c0, 0.5);
+      const perp = new T.Vector3(-(c0.z - prev.z), 0, c0.x - prev.x).normalize();
+      let mid = straight, best = Math.max(legMax(prev, straight), legMax(straight, c0));
+      for (const off of [-520, -340, -180, 180, 340, 520]) {
+        const cand = straight.clone().addScaledVector(perp, off);
+        const h = Math.max(legMax(prev, cand), legMax(cand, c0));
+        if (h < best - 25) { best = h; mid = cand; }  // detour only when clearly lower
       }
-      mid.y = Math.max(prev.y * 0.5 + 110, hmax + 150);
+      mid.y = Math.max(prev.y * 0.5 + 110, best + 130);
       const Ro = tw.Rt * 3.0;    // orbit radius tuned to the narrow 9:16 horizontal FOV
       const eye = tw.base + 40 + tw.Rt * 0.8;        // crane height: gentle look-down
       const dirn = i % 2 ? -1 : 1;                   // alternate orbit direction

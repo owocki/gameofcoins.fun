@@ -219,7 +219,9 @@ body.cine.cinedone #cine .bar{opacity:0}
 /* 9:16 mobile-native flyover: captions sized off the video frame width (--cw),
    big and roman for one-glance reads, letterbox bars dropped */
 body.v916 #cine .bar{display:none}
-body.v916 #cinecard{bottom:15%;width:calc(var(--cw,100vw)*0.92);
+body.v916 #cinecard{bottom:15%;width:max-content;max-width:calc(var(--cw,100vw)*0.92);box-sizing:border-box;
+  padding:8px 16px 10px;border-radius:14px;background:#0a080537;
+  backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
   text-shadow:0 2px 18px #000c,0 0 6px #0009}
 body.v916 #cinecard .ck{font-size:max(13px,calc(var(--cw,100vw)*0.036));letter-spacing:.14em}
 body.v916 #cinecard h1{font-size:calc(var(--cw,100vw)*0.1);letter-spacing:.04em}
