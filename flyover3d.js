@@ -5,7 +5,9 @@
 (function () {
   'use strict';
   const A = window.__atlas;
-  if (!A || !window.THREE) { console.error('flyover3d: missing bridge or three'); return; }
+  const dlog = window.__dlog || (() => {});
+  dlog('flyover3d-start');
+  if (!A || !window.THREE) { console.error('flyover3d: missing bridge or three'); dlog('missing-bridge-or-three'); return; }
   const T = window.THREE;
   const AUTO = /[?&]auto=1/.test(location.search);
   const RECORDQ = /[?&]record=1/.test(location.search);
@@ -103,9 +105,11 @@
     renderer = new T.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
   } catch (e) {
     console.error('flyover3d: WebGL unavailable', e);
+    dlog('renderer-failed', e && e.message);
     if (window.__flyFail) window.__flyFail();
     return;
   }
+  dlog('renderer-created');
   renderer.setSize(innerWidth, innerHeight);
   renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));
   renderer.domElement.id = 'fly3d';
@@ -840,7 +844,9 @@
   // ---------- free-roam: the default main view (drag to pan, wheel to zoom, right-drag to orbit) ----------
   function freeMode() {
     const el = renderer.domElement;
-    const tgt = new T.Vector3(SLc[0] - CXW, 0, SLc[1] - CYW);
+    // open aimed 10% of the map right of and below dead center
+    const HOMEX = SLc[0] - CXW + (X1 - X0) * 0.60, HOMEZ = SLc[1] - CYW + (Y1 - Y0) * 0.30;
+    const tgt = new T.Vector3(HOMEX, 0, HOMEZ);
     const MIND = 150, MAXD = 6200;
     let dist = MAXD, yaw = 0, pitch = 1.5;   // start: fully zoomed-out top-down atlas view
     // re-wire the map's zoom buttons to the 3D camera (clone strips 2D handlers)
@@ -852,7 +858,7 @@
       document.getElementById('z-out').addEventListener('click', () => { dist = Math.min(MAXD, dist / 0.66); glide = null; });
       document.getElementById('z-fit').addEventListener('click', () => {
         yaw = 0; pitch = 1.5; dist = MAXD; glide = null;
-        tgt.set(SLc[0] - CXW, 0, SLc[1] - CYW);
+        tgt.set(HOMEX, 0, HOMEZ);
       });
     }
     // from above, the cinematic's haze and high clouds just obscure the map
@@ -886,8 +892,10 @@
       el.style.cursor = 'grabbing';
     });
     addEventListener('pointerup', () => { dragging = false; el.style.cursor = 'grab'; });
+    const evCounts = { wheel: 0, drag: 0 };
     el.addEventListener('wheel', ev => {
       ev.preventDefault();
+      evCounts.wheel++;
       const nd = Math.max(MIND, Math.min(MAXD, dist * Math.exp(ev.deltaY * 0.0011)));
       if (nd < dist) {
         // zoom dives toward the point under the cursor, not the screen center
@@ -1010,6 +1018,13 @@
         first = false;
         document.getElementById('stage').style.display = 'none';
         const chip = document.getElementById('boot3d'); if (chip) chip.remove();
+        const snap = () => JSON.stringify({ dist: Math.round(dist), pitch: +pitch.toFixed(3), yaw: +yaw.toFixed(3),
+          tgt: [Math.round(tgt.x), Math.round(tgt.z)], cam: [Math.round(cam.position.x), Math.round(cam.position.y), Math.round(cam.position.z)],
+          wheel: evCounts.wheel, canvas: [renderer.domElement.width, renderer.domElement.height],
+          win: [innerWidth, innerHeight] });
+        dlog('first-frame', snap());
+        setTimeout(() => dlog('t+3s', snap()), 3000);
+        setTimeout(() => dlog('t+8s', snap()), 8000);
       }
       requestAnimationFrame(loop);
     })(performance.now());
@@ -1063,9 +1078,12 @@
       const Rt = 55 + 22 * Math.log10(1 + A.mcap(c.tribe) / 1e9);
       flatZones.push({ x: cap[0], y: cap[1], r: Rt * 1.6, h: getHraw(cap[0], cap[1]) });
     }
+    dlog('rasterize-start');
     const tex = await rasterizeMap(FREE);
+    dlog('rasterize-done', tex ? 'ok' : 'NULL-TEXTURE');
     if (!FREE) document.getElementById('stage').style.display='none';  // stop repainting the SVG under the GL canvas
     buildTerrain(tex);
+    dlog('terrain-built');
     buildClouds();
     const order = FEATURED;
     const towns = TOWN_IDS.map(buildTown);
@@ -1085,7 +1103,7 @@
       (TRIBE_PROPS[tw.id] || []).forEach(fn => fn(tw, rnd));
       buildWalkers(tw, rnd);
     });
-    if (FREE) { freeMode(); return; }
+    if (FREE) { dlog('free-mode-enter'); freeMode(); return; }
     const { curve, count } = buildPath(towns);
     const cloudBase = clouds.map(c => c.m.position.x);
 

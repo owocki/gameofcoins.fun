@@ -1424,11 +1424,23 @@ const FREE3D=!CINE&&WANT3D;
 const FLAT2D=!CINE&&!WANT3D;
 if(CINE3D||FREE3D){
   if(CINE3D)document.body.classList.add('cine');
+  // boot telemetry: every stage of the 3D boot reports to the dev server's
+  // /__diag endpoint (and console) so real-browser failures are diagnosable
+  const DIAG={ua:navigator.userAgent,dpr:devicePixelRatio,w:innerWidth,h:innerHeight,
+    url:location.href,t0:Date.now(),events:[]};
+  window.__dlog=(ev,extra)=>{
+    DIAG.events.push({t:Date.now()-DIAG.t0,ev,x:extra===undefined?'':String(extra)});
+    console.log('[map3d boot]',ev,extra||'');
+    try{fetch('/__diag',{method:'POST',body:JSON.stringify(DIAG),keepalive:true}).catch(()=>{})}catch(e){}
+  };
+  addEventListener('error',e=>__dlog('jserror',(e.message||'')+' @'+String(e.filename||'').split('/').pop()+':'+e.lineno));
+  addEventListener('unhandledrejection',e=>__dlog('unhandledrejection',e.reason&&e.reason.message||e.reason));
   // WebGL can be missing or blocked (e.g. Brave fingerprint shields). Probe
   // first; if the 3D layer can't start, fall back to the fitted flat map
   // with a visible notice instead of stranding the user on a corner.
   const glOK=(()=>{try{const c=document.createElement('canvas');
     return !!(c.getContext('webgl2')||c.getContext('webgl'))}catch(e){return false}})();
+  __dlog('probe',JSON.stringify({glOK,mode:CINE3D?'cine':'free'}));
   window.__flyFail=(msg)=>{
     const c3=document.getElementById('fly3d');if(c3)c3.remove();
     let chip=document.getElementById('boot3d');
@@ -1442,6 +1454,7 @@ if(CINE3D||FREE3D){
     const sel=document.getElementById('vmsel');if(sel)sel.value='2d';
     chip.textContent=msg||'the 3d world could not start here (WebGL blocked?) — showing the flat map';
     setTimeout(()=>{chip.remove()},9000);
+    __dlog('flyFail',msg||'');
   };
   if(!glOK&&CINE3D){location.replace('?flyover2d');}
   else if(!glOK){window.addEventListener('load',()=>__flyFail());}
@@ -1465,10 +1478,13 @@ if(CINE3D||FREE3D){
         pick:(wx,wy)=>findCountry(wx,wy),
         card:(tb,kick,px,py)=>{renderCard(tb,kick);tt.classList.add('on');placeCard(px,py)},
         hideCard:()=>{tt.classList.remove('on');curId=null}};
-      const s1=document.createElement('script');s1.src='vendor/three.min.js?v=916b';
-      s1.onerror=()=>__flyFail();
-      s1.onload=()=>{const s2=document.createElement('script');s2.src='flyover3d.js?v=916b';
-        s2.onerror=()=>__flyFail();document.body.appendChild(s2)};
+      __dlog('atlas-ready');
+      const s1=document.createElement('script');s1.src='vendor/three.min.js?v=916c';
+      s1.onerror=()=>{__dlog('three-load-error');__flyFail();};
+      s1.onload=()=>{__dlog('three-loaded');
+        const s2=document.createElement('script');s2.src='flyover3d.js?v=916d';
+        s2.onerror=()=>{__dlog('flyover3d-load-error');__flyFail();};
+        document.body.appendChild(s2)};
       document.body.appendChild(s1);
     },200);
   }
