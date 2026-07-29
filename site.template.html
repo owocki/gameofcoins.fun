@@ -1424,21 +1424,54 @@ const FREE3D=!CINE&&WANT3D;
 const FLAT2D=!CINE&&!WANT3D;
 if(CINE3D||FREE3D){
   if(CINE3D)document.body.classList.add('cine');
-  const boot3=setInterval(()=>{
-    if(!countries.length)return;
-    clearInterval(boot3);
-    window.__atlas={world:{X0,Y0,X1,Y1},PMETA,PAPER,
-      get countries(){return countries},
-      get villages(){return villages},
-      get day(){return DATES[dateIdx]||''},
-      mcap:mcapOfTribe,startScore,esc,
-      pick:(wx,wy)=>findCountry(wx,wy),
-      card:(tb,kick,px,py)=>{renderCard(tb,kick);tt.classList.add('on');placeCard(px,py)},
-      hideCard:()=>{tt.classList.remove('on');curId=null}};
-    const s1=document.createElement('script');s1.src='vendor/three.min.js?v=916a';
-    s1.onload=()=>{const s2=document.createElement('script');s2.src='flyover3d.js?v=916a';document.body.appendChild(s2)};
-    document.body.appendChild(s1);
-  },200);
+  // WebGL can be missing or blocked (e.g. Brave fingerprint shields). Probe
+  // first; if the 3D layer can't start, fall back to the fitted flat map
+  // with a visible notice instead of stranding the user on a corner.
+  const glOK=(()=>{try{const c=document.createElement('canvas');
+    return !!(c.getContext('webgl2')||c.getContext('webgl'))}catch(e){return false}})();
+  window.__flyFail=(msg)=>{
+    const c3=document.getElementById('fly3d');if(c3)c3.remove();
+    let chip=document.getElementById('boot3d');
+    if(!chip){chip=document.createElement('div');chip.id='boot3d';
+      chip.style.cssText='position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:48;'+
+        'background:#f3e9d2;border:1px solid #b7a173;border-radius:999px;padding:7px 16px;'+
+        'font-family:var(--serif);font-size:13px;color:#2c2417;box-shadow:0 2px 6px -2px #2c241766';
+      document.body.appendChild(chip);}
+    document.getElementById('stage').style.display='';
+    scale=fitScale();cxv=(X0+X1)/2;cyv=(Y0+Y1)/2;apply();
+    const sel=document.getElementById('vmsel');if(sel)sel.value='2d';
+    chip.textContent=msg||'the 3d world could not start here (WebGL blocked?) — showing the flat map';
+    setTimeout(()=>{chip.remove()},9000);
+  };
+  if(!glOK&&CINE3D){location.replace('?flyover2d');}
+  else if(!glOK){window.addEventListener('load',()=>__flyFail());}
+  else{
+    if(FREE3D){
+      const chip=document.createElement('div');chip.id='boot3d';
+      chip.textContent='⛰ raising the 3d world…';
+      chip.style.cssText='position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:48;'+
+        'background:#f3e9d2;border:1px solid #b7a173;border-radius:999px;padding:7px 16px;'+
+        'font-family:var(--serif);font-size:13px;color:#2c2417;box-shadow:0 2px 6px -2px #2c241766';
+      document.body.appendChild(chip);
+    }
+    const boot3=setInterval(()=>{
+      if(!countries.length)return;
+      clearInterval(boot3);
+      window.__atlas={world:{X0,Y0,X1,Y1},PMETA,PAPER,
+        get countries(){return countries},
+        get villages(){return villages},
+        get day(){return DATES[dateIdx]||''},
+        mcap:mcapOfTribe,startScore,esc,
+        pick:(wx,wy)=>findCountry(wx,wy),
+        card:(tb,kick,px,py)=>{renderCard(tb,kick);tt.classList.add('on');placeCard(px,py)},
+        hideCard:()=>{tt.classList.remove('on');curId=null}};
+      const s1=document.createElement('script');s1.src='vendor/three.min.js?v=916b';
+      s1.onerror=()=>__flyFail();
+      s1.onload=()=>{const s2=document.createElement('script');s2.src='flyover3d.js?v=916b';
+        s2.onerror=()=>__flyFail();document.body.appendChild(s2)};
+      document.body.appendChild(s1);
+    },200);
+  }
 }
 /* mode dropdown: flat map (default) · 3d world · the flyover */
 {

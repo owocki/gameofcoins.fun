@@ -98,7 +98,14 @@
   function cineSize() {
     return { w: Math.min(innerWidth, Math.round(innerHeight * 9 / 16)), h: innerHeight };
   }
-  const renderer = new T.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+  let renderer;
+  try {
+    renderer = new T.WebGLRenderer({ antialias: true, powerPreference: 'high-performance' });
+  } catch (e) {
+    console.error('flyover3d: WebGL unavailable', e);
+    if (window.__flyFail) window.__flyFail();
+    return;
+  }
   renderer.setSize(innerWidth, innerHeight);
   renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));
   renderer.domElement.id = 'fly3d';
@@ -188,21 +195,21 @@
   //        dome marble domes | tower tall narrow | flat slab roofs | ruin broken grey
   const DEFAULT_LOOK = { walls: [0xd8cbaa, 0xcbb98f, 0xb59a74, 0xa9906b], roof: 0x96604a, keep: 0x6f4a38, style: 'cone' };
   const TRIBE_LOOK = {
-    btcmaxis:       { walls: [0xe0b36a, 0xd9a24f, 0xc9963f, 0xb3823a], roof: 0x3a3630, keep: 0xf7931a, style: 'fort' },
-    ethereum:       { walls: [0xb7c3e8, 0x9fb0e0, 0x8a9cd8, 0xcdd6f0], roof: 0x4a5aa8, keep: 0x627eea, style: 'crystal' },
-    stablecoins:    { walls: [0xf2eee0, 0xe8e2cf, 0xdcd5bd, 0xf7f4ea], roof: 0x3f7d4f, keep: 0x2f6f45, style: 'dome' },
-    exchangetokens: { walls: [0x4a4438, 0x5a523f, 0x3a352c, 0x6a6049], roof: 0xe8b93b, keep: 0xf0b90b, style: 'tower' },
-    xrparmy:        { walls: [0xdfe8f0, 0xc8d8e8, 0xb0c8e0, 0xeef4f8], roof: 0x2a6db5, keep: 0x1a4a80, style: 'flat' },
-    rwa:            { walls: [0xd8a878, 0xcc9868, 0xc08858, 0xe0b888], roof: 0x8a4a2e, keep: 0x9a5a3a, style: 'dome' },
-    solana:         { walls: [0x8a5ac8, 0x9a6ad0, 0x6a48b0, 0x5adba0], roof: 0x14f195, keep: 0x9945ff, style: 'tower' },
-    linkmarines:    { walls: [0x6a7a94, 0x58687f, 0x7d8da8, 0x4a5870], roof: 0x24528f, keep: 0x2a5db0, style: 'tower' },
-    regens:         { walls: [0xb5a878, 0xa89868, 0x988a5c, 0xc0b088], roof: 0x5c8a3c, keep: 0x4f8136, style: 'cone' },
-    memedaos:       { walls: [0xe86a5a, 0x5ab8e8, 0xe8d05a, 0xb05ae8], roof: 0xe84a90, keep: 0xffd400, style: 'cone' },
-    desci:          { walls: [0xa8d8d0, 0x90c8c0, 0x78b8b0, 0xc0e8e0], roof: 0x3a8a80, keep: 0x63b8a8, style: 'dome' },
-    airdropfarmers: { walls: [0xc0563e, 0x4e7dae, 0xd8b13a, 0x7d5aa0], roof: 0xa89060, keep: 0xd4af37, style: 'flat' },
-    mevsearchers:   { walls: [0x2e2a33, 0x3a3540, 0x26222b, 0x45404d], roof: 0x151218, keep: 0xffe25c, style: 'tower' },
-    artists:        { walls: [0xe8c8d8, 0xc8d8e8, 0xd8e8c8, 0xe8e0c0], roof: 0x7d5aa0, keep: 0xc0563e, style: 'cone' },
-    ghostchains:    { walls: [0x9a948a, 0x8a857c, 0x7a756d, 0xaaa49a], roof: 0x6a655e, keep: 0x8a857c, style: 'ruin' }
+    btcmaxis:       { walls: [0xe0b36a, 0xd9a24f, 0xc9963f, 0xb3823a], roof: 0x3a3630, keep: 0xf7931a, style: 'fort', name: 'The Vault of 21M' },
+    ethereum:       { walls: [0xb7c3e8, 0x9fb0e0, 0x8a9cd8, 0xcdd6f0], roof: 0x4a5aa8, keep: 0x627eea, style: 'crystal', name: 'The Beacon Spire' },
+    stablecoins:    { walls: [0xf2eee0, 0xe8e2cf, 0xdcd5bd, 0xf7f4ea], roof: 0x3f7d4f, keep: 0x2f6f45, style: 'dome', name: 'The Mint' },
+    exchangetokens: { walls: [0x4a4438, 0x5a523f, 0x3a352c, 0x6a6049], roof: 0xe8b93b, keep: 0xf0b90b, style: 'tower', name: 'The Order Books' },
+    xrparmy:        { walls: [0xdfe8f0, 0xc8d8e8, 0xb0c8e0, 0xeef4f8], roof: 0x2a6db5, keep: 0x1a4a80, style: 'flat', name: 'The Courthouse' },
+    rwa:            { walls: [0xd8a878, 0xcc9868, 0xc08858, 0xe0b888], roof: 0x8a4a2e, keep: 0x9a5a3a, style: 'dome', name: 'The Registry' },
+    solana:         { walls: [0x8a5ac8, 0x9a6ad0, 0x6a48b0, 0x5adba0], roof: 0x14f195, keep: 0x9945ff, style: 'tower', name: 'The Sun Forge' },
+    linkmarines:    { walls: [0x6a7a94, 0x58687f, 0x7d8da8, 0x4a5870], roof: 0x24528f, keep: 0x2a5db0, style: 'tower', name: 'The Oracle Tower' },
+    regens:         { walls: [0xb5a878, 0xa89868, 0x988a5c, 0xc0b088], roof: 0x5c8a3c, keep: 0x4f8136, style: 'cone', name: 'The Greenhouse' },
+    memedaos:       { walls: [0xe86a5a, 0x5ab8e8, 0xe8d05a, 0xb05ae8], roof: 0xe84a90, keep: 0xffd400, style: 'cone', name: 'The Casino' },
+    desci:          { walls: [0xa8d8d0, 0x90c8c0, 0x78b8b0, 0xc0e8e0], roof: 0x3a8a80, keep: 0x63b8a8, style: 'dome', name: 'The Laboratory' },
+    airdropfarmers: { walls: [0xc0563e, 0x4e7dae, 0xd8b13a, 0x7d5aa0], roof: 0xa89060, keep: 0xd4af37, style: 'flat', name: 'The Granary' },
+    mevsearchers:   { walls: [0x2e2a33, 0x3a3540, 0x26222b, 0x45404d], roof: 0x151218, keep: 0xffe25c, style: 'tower', name: 'The Dark Forest Gate' },
+    artists:        { walls: [0xe8c8d8, 0xc8d8e8, 0xd8e8c8, 0xe8e0c0], roof: 0x7d5aa0, keep: 0xc0563e, style: 'cone', name: 'The Gallery' },
+    ghostchains:    { walls: [0x9a948a, 0x8a857c, 0x7a756d, 0xaaa49a], roof: 0x6a655e, keep: 0x8a857c, style: 'ruin', name: 'The Mausoleum' }
   };
   function rng32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; } }
   function buildTown(id) {
@@ -233,6 +240,12 @@
     } else {
       const kr = new T.Mesh(new T.ConeGeometry(12, 16, 8), keepM);
       kr.position.copy(W2S(cap[0], cap[1], base + keepH + 8)); g.add(kr);
+    }
+    if (look.name) {                       // the keep has a name worth reading
+      const kl = makeLabel(look.name);
+      kl.scale.set(28, 7, 1);
+      kl.position.copy(W2S(cap[0], cap[1], base + keepH + 22));
+      g.add(kl);
     }
     // houses in rings, leaving a main street along x for the camera
     for (let i = 0; i < n; i++) {
@@ -612,10 +625,13 @@
     ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
     ctx.strokeStyle = '#f3e9d2'; ctx.lineWidth = 12; ctx.strokeText(text, 256, 64);
     ctx.fillStyle = '#2c2417'; ctx.fillText(text, 256, 64);
-    const sp = new T.Sprite(new T.SpriteMaterial({ map: new T.CanvasTexture(cv), transparent: true, depthWrite: false }));
+    // depthTest off: name banners must never hide behind buildings
+    const sp = new T.Sprite(new T.SpriteMaterial({ map: new T.CanvasTexture(cv), transparent: true, depthWrite: false, depthTest: false }));
+    sp.renderOrder = 40;
     sp.scale.set(34, 8.5, 1);
     return sp;
   }
+  const leaderMat = new T.MeshBasicMaterial({ color: 0xf3e9d2, transparent: true, opacity: 0.35, depthTest: false });
   const walkerMats = [0x8a4a2e, 0x4e7dae, 0x5c7d46, 0x7d5aa0, 0xb08d2a].map(c => new T.MeshLambertMaterial({ color: c }));
   const hatGold = new T.MeshLambertMaterial({ color: 0xd8a828 });
   const hatDark = new T.MeshLambertMaterial({ color: 0x2e2a26 });
@@ -634,8 +650,13 @@
       else if (i === 2) { const c = new T.Mesh(new T.ConeGeometry(2.0, 2.4, 7), mat); c.position.y = 7.6; g.add(c); }
       else if (i === 3) { const h = new T.Mesh(new T.TorusGeometry(1.6, 0.3, 6, 14), hatGold); h.position.y = 8.6; h.rotation.x = Math.PI / 2; g.add(h); }
       else { const c = new T.Mesh(new T.CylinderGeometry(2.0, 2.0, 0.6, 8), hatDark); c.position.y = 7.5; g.add(c); }
+      // banners float above the rooflines, staggered so they never collide
       const label = makeLabel(handle);
-      label.position.y = 12.5; g.add(label);
+      label.position.y = 21 + i * 3.4; g.add(label);
+      const line = new T.Mesh(new T.CylinderGeometry(0.12, 0.12, label.position.y - 11.5, 4), leaderMat);
+      line.renderOrder = 39;
+      line.position.y = (label.position.y - 3.5 + 8) / 2;
+      g.add(line);
       g.scale.setScalar(1.3);
       scene.add(g);
       walkers.push({ g, tw, ph: i * 1.7 + rnd() * 2, rr: 0.35 + rnd() * 0.4, spd: 0.16 + rnd() * 0.1,
@@ -985,7 +1006,11 @@
       }
       applyCam();
       renderer.render(scene, cam);
-      if (first) { first = false; document.getElementById('stage').style.display = 'none'; }
+      if (first) {
+        first = false;
+        document.getElementById('stage').style.display = 'none';
+        const chip = document.getElementById('boot3d'); if (chip) chip.remove();
+      }
       requestAnimationFrame(loop);
     })(performance.now());
   }
@@ -1183,6 +1208,10 @@
     if (beginSub) { beginSub.classList.remove('pulse'); beginSub.textContent = ''; }
     if (beginEl) { const b = beginEl.querySelector('#goclive'); if (b) b.style.opacity = '1'; }
   }
+  window.__flyBootFailGuard = setTimeout(() => {
+    // 25s and no first frame: something in the 3D path is wedged — fall back
+    if (!window.__flyReady && FREE && document.getElementById('boot3d') && window.__flyFail) window.__flyFail();
+  }, 25000);
   addEventListener('resize', () => {
     if (V916) {
       const { w, h } = cineSize();
@@ -1194,5 +1223,8 @@
       renderer.setSize(innerWidth, innerHeight);
     }
   });
-  start();
+  start().catch(e => {
+    console.error('flyover3d: boot failed', e);
+    if (window.__flyFail) window.__flyFail();
+  });
 })();
