@@ -124,6 +124,13 @@
     const pillar = document.createElement('div');
     pillar.style.cssText = 'position:fixed;inset:0;z-index:49;background:#000';
     document.body.appendChild(pillar);
+    // persistent watermark, top-right inside the 9:16 frame
+    const wm = document.createElement('div');
+    wm.textContent = 'gameofcoins.fun';
+    wm.style.cssText = 'position:fixed;top:14px;right:calc((100vw - var(--cw,100vw))/2 + 16px);z-index:63;' +
+      'font-family:var(--serif);font-size:max(13px,calc(var(--cw,100vw)*0.034));font-weight:600;' +
+      'letter-spacing:.06em;color:#e8c877;opacity:.9;text-shadow:0 2px 12px #000c;pointer-events:none';
+    document.body.appendChild(wm);
   }
   document.body.appendChild(renderer.domElement);
   const scene = new T.Scene();
@@ -1073,25 +1080,31 @@
       // zoom out, pan high, zoom back in: the transfer cruises well above
       // the terrain ceiling so hills never loom into frame
       mid.y = Math.max(prev.y * 0.6 + 160, best + 300);
-      const Ro = tw.Rt * 3.0;    // orbit radius tuned to the narrow 9:16 horizontal FOV
-      const eye = tw.base + 40 + tw.Rt * 0.8;        // crane height: gentle look-down
+      const Ro = tw.Rt * 3.6;    // wide orbit: the whole town + surroundings in frame
+      const eye = tw.base + 60 + tw.Rt * 1.05;       // higher crane: vista look-down
       const a0 = Math.atan2((prev.z + CYW - tw.cap[1]) / 0.8, prev.x + CXW - tw.cap[0]);
-      // sweep toward whichever side of the ring has the lower terrain, so the
-      // crane never grinds along a neighboring mountainside
+      // find the mountain's bearing on the orbit ring, then shoot the whole
+      // arc from the OPPOSITE side: the town in the foreground, the peak as a
+      // wide backdrop — the camera never hugs the mountainside
       const ringH = (ang) => getH(tw.cap[0] + Math.cos(ang) * Ro, tw.cap[1] + Math.sin(ang) * Ro * 0.8);
-      let hPlus = 0, hMinus = 0;
-      for (let k = 1; k <= 6; k++) {
-        hPlus = Math.max(hPlus, ringH(a0 + k / 6 * 2.4));
-        hMinus = Math.max(hMinus, ringH(a0 - k / 6 * 2.4));
+      let mAng = 0, mH = -1;
+      for (let k = 0; k < 16; k++) {
+        const ang = k / 16 * Math.PI * 2, h = ringH(ang);
+        if (h > mH) { mH = h; mAng = ang; }
       }
-      const dirn = hPlus <= hMinus ? 1 : -1;
-      const S = 2.4 * dirn;                          // ~140° sweep
+      const opp = mAng + Math.PI;                    // camera side: opposite the peak
+      const HALF = 1.2;                              // ~140° sweep, centered opposite
+      const angDist = (a, b) => { let d = (a - b) % (Math.PI * 2); if (d > Math.PI) d -= Math.PI * 2; if (d < -Math.PI) d += Math.PI * 2; return Math.abs(d); };
+      // enter at whichever arc end is nearer the approach bearing
+      const dirn = angDist(opp - HALF, a0) <= angDist(opp + HALF, a0) ? 1 : -1;
+      const aStart = opp - HALF * dirn;
+      const S = 2 * HALF * dirn;
       // every orbit waypoint clears its own local terrain, not just the town's
       const lift = (p, want) => { p.y = Math.max(want, getH(p.x + CXW, p.z + CYW) + 70); return p; };
-      const pA = lift(orb(tw, a0, Ro * 1.05, 0), eye + 65);    // orbit entry, still descending
-      const p1 = lift(orb(tw, a0 + S * 0.35, Ro * 0.92, 0), eye);
-      const p2 = lift(orb(tw, a0 + S * 0.7, Ro * 0.88, 0), eye - 8);  // low point, closest pass
-      const pC = lift(orb(tw, a0 + S, Ro * 1.15, 0), eye + 95);       // rising exit
+      const pA = lift(orb(tw, aStart, Ro * 1.05, 0), eye + 65);    // orbit entry, still descending
+      const p1 = lift(orb(tw, aStart + S * 0.35, Ro * 0.92, 0), eye);
+      const p2 = lift(orb(tw, aStart + S * 0.7, Ro * 0.88, 0), eye - 8);  // low point, closest pass
+      const pC = lift(orb(tw, aStart + S, Ro * 1.15, 0), eye + 95);       // rising exit
       pts.push(mid, pA, p1, p2, pC);
       prev = pC;
     });
