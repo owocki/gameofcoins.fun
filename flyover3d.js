@@ -612,7 +612,10 @@
   function buildCoinLogo(tw) {
     const tb = tw.tribe;
     const d0 = tb.discussing && tb.discussing[0];
-    const tick = (((d0 && (d0.x || d0.t)) || '').replace(/^\$/, '').split(/[\s·]/)[0] || '').toUpperCase();
+    // reach-ranked verticals (macro) mint their emblem, not a ticker —
+    // story titles are not currencies
+    const tick = VERT.paperKick ? ''
+      : (((d0 && (d0.x || d0.t)) || '').replace(/^\$/, '').split(/[\s·]/)[0] || '').toUpperCase();
     const m = A.PMETA[tw.id] || {};
     const label = /^[A-Z0-9]{2,5}$/.test(tick) ? tick : (m.e || '?');
     const cv = document.createElement('canvas'); cv.width = cv.height = 256;
