@@ -75,6 +75,9 @@ def bake_fonts(html: str, fonts: dict) -> str:
     out = (html.replace("__FONT_N500__", fonts["normal-500"])
                .replace("__FONT_N600__", fonts["normal-600"])
                .replace("__FONT_I500__", fonts["italic-500"]))
+    if "__FONT_CINZEL__" in out:
+        cinzel = base64.b64encode((ROOT / "scripts" / "cinzel.ttf").read_bytes()).decode()
+        out = out.replace("__FONT_CINZEL__", cinzel)
     assert "__FONT_" not in out
     return out
 

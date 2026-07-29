@@ -24,37 +24,67 @@
 @font-face{font-family:'EB Garamond';font-style:normal;font-weight:500;src:url(data:font/woff2;base64,__FONT_N500__) format('woff2')}
 @font-face{font-family:'EB Garamond';font-style:normal;font-weight:600;src:url(data:font/woff2;base64,__FONT_N600__) format('woff2')}
 @font-face{font-family:'EB Garamond';font-style:italic;font-weight:500;src:url(data:font/woff2;base64,__FONT_I500__) format('woff2')}
+@font-face{font-family:'Cinzel';src:url(data:font/ttf;base64,__FONT_CINZEL__);font-weight:400 900}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%}
-body{font-family:'EB Garamond',Georgia,serif;background:#0a0805;color:#e8c877;
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;
-  background-image:radial-gradient(ellipse 80% 65% at 50% 42%,#241708 0%,#120c04 55%,#0a0805 100%);
-  padding:32px 18px}
-.k{font-size:14px;letter-spacing:.6em;text-indent:.6em;color:#c9a86a}
-h1{font-size:min(11vw,72px);font-weight:600;letter-spacing:.05em;line-height:1;
-  text-shadow:0 0 70px #e8c87755,0 4px 30px #000}
-.rule{height:1px;width:min(52vw,460px);background:linear-gradient(90deg,transparent,#c9a86a,transparent)}
-.sub{font-size:13px;letter-spacing:.42em;text-indent:.42em;color:#c9a86a}
-.doors{display:flex;gap:22px;margin-top:12px;flex-wrap:wrap;justify-content:center}
+body{font-family:'EB Garamond',Georgia,serif;background:#0a0602;color:#e8c877;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;
+  padding:32px 18px;position:relative;overflow-x:clip}
+.burst{position:fixed;inset:0;z-index:-2;
+  background:radial-gradient(circle at 50% 38%,#ffe9a8 0%,#f0b850 14%,#b06818 36%,#4a2408 62%,#100702 88%,#080401 100%)}
+.burst::before{content:'';position:absolute;inset:-20%;
+  background:repeating-conic-gradient(from 0deg at 50% 44%,#ffdf9628 0deg 3deg,transparent 3deg 8.5deg,#f8c86a1c 8.5deg 12deg,transparent 12deg 17deg);
+  filter:blur(2px)}
+.burst::after{content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 50% 38%,transparent 30%,#00000055 62%,#000000cc 100%)}
+.ringwrap{position:relative;display:flex;align-items:center;justify-content:center;width:100%}
+.ring{position:absolute;width:min(60vw,480px);aspect-ratio:1;border-radius:50%;
+  border:12px solid #3a1c08;box-shadow:0 0 40px #f8c86a44,inset 0 0 30px #00000088;opacity:.75}
+.ring::before{content:'';position:absolute;inset:14px;border-radius:50%;border:2px solid #7a4a1c88}
+.plaque{position:relative;width:min(96vw,940px);padding:26px 30px 24px;text-align:center;
+  background:linear-gradient(180deg,#4a2610 0%,#2e1608 40%,#1c0d05 100%);
+  border-top:3px solid #8a5a24;border-bottom:3px solid #8a5a24;
+  box-shadow:0 0 70px #f8c86a55,inset 0 2px 0 #c8863a66,inset 0 -2px 0 #c8863a44,inset 0 0 40px #00000088}
+.plaque::before,.plaque::after{content:'';position:absolute;top:-3px;bottom:-3px;width:8px;
+  background:linear-gradient(180deg,#8a5a24,#3a1c08,#8a5a24)}
+.plaque::before{left:0}.plaque::after{right:0}
+h1{font-family:'Cinzel',serif;font-weight:800;line-height:1;white-space:nowrap;
+  font-size:min(7.2vw,74px);letter-spacing:.06em;display:flex;align-items:baseline;justify-content:center;gap:.22em}
+h1 span{background:linear-gradient(180deg,#ffffff 0%,#e8e8e6 30%,#9a9a96 52%,#6a6a66 60%,#d8d8d4 78%,#ffffff 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 2px 6px #000c) drop-shadow(0 0 22px #fff2)}
+h1 em{font-style:normal;font-weight:700;font-size:.44em;transform:translateY(-.14em);
+  background:linear-gradient(180deg,#f8f8f6,#a0a09c 55%,#e8e8e4);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 2px 4px #000c)}
+.dom{font-family:'Cinzel',serif;font-size:15px;letter-spacing:.5em;text-indent:.5em;color:#f0d8a0;
+  text-shadow:0 1px 8px #000,0 0 24px #f8c86a55;margin-top:2px}
+.doors{display:flex;gap:20px;margin-top:16px;flex-wrap:wrap;justify-content:center}
 .door{display:flex;flex-direction:column;align-items:center;gap:10px;width:min(42vw,290px);
-  padding:26px 20px 22px;background:#f3e9d2;color:#2c2417;border:1px solid #b7a173;border-radius:14px;
-  text-decoration:none;box-shadow:0 8px 30px -10px #000,inset 0 0 60px #e0cfa540;
-  transition:transform .18s cubic-bezier(.2,.7,.3,1),box-shadow .18s}
-.door:hover{transform:translateY(-3px);box-shadow:0 14px 40px -12px #000,inset 0 0 60px #e0cfa540}
+  padding:24px 20px 20px;background:linear-gradient(180deg,#1c1005ee,#100a04f2);color:#e0c98c;
+  border:1px solid #6a5426;border-radius:4px;text-decoration:none;
+  box-shadow:0 10px 34px -12px #000,inset 0 0 46px #00000088;
+  transition:transform .18s cubic-bezier(.2,.7,.3,1),border-color .18s,box-shadow .18s}
+.door:hover{transform:translateY(-3px);border-color:#c9a86a;
+  box-shadow:0 16px 44px -14px #000,inset 0 0 46px #00000088,0 0 34px #e8c87733}
 .door:focus-visible{outline:3px solid #e8c877;outline-offset:3px}
-.door .em{font-size:44px;line-height:1}
-.door .t{font-size:26px;font-weight:600;letter-spacing:.08em}
-.door .d{font-size:14.5px;font-style:italic;color:#5c4c30;text-align:center;line-height:1.35}
-.door .go{margin-top:6px;font-size:12px;letter-spacing:.28em;text-indent:.28em;color:#8a6a2a}
-.ft{font-size:12.5px;color:#8a7a58;letter-spacing:.06em;margin-top:8px}
-.ft a{color:#c9a86a;text-decoration:none}
+.door .em{font-size:38px;line-height:1;filter:saturate(.75) brightness(.95)}
+.door .t{font-family:'Cinzel',serif;font-size:22px;font-weight:700;letter-spacing:.16em;text-indent:.16em;
+  text-transform:uppercase;color:#ecd9a4}
+.door .d{font-size:14.5px;font-style:italic;color:#a8925f;text-align:center;line-height:1.4}
+.door .go{margin-top:6px;font-family:'Cinzel',serif;font-size:11px;letter-spacing:.3em;text-indent:.3em;color:#9a7a3a}
+.ft{font-size:12.5px;color:#8a7248;letter-spacing:.06em;margin-top:6px;text-shadow:0 1px 6px #000}
+.ft a{color:#d8b878;text-decoration:none}
 @media (max-width:620px){.doors{flex-direction:column}.door{width:min(86vw,340px)}}
 </style>
 </head>
 <body>
-<h1>gameofcoins.fun</h1>
-<div class="rule"></div>
-<div class="sub">PICK YOUR MAP</div>
+<div class="burst"></div>
+<div class="ringwrap">
+  <div class="ring"></div>
+  <div class="plaque"><h1><span>GAME</span><em>of</em><span>COINS</span></h1></div>
+</div>
+<div class="dom">GAMEOFCOINS.FUN &middot; PICK YOUR MAP</div>
 <nav class="doors" aria-label="Choose a map">
   <a class="door" href="/crypto/">
     <span class="em">&#129689;</span>
