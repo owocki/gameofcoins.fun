@@ -4,7 +4,7 @@ const CONTINENTS=[
   label:{x:1400,y:-500,w:300,size:30},trees:false,mountains:false,
   palette:{low:'#b3bfa6',up:'#d2cbaa',high:'#b2a07f'},
   countries:[{id:'stablecoins',big:true},{id:'exchangetokens',big:true},{id:'brokerchains'},
-   {id:'predictionmarkets'},{id:'rwa',big:true},{id:'xrparmy',big:true}]},
+   {id:'predictionmarkets'},{id:'rwa',big:true},{id:'trumpcoins',big:true},{id:'xrparmy',big:true}]},
  {id:'k-wc',region:true,name:'THE WORLD COMPUTER',kicker:'THE WORLD COMPUTER',dyn:true,a0start:1.4,
   cx:1300,cy:700,rx:780,ry:420,rot:-.04,seed:23,rug:.24,junction:[1300,700],
   label:{x:1300,y:690,w:300,size:30},mountains:false,
@@ -61,8 +61,8 @@ const BESPOKE=[
 /* per-vertical runtime config (read by the cine paths + flyover3d.js) */
 window.__vert={
  name:'crypto',
- POP:['btcmaxis','stablecoins','ethereum','base','exchangetokens','xrparmy','rwa','brokerchains','solana'],
- NICHE:['linkmarines','regens','memedaos','desci','airdropfarmers','mevsearchers','artists','ghostchains'],
+ POP:['btcmaxis','stablecoins','ethereum','base','exchangetokens','xrparmy','rwa','brokerchains','trumpcoins','solana'],
+ NICHE:['predictionmarkets','linkmarines','regens','memedaos','desci','airdropfarmers','mevsearchers','artists','ghostchains'],
  sub:'THE CRYPTOTWITTER MAP',
  cineKick:'THE CRYPTOTWITTER ONTOLOGY MAP',
  cineLine:'the coingecko top 100, drawn as a world — market cap is the terrain, and the ocean is fiat',

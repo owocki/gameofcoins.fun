@@ -31,6 +31,7 @@ const PMETA={
  aicoins:{e:'🤖',s:'open intelligence'},
  defi:{e:'⚙️',s:'permissionless finance'},
  linkmarines:{e:'🔗',s:'the truth feed'},
+ trumpcoins:{e:'🎩',s:'the family business'},
  newl1s:{e:'🚄',s:'throughput'},
  l2s:{e:'🧅',s:'layered blockspace'}
 };
@@ -50,6 +51,7 @@ const PAPER=[
  ['defi','$9.9B across 7 coins'],
  ['newl1s','$8.9B across 5 coins'],
  ['aicoins','$7.3B across 6 coins'],
+ ['trumpcoins','$6.2B across 3 coins'],
  ['linkmarines','$6.2B across 1 coin'],
  ['l2s','$2.6B across 3 coins'],
  ['degenperps','$2.3B across 2 coins'],

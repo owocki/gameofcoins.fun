@@ -376,7 +376,7 @@ const CONTINENTS=[
   label:{x:1400,y:-500,w:300,size:30},trees:false,mountains:false,
   palette:{low:'#b3bfa6',up:'#d2cbaa',high:'#b2a07f'},
   countries:[{id:'stablecoins',big:true},{id:'exchangetokens',big:true},{id:'brokerchains'},
-   {id:'predictionmarkets'},{id:'rwa',big:true},{id:'xrparmy',big:true}]},
+   {id:'predictionmarkets'},{id:'rwa',big:true},{id:'trumpcoins',big:true},{id:'xrparmy',big:true}]},
  {id:'k-wc',region:true,name:'THE WORLD COMPUTER',kicker:'THE WORLD COMPUTER',dyn:true,a0start:1.4,
   cx:1300,cy:700,rx:780,ry:420,rot:-.04,seed:23,rug:.24,junction:[1300,700],
   label:{x:1300,y:690,w:300,size:30},mountains:false,
@@ -433,8 +433,8 @@ const BESPOKE=[
 /* per-vertical runtime config (read by the cine paths + flyover3d.js) */
 window.__vert={
  name:'crypto',
- POP:['btcmaxis','stablecoins','ethereum','base','exchangetokens','xrparmy','rwa','brokerchains','solana'],
- NICHE:['linkmarines','regens','memedaos','desci','airdropfarmers','mevsearchers','artists','ghostchains'],
+ POP:['btcmaxis','stablecoins','ethereum','base','exchangetokens','xrparmy','rwa','brokerchains','trumpcoins','solana'],
+ NICHE:['predictionmarkets','linkmarines','regens','memedaos','desci','airdropfarmers','mevsearchers','artists','ghostchains'],
  sub:'THE CRYPTOTWITTER MAP',
  cineKick:'THE CRYPTOTWITTER ONTOLOGY MAP',
  cineLine:'the coingecko top 100, drawn as a world — market cap is the terrain, and the ocean is fiat',
@@ -571,7 +571,8 @@ function buildWorld(D){
      Island-world verticals (macro) skip the mainland entirely. */
   if(!(window.__vert&&window.__vert.noMainland)){
     const SLC=[1025,900];
-    const SL=blobPts(SLC[0],SLC[1],2700,1800,0.02,7,.10,220);
+    const M=(window.__vert&&window.__vert.MAINLAND)||{};
+    const SL=blobPts(SLC[0],SLC[1],M.rx||2700,M.ry||1800,M.rot!==undefined?M.rot:0.02,M.seed||7,M.rug||.10,220);
     const d=pathFrom(SL,true);
     el('path',{d,fill:'none',stroke:'#c9dcd6',opacity:.55,'stroke-width':34,filter:'url(#soft14)'},gShallow);
     el('path',{d,fill:'none',stroke:'#bdd6d2',opacity:.7,'stroke-width':14,filter:'url(#soft8)'},gShallow);
@@ -1049,6 +1050,7 @@ const PMETA={
  aicoins:{e:'🤖',s:'open intelligence'},
  defi:{e:'⚙️',s:'permissionless finance'},
  linkmarines:{e:'🔗',s:'the truth feed'},
+ trumpcoins:{e:'🎩',s:'the family business'},
  newl1s:{e:'🚄',s:'throughput'},
  l2s:{e:'🧅',s:'layered blockspace'}
 };
@@ -1068,6 +1070,7 @@ const PAPER=[
  ['defi','$9.9B across 7 coins'],
  ['newl1s','$8.9B across 5 coins'],
  ['aicoins','$7.3B across 6 coins'],
+ ['trumpcoins','$6.2B across 3 coins'],
  ['linkmarines','$6.2B across 1 coin'],
  ['l2s','$2.6B across 3 coins'],
  ['degenperps','$2.3B across 2 coins'],

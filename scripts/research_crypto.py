@@ -31,6 +31,7 @@ MODEL = os.environ.get("ATLAS_MODEL", "claude-opus-5")
 
 # ---- coin -> tribe mapping (by uppercase symbol, from the top-100 fetch) ----
 TRIBE_OF = {
+    'TRUMP': 'trumpcoins', 'WLFI': 'trumpcoins', 'USD1': 'trumpcoins',
     'BTC': 'btcmaxis', 'BCH': 'btcmaxis', 'LTC': 'btcmaxis',
     'ETH': 'ethereum',
     'MNT': 'l2s', 'POL': 'l2s', 'ARB': 'l2s', 'OP': 'regens',

@@ -487,7 +487,8 @@ function buildWorld(D){
      Island-world verticals (macro) skip the mainland entirely. */
   if(!(window.__vert&&window.__vert.noMainland)){
     const SLC=[1025,900];
-    const SL=blobPts(SLC[0],SLC[1],2700,1800,0.02,7,.10,220);
+    const M=(window.__vert&&window.__vert.MAINLAND)||{};
+    const SL=blobPts(SLC[0],SLC[1],M.rx||2700,M.ry||1800,M.rot!==undefined?M.rot:0.02,M.seed||7,M.rug||.10,220);
     const d=pathFrom(SL,true);
     el('path',{d,fill:'none',stroke:'#c9dcd6',opacity:.55,'stroke-width':34,filter:'url(#soft14)'},gShallow);
     el('path',{d,fill:'none',stroke:'#bdd6d2',opacity:.7,'stroke-width':14,filter:'url(#soft8)'},gShallow);

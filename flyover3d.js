@@ -74,7 +74,8 @@
       }
       return Math.max(0, Math.min(1, m));
     }
-    const dx = (x - SLc[0]) / SLrx, dy = (y - SLc[1]) / SLry;
+    const ML = VERT.MAINLAND || {};
+    const dx = (x - SLc[0]) / (ML.rx || SLrx), dy = (y - SLc[1]) / (ML.ry || SLry);
     const d = Math.sqrt(dx * dx + dy * dy);
     return Math.max(0, Math.min(1, (1 - d) * 6));
   }
@@ -220,6 +221,8 @@
     ethereum:       { walls: [0xb7c3e8, 0x9fb0e0, 0x8a9cd8, 0xcdd6f0], roof: 0x4a5aa8, keep: 0x627eea, style: 'crystal', name: 'The Beacon Spire' },
     base:           { walls: [0xd8e2f8, 0xc2d2f0, 0xaac0ea, 0xe8eefc], roof: 0x0052ff, keep: 0x0052ff, style: 'flat', name: 'The Onchain Gate' },
     brokerchains:   { walls: [0xe2ece4, 0xd0e0d4, 0xbcd4c2, 0xeef6f0], roof: 0x00c805, keep: 0x00b465, style: 'tower', name: 'The Brokerage' },
+    trumpcoins:     { walls: [0xf2ead8, 0xeadcc4, 0xe0d0b0, 0xf8f2e4], roof: 0xa02828, keep: 0xd8b13a, style: 'fort', name: 'Mar-a-Chain' },
+    predictionmarkets: { walls: [0xd0dce8, 0xc0d0e0, 0xb0c4d8, 0xe0e8f0], roof: 0x1652f0, keep: 0x2a8a3c, style: 'flat', name: 'The Odds Bazaar' },
     stablecoins:    { walls: [0xf2eee0, 0xe8e2cf, 0xdcd5bd, 0xf7f4ea], roof: 0x3f7d4f, keep: 0x2f6f45, style: 'dome', name: 'The Mint' },
     exchangetokens: { walls: [0x4a4438, 0x5a523f, 0x3a352c, 0x6a6049], roof: 0xe8b93b, keep: 0xf0b90b, style: 'tower', name: 'The Order Books' },
     xrparmy:        { walls: [0xdfe8f0, 0xc8d8e8, 0xb0c8e0, 0xeef4f8], roof: 0x2a6db5, keep: 0x1a4a80, style: 'flat', name: 'The Courthouse' },
@@ -888,101 +891,165 @@
   document.body.appendChild(endOv);
 
   // ---------- free-roam: the default main view (drag to pan, wheel to zoom, right-drag to orbit) ----------
+  // ---------- free-roam v2: two modes, zero confusion ----------
+  // ATLAS: fixed top-down sky view; drag pans, wheel zooms toward the cursor.
+  // VISIT: click any territory and the camera glides into a slow self-orbiting
+  // crane shot of its town (the flyover's framing); wheel moves closer/farther,
+  // drag steers the orbit, "back to the sky" (or Esc / home) returns to atlas.
   function freeMode() {
     const el = renderer.domElement;
-    // open aimed 10% of the map right of and below dead center
     const HOMEX = SLc[0] - CXW + (X1 - X0) * 0.60, HOMEZ = SLc[1] - CYW + (Y1 - Y0) * 0.30;
-    const tgt = new T.Vector3(HOMEX, 0, HOMEZ);
-    const MIND = 150, MAXD = 6200;
-    let dist = MAXD, yaw = 0, pitch = 1.5;   // start: fully zoomed-out top-down atlas view
-    // re-wire the map's zoom buttons to the 3D camera (clone strips 2D handlers)
+    const ATLAS_MIN = 1400, ATLAS_MAX = 6200;
+    const st = {
+      mode: 'atlas',
+      tgt: new T.Vector3(HOMEX, 0, HOMEZ),
+      dist: ATLAS_MAX,
+      town: null,          // visited town {cap, Rt, base, id}
+      ang: 0, oR: 0, oH: 0,  // visit orbit: angle, radius, eye height
+      auto: true,
+      glide: null,
+    };
+    // atlas is clean sky-down: no haze, low clouds fade out when high up
+    scene.fog.near = 9000; scene.fog.far = 24000;
+    clouds.forEach((c, k) => {
+      c.m.position.y = 120 + (k % 6) * 22;
+      c.m.material.opacity *= 0.5;
+      c.m.scale.multiplyScalar(0.75);
+    });
+
+    const townOf = (id) => {
+      const c = A.countries.find(x => x.id === id);
+      if (!c) return null;
+      const cap = (c.cityPts && c.cityPts[0]) || c.labelPos;
+      const Rt = 55 + 22 * Math.log10(1 + A.mcap(c.tribe) / 1e9);
+      return { id, cap, Rt, base: getH(cap[0], cap[1]), tribe: c.tribe };
+    };
+
+    // ---- camera solves ----
+    function camAtlas(out) {
+      const ty = 0;
+      out.pos.set(st.tgt.x, ty + st.dist, st.tgt.z + st.dist * 0.06);
+      out.look.set(st.tgt.x, ty, st.tgt.z);
+    }
+    function camVisit(out) {
+      const tw = st.town;
+      const wx = tw.cap[0] + Math.cos(st.ang) * st.oR;
+      const wy = tw.cap[1] + Math.sin(st.ang) * st.oR * 0.8;
+      const gh = getH(wx, wy);
+      out.pos.set(wx - CXW, Math.max(tw.base + st.oH, gh + 60), wy - CYW);
+      out.look.set(tw.cap[0] - CXW, tw.base + 24 + tw.Rt * 0.18, tw.cap[1] - CYW);
+    }
+    const solved = { pos: new T.Vector3(), look: new T.Vector3() };
+    const curPos = new T.Vector3(), curLook = new T.Vector3();
+    let first = true;
+
+    // ---- the "back to the sky" chip ----
+    const back = document.createElement('button');
+    back.textContent = '\u2191 back to the sky';
+    back.style.cssText = 'position:fixed;top:14px;left:16px;z-index:46;display:none;' +
+      'background:#f3e9d2;border:1px solid #b7a173;border-radius:999px;padding:8px 16px;' +
+      'font-family:var(--serif);font-size:13.5px;font-weight:600;color:#2c2417;cursor:pointer;' +
+      'letter-spacing:.04em;box-shadow:0 2px 6px -2px #2c241766';
+    back.addEventListener('click', () => toAtlas());
+    document.body.appendChild(back);
+    addEventListener('keydown', (ev) => { if (ev.key === 'Escape' && st.mode === 'visit') toAtlas(); });
+
+    function startGlide(dur) { st.glide = { t0: performance.now(), dur }; }
+    function toVisit(tw, px, py) {
+      st.town = tw;
+      st.oR = tw.Rt * 3.4;
+      st.oH = 70 + tw.Rt * 1.05;
+      st.ang = Math.atan2((st.tgt.z + CYW - tw.cap[1]) / 0.8, st.tgt.x + CXW - tw.cap[0]);
+      st.mode = 'visit'; st.auto = true;
+      back.style.display = 'block';
+      startGlide(1700);
+      if (px !== undefined) { A.card(tw.tribe, '', px, py); }
+    }
+    function toAtlas() {
+      st.mode = 'atlas';
+      st.town = null;
+      st.dist = Math.max(st.dist, ATLAS_MAX * 0.85);
+      back.style.display = 'none';
+      A.hideCard(); tt3.style.display = 'none';
+      startGlide(1400);
+    }
+
+    // ---- zoom buttons: +/- zoom the current mode, home = back to the sky ----
     const ctrl = document.getElementById('ctrl');
     if (ctrl) {
       ctrl.style.display = '';
       ['z-in', 'z-out', 'z-fit'].forEach(bid => { const b = document.getElementById(bid); b.replaceWith(b.cloneNode(true)); });
-      document.getElementById('z-in').addEventListener('click', () => { dist = Math.max(MIND, dist * 0.66); glide = null; });
-      document.getElementById('z-out').addEventListener('click', () => { dist = Math.min(MAXD, dist / 0.66); glide = null; });
-      document.getElementById('z-fit').addEventListener('click', () => {
-        yaw = 0; pitch = 1.5; dist = MAXD; glide = null;
-        tgt.set(HOMEX, 0, HOMEZ);
-      });
+      const zoom = (f) => {
+        if (st.mode === 'atlas') st.dist = Math.max(ATLAS_MIN, Math.min(ATLAS_MAX, st.dist * f));
+        else st.oR = Math.max(st.town.Rt * 1.7, Math.min(st.town.Rt * 7, st.oR * f));
+      };
+      document.getElementById('z-in').addEventListener('click', () => zoom(0.7));
+      document.getElementById('z-out').addEventListener('click', () => zoom(1 / 0.7));
+      document.getElementById('z-fit').addEventListener('click', () => { st.dist = ATLAS_MAX; toAtlas(); });
     }
-    // from above, the cinematic's haze and high clouds just obscure the map
-    scene.fog.near = 8000; scene.fog.far = 22000;
-    clouds.forEach((c, k) => {
-      c.m.position.y = 120 + (k % 6) * 22;              // hug the valleys, never blanket the peaks
-      c.m.material.opacity *= 0.55;
-      c.m.scale.multiplyScalar(0.8);
-    });
-    let dragging = false, rotating = false, lx = 0, ly = 0;
-    let glide = null, hovered = null, hoverT = 0;
 
-    function applyCam() {
-      const cp = Math.cos(pitch), sp = Math.sin(pitch);
-      const ty = getH(tgt.x + CXW, tgt.z + CYW);   // orbit the terrain surface, not sea level
-      cam.position.set(tgt.x + Math.sin(yaw) * cp * dist, ty + sp * dist, tgt.z + Math.cos(yaw) * cp * dist);
-      const gh = getH(cam.position.x + CXW, cam.position.z + CYW);
-      if (cam.position.y < gh + 40) cam.position.y = gh + 40;
-      cam.lookAt(tgt.x, ty, tgt.z);
-    }
-    function clampTgt() {
-      tgt.x = Math.max(X0 - CXW - 400, Math.min(X1 - CXW + 400, tgt.x));
-      tgt.z = Math.max(Y0 - CYW - 400, Math.min(Y1 - CYW + 400, tgt.z));
-    }
+    // ---- input ----
+    let dragging = false, moved = 0, lx = 0, ly = 0;
     el.addEventListener('contextmenu', ev => ev.preventDefault());
     el.addEventListener('pointerdown', ev => {
-      dragging = true;
-      rotating = (ev.button === 2 || ev.shiftKey || ev.ctrlKey || ev.metaKey);
-      lx = ev.clientX; ly = ev.clientY;
+      dragging = true; moved = 0; lx = ev.clientX; ly = ev.clientY;
       el.setPointerCapture(ev.pointerId);
-      el.style.cursor = 'grabbing';
     });
-    addEventListener('pointerup', () => { dragging = false; el.style.cursor = 'grab'; });
-    const evCounts = { wheel: 0, drag: 0 };
-    el.addEventListener('wheel', ev => {
-      ev.preventDefault();
-      evCounts.wheel++;
-      const nd = Math.max(MIND, Math.min(MAXD, dist * Math.exp(ev.deltaY * 0.0011)));
-      if (nd < dist) {
-        // zoom dives toward the point under the cursor, not the screen center
-        const g = groundPoint(ev.clientX, ev.clientY);
-        if (g) {
-          const k = 1 - nd / dist;
-          tgt.x += (g[0] - CXW - tgt.x) * k;
-          tgt.z += (g[1] - CYW - tgt.z) * k;
-          clampTgt();
-        }
+    addEventListener('pointerup', ev => {
+      if (dragging && moved < 6) {                       // a click, not a drag
+        const hit = groundPoint(ev.clientX, ev.clientY);
+        const c = hit ? A.pick(hit[0], hit[1]) : null;
+        if (c) { const tw = townOf(c.id); if (tw) toVisit(tw, ev.clientX, ev.clientY); }
       }
-      dist = nd;
-      glide = null;
-    }, { passive: false });
+      dragging = false;
+    });
     el.addEventListener('pointermove', ev => {
       if (dragging) {
         const dx = ev.clientX - lx, dy = ev.clientY - ly;
+        moved += Math.abs(dx) + Math.abs(dy);
         lx = ev.clientX; ly = ev.clientY;
-        if (rotating) {
-          yaw -= dx * 0.004;
-          pitch = Math.max(0.3, Math.min(1.5, pitch + dy * 0.004));
+        if (st.mode === 'atlas') {
+          const k = st.dist / innerHeight * 1.05;
+          st.tgt.x -= dx * k; st.tgt.z -= dy * k;
+          st.tgt.x = Math.max(X0 - CXW - 400, Math.min(X1 - CXW + 400, st.tgt.x));
+          st.tgt.z = Math.max(Y0 - CYW - 400, Math.min(Y1 - CYW + 400, st.tgt.z));
         } else {
-          const k = dist / innerHeight * 1.35;
-          const fx = -Math.sin(yaw), fz = -Math.cos(yaw);   // camera-forward on the ground
-          const rx = -fz, rz = fx;                          // camera-right on the ground
-          tgt.x += (-dx * rx + dy * fx) * k;
-          tgt.z += (-dx * rz + dy * fz) * k;
-          clampTgt();
+          st.auto = false;                               // hands on the wheel
+          st.ang -= dx * 0.006;
+          st.oH = Math.max(40, Math.min(st.town.Rt * 3, st.oH - dy * 1.2));
         }
-        glide = null;
+        st.glide = null;
         return;
       }
       hoverPick(ev);
     });
-    // march a pick ray down onto the analytic height field -> world [wx, wy]
+    el.addEventListener('wheel', ev => {
+      ev.preventDefault();
+      const f = Math.exp(ev.deltaY * 0.0011);
+      if (st.mode === 'atlas') {
+        const nd = Math.max(ATLAS_MIN, Math.min(ATLAS_MAX, st.dist * f));
+        if (nd < st.dist) {
+          const g = groundPoint(ev.clientX, ev.clientY);
+          if (g) {
+            const k = 1 - nd / st.dist;
+            st.tgt.x += (g[0] - CXW - st.tgt.x) * k;
+            st.tgt.z += (g[1] - CYW - st.tgt.z) * k;
+          }
+        }
+        st.dist = nd;
+      } else {
+        st.oR = Math.max(st.town.Rt * 1.7, Math.min(st.town.Rt * 7, st.oR * f));
+      }
+      st.glide = null;
+    }, { passive: false });
+
+    // ---- picking ----
     const rc = new T.Raycaster();
     function groundPoint(cx, cy) {
       rc.setFromCamera({ x: (cx / innerWidth) * 2 - 1, y: -(cy / innerHeight) * 2 + 1 }, cam);
       const o = rc.ray.origin, d = rc.ray.direction;
       let t = 0;
-      for (let i = 0; i < 260 && t < 14000; i++) {
+      for (let i = 0; i < 260 && t < 16000; i++) {
         const px = o.x + d.x * t, py = o.y + d.y * t, pz = o.z + d.z * t;
         const h = getH(px + CXW, pz + CYW);
         if (py <= h + 1) return [px + CXW, pz + CYW];
@@ -990,7 +1057,6 @@
       }
       return null;
     }
-    // coin tooltip: hovering a city shows what that coin is up to today
     const tt3 = document.createElement('div');
     tt3.style.cssText = 'position:fixed;z-index:46;background:#f6edd8;border:1px solid #b7a173;border-radius:8px;' +
       'padding:8px 12px;font-family:var(--serif);font-size:13.5px;color:#2c2417;pointer-events:none;display:none;' +
@@ -1008,12 +1074,14 @@
       }
       return bd < 26 ? best : null;
     }
+    let hovered = null, hoverT = 0;
     function hoverPick(ev) {
       const now = performance.now();
       if (now - hoverT < 90) return;
       hoverT = now;
       const hit = groundPoint(ev.clientX, ev.clientY);
-      const coin = hit && dist < 3200 ? coinAt(hit[0], hit[1]) : null;
+      const nearGround = st.mode === 'visit' || st.dist < 3200;
+      const coin = hit && nearGround ? coinAt(hit[0], hit[1]) : null;
       if (coin) {
         A.hideCard(); hovered = null;
         tt3.innerHTML = '<b>' + A.esc(coin.t) + '</b>' +
@@ -1022,55 +1090,63 @@
         tt3.style.display = 'block';
         tt3.style.left = Math.min(innerWidth - 290, ev.clientX + 14) + 'px';
         tt3.style.top = Math.min(innerHeight - 100, ev.clientY + 12) + 'px';
+        el.style.cursor = 'pointer';
         return;
       }
       tt3.style.display = 'none';
       const c = hit ? A.pick(hit[0], hit[1]) : null;
       const id = c ? c.id : null;
+      el.style.cursor = c ? 'pointer' : 'default';
       if (id !== hovered) {
         hovered = id;
-        if (c) A.card(c.tribe, c.contName || 'INDEPENDENT', ev.clientX, ev.clientY);
-        else A.hideCard();
+        if (c && st.mode === 'atlas') A.card(c.tribe, c.contName || 'INDEPENDENT', ev.clientX, ev.clientY);
+        else if (!c) A.hideCard();
       }
     }
+
     function flyToWorld(wx, wy) {
-      glide = { t0: performance.now(), dur: 1900, fx: tgt.x, fz: tgt.z, fd: dist,
-                tx: wx - CXW, tz: wy - CYW, td: 950 };
+      const c = A.pick(wx, wy);
+      if (c) { const tw = townOf(c.id); if (tw) { toVisit(tw); return; } }
+      st.mode = 'atlas'; st.tgt.set(wx - CXW, 0, wy - CYW); st.dist = 1800; startGlide(1600);
     }
     window.__free3d = { flyTo: flyToWorld };
 
     const cloudBase = clouds.map(c => c.m.position.x);
-    let first = true;
     const t0 = performance.now();
+    let lastNow = t0;
     (function loop(now) {
-      const t = (now - t0) / 1000;
+      const t = (now - t0) / 1000, dt = Math.min(0.1, (now - lastNow) / 1000);
+      lastNow = now;
       animateLife(t); animateProps(t);
+      // clouds drift, and fade out at sky altitude so the atlas stays readable
+      const cloudA = st.mode === 'atlas' ? Math.max(0, 1 - (st.dist - 2600) / 1200) : 1;
       clouds.forEach((c, k) => {
         let x = cloudBase[k] + c.v * t;
         x = ((x + 3200) % 6400 + 6400) % 6400 - 3200;
         c.m.position.x = x;
+        c.m.material.opacity = (0.28 + (k % 5) * 0.05) * cloudA;
       });
-      if (glide) {
-        const q = Math.min(1, (now - glide.t0) / glide.dur);
+      if (st.mode === 'visit' && st.auto && !st.glide) st.ang += dt * 0.07;
+      if (st.mode === 'atlas') camAtlas(solved); else camVisit(solved);
+      if (st.glide) {
+        const q = Math.min(1, (now - st.glide.t0) / st.glide.dur);
         const e = q < 0.5 ? 4 * q * q * q : 1 - Math.pow(-2 * q + 2, 3) / 2;
-        tgt.x = glide.fx + (glide.tx - glide.fx) * e;
-        tgt.z = glide.fz + (glide.tz - glide.fz) * e;
-        dist = glide.fd + (glide.td - glide.fd) * e;
-        if (q >= 1) glide = null;
+        curPos.lerp(solved.pos, e); curLook.lerp(solved.look, e);
+        if (q >= 1) st.glide = null;
+      } else if (first) {
+        curPos.copy(solved.pos); curLook.copy(solved.look);
+      } else {
+        curPos.lerp(solved.pos, Math.min(1, dt * 7)); curLook.lerp(solved.look, Math.min(1, dt * 7));
       }
-      applyCam();
+      const gh = getH(curPos.x + CXW, curPos.z + CYW);
+      if (curPos.y < gh + 40) curPos.y = gh + 40;
+      cam.position.copy(curPos);
+      cam.lookAt(curLook);
       renderer.render(scene, cam);
       if (first) {
         first = false;
         document.getElementById('stage').style.display = 'none';
         const chip = document.getElementById('boot3d'); if (chip) chip.remove();
-        const snap = () => JSON.stringify({ dist: Math.round(dist), pitch: +pitch.toFixed(3), yaw: +yaw.toFixed(3),
-          tgt: [Math.round(tgt.x), Math.round(tgt.z)], cam: [Math.round(cam.position.x), Math.round(cam.position.y), Math.round(cam.position.z)],
-          wheel: evCounts.wheel, canvas: [renderer.domElement.width, renderer.domElement.height],
-          win: [innerWidth, innerHeight] });
-        dlog('first-frame', snap());
-        setTimeout(() => dlog('t+3s', snap()), 3000);
-        setTimeout(() => dlog('t+8s', snap()), 8000);
       }
       requestAnimationFrame(loop);
     })(performance.now());

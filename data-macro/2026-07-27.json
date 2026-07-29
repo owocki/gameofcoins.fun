@@ -1937,18 +1937,421 @@
      "src": "https://x.com/search?q=Pentagon%20UAP%20files&src=typed_query&f=live"
     }
    ]
+  },
+  "islam": {
+   "id": "islam",
+   "name": "the islamic revival",
+   "country": "Islam",
+   "tldr": "the ummah — an old continent: vast on earth, dim in the feed",
+   "ontology": "the islamic revival holds sacred: the ummah. an old continent: vast on earth, dim in the feed",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "Islam · old continent",
+     "d": "an old continent: vast on earth, dim in the feed",
+     "x": "the islamic revival",
+     "src": "https://x.com/search?q=the%20islamic%20revival&src=typed_query&f=live"
+    }
+   ],
+   "topics": []
+  },
+  "china": {
+   "id": "china",
+   "name": "the chinese techno-civilization",
+   "country": "China",
+   "tldr": "the civilization-state — an old continent: vast on earth, dim in the feed",
+   "ontology": "the chinese techno-civilization holds sacred: the civilization-state. an old continent: vast on earth, dim in the feed",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "China · old continent",
+     "d": "an old continent: vast on earth, dim in the feed",
+     "x": "the chinese techno-civilization",
+     "src": "https://x.com/search?q=the%20chinese%20techno-civilization&src=typed_query&f=live"
+    }
+   ],
+   "topics": []
+  },
+  "catholic": {
+   "id": "catholic",
+   "name": "catholicism proper",
+   "country": "Catholicism",
+   "tldr": "the church eternal — an old continent: vast on earth, dim in the feed",
+   "ontology": "catholicism proper holds sacred: the church eternal. an old continent: vast on earth, dim in the feed",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "Catholicism · old continent",
+     "d": "an old continent: vast on earth, dim in the feed",
+     "x": "catholicism proper",
+     "src": "https://x.com/search?q=catholicism%20proper&src=typed_query&f=live"
+    }
+   ],
+   "topics": []
+  },
+  "india": {
+   "id": "india",
+   "name": "civilizational india",
+   "country": "Hindutva",
+   "tldr": "the eternal dharma-nation — an old continent: vast on earth, dim in the feed",
+   "ontology": "civilizational india holds sacred: the eternal dharma-nation. an old continent: vast on earth, dim in the feed",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "Hindutva · old continent",
+     "d": "an old continent: vast on earth, dim in the feed",
+     "x": "civilizational india",
+     "src": "https://x.com/search?q=civilizational%20india&src=typed_query&f=live"
+    }
+   ],
+   "topics": []
+  },
+  "pentecostal": {
+   "id": "pentecostal",
+   "name": "global pentecostalism",
+   "country": "Pentecostalism",
+   "tldr": "the spirit moving — an old continent: vast on earth, dim in the feed",
+   "ontology": "global pentecostalism holds sacred: the spirit moving. an old continent: vast on earth, dim in the feed",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "Pentecostalism · old continent",
+     "d": "an old continent: vast on earth, dim in the feed",
+     "x": "global pentecostalism",
+     "src": "https://x.com/search?q=global%20pentecostalism&src=typed_query&f=live"
+    }
+   ],
+   "topics": []
+  },
+  "indigenous": {
+   "id": "indigenous",
+   "name": "the indigenous resurgence",
+   "country": "Indigenous resurgence",
+   "tldr": "the living land — an old continent: vast on earth, dim in the feed",
+   "ontology": "the indigenous resurgence holds sacred: the living land. an old continent: vast on earth, dim in the feed",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "Indigenous resurgence · old continent",
+     "d": "an old continent: vast on earth, dim in the feed",
+     "x": "the indigenous resurgence",
+     "src": "https://x.com/search?q=the%20indigenous%20resurgence&src=typed_query&f=live"
+    }
+   ],
+   "topics": []
+  },
+  "manifestation": {
+   "id": "manifestation",
+   "name": "the manifestation web",
+   "country": "Manifestation web",
+   "tldr": "the responsive universe — an outer island, loud in its own sea.",
+   "ontology": "the manifestation web holds sacred: the responsive universe. an outer island, loud in its own sea.",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "Manifestation web · old continent",
+     "d": "an outer island, loud in its own sea.",
+     "x": "the manifestation web",
+     "src": "https://x.com/search?q=the%20manifestation%20web&src=typed_query&f=live"
+    }
+   ],
+   "topics": []
+  },
+  "conspiracy": {
+   "id": "conspiracy",
+   "name": "the conspiracist omniverse",
+   "country": "Conspiracy omniverse",
+   "tldr": "the hidden truth — an outer island, loud in its own sea.",
+   "ontology": "the conspiracist omniverse holds sacred: the hidden truth. an outer island, loud in its own sea.",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "Conspiracy omniverse · old continent",
+     "d": "an outer island, loud in its own sea.",
+     "x": "the conspiracist omniverse",
+     "src": "https://x.com/search?q=the%20conspiracist%20omniverse&src=typed_query&f=live"
+    }
+   ],
+   "topics": []
+  },
+  "hustle": {
+   "id": "hustle",
+   "name": "hustle world",
+   "country": "Hustle world",
+   "tldr": "the exit number — an outer island, loud in its own sea.",
+   "ontology": "hustle world holds sacred: the exit number. an outer island, loud in its own sea.",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "Hustle world · old continent",
+     "d": "an outer island, loud in its own sea.",
+     "x": "hustle world",
+     "src": "https://x.com/search?q=hustle%20world&src=typed_query&f=live"
+    }
+   ],
+   "topics": []
+  },
+  "manosphere": {
+   "id": "manosphere",
+   "name": "the manosphere",
+   "country": "The Manosphere",
+   "tldr": "masculinity. the fifteenth flag",
+   "ontology": "the manosphere holds sacred: masculinity. the fifteenth flag. surveyed in the field map of the feed.",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "the male loneliness epidemic",
+     "d": "",
+     "x": "the male loneliness epidemic",
+     "src": "https://x.com/search?q=the%20male%20loneliness%20epidemic&src=typed_query&f=live"
+    },
+    {
+     "t": "the fertility crash",
+     "d": "",
+     "x": "the fertility crash",
+     "src": "https://x.com/search?q=the%20fertility%20crash&src=typed_query&f=live"
+    },
+    {
+     "t": "discipline as salvation",
+     "d": "",
+     "x": "discipline as salvation",
+     "src": "https://x.com/search?q=discipline%20as%20salvation&src=typed_query&f=live"
+    }
+   ],
+   "topics": [
+    {
+     "t": "the male loneliness epidemic",
+     "d": "",
+     "x": "the male loneliness epidemic",
+     "src": "https://x.com/search?q=the%20male%20loneliness%20epidemic&src=typed_query&f=live"
+    },
+    {
+     "t": "the fertility crash",
+     "d": "",
+     "x": "the fertility crash",
+     "src": "https://x.com/search?q=the%20fertility%20crash&src=typed_query&f=live"
+    },
+    {
+     "t": "discipline as salvation",
+     "d": "",
+     "x": "discipline as salvation",
+     "src": "https://x.com/search?q=discipline%20as%20salvation&src=typed_query&f=live"
+    }
+   ]
+  },
+  "socialist": {
+   "id": "socialist",
+   "name": "the socialist left",
+   "country": "Socialist left",
+   "tldr": "the working class",
+   "ontology": "the socialist left holds sacred: the working class. surveyed in the field map of the feed.",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "the democrats' civil war",
+     "d": "",
+     "x": "the democrats' civil war",
+     "src": "https://x.com/search?q=the%20democrats%27%20civil%20war&src=typed_query&f=live"
+    },
+    {
+     "t": "utility bills as class war",
+     "d": "",
+     "x": "utility bills as class war",
+     "src": "https://x.com/search?q=utility%20bills%20as%20class%20war&src=typed_query&f=live"
+    },
+    {
+     "t": "the ratepayer act",
+     "d": "",
+     "x": "the ratepayer act",
+     "src": "https://x.com/search?q=the%20ratepayer%20act&src=typed_query&f=live"
+    }
+   ],
+   "topics": [
+    {
+     "t": "the democrats' civil war",
+     "d": "",
+     "x": "the democrats' civil war",
+     "src": "https://x.com/search?q=the%20democrats%27%20civil%20war&src=typed_query&f=live"
+    },
+    {
+     "t": "utility bills as class war",
+     "d": "",
+     "x": "utility bills as class war",
+     "src": "https://x.com/search?q=utility%20bills%20as%20class%20war&src=typed_query&f=live"
+    },
+    {
+     "t": "the ratepayer act",
+     "d": "",
+     "x": "the ratepayer act",
+     "src": "https://x.com/search?q=the%20ratepayer%20act&src=typed_query&f=live"
+    }
+   ]
+  },
+  "witchtok": {
+   "id": "witchtok",
+   "name": "witchtok & the old ways",
+   "country": "WitchTok",
+   "tldr": "the old gods — an outer island, loud in its own sea.",
+   "ontology": "witchtok & the old ways holds sacred: the old gods. an outer island, loud in its own sea.",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "WitchTok · old continent",
+     "d": "an outer island, loud in its own sea.",
+     "x": "witchtok & the old ways",
+     "src": "https://x.com/search?q=witchtok%20%26%20the%20old%20ways&src=typed_query&f=live"
+    }
+   ],
+   "topics": []
+  },
+  "postliberal": {
+   "id": "postliberal",
+   "name": "the post-liberals",
+   "country": "Post-liberals",
+   "tldr": "god",
+   "ontology": "the post-liberals holds sacred: god. surveyed in the field map of the feed.",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "the rome–washington rift",
+     "d": "",
+     "x": "the rome–washington rift",
+     "src": "https://x.com/search?q=the%20rome%E2%80%93washington%20rift&src=typed_query&f=live"
+    },
+    {
+     "t": "conversion stories",
+     "d": "",
+     "x": "conversion stories",
+     "src": "https://x.com/search?q=conversion%20stories&src=typed_query&f=live"
+    },
+    {
+     "t": "common-good politics",
+     "d": "",
+     "x": "common-good politics",
+     "src": "https://x.com/search?q=common-good%20politics&src=typed_query&f=live"
+    }
+   ],
+   "topics": [
+    {
+     "t": "the rome–washington rift",
+     "d": "",
+     "x": "the rome–washington rift",
+     "src": "https://x.com/search?q=the%20rome%E2%80%93washington%20rift&src=typed_query&f=live"
+    },
+    {
+     "t": "conversion stories",
+     "d": "",
+     "x": "conversion stories",
+     "src": "https://x.com/search?q=conversion%20stories&src=typed_query&f=live"
+    },
+    {
+     "t": "common-good politics",
+     "d": "",
+     "x": "common-good politics",
+     "src": "https://x.com/search?q=common-good%20politics&src=typed_query&f=live"
+    }
+   ]
+  },
+  "refusal": {
+   "id": "refusal",
+   "name": "tech refusal",
+   "country": "Tech refusal",
+   "tldr": "presence — an outer island, loud in its own sea.",
+   "ontology": "tech refusal holds sacred: presence. an outer island, loud in its own sea.",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "Tech refusal · old continent",
+     "d": "an outer island, loud in its own sea.",
+     "x": "tech refusal",
+     "src": "https://x.com/search?q=tech%20refusal&src=typed_query&f=live"
+    }
+   ],
+   "topics": []
+  },
+  "dacc": {
+   "id": "dacc",
+   "name": "d/acc",
+   "country": "d/acc",
+   "tldr": "distributed power",
+   "ontology": "d/acc holds sacred: distributed power. surveyed in the field map of the feed.",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "kyc creeping into stablecoins",
+     "d": "",
+     "x": "kyc creeping into stablecoins",
+     "src": "https://x.com/search?q=kyc%20creeping%20into%20stablecoins&src=typed_query&f=live"
+    },
+    {
+     "t": "issuer concentration",
+     "d": "",
+     "x": "issuer concentration",
+     "src": "https://x.com/search?q=issuer%20concentration&src=typed_query&f=live"
+    },
+    {
+     "t": "keeping open-weight models open",
+     "d": "",
+     "x": "keeping open-weight models open",
+     "src": "https://x.com/search?q=keeping%20open-weight%20models%20open&src=typed_query&f=live"
+    }
+   ],
+   "topics": [
+    {
+     "t": "kyc creeping into stablecoins",
+     "d": "",
+     "x": "kyc creeping into stablecoins",
+     "src": "https://x.com/search?q=kyc%20creeping%20into%20stablecoins&src=typed_query&f=live"
+    },
+    {
+     "t": "issuer concentration",
+     "d": "",
+     "x": "issuer concentration",
+     "src": "https://x.com/search?q=issuer%20concentration&src=typed_query&f=live"
+    },
+    {
+     "t": "keeping open-weight models open",
+     "d": "",
+     "x": "keeping open-weight models open",
+     "src": "https://x.com/search?q=keeping%20open-weight%20models%20open&src=typed_query&f=live"
+    }
+   ]
+  },
+  "liminal": {
+   "id": "liminal",
+   "name": "the liminal web",
+   "country": "Liminal web",
+   "tldr": "the whole",
+   "ontology": "the liminal web holds sacred: the whole. surveyed in the field map of the feed.",
+   "figures": [],
+   "discussing": [
+    {
+     "t": "reading the data-center revolt as the metacrisis surfacing. the map-maker's tent",
+     "d": "",
+     "x": "reading the data-center revolt as the metacrisis surfacing. the map-maker's tent",
+     "src": "https://x.com/search?q=reading%20the%20data-center%20revolt%20as%20the%20metacrisis%20surfacing.%20the%20map-maker%27s%20tent&src=typed_query&f=live"
+    }
+   ],
+   "topics": [
+    {
+     "t": "reading the data-center revolt as the metacrisis surfacing. the map-maker's tent",
+     "d": "",
+     "x": "reading the data-center revolt as the metacrisis surfacing. the map-maker's tent",
+     "src": "https://x.com/search?q=reading%20the%20data-center%20revolt%20as%20the%20metacrisis%20surfacing.%20the%20map-maker%27s%20tent&src=typed_query&f=live"
+    }
+   ]
   }
  },
  "paper": {
   "head": "HERE BE DISCOURSE",
   "deck": "what each tribe of x is talking about, day by day — the field map of the feed, from the transcendent north to the material south.",
   "hooks": [
-   "🏟️ LeBron told the Lakers he'll play his 24th season elsewhere — Warriors, Cavs and Heat chasing, and NBA X refreshes daily for 'the ",
-   "✝️ NPR's sit-down with the Moscow, Idaho pastor tied to Pentagon prayer services — who wants a Christian theocracy — is fueling weeks",
-   "✨ the once-in-36-years conjunction at 0° Aries dominates transit talk — dissolved authority and 'disillusionment with the guru compl",
-   "💜 Gracie Abrams' 'Daughter From Hell' debuted atop the Billboard 200 with a career-best 124,000 units — stan X is ranking the year's",
    "🦅 DOJ is refusing a court-ordered release of the remaining files and the base is furious — an open loyalty crisis between the White ",
-   "✊ Mamdani's New York is the movement's live demonstration case — celebrated on the left, used as a cautionary tale by everyone else."
+   "✊ Mamdani's New York is the movement's live demonstration case — celebrated on the left, used as a cautionary tale by everyone else.",
+   "📈 the July FOMC decision lands this week with crypto and equities both coiled around it — every asset is a rates trade again.",
+   "✝️ NPR's sit-down with the Moscow, Idaho pastor tied to Pentagon prayer services — who wants a Christian theocracy — is fueling weeks",
+   "🏟️ LeBron told the Lakers he'll play his 24th season elsewhere — Warriors, Cavs and Heat chasing, and NBA X refreshes daily for 'the ",
+   "💜 Gracie Abrams' 'Daughter From Hell' debuted atop the Billboard 200 with a career-best 124,000 units — stan X is ranking the year's"
   ]
  }
 }

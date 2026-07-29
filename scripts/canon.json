@@ -372,5 +372,17 @@
    "@vladtenev",
    "the tokenized-stock desks"
   ]
+ },
+ "trumpcoins": {
+  "name": "the trump economy",
+  "country": "Trump economy",
+  "tldr": "the first family of crypto — the deal is the product",
+  "ontology": "Markets are politics by other means and the presidency is the ultimate distribution channel; a memecoin, a stablecoin, a token sale — the family business runs onchain now, and this time the house always wins.",
+  "figures": [
+   "@realDonaldTrump",
+   "@EricTrump",
+   "@zachwitkoff",
+   "@worldlibertyfi"
+  ]
  }
 }
