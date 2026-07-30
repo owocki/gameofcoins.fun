@@ -140,7 +140,9 @@
     // persistent watermark, top-right inside the 9:16 frame
     const wm = document.createElement('div');
     wm.textContent = 'gameofcoins.fun';
-    wm.style.cssText = 'position:fixed;top:14px;right:calc((100vw - var(--cw,100vw))/2 + 16px);z-index:63;' +
+    // 10% down, not 14px: X's fullscreen player puts its own top bar over the
+    // first ~9% of the frame
+    wm.style.cssText = 'position:fixed;top:10%;right:calc((100vw - var(--cw,100vw))/2 + 16px);z-index:63;' +
       'font-family:var(--serif);font-size:max(13px,calc(var(--cw,100vw)*0.034));font-weight:600;' +
       'letter-spacing:.06em;color:#e8c877;opacity:.9;text-shadow:0 2px 12px #000c;pointer-events:none';
     document.body.appendChild(wm);

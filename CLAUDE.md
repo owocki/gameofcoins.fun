@@ -61,7 +61,17 @@ build.
 
 If you change the tour length (add/remove stops, change `REVEAL`/`PER`/
 `OUTRO`), re-record `flyover.mp4` — the README has the pipeline — and bump the
-score length to match.
+score length to match. If you only change what's *drawn* (caption position,
+watermark, card copy), re-record the video and remux the existing audio — the
+score is deterministic and doesn't need re-rendering.
+
+**The caption safe zone.** In-feed vertical players (X, TikTok, Reels) paint
+their own controls over the bottom ~25-30% and the top ~9% of the frame, and
+they do it exactly when someone pauses to read. The flyover's argument lives
+in the caption, so the caption must stay out of those bands: `--safeb` (set on
+`body.v916` in `site.template.html`) holds the card at 32% from the bottom, and
+the watermark sits at 10% from the top. Don't push either back toward the edge
+to "use the space" — the space isn't yours.
 
 Rasterization gotcha: the SVG → texture step clones the SVG and must inject
 the page's `<style>` text and strip `filter` attributes and the `.hl`

@@ -222,9 +222,14 @@ body.cine.cinedone #cine .bar{opacity:0}
 #cinecard h1{margin:6px 0 8px;font-size:52px;font-weight:600;letter-spacing:.1em;line-height:1;text-wrap:balance}
 #cinecard .cl{font-size:16.5px;font-style:italic;color:#eee2c6;line-height:1.4}
 /* 9:16 mobile-native flyover: captions sized off the video frame width (--cw),
-   big and roman for one-glance reads, letterbox bars dropped */
+   big and roman for one-glance reads, letterbox bars dropped.
+   --safeb keeps the caption above the in-feed player chrome: X (and TikTok /
+   Reels / Shorts) paint controls, handle and reply bar over the bottom ~25-30%
+   of a paused vertical video, which is exactly when people stop to READ the
+   argument. Anything below 30% is unreadable at the moment it matters. */
+body.v916{--safeb:32%}
 body.v916 #cine .bar{display:none}
-body.v916 #cinecard{bottom:4%;width:max-content;max-width:calc(var(--cw,100vw)*0.92);box-sizing:border-box;
+body.v916 #cinecard{bottom:var(--safeb);width:max-content;max-width:calc(var(--cw,100vw)*0.92);box-sizing:border-box;
   padding:8px 16px 10px;border-radius:14px;background:#0a080537;
   backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
   text-shadow:0 2px 18px #000c,0 0 6px #0009}

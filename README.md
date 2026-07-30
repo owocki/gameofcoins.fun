@@ -43,6 +43,7 @@ That's it — the site is static. `index.html` fetches `data/index.json` for the
 | `data/YYYY-MM-DD.json` | One snapshot per day: coins per tribe (`discussing`), weekly narratives (`topics`), newspaper copy (`paper`). |
 | `scripts/canon.json` | The fixed tribe canon: names, TLDRs, ontologies, figures. |
 | `scripts/research_crypto.py` | The nightly survey: Claude + web search refreshes coin ranks and weekly narratives. Every topic must carry a source URL or it is rejected. |
+| `scripts/post_copy.py` | Writes the X post that ships with the day's film — the same stops, in the same order, as text. See "Posting the film" below. |
 | `.github/workflows/nightly-crypto.yml` | Runs the survey at 06:40 UTC and commits the new day. |
 
 ## Fork it: make your own map
@@ -65,6 +66,22 @@ The flyover renders deterministically from a virtual clock, so the film captures
 3. Assemble: `ffmpeg -framerate 24 -i frames/f%05d.jpg -i score.wav -c:v libx264 -crf 20 -pix_fmt yuv420p -c:a aac -b:a 160k -shortest flyover.mp4`
 
 The score is an original composition written in WebAudio — fantasy-epic *style*, no copyrighted melodies. Keep it that way.
+
+If the change is only visual and the tour length is unchanged, skip step 2's audio: the score is deterministic, so lift the old track and remux it — `ffmpeg -framerate 24 -i frames/f%05d.jpg -i old-audio.aac -c:v libx264 -crf 20 -pix_fmt yuv420p -c:a copy -shortest flyover.mp4`.
+
+Captions are held inside a safe zone (`--safeb`) because in-feed players cover the bottom ~28% and top ~9% of a vertical video with their own controls — see CLAUDE.md before moving them.
+
+## Posting the film
+
+The film's argument lives in the caption under each coin, which goes by in eight seconds. `scripts/post_copy.py` writes the same thing as text, so the post stands on its own for people who don't watch:
+
+```sh
+python3 scripts/post_copy.py crypto              # the long post: every stop, up to 5 narratives each
+python3 scripts/post_copy.py crypto --short      # one narrative per stop — sized for a quote-RT
+python3 scripts/post_copy.py ai --day 2026-07-28 --src   # a specific day, with source links
+```
+
+Stop order and kickers are read from `scripts/verticals/*` and the day's JSON, so the post can't drift from the film. Character count goes to stderr; the body goes to stdout, so `| pbcopy` works.
 
 ## Data honesty
 
